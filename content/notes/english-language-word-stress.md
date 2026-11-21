@@ -36,11 +36,11 @@ To find the stressed syllable, say the word several times, each time stressing a
 
 ## Pattern 1: two-syllable words
 
-| Word class | Usual stress | Examples |
-|---|---|---|
-| **Nouns** | first syllable | TAble, MONkey, PENcil, DOCtor, VILlage, MARket |
-| **Adjectives** | first syllable | HAPpy, CLEver, HEAvy, YELlow, BUsy |
-| **Verbs** | often the second syllable | beGIN, deCIDE, reLAX, forGET, aRRIVE, exPLAIN |
+| Word class | Usual stress | Examples | Listen |
+|---|---|---|---|
+| **Nouns** | first syllable | TAble, MONkey, PENcil, DOCtor, VILlage, MARket | [table /ˈteɪbl/](https://wasscetutor.com/audio/oral/table.mp3?v=37d79fe7ea) [pencil /ˈpensl/](https://wasscetutor.com/audio/oral/pencil.mp3?v=6935892a34) |
+| **Adjectives** | first syllable | HAPpy, CLEver, HEAvy, YELlow, BUsy | [happy /ˈhæpi/](https://wasscetutor.com/audio/oral/happy.mp3?v=87e61f30ba) [yellow /ˈjeləʊ/](https://wasscetutor.com/audio/oral/yellow.mp3?v=705f071cdd) |
+| **Verbs** | often the second syllable | beGIN, deCIDE, reLAX, forGET, aRRIVE, exPLAIN | [begin /bɪˈgɪn/](https://wasscetutor.com/audio/oral/begin.mp3?v=3e92f9f112) [decide /dɪˈsaɪd/](https://wasscetutor.com/audio/oral/decide.mp3?v=367b6134f2) |
 
 There are exceptions (verbs like *OPen*, *LISten*, *VISit*, *ANswer* stress the first syllable), so use the patterns as a strong guide, not a law.
 
@@ -63,6 +63,8 @@ Many two-syllable words are spelt the same as a noun and a verb, and the **stres
 | a **PER**mit | to per**MIT** |
 | an **IN**crease | to in**CREASE** |
 
+**Listen:** [present (noun) /ˈpreznt/](https://wasscetutor.com/audio/oral/present-noun.mp3?v=9d28627715) [present (verb) /prɪˈzent/](https://wasscetutor.com/audio/oral/present-verb.mp3?v=8aac6bdb4b) [record (noun) /ˈrekɔːd/](https://wasscetutor.com/audio/oral/record-noun.mp3?v=9f1315a701) [record (verb) /rɪˈkɔːd/](https://wasscetutor.com/audio/oral/record-verb.mp3?v=2245f809e2) [object (noun) /ˈɒbdʒekt/](https://wasscetutor.com/audio/oral/object-noun.mp3?v=4351947c84) [object (verb) /əbˈdʒekt/](https://wasscetutor.com/audio/oral/object-verb.mp3?v=5e6432ba6c) [increase (noun) /ˈɪnkriːs/](https://wasscetutor.com/audio/oral/increase-noun.mp3?v=2e2bb33685) [increase (verb) /ɪnˈkriːs/](https://wasscetutor.com/audio/oral/increase-verb.mp3?v=8671ab391f)
+
 :::callout{type=worked-example}
 *"The government will in**CREASE** the price of rice." / "There has been an **IN**crease in the price of rice."*
 
@@ -73,14 +75,14 @@ Same spelling, same letters, but the first is a **verb** (stress on *-crease*) a
 
 Some endings are reliable guides:
 
-| Ending | Stress falls on | Examples |
-|---|---|---|
-| **-tion, -sion** | the syllable **just before** | edu**CA**tion, de**CI**sion, infor**MA**tion, ex**PLO**sion |
-| **-ic** | the syllable **just before** | eco**NOM**ic, scien**TIF**ic, photo**GRAPH**ic, ter**RIF**ic |
-| **-ity** | the syllable **just before** | a**BIL**ity, elec**TRI**city, uni**VER**sity, nation**AL**ity |
-| **-ical** | the syllable **just before** -ical | po**LIT**ical, eco**NOM**ical, his**TOR**ical |
-| **-ian** | the syllable **just before** | mu**SI**cian, poli**TI**cian, li**BRAR**ian |
-| **-ee, -eer, -ese, -ique, -ette** | **the ending itself** | refu**GEE**, employ**EE**, engi**NEER**, volun**TEER**, Chi**NESE**, u**NIQUE**, ciga**RETTE** |
+| Ending | Stress falls on | Examples | Listen |
+|---|---|---|---|
+| **-tion, -sion** | the syllable **just before** | edu**CA**tion, de**CI**sion, infor**MA**tion, ex**PLO**sion | [education /ˌedjʊˈkeɪʃn/](https://wasscetutor.com/audio/oral/education.mp3?v=ef1ad45c39) [decision /dɪˈsɪʒn/](https://wasscetutor.com/audio/oral/decision.mp3?v=e0b22db3fc) |
+| **-ic** | the syllable **just before** | eco**NOM**ic, scien**TIF**ic, photo**GRAPH**ic, ter**RIF**ic | [economic /ˌiːkəˈnɒmɪk/](https://wasscetutor.com/audio/oral/economic.mp3?v=620c93d226) [scientific /ˌsaɪənˈtɪfɪk/](https://wasscetutor.com/audio/oral/scientific.mp3?v=0f1fd10c5e) |
+| **-ity** | the syllable **just before** | a**BIL**ity, elec**TRI**city, uni**VER**sity, nation**AL**ity | [ability /əˈbɪlɪti/](https://wasscetutor.com/audio/oral/ability.mp3?v=da592e74e5) [university /ˌjuːnɪˈvɜːsɪti/](https://wasscetutor.com/audio/oral/university.mp3?v=fc90a7320d) |
+| **-ical** | the syllable **just before** -ical | po**LIT**ical, eco**NOM**ical, his**TOR**ical | [political /pəˈlɪtɪkl/](https://wasscetutor.com/audio/oral/political.mp3?v=7236f319b6) [historical /hɪˈstɒrɪkl/](https://wasscetutor.com/audio/oral/historical.mp3?v=292d571cc4) |
+| **-ian** | the syllable **just before** | mu**SI**cian, poli**TI**cian, li**BRAR**ian | [musician /mjuːˈzɪʃn/](https://wasscetutor.com/audio/oral/musician.mp3?v=8101ec42ee) [politician /ˌpɒlɪˈtɪʃn/](https://wasscetutor.com/audio/oral/politician.mp3?v=5bd039c6a0) |
+| **-ee, -eer, -ese, -ique, -ette** | **the ending itself** | refu**GEE**, employ**EE**, engi**NEER**, volun**TEER**, Chi**NESE**, u**NIQUE**, ciga**RETTE** | [engineer /ˌendʒɪˈnɪə/](https://wasscetutor.com/audio/oral/engineer.mp3?v=7021464047) [volunteer /ˌvɒlənˈtɪə/](https://wasscetutor.com/audio/oral/volunteer.mp3?v=9a92f94cf6) |
 
 :::callout{type=common-mistake}
 **Keeping the stress of the root word.** *PHOtograph* stresses the first syllable, but *phoTOgraphy* and *photoGRAPHic* move the stress. *POlitics* becomes *poLItical* and *poliTIcian*. When a suffix is added, check the stress again.
@@ -94,6 +96,8 @@ Some endings are reliable guides:
 | **Compound adjectives** | often the **second** part | old-**FASH**ioned, bad-**TEM**pered, well-**KNOWN** |
 | **Phrasal verbs** | usually the **particle** | wake **UP**, give **IN**, turn **OFF** |
 
+**Listen:** [blackboard /ˈblækbɔːd/](https://wasscetutor.com/audio/oral/blackboard.mp3?v=d3001790d5) [classroom /ˈklɑːsruːm/](https://wasscetutor.com/audio/oral/classroom.mp3?v=82f278cdcb) [football /ˈfʊtbɔːl/](https://wasscetutor.com/audio/oral/football.mp3?v=35f60bba65)
+
 :::callout{type=tip}
 Compare *a **BLACK**board* (the thing teachers write on) with *a black **BOARD*** (any board that happens to be black). In compound nouns the first part carries the stress, and that is how a listener knows it is one word.
 :::
@@ -103,18 +107,18 @@ Compare *a **BLACK**board* (the thing teachers write on) with *a black **BOARD**
 :::callout{type=local-example}
 Everyday speech in Sierra Leone often gives syllables more equal weight, or places stress where Krio would put it. These are standard (RP) stresses that are often tested:
 
-| Often heard | Standard |
-|---|---|
-| *inte-REST-ing* | **IN**teresting |
-| *ca-LEN-dar* | **CAL**endar |
-| *ad-VER-tise* | **AD**vertise |
-| *fa-mi-LY* | **FAM**ily |
-| *e-VE-ry-body* | **EV**erybody |
-| *prin-CI-pal* | **PRIN**cipal |
-| *ex-ER-cise* | **EX**ercise |
-| *ad-JEC-tive* | **AD**jective |
-| *de-ve-LOP* | de**VEL**op |
-| *ca-the-DRAL* | ca**THE**dral |
+| Often heard | Standard | Listen |
+|---|---|---|
+| *inte-REST-ing* | **IN**teresting | [interesting /ˈɪntrɪstɪŋ/](https://wasscetutor.com/audio/oral/interesting.mp3?v=0d9602ae8c) |
+| *ca-LEN-dar* | **CAL**endar | [calendar /ˈkælɪndə/](https://wasscetutor.com/audio/oral/calendar.mp3?v=fc376f36bd) |
+| *ad-VER-tise* | **AD**vertise | [advertise /ˈædvətaɪz/](https://wasscetutor.com/audio/oral/advertise.mp3?v=b6171f1d42) |
+| *fa-mi-LY* | **FAM**ily | [family /ˈfæmɪli/](https://wasscetutor.com/audio/oral/family.mp3?v=9665c5949c) |
+| *e-VE-ry-body* | **EV**erybody | [everybody /ˈevrɪbɒdi/](https://wasscetutor.com/audio/oral/everybody.mp3?v=749bb7392f) |
+| *prin-CI-pal* | **PRIN**cipal | [principal /ˈprɪnsɪpl/](https://wasscetutor.com/audio/oral/principal.mp3?v=8692801bc1) |
+| *ex-ER-cise* | **EX**ercise | [exercise /ˈeksəsaɪz/](https://wasscetutor.com/audio/oral/exercise.mp3?v=47a6962ca1) |
+| *ad-JEC-tive* | **AD**jective | [adjective /ˈædʒɪktɪv/](https://wasscetutor.com/audio/oral/adjective.mp3?v=6a33381e4b) |
+| *de-ve-LOP* | de**VEL**op | [develop /dɪˈveləp/](https://wasscetutor.com/audio/oral/develop.mp3?v=f0dd701c42) |
+| *ca-the-DRAL* | ca**THE**dral | [cathedral /kəˈθiːdrəl/](https://wasscetutor.com/audio/oral/cathedral.mp3?v=d13b6fc122) |
 :::
 
 ## How the questions work

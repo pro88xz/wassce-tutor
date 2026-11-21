@@ -5,7 +5,7 @@ Kokoro voice model (Apache 2.0) in standard British English from dictionary phon
 then transcribed by two speech recognisers (Whisper small.en and NVIDIA Parakeet).
 A clip that fails is not linked from any question. See the script for the checks.
 
-**94 of 96 clips passed.**
+**212 of 214 clips passed.**
 
 ## Words
 
@@ -101,6 +101,124 @@ A clip that fails is not linked from any question. See the script for the checks
 | table | /ˈteɪbl/ | tˈAbᵊl (gold) | bf_emma, 1.0 | Table | Table | pass |
 | open | /ˈəʊpən/ | ˈQpᵊn (gold) | bf_emma, 1.0 | Open | Open | pass |
 | market | /ˈmɑːkɪt/ | mˈɑːkɪt (gold) | bf_emma, 0.9 | market | Market | pass |
+| pig | /pɪɡ/ | pˈɪɡ (gold) | bf_emma, 0.9 | The word is pig. | The word is pig. | pass (after 'The word is') |
+| big | /bɪɡ/ | bˈɪɡ (gold) | bf_emma, 0.9 | big | Big. | pass |
+| town | /taʊn/ | tˈWn (gold) | bf_emma, 1.0 | TOWN | Town | pass |
+| down | /daʊn/ | dˌWn (gold) | bf_emma, 1.0 | down | Down. | pass |
+| goat | /ɡəʊt/ | ɡˈQt (gold) | bf_emma, 0.9 | goat | Goat. | pass |
+| fan | /fæn/ | fˈan (gold) | bf_emma, 1.0 | fan | Fun. | pass (one recogniser) |
+| van | /væn/ | vˈan (gold) | bf_emma, 1.0 | Van | Then | pass (one recogniser) |
+| thin | /θɪn/ | θˈɪn (gold) | bf_emma, 1.0 | thin | Thin | pass |
+| this | /ðɪs/ | ðɪs (gold) | bf_emma, 0.9 | this | This | pass |
+| price | /praɪs/ | pɹˈIs (gold) | bf_emma, 1.0 | price | Price | pass |
+| prize | /praɪz/ | pɹˈIz (gold) | bf_emma, 0.9 | prize | Prize | pass |
+| vision | /ˈvɪʒn/ | vˈɪʒᵊn (gold) | bf_emma, 0.9 | Vision | Vision | pass |
+| jeep | /dʒiːp/ | ʤˈiːp (gold) | bf_emma, 0.9 | Jeep | Jeep | pass |
+| man | /mæn/ | mˈan (gold) | bf_isabella, 0.85 | man-sy | Man | pass (one recogniser) |
+| knife | /naɪf/ | nˈIf (gold) | bf_emma, 0.85 | Knife | Knife | pass |
+| sing | /sɪŋ/ | sˈɪŋ (gold) | bf_emma, 0.9 | A sing. | Sing | pass |
+| leg | /leɡ/ | lˈɛɡ (gold) | bf_emma, 0.9 | leg | Leg | pass |
+| red | /red/ | ɹˈɛd (gold) | bf_emma, 0.9 | red | Red | pass |
+| wet | /wet/ | wˈɛt (gold) | bf_emma, 1.0 | Wet | Wet | pass |
+| yes | /jes/ | jˈɛs (gold) | bf_emma, 0.9 | Yes. | Yes. | pass |
+| tin | /tɪn/ | tˈɪn (gold) | bf_emma, 1.0 | Tin | Tin. | pass |
+| three | /θriː/ | θɹˈiː (gold) | bf_emma, 0.85 | A three | A three. | pass |
+| tree | /triː/ | tɹˈiː (gold) | bf_isabella, 0.9 | tree | Tree | pass |
+| they | /ðeɪ/ | ðA (gold) | bf_emma, 1.0 | They | They. | pass |
+| day | /deɪ/ | dˈA (gold) | bf_emma, 1.0 | day | Day | pass |
+| then | /ðen/ | ðˈɛn (gold) | bf_emma, 0.9 | then | Then | pass |
+| den | /den/ | dˈɛn (gold) | bf_emma, 0.9 | den | The den | pass (one recogniser) |
+| pleasure | /ˈpleʒə/ | plˈɛʒə (gold) | bf_emma, 0.85 | A pleasure | A pleasure. | pass |
+| test | /test/ | tˈɛst (gold) | bf_emma, 0.9 | Test | Test. | pass |
+| desk | /desk/ | dˈɛsk (gold) | bf_emma, 0.9 | desk | Desk | pass |
+| chew | /tʃuː/ | ʧˈuː (gold) | bf_emma, 0.85 | Dachu | A chew. | pass (one recogniser) |
+| share | /ʃeə/ | ʃˈɛː (gold) | bf_lily, 0.85 | share | Cheryl | pass (one recogniser) |
+| chair | /tʃeə/ | ʧˈɛː (gold) | bf_emma, 1.0 | c'est | Chair | pass (one recogniser) |
+| sign | /saɪn/ | sˈIn (gold) | bf_emma, 1.0 | sign | Sign | pass |
+| island | /ˈaɪlənd/ | ˈIlənd (gold) | bf_emma, 0.9 | Islander | Island | pass (one recogniser) |
+| wanted | /ˈwɒntɪd/ | wˈɒntɪd (silver) | bf_emma, 0.9 | Wanted | Wanted. | pass |
+| needed | /ˈniːdɪd/ | nˈiːdɪd (silver) | bf_emma, 0.9 | needed | Needed. | pass |
+| walked | /wɔːkt/ | wˈɔːkt (silver) | bf_emma, 0.9 | We worked. | Walked. | pass (one recogniser) |
+| stopped | /stɒpt/ | stˈɒpt (silver) | bf_emma, 1.0 | Stopped. | They stopped. | pass (one recogniser) |
+| played | /pleɪd/ | plˈAd (silver) | bf_emma, 0.9 | A played | A played. | pass |
+| rained | /reɪnd/ | ɹˈAnd (silver) | bf_emma, 0.9 | rained | Rained. | pass |
+| waited | /ˈweɪtɪd/ | wˈAtɪd (silver) | bf_emma, 0.9 | Waited | Waited. | pass |
+| jumped | /dʒʌmpt/ | ʤˈʌmpt (silver) | bf_emma, 1.0 | jumped | Jumped a | pass (one recogniser) |
+| cried | /kraɪd/ | kɹˈId (gold) | bf_emma, 1.0 | cried. | Cried. | pass |
+| washed | /wɒʃt/ | wˈɒʃt (silver) | bf_emma, 0.9 | Washed. | Washed. | pass |
+| buses | /ˈbʌsɪz/ | bˈʌsɪz (silver) | bf_emma, 0.9 | Buses | Buses | pass |
+| roses | /ˈrəʊzɪz/ | ɹˈQzɪz (silver) | bf_emma, 0.9 | roses | Roses | pass |
+| cats | /kæts/ | kˈats (silver) | bf_isabella, 1.0 | cats | Cats | pass |
+| books | /bʊks/ | bˈʊks (silver) | bf_emma, 0.9 | Books. | Books. | pass |
+| dogs | /dɒɡz/ | dˈɒɡz (silver) | bf_emma, 0.9 | Dogs. | Dogs | pass |
+| days | /deɪz/ | dˈAz (silver) | bf_emma, 0.9 | Days | Days | pass |
+| write | /raɪt/ | ɹˈIt (gold) | bf_isabella, 1.0 | Write | Right. | pass (one recogniser) |
+| climb | /klaɪm/ | klˈIm (gold) | bf_emma, 1.0 | Climb | The climb. | pass (one recogniser) |
+| hour | /ˈaʊə/ | ˈWə (gold) | bf_emma, 1.0 | hour | Owet | pass (one recogniser) |
+| psychology | /saɪˈkɒlədʒi/ | sIkˈɒləʤi (gold) | bf_emma, 1.0 | Psychology | Psychology | pass |
+| seat | /siːt/ | sˈiːt (gold) | bf_emma, 0.9 | a seat | A seat. | pass |
+| sit | /sɪt/ | sˈɪt (gold) | bf_emma, 0.9 | Sit | That's it. | pass (one recogniser) |
+| bed | /bed/ | bˈɛd (gold) | bf_emma, 0.9 | bed | Bed. | pass |
+| cart | /kɑːt/ | kˈɑːt (gold) | bf_isabella, 0.9 | CART | Cart. | pass |
+| pot | /pɒt/ | pˈɒt (gold) | bf_emma, 0.9 | The word is pot. | The word is put. | pass (one recogniser) (after 'The word is') |
+| wash | /wɒʃ/ | wˈɒʃ (gold) | bf_emma, 0.9 | WASH | Wash. | pass |
+| port | /pɔːt/ | pˈɔːt (gold) | bf_emma, 1.0 | Port | Part | pass (one recogniser) |
+| book | /bʊk/ | bˈʊk (gold) | bf_emma, 0.9 | book | Book. | pass |
+| put | /pʊt/ | pˌʊt (gold) | bf_emma, 0.9 | Put | But | pass (one recogniser) |
+| bird | /bɜːd/ | bˈɜːd (gold) | bf_emma, 0.9 | bird | Bird | pass |
+| teacher | /ˈtiːtʃə/ | tˈiːʧə (gold) | bf_emma, 0.85 | A teacher | A teacher | pass |
+| time | /taɪm/ | tˈIm (gold) | bf_emma, 0.9 | Time. | Time. | pass |
+| my | /maɪ/ | mI (gold) | bf_emma, 1.0 | My | My | pass |
+| boy | /bɔɪ/ | bˈY (gold) | bf_emma, 1.0 | boy | Boy. | pass |
+| coin | /kɔɪn/ | kˈYn (gold) | bf_emma, 1.0 | coin | Coin | pass |
+| home | /həʊm/ | hˈQm (gold) | bf_emma, 1.0 | home | Home. | pass |
+| house | /haʊs/ | hˈWs (gold) | bf_emma, 0.9 | A house. | A house. | pass |
+| now | /naʊ/ | nˈW (gold) | bf_emma, 1.0 | Now | Now | pass |
+| here | /hɪə/ | hˈɪə (gold) | bf_emma, 0.9 | here | Here. | pass |
+| near | /nɪə/ | nˌɪə (gold) | bf_lily, 1.0 | near | Near | pass |
+| there | /ðeə/ | ðɛː (gold) | bf_emma, 0.85 | There. | There. | pass |
+| care | /keə/ | kˈɛː (gold) | bf_emma, 0.9 | Care? | Cab | pass (one recogniser) |
+| tour | /tʊə/ | tˈʊə (gold) | bf_emma, 0.9 | The tour | Tour | pass (one recogniser) |
+| sure | /ʃʊə/ | ʃˈʊə (gold) | bf_emma, 1.0 | Sure | Sure. | pass |
+| ship | /ʃɪp/ | ʃˈɪp (gold) | bf_emma, 0.9 | A ship. | A ship. | pass |
+| pool | /puːl/ | pˈuːl (gold) | bf_emma, 1.0 | pool | Poole | pass (one recogniser) |
+| pull | /pʊl/ | pˈʊl (gold) | bf_emma, 0.9 | The word is puddle. | The word is pull. | pass (one recogniser) (after 'The word is') |
+| foot | /fʊt/ | fˈʊt (gold) | bf_emma, 1.0 | foot | Foot | pass |
+| hut | /hʌt/ | hˈʌt (gold) | bf_emma, 1.0 | HUT | Hut. | pass |
+| late | /leɪt/ | lˈAt (gold) | bf_emma, 0.9 | late | Late. | pass |
+| let | /let/ | lˈɛt (gold) | bf_emma, 1.0 | let | Let | pass |
+| pain | /peɪn/ | pˈAn (gold) | bf_emma, 1.0 | pain | Pain. | pass |
+| pen | /pen/ | pˈɛn (gold) | bf_emma, 1.0 | pen | Pen | pass |
+| bought | /bɔːt/ | bˈɔːt (gold) | bf_emma, 0.9 | bought | But | pass (one recogniser) |
+| bout | /baʊt/ | bˈWt (gold) | bf_emma, 1.0 | bout | Bout | pass |
+| paid | /peɪd/ | pˈAd (gold) | bf_emma, 0.9 | paid | Paid | pass |
+| raid | /reɪd/ | ɹˈAd (gold) | bf_emma, 0.9 | Raid | Raid. | pass |
+| seed | /siːd/ | sˈiːd (gold) | bf_emma, 0.9 | Seed | Seed. | pass |
+| calm | /kɑːm/ | kˈɑːm (gold) | bf_isabella, 0.9 | Comms | Calm. | pass (one recogniser) |
+| happy | /ˈhæpi/ | hˈapi (gold) | bf_emma, 0.9 | Happy | Happy. | pass |
+| yellow | /ˈjeləʊ/ | jˈɛlQ (gold) | bf_emma, 0.9 | yellow | Yellow. | pass |
+| present (noun) | /ˈpreznt/ | pɹˈɛzᵊnt (gold) | bf_emma, 0.9 | present | Present | pass |
+| present (verb) | /prɪˈzent/ | pɹɪzˈɛnt (gold) | bf_emma, 0.9 | Present | present | pass |
+| object (noun) | /ˈɒbdʒekt/ | ˈɒbʤɛkt (gold) | bf_emma, 0.9 | Object | Object | pass |
+| object (verb) | /əbˈdʒekt/ | əbʤˈɛkt (gold) | bf_emma, 0.9 | object | Object | pass |
+| increase (noun) | /ˈɪnkriːs/ | ˈɪnkɹiːs (gold) | bf_emma, 0.9 | increase | Increase | pass |
+| increase (verb) | /ɪnˈkriːs/ | ɪnkɹˈiːs (gold) | bf_emma, 1.0 | increase | Increase | pass |
+| education | /ˌedjʊˈkeɪʃn/ | ˌɛdjʊkˈAʃᵊn (gold) | bf_emma, 0.9 | education | Education | pass |
+| decision | /dɪˈsɪʒn/ | dɪsˈɪʒᵊn (gold) | bf_emma, 0.85 | A decision | A decision | pass |
+| scientific | /ˌsaɪənˈtɪfɪk/ | sˌIəntˈɪfɪk (gold) | bf_emma, 1.0 | scientific | Scientific | pass |
+| university | /ˌjuːnɪˈvɜːsɪti/ | jˌuːnɪvˈɜːsɪti (gold) | bf_emma, 0.9 | University | University | pass |
+| political | /pəˈlɪtɪkl/ | pəlˈɪtɪkᵊl (gold) | bf_emma, 0.9 | A political | Political | pass |
+| historical | /hɪˈstɒrɪkl/ | hɪstˈɒɹɪkᵊl (gold) | bf_emma, 0.9 | Historical | Historical | pass |
+| musician | /mjuːˈzɪʃn/ | mjuːzˈɪʃᵊn (gold) | bf_emma, 0.9 | A musician. | A musician | pass |
+| politician | /ˌpɒlɪˈtɪʃn/ | pˌɒlɪtˈɪʃᵊn (gold) | bf_emma, 0.9 | politician | Politician | pass |
+| blackboard | /ˈblækbɔːd/ | blˈakbɔːd (gold) | bf_emma, 1.0 | Blackboard | Blackboard | pass |
+| classroom | /ˈklɑːsruːm/ | klˈɑːsɹuːm (gold) | bf_emma, 1.0 | Classroom | Classroom | pass |
+| football | /ˈfʊtbɔːl/ | fˈʊtbɔːl (gold) | bf_emma, 0.9 | Football | Football | pass |
+| everybody | /ˈevrɪbɒdi/ | ˈɛvɹɪbɒdi (gold) | bf_emma, 0.9 | Everybody | Everybody. | pass |
+| principal | /ˈprɪnsɪpl/ | pɹˈɪnsɪpᵊl (gold) | bf_emma, 0.9 | Principal | Principal | pass |
+| exercise | /ˈeksəsaɪz/ | ˈɛksəsIz (gold) | bf_emma, 0.9 | Exercise | Exercise | pass |
+| adjective | /ˈædʒɪktɪv/ | ˈaʤɪktɪv (gold) | bf_emma, 0.9 | Adjective | A adjective | pass |
+| cathedral | /kəˈθiːdrəl/ | kəθˈiːdɹᵊl (gold) | bf_emma, 0.9 | A cathedral. | A cathedral. | pass |
 
 ## Passages
 

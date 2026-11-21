@@ -14,7 +14,7 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "1a8acc9379191ca8",
+  "key": "33db2f3d2c570ca2",
   "ok": true
  },
  "about": {
@@ -32,7 +32,25 @@
    "speed": 1.0,
    "voice": "bf_emma"
   },
-  "key": "dc90f831802427ee",
+  "key": "d45a665853cb9a4e",
+  "ok": true
+ },
+ "adjective": {
+  "detail": {
+   "dictionary": "ˈaʤɪktɪv",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A adjective",
+    "whisper": "Adjective"
+   },
+   "phonemes": "ˈaʤɪktɪv",
+   "score": 2,
+   "seconds": 1.3,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "41c4e6e5e59f8df5",
   "ok": true
  },
  "advertise": {
@@ -69,6 +87,24 @@
    "voice": "bf_isabella"
   },
   "key": "9fea3fb95df7e1fc",
+  "ok": true
+ },
+ "bed": {
+  "detail": {
+   "dictionary": "bˈɛd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Bed.",
+    "whisper": "bed"
+   },
+   "phonemes": "bˈɛd",
+   "score": 2,
+   "seconds": 1.27,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "20b831a4d3eeb268",
   "ok": true
  },
  "beds": {
@@ -143,6 +179,60 @@
   "key": "6799addddafff440",
   "ok": true
  },
+ "big": {
+  "detail": {
+   "dictionary": "bˈɪɡ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Big.",
+    "whisper": "big"
+   },
+   "phonemes": "bˈɪɡ",
+   "score": 2,
+   "seconds": 1.27,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "d945c9c2671f6b1a",
+  "ok": true
+ },
+ "bird": {
+  "detail": {
+   "dictionary": "bˈɜːd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Bird",
+    "whisper": "bird"
+   },
+   "phonemes": "bˈɜːd",
+   "score": 2,
+   "seconds": 1.35,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "3137af78e89fcecd",
+  "ok": true
+ },
+ "blackboard": {
+  "detail": {
+   "dictionary": "blˈakbɔːd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Blackboard",
+    "whisper": "Blackboard"
+   },
+   "phonemes": "blˈakbɔːd",
+   "score": 2,
+   "seconds": 1.23,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "db328c73543e0c29",
+  "ok": true
+ },
  "blood": {
   "detail": {
    "dictionary": "blˈʌd",
@@ -158,7 +248,7 @@
    "speed": 0.85,
    "voice": "bf_emma"
   },
-  "key": "80ee06b5e0020d9c",
+  "key": "f93e1853edcb018c",
   "ok": true
  },
  "boat": {
@@ -176,7 +266,97 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "ded6db6720521475",
+  "key": "4a4ddab276a570c2",
+  "ok": true
+ },
+ "book": {
+  "detail": {
+   "dictionary": "bˈʊk",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Book.",
+    "whisper": "book"
+   },
+   "phonemes": "bˈʊk",
+   "score": 2,
+   "seconds": 1.11,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "6e9c4f1587896c20",
+  "ok": true
+ },
+ "books": {
+  "detail": {
+   "dictionary": "bˈʊks",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Books.",
+    "whisper": "Books."
+   },
+   "phonemes": "bˈʊks",
+   "score": 2,
+   "seconds": 1.26,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "22dc2a5ba2fc6bc9",
+  "ok": true
+ },
+ "bought": {
+  "detail": {
+   "dictionary": "bˈɔːt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "But",
+    "whisper": "bought"
+   },
+   "phonemes": "bˈɔːt",
+   "score": 1,
+   "seconds": 1.2,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "56612a93636419dc",
+  "ok": true
+ },
+ "bout": {
+  "detail": {
+   "dictionary": "bˈWt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Bout",
+    "whisper": "bout"
+   },
+   "phonemes": "bˈWt",
+   "score": 2,
+   "seconds": 1.03,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "cae7333860416b28",
+  "ok": true
+ },
+ "boy": {
+  "detail": {
+   "dictionary": "bˈY",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Boy.",
+    "whisper": "boy"
+   },
+   "phonemes": "bˈY",
+   "score": 2,
+   "seconds": 1.06,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "328677b2845fa4fe",
   "ok": true
  },
  "bread": {
@@ -194,7 +374,25 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "209fdc4bb0f3b0cc",
+  "key": "bd04b8e6c678aa3e",
+  "ok": true
+ },
+ "buses": {
+  "detail": {
+   "dictionary": "bˈʌsɪz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Buses",
+    "whisper": "Buses"
+   },
+   "phonemes": "bˈʌsɪz",
+   "score": 2,
+   "seconds": 1.51,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "7fa0c7f1fc1a7bf3",
   "ok": true
  },
  "busy": {
@@ -212,7 +410,7 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "61d1c91f2e5c269d",
+  "key": "8901e3dd0a7f59a6",
   "ok": true
  },
  "calendar": {
@@ -233,6 +431,24 @@
   "key": "019b7fff772afe00",
   "ok": true
  },
+ "calm": {
+  "detail": {
+   "dictionary": "kˈɑːm",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Calm.",
+    "whisper": "Comms"
+   },
+   "phonemes": "kˈɑːm",
+   "score": 1,
+   "seconds": 1.61,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_isabella"
+  },
+  "key": "da18bdd054a948df",
+  "ok": true
+ },
  "caps": {
   "detail": {
    "dictionary": "kˈaps",
@@ -251,6 +467,42 @@
   "key": "f46e31bbf129fa91",
   "ok": true
  },
+ "care": {
+  "detail": {
+   "dictionary": "kˈɛː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Cab",
+    "whisper": "Care?"
+   },
+   "phonemes": "kˈɛː",
+   "score": 1,
+   "seconds": 1.21,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "20d69b6ce0cfdfc9",
+  "ok": true
+ },
+ "cart": {
+  "detail": {
+   "dictionary": "kˈɑːt",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Cart.",
+    "whisper": "CART"
+   },
+   "phonemes": "kˈɑːt",
+   "score": 2,
+   "seconds": 1.52,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_isabella"
+  },
+  "key": "62a217441324533c",
+  "ok": true
+ },
  "cat": {
   "detail": {
    "dictionary": "kˈat",
@@ -266,7 +518,43 @@
    "speed": 1.0,
    "voice": "bf_emma"
   },
-  "key": "42592b4ccf5752cd",
+  "key": "70a6f9e9bc10b36b",
+  "ok": true
+ },
+ "cathedral": {
+  "detail": {
+   "dictionary": "kəθˈiːdɹᵊl",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A cathedral.",
+    "whisper": "A cathedral."
+   },
+   "phonemes": "kəθˈiːdɹᵊl",
+   "score": 2,
+   "seconds": 1.8,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "f0755a2df0fb6cc0",
+  "ok": true
+ },
+ "cats": {
+  "detail": {
+   "dictionary": "kˈats",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Cats",
+    "whisper": "cats"
+   },
+   "phonemes": "kˈats",
+   "score": 2,
+   "seconds": 1.09,
+   "source": "silver",
+   "speed": 1.0,
+   "voice": "bf_isabella"
+  },
+  "key": "1cbbd71ce9982215",
   "ok": true
  },
  "caught": {
@@ -284,7 +572,25 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "e8945fd671630999",
+  "key": "685d4f3126e14fde",
+  "ok": true
+ },
+ "chair": {
+  "detail": {
+   "dictionary": "ʧˈɛː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Chair",
+    "whisper": "c'est"
+   },
+   "phonemes": "ʧˈɛː",
+   "score": 1,
+   "seconds": 0.95,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "d03f525a44e7ebd4",
   "ok": true
  },
  "cheap": {
@@ -302,7 +608,7 @@
    "speed": 0.85,
    "voice": "bf_emma"
   },
-  "key": "1cccbf6cbdbc01ee",
+  "key": "1c667c16feecb4b5",
   "ok": true
  },
  "chemistry": {
@@ -321,6 +627,24 @@
    "voice": "bf_emma"
   },
   "key": "994d5e7f9373abbe",
+  "ok": true
+ },
+ "chew": {
+  "detail": {
+   "dictionary": "ʧˈuː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A chew.",
+    "whisper": "Dachu"
+   },
+   "phonemes": "ʧˈuː",
+   "score": 1,
+   "seconds": 1.0,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "1d88ba086c8be754",
   "ok": true
  },
  "chop": {
@@ -359,6 +683,42 @@
   "key": "b291e32c890e682c",
   "ok": true
  },
+ "classroom": {
+  "detail": {
+   "dictionary": "klˈɑːsɹuːm",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Classroom",
+    "whisper": "Classroom"
+   },
+   "phonemes": "klˈɑːsɹuːm",
+   "score": 2,
+   "seconds": 1.36,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "ea5bcf4adc56af9a",
+  "ok": true
+ },
+ "climb": {
+  "detail": {
+   "dictionary": "klˈIm",
+   "ending": ".",
+   "heard": {
+    "parakeet": "The climb.",
+    "whisper": "Climb"
+   },
+   "phonemes": "klˈIm",
+   "score": 1,
+   "seconds": 1.05,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "2ccac66e5fd498a8",
+  "ok": true
+ },
  "coat": {
   "detail": {
    "dictionary": "kˈQt",
@@ -374,7 +734,25 @@
    "speed": 1.0,
    "voice": "bf_emma"
   },
-  "key": "65b865189e5e4c84",
+  "key": "4c6c7f4fa8c40a1c",
+  "ok": true
+ },
+ "coin": {
+  "detail": {
+   "dictionary": "kˈYn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Coin",
+    "whisper": "coin"
+   },
+   "phonemes": "kˈYn",
+   "score": 2,
+   "seconds": 1.01,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "2dd28fedb7f10bb1",
   "ok": true
  },
  "complete": {
@@ -411,7 +789,25 @@
    "speed": 0.9,
    "voice": "bf_isabella"
   },
-  "key": "77a5e3a7ce6c1db8",
+  "key": "93ed3697a7f35515",
+  "ok": true
+ },
+ "cried": {
+  "detail": {
+   "dictionary": "kɹˈId",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Cried.",
+    "whisper": "cried."
+   },
+   "phonemes": "kɹˈId",
+   "score": 2,
+   "seconds": 1.26,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "306bde3e8adda673",
   "ok": true
  },
  "cut": {
@@ -429,7 +825,43 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "03dc4c091cd6225a",
+  "key": "45f30127b0317021",
+  "ok": true
+ },
+ "day": {
+  "detail": {
+   "dictionary": "dˈA",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Day",
+    "whisper": "day"
+   },
+   "phonemes": "dˈA",
+   "score": 2,
+   "seconds": 1.06,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "0b2dd048dc2f6bda",
+  "ok": true
+ },
+ "days": {
+  "detail": {
+   "dictionary": "dˈAz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Days",
+    "whisper": "Days"
+   },
+   "phonemes": "dˈAz",
+   "score": 2,
+   "seconds": 1.09,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "4646e62678c87fe3",
   "ok": true
  },
  "decide": {
@@ -448,6 +880,60 @@
    "voice": "bf_emma"
   },
   "key": "ce19297cc516d18b",
+  "ok": true
+ },
+ "decision": {
+  "detail": {
+   "dictionary": "dɪsˈɪʒᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A decision",
+    "whisper": "A decision"
+   },
+   "phonemes": "dɪsˈɪʒᵊn",
+   "score": 2,
+   "seconds": 1.43,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "ea945a864969762c",
+  "ok": true
+ },
+ "den": {
+  "detail": {
+   "dictionary": "dˈɛn",
+   "ending": "!",
+   "heard": {
+    "parakeet": "The den",
+    "whisper": "den"
+   },
+   "phonemes": "dˈɛn",
+   "score": 1,
+   "seconds": 1.02,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "673c699996182248",
+  "ok": true
+ },
+ "desk": {
+  "detail": {
+   "dictionary": "dˈɛsk",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Desk",
+    "whisper": "desk"
+   },
+   "phonemes": "dˈɛsk",
+   "score": 2,
+   "seconds": 1.11,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "6791f64887374016",
   "ok": true
  },
  "develop": {
@@ -486,6 +972,42 @@
   "key": "5290ee1b5acdcabd",
   "ok": true
  },
+ "dogs": {
+  "detail": {
+   "dictionary": "dˈɒɡz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Dogs",
+    "whisper": "Dogs."
+   },
+   "phonemes": "dˈɒɡz",
+   "score": 2,
+   "seconds": 1.49,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "985d51e57eef0225",
+  "ok": true
+ },
+ "down": {
+  "detail": {
+   "dictionary": "dˌWn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Down.",
+    "whisper": "down"
+   },
+   "phonemes": "dˌWn",
+   "score": 2,
+   "seconds": 1.26,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "9a49f705bd0e8c4a",
+  "ok": true
+ },
  "economic": {
   "detail": {
    "dictionary": "ˌiːkənˈɒmɪk",
@@ -501,7 +1023,25 @@
    "speed": 1.0,
    "voice": "bf_emma"
   },
-  "key": "c32f158348dd1eed",
+  "key": "745ec9a260988ea9",
+  "ok": true
+ },
+ "education": {
+  "detail": {
+   "dictionary": "ˌɛdjʊkˈAʃᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Education",
+    "whisper": "education"
+   },
+   "phonemes": "ˌɛdjʊkˈAʃᵊn",
+   "score": 2,
+   "seconds": 1.59,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "36f96aa2cb56d6a5",
   "ok": true
  },
  "eng-lis-02": {
@@ -738,7 +1278,25 @@
    "speed": 0.85,
    "voice": "bf_emma"
   },
-  "key": "eb0aae695966363e",
+  "key": "4979bd52b3a10097",
+  "ok": true
+ },
+ "everybody": {
+  "detail": {
+   "dictionary": "ˈɛvɹɪbɒdi",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Everybody.",
+    "whisper": "Everybody"
+   },
+   "phonemes": "ˈɛvɹɪbɒdi",
+   "score": 2,
+   "seconds": 1.78,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "ce94ca660420fa72",
   "ok": true
  },
  "examination": {
@@ -759,6 +1317,24 @@
   "key": "6edddcfd0683a124",
   "ok": true
  },
+ "exercise": {
+  "detail": {
+   "dictionary": "ˈɛksəsIz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Exercise",
+    "whisper": "Exercise"
+   },
+   "phonemes": "ˈɛksəsIz",
+   "score": 2,
+   "seconds": 1.37,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "ac80bdea2dc07d6c",
+  "ok": true
+ },
  "family": {
   "detail": {
    "dictionary": "fˈamɪli",
@@ -777,6 +1353,24 @@
   "key": "5dceb9b6cf9bc61e",
   "ok": true
  },
+ "fan": {
+  "detail": {
+   "dictionary": "fˈan",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Fun.",
+    "whisper": "fan"
+   },
+   "phonemes": "fˈan",
+   "score": 1,
+   "seconds": 1.15,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "2e0c2e04dbe745e4",
+  "ok": true
+ },
  "father": {
   "detail": {
    "dictionary": "fˈɑːðə",
@@ -792,7 +1386,7 @@
    "speed": 1.0,
    "voice": "bf_emma"
   },
-  "key": "0c60055444e4c2eb",
+  "key": "3b74c7fd09b3a519",
   "ok": true
  },
  "field": {
@@ -846,7 +1440,61 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "87b690caa1ae478a",
+  "key": "6ddcf9bbeccf471c",
+  "ok": true
+ },
+ "foot": {
+  "detail": {
+   "dictionary": "fˈʊt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Foot",
+    "whisper": "foot"
+   },
+   "phonemes": "fˈʊt",
+   "score": 2,
+   "seconds": 1.08,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "351d8d0f3940f92c",
+  "ok": true
+ },
+ "football": {
+  "detail": {
+   "dictionary": "fˈʊtbɔːl",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Football",
+    "whisper": "Football"
+   },
+   "phonemes": "fˈʊtbɔːl",
+   "score": 2,
+   "seconds": 1.18,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "9332edd7dd749f23",
+  "ok": true
+ },
+ "goat": {
+  "detail": {
+   "dictionary": "ɡˈQt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Goat.",
+    "whisper": "goat"
+   },
+   "phonemes": "ɡˈQt",
+   "score": 2,
+   "seconds": 1.15,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "20b595536258f5a9",
   "ok": true
  },
  "good": {
@@ -904,6 +1552,24 @@
   "key": "b4ee7ca2e1385fa0",
   "ok": false
  },
+ "happy": {
+  "detail": {
+   "dictionary": "hˈapi",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Happy.",
+    "whisper": "Happy"
+   },
+   "phonemes": "hˈapi",
+   "score": 2,
+   "seconds": 1.36,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "71fd273c6f0ff73d",
+  "ok": true
+ },
  "hat": {
   "detail": {
    "dictionary": "hˈat",
@@ -919,7 +1585,7 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "611fc42e2291268d",
+  "key": "87a0aa1e23673cda",
   "ok": true
  },
  "heard": {
@@ -955,7 +1621,7 @@
    "speed": 0.85,
    "voice": "bf_emma"
   },
-  "key": "a9cc9f4319bed3ed",
+  "key": "ae737f4cd8c4bdc7",
   "ok": true
  },
  "her": {
@@ -977,6 +1643,60 @@
   "key": "3d01991459dd1021",
   "ok": false
  },
+ "here": {
+  "detail": {
+   "dictionary": "hˈɪə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Here.",
+    "whisper": "here"
+   },
+   "phonemes": "hˈɪə",
+   "score": 2,
+   "seconds": 1.21,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "c9f5d9ac6fb97c49",
+  "ok": true
+ },
+ "historical": {
+  "detail": {
+   "dictionary": "hɪstˈɒɹɪkᵊl",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Historical",
+    "whisper": "Historical"
+   },
+   "phonemes": "hɪstˈɒɹɪkᵊl",
+   "score": 2,
+   "seconds": 1.83,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "6dd488e40d19fdaf",
+  "ok": true
+ },
+ "home": {
+  "detail": {
+   "dictionary": "hˈQm",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Home.",
+    "whisper": "home"
+   },
+   "phonemes": "hˈQm",
+   "score": 2,
+   "seconds": 1.18,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "9a36c309763dc0c4",
+  "ok": true
+ },
  "hoped": {
   "detail": {
    "dictionary": "hˈQpt",
@@ -993,6 +1713,96 @@
    "voice": "bf_emma"
   },
   "key": "f13a0d29fa3a4905",
+  "ok": true
+ },
+ "hour": {
+  "detail": {
+   "dictionary": "ˈWə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Owet",
+    "whisper": "hour"
+   },
+   "phonemes": "ˈWə",
+   "score": 1,
+   "seconds": 1.1,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "381700d3f3eed40c",
+  "ok": true
+ },
+ "house": {
+  "detail": {
+   "dictionary": "hˈWs",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A house.",
+    "whisper": "A house."
+   },
+   "phonemes": "hˈWs",
+   "score": 2,
+   "seconds": 1.32,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "eb034204d63a00c7",
+  "ok": true
+ },
+ "hut": {
+  "detail": {
+   "dictionary": "hˈʌt",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Hut.",
+    "whisper": "HUT"
+   },
+   "phonemes": "hˈʌt",
+   "score": 2,
+   "seconds": 1.11,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "f2e11c8acea56b47",
+  "ok": true
+ },
+ "increase-noun": {
+  "detail": {
+   "dictionary": "ˈɪnkɹiːs",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Increase",
+    "whisper": "increase"
+   },
+   "phonemes": "ˈɪnkɹiːs",
+   "score": 2,
+   "seconds": 1.71,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "85d6949bff197631",
+  "ok": true
+ },
+ "increase-verb": {
+  "detail": {
+   "dictionary": "ɪnkɹˈiːs",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Increase",
+    "whisper": "increase"
+   },
+   "phonemes": "ɪnkɹˈiːs",
+   "score": 2,
+   "seconds": 1.27,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "d7d336aec8d51070",
   "ok": true
  },
  "interesting": {
@@ -1013,6 +1823,42 @@
   "key": "ac05384ac934850a",
   "ok": true
  },
+ "island": {
+  "detail": {
+   "dictionary": "ˈIlənd",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Island",
+    "whisper": "Islander"
+   },
+   "phonemes": "ˈIlənd",
+   "score": 1,
+   "seconds": 1.24,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "468ce899f5754c20",
+  "ok": true
+ },
+ "jeep": {
+  "detail": {
+   "dictionary": "ʤˈiːp",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Jeep",
+    "whisper": "Jeep"
+   },
+   "phonemes": "ʤˈiːp",
+   "score": 2,
+   "seconds": 1.16,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "916ca4c2244dd7c5",
+  "ok": true
+ },
  "judges": {
   "detail": {
    "dictionary": "ʤˈʌʤɪz",
@@ -1031,6 +1877,24 @@
   "key": "1d478cfd22d1f7c3",
   "ok": true
  },
+ "jumped": {
+  "detail": {
+   "dictionary": "ʤˈʌmpt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Jumped a",
+    "whisper": "jumped"
+   },
+   "phonemes": "ʤˈʌmpt",
+   "score": 1,
+   "seconds": 1.11,
+   "source": "silver",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "77012272b3fa4595",
+  "ok": true
+ },
  "key": {
   "detail": {
    "dictionary": "kˈiː",
@@ -1046,7 +1910,25 @@
    "speed": 0.85,
    "voice": "bf_emma"
   },
-  "key": "c636395306b2f2b0",
+  "key": "9512884be51c5b9d",
+  "ok": true
+ },
+ "knife": {
+  "detail": {
+   "dictionary": "nˈIf",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Knife",
+    "whisper": "Knife"
+   },
+   "phonemes": "nˈIf",
+   "score": 2,
+   "seconds": 1.13,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "bf789053f329d8d1",
   "ok": true
  },
  "landed": {
@@ -1067,6 +1949,24 @@
   "key": "2c853ab543db1713",
   "ok": true
  },
+ "late": {
+  "detail": {
+   "dictionary": "lˈAt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Late.",
+    "whisper": "late"
+   },
+   "phonemes": "lˈAt",
+   "score": 2,
+   "seconds": 1.05,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "00bab9739e376038",
+  "ok": true
+ },
  "law": {
   "detail": {
    "dictionary": "lˈɔː",
@@ -1082,7 +1982,25 @@
    "speed": 0.85,
    "voice": "bf_emma"
   },
-  "key": "913b9bf6a15fc3b9",
+  "key": "67b7dda19244cee0",
+  "ok": true
+ },
+ "leg": {
+  "detail": {
+   "dictionary": "lˈɛɡ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Leg",
+    "whisper": "leg"
+   },
+   "phonemes": "lˈɛɡ",
+   "score": 2,
+   "seconds": 1.11,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "809b603940365cf1",
   "ok": true
  },
  "lemon": {
@@ -1119,6 +2037,24 @@
    "voice": "bf_emma"
   },
   "key": "fdfb366a9eb5f65f",
+  "ok": true
+ },
+ "let": {
+  "detail": {
+   "dictionary": "lˈɛt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Let",
+    "whisper": "let"
+   },
+   "phonemes": "lˈɛt",
+   "score": 2,
+   "seconds": 1.08,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "3531e6a0b1befced",
   "ok": true
  },
  "limit": {
@@ -1190,7 +2126,25 @@
    "speed": 1.0,
    "voice": "bf_emma"
   },
-  "key": "6631118e4eeb0769",
+  "key": "09bdb7f576a3fc1b",
+  "ok": true
+ },
+ "man": {
+  "detail": {
+   "dictionary": "mˈan",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Man",
+    "whisper": "man-sy"
+   },
+   "phonemes": "mˈan",
+   "score": 1,
+   "seconds": 1.23,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_isabella"
+  },
+  "key": "8c6558af76b8d52a",
   "ok": true
  },
  "market": {
@@ -1226,7 +2180,7 @@
    "speed": 1.0,
    "voice": "bf_emma"
   },
-  "key": "e0f44d27ff703379",
+  "key": "9d0b40341fe8c9a6",
   "ok": true
  },
  "mission": {
@@ -1244,7 +2198,7 @@
    "speed": 0.85,
    "voice": "bf_isabella"
   },
-  "key": "ab3786eab1e38d14",
+  "key": "95567c8d3ffe57e4",
   "ok": true
  },
  "mud": {
@@ -1265,6 +2219,42 @@
   "key": "389f2a5ca7f29bd3",
   "ok": true
  },
+ "musician": {
+  "detail": {
+   "dictionary": "mjuːzˈɪʃᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A musician",
+    "whisper": "A musician."
+   },
+   "phonemes": "mjuːzˈɪʃᵊn",
+   "score": 2,
+   "seconds": 1.4,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "fb387712cd1e9be1",
+  "ok": true
+ },
+ "my": {
+  "detail": {
+   "dictionary": "mI",
+   "ending": ".",
+   "heard": {
+    "parakeet": "My",
+    "whisper": "My"
+   },
+   "phonemes": "mI",
+   "score": 2,
+   "seconds": 1.14,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "7986f85216dc27b2",
+  "ok": true
+ },
  "nation": {
   "detail": {
    "dictionary": "nˈAʃᵊn",
@@ -1281,6 +2271,96 @@
    "voice": "bf_emma"
   },
   "key": "f7f33d84ae45dbc9",
+  "ok": true
+ },
+ "near": {
+  "detail": {
+   "dictionary": "nˌɪə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Near",
+    "whisper": "near"
+   },
+   "phonemes": "nˌɪə",
+   "score": 2,
+   "seconds": 1.23,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_lily"
+  },
+  "key": "ee15cafd499abdee",
+  "ok": true
+ },
+ "needed": {
+  "detail": {
+   "dictionary": "nˈiːdɪd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Needed.",
+    "whisper": "needed"
+   },
+   "phonemes": "nˈiːdɪd",
+   "score": 2,
+   "seconds": 1.19,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "08424402fc7081f5",
+  "ok": true
+ },
+ "now": {
+  "detail": {
+   "dictionary": "nˈW",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Now",
+    "whisper": "Now"
+   },
+   "phonemes": "nˈW",
+   "score": 2,
+   "seconds": 1.1,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "549665eca971f83e",
+  "ok": true
+ },
+ "object-noun": {
+  "detail": {
+   "dictionary": "ˈɒbʤɛkt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Object",
+    "whisper": "Object"
+   },
+   "phonemes": "ˈɒbʤɛkt",
+   "score": 2,
+   "seconds": 1.2,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "198917e3b74f3d60",
+  "ok": true
+ },
+ "object-verb": {
+  "detail": {
+   "dictionary": "əbʤˈɛkt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Object",
+    "whisper": "object"
+   },
+   "phonemes": "əbʤˈɛkt",
+   "score": 2,
+   "seconds": 1.23,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "835535dedff2126c",
   "ok": true
  },
  "open": {
@@ -1301,6 +2381,60 @@
   "key": "bac7cfc4bf2cab6b",
   "ok": true
  },
+ "paid": {
+  "detail": {
+   "dictionary": "pˈAd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Paid",
+    "whisper": "paid"
+   },
+   "phonemes": "pˈAd",
+   "score": 2,
+   "seconds": 1.04,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "36648d750e008a02",
+  "ok": true
+ },
+ "pain": {
+  "detail": {
+   "dictionary": "pˈAn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Pain.",
+    "whisper": "pain"
+   },
+   "phonemes": "pˈAn",
+   "score": 2,
+   "seconds": 1.23,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "906ccc2c30a8c006",
+  "ok": true
+ },
+ "pen": {
+  "detail": {
+   "dictionary": "pˈɛn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Pen",
+    "whisper": "pen"
+   },
+   "phonemes": "pˈɛn",
+   "score": 2,
+   "seconds": 1.15,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "dfbb380a6c741441",
+  "ok": true
+ },
  "pencil": {
   "detail": {
    "dictionary": "pˈɛnsᵊl",
@@ -1316,7 +2450,7 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "bdd8daeba11a95ed",
+  "key": "a6662272dbb4bd05",
   "ok": true
  },
  "photo": {
@@ -1373,6 +2507,97 @@
   "key": "1787890b3295b254",
   "ok": true
  },
+ "pig": {
+  "detail": {
+   "check": "after 'The word is'",
+   "dictionary": "pˈɪɡ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "The word is pig.",
+    "whisper": "The word is pig."
+   },
+   "phonemes": "pˈɪɡ",
+   "score": 2,
+   "seconds": 1.24,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "8b497c1e7fb40063",
+  "ok": true
+ },
+ "played": {
+  "detail": {
+   "dictionary": "plˈAd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A played.",
+    "whisper": "A played"
+   },
+   "phonemes": "plˈAd",
+   "score": 2,
+   "seconds": 1.08,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "74ff00a8a92d429b",
+  "ok": true
+ },
+ "pleasure": {
+  "detail": {
+   "dictionary": "plˈɛʒə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A pleasure.",
+    "whisper": "A pleasure"
+   },
+   "phonemes": "plˈɛʒə",
+   "score": 2,
+   "seconds": 1.48,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "6b52b7c7f28221df",
+  "ok": true
+ },
+ "political": {
+  "detail": {
+   "dictionary": "pəlˈɪtɪkᵊl",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Political",
+    "whisper": "A political"
+   },
+   "phonemes": "pəlˈɪtɪkᵊl",
+   "score": 2,
+   "seconds": 1.39,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "8e070d42ff187503",
+  "ok": true
+ },
+ "politician": {
+  "detail": {
+   "dictionary": "pˌɒlɪtˈɪʃᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Politician",
+    "whisper": "politician"
+   },
+   "phonemes": "pˌɒlɪtˈɪʃᵊn",
+   "score": 2,
+   "seconds": 1.47,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "f766c9f074d2eca7",
+  "ok": true
+ },
  "politics": {
   "detail": {
    "dictionary": "pˈɒlɪtɪks",
@@ -1389,6 +2614,97 @@
    "voice": "bf_emma"
   },
   "key": "c0da30cc5b23cbdb",
+  "ok": true
+ },
+ "pool": {
+  "detail": {
+   "dictionary": "pˈuːl",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Poole",
+    "whisper": "pool"
+   },
+   "phonemes": "pˈuːl",
+   "score": 1,
+   "seconds": 1.22,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "373f4a231887d886",
+  "ok": true
+ },
+ "port": {
+  "detail": {
+   "dictionary": "pˈɔːt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Part",
+    "whisper": "Port"
+   },
+   "phonemes": "pˈɔːt",
+   "score": 1,
+   "seconds": 1.08,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "e6264d5ababf694e",
+  "ok": true
+ },
+ "pot": {
+  "detail": {
+   "check": "after 'The word is'",
+   "dictionary": "pˈɒt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "The word is put.",
+    "whisper": "The word is pot."
+   },
+   "phonemes": "pˈɒt",
+   "score": 1,
+   "seconds": 1.19,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "70268d3ee722892b",
+  "ok": true
+ },
+ "present-noun": {
+  "detail": {
+   "dictionary": "pɹˈɛzᵊnt",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Present",
+    "whisper": "present"
+   },
+   "phonemes": "pɹˈɛzᵊnt",
+   "score": 2,
+   "seconds": 1.64,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "36598a16dc41b9f5",
+  "ok": true
+ },
+ "present-verb": {
+  "detail": {
+   "dictionary": "pɹɪzˈɛnt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "present",
+    "whisper": "Present"
+   },
+   "phonemes": "pɹɪzˈɛnt",
+   "score": 2,
+   "seconds": 1.23,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "49d30456b639b572",
   "ok": true
  },
  "pressure": {
@@ -1409,6 +2725,151 @@
   "key": "bf3c0bb1aaa1b8b3",
   "ok": true
  },
+ "price": {
+  "detail": {
+   "dictionary": "pɹˈIs",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Price",
+    "whisper": "price"
+   },
+   "phonemes": "pɹˈIs",
+   "score": 2,
+   "seconds": 1.03,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "d7b6c62297ecaf24",
+  "ok": true
+ },
+ "principal": {
+  "detail": {
+   "dictionary": "pɹˈɪnsɪpᵊl",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Principal",
+    "whisper": "Principal"
+   },
+   "phonemes": "pɹˈɪnsɪpᵊl",
+   "score": 2,
+   "seconds": 1.74,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "67be181177ef03ea",
+  "ok": true
+ },
+ "prize": {
+  "detail": {
+   "dictionary": "pɹˈIz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Prize",
+    "whisper": "prize"
+   },
+   "phonemes": "pɹˈIz",
+   "score": 2,
+   "seconds": 1.14,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "cbc36e2550d6433e",
+  "ok": true
+ },
+ "psychology": {
+  "detail": {
+   "dictionary": "sIkˈɒləʤi",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Psychology",
+    "whisper": "Psychology"
+   },
+   "phonemes": "sIkˈɒləʤi",
+   "score": 2,
+   "seconds": 1.32,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "21abe5259c078ec6",
+  "ok": true
+ },
+ "pull": {
+  "detail": {
+   "check": "after 'The word is'",
+   "dictionary": "pˈʊl",
+   "ending": ".",
+   "heard": {
+    "parakeet": "The word is pull.",
+    "whisper": "The word is puddle."
+   },
+   "phonemes": "pˈʊl",
+   "score": 1,
+   "seconds": 1.03,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "3d1b6f5317edac70",
+  "ok": true
+ },
+ "put": {
+  "detail": {
+   "dictionary": "pˌʊt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "But",
+    "whisper": "Put"
+   },
+   "phonemes": "pˌʊt",
+   "score": 1,
+   "seconds": 1.16,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "d97952b57aac0dca",
+  "ok": true
+ },
+ "raid": {
+  "detail": {
+   "dictionary": "ɹˈAd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Raid.",
+    "whisper": "Raid"
+   },
+   "phonemes": "ɹˈAd",
+   "score": 2,
+   "seconds": 1.09,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "570b35da6ffc5270",
+  "ok": true
+ },
+ "rained": {
+  "detail": {
+   "dictionary": "ɹˈAnd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Rained.",
+    "whisper": "rained"
+   },
+   "phonemes": "ɹˈAnd",
+   "score": 2,
+   "seconds": 1.5,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "86dc29a9d8f35e55",
+  "ok": true
+ },
  "record-noun": {
   "detail": {
    "dictionary": "ɹˈɛkɔːd",
@@ -1424,7 +2885,7 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "ad2997227e7428c2",
+  "key": "27421429b415ef24",
   "ok": true
  },
  "record-verb": {
@@ -1442,7 +2903,25 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "3bc0b66b4cfae1e7",
+  "key": "a4a1a7914bae0c42",
+  "ok": true
+ },
+ "red": {
+  "detail": {
+   "dictionary": "ɹˈɛd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Red",
+    "whisper": "red"
+   },
+   "phonemes": "ɹˈɛd",
+   "score": 2,
+   "seconds": 1.11,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "49ded96f6775cc9e",
   "ok": true
  },
  "road": {
@@ -1481,6 +2960,24 @@
   "key": "be40a97785db713c",
   "ok": true
  },
+ "roses": {
+  "detail": {
+   "dictionary": "ɹˈQzɪz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Roses",
+    "whisper": "roses"
+   },
+   "phonemes": "ɹˈQzɪz",
+   "score": 2,
+   "seconds": 1.75,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "9ed2e3b8eff1bbed",
+  "ok": true
+ },
  "said": {
   "detail": {
    "dictionary": "sˈɛd",
@@ -1496,7 +2993,61 @@
    "speed": 1.0,
    "voice": "bf_emma"
   },
-  "key": "a100fbed48d591b0",
+  "key": "60345bc7c4c2dfe7",
+  "ok": true
+ },
+ "scientific": {
+  "detail": {
+   "dictionary": "sˌIəntˈɪfɪk",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Scientific",
+    "whisper": "scientific"
+   },
+   "phonemes": "sˌIəntˈɪfɪk",
+   "score": 2,
+   "seconds": 1.46,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "ca2f808e86cc5f98",
+  "ok": true
+ },
+ "seat": {
+  "detail": {
+   "dictionary": "sˈiːt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A seat.",
+    "whisper": "a seat"
+   },
+   "phonemes": "sˈiːt",
+   "score": 2,
+   "seconds": 1.06,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "c6cff2a6d9afc4f0",
+  "ok": true
+ },
+ "seed": {
+  "detail": {
+   "dictionary": "sˈiːd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Seed.",
+    "whisper": "Seed"
+   },
+   "phonemes": "sˈiːd",
+   "score": 2,
+   "seconds": 1.36,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "e457db0f636ee922",
   "ok": true
  },
  "seize": {
@@ -1517,6 +3068,24 @@
   "key": "c588d78074dcc98a",
   "ok": true
  },
+ "share": {
+  "detail": {
+   "dictionary": "ʃˈɛː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Cheryl",
+    "whisper": "share"
+   },
+   "phonemes": "ʃˈɛː",
+   "score": 1,
+   "seconds": 1.21,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_lily"
+  },
+  "key": "4928678e78bc63ff",
+  "ok": true
+ },
  "sheep": {
   "detail": {
    "dictionary": "ʃˈiːp",
@@ -1532,7 +3101,25 @@
    "speed": 0.85,
    "voice": "bf_emma"
   },
-  "key": "aa0d8c97cf44734e",
+  "key": "0fd2fbb82482ae01",
+  "ok": true
+ },
+ "ship": {
+  "detail": {
+   "dictionary": "ʃˈɪp",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A ship.",
+    "whisper": "A ship."
+   },
+   "phonemes": "ʃˈɪp",
+   "score": 2,
+   "seconds": 1.15,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "96821a37f132cc2f",
   "ok": true
  },
  "shoe": {
@@ -1550,7 +3137,7 @@
    "speed": 1.0,
    "voice": "bf_emma"
   },
-  "key": "4500efb4deaac10a",
+  "key": "242d783671aefcec",
   "ok": true
  },
  "shop": {
@@ -1569,6 +3156,78 @@
    "voice": "bf_emma"
   },
   "key": "b163ce55ec333ed1",
+  "ok": true
+ },
+ "sign": {
+  "detail": {
+   "dictionary": "sˈIn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Sign",
+    "whisper": "sign"
+   },
+   "phonemes": "sˈIn",
+   "score": 2,
+   "seconds": 1.0,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "3aef4614dedb866f",
+  "ok": true
+ },
+ "sing": {
+  "detail": {
+   "dictionary": "sˈɪŋ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Sing",
+    "whisper": "A sing."
+   },
+   "phonemes": "sˈɪŋ",
+   "score": 2,
+   "seconds": 1.04,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "c319d80fe987bd57",
+  "ok": true
+ },
+ "sit": {
+  "detail": {
+   "dictionary": "sˈɪt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "That's it.",
+    "whisper": "Sit"
+   },
+   "phonemes": "sˈɪt",
+   "score": 1,
+   "seconds": 0.96,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "b9836ad9940c3fcc",
+  "ok": true
+ },
+ "stopped": {
+  "detail": {
+   "dictionary": "stˈɒpt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "They stopped.",
+    "whisper": "Stopped."
+   },
+   "phonemes": "stˈɒpt",
+   "score": 1,
+   "seconds": 1.04,
+   "source": "silver",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "23eacfea6f4dacdf",
   "ok": true
  },
  "street": {
@@ -1607,6 +3266,24 @@
   "key": "dc815e962c4f2dfc",
   "ok": true
  },
+ "sure": {
+  "detail": {
+   "dictionary": "ʃˈʊə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Sure.",
+    "whisper": "Sure"
+   },
+   "phonemes": "ʃˈʊə",
+   "score": 2,
+   "seconds": 0.93,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "72fdea50a4906659",
+  "ok": true
+ },
  "table": {
   "detail": {
    "dictionary": "tˈAbᵊl",
@@ -1622,7 +3299,25 @@
    "speed": 1.0,
    "voice": "bf_emma"
   },
-  "key": "95b088fceb655094",
+  "key": "ed9581fa523ea49a",
+  "ok": true
+ },
+ "teacher": {
+  "detail": {
+   "dictionary": "tˈiːʧə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A teacher",
+    "whisper": "A teacher"
+   },
+   "phonemes": "tˈiːʧə",
+   "score": 2,
+   "seconds": 1.19,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "7312ab176945b431",
   "ok": true
  },
  "television": {
@@ -1640,7 +3335,61 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "736fdd86e88be094",
+  "key": "1b458e6fd8a27ffe",
+  "ok": true
+ },
+ "test": {
+  "detail": {
+   "dictionary": "tˈɛst",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Test.",
+    "whisper": "Test"
+   },
+   "phonemes": "tˈɛst",
+   "score": 2,
+   "seconds": 1.09,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "2e69dfda73f24dfa",
+  "ok": true
+ },
+ "then": {
+  "detail": {
+   "dictionary": "ðˈɛn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Then",
+    "whisper": "then"
+   },
+   "phonemes": "ðˈɛn",
+   "score": 2,
+   "seconds": 1.23,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "0c96a34270945f2c",
+  "ok": true
+ },
+ "there": {
+  "detail": {
+   "dictionary": "ðɛː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "There.",
+    "whisper": "There."
+   },
+   "phonemes": "ðɛː",
+   "score": 2,
+   "seconds": 1.08,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "06afc8705188cc3a",
   "ok": true
  },
  "these": {
@@ -1661,6 +3410,24 @@
   "key": "f08ba4ba30cb6d8f",
   "ok": true
  },
+ "they": {
+  "detail": {
+   "dictionary": "ðA",
+   "ending": ".",
+   "heard": {
+    "parakeet": "They.",
+    "whisper": "They"
+   },
+   "phonemes": "ðA",
+   "score": 2,
+   "seconds": 1.02,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "ce8ffc6dd71c9780",
+  "ok": true
+ },
  "thick": {
   "detail": {
    "dictionary": "θˈɪk",
@@ -1679,6 +3446,24 @@
   "key": "12534c5d50f37694",
   "ok": true
  },
+ "thin": {
+  "detail": {
+   "dictionary": "θˈɪn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Thin",
+    "whisper": "thin"
+   },
+   "phonemes": "θˈɪn",
+   "score": 2,
+   "seconds": 1.13,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "27900dc1b9ce3a44",
+  "ok": true
+ },
  "think": {
   "detail": {
    "dictionary": "θˈɪŋk",
@@ -1695,6 +3480,24 @@
    "voice": "bf_emma"
   },
   "key": "74947e6d2e68cf21",
+  "ok": true
+ },
+ "this": {
+  "detail": {
+   "dictionary": "ðɪs",
+   "ending": ".",
+   "heard": {
+    "parakeet": "This",
+    "whisper": "this"
+   },
+   "phonemes": "ðɪs",
+   "score": 2,
+   "seconds": 1.15,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "b9bf315d22eab138",
   "ok": true
  },
  "thomas": {
@@ -1733,6 +3536,150 @@
   "key": "ef777aaed68ae337",
   "ok": true
  },
+ "three": {
+  "detail": {
+   "dictionary": "θɹˈiː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A three.",
+    "whisper": "A three"
+   },
+   "phonemes": "θɹˈiː",
+   "score": 2,
+   "seconds": 1.06,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "10f9fea2d9a69d5b",
+  "ok": true
+ },
+ "time": {
+  "detail": {
+   "dictionary": "tˈIm",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Time.",
+    "whisper": "Time."
+   },
+   "phonemes": "tˈIm",
+   "score": 2,
+   "seconds": 1.06,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "0240d63226e3328c",
+  "ok": true
+ },
+ "tin": {
+  "detail": {
+   "dictionary": "tˈɪn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Tin.",
+    "whisper": "Tin"
+   },
+   "phonemes": "tˈɪn",
+   "score": 2,
+   "seconds": 1.21,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "293c6b2a0b548d31",
+  "ok": true
+ },
+ "tour": {
+  "detail": {
+   "dictionary": "tˈʊə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Tour",
+    "whisper": "The tour"
+   },
+   "phonemes": "tˈʊə",
+   "score": 1,
+   "seconds": 0.98,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "e267093db9321183",
+  "ok": true
+ },
+ "town": {
+  "detail": {
+   "dictionary": "tˈWn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Town",
+    "whisper": "TOWN"
+   },
+   "phonemes": "tˈWn",
+   "score": 2,
+   "seconds": 1.03,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "b2852dfd71693912",
+  "ok": true
+ },
+ "tree": {
+  "detail": {
+   "dictionary": "tɹˈiː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Tree",
+    "whisper": "tree"
+   },
+   "phonemes": "tɹˈiː",
+   "score": 2,
+   "seconds": 1.2,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_isabella"
+  },
+  "key": "338cbde43e3e362e",
+  "ok": true
+ },
+ "university": {
+  "detail": {
+   "dictionary": "jˌuːnɪvˈɜːsɪti",
+   "ending": ".",
+   "heard": {
+    "parakeet": "University",
+    "whisper": "University"
+   },
+   "phonemes": "jˌuːnɪvˈɜːsɪti",
+   "score": 2,
+   "seconds": 1.61,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "f0d5bad6e4df2746",
+  "ok": true
+ },
+ "van": {
+  "detail": {
+   "dictionary": "vˈan",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Then",
+    "whisper": "Van"
+   },
+   "phonemes": "vˈan",
+   "score": 1,
+   "seconds": 0.96,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "06e8ae6e9f84b4a1",
+  "ok": true
+ },
  "village": {
   "detail": {
    "dictionary": "vˈɪlɪʤ",
@@ -1751,6 +3698,24 @@
   "key": "5fa3faceab40ce72",
   "ok": true
  },
+ "vision": {
+  "detail": {
+   "dictionary": "vˈɪʒᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Vision",
+    "whisper": "Vision"
+   },
+   "phonemes": "vˈɪʒᵊn",
+   "score": 2,
+   "seconds": 1.6,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "7a625bb626576858",
+  "ok": true
+ },
  "volunteer": {
   "detail": {
    "dictionary": "vˌɒləntˈɪə",
@@ -1766,7 +3731,61 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "d0b9d6849ddd2221",
+  "key": "6ed833670d29c43a",
+  "ok": true
+ },
+ "waited": {
+  "detail": {
+   "dictionary": "wˈAtɪd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Waited.",
+    "whisper": "Waited"
+   },
+   "phonemes": "wˈAtɪd",
+   "score": 2,
+   "seconds": 1.21,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "3d7f21cebcae546b",
+  "ok": true
+ },
+ "walked": {
+  "detail": {
+   "dictionary": "wˈɔːkt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Walked.",
+    "whisper": "We worked."
+   },
+   "phonemes": "wˈɔːkt",
+   "score": 1,
+   "seconds": 1.15,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "731c26d38fa89f95",
+  "ok": true
+ },
+ "wanted": {
+  "detail": {
+   "dictionary": "wˈɒntɪd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Wanted.",
+    "whisper": "Wanted"
+   },
+   "phonemes": "wˈɒntɪd",
+   "score": 2,
+   "seconds": 1.58,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "8ebc993bfaa8d4c5",
   "ok": true
  },
  "ward": {
@@ -1784,7 +3803,43 @@
    "speed": 0.9,
    "voice": "bf_lily"
   },
-  "key": "8b7855d4f72aeeb1",
+  "key": "e33e3a059733a26b",
+  "ok": true
+ },
+ "wash": {
+  "detail": {
+   "dictionary": "wˈɒʃ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Wash.",
+    "whisper": "WASH"
+   },
+   "phonemes": "wˈɒʃ",
+   "score": 2,
+   "seconds": 1.25,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "c6a4f1e3d2d249bd",
+  "ok": true
+ },
+ "washed": {
+  "detail": {
+   "dictionary": "wˈɒʃt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Washed.",
+    "whisper": "Washed."
+   },
+   "phonemes": "wˈɒʃt",
+   "score": 2,
+   "seconds": 1.06,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "71011c659aaec089",
   "ok": true
  },
  "wear": {
@@ -1803,6 +3858,24 @@
    "voice": "bf_lily"
   },
   "key": "3e8bf4545861124b",
+  "ok": true
+ },
+ "wet": {
+  "detail": {
+   "dictionary": "wˈɛt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Wet",
+    "whisper": "Wet"
+   },
+   "phonemes": "wˈɛt",
+   "score": 2,
+   "seconds": 1.07,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "e55c97ab4e6be057",
   "ok": true
  },
  "wood": {
@@ -1838,7 +3911,61 @@
    "speed": 0.9,
    "voice": "bf_emma"
   },
-  "key": "4ca5ab478fabacc6",
+  "key": "cb41977cde51bd05",
+  "ok": true
+ },
+ "write": {
+  "detail": {
+   "dictionary": "ɹˈIt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Right.",
+    "whisper": "Write"
+   },
+   "phonemes": "ɹˈIt",
+   "score": 1,
+   "seconds": 1.04,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_isabella"
+  },
+  "key": "674e1a9bdb7ec172",
+  "ok": true
+ },
+ "yellow": {
+  "detail": {
+   "dictionary": "jˈɛlQ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Yellow.",
+    "whisper": "yellow"
+   },
+   "phonemes": "jˈɛlQ",
+   "score": 2,
+   "seconds": 1.48,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "00512ca5ef8683fd",
+  "ok": true
+ },
+ "yes": {
+  "detail": {
+   "dictionary": "jˈɛs",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Yes.",
+    "whisper": "Yes."
+   },
+   "phonemes": "jˈɛs",
+   "score": 2,
+   "seconds": 1.04,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "04106ec58d9c11f5",
   "ok": true
  }
 }
