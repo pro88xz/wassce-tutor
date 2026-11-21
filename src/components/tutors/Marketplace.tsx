@@ -21,6 +21,8 @@ import { supabase } from '@/lib/supabase'
 import { monthlyFee } from '@/lib/tutors'
 import { lessonsText, nle } from '@/lib/tutor-pricing'
 import { TUTOR_COLUMNS, displayName, tutorPagePath } from '@/lib/tutor-profile'
+import { shortSubject } from '@/lib/tutor-seo'
+import { TUTOR_HUB_HOW } from '@/lib/public-rules'
 import { byName, initials, photoUrl } from './tutor-display'
 import { VerifiedBadge } from './VerifiedBadge'
 import { useTutorBooking } from './use-tutor-booking'
@@ -54,6 +56,16 @@ const lowestFee = (t: Tutor, subjectId?: string) => {
   const fees = t.tutor_subjects.filter((r) => !subjectId || r.subject_id === subjectId).map((r) => Number(r.price_nle)).filter((n) => n > 0)
   return fees.length ? Math.min(...fees) : null
 }
+/** A bio cut at a word near `max` characters, with an ellipsis when cut. */
+function bioPreview(bio: string, max = 150): string {
+  const text = bio.trim().replace(/\s+/g, ' ')
+  if (text.length <= max) return text
+  const cut = text.slice(0, max)
+  return `${cut.slice(0, cut.lastIndexOf(' ') > 80 ? cut.lastIndexOf(' ') : max).replace(/[,;:.\s]+$/, '')}…`
+}
+
+/** How many tutors a list needs before search and sort are shown. */
+const SEARCH_FROM = 4
 const SORTS: [Sort, string][] = [
   ['newest', 'Newest'],
   ['fee', 'Lowest fee'],
@@ -62,9 +74,21 @@ const SORTS: [Sort, string][] = [
 
 
 
-export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: string; subjectName?: string }) {
-  const [tutors, setTutors] = useState<Tutor[]>([])
-  const [loading, setLoading] = useState(true)
+export function TutorMarketplace({
+  subjectId,
+  subjectName,
+  initialTutors,
+  emptyState = true,
+}: {
+  subjectId?: string
+  subjectName?: string
+  /** Show the "no tutors yet" panel when the list is empty (a subject's page says so itself, with the request form beside it). */
+  emptyState?: boolean
+  /** Tutors the page was built with (a subject's page), so its cards are in the HTML from the start; the list is still refreshed here. */
+  initialTutors?: Tutor[]
+}) {
+  const [tutors, setTutors] = useState<Tutor[]>(initialTutors ?? [])
+  const [loading, setLoading] = useState(!initialTutors)
   // ?area= lets a link open the marketplace already searching an area.
   const [query, setQuery] = useState(() => (typeof window === 'undefined' ? '' : (new URLSearchParams(window.location.search).get('area') ?? '').slice(0, 60)))
   const [subjectFilter, setSubjectFilter] = useState(subjectId ?? 'all')
@@ -140,7 +164,7 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
     )
   }
 
-  if (pool.length === 0) return <NoTutorsYet subjectName={subjectName} />
+  if (pool.length === 0) return emptyState ? <NoTutorsYet subjectName={subjectName} /> : null
 
   const count = visible.length
   return (
@@ -153,9 +177,17 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
             <span className="site-accent text-[var(--primary)]">ready to teach.</span>
           </h2>
           <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
-            Each tutor sets their own monthly fee. See the price for your subjects before you message them on WhatsApp.
+            {subjectName ? (
+              <a href={TUTOR_HUB_HOW} className="site-link">
+                How booking a {shortSubject(subjectName)} tutor works
+              </a>
+            ) : (
+              'Each tutor sets their own monthly fee. See the price for your subjects before you message them on WhatsApp.'
+            )}
           </p>
         </div>
+        {/* Searching and sorting help once there are a few tutors to choose between. */}
+        {pool.length >= SEARCH_FROM && (
         <div className="grid w-full grid-cols-[minmax(0,1fr)_auto] gap-2 sm:w-auto sm:grid-cols-[17rem_auto]">
           <label className="relative">
             <span className="sr-only">Search by name or area</span>
@@ -187,6 +219,7 @@ export function TutorMarketplace({ subjectId, subjectName }: { subjectId?: strin
             </select>
           </label>
         </div>
+        )}
       </div>
 
       {!subjectId && taught.length > 1 && (
@@ -266,12 +299,25 @@ function NoTutorsYet({ subjectName }: { subjectName?: string }) {
             </span>
             The marketplace
           </p>
-          <h2 id="tutors-list" className="site-h2 mt-4">
-            {subjectName ? `${subjectName} tutors are` : 'Tutors are'} <span className="site-accent text-[var(--primary)]">joining now.</span>
-          </h2>
-          <p className="mt-4 max-w-lg text-[16px] leading-relaxed text-muted-foreground">
-            New tutors appear here as soon as they join. Until there is one near you, tell us your subject and area and we will find you a tutor for in-person lessons.
-          </p>
+          {subjectName ? (
+            <>
+              <h2 id="tutors-list" className="site-h2 mt-4">
+                No {subjectName} tutor <span className="site-accent text-[var(--primary)]">listed yet.</span>
+              </h2>
+              <p className="mt-4 max-w-lg text-[16px] leading-relaxed text-muted-foreground">
+                The first {shortSubject(subjectName)} tutor to join appears here, with their town and {shortSubject(subjectName)} fee. Meanwhile, ask us below.
+              </p>
+            </>
+          ) : (
+            <>
+              <h2 id="tutors-list" className="site-h2 mt-4">
+                Tutors are <span className="site-accent text-[var(--primary)]">joining now.</span>
+              </h2>
+              <p className="mt-4 max-w-lg text-[16px] leading-relaxed text-muted-foreground">
+                New tutors appear here as soon as they join. Until there is one near you, tell us your subject and area and we will find you a tutor for in-person lessons.
+              </p>
+            </>
+          )}
           <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3">
             <a href="#book" className="site-btn site-btn-lg site-btn-primary">
               Find me a tutor <ArrowRight className="h-4 w-4" aria-hidden />
@@ -397,7 +443,8 @@ export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc 
           <GraduationCap className="mt-0.5 h-4 w-4 shrink-0 text-[var(--primary)]" aria-hidden />
           <span className="line-clamp-1">{tutor.qualifications}</span>
         </p>
-        <p className="mt-2 line-clamp-2 text-[14.5px] leading-relaxed text-muted-foreground">{tutor.bio}</p>
+        {/* About as much of the bio as the two lines show; the whole of it is on the tutor's page. */}
+        <p className="mt-2 line-clamp-2 text-[14.5px] leading-relaxed text-muted-foreground">{bioPreview(tutor.bio)}</p>
         <OfferChips tutor={tutor} />
         <ul className="mt-4 divide-y divide-border overflow-hidden rounded-xl border border-border" aria-label="Subjects and monthly fees">
           {rates.slice(0, shown).map((r) => (

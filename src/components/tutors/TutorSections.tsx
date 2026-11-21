@@ -31,10 +31,13 @@ export function TutorHowItWorks() {
   )
 }
 
-export function TutorFaq({ items = TUTOR_FAQ }: { items?: [string, string][] }) {
+export function TutorFaq({ items = TUTOR_FAQ, topic, more }: { items?: [string, string][]; /** e.g. "Chemistry", for a subject's page */ topic?: string; /** A link to more answers elsewhere */ more?: { href: string; label: string } }) {
   return (
     <section className="tutor-faq-section space-y-4" aria-labelledby="tutor-faq">
-      <div className="tutor-section-heading"><div><p className="tutor-booking-eyebrow"><span /> BEFORE YOU REQUEST</p><h2 id="tutor-faq">Questions about <em>tutoring.</em></h2></div></div>
+      <div className="tutor-section-heading">
+        <div><p className="tutor-booking-eyebrow"><span /> BEFORE YOU REQUEST</p><h2 id="tutor-faq">Questions about {topic ? `${topic} ` : ''}<em>tutoring.</em></h2></div>
+        {more && <p><a href={more.href} className="site-link">{more.label}</a></p>}
+      </div>
       <div className="tutor-faq-grid">
         {items.map(([q, a], i) => (
           <details key={q} className="tutor-faq-item">
@@ -71,21 +74,36 @@ export function TutorSubjectGrid({ subjects, exclude }: { subjects: SubjectSumma
   )
 }
 
-/** For teachers reading the marketplace: join in three steps. */
-export function TutorJoinBand({ subjectName }: { subjectName?: string }) {
+/** For teachers reading the marketplace: join in three steps. On a subject's page, how many teach it so far. */
+export function TutorJoinBand({ subjectName, tutorCount }: { subjectName?: string; tutorCount?: number }) {
   const auto = useTutorAutoApprove()
+  const subjectPage = subjectName !== undefined && tutorCount !== undefined
   return (
     <section className="relative isolate overflow-hidden rounded-[2rem] bg-[var(--site-ink)] px-6 py-10 text-white sm:px-12 sm:py-14" aria-labelledby="join-heading">
       <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(40rem_22rem_at_100%_0%,rgba(124,92,255,.42),transparent_70%),radial-gradient(28rem_18rem_at_0%_120%,rgba(255,209,102,.16),transparent_70%)]" />
       <div className="grid grid-cols-[minmax(0,1fr)] items-center gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-12">
         <div>
           <p className="text-[12px] font-bold uppercase tracking-[.16em] text-[#cdbcff]">For teachers</p>
-          <h2 id="join-heading" className="site-h2 mt-3">
-            Teach {subjectName ?? 'WASSCE'}? <span className="site-accent text-[#cdbcff]">Students are looking.</span>
-          </h2>
-          <p className="mt-3 max-w-xl text-[16px] leading-relaxed text-white/72">
-            Make your tutor card in three steps and set your own monthly fee. {auto ? 'It goes live in the marketplace the moment you finish.' : 'Our team checks it, then it goes live.'}
-          </p>
+          {subjectPage ? (
+            <>
+              <h2 id="join-heading" className="site-h2 mt-3">
+                {tutorCount === 0 ? `No one teaches ${subjectName} here yet.` : `${tutorCount} ${subjectName} ${tutorCount === 1 ? 'tutor' : 'tutors'} so far.`}{' '}
+                <span className="site-accent text-[#cdbcff]">{tutorCount === 0 ? 'Could it be you?' : 'Add yours.'}</span>
+              </h2>
+              <p className="mt-3 max-w-xl text-[16px] leading-relaxed text-white/72">
+                Set your {shortSubject(subjectName)} fee; {auto ? 'your card goes live at once' : 'we check your card, then it goes live'}.
+              </p>
+            </>
+          ) : (
+            <>
+              <h2 id="join-heading" className="site-h2 mt-3">
+                Teach {subjectName ?? 'WASSCE'}? <span className="site-accent text-[#cdbcff]">Students are looking.</span>
+              </h2>
+              <p className="mt-3 max-w-xl text-[16px] leading-relaxed text-white/72">
+                Make your tutor card in three steps and set your own monthly fee. {auto ? 'It goes live in the marketplace the moment you finish.' : 'Our team checks it, then it goes live.'}
+              </p>
+            </>
+          )}
         </div>
         <a href="/become-a-tutor" className="site-btn site-btn-lg bg-white px-7 text-[var(--site-ink)] hover:bg-[#efeaff]">
           Become a tutor <ArrowRight className="h-4 w-4" aria-hidden />

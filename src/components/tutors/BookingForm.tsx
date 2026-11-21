@@ -7,11 +7,15 @@ import { Button } from '@/components/ui/button'
 const field = 'h-12 w-full rounded-xl border border-input bg-card px-3.5 text-[15px] outline-none focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary/30'
 const label = 'block text-sm font-semibold'
 
-/** The tutor request form. Saves the request, then hands it to WhatsApp to confirm. */
-export function BookingForm({ subjects, defaultSubject }: { subjects: string[]; defaultSubject?: string }) {
+/**
+ * The tutor request form. Saves the request, then hands it to WhatsApp to
+ * confirm. With `fixedSubject` (a subject's own page) the subject is set and
+ * shown instead of chosen, with a link to ask about another subject.
+ */
+export function BookingForm({ subjects = [], defaultSubject, fixedSubject }: { subjects?: string[]; defaultSubject?: string; fixedSubject?: { name: string; otherHref: string } }) {
   const { user } = useAuth()
   const [r, setR] = useState<TutorRequest>({
-    subject: defaultSubject ?? '',
+    subject: fixedSubject?.name ?? defaultSubject ?? '',
     level: 'SSS3',
     mode: 'home',
     town: '',
@@ -67,14 +71,25 @@ export function BookingForm({ subjects, defaultSubject }: { subjects: string[]; 
 
   return (
     <form onSubmit={submit} noValidate className="space-y-5">
-      <div className="space-y-1.5">
-        <label htmlFor="bt-subject" className={label}>Subject</label>
-        <select id="bt-subject" value={r.subject} onChange={(e) => set('subject', e.target.value)} className={field} aria-invalid={!!errors.subject} aria-describedby={errors.subject ? 'bt-subject-err' : undefined}>
-          <option value="">Choose a subject</option>
-          {subjects.map((s) => <option key={s} value={s}>{s}</option>)}
-        </select>
-        {errors.subject && <p id="bt-subject-err" className="text-sm text-danger">{errors.subject}</p>}
-      </div>
+      {fixedSubject ? (
+        <p className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 rounded-xl bg-muted/60 px-3.5 py-3 text-[15px]">
+          <span>
+            <span className="font-semibold">Subject:</span> {fixedSubject.name}
+          </span>
+          <a href={fixedSubject.otherHref} className="site-link text-sm">
+            Another subject?
+          </a>
+        </p>
+      ) : (
+        <div className="space-y-1.5">
+          <label htmlFor="bt-subject" className={label}>Subject</label>
+          <select id="bt-subject" value={r.subject} onChange={(e) => set('subject', e.target.value)} className={field} aria-invalid={!!errors.subject} aria-describedby={errors.subject ? 'bt-subject-err' : undefined}>
+            <option value="">Choose a subject</option>
+            {subjects.map((s) => <option key={s} value={s}>{s}</option>)}
+          </select>
+          {errors.subject && <p id="bt-subject-err" className="text-sm text-danger">{errors.subject}</p>}
+        </div>
+      )}
 
       <fieldset className="space-y-1.5">
         <legend className={label}>Class</legend>
@@ -115,7 +130,7 @@ export function BookingForm({ subjects, defaultSubject }: { subjects: string[]; 
       <div className="space-y-1.5">
         <label htmlFor="bt-msg" className={label}>What do you need help with? <span className="font-normal text-muted-foreground">(optional)</span></label>
         <textarea id="bt-msg" value={r.message} onChange={(e) => set('message', e.target.value)} rows={3} maxLength={1000}
-          placeholder="e.g. I keep losing marks on circle theorems and want to practise past questions."
+          placeholder={fixedSubject ? `e.g. the ${fixedSubject.name} topics I find hardest, and past questions` : 'e.g. I keep losing marks on circle theorems and want to practise past questions.'}
           className="w-full rounded-xl border border-input bg-card px-3.5 py-3 text-[15px] outline-none focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary/30" />
       </div>
 
