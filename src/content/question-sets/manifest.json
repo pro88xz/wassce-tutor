@@ -171,6 +171,27 @@
   "questions": 40
  },
  {
+  "name": "english_set6_p1",
+  "label": "English Language: set 6 (comprehension approach, essays, letters, speeches, reports and articles)",
+  "subject_slug": "english-language",
+  "version": "0a80395df3e6",
+  "papers": [
+   "d90d19b8-e865-59ca-bd4c-699f3ed502f6",
+   "679392a7-e556-5477-ad9e-371c22be6610",
+   "9f53dc51-eb5f-5b4d-8656-243a949e845d",
+   "1816f607-e6d2-53c1-8c32-de36a4ae67c2",
+   "ffa8d39d-afb7-5b09-a1f5-c62b4eec529a",
+   "a7b049ad-434d-534c-822e-a0bbffd75678",
+   "7a45ad59-38ee-5366-a74e-5b5255091b12",
+   "551a125d-0209-5ce8-9595-2f828c78a2fa",
+   "eddb79ce-a855-5d35-a0b8-56236a1f73e9",
+   "83437fe2-3c5a-5542-8d8a-2e9959e0066e",
+   "d400efdb-c5ad-5f63-a8ab-48ca075f408a",
+   "6addbf99-06d2-5821-b9cf-bec6259b7b8d"
+  ],
+  "questions": 84
+ },
+ {
   "name": "physics_set1_p1",
   "label": "Physics: set 1 (foundations and mechanics)",
   "subject_slug": "physics",

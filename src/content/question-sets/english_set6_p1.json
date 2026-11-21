@@ -1,0 +1,3320 @@
+{
+ "name": "english_set6_p1",
+ "label": "English Language: set 6 (comprehension approach, essays, letters, speeches, reports and articles)",
+ "subject_slug": "english-language",
+ "papers": [
+  {
+   "id": "d90d19b8-e865-59ca-bd4c-699f3ed502f6",
+   "topic": "Approaching a Comprehension Passage",
+   "title": "Approaching a Comprehension Passage: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on approaching a comprehension passage, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 150,
+   "questions": [
+    {
+     "id": "c3c326db-262f-53da-822e-72b638db3af8",
+     "key": "eng-ac-01",
+     "stem": "*What does the writer mean by \"the city never sleeps\"?* This is",
+     "image_url": null,
+     "explanation": "A figurative question asks you to explain an image or expression in plain words: here, that the city is busy and active day and night.\n\n**Why the other options are wrong**\n\n- a literal question: A literal question asks for a fact stated in the passage, such as *What…? Where…? When…?*\n- a grammatical question: A grammatical question asks for the name and function of a phrase or clause.\n- a vocabulary question: A vocabulary question asks for a word that could replace one in the passage.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7017ebff-9c12-5c1c-8435-f0f784928b4d",
+       "label": "A",
+       "content": "a figurative question",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1449509c-429c-5cfe-bf1b-eb8b61ba87a7",
+       "label": "B",
+       "content": "a literal question",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cfeca4cc-1e62-583e-85ad-fdb697581841",
+       "label": "C",
+       "content": "a grammatical question",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cccab2aa-3729-5395-9cfa-728ba91d29e3",
+       "label": "D",
+       "content": "a vocabulary question",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "24444169-a18f-581f-a03c-542d5b27cdfd",
+     "key": "eng-ac-02",
+     "stem": "Which is the best way to work through a comprehension test?",
+     "image_url": null,
+     "explanation": "Reading in stages works: first for the big picture, then the questions, then a slow hunt for each answer, marking the lines in the margin.\n\n**Why the other options are wrong**\n\n- Answer the questions first, then read the passage: Without reading the passage, the answers can only be guesses.\n- Read only the first paragraph, then answer all the questions: Answers may come from any part of the passage.\n- Read the questions and answer from general knowledge: Every answer must come from the passage, not from general knowledge.",
+     "position": 2,
+     "options": [
+      {
+       "id": "72f914d6-573a-5f23-ac2b-4319547e6c5d",
+       "label": "A",
+       "content": "Answer the questions first, then read the passage",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "db976752-4e7f-5ebb-aa35-aa2cc8975e38",
+       "label": "B",
+       "content": "Read the passage quickly for the main idea, read all the questions, then reread carefully to find each answer",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ebea0d6f-4932-508f-bb71-0c00725f2a4c",
+       "label": "C",
+       "content": "Read only the first paragraph, then answer all the questions",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3ca4cb86-ccb1-5767-b90d-097ac901e73f",
+       "label": "D",
+       "content": "Read the questions and answer from general knowledge",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef7e5884-53f8-5da5-a7cc-e830ffad1e5b",
+     "key": "eng-ac-03",
+     "stem": "A question asks: *Why do you think the old man refused the money?* The passage never says why directly. The candidate should",
+     "image_url": null,
+     "explanation": "This is an inferential question: the answer is suggested, not stated, so it must be built from details the passage gives.\n\n**Why the other options are wrong**\n\n- copy the sentence in which the money is mentioned: Copying the sentence does not give a reason; the question asks you to infer one.\n- give a personal opinion with no link to the passage: Inferences must be supported by the passage, not invented.\n- explain the meaning of the word *refused*: The question asks why, not what a word means.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8fbf099b-7bf6-538b-af84-1345be148638",
+       "label": "A",
+       "content": "copy the sentence in which the money is mentioned",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ed68f1dc-744e-5dc0-8510-463c6b426882",
+       "label": "B",
+       "content": "give a personal opinion with no link to the passage",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "25a0e1a9-4a88-5645-ab99-cf6362602b3c",
+       "label": "C",
+       "content": "work out the reason from clues in the passage",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9bba5b33-d460-5fb5-9798-855324eae36a",
+       "label": "D",
+       "content": "explain the meaning of the word *refused*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d343b3e1-71ff-53ef-996a-8173cf0b6384",
+     "key": "eng-ac-04",
+     "stem": "In a vocabulary question (*find another word or phrase that could replace … as used in the passage*), the replacement must",
+     "image_url": null,
+     "explanation": "Test your answer by putting it into the sentence: if it reads correctly and keeps the meaning, it is right. A noun must be replaced by a noun, a verb by a verb in the same form.\n\n**Why the other options are wrong**\n\n- be any word with a similar spelling: Spelling is irrelevant; meaning and word class are what matter.\n- mean the opposite of the word in the passage: The replacement must mean the same, not the opposite.\n- be a long explanation of the word: A replacement is a word or short phrase that could stand in the sentence.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d622ed68-4d27-5985-b286-183a7f5aa410",
+       "label": "A",
+       "content": "be any word with a similar spelling",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7d6153eb-28e9-51e4-ad93-84dc813c6a3b",
+       "label": "B",
+       "content": "mean the opposite of the word in the passage",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "832dedcc-dfcb-5c15-a5b7-ed83c2ccae2b",
+       "label": "C",
+       "content": "be a long explanation of the word",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eaee215b-d506-57c9-a5d8-0bba8b57c96d",
+       "label": "D",
+       "content": "fit the sentence in the passage, with the same meaning and the same word class",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d74a4a15-1592-5ab3-977e-d71693954fbf",
+     "key": "eng-ac-05",
+     "stem": "A question asks for two reasons. A candidate writes down four. What is the risk?",
+     "image_url": null,
+     "explanation": "Give exactly what is asked, clearly. Padding an answer with extra points wastes time and can lose marks.\n\n**Why the other options are wrong**\n\n- There is no risk: extra reasons always earn extra marks: Marks are given for the number of points asked, no more.\n- The examiner will choose the best two of the four: Examiners are not required to search for the best points.\n- The answer will be marked as a summary instead: It will still be marked as a comprehension answer.",
+     "position": 5,
+     "options": [
+      {
+       "id": "6ea6ff05-2293-5f50-a453-35ab21b526d8",
+       "label": "A",
+       "content": "The examiner may mark only the first two, and a wrong extra point can cost marks",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ca04c9e0-6480-55b9-aad5-ab81b769e20c",
+       "label": "B",
+       "content": "There is no risk: extra reasons always earn extra marks",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0b9a669d-d2e1-511d-a859-a93e90e693d2",
+       "label": "C",
+       "content": "The examiner will choose the best two of the four",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "44dbfd79-8534-5917-9ca7-a16e9d1716e2",
+       "label": "D",
+       "content": "The answer will be marked as a summary instead",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "99103279-afff-5379-bd89-2678b1dad418",
+     "key": "eng-ac-06",
+     "stem": "*How did the villagers cross the flooded river?* This question asks for",
+     "image_url": null,
+     "explanation": "Read the question word twice: *why* needs a reason, *how* a manner or means, *what does … mean* an explanation.\n\n**Why the other options are wrong**\n\n- the reason why they crossed: A reason answers *why*, not *how*.\n- the time when they crossed: A time answers *when*.\n- the place where they crossed: A place answers *where*.",
+     "position": 6,
+     "options": [
+      {
+       "id": "6577a311-5f6b-5c4f-a15b-c22aa14dc9ef",
+       "label": "A",
+       "content": "the reason why they crossed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ff893e6e-531e-5087-a088-29c1e4ace202",
+       "label": "B",
+       "content": "the way or means by which they crossed",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8595185c-8962-55ac-ae42-e97aeae56b2b",
+       "label": "C",
+       "content": "the time when they crossed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3d531ac4-887a-52e0-a18c-5b9aa4a2b9c8",
+       "label": "D",
+       "content": "the place where they crossed",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d5621fa5-d2d2-5fc1-8822-45b11ae6303d",
+     "key": "eng-ac-07",
+     "stem": "Every answer in a comprehension test should be based on",
+     "image_url": null,
+     "explanation": "Comprehension tests understanding of the given text. An answer that is true in real life but not in the passage scores nothing.\n\n**Why the other options are wrong**\n\n- what the candidate already knows about the topic: General knowledge can contradict the passage; the passage is the only source.\n- the candidate's personal opinion: Opinions are not asked for unless the question says so, and even then they must relate to the passage.\n- what other books say about the topic: Only the passage in front of you counts.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d5a118e8-6249-57cd-9ac1-1b506261623f",
+       "label": "A",
+       "content": "what the candidate already knows about the topic",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fc8e4503-b925-5af7-b111-6c7b8fca088e",
+       "label": "B",
+       "content": "the candidate's personal opinion",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fa5e60a3-2fdd-51f5-a8a3-a26ee8a9a265",
+       "label": "C",
+       "content": "what the passage says or suggests",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f060d8bf-6235-54cc-9187-3370f9051cc4",
+       "label": "D",
+       "content": "what other books say about the topic",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "679392a7-e556-5477-ad9e-371c22be6610",
+   "topic": "Essay Writing Fundamentals",
+   "title": "Essay Writing Fundamentals: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on essay writing fundamentals, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 151,
+   "questions": [
+    {
+     "id": "c576edf1-b4bb-5316-8ed9-24f08d0d0dea",
+     "key": "eng-ef-01",
+     "stem": "In the marking scheme for WASSCE essays taught in the lessons, which area carries the most marks?",
+     "image_url": null,
+     "explanation": "Expression (precise vocabulary, varied sentences, suitable register, fluency) is worth twice as much as each of the other areas, and it improves steadily with practice.\n\n**Why the other options are wrong**\n\n- Content (10 marks): Content carries 10 marks, half as many as expression.\n- Organisation (10 marks): Organisation carries 10 marks.\n- Mechanical accuracy (10 marks): Mechanical accuracy carries 10 marks.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4637c276-589b-5c28-b553-bf6075fb5730",
+       "label": "A",
+       "content": "Content (10 marks)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b6016e9f-be1b-51e0-ac81-c79f7bd52e3b",
+       "label": "B",
+       "content": "Organisation (10 marks)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ac5e634f-8a70-5be6-86a9-27eb1656b10a",
+       "label": "C",
+       "content": "Mechanical accuracy (10 marks)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bd372d72-7c51-514e-a706-304145b2bae1",
+       "label": "D",
+       "content": "Expression (20 marks)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8a61836e-18fa-5405-b929-1f4fd4fdd39f",
+     "key": "eng-ef-02",
+     "stem": "A good paragraph in an essay usually",
+     "image_url": null,
+     "explanation": "A paragraph is one idea, fully developed: usually four to seven sentences, explained and illustrated.\n\n**Why the other options are wrong**\n\n- is a single sentence: One-sentence paragraphs lose organisation marks; an idea needs to be developed.\n- covers every point of the essay at once: Several ideas crowded into one paragraph make the essay hard to follow.\n- begins with *In conclusion*: *In conclusion* belongs only in the last paragraph, if at all.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c0244814-932a-5d81-911a-dc825ac055f3",
+       "label": "A",
+       "content": "develops one main idea, introduced by a topic sentence",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "03631d2b-1341-54b2-adae-eda8e51d8691",
+       "label": "B",
+       "content": "is a single sentence",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e027b7be-b3da-5b44-b639-4dcd1f3aeefa",
+       "label": "C",
+       "content": "covers every point of the essay at once",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ef772d8b-4238-52c8-aa26-b1c59b464da2",
+       "label": "D",
+       "content": "begins with *In conclusion*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b41ec2f7-25eb-5e7c-9ed2-300bb29dd074",
+     "key": "eng-ef-03",
+     "stem": "In the TEEL method of building a paragraph, the letters stand for",
+     "image_url": null,
+     "explanation": "State the idea, explain how or why, make it concrete with an example, then link to the next idea or the question.\n\n**Why the other options are wrong**\n\n- Title, Essay, Ending, Letter: These are not the parts of a paragraph.\n- Topic, Evidence, Emotion, Language: Emotion and language are not steps of the method.\n- Theme, Example, Explanation, List: A list is not part of the method, and the order is wrong.",
+     "position": 3,
+     "options": [
+      {
+       "id": "bf16ca90-b12e-57d0-9f4b-913d67601fe7",
+       "label": "A",
+       "content": "Title, Essay, Ending, Letter",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2110cef2-a777-5238-9555-4a9ef26e809f",
+       "label": "B",
+       "content": "Topic sentence, Explanation, Example, Link",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2d46b580-fce4-5f5d-9e6e-f8099d5376fe",
+       "label": "C",
+       "content": "Topic, Evidence, Emotion, Language",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "07a45dd6-2637-5fb3-8cae-fc0b3073317e",
+       "label": "D",
+       "content": "Theme, Example, Explanation, List",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4f764a6b-a5e8-5163-a86a-f46bb0a31b04",
+     "key": "eng-ef-04",
+     "stem": "A question asks for the causes of examination malpractice and the ways of stopping it. A candidate writes only about the causes. The essay will",
+     "image_url": null,
+     "explanation": "Underline every part of the question before planning. *Causes and solutions*, *advantages and disadvantages*: both halves must be answered.\n\n**Why the other options are wrong**\n\n- score full marks, because the causes are well explained: However well the causes are explained, half the question is missing.\n- lose only mechanical accuracy marks: Missing part of the question is a content fault, not a grammar fault.\n- be marked as a different type of essay: It is marked against the question set, and the missing part costs marks.",
+     "position": 4,
+     "options": [
+      {
+       "id": "def9ab1d-ba4e-5b12-825c-ab986ab5b95f",
+       "label": "A",
+       "content": "score full marks, because the causes are well explained",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0470b12d-84c1-5803-9a9d-f27e77f056b3",
+       "label": "B",
+       "content": "lose only mechanical accuracy marks",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "628179b3-5562-56f9-b913-6a9e9ab583c5",
+       "label": "C",
+       "content": "lose content marks, because part of the question is not answered",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4f1704d4-9135-5173-8610-4e0f6e7f34e4",
+       "label": "D",
+       "content": "be marked as a different type of essay",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "97741591-f4ea-5cd8-9c2a-95dcd8d18cea",
+     "key": "eng-ef-05",
+     "stem": "Which sentence shows the best expression for a WASSCE essay?",
+     "image_url": null,
+     "explanation": "Good expression is precise and vivid: *crowded*, *shouting their prices*, *above the noise* let the reader see and hear the scene.\n\n**Why the other options are wrong**\n\n- In this contemporary dispensation of our socio-economic milieu, it is pertinent to note that the street was busy.  \n  This is memorised 'big English': long words used without real meaning, which impresses no one.\n- The street was very very busy and there was many people.  \n  *Very very* is repetitive, and *there was many people* is a grammatical error.\n- the street was busy wit traders: This has spelling, capital and punctuation errors.",
+     "position": 5,
+     "options": [
+      {
+       "id": "65a16d30-dffc-52f4-a5b9-259e3ec376d7",
+       "label": "A",
+       "content": "In this contemporary dispensation of our socio-economic milieu, it is pertinent to note that the street was busy.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "58e476f4-b9b3-59fe-b1f3-9600f8d99288",
+       "label": "B",
+       "content": "The street was very very busy and there was many people.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2f979c7b-2d62-5cb4-983d-eea74ccab5e6",
+       "label": "C",
+       "content": "the street was busy wit traders",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c7809b57-14b7-5fef-a7d0-85b2437b4ca1",
+       "label": "D",
+       "content": "Traders crowded the narrow street, shouting their prices above the noise of the traffic.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9531f9b5-1a8b-5084-bd79-085618b8615b",
+     "key": "eng-ef-06",
+     "stem": "Why should a candidate spend a few minutes planning before writing an essay?",
+     "image_url": null,
+     "explanation": "A plan makes sure every part of the question is answered, ideas are not repeated, and each paragraph has one clear point.\n\n**Why the other options are wrong**\n\n- To copy out the question several times: Copying the question earns no marks.\n- To write the whole essay twice: There is no time to write the essay twice.\n- To learn new words to use in the essay: The exam is not the time to learn vocabulary.",
+     "position": 6,
+     "options": [
+      {
+       "id": "89505581-c9bc-51fb-9d91-6a501d7f058d",
+       "label": "A",
+       "content": "To choose relevant points and arrange them in a logical order",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6c8b03a7-3d54-5ade-96a7-bb55f6280765",
+       "label": "B",
+       "content": "To copy out the question several times",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "592cca35-0323-5b68-9a20-4849f166f14f",
+       "label": "C",
+       "content": "To write the whole essay twice",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "93aa4e96-9923-542f-ad6c-a3ea008b9220",
+       "label": "D",
+       "content": "To learn new words to use in the essay",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "56d2f864-43a8-576d-960b-d87e8fce4da7",
+     "key": "eng-ef-07",
+     "stem": "Which is the best way to end an essay?",
+     "image_url": null,
+     "explanation": "Never just write *In conclusion, as I said…*. A fresh summing-up and a strong final line leave the examiner with a good impression.\n\n**Why the other options are wrong**\n\n- Repeat the introduction word for word: Repeating the introduction adds nothing and wastes the last impression.\n- Introduce a completely new point: A new point belongs in the body, where it can be developed.\n- Write *The End* after the last paragraph: *The End* is not part of an essay's conclusion.",
+     "position": 7,
+     "options": [
+      {
+       "id": "2e77d276-10d0-5405-89e6-954b5ea5c58d",
+       "label": "A",
+       "content": "Repeat the introduction word for word",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "52202278-4a08-5cd4-b340-f3379ed4c9fa",
+       "label": "B",
+       "content": "Sum up the main idea in fresh words and end with a call to action or a thoughtful final line",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "19ece725-a2ae-5334-9fa1-654f023593fe",
+       "label": "C",
+       "content": "Introduce a completely new point",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "75e58f9d-cc5f-51ed-8980-4f57e4a4a79d",
+       "label": "D",
+       "content": "Write *The End* after the last paragraph",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "9f53dc51-eb5f-5b4d-8656-243a949e845d",
+   "topic": "Formal Letter Writing",
+   "title": "Formal Letter Writing: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on formal letter writing, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 152,
+   "questions": [
+    {
+     "id": "1d434179-beaf-5c78-af0f-aa633bacee4a",
+     "key": "eng-fl-01",
+     "stem": "A formal letter begins *Dear Sir,*. Which complimentary close is correct?",
+     "image_url": null,
+     "explanation": "*Yours faithfully,*: capital *Y*, small *f*, a comma. Then the signature and the full name.\n\n**Why the other options are wrong**\n\n- Yours sincerely,: As taught in the lessons, *Dear Sir* and *Dear Sir/Madam* take *Yours faithfully*.\n- Your's faithfully,: There is no apostrophe in *Yours*.\n- Yours Faithfully.  \n  *Faithfully* takes a small *f*, and the close ends with a comma, not a full stop.",
+     "position": 1,
+     "options": [
+      {
+       "id": "21f74d85-213b-5a5d-b7e5-353bdd0b016e",
+       "label": "A",
+       "content": "Yours sincerely,",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a354fb9a-68ee-513a-b538-fc03cd03d3ca",
+       "label": "B",
+       "content": "Your's faithfully,",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "084ac0db-5fda-5fa4-a629-d2c4fc6da25e",
+       "label": "C",
+       "content": "Yours faithfully,",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8e819c67-2712-509a-857c-f83529296848",
+       "label": "D",
+       "content": "Yours Faithfully.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e9fb1472-1b4a-5e9a-a332-4c0f0d84cc92",
+     "key": "eng-fl-02",
+     "stem": "In a formal letter, what comes immediately after the salutation (*Dear Sir,*)?",
+     "image_url": null,
+     "explanation": "The seven parts in order: writer's address, date, recipient's title and address, salutation, heading, body, and the close with signature and full name.\n\n**Why the other options are wrong**\n\n- The recipient's title and address: The recipient's address comes before the salutation.\n- The date: The date comes before the salutation, under the writer's address.\n- The complimentary close: The close comes at the end, after the body.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1d3691b9-6ac5-59c3-be94-4a546e201b15",
+       "label": "A",
+       "content": "The recipient's title and address",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b52a460d-6ca3-5c3d-8e21-f140fbd4fc43",
+       "label": "B",
+       "content": "The date",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d37bc094-8201-5a97-8482-b8a662a25ac8",
+       "label": "C",
+       "content": "The complimentary close",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fc459989-f8ad-5d17-8db6-04d82ef5d312",
+       "label": "D",
+       "content": "The heading (title)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c696849d-59f5-57de-80b7-309271e18d42",
+     "key": "eng-fl-03",
+     "stem": "A formal letter should end with",
+     "image_url": null,
+     "explanation": "Add your position in brackets if it matters, for example *(Senior Prefect)*.\n\n**Why the other options are wrong**\n\n- the writer's first name only: First name only is for informal letters.\n- the writer's nickname: A nickname is never used in a formal letter.\n- *Your loving friend*: *Your loving friend* is an informal close.",
+     "position": 3,
+     "options": [
+      {
+       "id": "927af6c9-c129-5432-8152-ff10cd0f5e91",
+       "label": "A",
+       "content": "the complimentary close, the writer's signature and full name",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "350123a2-22ff-59b6-a6cb-39a342591342",
+       "label": "B",
+       "content": "the writer's first name only",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3a81db05-d50f-5f09-b5d7-e91c8eb7291b",
+       "label": "C",
+       "content": "the writer's nickname",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6945cd8d-62f2-5677-88d6-c352ef68d9fa",
+       "label": "D",
+       "content": "*Your loving friend*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "14356005-d1e9-5c0c-95d0-0f8d1751c0d8",
+     "key": "eng-fl-04",
+     "stem": "Which is the best heading for a letter to the Chairman of the city council about rubbish piling up at a market?",
+     "image_url": null,
+     "explanation": "A good heading tells the reader exactly what the letter is about, in a few words: the problem and the place.\n\n**Why the other options are wrong**\n\n- A LETTER: This does not say what the letter is about.\n- RUBBISH: This is too vague: whose rubbish, where, and what is the problem?\n- PLEASE HELP US SIR: A heading names the subject; it is not a plea.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b6b63b4c-788b-52eb-9340-387a02c5e3bc",
+       "label": "A",
+       "content": "A LETTER",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "72e25810-d62e-51a4-a042-9eb6b653c7b6",
+       "label": "B",
+       "content": "UNCOLLECTED RUBBISH AT KISSY ROAD MARKET",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d481bfc1-ca6e-5f8f-adfb-1b1413392e31",
+       "label": "C",
+       "content": "RUBBISH",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bf954506-44e5-5db7-bde1-afca4394418e",
+       "label": "D",
+       "content": "PLEASE HELP US SIR",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6183c09a-0c47-5139-b2d4-32d9724b46fc",
+     "key": "eng-fl-05",
+     "stem": "Which sentence is written in a suitable formal register?",
+     "image_url": null,
+     "explanation": "Formal register: complete sentences, standard vocabulary, no slang or contractions, polite and firm.\n\n**Why the other options are wrong**\n\n- You guys need to fix this pipe quick.  \n  *You guys* and *quick* are informal, and the tone is disrespectful.\n- I'm begging you pls fix it.  \n  Contractions, text spellings and begging are not formal register.\n- Fix the pipe now or else!  \n  A threat is rude; a formal letter is polite but firm.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ea79f2c5-ffeb-5b81-b70d-09156d5a751b",
+       "label": "A",
+       "content": "You guys need to fix this pipe quick.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "90e401b8-a69a-563b-bf60-3f8663c10c51",
+       "label": "B",
+       "content": "I'm begging you pls fix it.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d3a20b4b-82d3-51e4-968e-0c3fa82f84a3",
+       "label": "C",
+       "content": "I would be grateful if the burst pipe could be repaired promptly.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1165190c-c319-5103-8fd1-47fa5c5823e9",
+       "label": "D",
+       "content": "Fix the pipe now or else!",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3bf15c02-78b9-537a-bc7d-7eaccbdfa6a4",
+     "key": "eng-fl-06",
+     "stem": "Which is the best way to write the date in a formal letter?",
+     "image_url": null,
+     "explanation": "Write the day, the month in words and the full year, as taught in the lessons.\n\n**Why the other options are wrong**\n\n- 14/3/26: Figures alone can be misread: in some countries this would mean the 3rd of a month.\n- Thursday: A day of the week is not a date.\n- March 2026: The day of the month is missing.",
+     "position": 6,
+     "options": [
+      {
+       "id": "8882c9ae-9300-5b4b-80ef-4a0df4e62f87",
+       "label": "A",
+       "content": "14/3/26",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a31ac844-96ff-50ba-9c1b-6b356e4b597a",
+       "label": "B",
+       "content": "Thursday",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "591c7bf4-92f1-5641-a48a-2ca8f8558a2f",
+       "label": "C",
+       "content": "March 2026",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "65543d3b-58c2-5def-be4b-ad1a880a7349",
+       "label": "D",
+       "content": "14th March, 2026.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a8184be-e87c-5933-81c2-e06657d6f4c9",
+     "key": "eng-fl-07",
+     "stem": "Which is the most effective first sentence for a letter of complaint?",
+     "image_url": null,
+     "explanation": "A formal letter states its purpose at once: what the problem is, where, and for how long.\n\n**Why the other options are wrong**\n\n- How are you and your family?  \n  Greetings like this belong in an informal letter.\n- I hope this letter meets you in good health.  \n  This wastes the opening and says nothing about the complaint.\n- My name is Musa and I am in Form Five.  \n  The reader needs the purpose first, not personal details.",
+     "position": 7,
+     "options": [
+      {
+       "id": "888e00e1-2179-5843-a3dc-94b7ca0f7c72",
+       "label": "A",
+       "content": "I am writing to complain about the irregular supply of electricity to Lumley, which has now continued for a month.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ff7850db-80aa-54b3-8729-e0ea65e3a4b8",
+       "label": "B",
+       "content": "How are you and your family?",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6d2d0c6d-20bc-5aff-9aef-b8abe58f1337",
+       "label": "C",
+       "content": "I hope this letter meets you in good health.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "287a64da-d9f8-5a88-8f91-7e21c9227999",
+       "label": "D",
+       "content": "My name is Musa and I am in Form Five.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1816f607-e6d2-53c1-8c32-de36a4ae67c2",
+   "topic": "Informal Letter Writing",
+   "title": "Informal Letter Writing: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on informal letter writing, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 153,
+   "questions": [
+    {
+     "id": "0a3c3dc9-9659-51b8-ae31-b0e5b543d305",
+     "key": "eng-il-01",
+     "stem": "Which of the following should NOT appear in an informal letter to a friend?",
+     "image_url": null,
+     "explanation": "Adding the recipient's address and a heading borrows the formal layout, and it costs organisation marks.\n\n**Why the other options are wrong**\n\n- The writer's address and the date: These do appear, at the top right, as in a formal letter.\n- A salutation such as *Dear Kadie,*: An informal letter needs a salutation.\n- A close such as *Your loving friend,*: An informal letter needs a close.",
+     "position": 1,
+     "options": [
+      {
+       "id": "badadaf0-990f-52ad-82e4-a97456fad201",
+       "label": "A",
+       "content": "The writer's address and the date",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8684fd3e-39da-5fd2-9638-ee0f55332d54",
+       "label": "B",
+       "content": "The friend's address and a heading",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "97642121-625c-56ef-b4d6-34626e4c52db",
+       "label": "C",
+       "content": "A salutation such as *Dear Kadie,*",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b9d7f337-3103-5f8e-b658-6274341a8602",
+       "label": "D",
+       "content": "A close such as *Your loving friend,*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "743ed160-69e3-5064-bd40-282b4cbb6048",
+     "key": "eng-il-02",
+     "stem": "An informal letter to your cousin should be signed with",
+     "image_url": null,
+     "explanation": "Close warmly (*Your loving cousin,*) and sign with your first name.\n\n**Why the other options are wrong**\n\n- your full name and position: Full name and position belong in a formal letter.\n- a signature and your full name: A signature with the full name is the formal ending.\n- your surname only: A surname alone sounds cold and formal to a relative.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7f634d25-ed1d-5a02-8ec3-5d181b24e6bc",
+       "label": "A",
+       "content": "your full name and position",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c66e7689-e2d6-5afa-9462-a9e0c3a70b0a",
+       "label": "B",
+       "content": "a signature and your full name",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f397e9b4-dc1b-5f47-b5c7-9c9e37639081",
+       "label": "C",
+       "content": "your first name only",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "29e800ac-e66b-5c18-a299-06fa48a05a41",
+       "label": "D",
+       "content": "your surname only",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b0ffa7e3-ec1a-5867-b97e-5bbf2c7d2246",
+     "key": "eng-il-03",
+     "stem": "Which salutation is correct for a letter to a close friend called Kadie?",
+     "image_url": null,
+     "explanation": "An informal salutation has a capital *D*, the person's name and a comma.\n\n**Why the other options are wrong**\n\n- Dear Friend,: *Dear Friend* alone is never used; name the friend.\n- Dear Sir,: *Dear Sir* is for a formal letter.\n- Hello Kadie!!!  \n  This is a text message greeting, not a letter salutation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f397ef37-d956-5f66-8608-a19a51ecb317",
+       "label": "A",
+       "content": "Dear Friend,",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c2a0d32-444d-5fbd-bd22-072c81e1a6ae",
+       "label": "B",
+       "content": "Dear Sir,",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ea1ea643-b0f3-57e5-b49d-176cb87493c9",
+       "label": "C",
+       "content": "Hello Kadie!!!",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "82e9b3ea-e28c-5ca3-8747-0a3a989d37c4",
+       "label": "D",
+       "content": "Dear Kadie,",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "78d05925-8402-50bc-9ff1-d4d3db0b38a4",
+     "key": "eng-il-04",
+     "stem": "Which is the best opening paragraph for an informal letter to a friend?",
+     "image_url": null,
+     "explanation": "Greet briefly and warmly, then move quickly to the purpose of the letter.\n\n**Why the other options are wrong**\n\n- How are you? How is your mother? How is your father? How is your sister? I hope you are all fine. I am fine too.  \n  A paragraph of greetings wastes words and earns no content marks.\n- I am writing to complain about your failure to reply to my letters.  \n  This is the tone of a formal complaint, not a friendly letter.\n- Dear Sir, I hope this letter finds you well.  \n  *Dear Sir* is a formal salutation, and the sentence is too stiff.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a14080f9-dada-51b9-9608-455ded9a8e5c",
+       "label": "A",
+       "content": "It was lovely to get your letter last week. I'm writing to tell you about the new science laboratory at our school.",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8ad3c21c-a6c2-5f88-bf04-85af7705d1d8",
+       "label": "B",
+       "content": "How are you? How is your mother? How is your father? How is your sister? I hope you are all fine. I am fine too.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f674170-e342-5f10-9365-8b3c115642c6",
+       "label": "C",
+       "content": "I am writing to complain about your failure to reply to my letters.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "183d029b-ce2f-517f-a5e6-ec061199e917",
+       "label": "D",
+       "content": "Dear Sir, I hope this letter finds you well.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4cba147b-3edd-54fe-9586-709b58c9e13f",
+     "key": "eng-il-05",
+     "stem": "A letter to your uncle, an older relative you respect, is best written in",
+     "image_url": null,
+     "explanation": "Semi-formal letters go to older people you know: uncles, aunts, teachers. The tone is warm but respectful, with fewer contractions and no slang.\n\n**Why the other options are wrong**\n\n- slang and text-message spellings: Slang is wrong in any examination letter, and especially to an older relative.\n- the formal layout, with his address and a heading: A letter to a relative does not use the formal layout.\n- a stiff formal register ending *Yours faithfully*: *Yours faithfully* is for formal letters to officials.",
+     "position": 5,
+     "options": [
+      {
+       "id": "3908396a-042f-550f-a450-2f5b63b1eed4",
+       "label": "A",
+       "content": "slang and text-message spellings",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "db444ad1-0abe-50e7-8026-631003870404",
+       "label": "B",
+       "content": "a warm but respectful semi-formal register",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a1fa2b71-3a47-578e-bf4c-d54773d3c7aa",
+       "label": "C",
+       "content": "the formal layout, with his address and a heading",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "331f7374-10c7-544c-99ee-50f810d9bf7b",
+       "label": "D",
+       "content": "a stiff formal register ending *Yours faithfully*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "58edcd77-3686-5272-a2c9-200601c3e3dd",
+     "key": "eng-il-06",
+     "stem": "Which sentence is acceptable in an informal letter?",
+     "image_url": null,
+     "explanation": "An informal letter is relaxed and chatty, but it is still marked for correct English.\n\n**Why the other options are wrong**\n\n- Me and Amie went to the beach on Saturday.  \n  *Me* cannot be the subject of a verb: write *Amie and I*.\n- hw r u? hope u ar fyn: Text spellings are never acceptable in an examination letter.\n- It was sweet die!  \n  Slang like this is not standard English.",
+     "position": 6,
+     "options": [
+      {
+       "id": "bd8dd2d7-df3b-5893-8463-2e9baf3963c5",
+       "label": "A",
+       "content": "Me and Amie went to the beach on Saturday.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f48697a0-3fc5-5302-a98d-415d756501b7",
+       "label": "B",
+       "content": "hw r u? hope u ar fyn",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9e7ec179-5952-5a96-a7d6-958999f85f31",
+       "label": "C",
+       "content": "Amie and I went to the beach on Saturday.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "76580d72-ae3c-533e-8c47-26843b120b65",
+       "label": "D",
+       "content": "It was sweet die!",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "51e793e5-dbb4-508b-a412-0c6b70f96931",
+     "key": "eng-il-07",
+     "stem": "The main part of an informal letter should",
+     "image_url": null,
+     "explanation": "If the question asks you to tell a friend about changes at your school, the body should describe those changes, one in each paragraph, with details.\n\n**Why the other options are wrong**\n\n- consist mostly of greetings to the family: Greetings earn no content marks.\n- be one long paragraph: One long paragraph loses organisation marks.\n- copy out the question: Copying the question earns nothing.",
+     "position": 7,
+     "options": [
+      {
+       "id": "51e31783-ec12-5148-985a-d6a9b7c67fc7",
+       "label": "A",
+       "content": "consist mostly of greetings to the family",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d88310a1-bf53-58c6-a5d8-1d03764af7d2",
+       "label": "B",
+       "content": "be one long paragraph",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c9fe7b9d-ca7d-598d-8e6e-1ba4710c0de7",
+       "label": "C",
+       "content": "copy out the question",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6b8ca561-243d-5279-9ee8-ed98a16b8982",
+       "label": "D",
+       "content": "deal fully with what the question asks, in developed paragraphs",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ffa8d39d-afb7-5b09-a1f5-c62b4eec529a",
+   "topic": "Speech Writing",
+   "title": "Speech Writing: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on speech writing, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 154,
+   "questions": [
+    {
+     "id": "1bef534e-c0e1-5a5c-ad56-15c3d4c85430",
+     "key": "eng-sw-01",
+     "stem": "Which is the correct way to begin a speech at a school speech day?",
+     "image_url": null,
+     "explanation": "The vocative addresses the audience in order of importance, ending with the main body of listeners.\n\n**Why the other options are wrong**\n\n- Dear audience,: A speech is not a letter, so it does not begin with *Dear*.\n- Fellow students, the Principal, the Chairman,: The vocative follows the order of importance in the hall, so the Chairman comes first.\n- Hello everybody!  \n  This is too casual and does not recognise the important guests.",
+     "position": 1,
+     "options": [
+      {
+       "id": "335ef826-d308-532f-8316-51284dd3eff1",
+       "label": "A",
+       "content": "The Chairman, the Principal, members of staff, parents, fellow students,",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cb438fc4-5b0c-55da-b62a-b22b7e60b902",
+       "label": "B",
+       "content": "Dear audience,",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9122ac78-5708-5941-9961-b31101d7eabb",
+       "label": "C",
+       "content": "Fellow students, the Principal, the Chairman,",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5e06748a-cd58-58cf-91b7-c3a6ca114fd0",
+       "label": "D",
+       "content": "Hello everybody!",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "88206b7a-6fee-5ff2-8bbb-8000a03a19a4",
+     "key": "eng-sw-02",
+     "stem": "A speech usually ends with the words",
+     "image_url": null,
+     "explanation": "Sum up in a fresh way, call the audience to action, then thank them for listening (or for their kind attention).\n\n**Why the other options are wrong**\n\n- Yours faithfully,: *Yours faithfully* ends a formal letter.\n- The End.  \n  *The End* is not used to close a speech.\n- Your loving friend,: This closes an informal letter.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a7d42bd7-b3f5-582b-81ad-0843fce65393",
+       "label": "A",
+       "content": "Yours faithfully,",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e35e0f95-51b2-5d6f-bcd0-51c18e64bbe3",
+       "label": "B",
+       "content": "Thank you for listening.",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8a0f4795-bcaa-5724-b937-735e74e669d9",
+       "label": "C",
+       "content": "The End.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "730cf47e-1296-5ab0-bf7f-291e1ca3c301",
+       "label": "D",
+       "content": "Your loving friend,",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b859dcd6-4fd1-5a64-a881-a58d295639b5",
+     "key": "eng-sw-03",
+     "stem": "*How many of us slept before midnight last night?* A speaker who asks this, without expecting an answer, is using",
+     "image_url": null,
+     "explanation": "A rhetorical question makes the audience think about the point, and draws them in.\n\n**Why the other options are wrong**\n\n- a signpost: A signpost guides listeners through the points: *My first point… Secondly…*\n- the rule of three: The rule of three groups ideas in threes.\n- a vocative: The vocative is the opening address to the audience.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2a930cf9-af4b-540e-8b1c-6070bf75952d",
+       "label": "A",
+       "content": "a signpost",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5f66db38-43a3-59b3-8b85-6503fcaefb16",
+       "label": "B",
+       "content": "the rule of three",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "46881596-aeea-5f4d-9c17-a251aacb8987",
+       "label": "C",
+       "content": "a rhetorical question",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "dee6f652-e854-5b1a-9a44-fc6e03d92bae",
+       "label": "D",
+       "content": "a vocative",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5297255b-bbcc-5cf9-a16d-af71901aba22",
+     "key": "eng-sw-04",
+     "stem": "*It steals our time, our sleep and our grades.* This sentence uses",
+     "image_url": null,
+     "explanation": "Grouping ideas in threes creates a rhythm that is easy to remember: a technique of spoken English.\n\n**Why the other options are wrong**\n\n- a rhetorical question: The sentence is a statement, not a question.\n- a vocative: It is not an address to the audience.\n- a signpost: It does not mark the order of the points.",
+     "position": 4,
+     "options": [
+      {
+       "id": "abb0c92a-2269-5c2c-9507-ccc5ec6fcc01",
+       "label": "A",
+       "content": "a rhetorical question",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8e3a91cf-7de6-583e-b456-e0dea99f9c75",
+       "label": "B",
+       "content": "a vocative",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "36e9e361-d485-53fa-b08f-4dbeed6b3b50",
+       "label": "C",
+       "content": "a signpost",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f829451d-0fe3-58b2-baf4-5f08e3e57fed",
+       "label": "D",
+       "content": "the rule of three",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb65cb74-8bf0-5b4d-bccb-6ad7fb2b4ad4",
+     "key": "eng-sw-05",
+     "stem": "Phrases such as *My first point…*, *Secondly…* and *Finally…* are especially useful in a speech because",
+     "image_url": null,
+     "explanation": "A speech is written to be heard. Clear signposts tell the audience where they are in the argument.\n\n**Why the other options are wrong**\n\n- they make the speech longer: Length is not the purpose; clarity is.\n- they replace the vocative: Signposts organise the body; the vocative is still needed at the start.\n- examiners count the number of phrases: Examiners mark organisation, not a count of phrases.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e8b53166-14ed-526b-a301-26a95eb6f724",
+       "label": "A",
+       "content": "listeners cannot reread, so signposts help them follow",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2b5f5146-84c8-537f-b7e9-29c2b55db31b",
+       "label": "B",
+       "content": "they make the speech longer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "261ffa12-0ec1-5890-9753-c83590a797e5",
+       "label": "C",
+       "content": "they replace the vocative",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "789a69f5-82a5-5d30-b018-00ee17d55a16",
+       "label": "D",
+       "content": "examiners count the number of phrases",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f7a84535-7dc2-5f9f-b04e-8559da000e2e",
+     "key": "eng-sw-06",
+     "stem": "Which opening address suits a debate?",
+     "image_url": null,
+     "explanation": "Recognise everyone with a role in the debate: the chairman, the judges, the time-keeper and the other speakers.\n\n**Why the other options are wrong**\n\n- The Paramount Chief, elders, the Councillor, ladies and gentlemen,: This suits a community meeting, not a debate.\n- Dear judges,: A debate speech is not a letter.\n- My dear friends and family,: This is too informal, and it ignores the chairman and judges.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e45946f1-5cbf-59c7-be58-7591346d5278",
+       "label": "A",
+       "content": "The Paramount Chief, elders, the Councillor, ladies and gentlemen,",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "935998cc-d24f-5e17-9ff7-91d58ee3ed04",
+       "label": "B",
+       "content": "The Chairman, panel of judges, the time-keeper, co-debaters, ladies and gentlemen,",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d27d1793-fe25-5b15-b540-9a9f8e176dbb",
+       "label": "C",
+       "content": "Dear judges,",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "38aedf69-4e47-50aa-a2b6-3943168c286d",
+       "label": "D",
+       "content": "My dear friends and family,",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4f90619a-3c62-5f1f-a142-c553b539db62",
+     "key": "eng-sw-07",
+     "stem": "After the vocative, a speaker should",
+     "image_url": null,
+     "explanation": "For example: *I am Fatmata Koroma, the Senior Prefect, and I stand before you to speak on…*\n\n**Why the other options are wrong**\n\n- close with *Thank you for listening*: That belongs at the end of the speech.\n- go straight to the final point: The audience needs to know who is speaking and on what topic.\n- write *Yours faithfully*: That is a letter close.",
+     "position": 7,
+     "options": [
+      {
+       "id": "bde74bfd-cbdd-592c-97b7-63f8b34d95db",
+       "label": "A",
+       "content": "close with *Thank you for listening*",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b99d752-c8cc-5322-96dc-87bc4d8fcef5",
+       "label": "B",
+       "content": "go straight to the final point",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d71e847a-13e0-5d70-abcc-29a52121553d",
+       "label": "C",
+       "content": "introduce themselves and state the topic",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ab6bc99f-7cb3-5deb-9aca-37f0b278d423",
+       "label": "D",
+       "content": "write *Yours faithfully*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a7b049ad-434d-534c-822e-a0bbffd75678",
+   "topic": "Narrative Essays",
+   "title": "Narrative Essays: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on narrative essays, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 155,
+   "questions": [
+    {
+     "id": "9aba9cb6-ce05-566e-b560-d78190d25649",
+     "key": "eng-ne-01",
+     "stem": "In a narrative essay, the climax is",
+     "image_url": null,
+     "explanation": "A good story builds through rising action to one strong climax, then resolves.\n\n**Why the other options are wrong**\n\n- the opening, which sets the scene: The opening introduces who, where and when.\n- the lesson learnt at the end: The lesson comes in the reflection, after the climax.\n- the title of the story: The title names the story; the climax is a moment inside it.",
+     "position": 1,
+     "options": [
+      {
+       "id": "17899def-ff9c-555e-84d7-4bfdf98980f7",
+       "label": "A",
+       "content": "the opening, which sets the scene",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7d05a445-510a-5c31-90db-65c3d8b55ea4",
+       "label": "B",
+       "content": "the lesson learnt at the end",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c03c945a-f68e-5b58-9d90-a942558695d1",
+       "label": "C",
+       "content": "the title of the story",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dd71bd62-9619-5558-9da9-06685ac6a5ea",
+       "label": "D",
+       "content": "the most tense or important moment of the story",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f155bb42-d170-5302-a8bc-80a9c6bfdffb",
+     "key": "eng-ne-02",
+     "stem": "A question says: *Write a story that ends with: \"…and that was the last time I ever trusted a stranger.\"* The candidate should",
+     "image_url": null,
+     "explanation": "Plan backwards: decide what happened that would make someone say these words, then lead up to them.\n\n**Why the other options are wrong**\n\n- begin the story with the given words: The words must end the story, not begin it.\n- change the words to fit the story: The given ending must be copied exactly.\n- write an essay about strangers in general: The question asks for a story, not a discussion.",
+     "position": 2,
+     "options": [
+      {
+       "id": "81402acc-cfeb-5277-8b98-d99eab7e2c8b",
+       "label": "A",
+       "content": "build the story so that the given words are its natural last line, copied exactly",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2a347fbb-a3e1-5ebd-8eb0-2a1311430a1f",
+       "label": "B",
+       "content": "begin the story with the given words",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "afab8ecf-6be6-5670-a46c-38460095b08c",
+       "label": "C",
+       "content": "change the words to fit the story",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c2e6be04-6180-5b53-b75b-0d30c6d9c228",
+       "label": "D",
+       "content": "write an essay about strangers in general",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5e494f1c-1681-584d-9374-333efb2dd842",
+     "key": "eng-ne-03",
+     "stem": "For the question *Narrate an experience that taught you a lesson*, the most natural point of view is",
+     "image_url": null,
+     "explanation": "*I* makes a personal experience immediate, and makes the lesson at the end your own.\n\n**Why the other options are wrong**\n\n- the second person (*you*): The second person is rarely used for a personal experience.\n- the third person (*he*, *she*): The third person suits a story illustrating a proverb more than a personal experience.\n- a mixture of all three: Changing point of view confuses the reader.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ba10fcbe-3d14-59ef-ba2d-1df92f58cd92",
+       "label": "A",
+       "content": "the second person (*you*)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d0ff0636-b722-5188-abf3-1fea0c4b4da6",
+       "label": "B",
+       "content": "the first person (*I*)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b9084b56-a5e2-5905-b9f9-dedb57996b22",
+       "label": "C",
+       "content": "the third person (*he*, *she*)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ae334cc0-cb87-5a24-960b-5ef7e245e1c4",
+       "label": "D",
+       "content": "a mixture of all three",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9cef32cb-a2f0-5eac-8d9f-c719ff3f3150",
+     "key": "eng-ne-04",
+     "stem": "A question says: *Write a story to illustrate the saying \"All that glitters is not gold.\"* The story must",
+     "image_url": null,
+     "explanation": "For example, something that looks valuable or attractive turns out to be worthless or harmful.\n\n**Why the other options are wrong**\n\n- explain the meaning of each word in the saying: That is an explanation, not a story.\n- mention the saying but tell any story at all: Mentioning it is not enough; the events must illustrate it.\n- argue whether the saying is true: Arguing belongs in an argumentative essay.",
+     "position": 4,
+     "options": [
+      {
+       "id": "695d5cd3-7eae-51c3-8841-0bd66a983ec0",
+       "label": "A",
+       "content": "explain the meaning of each word in the saying",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6ddf49f7-44e1-5dce-971c-390efc96cc54",
+       "label": "B",
+       "content": "mention the saying but tell any story at all",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "920fdd9b-ef78-5d38-9659-1b72398642d2",
+       "label": "C",
+       "content": "show the meaning of the saying through what happens in it",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0788c3cf-9c01-5177-89ea-d49314cd0c76",
+       "label": "D",
+       "content": "argue whether the saying is true",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7344ad2a-35e2-5af0-9ad0-5447a9e12a82",
+     "key": "eng-ne-05",
+     "stem": "Which sentence best shows, rather than tells, that a character was afraid?",
+     "image_url": null,
+     "explanation": "Showing lets the reader see the fear in actions and body language, which earns expression marks.\n\n**Why the other options are wrong**\n\n- She was very afraid.  \n  This tells the reader the feeling instead of showing it.\n- She was afraid because she was scared.  \n  This repeats the same idea and shows nothing.\n- Fear is a feeling everybody has.  \n  This is a general statement, not part of the story.",
+     "position": 5,
+     "options": [
+      {
+       "id": "cea20608-de8b-5180-b09c-fa87745e8460",
+       "label": "A",
+       "content": "She was very afraid.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ea0762d7-7397-5f05-bac0-fc5c654c59f3",
+       "label": "B",
+       "content": "She was afraid because she was scared.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c82d1f13-8798-545c-af17-00a8dafffa7d",
+       "label": "C",
+       "content": "Fear is a feeling everybody has.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "42b120b3-7680-5a35-8e2a-67509b125099",
+       "label": "D",
+       "content": "Her hands shook as she reached for the door, and she held her breath.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "12788868-a5d1-5ce3-9d44-92b9018238e9",
+     "key": "eng-ne-06",
+     "stem": "*I woke up. I bathed. I went to school. We had Maths. Then we had lunch.* What is the main weakness of this opening to a story?",
+     "image_url": null,
+     "explanation": "Start close to the action and build towards one important moment.\n\n**Why the other options are wrong**\n\n- It is written in the past tense: The past tense is normal for a narrative.\n- It is written in the first person: The first person is a good choice for many stories.\n- Its sentences are ungrammatical: Each sentence is correct; the problem is the dull, list-like structure.",
+     "position": 6,
+     "options": [
+      {
+       "id": "7472a258-43f5-58a1-bb83-204047bb734f",
+       "label": "A",
+       "content": "It lists events like a diary, with no build-up towards a climax",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5d2476e5-bb4c-5f13-b90e-24f4a0df3bd8",
+       "label": "B",
+       "content": "It is written in the past tense",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "216964e2-2711-5fc5-ac96-f4c9f4bd32f5",
+       "label": "C",
+       "content": "It is written in the first person",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f8cf1a82-da99-5dc0-888a-86bc0078414a",
+       "label": "D",
+       "content": "Its sentences are ungrammatical",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "59be39d4-2838-56a8-b5da-e97b9f09166a",
+     "key": "eng-ne-07",
+     "stem": "How much dialogue should a narrative essay contain?",
+     "image_url": null,
+     "explanation": "Use dialogue sparingly, set out correctly, where it reveals character or raises tension.\n\n**Why the other options are wrong**\n\n- None at all: A few lines of dialogue can bring a key moment to life.\n- Most of the story: A story that is mostly conversation loses the description that earns marks.\n- Only in the title: Dialogue belongs in the story, not the title.",
+     "position": 7,
+     "options": [
+      {
+       "id": "9987ec41-c1ad-565f-8422-12592c1e7beb",
+       "label": "A",
+       "content": "None at all",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "40b33197-1777-519b-94fd-40ff7a8f3f03",
+       "label": "B",
+       "content": "A little, for key moments",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2cd548c4-f886-5566-8fd5-fa5c623037d1",
+       "label": "C",
+       "content": "Most of the story",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8cd19737-10bc-506f-95cb-095ba71fe0bd",
+       "label": "D",
+       "content": "Only in the title",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7a45ad59-38ee-5366-a74e-5b5255091b12",
+   "topic": "Descriptive Essays",
+   "title": "Descriptive Essays: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on descriptive essays, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 156,
+   "questions": [
+    {
+     "id": "4b665a65-262a-5840-957b-eb9003497e82",
+     "key": "eng-de-01",
+     "stem": "Which sentence uses the senses most effectively in a description of a market?",
+     "image_url": null,
+     "explanation": "Smell, sound and touch make the reader feel present; a good description uses several senses.\n\n**Why the other options are wrong**\n\n- The market is very big and there are many people.  \n  This is vague and uses no senses.\n- They sell many things like rice, oil, clothes, shoes and phones.  \n  A list of items is not a description.\n- The market is nice and I like it.  \n  *Nice* says nothing the reader can see, hear or smell.",
+     "position": 1,
+     "options": [
+      {
+       "id": "02f3aa87-851f-5cda-b47b-f1ce448bbed9",
+       "label": "A",
+       "content": "The market is very big and there are many people.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a83006cf-5353-56a6-980b-a6b2cfb3d792",
+       "label": "B",
+       "content": "They sell many things like rice, oil, clothes, shoes and phones.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "48ed02b2-44b1-5f3f-b4d1-e23935c9f2db",
+       "label": "C",
+       "content": "The smell of smoked fish mixed with the blare of a trader's radio and the heat rising from the zinc roofs.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1f559e9a-e89b-5721-b4ab-d23cf88661e0",
+       "label": "D",
+       "content": "The market is nice and I like it.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2001b727-6fe9-5aad-be05-9ddf5ede9cfd",
+     "key": "eng-de-02",
+     "stem": "The 'dominant impression' of a descriptive essay is",
+     "image_url": null,
+     "explanation": "For example, a market described as *the heartbeat of the town*: every detail supports that impression.\n\n**Why the other options are wrong**\n\n- the first sentence of the essay: The dominant impression runs through the whole essay, though it is often stated early.\n- a list of everything the writer saw: A list has no overall impression.\n- the writer's name under the title: The writer's name is part of the format of an article.",
+     "position": 2,
+     "options": [
+      {
+       "id": "cad901e8-f41c-5312-8e8f-7dbde5db666c",
+       "label": "A",
+       "content": "the first sentence of the essay",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "78453722-57e5-555f-9569-5c4c2ffc71ed",
+       "label": "B",
+       "content": "a list of everything the writer saw",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b1c57aaf-a696-524e-8fa2-eca3bbec11c6",
+       "label": "C",
+       "content": "the writer's name under the title",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3120848b-2d30-53f0-8327-0521cc1ed513",
+       "label": "D",
+       "content": "the single overall feeling or idea that the description builds up",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0ba8521d-3534-55ac-b678-3bcd52c95039",
+     "key": "eng-de-03",
+     "stem": "Which is the best way to organise a description of a place?",
+     "image_url": null,
+     "explanation": "A route lets the reader move through the place with the writer.\n\n**Why the other options are wrong**\n\n- List the things in alphabetical order: Alphabetical order has nothing to do with how a place is experienced.\n- Jump from detail to detail at random: Random details confuse the reader.\n- Describe only the weather: The weather is only one small part of a place.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8dacf470-e662-525d-b38a-e29b435783c6",
+       "label": "A",
+       "content": "Follow a route through space or time, such as from the entrance to the centre",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "782d0f49-d786-5edb-8fa7-be709fc19735",
+       "label": "B",
+       "content": "List the things in alphabetical order",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5ef02236-b1b7-53f3-a5b2-f37c80d8015c",
+       "label": "C",
+       "content": "Jump from detail to detail at random",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5565e8db-bdda-51ed-81a5-b1b2319df1f5",
+       "label": "D",
+       "content": "Describe only the weather",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a30bc52e-c6c6-5f31-adc1-ae90cfdebe29",
+     "key": "eng-de-04",
+     "stem": "When describing a person, a good order is",
+     "image_url": null,
+     "explanation": "Begin with what is seen, then reveal character through habits, speech and actions.\n\n**Why the other options are wrong**\n\n- from the person's date of birth to the present day: That is a biography, not a description.\n- from the weather on the day you met to the person's name: The weather is not the subject.\n- only their clothes, with nothing about character: Clothes alone do not bring a person to life.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b79f1031-cd84-5f8d-a840-87c21c270a75",
+       "label": "A",
+       "content": "from the person's date of birth to the present day",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "756d8b65-a4af-567e-a401-92d59500b69b",
+       "label": "B",
+       "content": "from outward appearance to inner character and habits",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3d35b6a5-5d59-5943-b1c2-52495c95e775",
+       "label": "C",
+       "content": "from the weather on the day you met to the person's name",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "127fab2e-4e20-5dda-96f6-b69e7700e678",
+       "label": "D",
+       "content": "only their clothes, with nothing about character",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a471e050-a1e0-5bd5-80f2-046ed076c74b",
+     "key": "eng-de-05",
+     "stem": "Which word most vividly replaces *walked* in *The tired old man walked slowly up the hill*?",
+     "image_url": null,
+     "explanation": "*Trudged* means walked slowly and heavily, as if tired: one precise word paints the picture.\n\n**Why the other options are wrong**\n\n- went: *Went* is even more general than *walked*.\n- moved: *Moved* is vague and adds no picture.\n- sprinted: *Sprinted* means ran fast, which contradicts *tired* and *slowly*.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a6a3e3b8-a817-5cdf-9ff7-6eb1177c5822",
+       "label": "A",
+       "content": "went",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b7bbf0fc-b81f-5764-889b-f4a4625f2b69",
+       "label": "B",
+       "content": "moved",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cb0f14bd-cb6f-53d1-ac3b-32bdff8c5984",
+       "label": "C",
+       "content": "trudged",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "201c6018-4599-5b4c-9ccc-83805c1ad2a6",
+       "label": "D",
+       "content": "sprinted",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "03b6a08a-1919-5ef2-908e-6e8dc3c4031f",
+     "key": "eng-de-06",
+     "stem": "Figurative language, such as similes and metaphors, in a descriptive essay should be",
+     "image_url": null,
+     "explanation": "One fresh, accurate image is worth more than many stale ones.\n\n**Why the other options are wrong**\n\n- avoided completely: A well-chosen image strengthens a description.\n- used in every sentence to impress the examiner: Overloading every sentence with images makes the writing heavy and unclear.\n- copied from a list of memorised expressions: Memorised images rarely fit the scene being described.",
+     "position": 6,
+     "options": [
+      {
+       "id": "dac42c0b-96a5-5ddd-bfec-9787af740fc2",
+       "label": "A",
+       "content": "avoided completely",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0531e150-12ff-5d10-af3c-cfc65bfa0fff",
+       "label": "B",
+       "content": "used in every sentence to impress the examiner",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eea83c2d-4876-579f-ac07-5115dd535170",
+       "label": "C",
+       "content": "copied from a list of memorised expressions",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8c586888-cfa1-550f-98f6-f1ed22d2ddfa",
+       "label": "D",
+       "content": "used where it adds a clear picture, not crowded into every sentence",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "84646314-5850-56d3-9c1f-101d6cf01955",
+     "key": "eng-de-07",
+     "stem": "A question asks you to describe an Independence Day celebration in your town. Which organisation suits it best?",
+     "image_url": null,
+     "explanation": "Organise a place by a route, a person from outside to inside, and an event in time order.\n\n**Why the other options are wrong**\n\n- Alphabetical order of the people present: Alphabetical order does not follow the event.\n- The most boring parts first: Order the event so that the reader follows it naturally.\n- One long paragraph with no order: One unordered paragraph loses organisation marks.",
+     "position": 7,
+     "options": [
+      {
+       "id": "55055831-175e-569d-afde-3023b7e05cbe",
+       "label": "A",
+       "content": "Time order, from the start of the day to the end",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b907671b-201a-555d-8c5d-c45a89a1ba5a",
+       "label": "B",
+       "content": "Alphabetical order of the people present",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f68398e6-d2f6-559e-bd18-860bd13deef9",
+       "label": "C",
+       "content": "The most boring parts first",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8b16da6e-fece-5b6c-9754-f9b0759060a2",
+       "label": "D",
+       "content": "One long paragraph with no order",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "551a125d-0209-5ce8-9595-2f828c78a2fa",
+   "topic": "Argumentative Essays",
+   "title": "Argumentative Essays: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on argumentative essays, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 157,
+   "questions": [
+    {
+     "id": "e6270a85-d46a-5a5f-99f7-dffb2a4d3478",
+     "key": "eng-ar-01",
+     "stem": "In an argumentative essay, the introduction should",
+     "image_url": null,
+     "explanation": "A clear thesis tells the examiner what the whole essay will prove.\n\n**Why the other options are wrong**\n\n- avoid taking any side: An argumentative essay must take a side.\n- set out every argument in full: The arguments are developed in the body paragraphs.\n- end with *Thank you for listening*: That closes a speech, not an essay introduction.",
+     "position": 1,
+     "options": [
+      {
+       "id": "41b20a7b-0972-58ce-9cb4-c68779815132",
+       "label": "A",
+       "content": "avoid taking any side",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "678e9988-0523-5271-87ab-58629b44584f",
+       "label": "B",
+       "content": "state the writer's position clearly",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ce37858c-9816-5e55-a679-204a85e7bea0",
+       "label": "C",
+       "content": "set out every argument in full",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e3347183-1a64-5ca3-8286-39041f052dc2",
+       "label": "D",
+       "content": "end with *Thank you for listening*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "795ec2d1-fd2b-59b9-abd4-6664e5f6328a",
+     "key": "eng-ar-02",
+     "stem": "Asked *Should students be allowed phones in school?*, a candidate writes: *Phones have advantages and disadvantages, so it depends.* The main weakness is that",
+     "image_url": null,
+     "explanation": "You may admit the other side has points, but you must decide and argue for one position.\n\n**Why the other options are wrong**\n\n- the essay mentions phones: The topic is phones, so mentioning them is necessary.\n- the essay is written in English: There is nothing wrong with the language choice.\n- the sentence is too short: Length is not the main problem; sitting on the fence is.",
+     "position": 2,
+     "options": [
+      {
+       "id": "985b6580-1e47-57b0-b54f-1a3820cdb6f4",
+       "label": "A",
+       "content": "the essay mentions phones",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8daadf94-bf04-5d90-ba20-17cc5a072cef",
+       "label": "B",
+       "content": "the essay is written in English",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2a0eb1bb-0c37-54a1-94ad-196f48a21681",
+       "label": "C",
+       "content": "the essay does not take a clear position",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "24978960-ce70-5569-8b0a-b95ff71286bf",
+       "label": "D",
+       "content": "the sentence is too short",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6358c3f0-8eaa-5359-b476-e59a8b0f99e5",
+     "key": "eng-ar-03",
+     "stem": "Why should a strong argumentative essay mention the best argument on the other side?",
+     "image_url": null,
+     "explanation": "The counter-argument and rebuttal show the examiner that you have thought about both sides and can defend your view.\n\n**Why the other options are wrong**\n\n- To change sides at the end of the essay: Changing sides makes the essay contradict itself.\n- To fill up space: Every paragraph should do real work.\n- To show that the writer is unsure: A rebuttal shows confidence, not doubt.",
+     "position": 3,
+     "options": [
+      {
+       "id": "edda9805-dfc2-5eea-a8b0-4f6e1eb2e08a",
+       "label": "A",
+       "content": "To change sides at the end of the essay",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fd843e5e-9dd9-57ed-a91d-d4869f3a546f",
+       "label": "B",
+       "content": "To fill up space",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "342495a5-8a4a-5431-91cc-7f802308beab",
+       "label": "C",
+       "content": "To show that the writer is unsure",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9802566a-d556-523f-9ac1-3e0b9eef13fc",
+       "label": "D",
+       "content": "To answer it fairly and show why the writer's position is still stronger",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9a1f47c5-20a3-518f-8ea5-affa293fd21a",
+     "key": "eng-ar-04",
+     "stem": "In the PEEL method for argument paragraphs, the letters stand for",
+     "image_url": null,
+     "explanation": "Make the point, support it with evidence, explain why it matters, and link to the next point.\n\n**Why the other options are wrong**\n\n- Paragraph, Essay, Example, Language: These are not the steps of the method.\n- Point, Emotion, Ending, Letter: Emotion, ending and letter are not steps of the method.\n- Purpose, Evidence, Expression, List: This mixes up marking areas with paragraph steps.",
+     "position": 4,
+     "options": [
+      {
+       "id": "58b90085-9e7b-5afe-8afe-1c717588b5b8",
+       "label": "A",
+       "content": "Point, Evidence, Explanation, Link",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7d50e4a5-ea54-5413-87b7-1a79ac70b2e6",
+       "label": "B",
+       "content": "Paragraph, Essay, Example, Language",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2de2f580-c3d7-511e-99a9-b238cde8a1c1",
+       "label": "C",
+       "content": "Point, Emotion, Ending, Letter",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13274af6-fdca-5916-86ea-f35fcf8a772f",
+       "label": "D",
+       "content": "Purpose, Evidence, Expression, List",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cdbf907e-dd3a-57c5-801b-5b59eea81c47",
+     "key": "eng-ar-05",
+     "stem": "Which is the best kind of evidence for a WASSCE argumentative essay?",
+     "image_url": null,
+     "explanation": "Good evidence includes examples, well-known facts, cause-and-effect reasoning and comparisons.\n\n**Why the other options are wrong**\n\n- Precise statistics that you invent: Invented statistics are not evidence, and examiners can tell.\n- Insults to people who disagree: Insults weaken an argument and lose marks.\n- A list of famous names with no explanation: Names without explanation do not support a point.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d1720c95-9cf5-575d-b8d4-894e5fad9c3b",
+       "label": "A",
+       "content": "Precise statistics that you invent",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c8183b56-26f2-5bc2-9e6f-4a0e6eba4170",
+       "label": "B",
+       "content": "Examples from your community and facts that are widely known",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "61e21813-8504-5421-8d34-49f7bf6f02c4",
+       "label": "C",
+       "content": "Insults to people who disagree",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "12c6c03f-e562-528e-aee0-0f1ae73aec37",
+       "label": "D",
+       "content": "A list of famous names with no explanation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "41da4995-6d8b-536c-9fb3-0842bed71d8b",
+     "key": "eng-ar-06",
+     "stem": "Which sentence states a clear position for an essay on boarding schools?",
+     "image_url": null,
+     "explanation": "A position states what the writer believes and, often, what should be done.\n\n**Why the other options are wrong**\n\n- Some people like boarding schools and some do not.  \n  This describes opinions without taking a position.\n- Boarding schools are a topic that many people talk about.  \n  This says nothing about the writer's view.\n- This essay will look at boarding schools.  \n  This announces the topic but not a position.",
+     "position": 6,
+     "options": [
+      {
+       "id": "f9871b58-9913-5d19-bbb1-7e47b666737a",
+       "label": "A",
+       "content": "Some people like boarding schools and some do not.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ecb6be99-2308-584a-9d6e-b92b845b6964",
+       "label": "B",
+       "content": "Boarding schools are a topic that many people talk about.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "178995b8-7d00-5e12-a3df-42094d786cff",
+       "label": "C",
+       "content": "Boarding schools give students the best chance to succeed, and the government should build more of them.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "54d7d8a8-6ba1-5f88-8542-6a3c5af215fc",
+       "label": "D",
+       "content": "This essay will look at boarding schools.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "610deb25-dfcf-53d2-8ca7-3824c691da84",
+     "key": "eng-ar-07",
+     "stem": "The conclusion of an argumentative essay should",
+     "image_url": null,
+     "explanation": "A strong conclusion leaves the reader persuaded and clear about what should happen next.\n\n**Why the other options are wrong**\n\n- introduce a new argument: New arguments belong in the body, where they can be developed.\n- switch to the opposite side: Switching sides undoes the whole essay.\n- copy the introduction word for word: Repeating the introduction adds nothing.",
+     "position": 7,
+     "options": [
+      {
+       "id": "0069b907-6fa7-57d6-a463-770dbb8e80e8",
+       "label": "A",
+       "content": "introduce a new argument",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "313868cb-6edc-5eb7-a6c5-160ef4eb45e2",
+       "label": "B",
+       "content": "switch to the opposite side",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5db300aa-3479-5e59-9010-20c08f0aba39",
+       "label": "C",
+       "content": "copy the introduction word for word",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "545d3181-ece0-51a4-9d51-d3f48ebf7f99",
+       "label": "D",
+       "content": "restate the position in fresh words and end with a call to action or a striking thought",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eddb79ce-a855-5d35-a0b8-56236a1f73e9",
+   "topic": "Report Writing",
+   "title": "Report Writing: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on report writing, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 158,
+   "questions": [
+    {
+     "id": "9de338c0-5b04-5e76-b316-8d96861b229a",
+     "key": "eng-rw-01",
+     "stem": "Which part of a report states who asked for it, its purpose and how the information was gathered?",
+     "image_url": null,
+     "explanation": "Report format: title, introduction, findings, recommendations, conclusion, and a signature block with name, position and date.\n\n**Why the other options are wrong**\n\n- The findings: The findings set out what was found.\n- The recommendations: The recommendations suggest what should be done.\n- The conclusion: The conclusion is a brief closing statement.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fb007d56-5a03-58df-969d-56e9f6d42fa0",
+       "label": "A",
+       "content": "The introduction",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3263abe1-965b-56d8-9be8-b4d7bcf8910d",
+       "label": "B",
+       "content": "The findings",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c0041a6d-f875-5db6-af83-8e2ff25b3961",
+       "label": "C",
+       "content": "The recommendations",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "47d98d41-a6b8-586e-bf1e-78e748dc37c7",
+       "label": "D",
+       "content": "The conclusion",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "44ac2f80-8fd8-5522-a863-826ac4ba724a",
+     "key": "eng-rw-02",
+     "stem": "Which sentence is written in the style of a formal report?",
+     "image_url": null,
+     "explanation": "Reports are objective: they state what was observed, with numbers where possible.\n\n**Why the other options are wrong**\n\n- The toilets were absolutely disgusting!  \n  A report gives facts, not feelings or exclamations.\n- The smell nearly killed me!  \n  This is an exaggerated personal reaction, not an objective finding.\n- I think the toilets are bad, maybe.  \n  A report is definite and factual, not vague.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3de04576-7a9c-5c16-bd3f-06f47fa93c1c",
+       "label": "A",
+       "content": "The toilets were absolutely disgusting!",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "494748d9-4f4d-58c2-90eb-e60668c343a0",
+       "label": "B",
+       "content": "Four of the six toilets were out of use at the time of the inspection.",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c8a6bf8b-b6a9-502a-9278-9adf256b22b4",
+       "label": "C",
+       "content": "The smell nearly killed me!",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b65a8e7e-c656-5cc5-99a2-b003161206cf",
+       "label": "D",
+       "content": "I think the toilets are bad, maybe.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3a28e81e-a118-5747-9b13-d0a9e507f14e",
+     "key": "eng-rw-03",
+     "stem": "Recommendations in a report are usually written with *should*. Which is a well-written recommendation?",
+     "image_url": null,
+     "explanation": "A recommendation is a practical step that someone can carry out.\n\n**Why the other options are wrong**\n\n- I wish someone would repair the tank.  \n  A wish is not a recommendation.\n- Repair the tank now!  \n  A command in capitals and exclamations is not the style of a report.\n- Why has nobody repaired the tank?  \n  A question is not a recommendation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c4f3ebad-e3c7-5443-9515-15fd569f6d8a",
+       "label": "A",
+       "content": "I wish someone would repair the tank.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e68a94f7-04c2-596e-94ff-6949663f84be",
+       "label": "B",
+       "content": "Repair the tank now!",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c4fd1c4-5f51-5ca0-a2a7-50fe1605c3be",
+       "label": "C",
+       "content": "The water tank should be repaired as a matter of urgency.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "33b37dc2-e057-56f8-820b-c09f24a8634e",
+       "label": "D",
+       "content": "Why has nobody repaired the tank?",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "213a4930-f5f0-52c8-ad8f-d43d0714292a",
+     "key": "eng-rw-04",
+     "stem": "Reports often use the passive voice, as in *The toilets were inspected on Monday.* This is because",
+     "image_url": null,
+     "explanation": "The passive keeps attention on the facts, which suits an objective report.\n\n**Why the other options are wrong**\n\n- the passive voice is always shorter: The passive is often longer, not shorter.\n- the active voice is grammatically wrong: The active voice is correct; the passive simply suits reports.\n- reports must not contain any verbs: Reports contain verbs like any other writing.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2d90e483-cc8a-514a-b2c5-c35c391e3ee0",
+       "label": "A",
+       "content": "the passive voice is always shorter",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "741d04af-58fb-502e-b82f-252326fe6cb1",
+       "label": "B",
+       "content": "the active voice is grammatically wrong",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fd4b39bd-3b7b-5970-8124-7e47847197a6",
+       "label": "C",
+       "content": "reports must not contain any verbs",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c03f0f28-5e48-57aa-8aa0-107f35406bcf",
+       "label": "D",
+       "content": "what was done matters more than who did it",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5e5bc9c1-a3e2-548f-bf19-c9c5b94a0ad6",
+     "key": "eng-rw-05",
+     "stem": "In a report, what the committee observed during its visit is normally written in",
+     "image_url": null,
+     "explanation": "Past tense for what was found (*The committee visited…*); present tense for the situation now (*The tank is empty…*).\n\n**Why the other options are wrong**\n\n- the future tense: The future tense is for what will happen, not what was found.\n- the imperative mood: The imperative gives commands.\n- a mixture of tenses in each sentence: Mixing tenses confuses the reader.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b5520aa9-be1e-5824-aff8-a952eec95b6a",
+       "label": "A",
+       "content": "the past tense",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "36a4760c-5ca3-5140-88d5-61c3ae9798c5",
+       "label": "B",
+       "content": "the future tense",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4fc8d019-2f6c-5d65-8295-45adae25c95d",
+       "label": "C",
+       "content": "the imperative mood",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "367ae1bd-23e7-539f-8d5b-6ba0a731ede2",
+       "label": "D",
+       "content": "a mixture of tenses in each sentence",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2db9b024-f3ae-5c04-9266-161f2e67055c",
+     "key": "eng-rw-06",
+     "stem": "A report ends with",
+     "image_url": null,
+     "explanation": "For example: *Musa Bangura (Secretary, Health Club), 12th March, 2026.*\n\n**Why the other options are wrong**\n\n- *Yours faithfully,*: That is the close of a formal letter.\n- *Thank you for listening.*: That closes a speech.\n- *The End*: A report does not end with *The End*.",
+     "position": 6,
+     "options": [
+      {
+       "id": "dd263e01-711d-52ac-879c-60f4145a804d",
+       "label": "A",
+       "content": "*Yours faithfully,*",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1efc90a4-3594-5166-b2e2-fb6267afc282",
+       "label": "B",
+       "content": "the writer's name, position and the date",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "af6c0873-80ba-5c73-b661-50a53e8b90e5",
+       "label": "C",
+       "content": "*Thank you for listening.*",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f0304c76-a11a-51ea-a228-988e873552d7",
+       "label": "D",
+       "content": "*The End*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f5bcdd20-e986-5450-9c75-f84645123b73",
+     "key": "eng-rw-07",
+     "stem": "A report on sanitation begins: *It was a bright sunny morning and we were all excited as we set out.* What is wrong with this opening?",
+     "image_url": null,
+     "explanation": "A report opens with its purpose and how the information was gathered, in a factual style.\n\n**Why the other options are wrong**\n\n- It uses the past tense: The past tense is correct for what was done.\n- It mentions the morning: Mentioning the time is not the fault; the story-telling style is.\n- It is too short: Its length is not the problem.",
+     "position": 7,
+     "options": [
+      {
+       "id": "3713b44c-2d1a-57fc-84a5-cec5a4b95329",
+       "label": "A",
+       "content": "It uses the past tense",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c60781f8-e4b9-5cf0-bb24-9f89684467f2",
+       "label": "B",
+       "content": "It mentions the morning",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "43194346-4c35-541c-9fe5-bb631e893df2",
+       "label": "C",
+       "content": "It reads like a story instead of stating the report's purpose",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "08c6f41c-2f5b-5393-acf7-91f9627919b0",
+       "label": "D",
+       "content": "It is too short",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "83437fe2-3c5a-5542-8d8a-2e9959e0066e",
+   "topic": "Article Writing",
+   "title": "Article Writing: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on article writing, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 159,
+   "questions": [
+    {
+     "id": "5c25f3b2-0e3d-5357-9905-c720d96e3fe2",
+     "key": "eng-aw-01",
+     "stem": "An article for a school magazine should have",
+     "image_url": null,
+     "explanation": "The writer's name may go below the title as a by-line or at the end.\n\n**Why the other options are wrong**\n\n- the writer's address, the date and *Dear Editor,*: These belong to a letter to the editor.\n- a vocative such as *The Principal, fellow students,*: A vocative begins a speech.\n- *Yours faithfully* and a signature: These close a formal letter.",
+     "position": 1,
+     "options": [
+      {
+       "id": "58acfa0e-16b2-5c97-8fce-63281155087d",
+       "label": "A",
+       "content": "the writer's address, the date and *Dear Editor,*",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07657985-1e23-5c96-9f72-78ede31c09de",
+       "label": "B",
+       "content": "a vocative such as *The Principal, fellow students,*",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cca01510-0f00-5a42-b921-eafac52aa949",
+       "label": "C",
+       "content": "*Yours faithfully* and a signature",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9e3ff7b8-e280-595e-9991-328b75806131",
+       "label": "D",
+       "content": "a title and the writer's name, but no salutation or complimentary close",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "152363b8-92ac-5856-9e86-d99e29cb6f9b",
+     "key": "eng-aw-02",
+     "stem": "A candidate asked to write an article begins with *Dear Editor,* and ends with *Yours faithfully*. The candidate has",
+     "image_url": null,
+     "explanation": "Read the question carefully: an *article* and a *letter to the editor* have different formats, and the wrong one costs organisation marks.\n\n**Why the other options are wrong**\n\n- written a perfect article: An article has no salutation and no close.\n- written a speech: A speech begins with a vocative and ends with *Thank you for listening*.\n- written a report: A report has a title, introduction, findings and recommendations.",
+     "position": 2,
+     "options": [
+      {
+       "id": "589ed017-2e7e-5892-b34a-348a72d9f178",
+       "label": "A",
+       "content": "written a letter to the editor instead of an article",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "45242fd9-fb17-53e1-ae45-975d9d6514f8",
+       "label": "B",
+       "content": "written a perfect article",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9587de54-caec-5872-90a1-2ea36635cbe6",
+       "label": "C",
+       "content": "written a speech",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "85b2c5ca-bf0c-5ab9-a80f-baee9c5ea003",
+       "label": "D",
+       "content": "written a report",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb49f044-f670-519d-b5b9-601d23a88efe",
+     "key": "eng-aw-03",
+     "stem": "Which is the best opening for an article on reading for pleasure?",
+     "image_url": null,
+     "explanation": "A hook, such as a question to the reader, a striking fact or a short scene, makes the reader want to go on.\n\n**Why the other options are wrong**\n\n- I am writing to inform you that reading is good.  \n  *I am writing to inform you* is the language of a letter, and the sentence is flat.\n- Reading. Reading is reading.  \n  This says nothing and does not hook the reader.\n- Dear Sir, reading is important.  \n  An article does not begin with a salutation.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5bec30a4-6027-5376-abcb-d0669d3630c6",
+       "label": "A",
+       "content": "I am writing to inform you that reading is good.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "959af864-1895-5d8a-93c6-ba2af870a80e",
+       "label": "B",
+       "content": "When did you last read a book that nobody made you read?",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bd746738-6421-5326-84de-b426a2a464cb",
+       "label": "C",
+       "content": "Reading. Reading is reading.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eb92c28e-b9d6-5e61-8d31-a051b316c857",
+       "label": "D",
+       "content": "Dear Sir, reading is important.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7b95f8b8-bcda-52ac-b610-13997cf34bc5",
+     "key": "eng-aw-04",
+     "stem": "An article for a school magazine should be written in a tone that is",
+     "image_url": null,
+     "explanation": "Match the tone to the readers: friendly for a school magazine, serious but readable for a national newspaper.\n\n**Why the other options are wrong**\n\n- full of slang and text spellings: Slang and text spellings are never acceptable in the examination.\n- as stiff as a legal document: A stiff tone loses the young readers of a magazine.\n- angry and insulting: An insulting tone turns readers against the writer.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a4b4c612-f680-53f2-9231-94b83aee475a",
+       "label": "A",
+       "content": "full of slang and text spellings",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "251ab513-822b-5c63-8cb9-116d1d384166",
+       "label": "B",
+       "content": "as stiff as a legal document",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9d21b732-41b6-5d10-bfce-01b4e8d3d9b1",
+       "label": "C",
+       "content": "lively and friendly, but correct",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b77c48b2-4d52-554e-98fc-703567e11b2d",
+       "label": "D",
+       "content": "angry and insulting",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c9d358e2-3a26-5da9-9f1a-fec044b5eef0",
+     "key": "eng-aw-05",
+     "stem": "Which is the most effective title for an article on preventing floods in Freetown?",
+     "image_url": null,
+     "explanation": "A good title is short, specific and catches the reader's eye.\n\n**Why the other options are wrong**\n\n- ARTICLE: This does not say what the article is about.\n- FLOOD: This is vague and says nothing about prevention.\n- MY ARTICLE ON THE TOPIC GIVEN: This is not a real title.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2e430715-a67c-5eea-8339-08eebc242eb1",
+       "label": "A",
+       "content": "ARTICLE",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b0d0b41e-a39e-50dd-8b3f-230829caf1dc",
+       "label": "B",
+       "content": "FLOOD",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "88f41388-c603-5968-9351-6af19df2a0d6",
+       "label": "C",
+       "content": "MY ARTICLE ON THE TOPIC GIVEN",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4f01e1b4-ce1b-5bb7-b03a-382152a03eb5",
+       "label": "D",
+       "content": "CLEAR THE DRAINS, SAVE THE CITY",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f7803a03-ee86-52b6-9887-8ad4a400906a",
+     "key": "eng-aw-06",
+     "stem": "In an article, the writer's name may be placed",
+     "image_url": null,
+     "explanation": "For example: *By Fatmata Koroma* under the title.\n\n**Why the other options are wrong**\n\n- at the top right, with the writer's address: An article has no address.\n- after *Yours faithfully*: An article has no complimentary close.\n- nowhere: articles never show the writer's name: The writer's name is part of the format.",
+     "position": 6,
+     "options": [
+      {
+       "id": "b5fd5b9c-6fc3-552a-9227-9f2fa0613e45",
+       "label": "A",
+       "content": "below the title as a by-line, or at the end",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8c9293e9-20cc-5d38-819a-02bb16d88608",
+       "label": "B",
+       "content": "at the top right, with the writer's address",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4c27a3ab-4128-5aee-9ccb-2d6db1fcb04b",
+       "label": "C",
+       "content": "after *Yours faithfully*",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e0708715-3b70-5022-aee4-b873ccc3f2e6",
+       "label": "D",
+       "content": "nowhere: articles never show the writer's name",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "64f7b945-d3eb-5855-87bf-da595993275a",
+     "key": "eng-aw-07",
+     "stem": "An article on drug abuse among young people is best ended with",
+     "image_url": null,
+     "explanation": "End by telling readers what they can do, and leave them with a strong final line.\n\n**Why the other options are wrong**\n\n- a new cause of drug abuse not mentioned before: New points belong in the body.\n- *Yours faithfully* and the writer's signature: That is the close of a formal letter.\n- the same words as the title: Repeating the title adds nothing.",
+     "position": 7,
+     "options": [
+      {
+       "id": "37ca86e1-e9ba-536c-8f20-6ad38b25ec33",
+       "label": "A",
+       "content": "a new cause of drug abuse not mentioned before",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "99430e59-4f1e-5d1a-873b-7ce6a5a6209f",
+       "label": "B",
+       "content": "practical steps and a call to action",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "88a8470e-2c89-581a-9f21-5b55260b082e",
+       "label": "C",
+       "content": "*Yours faithfully* and the writer's signature",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d8f462bc-c121-5294-b6b0-779d45ed2313",
+       "label": "D",
+       "content": "the same words as the title",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d400efdb-c5ad-5f63-a8ab-48ca075f408a",
+   "topic": "Expository Essays",
+   "title": "Expository Essays: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on expository essays, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "5ca5bf0d-b3bc-59c8-a3c8-058c500f47bd",
+     "key": "eng-ex-01",
+     "stem": "An expository essay mainly",
+     "image_url": null,
+     "explanation": "Expository questions ask *what*, *how* or *why*: causes and effects, steps in a process, types of something, problems and solutions.\n\n**Why the other options are wrong**\n\n- tells a story: Telling a story is narrative writing.\n- describes a scene through the senses: That is descriptive writing.\n- persuades the reader to accept a view: Persuading is argumentative writing.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c5fefbc3-4d42-5a80-a02e-ba8f87e13cfc",
+       "label": "A",
+       "content": "tells a story",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e9be4c3b-86b9-5a73-903f-24b85b335bc3",
+       "label": "B",
+       "content": "describes a scene through the senses",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d312f037-ab49-5eb1-bb02-d79f658234fa",
+       "label": "C",
+       "content": "explains or informs, without arguing for a side",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a5ed3cbe-7d18-50b4-a9fc-ab5ff9581da8",
+       "label": "D",
+       "content": "persuades the reader to accept a view",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "be403afd-388a-554a-85bd-2a1bc7b5f6ea",
+     "key": "eng-ex-02",
+     "stem": "How should an essay on *the steps involved in making gari* be organised?",
+     "image_url": null,
+     "explanation": "Process essays use sequence words: *first*, *next*, *then*, *after that*, *finally*.\n\n**Why the other options are wrong**\n\n- From the most interesting step to the least: A process must follow the order in which it is done.\n- In alphabetical order of the tools used: Alphabetical order would mix up the process.\n- As an argument for eating gari: The question asks for steps, not an argument.",
+     "position": 2,
+     "options": [
+      {
+       "id": "96e35723-c2fc-5fc4-9f01-94652b63858a",
+       "label": "A",
+       "content": "From the most interesting step to the least",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "63d0288f-a039-59fb-af20-556d70aa2c34",
+       "label": "B",
+       "content": "In alphabetical order of the tools used",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "17bb31f4-09f3-5772-b340-cee4f17b6eef",
+       "label": "C",
+       "content": "As an argument for eating gari",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2612ef56-ceb1-5849-8855-aae8487427d6",
+       "label": "D",
+       "content": "In time order, one step after another",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a7a43120-3dbd-5888-87e5-2e955a92d299",
+     "key": "eng-ex-03",
+     "stem": "Which transition word introduces an effect or result?",
+     "image_url": null,
+     "explanation": "Effect: as a result, therefore, consequently, so. Cause: because, since, due to, owing to.\n\n**Why the other options are wrong**\n\n- because: *Because* introduces a cause.\n- for example: *For example* introduces an example.\n- however: *However* introduces a contrast.",
+     "position": 3,
+     "options": [
+      {
+       "id": "610167ee-d644-534a-85c2-850b2fbf1db7",
+       "label": "A",
+       "content": "consequently",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "28ebaef1-8473-522c-b2df-197bcec4dd49",
+       "label": "B",
+       "content": "because",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5b0465f8-5567-5f34-9c34-1688f5365ba0",
+       "label": "C",
+       "content": "for example",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c6606544-bdb0-5f2f-826d-c56e5c3be061",
+       "label": "D",
+       "content": "however",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9b15fc98-1cf7-5f43-9a99-2b83063a922a",
+     "key": "eng-ex-04",
+     "stem": "Asked to *explain the causes of rural–urban migration in Sierra Leone*, a candidate spends half the essay arguing that migration is bad. What is the weakness?",
+     "image_url": null,
+     "explanation": "Answer the question set: explain the causes fully, each in its own paragraph.\n\n**Why the other options are wrong**\n\n- The essay mentions Sierra Leone: The question asks about Sierra Leone.\n- The essay uses examples: Examples are a strength of an expository essay.\n- The essay is too well organised: Good organisation is never a weakness.",
+     "position": 4,
+     "options": [
+      {
+       "id": "55752e5b-24d1-51fa-bf23-87ebfb41c248",
+       "label": "A",
+       "content": "The essay mentions Sierra Leone",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b867ddf8-b40c-5c29-bb27-052dd78715eb",
+       "label": "B",
+       "content": "The question asks for an explanation, not an argument",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a720551f-0adc-5d9d-a07e-0161c09f9cc8",
+       "label": "C",
+       "content": "The essay uses examples",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2b555f6a-d114-54fe-81a9-89c183edca6d",
+       "label": "D",
+       "content": "The essay is too well organised",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "66072d79-dc0d-5871-9b77-76669c45d542",
+     "key": "eng-ex-05",
+     "stem": "A question asks *What are the types of pollution?* The clearest plan is",
+     "image_url": null,
+     "explanation": "Classification essays treat each type in turn, with its features.\n\n**Why the other options are wrong**\n\n- all the types mixed together in one paragraph: Mixing types together is confusing and loses organisation marks.\n- a story about a polluted river: The question asks for an explanation of types, not a story.\n- an argument that pollution should be banned: The question does not ask for an argument.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e5aa45ba-2d7e-5e33-adaf-cca0ad8be93b",
+       "label": "A",
+       "content": "all the types mixed together in one paragraph",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d22f418e-dd4a-5594-9655-898c3e948247",
+       "label": "B",
+       "content": "a story about a polluted river",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "81ccb0c6-66df-5003-88d7-71fd947bdc45",
+       "label": "C",
+       "content": "one type per paragraph, with its features and examples",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "42bac8a7-beea-5e85-8d5e-1e0ea6068141",
+       "label": "D",
+       "content": "an argument that pollution should be banned",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a4c23107-acfd-5111-b235-b48cfb560c67",
+     "key": "eng-ex-06",
+     "stem": "In an expository essay, a key term such as *deforestation* should be",
+     "image_url": null,
+     "explanation": "For example: *Deforestation, the clearing of forest land for farming, timber or building, …*\n\n**Why the other options are wrong**\n\n- never defined, because examiners already know it: Defining terms shows understanding and makes the essay clear.\n- defined only in the conclusion: By the conclusion the reader has already needed the definition.\n- replaced by a word the writer invents: Invented words confuse the reader.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d3141f81-c102-5aa5-be24-1688a2f8484b",
+       "label": "A",
+       "content": "never defined, because examiners already know it",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48883a99-0b1f-5984-bb81-28f443d7085a",
+       "label": "B",
+       "content": "defined only in the conclusion",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "10855d8a-b971-5a78-9627-3e2208288497",
+       "label": "C",
+       "content": "replaced by a word the writer invents",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ad46c205-e8a7-5770-ba2e-f2eaaa88aae5",
+       "label": "D",
+       "content": "defined clearly the first time it is used",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0c172a93-5f47-5518-94a1-3cd53d60f749",
+     "key": "eng-ex-07",
+     "stem": "For the question *What are the causes and effects of examination malpractice?*, a clear plan is",
+     "image_url": null,
+     "explanation": "Alternatively, take one cause and its effects at a time; either way, the order must be clear and both parts answered.\n\n**Why the other options are wrong**\n\n- the effects only: The causes are part of the question too.\n- causes and effects mixed at random: Random order makes the logic hard to follow.\n- one paragraph for the whole essay: Each point needs its own developed paragraph.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b4fa55df-1386-51b7-8b0f-75539b75e4ce",
+       "label": "A",
+       "content": "the causes first, then the effects",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2ad64f5c-9e9c-51a3-b9fb-303d1bfbc812",
+       "label": "B",
+       "content": "the effects only",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b441a297-eb90-51d5-b9f0-b90ea4bfb8f2",
+       "label": "C",
+       "content": "causes and effects mixed at random",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4e05c461-971b-560f-a2c5-5836cb3703ea",
+       "label": "D",
+       "content": "one paragraph for the whole essay",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6addbf99-06d2-5821-b9cf-bec6259b7b8d",
+   "topic": "Creative Writing",
+   "title": "Creative Writing: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on creative writing, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "84e6bd27-c91e-53cc-be6b-2bc7fad9539c",
+     "key": "eng-cw-01",
+     "stem": "Why should a candidate avoid ending a story with *I woke up and it was all a dream*?",
+     "image_url": null,
+     "explanation": "Clichés such as *Once upon a time* and the dream ending tell the examiner you have not tried. Find a fresh ending.\n\n**Why the other options are wrong**\n\n- Dreams are not allowed in examination stories: Dreams are allowed; the problem is the overused ending.\n- It is grammatically incorrect: The sentence is grammatical; the problem is the cliché.\n- It makes the story too long: Length is not the problem.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6ceab698-7eff-5dce-b4c2-453864e5a079",
+       "label": "A",
+       "content": "Dreams are not allowed in examination stories",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "963a4ab8-0fe0-5997-a462-695606c16d75",
+       "label": "B",
+       "content": "It is a tired cliché that cancels everything the story built up",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f96ab078-f156-5e97-809a-4f98b92440b6",
+       "label": "C",
+       "content": "It is grammatically incorrect",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "423b89c4-ab8f-56e6-b783-b95c331e2403",
+       "label": "D",
+       "content": "It makes the story too long",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ed22b372-6a86-5ae2-afed-0d7fbb2d26f5",
+     "key": "eng-cw-02",
+     "stem": "In a story of about 500 words, the best plan is to",
+     "image_url": null,
+     "explanation": "One idea, done well, leaves room for detail, tension and a satisfying ending.\n\n**Why the other options are wrong**\n\n- tell the whole of a character's life: A whole life cannot be told well in 500 words.\n- include as many events as possible: Too many events leave no room to develop any of them.\n- describe every character in the village: Too many characters crowd the story.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1d9bb8f0-40fc-5b56-ab5e-0a0a797469e5",
+       "label": "A",
+       "content": "tell the whole of a character's life",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6a49a15b-1bf8-5e6b-828f-0b497b93e3a7",
+       "label": "B",
+       "content": "include as many events as possible",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ce1f8dcd-8535-5fc8-83f8-43c0dae79f3d",
+       "label": "C",
+       "content": "build the story around one moment, one change or one surprise",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "31f0ea8b-3831-5f1b-8172-82089b3b3f2b",
+       "label": "D",
+       "content": "describe every character in the village",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf9ff888-f42c-5e0c-8a3c-1d216ccadd93",
+     "key": "eng-cw-03",
+     "stem": "Short sentences such as *The door opened. Nobody was there.* are used in a story to",
+     "image_url": null,
+     "explanation": "Varying sentence length controls pace: short for action and suspense, longer for description.\n\n**Why the other options are wrong**\n\n- slow the story down for reflection: Longer sentences slow the pace for reflection and description.\n- show the writer's knowledge of grammar: Sentence length is chosen for effect, not to display grammar.\n- fill up the required number of words: Short sentences add few words; they are used for effect.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6fe506c8-9f95-56db-9bd0-11d8bf7fe420",
+       "label": "A",
+       "content": "slow the story down for reflection",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8571f9dd-f132-54e4-a7f6-2ee5a940a374",
+       "label": "B",
+       "content": "show the writer's knowledge of grammar",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "883c519b-aecc-5069-96b1-32c26ff17ab9",
+       "label": "C",
+       "content": "fill up the required number of words",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "21086a4e-b37e-59eb-84ff-5aa33428a89e",
+       "label": "D",
+       "content": "speed up the pace and build tension",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1c46640e-eedb-5d50-9eb4-589ca36d2fcb",
+     "key": "eng-cw-04",
+     "stem": "A question says: *Write a story beginning: \"The letter had been hidden under the mat for ten years.\"* The candidate should",
+     "image_url": null,
+     "explanation": "Then answer the questions the sentence raises: who hid the letter, why, and what happens when it is found.\n\n**Why the other options are wrong**\n\n- end the story with the given sentence: The sentence must begin the story, not end it.\n- change the sentence to make it more interesting: The given opening must be copied exactly.\n- write a letter instead of a story: The question asks for a story about a letter, not a letter.",
+     "position": 4,
+     "options": [
+      {
+       "id": "63064f65-4919-5d45-ba73-1a6afb423dcd",
+       "label": "A",
+       "content": "begin with the given sentence exactly as written",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "61233e11-3834-56d6-b00b-cfb0a2a224c8",
+       "label": "B",
+       "content": "end the story with the given sentence",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7408f1ce-10a7-56cd-bf09-a8ef46763518",
+       "label": "C",
+       "content": "change the sentence to make it more interesting",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f32a782a-72a1-5b09-940b-96d0004ba689",
+       "label": "D",
+       "content": "write a letter instead of a story",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a04abc31-e98d-563d-a093-db452eec17c6",
+     "key": "eng-cw-05",
+     "stem": "A twist at the end of a story",
+     "image_url": null,
+     "explanation": "A good twist surprises, but it makes sense when the reader thinks back over the clues.\n\n**Why the other options are wrong**\n\n- repeats the opening sentence: Repeating the opening is not a twist.\n- introduces a new character in the last line with no meaning: A random new character confuses rather than surprises.\n- tells the reader that the story was a dream: The dream ending is a cliché, not a twist.",
+     "position": 5,
+     "options": [
+      {
+       "id": "40fbb128-c2ec-59f9-8bb6-7ee89a5540b0",
+       "label": "A",
+       "content": "repeats the opening sentence",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1807dd54-ee25-5ba6-b30f-553bcff010d9",
+       "label": "B",
+       "content": "reveals something that changes how the reader sees the whole story",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "30958c76-a49f-510e-adca-65a4b368051c",
+       "label": "C",
+       "content": "introduces a new character in the last line with no meaning",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "09c0492d-aeff-592c-bd0b-cbf57336fccc",
+       "label": "D",
+       "content": "tells the reader that the story was a dream",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7584db6e-5817-57af-bd07-3039385adf66",
+     "key": "eng-cw-06",
+     "stem": "Telling a story in the third person (*he*, *she*, *they*) gives the writer",
+     "image_url": null,
+     "explanation": "First person is intimate and immediate; third person can move between characters.\n\n**Why the other options are wrong**\n\n- a close view of one mind only: A close view of one mind is the strength of the first person.\n- no need to describe anything: Every point of view needs description.\n- permission to change point of view in every paragraph: Point of view should stay consistent.",
+     "position": 6,
+     "options": [
+      {
+       "id": "ae3f2d1a-78d6-5b95-b28e-75aad35434ad",
+       "label": "A",
+       "content": "a close view of one mind only",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "815d15f3-da03-54ef-b961-9b5135356616",
+       "label": "B",
+       "content": "no need to describe anything",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75089a56-916c-5ba0-a90a-dfc84fef7cdf",
+       "label": "C",
+       "content": "more distance and the freedom to show several characters",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d2bc7b5a-e5fd-5a0b-83c3-3d005aae7aa0",
+       "label": "D",
+       "content": "permission to change point of view in every paragraph",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a536fb59-eed9-5ecf-bc75-847463d2c250",
+     "key": "eng-cw-07",
+     "stem": "Which sentence brings a character to life most effectively?",
+     "image_url": null,
+     "explanation": "One telling habit or detail shows a character in a few strokes.\n\n**Why the other options are wrong**\n\n- Pa Kamara was a nice old man.  \n  *Nice* tells us nothing the reader can picture.\n- Pa Kamara was a man who was old and nice and good.  \n  A string of vague adjectives does not create a character.\n- Pa Kamara was a character in the story.  \n  This says nothing about him at all.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a3e5c131-f23e-5144-996d-43a48875c3d2",
+       "label": "A",
+       "content": "Pa Kamara was a nice old man.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "77e5c214-431c-5ac1-8865-3173e42cc843",
+       "label": "B",
+       "content": "Pa Kamara was a man who was old and nice and good.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "579033c8-0b8e-5839-957b-c462787c5ad9",
+       "label": "C",
+       "content": "Pa Kamara was a character in the story.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "12ed16a9-ad90-567d-be7f-01b12c5087c5",
+       "label": "D",
+       "content": "Pa Kamara tapped his walking stick twice before every sentence, as if calling the room to order.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "0a80395df3e6"
+}

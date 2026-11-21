@@ -127,6 +127,15 @@ SETS = [
         "sort_from": 140,
         "checked": "editor",
     },
+    {
+        "module": ROOT / "content/questions/english-language/set6_p1.py",
+        "subject_slug": "english-language",
+        "name": "english_set6_p1",
+        "label": "English Language: set 6 (comprehension approach, essays, letters, speeches, reports and articles)",
+        "review": ROOT / "content/questions/english-language/set6_p1.review.md",
+        "sort_from": 150,
+        "checked": "editor",
+    },
 ]
 
 SETS += [
