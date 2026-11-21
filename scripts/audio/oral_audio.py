@@ -177,13 +177,32 @@ def heard_as(transcript: str, accept: set[str]) -> bool:
     return len(w) == 1 and w[0] in accept
 
 
+# Names the recognisers cannot know: Sierra Leone's currency comes back as
+# "newly owns". In a passage check each stands for any one to three words,
+# and every other word must still match.
+UNKNOWN_NAMES = ["new leones"]
+
+
 def wer(ref: list[str], hyp: list[str]) -> float:
-    d = list(range(len(hyp) + 1))
+    """Word error rate; a "*" in the reference matches one to three words."""
+    INF = float("inf")
+    d = [[INF] * (len(hyp) + 1) for _ in range(len(ref) + 1)]
+    d[0] = list(range(len(hyp) + 1))
     for i, r in enumerate(ref, 1):
-        prev, d[0] = d[0], i
-        for j, h in enumerate(hyp, 1):
-            prev, d[j] = d[j], min(d[j] + 1, d[j - 1] + 1, prev + (r != h))
-    return d[len(hyp)] / max(1, len(ref))
+        d[i][0] = d[i - 1][0] + 1
+        for j in range(1, len(hyp) + 1):
+            if r == "*":
+                d[i][j] = min([d[i - 1][j - k] for k in (1, 2, 3) if j - k >= 0] + [d[i - 1][j] + 1])
+            else:
+                d[i][j] = min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (r != hyp[j - 1]))
+    return d[len(ref)][len(hyp)] / max(1, len(ref))
+
+
+def reference(text: str) -> list[str]:
+    words = " ".join(words_of(text))
+    for name in UNKNOWN_NAMES:
+        words = words.replace(name, "*")
+    return words.split()
 
 
 class Recognisers:
@@ -341,7 +360,7 @@ class Builder:
             for speed in PASSAGE_SPEEDS:
                 audio = tidy(self.speak(phonemes, voice, speed), lead_s=0.0, tail_s=0.0)
                 heard = self.asr(encode_mp3(tidy(audio), self.tmp))
-                errors = sorted(wer(words_of(text), words_of(t)) for t in heard.values())
+                errors = sorted(wer(reference(text), words_of(t)) for t in heard.values())
                 turn = {"speaker": speaker, "voice": voice, "speed": speed, "text": text, "phonemes": phonemes,
                         "heard": heard, "wer": [round(e, 3) for e in errors]}
                 if errors[0] == 0 and errors[1] <= 0.15:
@@ -423,7 +442,7 @@ def main() -> None:
     clips = set5_p1.CLIPS
     # Each word's rivals: the other words of every row it is in, and their homophones.
     rivals: dict[str, set[str]] = {slug: set() for slug in clips}
-    for row in set5_p1.ROWS:
+    for row in set5_p1.ROWS.values():
         for slug in row:
             for other in row:
                 if clips[other]["text"].lower() != clips[slug]["text"].lower():
