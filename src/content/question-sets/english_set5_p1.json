@@ -1,0 +1,1578 @@
+{
+ "name": "english_set5_p1",
+ "label": "English Language: set 5 (oral English: vowels, consonants, stress, intonation and listening)",
+ "subject_slug": "english-language",
+ "papers": [
+  {
+   "id": "5744f6ca-4589-5eb2-8784-cf02118287d2",
+   "topic": "Vowels and Diphthongs",
+   "title": "Vowels and Diphthongs: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on vowels and diphthongs, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "46034e8c-e552-5f99-93eb-0dca20d06790",
+     "key": "eng-vow-01",
+     "stem": "Choose the word that has the same vowel sound as the one represented by the letters in bold.\n\nf**oo**d",
+     "image_url": null,
+     "explanation": "*Food* has the long vowel /uː/, the same sound as in *shoe*, *blue* and *true*. The spelling *oo* can stand for /uː/, /ʊ/ or /ʌ/, so listen to the sound, not the letters.\n\n**Why the other options are wrong**\n\n- good: *Good* has the short vowel /ʊ/, as in *put*, although it is spelt with *oo* like *food*.\n- blood: *Blood* has /ʌ/, as in *cut*: another *oo* word that does not sound like *food*.\n- boat: *Boat* has the diphthong /əʊ/, as in *go*.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6ed1c187-be16-51f0-a22e-7b014dae3d45",
+       "label": "A",
+       "content": "shoe",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "db1c93b1-d309-5d6d-a2cd-b78a87026552",
+       "label": "B",
+       "content": "good",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "166a16e0-5415-5fd2-a7c1-4bb4b3e89493",
+       "label": "C",
+       "content": "blood",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "533d0529-8b18-548c-9321-262f95ab3bc1",
+       "label": "D",
+       "content": "boat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4b69ac02-08bf-511e-b060-4315dff7ef91",
+     "key": "eng-vow-02",
+     "stem": "Which of the following words has a different vowel sound from the others?",
+     "image_url": null,
+     "explanation": "*Seize*, *field* and *key* all have the long vowel /iː/ of *see*. *Busy* is pronounced /ˈbɪzi/: its first vowel is the short /ɪ/ of *sit*, although it is spelt with *u*.\n\n**Why the other options are wrong**\n\n- seize: *Seize* has /iː/, like the others.\n- field: *Field* has /iː/, like the others.\n- key: *Key* has /iː/, like the others.",
+     "position": 2,
+     "options": [
+      {
+       "id": "603c7788-37c8-5ac1-b69c-d1556e099f53",
+       "label": "A",
+       "content": "seize",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "10186d5c-8a50-5676-9490-8d9a1ef6c218",
+       "label": "B",
+       "content": "busy",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "37468638-c832-58b6-b484-bb4b1ce538bd",
+       "label": "C",
+       "content": "field",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "438ca9ee-222a-5fa7-9b13-9905342bc3c6",
+       "label": "D",
+       "content": "key",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c802dcb0-a131-5a71-a6c1-73cf04b7def1",
+     "key": "eng-vow-03",
+     "stem": "Choose the word that rhymes with *blood*.",
+     "image_url": null,
+     "explanation": "*Blood* is pronounced /blʌd/, with the vowel of *cut*, so it rhymes with *mud*, *flood* and *bud*. Rhyme depends on sound: *food* and *good* look like *blood* but do not rhyme with it.\n\n**Why the other options are wrong**\n\n- food: *Food* ends in /uːd/, not /ʌd/.\n- good: *Good* ends in /ʊd/, not /ʌd/.\n- road: *Road* ends in /əʊd/, not /ʌd/.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ab18b478-8298-59e1-9a25-309c7944409f",
+       "label": "A",
+       "content": "food",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "110a3a57-1797-524f-830f-e0be876101cf",
+       "label": "B",
+       "content": "good",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c0245adf-3d72-5e35-95c5-dad63f504c88",
+       "label": "C",
+       "content": "mud",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e917ebe3-19e0-54c2-92b0-3a40f6811d11",
+       "label": "D",
+       "content": "road",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d1feee03-4d2c-5089-a58f-d1f7c015c97b",
+     "key": "eng-vow-04",
+     "stem": "Which of the following words contains a diphthong?",
+     "image_url": null,
+     "explanation": "*Hair* has the diphthong /eə/: the tongue glides from /e/ towards /ə/. In a pure vowel the tongue stays in one position, as in *her*, *hat* and *heart*.\n\n**Why the other options are wrong**\n\n- her: *Her* has the pure long vowel /ɜː/.\n- hat: *Hat* has the pure short vowel /æ/.\n- heart: *Heart* has the pure long vowel /ɑː/.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8695a722-7958-5c75-98fe-8ff99b4e3d5a",
+       "label": "A",
+       "content": "hair",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5c5ba357-a95e-55f9-835a-4642d3838f50",
+       "label": "B",
+       "content": "her",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4626c0bb-707c-590a-abe0-aa739e732ed1",
+       "label": "C",
+       "content": "hat",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d2da6171-70ee-572c-a7f9-5932d23d4d47",
+       "label": "D",
+       "content": "heart",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3b70ea3d-230b-5279-81b4-cb5e597bef4d",
+     "key": "eng-vow-05",
+     "stem": "In which of the following words is the letter in bold pronounced as the weak vowel /ə/ (schwa)?",
+     "image_url": null,
+     "explanation": "The schwa /ə/ appears only in unstressed syllables. In *about* (/əˈbaʊt/) the stress falls on the second syllable, so the first *a* weakens to /ə/.\n\n**Why the other options are wrong**\n\n- c**a**t: The *a* in *cat* is the short vowel /æ/.\n- f**a**ther: The *a* in *father* is the long vowel /ɑː/.\n- m**a**ke: The *a* in *make* is the diphthong /eɪ/.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c3b4cadb-91b7-5eb4-9b4e-ade4a4bb504c",
+       "label": "A",
+       "content": "c**a**t",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "45114fcc-af48-5101-9634-91b96f042ec2",
+       "label": "B",
+       "content": "**a**bout",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "55a17df1-4354-51e6-a899-19a740f5ae7a",
+       "label": "C",
+       "content": "f**a**ther",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cfd89a68-5138-5575-adf7-4912651bcacd",
+       "label": "D",
+       "content": "m**a**ke",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "645c3600-04df-5cb2-8904-4737e644c0cf",
+     "key": "eng-vow-06",
+     "stem": "Choose the word that has the same vowel sound as the one represented by the letters in bold.\n\nw**or**d",
+     "image_url": null,
+     "explanation": "*Word* has the long vowel /ɜː/ of *bird* and *nurse*, the same sound as in *heard*. Many West African speakers say /ɜː/ like /e/ or /a/, so the examination often tests it.\n\n**Why the other options are wrong**\n\n- w**ar**d: *Ward* has /ɔː/, as in *law*, not /ɜː/.\n- w**oo**d: *Wood* has /ʊ/, as in *put*.\n- w**ear**: *Wear* has the diphthong /eə/, as in *hair*.",
+     "position": 6,
+     "options": [
+      {
+       "id": "eb2cefca-feee-54ad-8dc8-3883544b3403",
+       "label": "A",
+       "content": "w**ar**d",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b881a87-d370-5cbd-a47b-0f006305b9dc",
+       "label": "B",
+       "content": "w**oo**d",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a26a89a9-97ab-510d-8b80-6354f760899e",
+       "label": "C",
+       "content": "h**ear**d",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7e08b391-ffa0-5076-9d4e-5e8a20bb4047",
+       "label": "D",
+       "content": "w**ear**",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5a176661-cb59-58fc-8242-1e32f82a0427",
+     "key": "eng-vow-07",
+     "stem": "Choose the word that has the same vowel sound as the one represented by the letters in bold.\n\nc**augh**t",
+     "image_url": null,
+     "explanation": "*Caught* has the long vowel /ɔː/, as in *law*, *port* and *walk*. Telling /ɔː/ from /əʊ/ (*caught / coat*) and from /ɒ/ (*caught / cot*) is a common test.\n\n**Why the other options are wrong**\n\n- c**oa**t: *Coat* has the diphthong /əʊ/; *caught* has a pure long vowel.\n- c**o**t: *Cot* has the short vowel /ɒ/; *caught* has the long /ɔː/.\n- c**u**t: *Cut* has /ʌ/.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f94e7dfb-a0f2-5fa7-93ee-07bf9e5f6cb6",
+       "label": "A",
+       "content": "c**oa**t",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a9bf3c77-0abd-55a8-a537-32020f12a6b0",
+       "label": "B",
+       "content": "c**o**t",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5b260cc8-06f4-51d2-8fcb-a5ccd22f55a8",
+       "label": "C",
+       "content": "c**u**t",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1884a368-f9c0-5d96-9642-6aa3cc7c5b4c",
+       "label": "D",
+       "content": "l**aw**",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b35056bb-c82c-5fea-b328-33df7b11965c",
+     "key": "eng-vow-08",
+     "stem": "Which of the following words contains the diphthong /eɪ/?",
+     "image_url": null,
+     "explanation": "*Great* rhymes with *late* and *weight*: /eɪ/. The letters *ea* spell different sounds in *great*, *bread* and *heart*, and *said* does not rhyme with *paid*.\n\n**Why the other options are wrong**\n\n- br**ea**d: *Bread* has the pure vowel /e/.\n- s**ai**d: *Said* is pronounced /sed/, with the pure vowel /e/, not /eɪ/.\n- h**ea**rt: *Heart* has /ɑː/.",
+     "position": 8,
+     "options": [
+      {
+       "id": "cb6a8b39-debd-5648-89ca-333ec8e33f20",
+       "label": "A",
+       "content": "gr**ea**t",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b5d0512e-82ec-5037-a4aa-c3fd183ca25c",
+       "label": "B",
+       "content": "br**ea**d",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7e489bc1-bef5-5fb8-9d4d-6477e30e798a",
+       "label": "C",
+       "content": "s**ai**d",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8dfac9cc-58f6-5c79-b141-d26aa1ec2d82",
+       "label": "D",
+       "content": "h**ea**rt",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "525e22c0-ec91-54f4-8804-690f92070266",
+   "topic": "Consonants and Consonant Clusters",
+   "title": "Consonants and Consonant Clusters: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on consonants and consonant clusters, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "22113761-71c6-5352-ae8a-8b72213076c7",
+     "key": "eng-con-01",
+     "stem": "Which of the following words begins with the sound /θ/?",
+     "image_url": null,
+     "explanation": "/θ/ is the voiceless *th* of *thin*, *think* and *three*. Its voiced partner /ð/ begins *this*, *these* and *though*. Saying /θ/ as /t/ (*tick* for *thick*) is a common substitution.\n\n**Why the other options are wrong**\n\n- these: *These* begins with the voiced sound /ð/, as in *this*.\n- Thomas: In *Thomas* the *th* is pronounced /t/.\n- though: *Though* begins with the voiced sound /ð/.",
+     "position": 1,
+     "options": [
+      {
+       "id": "ec7c2de4-522b-5ac4-9412-c6983f17caa1",
+       "label": "A",
+       "content": "these",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "132eb79a-4ace-547d-89de-f2a85a818f72",
+       "label": "B",
+       "content": "thick",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2a4e58fd-b842-5637-809a-8e0139739973",
+       "label": "C",
+       "content": "Thomas",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1910767b-09b0-546d-837e-8b056036dccf",
+       "label": "D",
+       "content": "though",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1871046d-f10c-51d9-a409-0ba50ccf3194",
+     "key": "eng-con-02",
+     "stem": "Which of the following words contains the sound /ʒ/?",
+     "image_url": null,
+     "explanation": "/ʒ/ is the voiced partner of /ʃ/, heard in *measure*, *pleasure*, *vision* and *television* (/ˈtelɪvɪʒn/). It is rare in English and often replaced by /ʃ/ or /dʒ/.\n\n**Why the other options are wrong**\n\n- mission: *Mission* contains /ʃ/: /ˈmɪʃn/.\n- nation: *Nation* contains /ʃ/: /ˈneɪʃn/.\n- pressure: *Pressure* contains /ʃ/: /ˈpreʃə/.",
+     "position": 2,
+     "options": [
+      {
+       "id": "bacafbe5-3b73-505d-b4c3-e66fc17a3c89",
+       "label": "A",
+       "content": "mission",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b409b33-c24b-5e17-a9a3-810a92262a9b",
+       "label": "B",
+       "content": "nation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d4709a59-7cf5-5ae0-943a-9ab3a6861aa4",
+       "label": "C",
+       "content": "television",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "51ed5188-dbf1-55a0-85a1-f9ee14d33860",
+       "label": "D",
+       "content": "pressure",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "45e15d2f-337c-5647-a483-33cf7c263f72",
+     "key": "eng-con-03",
+     "stem": "In which of the following words is the ending *-ed* pronounced /ɪd/?",
+     "image_url": null,
+     "explanation": "*-ed* adds a syllable, /ɪd/, only after /t/ or /d/: *land* + *-ed* = /ˈlændɪd/. After other voiceless sounds it is /t/; after voiced sounds it is /d/.\n\n**Why the other options are wrong**\n\n- hoped: *Hope* ends in the voiceless /p/, so *-ed* is /t/: /həʊpt/.\n- begged: *Beg* ends in the voiced /g/, so *-ed* is /d/: /beɡd/.\n- fixed: *Fix* ends in /s/ (the *x* is /ks/), a voiceless sound, so *-ed* is /t/.",
+     "position": 3,
+     "options": [
+      {
+       "id": "814274a2-e4fa-5d2b-a5b6-f7de3280aa53",
+       "label": "A",
+       "content": "hoped",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c629f330-b468-56ae-903f-dcfbcba03bbe",
+       "label": "B",
+       "content": "begged",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0be0400e-b0bb-5ba9-82a8-160dffe6f810",
+       "label": "C",
+       "content": "fixed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f8c47717-f1ef-53a4-b08e-9684577c3299",
+       "label": "D",
+       "content": "landed",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6777b6c7-acad-5d8e-b55c-3ea2ed36f0ca",
+     "key": "eng-con-04",
+     "stem": "In which of the following words is the final *-s* or *-es* pronounced /ɪz/?",
+     "image_url": null,
+     "explanation": "The ending adds a syllable, /ɪz/, after the hissing sounds /s/, /z/, /ʃ/, /ʒ/, /tʃ/ and /dʒ/. *Judge* ends in /dʒ/, so *judges* is /ˈdʒʌdʒɪz/.\n\n**Why the other options are wrong**\n\n- beds: *Bed* ends in the voiced /d/, so the ending is /z/.\n- caps: *Cap* ends in the voiceless /p/, so the ending is /s/.\n- rooms: *Room* ends in the voiced /m/, so the ending is /z/.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2cb98f38-92b8-5878-bed5-4edaf1952aa1",
+       "label": "A",
+       "content": "judges",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "26162da4-f481-51ef-b95e-2c7eb57ba13a",
+       "label": "B",
+       "content": "beds",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c1e2ceb1-ffec-5d87-96d6-b700154a8258",
+       "label": "C",
+       "content": "caps",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fa734d28-1ac8-51de-9196-7406e193f286",
+       "label": "D",
+       "content": "rooms",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b5c13147-ad80-5deb-ad17-b0f952ab5392",
+     "key": "eng-con-05",
+     "stem": "Which of the following words contains a silent consonant?",
+     "image_url": null,
+     "explanation": "In *listen* (/ˈlɪsn/) the *t* is silent, as in *castle* and *whistle*. Other silent consonants: the *k* in *knife*, the *b* in *climb*, the *h* in *hour*.\n\n**Why the other options are wrong**\n\n- lemon: Every consonant in *lemon* is pronounced: /ˈlemən/.\n- limit: Every consonant in *limit* is pronounced: /ˈlɪmɪt/.\n- lentil: Every consonant in *lentil* is pronounced: /ˈlentl/.",
+     "position": 5,
+     "options": [
+      {
+       "id": "85007606-5a59-50b7-a9f5-c854abe56d07",
+       "label": "A",
+       "content": "lemon",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a82c8ae3-4e4a-5e17-901d-cf893a3c8720",
+       "label": "B",
+       "content": "listen",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d15cc7ca-da36-57e3-95a9-9d930e4b87de",
+       "label": "C",
+       "content": "limit",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "65e6baf2-22f7-5157-bee6-578b09bb3ce9",
+       "label": "D",
+       "content": "lentil",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0b896cf8-3c75-5d98-b340-f46c40b8b904",
+     "key": "eng-con-06",
+     "stem": "Which of the following words begins with a cluster of three consonant sounds?",
+     "image_url": null,
+     "explanation": "A cluster is counted in sounds, not letters. *Street* begins with /s/ + /t/ + /r/: three consonant sounds with no vowel between them.\n\n**Why the other options are wrong**\n\n- sheep: *Sh* is one sound, /ʃ/, so *sheep* begins with a single consonant.\n- photo: *Ph* is one sound, /f/.\n- think: *Th* is one sound, /θ/.",
+     "position": 6,
+     "options": [
+      {
+       "id": "4d437b18-75e7-5b10-8d5d-6d5c912c0a05",
+       "label": "A",
+       "content": "sheep",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b52923ff-76d0-5c1d-be81-990121ac5293",
+       "label": "B",
+       "content": "photo",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "69fca01a-926b-50f6-97b3-03c582fd21c1",
+       "label": "C",
+       "content": "street",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "700f1e4b-0a7d-53b0-8954-4cb5ec3cbea9",
+       "label": "D",
+       "content": "think",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "20631e03-2c02-5a39-b07f-d9769de9179c",
+     "key": "eng-con-07",
+     "stem": "In which of the following words is *ch* pronounced /k/?",
+     "image_url": null,
+     "explanation": "*Ch* spells /tʃ/ (*church*), /k/ (*chemistry*, *character*, *school*) or /ʃ/ (*machine*, *chef*).\n\n**Why the other options are wrong**\n\n- church: In *church*, both *ch*s are /tʃ/.\n- machine: In *machine*, *ch* is /ʃ/.\n- cheap: In *cheap*, *ch* is /tʃ/.",
+     "position": 7,
+     "options": [
+      {
+       "id": "919d7070-dcf9-5388-bdaa-1f0bff2ab804",
+       "label": "A",
+       "content": "church",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f75c2435-e12b-55fb-b7c8-5897310d6ec1",
+       "label": "B",
+       "content": "machine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4f10b319-d3d0-5e92-acda-58f0ed0b575c",
+       "label": "C",
+       "content": "cheap",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8f5f2a4c-1efc-596f-a47f-ac88d873f4af",
+       "label": "D",
+       "content": "chemistry",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "59350c64-ccf0-5934-8437-efc3c8f9fe26",
+     "key": "eng-con-08",
+     "stem": "Choose the word that has the same consonant sound as the one represented by the letters in bold.\n\nna**ti**on",
+     "image_url": null,
+     "explanation": "The *ti* in *nation* is /ʃ/, the same sound as *sh* in *shop*. Confusing /ʃ/ with /tʃ/ (*shop / chop*, *share / chair*) is a common test.\n\n**Why the other options are wrong**\n\n- **ch**op: *Chop* begins with /tʃ/, not /ʃ/.\n- mea**s**ure: The *s* in *measure* is the voiced /ʒ/, not /ʃ/.\n- **s**un: *Sun* begins with /s/.",
+     "position": 8,
+     "options": [
+      {
+       "id": "47637635-3fe2-5b6d-b9b0-7fa11bc825ac",
+       "label": "A",
+       "content": "**sh**op",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "de0ffbc8-a28e-528c-963b-29ac48c92c75",
+       "label": "B",
+       "content": "**ch**op",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1c2d2581-b6db-5de6-96fa-6c0f06cbd308",
+       "label": "C",
+       "content": "mea**s**ure",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bc14ed70-a9a9-5c92-b942-c8661cdf8ab5",
+       "label": "D",
+       "content": "**s**un",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dca42472-c337-52e1-bdcd-2ec43226da30",
+   "topic": "Word Stress",
+   "title": "Word Stress: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on word stress, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "42336214-fa6d-53f8-ac7e-310eab776b4d",
+     "key": "eng-ws-01",
+     "stem": "Which of the following words is stressed on the first syllable?",
+     "image_url": null,
+     "explanation": "Two-syllable nouns and adjectives are usually stressed on the first syllable: VILlage, MARket, HAPpy. Many two-syllable verbs stress the second.\n\n**Why the other options are wrong**\n\n- arrive: *Arrive* is a verb stressed on the second syllable: arRIVE.\n- complete: *Complete* is stressed on the second syllable: comPLETE.\n- believe: *Believe* is stressed on the second syllable: beLIEVE.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d3e4dbe0-2550-5909-b433-8ea82874bfcf",
+       "label": "A",
+       "content": "arrive",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5ad3a5cb-261e-5a9e-9eab-9ebf549d9cba",
+       "label": "B",
+       "content": "village",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8f1a7708-eb13-5fa1-82a6-c7c7e13e49e0",
+       "label": "C",
+       "content": "complete",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0ad9aecc-bc1d-5aae-8fbf-5a92e4d79b6a",
+       "label": "D",
+       "content": "believe",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "adfcb285-8268-5717-84f7-bd3c066dab64",
+     "key": "eng-ws-02",
+     "stem": "In which sentence is the word *record* correctly stressed? (The stressed syllable is in capitals.)",
+     "image_url": null,
+     "explanation": "Many noun–verb pairs are spelt alike but stressed differently: the noun on the first syllable (a REcord, a PREsent), the verb on the second (to reCORD, to preSENT).\n\n**Why the other options are wrong**\n\n- She will REcord the song tomorrow.  \n  Here *record* is a verb, so the stress falls on the second syllable.\n- He broke the world reCORD.  \n  Here *record* is a noun, so the stress falls on the first syllable: REcord.\n- The teacher keeps a reCORD of attendance.  \n  Here *record* is a noun, so it should be REcord.",
+     "position": 2,
+     "options": [
+      {
+       "id": "18e315f6-c2b1-5217-b70b-4acee3305ee6",
+       "label": "A",
+       "content": "She will REcord the song tomorrow.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "45d023b7-aac8-5a2c-91a9-e397acdfec60",
+       "label": "B",
+       "content": "He broke the world reCORD.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "29a86f0b-04b1-500a-9cb2-06c182c57271",
+       "label": "C",
+       "content": "She will reCORD the song tomorrow.",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "17f0c39a-d4f1-57d2-b2e1-4f64a19507f0",
+       "label": "D",
+       "content": "The teacher keeps a reCORD of attendance.",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0707c21a-c619-51d6-8483-7f254785f996",
+     "key": "eng-ws-03",
+     "stem": "Which of the following shows the correct stress for *examination*?",
+     "image_url": null,
+     "explanation": "Words ending in *-tion* and *-sion* are stressed on the syllable just before the ending: examiNAtion, eduCAtion, deCIsion.\n\n**Why the other options are wrong**\n\n- exAMination: The stress is not on the second syllable; *-tion* moves it to the syllable just before.\n- EXamination: The first syllable is not stressed.\n- examinaTION: The ending *-tion* is never stressed; it is the weak syllable /ʃn/.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6befd112-4062-5494-abb9-afc191e0f1a5",
+       "label": "A",
+       "content": "exAMination",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4d94c35a-3f1a-5f24-af6e-7e4a7956b11d",
+       "label": "B",
+       "content": "EXamination",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "02f2eaf3-669b-569a-bcc0-9ed4a6e91b66",
+       "label": "C",
+       "content": "examinaTION",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "92b25b5e-a3d5-5806-aa6b-e946a8119cb6",
+       "label": "D",
+       "content": "examiNAtion",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f6bcdf5-01f8-5173-86d8-edf8d84b591c",
+     "key": "eng-ws-04",
+     "stem": "Which of the following words is stressed on the second syllable?",
+     "image_url": null,
+     "explanation": "Words ending in *-ity* are stressed on the syllable just before the ending: aBILity, uniVERsity, elecTRIcity.\n\n**Why the other options are wrong**\n\n- photograph: *Photograph* is stressed on the first syllable: PHOtograph.\n- engineer: *Engineer* is stressed on the last syllable: engiNEER.\n- interesting: *Interesting* is stressed on the first syllable: INteresting.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2bfdc601-bd99-5711-85ef-0422aefdd8ae",
+       "label": "A",
+       "content": "ability",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5b310f6e-02b9-593d-bec0-2584b545fa4d",
+       "label": "B",
+       "content": "photograph",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "63eb81a2-5b70-5bb1-b348-31aa1cf9b089",
+       "label": "C",
+       "content": "engineer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cbc8d812-5004-565c-ab17-fe710944d8a9",
+       "label": "D",
+       "content": "interesting",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7dd848cb-218d-5138-983b-20aee2b8b3c2",
+     "key": "eng-ws-05",
+     "stem": "Which of the following words is stressed on the last syllable?",
+     "image_url": null,
+     "explanation": "The endings *-eer*, *-ee*, *-ese* and *-ique* take the stress themselves: volunTEER, engiNEER, refuGEE, ChiNESE, uNIQUE.\n\n**Why the other options are wrong**\n\n- pencil: *Pencil* is a two-syllable noun stressed on the first syllable: PENcil.\n- calendar: *Calendar* is stressed on the first syllable: CALendar.\n- family: *Family* is stressed on the first syllable: FAMily.",
+     "position": 5,
+     "options": [
+      {
+       "id": "44f549e7-b5ec-5842-94e2-6ab65b3a2aa5",
+       "label": "A",
+       "content": "pencil",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "501f320a-404b-5c29-8bb8-26c271c31d44",
+       "label": "B",
+       "content": "volunteer",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e21216db-2c33-54d8-9e50-fdc4d933674b",
+       "label": "C",
+       "content": "calendar",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "db58a902-ad75-50ca-bfbd-46d0985a5979",
+       "label": "D",
+       "content": "family",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c9639fbd-fee7-57e6-9a58-763707ef347f",
+     "key": "eng-ws-06",
+     "stem": "Which of the following words is correctly stressed? (The stressed syllable is in capitals.)",
+     "image_url": null,
+     "explanation": "These are words often stressed differently in everyday Sierra Leonean speech. The standard forms are INteresting, FAMily, ADvertise and deVELop.\n\n**Why the other options are wrong**\n\n- faMIly: The stress in *family* is on the first syllable: FAMily.\n- adVERtise: The stress in *advertise* is on the first syllable: ADvertise.\n- deveLOP: The stress in *develop* is on the second syllable: deVELop.",
+     "position": 6,
+     "options": [
+      {
+       "id": "a43f78e3-369c-5a6b-9094-dceb937f88de",
+       "label": "A",
+       "content": "faMIly",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "706f3fad-4bcf-5ca4-9eb2-8f46fac71fb4",
+       "label": "B",
+       "content": "adVERtise",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1bb2cd1d-08f2-590f-b7d0-156a41de8698",
+       "label": "C",
+       "content": "INteresting",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "022fb496-e6ad-5db5-b7b1-7f5509b92d40",
+       "label": "D",
+       "content": "deveLOP",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9e6b69e7-6fb1-5bb5-9837-ecfc33a25e8b",
+     "key": "eng-ws-07",
+     "stem": "Which of the following words is stressed on the third syllable?",
+     "image_url": null,
+     "explanation": "Words ending in *-ic* are stressed on the syllable just before the ending: e-co-NOM-ic, so the stress falls on the third syllable.\n\n**Why the other options are wrong**\n\n- photography: *Photography* is stressed on the second syllable: phoTOgraphy.\n- politics: *Politics* is stressed on the first syllable: POlitics.\n- development: *Development* is stressed on the second syllable: deVELopment.",
+     "position": 7,
+     "options": [
+      {
+       "id": "fcba739d-e712-5b5c-b218-c5106473a387",
+       "label": "A",
+       "content": "photography",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1ba6de12-0e1e-59be-b36d-679b351d5d40",
+       "label": "B",
+       "content": "politics",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dad359fb-259c-5e82-8f01-7d037d283812",
+       "label": "C",
+       "content": "development",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "10d2aee2-648a-5b79-9d19-f4ea0923b734",
+       "label": "D",
+       "content": "economic",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cac4d323-f8d9-56c2-aa24-c226b2e9c71c",
+     "key": "eng-ws-08",
+     "stem": "Which of the following words has the same stress pattern as *beGIN*?",
+     "image_url": null,
+     "explanation": "*Begin* has two syllables with the stress on the second. *Decide* (deCIDE) has the same pattern.\n\n**Why the other options are wrong**\n\n- table: *Table* is stressed on the first syllable: TAble.\n- open: *Open* is a verb, but it is one of the exceptions stressed on the first syllable: OPen.\n- market: *Market* is a noun stressed on the first syllable: MARket.",
+     "position": 8,
+     "options": [
+      {
+       "id": "fc21ec02-6583-5b70-bef6-7fe639923e32",
+       "label": "A",
+       "content": "decide",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c3167faa-f7e5-58d5-bd70-f10e73992491",
+       "label": "B",
+       "content": "table",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1e3ff4b0-9d04-5905-8ee2-12a50e1849cc",
+       "label": "C",
+       "content": "open",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13e25cf2-3d3c-52f2-b342-9c33e1da59b3",
+       "label": "D",
+       "content": "market",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dbdb2e04-caba-5ee3-9377-ba2b5d8abf90",
+   "topic": "Sentence Stress and Intonation",
+   "title": "Sentence Stress and Intonation: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on sentence stress and intonation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "b1e7d21c-626b-5263-b780-2a746bc45829",
+     "key": "eng-ss-01",
+     "stem": "In the sentence below, the word in capitals carries the emphatic stress.\n\n*My brother SOLD the car.*\n\nWhich question does the sentence answer?",
+     "image_url": null,
+     "explanation": "Emphatic stress falls on the word that corrects the question. SOLD corrects the action: not *buy*, but *sold*.\n\n**Why the other options are wrong**\n\n- Did your sister sell the car?  \n  This question would be answered by stressing BROTHER, to correct *sister*.\n- Did your brother sell the bicycle?  \n  This question would be answered by stressing CAR, to correct *bicycle*.\n- Did your brother sell the car yesterday?  \n  Nothing in this question is corrected by the stress on SOLD.",
+     "position": 1,
+     "options": [
+      {
+       "id": "cff112e1-b61b-56cf-a62c-4f45be96f9c6",
+       "label": "A",
+       "content": "Did your sister sell the car?",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "45cdd0d6-68f1-54bb-b792-ee7c55917b91",
+       "label": "B",
+       "content": "Did your brother buy the car?",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "05fb1886-d361-5e89-b716-5690af1b7ae9",
+       "label": "C",
+       "content": "Did your brother sell the bicycle?",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9998b9aa-b1c7-5f75-b271-06f5638e055d",
+       "label": "D",
+       "content": "Did your brother sell the car yesterday?",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "28875de2-7b3d-5412-84af-0144a7180660",
+     "key": "eng-ss-02",
+     "stem": "A pupil is asked: *Did Musa travel to Bo on Monday?* The pupil answers: *No, Musa travelled to Bo on Tuesday.* Which word in the answer should carry the emphatic stress?",
+     "image_url": null,
+     "explanation": "Find the detail that changes between question and answer: *Monday* becomes *Tuesday*, so TUESDAY is stressed.\n\n**Why the other options are wrong**\n\n- Musa: Musa is not being corrected: the question already names him.\n- travelled: The action is not being corrected: he did travel.\n- Bo: The place is not being corrected: he did go to Bo.",
+     "position": 2,
+     "options": [
+      {
+       "id": "7647cd8f-935e-5862-8232-74e2f97cd5ce",
+       "label": "A",
+       "content": "Musa",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "757a25aa-e66f-5541-be27-36b726806de3",
+       "label": "B",
+       "content": "travelled",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c9b23681-87c4-52e2-9443-90d31393bf98",
+       "label": "C",
+       "content": "Tuesday",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7060a1fb-5a24-5aaa-a026-d2e7d6f426b0",
+       "label": "D",
+       "content": "Bo",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "383d1266-d40c-5404-b74b-9261f0691cbe",
+     "key": "eng-ss-03",
+     "stem": "Which of the following would normally be spoken with a rising tune at the end?",
+     "image_url": null,
+     "explanation": "Yes/no questions rise at the end. Statements, commands, wh- questions and exclamations fall.\n\n**Why the other options are wrong**\n\n- Where are you going?  \n  Wh- questions normally have a falling tune: the question word already shows it is a question.\n- Close the door.  \n  Commands have a falling tune.\n- What a lovely dress!  \n  Exclamations have a falling tune.",
+     "position": 3,
+     "options": [
+      {
+       "id": "270e9c83-6e71-5d50-997a-3074848fda64",
+       "label": "A",
+       "content": "Where are you going?",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5dc1b51b-cb11-58ab-a414-d4e12d806eed",
+       "label": "B",
+       "content": "Close the door.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "60c3bd04-ae8b-55b2-a1d6-4ab633fb628a",
+       "label": "C",
+       "content": "What a lovely dress!",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0b993ba7-3270-5a1c-a805-d325f6874403",
+       "label": "D",
+       "content": "Are you coming to the match?",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dc6e2288-8baf-52e3-b56c-93fc2b511b38",
+     "key": "eng-ss-04",
+     "stem": "A speaker says: *It's very hot today, isn't it?* with a falling tune on the tag. The speaker",
+     "image_url": null,
+     "explanation": "Falling tag: the speaker is sure and invites agreement. Rising tag: the speaker is unsure and is asking.\n\n**Why the other options are wrong**\n\n- is not sure and is really asking for information: A real question is shown by a rising tune on the tag.\n- is angry with the listener: The tune of the tag shows certainty, not anger.\n- has not finished the sentence: A falling tune sounds complete; an unfinished statement rises.",
+     "position": 4,
+     "options": [
+      {
+       "id": "43f25b86-9dfd-51fb-b432-2cb9629ee67f",
+       "label": "A",
+       "content": "is sure and expects the listener to agree",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9e686036-ba3c-5172-b20d-e8c1ff782b73",
+       "label": "B",
+       "content": "is not sure and is really asking for information",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d2b4182a-31f5-5143-8d7d-dcd90282e9f7",
+       "label": "C",
+       "content": "is angry with the listener",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "822b0704-d921-5ca0-b948-2ceacb1eae0f",
+       "label": "D",
+       "content": "has not finished the sentence",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a2a00dd6-23e5-53c3-9030-03926bf9be7f",
+     "key": "eng-ss-05",
+     "stem": "In normal speech, which words carry the stress in this sentence?\n\n*The boys are playing football in the field.*",
+     "image_url": null,
+     "explanation": "Content words (nouns, main verbs, adjectives, adverbs) carry the stress; function words (articles, auxiliaries, prepositions, pronouns) are weak. This gives English its rhythm.\n\n**Why the other options are wrong**\n\n- The, are, in, the: These are function words, which are normally weak and unstressed.\n- boys, are, in, field: *Are* and *in* are function words, normally unstressed.\n- Every word is stressed equally: Giving every word equal weight is not the rhythm of standard English.",
+     "position": 5,
+     "options": [
+      {
+       "id": "5e335a04-917f-5b55-a94c-d9d4cbaca7ca",
+       "label": "A",
+       "content": "The, are, in, the",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "14e7f3f4-5c43-5cf6-9d29-d644ab12553c",
+       "label": "B",
+       "content": "boys, playing, football, field",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "61612500-1d22-5ad5-b02b-c023ab0e58a9",
+       "label": "C",
+       "content": "boys, are, in, field",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9aace723-bd1c-5e2f-893d-c1cf67b33051",
+       "label": "D",
+       "content": "Every word is stressed equally",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "953a2cbf-08db-5e54-bf39-8273aa89f4bb",
+     "key": "eng-ss-06",
+     "stem": "How is the list in this sentence normally spoken?\n\n*I bought rice, oil, onions and pepper.*",
+     "image_url": null,
+     "explanation": "Each item but the last rises, showing more is coming; the last falls, showing the list is complete.\n\n**Why the other options are wrong**\n\n- Falling on every item: Falling on each item would make each one sound like the end of the sentence.\n- Rising on every item, including *pepper*: A rise on the last item would make the list sound unfinished.\n- Rising only on *pepper*: The last item falls, to show the list is complete.",
+     "position": 6,
+     "options": [
+      {
+       "id": "8e8d6e74-0c23-5cdd-91b2-0f47ca59b3f2",
+       "label": "A",
+       "content": "Falling on every item",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4693ebf6-ba55-53ea-9660-567b5b1efd31",
+       "label": "B",
+       "content": "Rising on every item, including *pepper*",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e41b8ca1-991c-5bba-a943-b0c9a938da98",
+       "label": "C",
+       "content": "Rising on *rice*, *oil* and *onions*, and falling on *pepper*",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6f11d4ae-37f5-52ec-8cff-1f54d72deaf6",
+       "label": "D",
+       "content": "Rising only on *pepper*",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0b07d748-1cdd-5107-a598-689c51fa6e1c",
+     "key": "eng-ss-07",
+     "stem": "The word in capitals carries the emphatic stress.\n\n*I didn't say SHE took the money.*\n\nWhat does the speaker mean?",
+     "image_url": null,
+     "explanation": "Moving the stress changes the meaning, because the stressed word is the one being contrasted. Stress on SHE contrasts her with another person.\n\n**Why the other options are wrong**\n\n- Someone else, not the speaker, said it: That meaning needs the stress on I: *I didn't say she took the money.*\n- The speaker suggested it but did not actually say it: That meaning needs the stress on SAY.\n- She borrowed the money; she did not take it: That meaning needs the stress on TOOK.",
+     "position": 7,
+     "options": [
+      {
+       "id": "1daf7411-6adc-5f8e-a63a-7cb89ad2c583",
+       "label": "A",
+       "content": "Someone else, not the speaker, said it",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3fd30f76-7025-5206-be71-06cbb71c4133",
+       "label": "B",
+       "content": "The speaker suggested it but did not actually say it",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5ab3eee3-16ee-5dc5-a0ce-7b611839c109",
+       "label": "C",
+       "content": "She borrowed the money; she did not take it",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2f77f003-545c-5b71-8747-7a85ccd7c9f7",
+       "label": "D",
+       "content": "Someone else, not she, took the money",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "50747929-856d-5806-8a36-dc6d07a5166c",
+     "key": "eng-ss-08",
+     "stem": "*You failed the test?* spoken with a sharp rising tune expresses",
+     "image_url": null,
+     "explanation": "This is an echo question: a statement repeated with a rising tune to show surprise or to check what was heard.\n\n**Why the other options are wrong**\n\n- complete certainty: Certainty is shown by a falling tune.\n- a command: Commands have a falling tune.\n- the end of a list: The end of a list has a falling tune.",
+     "position": 8,
+     "options": [
+      {
+       "id": "a7107071-89ae-5ddd-a2df-88c2648ed22d",
+       "label": "A",
+       "content": "surprise or disbelief",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4bff3c8d-2599-5d21-ba22-5702e04691b3",
+       "label": "B",
+       "content": "complete certainty",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "14fcc129-d4d0-5d21-af9c-abb56bd57437",
+       "label": "C",
+       "content": "a command",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "119bf1bc-c20b-50af-8aac-4faeb43e752f",
+       "label": "D",
+       "content": "the end of a list",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c8d3115f-3ad2-5019-abb4-032e4194ba1c",
+   "topic": "Listening Comprehension Skills",
+   "title": "Listening Comprehension Skills: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on listening comprehension skills, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "867cac7c-595f-554f-a36d-2c7e22b3d6f5",
+     "key": "eng-lis-01",
+     "stem": "In the few seconds before a listening passage is read, the most useful thing a candidate can do is to",
+     "image_url": null,
+     "explanation": "Knowing the questions tells you what to listen for: a time, a name, a reason. Then you can predict and note details briefly.\n\n**Why the other options are wrong**\n\n- try to write down every word that will be read: No one can write down every word; it means missing the meaning.\n- close the eyes and wait for the passage to begin: This wastes the only chance to prepare.\n- start answering the questions by guessing: Answers should come from the passage, not from guessing in advance.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b363fc6a-0185-530b-9bb7-fa590e244da7",
+       "label": "A",
+       "content": "try to write down every word that will be read",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bbaa15d8-1ae5-5013-8144-63efd499746f",
+       "label": "B",
+       "content": "read the questions and mark the key words to listen for",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f70d29b8-fc2a-5db1-bdae-27cb40e4a040",
+       "label": "C",
+       "content": "close the eyes and wait for the passage to begin",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "032e4f42-74c5-5589-b483-755da7f3cc41",
+       "label": "D",
+       "content": "start answering the questions by guessing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "12fe470c-bc9e-5206-a235-7eaed9d8503e",
+     "key": "eng-lis-02",
+     "stem": "A speaker says:\n\n> Many people think the market opens at eight o'clock. However, it actually opens at nine.\n\nAt what time does the market open?",
+     "image_url": null,
+     "explanation": "Signal words such as *however*, *actually* and *in fact* warn that a correction is coming, and the correction is usually the answer. Test-setters often put the first-mentioned detail in a wrong option.\n\n**Why the other options are wrong**\n\n- Eight o'clock: Eight is what people *think*; *however* signals the correction.\n- Half past eight: No such time is mentioned.\n- The speaker does not say: The speaker clearly says the market opens at nine.",
+     "position": 2,
+     "options": [
+      {
+       "id": "97fb3288-cb6f-5835-9ee9-e60ec3d432cb",
+       "label": "A",
+       "content": "Eight o'clock",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0942d2e7-d2a2-524e-b3b5-e7ebf19dd849",
+       "label": "B",
+       "content": "Half past eight",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a049b476-6801-53da-b9c4-5a8f4f80788d",
+       "label": "C",
+       "content": "Nine o'clock",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4180d0ac-7a90-58e6-8ce1-c1c48de8a886",
+       "label": "D",
+       "content": "The speaker does not say",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c0908ebe-8e13-551f-8f0d-d25c1823e542",
+     "key": "eng-lis-03",
+     "stem": "The following conversation is read aloud.\n\n> **Man:** Take two tablets three times a day, after meals, and finish the whole course.\n>\n> **Woman:** Even if I feel better after two days?\n>\n> **Man:** Yes, even then. And come back if the fever returns.\n\nWhat is the most likely relationship between the speakers?",
+     "image_url": null,
+     "explanation": "Inference comes from clues: *tablets*, *three times a day*, *finish the whole course* and *the fever* all point to medicine being given out.\n\n**Why the other options are wrong**\n\n- A teacher and a pupil: Nothing about lessons or school is mentioned.\n- A trader and a buyer of rice: They are talking about tablets and a fever, not rice.\n- A driver and a passenger: Nothing about a journey or a vehicle is mentioned.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0db8b85c-632c-554f-9af7-57a4dc9f2867",
+       "label": "A",
+       "content": "A teacher and a pupil",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e225f472-da69-5612-8c4b-a7381fe2d031",
+       "label": "B",
+       "content": "A trader and a buyer of rice",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6fc2e27-a37b-5a40-a089-76d7a0594efc",
+       "label": "C",
+       "content": "A driver and a passenger",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e3dbe208-09bf-5001-a2c3-53db0a4631b2",
+       "label": "D",
+       "content": "A pharmacist and a customer",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6b17a05b-63b9-5792-b657-b30b725b7555",
+     "key": "eng-lis-04",
+     "stem": "The following conversation is read aloud.\n\n> **Man:** How much are the oranges?\n>\n> **Woman:** NLe 20 for ten.\n>\n> **Man:** I'll take twenty, and that pineapple.\n>\n> **Woman:** The pineapple is NLe 15.\n\nHow much does the man pay altogether?",
+     "image_url": null,
+     "explanation": "Twenty oranges at NLe 20 for ten cost NLe 40; with the pineapple, 40 + 15 = NLe 55. The total is never spoken: you must combine two details.\n\n**Why the other options are wrong**\n\n- NLe 15: NLe 15 is the price of the pineapple alone.\n- NLe 35: This counts ten oranges instead of twenty: 20 + 15.\n- NLe 40: NLe 40 is the price of the twenty oranges alone, without the pineapple.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6a8b37fe-8df0-5fef-b74f-0af1fe5d889b",
+       "label": "A",
+       "content": "NLe 15",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "05665b4a-2d14-5243-9067-28e27a1e1f9c",
+       "label": "B",
+       "content": "NLe 35",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c6b862f5-f39f-512f-be20-9556daff36ff",
+       "label": "C",
+       "content": "NLe 40",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "370a1f96-a419-5dba-996c-099281939b9c",
+       "label": "D",
+       "content": "NLe 55",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7f9e3c67-5b33-5e66-9df3-27aa2826bd12",
+     "key": "eng-lis-05",
+     "stem": "A speaker says, slowly:\n\n> Well... I suppose I could help you move on Saturday, if there's really nobody else.\n\nHow does the speaker feel about helping?",
+     "image_url": null,
+     "explanation": "*Well...*, *I suppose* and the condition *if there's really nobody else*, said slowly, all show reluctance. Attitude comes from the words and the voice.\n\n**Why the other options are wrong**\n\n- Enthusiastic: An eager helper would agree at once, not say *I suppose* and *if there's really nobody else*.\n- Angry: Nothing the speaker says shows anger.\n- Relieved: Being relieved does not fit offering help unwillingly.",
+     "position": 5,
+     "options": [
+      {
+       "id": "bdc44964-9d95-5f61-89bd-8e244e186239",
+       "label": "A",
+       "content": "Reluctant",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "20aaa459-17ff-515c-a7a5-06ffb068fe8d",
+       "label": "B",
+       "content": "Enthusiastic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8718832e-58dc-50ad-a3a2-6a356a12ff04",
+       "label": "C",
+       "content": "Angry",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4534eea1-5f96-590e-93d5-c1a0866087b8",
+       "label": "D",
+       "content": "Relieved",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "861e0daf-d93b-5a54-954f-2b10f635452d",
+     "key": "eng-lis-06",
+     "stem": "A speaker at a school meeting says:\n\n> Last year, three pupils from this very school were injured crossing the highway. That is why we are asking the council to build a footbridge.\n\nWhy does the speaker mention the three injured pupils?",
+     "image_url": null,
+     "explanation": "*That is why* links the accident to the request: the injuries are evidence for the footbridge. Purpose questions ask why a detail is included.\n\n**Why the other options are wrong**\n\n- To praise the three pupils: Nothing in the talk praises them.\n- To announce the pupils' names: No names are given.\n- To ask pupils to stop using the highway: The speaker asks the council for a footbridge, not pupils to avoid the road.",
+     "position": 6,
+     "options": [
+      {
+       "id": "7a9b72b3-6d12-5282-84bb-9e764b042d79",
+       "label": "A",
+       "content": "To praise the three pupils",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fa488ac4-6d4f-50fc-bbd8-d0a2263d0a80",
+       "label": "B",
+       "content": "To show why a footbridge is needed",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4b9efbb5-c1be-5877-aaaa-1e82bf3b82d5",
+       "label": "C",
+       "content": "To announce the pupils' names",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "467a9aa2-2a1e-5677-b919-f324e903d730",
+       "label": "D",
+       "content": "To ask pupils to stop using the highway",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a08abc23-22e0-5bd9-a0cf-9eb2664e3f9b",
+     "key": "eng-lis-07",
+     "stem": "The following announcement is read aloud.\n\n> Good morning. From Monday, the library will open at eight o'clock instead of nine, and close at six. Pupils may now borrow three books at a time instead of two, and books may be kept for two weeks.\n\nWhat is the announcement mainly about?",
+     "image_url": null,
+     "explanation": "The main idea covers all the details: new times, more books, a longer loan. Each wrong option fits only part of the passage or none of it.\n\n**Why the other options are wrong**\n\n- The opening of a new library: The library already exists; only its rules are changing.\n- How to find a book in the library: Finding books is not mentioned.\n- The closing of the library: The library is not closing; it is opening earlier.",
+     "position": 7,
+     "options": [
+      {
+       "id": "6011e644-7ebb-5ed3-a95d-327fb68bc1eb",
+       "label": "A",
+       "content": "The opening of a new library",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9353e84f-d952-5cf3-9ac1-55c74d8d0cc8",
+       "label": "B",
+       "content": "How to find a book in the library",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "889191c0-3b8c-5165-ae3d-d6e95414185f",
+       "label": "C",
+       "content": "Changes to the library's opening times and borrowing rules",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1708b867-3a22-585d-9c9b-f152682761ac",
+       "label": "D",
+       "content": "The closing of the library",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ff10080b-a354-5325-97c8-341f59bd1117",
+     "key": "eng-lis-08",
+     "stem": "In a listening test, one option repeats several words exactly as the speaker said them. What should the candidate do?",
+     "image_url": null,
+     "explanation": "Judge every option by the meaning of what was said, not by matching words. Eliminate what you know is wrong, then choose.\n\n**Why the other options are wrong**\n\n- Choose it at once, because it uses the speaker's words: Wrong options often reuse the speaker's words in a way that changes the meaning.\n- Reject it at once, because the right answer never repeats the speaker's words: The right answer may repeat the speaker's words; the point is to check the meaning.\n- Leave the question blank: A blank earns nothing; eliminate options and choose the best one.",
+     "position": 8,
+     "options": [
+      {
+       "id": "eb78b1c8-d218-5e13-b5d5-4b09da05807b",
+       "label": "A",
+       "content": "Choose it at once, because it uses the speaker's words",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "678e1c5c-6658-5730-9e40-31639a862a93",
+       "label": "B",
+       "content": "Reject it at once, because the right answer never repeats the speaker's words",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "affdb452-27ea-5dbe-a684-709a7dc4581a",
+       "label": "C",
+       "content": "Leave the question blank",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cdcc349d-9937-522c-8c1b-787518f6c282",
+       "label": "D",
+       "content": "Check that the option matches the meaning, because repeated words are often a trap",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "fa6c68411260"
+}

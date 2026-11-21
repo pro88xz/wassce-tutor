@@ -294,7 +294,7 @@ function PaperPage() {
                     )
                   )}
                 </p>
-                <div className="prose prose-slate max-w-none text-[17px] font-semibold leading-relaxed dark:prose-invert prose-p:my-0 prose-p:font-semibold">
+                <div className="q-stem prose prose-slate max-w-none text-[17px] font-semibold leading-relaxed dark:prose-invert prose-p:my-0 prose-p:font-semibold">
                   <MarkdownView content={q.stem} />
                 </div>
 

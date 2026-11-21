@@ -118,6 +118,15 @@ SETS = [
         "sort_from": 130,
         "checked": "editor",
     },
+    {
+        "module": ROOT / "content/questions/english-language/set5_p1.py",
+        "subject_slug": "english-language",
+        "name": "english_set5_p1",
+        "label": "English Language: set 5 (oral English: vowels, consonants, stress, intonation and listening)",
+        "review": ROOT / "content/questions/english-language/set5_p1.review.md",
+        "sort_from": 140,
+        "checked": "editor",
+    },
 ]
 
 SETS += [
