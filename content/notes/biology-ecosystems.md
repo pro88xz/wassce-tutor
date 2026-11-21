@@ -32,9 +32,15 @@ By the end of this lesson you should be able to:
 ![The carbon cycle: CO₂ in the air is taken in by green plants in photosynthesis; carbon passes to animals by feeding; plants, animals and decomposers return CO₂ by respiration; dead remains can become fossil fuels; combustion releases CO₂](https://wasscetutor.com/img/biology/carbon-cycle.svg)
 
 :::callout{type=definition}
-**Removes CO₂ from the air:** photosynthesis by green plants and algae.
+**Carbon cycle:** the movement of carbon round an ecosystem: taken out of the air as CO₂, built into living things, and returned to the air.
 
-**Returns CO₂ to the air:** respiration (by plants, animals and decomposers), combustion (burning of wood, charcoal and fossil fuels), and decay.
+**Photosynthesis:** green plants and algae use light to make food from CO₂ and water, removing CO₂ from the air.
+
+**Respiration:** plants, animals and decomposers break down food for energy and give out CO₂, returning it to the air.
+
+**Combustion:** burning wood, charcoal and fossil fuels releases CO₂ into the air.
+
+**Decay:** decomposers (bacteria and fungi) break down dead remains and waste, releasing CO₂ as they respire.
 
 Carbon passes from plants to animals by **feeding**, and to decomposers through **death and waste**.
 :::
