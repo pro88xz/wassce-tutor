@@ -3,9 +3,17 @@
 // $$-delimited maths for structured data on the public questions pages.
 import { mathToText } from '@/lib/math-text'
 
+// Oral English questions link to audio clips: a "**Listen**" row of words
+// after the working, and a "Play the passage" link in a listening question.
+// They are play buttons on the page and mean nothing as text.
+const AUDIO_LINK = /\[[^\]]*\]\((?:https:\/\/wasscetutor\.com)?\/audio\/[^)\s]+\.mp3(?:\?[^)\s]*)?\)/g
+const LISTEN_ROW = /^\*\*Listen\*\*[^\n]*\n+(?:\[[^\]]*\]\([^)]*\/audio\/[^)]*\)[ \t]*)+$/gm
+export const withoutAudio = (markdown: string) =>
+  markdown.replace(LISTEN_ROW, '').replace(AUDIO_LINK, '').replace(/\n{3,}/g, '\n\n').trim()
+
 /** Markdown (with maths) as one line of plain text. */
 export const plainText = (markdown: string) =>
-  mathToText(markdown)
+  mathToText(withoutAudio(markdown))
     .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
     .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
     .replace(/^#{1,6}\s+/gm, '')
@@ -18,10 +26,10 @@ export const plainText = (markdown: string) =>
  * Markdown for structured data (encodingFormat text/markdown): the text as
  * written, with every formula ($…$, $$…$$, \(…\), \[…\]) as LaTeX between
  * $$ … $$, which is how Google finds maths in practice problems. Images are
- * dropped: a question's diagram has its own field.
+ * dropped: a question's diagram has its own field. So are audio links.
  */
 export const markdownWithMath = (markdown: string) =>
-  markdown
+  withoutAudio(markdown)
     .replace(
       /\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\]|(?<!\\)\$((?:\\\$|[^$\n])+?)\$|\\\((.+?)\\\)/g,
       (_, a?: string, b?: string, c?: string, d?: string) => `$$${(a ?? b ?? c ?? d ?? '').trim()}$$`,
