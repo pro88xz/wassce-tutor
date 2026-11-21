@@ -91,6 +91,15 @@ SETS = [
         "practice_set": 2,
     },
     {
+        "module": ROOT / "content/questions/mathematics/set7_p1.py",
+        "subject_slug": "mathematics",
+        "name": "maths_set7_p1",
+        "label": "Mathematics: practice set 2 for circles, angles, trigonometry, elevation, bearings, volumes, averages, logarithms, modular arithmetic and vectors",
+        "review": ROOT / "content/questions/mathematics/set7_p1.review.md",
+        "sort_from": 210,
+        "practice_set": 2,
+    },
+    {
         "module": ROOT / "content/questions/english-language/set1_p1.py",
         "subject_slug": "english-language",
         "name": "english_set1_p1",

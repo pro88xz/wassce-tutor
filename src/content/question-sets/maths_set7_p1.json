@@ -1,0 +1,2008 @@
+{
+ "name": "maths_set7_p1",
+ "label": "Mathematics: practice set 2 for circles, angles, trigonometry, elevation, bearings, volumes, averages, logarithms, modular arithmetic and vectors",
+ "subject_slug": "mathematics",
+ "papers": [
+  {
+   "id": "8a0e2ea7-700e-5381-bf17-dd9c4c6a6280",
+   "topic": "Circles",
+   "title": "Circles: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on circles, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 210,
+   "questions": [
+    {
+     "id": "a1b85c5e-afaa-557b-a78e-98ad0c38888f",
+     "key": "maths-circles-06",
+     "stem": "In the diagram, $A$, $B$, $C$ and $D$ lie on a circle, and $C$ and $D$ are on the same side of $AB$. If $\\angle ACB = 47°$, find the angle marked $x$.",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-circles-06.svg?v=9fbdd9a0c5",
+     "explanation": "Angles in the same segment, standing on the same chord $AB$, are equal.\n\n$x = \\angle ADB = \\angle ACB = 47°$\n\n**Why the other options are wrong**\n\n- $43°$: You took $90° - 47°$. There is no right angle here; angles in the same segment are equal.\n- $94°$: You doubled 47°. Doubling gives the angle at the centre, not another angle at the circumference.\n- $133°$: You took $180° - 47°$, as for opposite angles of a cyclic quadrilateral. $C$ and $D$ are on the same side of $AB$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "6575a624-1a66-539f-8be4-9c983f683833",
+       "label": "A",
+       "content": "$43°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "329887f9-4ce8-5285-81cc-ca7a5138aa33",
+       "label": "B",
+       "content": "$47°$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9e6fcb06-c1ba-5e75-ae68-9cf8f042d89c",
+       "label": "C",
+       "content": "$94°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1d9757af-845c-5ccf-a40a-f1f1a834104f",
+       "label": "D",
+       "content": "$133°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dbeb8c96-a731-5357-9e2b-46ddbd46d1ab",
+     "key": "maths-circles-07",
+     "stem": "In the diagram, $PA$ and $PB$ are tangents to the circle with centre $O$, and $\\angle APB = 50°$. Find the angle marked $x$.",
+     "image_url": "https://wasscetutor.com/questions/mathematics/maths-circles-07.svg?v=faa9c486cc",
+     "explanation": "A tangent is perpendicular to the radius at the point of contact: $\\angle OAP = \\angle OBP = 90°$.\n\nThe angles of quadrilateral $OAPB$ add up to 360°:\n\n$x = 360° - 90° - 90° - 50° = 130°$\n\n**Why the other options are wrong**\n\n- $50°$: $\\angle AOB$ is not equal to $\\angle APB$. The radii meet the tangents at right angles, so the four angles of $OAPB$ add up to 360°.\n- $65°$: $65°$ is half of $\\angle AOB$, the angle $AOP$.\n- $230°$: That is the reflex angle at $O$, $360° - 130°$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "cbc1b6cb-a670-57b1-81a9-e4eafce1bbc6",
+       "label": "A",
+       "content": "$50°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cf983966-8431-535e-ade4-61c914886c08",
+       "label": "B",
+       "content": "$65°$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bb650ac6-6055-5a9e-bc4b-8dc3997f5483",
+       "label": "C",
+       "content": "$130°$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "904018f1-26b4-5ae7-9a8c-34e34e1c8448",
+       "label": "D",
+       "content": "$230°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0a9ec852-ba47-5142-8adb-db0256ae07ad",
+     "key": "maths-circles-08",
+     "stem": "A chord of a circle is 16 cm long and is 6 cm from the centre. Find the radius of the circle.",
+     "image_url": null,
+     "explanation": "The perpendicular from the centre to a chord bisects it, so half the chord is 8 cm.\n\n$r^{2} = 8^{2} + 6^{2} = 64 + 36 = 100$, so $r = 10$ cm.\n\n**Why the other options are wrong**\n\n- $2\\sqrt{7}$ cm: You subtracted the squares, $8^{2} - 6^{2}$. The radius is the hypotenuse, so add them.\n- $2\\sqrt{73}$ cm: You used the whole chord, 16 cm. The perpendicular from the centre bisects the chord, so use 8 cm.\n- $22$ cm: You added the lengths. Use Pythagoras' theorem.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0acd2049-162d-51b8-acac-30d2e64b9c2a",
+       "label": "A",
+       "content": "$2\\sqrt{7}$ cm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a1a2388a-f042-5cd8-a6f7-f7ed0fcefd25",
+       "label": "B",
+       "content": "$10$ cm",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "31d8cda7-cf76-5d00-848c-38cdac6d756e",
+       "label": "C",
+       "content": "$2\\sqrt{73}$ cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "59a29c7b-8ea1-5f59-adaa-88c087ae2e99",
+       "label": "D",
+       "content": "$22$ cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "52220aa5-37f3-58bb-a853-133dd2e70966",
+     "key": "maths-circles-09",
+     "stem": "$ABCD$ is a cyclic quadrilateral with $\\angle ABC = 108°$. The side $AD$ is produced to $E$. Find $\\angle CDE$.",
+     "image_url": null,
+     "explanation": "Opposite angles of a cyclic quadrilateral add up to 180°: $\\angle ADC = 180° - 108° = 72°$.\n\n$\\angle CDE = 180° - 72° = 108°$: the exterior angle of a cyclic quadrilateral equals the interior opposite angle.\n\n**Why the other options are wrong**\n\n- $54°$: You halved 108°. The exterior angle equals the interior opposite angle in full.\n- $72°$: $72°$ is the interior angle $\\angle ADC = 180° - 108°$. $\\angle CDE$ is the exterior angle next to it.\n- $252°$: You took $360° - 108°$. Angles on a straight line add up to 180°.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6eec6ca1-7d7c-5cb4-bf8b-95b694d2f4c6",
+       "label": "A",
+       "content": "$54°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3a189b33-2516-574c-8355-9a3fc3155998",
+       "label": "B",
+       "content": "$72°$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "498139d4-d592-510c-81fc-14c7d3fd68fa",
+       "label": "C",
+       "content": "$108°$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2427b6fe-cccf-5178-a026-583e69f27bfd",
+       "label": "D",
+       "content": "$252°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b6d52ff7-96f4-5071-b5a4-e99adbc528a3",
+     "key": "maths-circles-10",
+     "stem": "$AB$ is a diameter of a circle and $C$ is a point on the circle. If $|AC| = 6$ cm and $|BC| = 8$ cm, find the radius of the circle.",
+     "image_url": null,
+     "explanation": "The angle in a semicircle is 90°, so $\\angle ACB = 90°$.\n\n$|AB|^{2} = 6^{2} + 8^{2} = 100$, so $|AB| = 10$ cm, and the radius is 5 cm.\n\n**Why the other options are wrong**\n\n- $7$ cm: You took the average of 6 and 8. Use the right angle at $C$.\n- $10$ cm: 10 cm is the diameter $AB$. The radius is half of it.\n- $14$ cm: You added the two chords. Use Pythagoras' theorem.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b07972fa-f2da-5baa-9d8d-6cab7b9e72ae",
+       "label": "A",
+       "content": "$5$ cm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "38980bd6-f9fc-517f-983d-c21be01082bb",
+       "label": "B",
+       "content": "$7$ cm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "23a1733a-9729-57f6-8611-6a71f5fb8998",
+       "label": "C",
+       "content": "$10$ cm",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c1bb1d06-96ff-5d8d-8a0a-e4c4c0a8d516",
+       "label": "D",
+       "content": "$14$ cm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0e1936f2-9484-51eb-910c-3c0b7f45a183",
+   "topic": "Angles and Intersecting Lines",
+   "title": "Angles and Intersecting Lines: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on angles and intersecting lines, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 211,
+   "questions": [
+    {
+     "id": "007a9d73-bf25-53b9-8ced-fcbf179d8be1",
+     "key": "maths-angles-06",
+     "stem": "The angles at a point are $3x°$, $4x°$, $5x°$ and $120°$. Find the value of $x$.",
+     "image_url": null,
+     "explanation": "$3x + 4x + 5x + 120 = 360$\n\n$12x = 240$, so $x = 20$.\n\n**Why the other options are wrong**\n\n- $5$: You used 180°. Angles at a point add up to 360°.\n- $30$: You divided 360 by 12 and forgot the 120°.\n- $40$: You added 120° to 360° instead of subtracting it.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a0a16bf1-34fe-5e50-b838-1cbd834eb3a8",
+       "label": "A",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "81b46b69-346b-5158-a410-20821d67f8fc",
+       "label": "B",
+       "content": "$20$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d8bf7b22-30b2-54ee-aa36-e2db0fc22a9c",
+       "label": "C",
+       "content": "$30$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b5e0b055-a293-54aa-80e4-90fe378851e4",
+       "label": "D",
+       "content": "$40$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "812b9882-b7e0-5353-8ec8-10c80c7b2989",
+     "key": "maths-angles-07",
+     "stem": "Two parallel lines are cut by a transversal. Two co-interior (allied) angles are $(2x + 10)°$ and $(3x - 20)°$. Find $x$.",
+     "image_url": null,
+     "explanation": "Co-interior angles add up to 180°:\n\n$(2x + 10) + (3x - 20) = 180 \\Rightarrow 5x - 10 = 180 \\Rightarrow x = 38$\n\n**Why the other options are wrong**\n\n- $30$: You set the angles equal, as for alternate angles. Co-interior angles add up to 180°.\n- $34$: You simplified $10 - 20$ as $+10$: $5x + 10 = 180$.\n- $74$: You used 360°. Co-interior angles add up to 180°.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ef6555a6-657e-5846-be83-098429238e92",
+       "label": "A",
+       "content": "$30$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ede3cec9-6f34-523b-8ebe-95d37b9d02e3",
+       "label": "B",
+       "content": "$34$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c1b49ded-756b-50fe-8c16-1e5c93eefb0e",
+       "label": "C",
+       "content": "$38$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d312e240-4f50-58eb-92cd-33a94bbabe58",
+       "label": "D",
+       "content": "$74$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3ebd2802-48f1-5481-aef7-bf348fdc8b9b",
+     "key": "maths-angles-08",
+     "stem": "The angles of a triangle are in the ratio $2 : 3 : 4$. Find the largest angle.",
+     "image_url": null,
+     "explanation": "Total parts $= 2 + 3 + 4 = 9$; one part $= 180° \\div 9 = 20°$.\n\nLargest angle $= 4 \\times 20° = 80°$.\n\n**Why the other options are wrong**\n\n- $40°$: $40°$ is the smallest angle, 2 parts.\n- $60°$: $60°$ is the middle angle, 3 parts.\n- $120°$: You divided by 6 instead of $2 + 3 + 4 = 9$ parts.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0c98d0ec-35cc-54a3-8e33-2a71a9c6e164",
+       "label": "A",
+       "content": "$40°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7eb92146-e6c2-512a-8e13-1259d475785c",
+       "label": "B",
+       "content": "$60°$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a426ad44-4c29-56d3-8d22-e92c3be1ac6f",
+       "label": "C",
+       "content": "$80°$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "cd974454-4a46-581b-b8d2-ccf725fe40c9",
+       "label": "D",
+       "content": "$120°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "06fff51d-bd80-5a28-8697-c6632e3b891a",
+     "key": "maths-angles-09",
+     "stem": "The complement of an angle is three times the angle. Find the angle.",
+     "image_url": null,
+     "explanation": "Complementary angles add up to 90°: $x + 3x = 90$, so $4x = 90$ and $x = 22.5°$.\n\n**Why the other options are wrong**\n\n- $30°$: You divided 90° by 3. The angle and its complement together make $x + 3x = 4x$.\n- $45°$: You used 180°, which is for supplementary angles: $4x = 180$.\n- $67.5°$: $67.5°$ is the complement, $3x$. The question asks for the angle.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1287859b-643c-5e87-b841-10e2b9ef9985",
+       "label": "A",
+       "content": "$22.5°$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f3f60773-3b96-5ae8-bea3-64adce5765e7",
+       "label": "B",
+       "content": "$30°$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "aafca043-61ad-530d-8471-712369bc75e4",
+       "label": "C",
+       "content": "$45°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ec301178-7a57-50e5-ac68-f44767e1a74d",
+       "label": "D",
+       "content": "$67.5°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cc898990-6673-5dab-9a8a-f1c83714f219",
+     "key": "maths-angles-10",
+     "stem": "$PQ$ and $RS$ are parallel lines, with $P$ and $R$ on the left. A transversal cuts $PQ$ at $X$ and $RS$ at $Y$. If $\\angle PXY = 64°$, find $\\angle XYS$.",
+     "image_url": null,
+     "explanation": "$\\angle PXY$ and $\\angle XYS$ lie on opposite sides of the transversal, between the parallel lines (a Z shape), so they are alternate angles and equal: $64°$.\n\n**Why the other options are wrong**\n\n- $26°$: You took $90° - 64°$. There is no right angle here.\n- $116°$: $116°$ is the co-interior angle $\\angle XYR$. $\\angle PXY$ and $\\angle XYS$ are alternate angles.\n- $128°$: You doubled the angle. Alternate angles are equal.",
+     "position": 5,
+     "options": [
+      {
+       "id": "37648f9f-450d-57f1-a826-6e319f9083c9",
+       "label": "A",
+       "content": "$26°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "46db4a1a-fc7f-5788-a318-34b3a4b4de44",
+       "label": "B",
+       "content": "$64°$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "45fe695f-985b-5f44-a9f3-78397d2eab27",
+       "label": "C",
+       "content": "$116°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "91b20efe-30eb-565c-ae0a-d2eb8bf96288",
+       "label": "D",
+       "content": "$128°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b37d0e8c-63e5-5d71-9ab6-1aaad472d20a",
+   "topic": "Sine, Cosine and Tangent",
+   "title": "Sine, Cosine and Tangent: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on sine, cosine and tangent, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 212,
+   "questions": [
+    {
+     "id": "68ea66c6-72e6-539f-bb08-c808a91f3d07",
+     "key": "maths-trig-06",
+     "stem": "If $\\sin\\theta = \\dfrac{3}{5}$ and $\\theta$ is acute, find $\\tan\\theta$.",
+     "image_url": null,
+     "explanation": "Draw a right-angled triangle with opposite side 3 and hypotenuse 5. The adjacent side is $\\sqrt{5^{2} - 3^{2}} = 4$.\n\n$\\tan\\theta = \\dfrac{\\text{opposite}}{\\text{adjacent}} = \\dfrac{3}{4}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{4}{5}$: $\\dfrac{4}{5}$ is $\\cos\\theta$. $\\tan\\theta = \\dfrac{\\text{opposite}}{\\text{adjacent}}$.\n- $\\dfrac{4}{3}$: You put the adjacent over the opposite. $\\tan\\theta = \\dfrac{3}{4}$.\n- $\\dfrac{5}{3}$: $\\dfrac{5}{3}$ is $\\dfrac{1}{\\sin\\theta}$, not $\\tan\\theta$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "dbd5a79b-1df9-5447-a16b-4992f3ff88a4",
+       "label": "A",
+       "content": "$\\dfrac{3}{4}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7b8cfece-f445-56e3-9e98-72b9027794f4",
+       "label": "B",
+       "content": "$\\dfrac{4}{5}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f3614926-0213-5a95-bc0a-f30b5ab85346",
+       "label": "C",
+       "content": "$\\dfrac{4}{3}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2e3aeefd-196e-55cc-8f3f-7ffb5f381602",
+       "label": "D",
+       "content": "$\\dfrac{5}{3}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cc142606-3b20-58df-afcb-881d50cde9c8",
+     "key": "maths-trig-07",
+     "stem": "Without using tables or a calculator, evaluate $\\tan 60° \\times \\cos 30°$.",
+     "image_url": null,
+     "explanation": "$\\tan 60° = \\sqrt{3}$ and $\\cos 30° = \\dfrac{\\sqrt{3}}{2}$.\n\n$\\sqrt{3} \\times \\dfrac{\\sqrt{3}}{2} = \\dfrac{3}{2}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{1}{2}$: You used $\\tan 60° = \\dfrac{1}{\\sqrt{3}}$, which is $\\tan 30°$.\n- $\\dfrac{\\sqrt{3}}{2}$: You used $\\cos 30° = \\dfrac{1}{2}$, which is $\\cos 60°$.\n- $\\dfrac{3\\sqrt{3}}{2}$: You added the values instead of multiplying them.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9e88ef99-4aa7-5388-a414-9cf127d67da7",
+       "label": "A",
+       "content": "$\\dfrac{1}{2}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b1a741a0-3e89-5dfe-8acf-4df29a3a8b99",
+       "label": "B",
+       "content": "$\\dfrac{\\sqrt{3}}{2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f031826a-24cc-5d16-8ac9-d22835c015af",
+       "label": "C",
+       "content": "$\\dfrac{3}{2}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6dbac539-d4e4-5014-853d-bd0f7ef692aa",
+       "label": "D",
+       "content": "$\\dfrac{3\\sqrt{3}}{2}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "05c499c2-cdaa-5a24-9780-d41e5c51bf4b",
+     "key": "maths-trig-08",
+     "stem": "Find the value of $\\sin 150°$.",
+     "image_url": null,
+     "explanation": "150° is in the second quadrant, where sine is positive.\n\n$\\sin 150° = \\sin(180° - 150°) = \\sin 30° = \\dfrac{1}{2}$\n\n**Why the other options are wrong**\n\n- $-\\dfrac{\\sqrt{3}}{2}$: That is $\\cos 150°$. Sine is positive in the second quadrant and equals $\\sin 30°$.\n- $-\\dfrac{1}{2}$: Sine is positive in the second quadrant (90° to 180°).\n- $\\dfrac{\\sqrt{3}}{2}$: That is $\\sin 60°$ (or $\\sin 120°$). $\\sin 150° = \\sin(180° - 150°) = \\sin 30°$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d002645b-0e3e-5c28-b8ea-8881f9957365",
+       "label": "A",
+       "content": "$-\\dfrac{\\sqrt{3}}{2}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "80a8a6b6-c439-51d9-9f20-fd6d26373ac2",
+       "label": "B",
+       "content": "$-\\dfrac{1}{2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b1ca1928-778e-5ca1-8760-ee1b3f10fa3a",
+       "label": "C",
+       "content": "$\\dfrac{1}{2}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2d13b850-dc1b-5a3c-a388-167726804878",
+       "label": "D",
+       "content": "$\\dfrac{\\sqrt{3}}{2}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ba62758b-3f45-5964-bfbc-b6b36cc1755f",
+     "key": "maths-trig-09",
+     "stem": "In triangle $ABC$, $a = 10$ cm, $b = 8$ cm and $\\angle A = 60°$. Find $\\angle B$, correct to the nearest degree.",
+     "image_url": null,
+     "explanation": "Sine rule: $\\dfrac{\\sin B}{b} = \\dfrac{\\sin A}{a}$, so $\\sin B = \\dfrac{8 \\sin 60°}{10} = \\dfrac{8 \\times 0.8660}{10} = 0.6928$.\n\n$B = 43.85° \\approx 44°$\n\n**Why the other options are wrong**\n\n- $48°$: You took $\\dfrac{8}{10}$ of 60°. Angles are not in the same ratio as the sides; use the sine rule.\n- $53°$: You used $\\sin B = \\dfrac{8}{10}$ and left out $\\sin 60°$.\n- $136°$: You took the obtuse angle. Since $b < a$, $B$ must be smaller than $A$, so it is acute.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c668b467-794d-5d78-a430-f28d866efebe",
+       "label": "A",
+       "content": "$44°$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "69640857-56c5-57cf-b3f7-9df245bb622f",
+       "label": "B",
+       "content": "$48°$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eda5d410-fac2-56a0-a085-1e19bd9bfce1",
+       "label": "C",
+       "content": "$53°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c90affa-d03e-56e0-adc1-a1ca2a0c97b5",
+       "label": "D",
+       "content": "$136°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5c2e27ab-002f-5f8e-a6c4-364b4527959f",
+     "key": "maths-trig-10",
+     "stem": "The sides of a triangle are 5 cm, 7 cm and 8 cm. Find the angle opposite the 7 cm side.",
+     "image_url": null,
+     "explanation": "Cosine rule: $\\cos\\theta = \\dfrac{5^{2} + 8^{2} - 7^{2}}{2 \\times 5 \\times 8} = \\dfrac{40}{80} = \\dfrac{1}{2}$\n\n$\\theta = 60°$\n\n**Why the other options are wrong**\n\n- $30°$: $\\cos\\theta = \\dfrac{1}{2}$ gives 60°, not 30°. (30° has sine $\\dfrac{1}{2}$.)\n- $90°$: $5^{2} + 7^{2} \\ne 8^{2}$ and $5^{2} + 8^{2} \\ne 7^{2}$, so the triangle is not right-angled.\n- $120°$: You got the sign wrong: $\\cos\\theta = \\dfrac{25 + 64 - 49}{80} = +\\dfrac{1}{2}$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7ab2ae3c-4cad-57eb-9a15-d0db006112a0",
+       "label": "A",
+       "content": "$30°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7ac5fff0-eb62-5f31-a789-5dde28975fc6",
+       "label": "B",
+       "content": "$60°$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e707221b-f126-5cc4-ad68-622410afcc43",
+       "label": "C",
+       "content": "$90°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "13146a2d-768f-56dc-b0d6-b71374727d98",
+       "label": "D",
+       "content": "$120°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0eff8438-bfad-5d8f-b006-448051b0fd58",
+   "topic": "Angles of Elevation and Depression",
+   "title": "Angles of Elevation and Depression: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on angles of elevation and depression, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 213,
+   "questions": [
+    {
+     "id": "cd8b3ebb-ed7b-5407-a8d2-ba1831400df4",
+     "key": "maths-elevation-06",
+     "stem": "A ladder 10 m long leans against a vertical wall and makes an angle of 60° with the level ground. How high up the wall does it reach, correct to one decimal place?",
+     "image_url": null,
+     "explanation": "The ladder is the hypotenuse and the height is opposite the 60° angle:\n\nheight $= 10 \\sin 60° = 10 \\times 0.8660 = 8.66 \\approx 8.7$ m\n\n**Why the other options are wrong**\n\n- $5.0$ m: You used $\\cos 60°$, which gives the distance of the foot from the wall.\n- $11.5$ m: You divided by $\\sin 60°$. The ladder is the hypotenuse, so height $= 10 \\sin 60°$.\n- $17.3$ m: You used $\\tan 60°$, but 10 m is the hypotenuse, not the adjacent side.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f120273f-3234-5c4f-8712-9589b1ba3fd4",
+       "label": "A",
+       "content": "$5.0$ m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "517dd1d5-3f11-5c8f-b2de-203f1a0f36e5",
+       "label": "B",
+       "content": "$8.7$ m",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cb626ff2-c683-586d-a4d3-a6af1332fd52",
+       "label": "C",
+       "content": "$11.5$ m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1ba0383f-52f5-5fbe-a118-bc0736f56917",
+       "label": "D",
+       "content": "$17.3$ m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c214bb90-29de-533a-a1c5-d9c63ae0d335",
+     "key": "maths-elevation-07",
+     "stem": "From a point $A$ on level ground, the angle of elevation of the top of a tower is 30°. From a point $B$, 20 m nearer the tower, the angle of elevation is 60°. Find the height of the tower, correct to one decimal place.",
+     "image_url": null,
+     "explanation": "In triangle $ABT$ (top $T$), the angle at $B$ outside the triangle is 60°, so $\\angle ATB = 60° - 30° = 30°$. The triangle is isosceles: $|BT| = |AB| = 20$ m.\n\nHeight $= |BT| \\sin 60° = 20 \\times 0.8660 = 17.3$ m\n\n**Why the other options are wrong**\n\n- $10.0$ m: You used $20 \\sin 30°$. The 20 m is $AB$, along the ground, not a slope to the top.\n- $20.0$ m: Triangle $ABT$ is isosceles, so $|BT| = 20$ m, but $BT$ is the sloping line, not the height.\n- $34.6$ m: You used $20 \\tan 60°$, treating 20 m as the distance from $B$ to the foot of the tower.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4bfa4dd8-9723-5fe5-af6e-ea5a1297191a",
+       "label": "A",
+       "content": "$10.0$ m",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8822cd43-325a-586a-b31f-d1a0930314e3",
+       "label": "B",
+       "content": "$17.3$ m",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7d49bebe-a44e-5bd1-9607-786d2f7560b0",
+       "label": "C",
+       "content": "$20.0$ m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6443eade-4a5b-5853-83dc-52d6f62a49c0",
+       "label": "D",
+       "content": "$34.6$ m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1094b323-662d-574b-9078-8df64a53496d",
+     "key": "maths-elevation-08",
+     "stem": "From the top of a tower 40 m high, the angle of depression of a car is 30°. The car drives straight towards the tower until the angle of depression is 45°. How far has the car moved, correct to one decimal place?",
+     "image_url": null,
+     "explanation": "First distance $= \\dfrac{40}{\\tan 30°} = 69.28$ m. Second distance $= \\dfrac{40}{\\tan 45°} = 40$ m.\n\nDistance moved $= 69.28 - 40 = 29.28 \\approx 29.3$ m\n\n**Why the other options are wrong**\n\n- $40.0$ m: 40 m is the car's final distance from the tower, $\\dfrac{40}{\\tan 45°}$.\n- $69.3$ m: 69.3 m is the car's first distance from the tower. Subtract the second distance.\n- $109.3$ m: You added the two distances. The car moved from the first position to the second.",
+     "position": 3,
+     "options": [
+      {
+       "id": "25d76737-1300-5e3a-9f68-eca4dd712314",
+       "label": "A",
+       "content": "$29.3$ m",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "aebf220b-6478-5cd7-a9f7-b1464b9719ea",
+       "label": "B",
+       "content": "$40.0$ m",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b0085f1-f3f6-5bc8-b489-7de1ad487e20",
+       "label": "C",
+       "content": "$69.3$ m",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "39ce2e84-f1d0-546a-a3b0-89c55666f909",
+       "label": "D",
+       "content": "$109.3$ m",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fb13eb0f-84f2-521b-96ad-b780099615c7",
+     "key": "maths-elevation-09",
+     "stem": "A vertical pole 12 m high casts a shadow 9 m long on level ground. Find the angle of elevation of the sun, correct to one decimal place.",
+     "image_url": null,
+     "explanation": "At the tip of the shadow, the pole (12 m) is opposite and the shadow (9 m) is adjacent:\n\n$\\tan\\theta = \\dfrac{12}{9}$, so $\\theta = 53.13° \\approx 53.1°$\n\n**Why the other options are wrong**\n\n- $36.9°$: You used $\\tan\\theta = \\dfrac{9}{12}$. The height is opposite the angle at the tip of the shadow.\n- $41.4°$: You used $\\cos\\theta = \\dfrac{9}{12}$, treating the pole as the hypotenuse.\n- $48.6°$: You used $\\sin\\theta = \\dfrac{9}{12}$. Neither given side is the hypotenuse.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d7f38187-de9e-59bc-9c9d-5e6c677dd529",
+       "label": "A",
+       "content": "$36.9°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f06a55d5-9f47-5ce3-9611-a3d46bce10b3",
+       "label": "B",
+       "content": "$41.4°$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "caef8939-ce9f-5869-9128-ef075a8ec583",
+       "label": "C",
+       "content": "$48.6°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8c4a12cf-18e8-5f8b-b13f-09afe6f03f29",
+       "label": "D",
+       "content": "$53.1°$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "83e108f4-107f-5eb7-82fd-696b52ea8dfd",
+     "key": "maths-elevation-10",
+     "stem": "A bird sits at the top of a tree 15 m high. A cat is on the level ground 20 m from the foot of the tree. Find the angle of depression of the cat from the bird, correct to the nearest degree.",
+     "image_url": null,
+     "explanation": "The angle of depression from the bird equals the angle of elevation of the bird from the cat (alternate angles):\n\n$\\tan\\theta = \\dfrac{15}{20} = 0.75$, so $\\theta = 36.87° \\approx 37°$\n\n**Why the other options are wrong**\n\n- $41°$: You used $\\cos\\theta = \\dfrac{15}{20}$, but 20 m is not the hypotenuse.\n- $49°$: You used $\\sin\\theta = \\dfrac{15}{20}$, but 20 m is not the hypotenuse.\n- $53°$: You used $\\tan\\theta = \\dfrac{20}{15}$. That is the angle between the line of sight and the tree.",
+     "position": 5,
+     "options": [
+      {
+       "id": "00746795-db78-52be-842c-ec1cfa23b0c8",
+       "label": "A",
+       "content": "$37°$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "68d9d9c1-6a4f-52c5-b56e-03d1a38e032b",
+       "label": "B",
+       "content": "$41°$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e6eb3ff8-a17b-54d5-a020-1d9c7f56ba28",
+       "label": "C",
+       "content": "$49°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ee52d435-efcf-567a-8f26-167614ee31fe",
+       "label": "D",
+       "content": "$53°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "285bfc2c-e502-5787-8e56-a7e95a19f6f3",
+   "topic": "Bearings",
+   "title": "Bearings: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on bearings, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 214,
+   "questions": [
+    {
+     "id": "e1ef56ac-77ae-5dcb-898a-45cf7888dabc",
+     "key": "maths-bearings-06",
+     "stem": "A boy walks 6 km due east and then 8 km due south. Find his bearing from his starting point, correct to the nearest degree.",
+     "image_url": null,
+     "explanation": "He ends 6 km east and 8 km south of the start. The angle between his line and due south is $\\tan^{-1}\\dfrac{6}{8} = 36.87°$.\n\nBearing $= 180° - 36.87° = 143.13° \\approx 143°$\n\n**Why the other options are wrong**\n\n- $037°$: $37°$ is the angle between his line and due south. The bearing is measured clockwise from north: $180° - 37°$.\n- $053°$: $53°$ is the angle with due east, measured the wrong way; he is south-east, so the bearing is between 090° and 180°.\n- $127°$: You added 37° to 090°. The angle from due east to his line is 53°, so the bearing is $090° + 53°$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "234d8c2d-6be1-51df-a04b-bcef2a838638",
+       "label": "A",
+       "content": "$037°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9079712b-79a0-57c9-a152-7389d878e8fb",
+       "label": "B",
+       "content": "$053°$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c12a1f7d-51be-50ce-a36d-100c5ae5657b",
+       "label": "C",
+       "content": "$127°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f7ceedec-c990-5ef2-bbad-4e89638b22a2",
+       "label": "D",
+       "content": "$143°$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cbda6eb2-15ab-531f-8b2e-f8ee81534611",
+     "key": "maths-bearings-07",
+     "stem": "Town $B$ is 15 km east and 8 km north of town $A$. Find the bearing of $B$ from $A$, correct to the nearest degree.",
+     "image_url": null,
+     "explanation": "From north, turning towards east: $\\tan\\theta = \\dfrac{15}{8}$, so $\\theta = 61.93°$.\n\nBearing $= 062°$\n\n**Why the other options are wrong**\n\n- $028°$: $28°$ is the angle with due east. Bearings are measured from north: $90° - 28°$.\n- $118°$: You added the angle to 090°, but $B$ is north of east, so the bearing is less than 090°.\n- $242°$: That is the bearing of $A$ from $B$ (the back bearing).",
+     "position": 2,
+     "options": [
+      {
+       "id": "57bac1a3-4924-5039-a04d-34b9c85b7405",
+       "label": "A",
+       "content": "$028°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a4dfcfe6-f7d5-5d89-a400-5aada1e7a05c",
+       "label": "B",
+       "content": "$062°$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "52708dd6-0169-5570-ac2e-ceedb72374aa",
+       "label": "C",
+       "content": "$118°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e708cd9c-b091-56c5-9033-95e587df81fb",
+       "label": "D",
+       "content": "$242°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0b5abb96-a058-52d5-9791-16c241bf73e9",
+     "key": "maths-bearings-08",
+     "stem": "Express the compass bearing N 35° W as a three-figure bearing.",
+     "image_url": null,
+     "explanation": "N 35° W means start facing north and turn 35° towards west. Clockwise from north this is $360° - 35° = 325°$.\n\n**Why the other options are wrong**\n\n- $035°$: N 35° W is 35° west of north. Measured clockwise from north, that is $360° - 35°$.\n- $145°$: You worked from south: $180° - 35°$. The bearing starts from north.\n- $305°$: You added 35° to 270° (west). The angle is measured from north, so take it from 360°.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c340129c-547f-5a23-b9d6-195c70ce9f99",
+       "label": "A",
+       "content": "$035°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "efe11da1-935f-5cac-9cc6-9a107c24acc4",
+       "label": "B",
+       "content": "$145°$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ae8a778e-fe3d-5fc9-a5a8-2a3d5f3e512c",
+       "label": "C",
+       "content": "$305°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8b30af0f-c094-5997-ba1b-78a32d7feb1c",
+       "label": "D",
+       "content": "$325°$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7d51f342-9f9e-5be8-85c3-4e417223ac98",
+     "key": "maths-bearings-09",
+     "stem": "A plane flies due east at 300 km/h for 2 hours, then due north at the same speed for $1\\dfrac{1}{2}$ hours. How far is it from its starting point?",
+     "image_url": null,
+     "explanation": "East: $300 \\times 2 = 600$ km. North: $300 \\times 1.5 = 450$ km.\n\nDistance $= \\sqrt{600^{2} + 450^{2}} = \\sqrt{562\\,500} = 750$ km\n\n**Why the other options are wrong**\n\n- $150$ km: You subtracted the distances. They are at right angles, so use Pythagoras' theorem.\n- $600$ km: 600 km is only the eastward distance.\n- $1050$ km: 1050 km is the total distance flown, not the distance from the start.",
+     "position": 4,
+     "options": [
+      {
+       "id": "bb66a95c-c91b-5c17-91fe-33180f646ca5",
+       "label": "A",
+       "content": "$150$ km",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b5cab9c2-1ec2-5808-8cf3-22719aff000a",
+       "label": "B",
+       "content": "$600$ km",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3d212935-d720-55de-8d5e-e9d86fe93a4a",
+       "label": "C",
+       "content": "$750$ km",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7948f591-14da-5fe7-8e12-1e31bdd3566c",
+       "label": "D",
+       "content": "$1050$ km",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dd4f202a-8ef7-5d44-8fd7-9f91a467bfdd",
+     "key": "maths-bearings-10",
+     "stem": "$Q$ is 5 km due south of $P$, and $R$ is 5 km due east of $Q$. Find the bearing of $R$ from $P$.",
+     "image_url": null,
+     "explanation": "$R$ is 5 km east and 5 km south of $P$, so it is exactly south-east of $P$: bearing $135°$.\n\n**Why the other options are wrong**\n\n- $045°$: $R$ is south-east of $P$, not north-east.\n- $225°$: $225°$ is south-west. $R$ is to the east of $P$.\n- $315°$: That is the bearing of $P$ from $R$ (north-west).",
+     "position": 5,
+     "options": [
+      {
+       "id": "cbf2fca6-f778-553b-914c-9cc4f11c7886",
+       "label": "A",
+       "content": "$045°$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ad9a0d4d-2279-51d8-847b-0eef6f0b53ab",
+       "label": "B",
+       "content": "$135°$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5b85961a-6b82-5468-ab8e-e1294b412ce3",
+       "label": "C",
+       "content": "$225°$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "684930cd-4fd2-5d03-9243-03861e8a953d",
+       "label": "D",
+       "content": "$315°$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e240b12c-a0a4-5379-9c7e-4ac2d73cfc4f",
+   "topic": "Volumes",
+   "title": "Volumes: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on volumes, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 215,
+   "questions": [
+    {
+     "id": "8ea4e6f2-4989-5ae8-ab7a-5481aa02a7f0",
+     "key": "maths-volumes-06",
+     "stem": "Find the volume of a sphere of radius 6 cm. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": null,
+     "explanation": "$V = \\dfrac{4}{3}\\pi r^{3} = \\dfrac{4}{3} \\times \\dfrac{22}{7} \\times 216 = \\dfrac{6336}{7} = 905\\dfrac{1}{7}$ cm³\n\n**Why the other options are wrong**\n\n- $452\\dfrac{4}{7}$ cm³: That is the surface area, $4\\pi r^{2}$. Volume uses $\\dfrac{4}{3}\\pi r^{3}$.\n- $678\\dfrac{6}{7}$ cm³: You left out the $\\dfrac{4}{3}$.\n- $2715\\dfrac{3}{7}$ cm³: You multiplied by 4 instead of $\\dfrac{4}{3}$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9ad8d41d-8de8-5d84-8506-56a96fc49b8d",
+       "label": "A",
+       "content": "$452\\dfrac{4}{7}$ cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "57fca486-1857-5fe5-9975-3a4d6e20304c",
+       "label": "B",
+       "content": "$678\\dfrac{6}{7}$ cm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "44814824-c7c9-564c-944c-4a048433d194",
+       "label": "C",
+       "content": "$905\\dfrac{1}{7}$ cm³",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6aac6de7-cc64-5e5a-b358-ce9a4f5fb823",
+       "label": "D",
+       "content": "$2715\\dfrac{3}{7}$ cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "12d1ffa0-58d8-53c2-8b17-edac3bcdc190",
+     "key": "maths-volumes-07",
+     "stem": "A cylindrical water tank has a radius of 70 cm and a height of 1 m. How many litres of water does it hold when full? [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": null,
+     "explanation": "Use centimetres: height $= 100$ cm.\n\n$V = \\pi r^{2}h = \\dfrac{22}{7} \\times 70^{2} \\times 100 = 1\\,540\\,000$ cm³ $= 1540$ litres (1 litre $= 1000$ cm³).\n\n**Why the other options are wrong**\n\n- 154 litres: You divided by 10 000. One litre is 1000 cm³.\n- 15,400 litres: You divided by 100. One litre is 1000 cm³.\n- 1,540,000 litres: 1,540,000 is the volume in cm³. Divide by 1000 to get litres.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ed951fc1-d8a8-54b1-973a-a4ab89aa94e3",
+       "label": "A",
+       "content": "154 litres",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c9093cb-3a90-5c37-8bd5-a0159ccee1d1",
+       "label": "B",
+       "content": "1,540 litres",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5f2bcb90-8e4c-5d5f-a6b7-38d3f74725e5",
+       "label": "C",
+       "content": "15,400 litres",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "db1f7566-1666-5bb8-b70d-8a762c78e523",
+       "label": "D",
+       "content": "1,540,000 litres",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "20688be0-87be-5793-a1c4-d16a4a2a55d0",
+     "key": "maths-volumes-08",
+     "stem": "A cone has a base radius of 6 cm and a slant height of 10 cm. Find its volume. [Take $\\pi = \\dfrac{22}{7}$]",
+     "image_url": null,
+     "explanation": "Height $h = \\sqrt{10^{2} - 6^{2}} = 8$ cm.\n\n$V = \\dfrac{1}{3}\\pi r^{2}h = \\dfrac{1}{3} \\times \\dfrac{22}{7} \\times 36 \\times 8 = \\dfrac{2112}{7} = 301\\dfrac{5}{7}$ cm³\n\n**Why the other options are wrong**\n\n- $150\\dfrac{6}{7}$ cm³: You took the height as $10 - 6 = 4$ cm. Use Pythagoras: $h = \\sqrt{10^{2} - 6^{2}} = 8$.\n- $377\\dfrac{1}{7}$ cm³: You used the slant height as the height.\n- $905\\dfrac{1}{7}$ cm³: You left out the $\\dfrac{1}{3}$. That is the volume of a cylinder.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f2c89c77-553c-5fe1-99ad-b5a2ffebee31",
+       "label": "A",
+       "content": "$150\\dfrac{6}{7}$ cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c73c504-46c7-5e2f-8f20-953cf95edc5c",
+       "label": "B",
+       "content": "$301\\dfrac{5}{7}$ cm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f63fb117-f5d0-506c-a2b9-c8d9b7afd6ec",
+       "label": "C",
+       "content": "$377\\dfrac{1}{7}$ cm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9c4a857c-3b31-552a-96e9-3808fbfc2885",
+       "label": "D",
+       "content": "$905\\dfrac{1}{7}$ cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5729a5c7-2403-5baf-be64-412da8b34934",
+     "key": "maths-volumes-09",
+     "stem": "Find the volume of a solid hemisphere of radius 6 cm, leaving your answer in terms of $\\pi$.",
+     "image_url": null,
+     "explanation": "A hemisphere is half a sphere: $V = \\dfrac{1}{2} \\times \\dfrac{4}{3}\\pi r^{3} = \\dfrac{2}{3}\\pi r^{3} = \\dfrac{2}{3}\\pi \\times 216 = 144\\pi$ cm³\n\n**Why the other options are wrong**\n\n- $24\\pi$ cm³: You used $r^{2}$ instead of $r^{3}$: $\\dfrac{2}{3}\\pi \\times 36$.\n- $72\\pi$ cm³: $72\\pi$ is the curved surface area, $2\\pi r^{2}$, not the volume.\n- $288\\pi$ cm³: $288\\pi$ is the volume of the whole sphere. A hemisphere is half.",
+     "position": 4,
+     "options": [
+      {
+       "id": "fe96302f-4e5e-56f2-8e58-e4e3c44b382e",
+       "label": "A",
+       "content": "$24\\pi$ cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5fee3758-8fc3-5a68-ab7a-edda11a0583b",
+       "label": "B",
+       "content": "$72\\pi$ cm³",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "55921ef2-91a4-525c-b694-25298e99fa6c",
+       "label": "C",
+       "content": "$144\\pi$ cm³",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d315efea-c3aa-5688-9416-c79834353afc",
+       "label": "D",
+       "content": "$288\\pi$ cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "62e198bd-6340-5400-bce6-1c17ec54d212",
+     "key": "maths-volumes-10",
+     "stem": "A prism has a right-angled triangle as its cross-section, with the two shorter sides 6 cm and 8 cm. The prism is 20 cm long. Find its volume.",
+     "image_url": null,
+     "explanation": "Area of cross-section $= \\dfrac{1}{2} \\times 6 \\times 8 = 24$ cm².\n\nVolume $= 24 \\times 20 = 480$ cm³\n\n**Why the other options are wrong**\n\n- $320$ cm³: You multiplied by $\\dfrac{1}{3}$, as for a pyramid. A prism's volume is cross-section × length.\n- $600$ cm³: You used the hypotenuse (10 cm) in the triangle's area. The two shorter sides are the base and height.\n- $960$ cm³: You forgot the $\\dfrac{1}{2}$ in the area of the triangle.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ce7ce0be-ce8b-57d5-b895-6a4e1fb8f639",
+       "label": "A",
+       "content": "$320$ cm³",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7bbc7277-0261-5f7d-af33-233c898cbbf7",
+       "label": "B",
+       "content": "$480$ cm³",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bbc1a1d4-d3e1-5c9f-bac6-c5b277b520c2",
+       "label": "C",
+       "content": "$600$ cm³",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "80f935be-8246-5f65-9484-778dbc9eaf4b",
+       "label": "D",
+       "content": "$960$ cm³",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c92dd4b6-f26c-5c3b-99e0-4f68e6d105c2",
+   "topic": "Measures of Central Tendency",
+   "title": "Measures of Central Tendency: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on measures of central tendency, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 216,
+   "questions": [
+    {
+     "id": "f483eea0-140a-5f20-91dc-c071fd05dfec",
+     "key": "maths-averages-06",
+     "stem": "Find the mode of 3, 5, 5, 7, 8, 8, 8 and 9.",
+     "image_url": null,
+     "explanation": "The mode is the value that occurs most often: 8 occurs three times.\n\n**Why the other options are wrong**\n\n- $5$: 5 appears twice, but 8 appears three times.\n- $6.625$: 6.625 is the mean. The mode is the value that occurs most often.\n- $7.5$: 7.5 is the median. The mode is the most frequent value.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2f0169b0-ec04-5fd3-b75d-b115a697edfa",
+       "label": "A",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b15baf50-50a8-5c86-af16-f1492c8fae34",
+       "label": "B",
+       "content": "$6.625$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c71893fc-983d-5fab-a6f4-714ee3390e6f",
+       "label": "C",
+       "content": "$7.5$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ad9d46bd-19f5-59dd-af67-8b3e00295f9f",
+       "label": "D",
+       "content": "$8$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "61364e56-f05a-54c7-bfbf-625791522a56",
+     "key": "maths-averages-07",
+     "stem": "The mean of six numbers is 15. When one number is removed, the mean of the other five is 14. Find the number removed.",
+     "image_url": null,
+     "explanation": "Total of six numbers $= 6 \\times 15 = 90$. Total of five numbers $= 5 \\times 14 = 70$.\n\nNumber removed $= 90 - 70 = 20$\n\n**Why the other options are wrong**\n\n- $1$: You subtracted the means. Work with the totals.\n- $14$: 14 is the new mean, not the number removed.\n- $29$: You added the means. Work with the totals: $6 \\times 15$ and $5 \\times 14$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "171475bd-2b1d-59e8-acfc-cc75b2a5cd48",
+       "label": "A",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f7cc28e8-28fd-5c70-acc1-49b3352d7fa9",
+       "label": "B",
+       "content": "$14$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5fbadebe-613e-5222-93d6-26b4ff0d1456",
+       "label": "C",
+       "content": "$20$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0c2b1308-46b0-5d2d-bc2b-548b8ce4a439",
+       "label": "D",
+       "content": "$29$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "59eab436-5449-5ab1-98d8-b898629548ff",
+     "key": "maths-averages-08",
+     "stem": "The table shows the scores of 10 pupils in a quiz.\n\n$$\n\\begin{array}{l|ccc}\n\\text{Score} & 2 & 3 & 4 \\\\ \\hline\n\\text{Frequency} & 3 & 5 & 2\n\\end{array}\n$$\n\nFind the median score.",
+     "image_url": null,
+     "explanation": "In order: 2, 2, 2, 3, 3, 3, 3, 3, 4, 4. With 10 scores, the median is the mean of the 5th and 6th: $\\dfrac{3 + 3}{2} = 3$.\n\n**Why the other options are wrong**\n\n- $2$: Only the first 3 pupils scored 2. The 5th and 6th scores are both 3.\n- $2.9$: 2.9 is the mean. The median is the middle score when the scores are in order.\n- $5$: 5 is the largest frequency, not a score.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d53f028a-4f02-5337-8868-f9739582aa2a",
+       "label": "A",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e17e977d-3e36-51ac-8c57-ca65fd8945f7",
+       "label": "B",
+       "content": "$2.9$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "30fd43cd-6790-5837-b60e-f55132750e6c",
+       "label": "C",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "70863061-f50a-55fb-9e48-7ffd85b0859f",
+       "label": "D",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6d1be37c-c475-538b-9a0e-757bb6cd985e",
+     "key": "maths-averages-09",
+     "stem": "Class A has 20 pupils with a mean mark of 60. Class B has 30 pupils with a mean mark of 70. Find the mean mark of all 50 pupils.",
+     "image_url": null,
+     "explanation": "Total for A $= 20 \\times 60 = 1200$; total for B $= 30 \\times 70 = 2100$.\n\nMean $= \\dfrac{1200 + 2100}{50} = \\dfrac{3300}{50} = 66$\n\n**Why the other options are wrong**\n\n- $64$: You gave class A's mean to class B and the other way round.\n- $65$: You averaged the two means. The classes are different sizes, so use the totals.\n- $130$: You added the means.",
+     "position": 4,
+     "options": [
+      {
+       "id": "216e1bf0-34f9-5d78-81fa-4973b82cf787",
+       "label": "A",
+       "content": "$64$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "eea90496-2ad4-580a-ab53-7a21f0bb9b34",
+       "label": "B",
+       "content": "$65$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1d45b306-13a0-5b0e-9a5f-48b1b433d183",
+       "label": "C",
+       "content": "$66$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ea6fb053-db54-5abf-ba29-43f091c818c4",
+       "label": "D",
+       "content": "$130$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7d36c055-b4dc-5a86-8045-e423f6323ada",
+     "key": "maths-averages-10",
+     "stem": "The mean of $x$, $x + 2$, $x + 4$ and $x + 6$ is 10. Find $x$.",
+     "image_url": null,
+     "explanation": "$\\dfrac{x + (x + 2) + (x + 4) + (x + 6)}{4} = 10$\n\n$4x + 12 = 40 \\Rightarrow 4x = 28 \\Rightarrow x = 7$\n\n**Why the other options are wrong**\n\n- $10$: 10 is the mean of the four numbers, not $x$.\n- $13$: You added 3 instead of subtracting it: the mean is $x + 3 = 10$.\n- $28$: $4x = 28$, so you must still divide by 4.",
+     "position": 5,
+     "options": [
+      {
+       "id": "6159f232-15be-5e53-991a-4bf719edf003",
+       "label": "A",
+       "content": "$7$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "26cebaac-4f5f-5d0d-a672-4b6fccd00d28",
+       "label": "B",
+       "content": "$10$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "75067af1-ccb7-5158-9552-5e4acb22c014",
+       "label": "C",
+       "content": "$13$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4c32e2fa-1fdd-5a52-8863-bbc06a1695db",
+       "label": "D",
+       "content": "$28$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ec483bc6-c6cc-5973-a35b-17e0a572fc78",
+   "topic": "Logarithms",
+   "title": "Logarithms: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on logarithms, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 217,
+   "questions": [
+    {
+     "id": "6a1a76fb-cb37-512a-b697-8e8710cf4618",
+     "key": "maths-logs-06",
+     "stem": "Evaluate $\\log_{2} 32$.",
+     "image_url": null,
+     "explanation": "$\\log_{2} 32 = n$ means $2^{n} = 32$. Since $2^{5} = 32$, $\\log_{2} 32 = 5$.\n\n**Why the other options are wrong**\n\n- $1.505$: 1.505 is $\\log_{10} 32$. The base here is 2.\n- $6$: $2^{6} = 64$, not 32.\n- $16$: You divided 32 by 2. A logarithm asks which power of 2 gives 32.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0d7222bc-f2cb-5d4b-8aa5-e00ecbac2223",
+       "label": "A",
+       "content": "$1.505$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "056bbf13-622e-5ce8-bd96-3eede1729f96",
+       "label": "B",
+       "content": "$5$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8acef95c-6692-5069-8b62-4008a08496d4",
+       "label": "C",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "58581c06-ce9b-5351-ae16-d70f77688897",
+       "label": "D",
+       "content": "$16$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6bd5c682-d6f1-57f9-9693-e6292c579474",
+     "key": "maths-logs-07",
+     "stem": "Simplify $\\log_{3} 54 - \\log_{3} 2$.",
+     "image_url": null,
+     "explanation": "$\\log_{3} 54 - \\log_{3} 2 = \\log_{3}\\dfrac{54}{2} = \\log_{3} 27 = 3$, since $3^{3} = 27$.\n\n**Why the other options are wrong**\n\n- $9$: You divided 27 by 3. $\\log_{3} 27 = 3$ because $3^{3} = 27$.\n- $27$: You stopped at $\\dfrac{54}{2} = 27$. You still need $\\log_{3} 27$.\n- $\\log_{3} 52$: You subtracted inside the logarithm. $\\log a - \\log b = \\log\\dfrac{a}{b}$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "73e1258c-dfc2-5641-9094-1c5a2ae5fb68",
+       "label": "A",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4fae92c6-7db7-55a2-af38-5da14b2fde95",
+       "label": "B",
+       "content": "$\\log_{3} 52$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b903b6f-2c2c-5ff8-82d3-fc8c9514afd7",
+       "label": "C",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "78ac92e5-135d-5323-a686-a57c37c92aa3",
+       "label": "D",
+       "content": "$27$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0a9a1942-e82b-5cac-abb5-951c8d11c958",
+     "key": "maths-logs-08",
+     "stem": "Solve $\\log x + \\log 4 = \\log 20$.",
+     "image_url": null,
+     "explanation": "$\\log x + \\log 4 = \\log 4x$, so $\\log 4x = \\log 20$.\n\n$4x = 20 \\Rightarrow x = 5$\n\n**Why the other options are wrong**\n\n- $16$: You subtracted 4 from 20. $\\log x + \\log 4 = \\log 4x$.\n- $24$: You added. $\\log x + \\log 4 = \\log 4x$, so $4x = 20$.\n- $80$: You multiplied 20 by 4. From $4x = 20$, divide by 4.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2a33ed24-478a-5f4c-a36d-e64218f466bc",
+       "label": "A",
+       "content": "$5$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f2f7b3a7-65f8-5db8-ab84-ab16d22882bf",
+       "label": "B",
+       "content": "$16$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "507af809-3273-591f-a21f-1107379a0095",
+       "label": "C",
+       "content": "$24$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b36602bb-548c-51f9-8940-0f0ac7b304ed",
+       "label": "D",
+       "content": "$80$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7b6c2304-bf28-5ac5-9b5c-7dfb46ec4664",
+     "key": "maths-logs-09",
+     "stem": "If $\\log_{10} x = -2$, find $x$.",
+     "image_url": null,
+     "explanation": "$\\log_{10} x = -2$ means $x = 10^{-2} = \\dfrac{1}{100} = 0.01$\n\n**Why the other options are wrong**\n\n- $-100$: A negative logarithm does not mean a negative number: $10^{-2} = \\dfrac{1}{100}$.\n- $-20$: You multiplied 10 by $-2$. $\\log_{10} x = -2$ means $x = 10^{-2}$.\n- $100$: $100 = 10^{2}$. The index is $-2$, which gives the reciprocal.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4b7a347e-c7ca-5401-803f-eece9b8f9313",
+       "label": "A",
+       "content": "$-100$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "897d55f4-58e5-5122-b16a-d410589362ea",
+       "label": "B",
+       "content": "$-20$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "395a5db5-51c6-53e6-b86f-35e78af73869",
+       "label": "C",
+       "content": "$0.01$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c8ec7770-8275-5924-bac1-a9fcc033024d",
+       "label": "D",
+       "content": "$100$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e47ee7f6-ba59-5184-88bb-8b1f35923d06",
+     "key": "maths-logs-10",
+     "stem": "Given that $\\log_{10} 2 = 0.3010$, find $\\log_{10} 5$ without using tables or a calculator.",
+     "image_url": null,
+     "explanation": "$\\log 5 = \\log\\dfrac{10}{2} = \\log 10 - \\log 2 = 1 - 0.3010 = 0.6990$\n\n**Why the other options are wrong**\n\n- $0.1505$: You halved $\\log 2$. Use $5 = \\dfrac{10}{2}$.\n- $0.6020$: $0.6020$ is $\\log 4 = 2\\log 2$.\n- $1.5050$: You multiplied $\\log 2$ by 5. $\\log 5$ is not $5 \\log 2$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "6138d298-1ede-5c2c-ba9d-fc27bf78ab0d",
+       "label": "A",
+       "content": "$0.1505$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5a535466-0aa7-5e86-a2c9-ea7cfc5c3376",
+       "label": "B",
+       "content": "$0.6020$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9946520c-2937-5b68-888f-e46d905417b0",
+       "label": "C",
+       "content": "$0.6990$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c557e3c2-54b6-569f-ba20-ef792cdf47e2",
+       "label": "D",
+       "content": "$1.5050$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d35628a0-1a18-5036-8fc1-ca7dd17dc2a8",
+   "topic": "Modular Arithmetic",
+   "title": "Modular Arithmetic: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on modular arithmetic, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 218,
+   "questions": [
+    {
+     "id": "c17c04d6-08d0-554c-a52f-6a47924c249e",
+     "key": "maths-modular-06",
+     "stem": "Evaluate $25 + 18 \\pmod{7}$.",
+     "image_url": null,
+     "explanation": "$25 + 18 = 43$, and $43 = 6 \\times 7 + 1$, so $25 + 18 \\equiv 1 \\pmod{7}$.\n\n**Why the other options are wrong**\n\n- $6$: $43 \\div 7 = 6$ remainder 1. The answer is the remainder, not the quotient.\n- $8$: You reduced 25 and 18 to 4 and 4 but did not reduce their sum, 8, which is 1 in modulo 7.\n- $43$: 43 is not reduced. In modulo 7 the answer must be from 0 to 6.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5e8d38d7-d285-5f92-b52a-a22cbae11256",
+       "label": "A",
+       "content": "$1$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "44bce9ce-2cf1-5fdc-bbca-58281cad4849",
+       "label": "B",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bde50883-f9c7-5cca-b48a-b1d9629b9e40",
+       "label": "C",
+       "content": "$8$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9c960348-7fbe-5c86-a577-845150ceede6",
+       "label": "D",
+       "content": "$43$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1cec05db-a9ba-5a86-8324-aee697771d18",
+     "key": "maths-modular-07",
+     "stem": "It is now 9 o'clock on a 12-hour clock. What time will the clock show 50 hours from now?",
+     "image_url": null,
+     "explanation": "$9 + 50 = 59$, and $59 = 4 \\times 12 + 11$, so the clock shows 11 o'clock.\n\n**Why the other options are wrong**\n\n- 2 o'clock: $50 \\equiv 2 \\pmod{12}$, but you forgot to add the starting time, 9 o'clock.\n- 7 o'clock: You subtracted 2 hours instead of adding them.\n- 59 o'clock: $9 + 50 = 59$ must be reduced modulo 12.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f87e7a12-6aa1-5cb9-bc55-eb7d014aef6e",
+       "label": "A",
+       "content": "2 o'clock",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d9a6cc89-0ea4-50c8-80c9-782f57f321f7",
+       "label": "B",
+       "content": "7 o'clock",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6e19e91c-1611-54bb-9afd-3404200db934",
+       "label": "C",
+       "content": "11 o'clock",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2b7448a4-57bf-533a-b641-2495c90ba461",
+       "label": "D",
+       "content": "59 o'clock",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "266d3434-801d-5401-9485-5f8f5c3995d4",
+     "key": "maths-modular-08",
+     "stem": "Solve $x + 5 \\equiv 2 \\pmod{6}$.",
+     "image_url": null,
+     "explanation": "$x \\equiv 2 - 5 = -3 \\equiv -3 + 6 = 3 \\pmod{6}$\n\nCheck: $3 + 5 = 8 \\equiv 2 \\pmod{6}$. ✓\n\n**Why the other options are wrong**\n\n- $-3$: $2 - 5 = -3$, but in modulo 6 the answer must be from 0 to 5: $-3 + 6 = 3$.\n- $1$: You added 5 instead of subtracting it: $2 + 5 = 7 \\equiv 1$.\n- $9$: $9 \\equiv 3 \\pmod{6}$, so 9 is not reduced.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0084f90e-9b34-59bf-a572-adf4cecf7ba1",
+       "label": "A",
+       "content": "$-3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5160f120-69d0-5c88-acc2-f7828d9da945",
+       "label": "B",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "03d2e133-0cb0-5451-bd71-30517ccf902f",
+       "label": "C",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0afbfc7f-be7b-5fcf-b662-002526c37ecb",
+       "label": "D",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "73965e31-4810-57cb-94ee-6e60267cf81b",
+     "key": "maths-modular-09",
+     "stem": "In modulo 4, find the multiplicative inverse of 3, that is, the number $y$ such that $3 \\times y \\equiv 1 \\pmod{4}$.",
+     "image_url": null,
+     "explanation": "Try each value: $3 \\times 3 = 9 = 2 \\times 4 + 1 \\equiv 1 \\pmod{4}$. So the inverse of 3 is 3.\n\n**Why the other options are wrong**\n\n- $0$: $3 \\times 0 = 0$, not 1.\n- $1$: 1 is the identity element. $3 \\times 1 = 3$, not 1.\n- $2$: $3 \\times 2 = 6 \\equiv 2 \\pmod{4}$, not 1.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5cd843e1-8b2c-56a3-bbdc-1d801f84681d",
+       "label": "A",
+       "content": "$0$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7ae82f15-1fb9-502d-978f-c7ab27ecaca6",
+       "label": "B",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "975f44e4-2b6c-5fdf-a65d-88b74d1e09c8",
+       "label": "C",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7efe32c3-7261-523b-be0f-96ca986981a8",
+       "label": "D",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3cd78772-91b0-5a25-bbcc-51d1f82ac7de",
+     "key": "maths-modular-10",
+     "stem": "A watchman is on night duty every 6th day. He was on duty on a Tuesday. On what day of the week will his 5th duty after that be?",
+     "image_url": null,
+     "explanation": "The 5th duty is $5 \\times 6 = 30$ days later. $30 = 4 \\times 7 + 2$, so it falls 2 days after Tuesday: Thursday.\n\n**Why the other options are wrong**\n\n- Tuesday: You worked in modulo 6 ($30 \\equiv 0$). Days of the week repeat every 7 days, so use modulo 7.\n- Friday: You counted only 4 steps of 6 days (24 days). The 5th duty after Tuesday is 30 days later.\n- Sunday: You counted backwards. $30 \\equiv 2 \\pmod{7}$, so move 2 days forward from Tuesday.",
+     "position": 5,
+     "options": [
+      {
+       "id": "42bd90f1-a000-5d75-aaa9-ae2dec56f307",
+       "label": "A",
+       "content": "Tuesday",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2aa4d79d-38c1-53db-995c-1eeff366805f",
+       "label": "B",
+       "content": "Thursday",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "386cf0c2-3a72-5c78-b366-9713d2b11129",
+       "label": "C",
+       "content": "Friday",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0d24c88b-3e55-5264-ad57-b9f73f9568d8",
+       "label": "D",
+       "content": "Sunday",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "334ad06d-b0c8-532f-b7a7-99e35d93d5b9",
+   "topic": "Vectors",
+   "title": "Vectors: practice set 2",
+   "paper_type": "Practice",
+   "description": "5 original WASSCE-style objective questions on vectors, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 219,
+   "questions": [
+    {
+     "id": "b68ffbfc-e414-564e-a006-cd6f92cbb9a7",
+     "key": "maths-vectors-06",
+     "stem": "Given that $\\mathbf{a} = $ $\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$ and $\\mathbf{b} = $ $\\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}$, find $3\\mathbf{a} - 2\\mathbf{b}$.",
+     "image_url": null,
+     "explanation": "$3\\mathbf{a} = \\begin{pmatrix} 6 \\\\ -9 \\end{pmatrix}$, $2\\mathbf{b} = \\begin{pmatrix} -2 \\\\ 8 \\end{pmatrix}$\n\n$3\\mathbf{a} - 2\\mathbf{b} = \\begin{pmatrix} 6 - (-2) \\\\ -9 - 8 \\end{pmatrix} = \\begin{pmatrix} 8 \\\\ -17 \\end{pmatrix}$\n\n**Why the other options are wrong**\n\n- $\\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$: You added $2\\mathbf{b}$ instead of subtracting it.\n- $\\begin{pmatrix} 7 \\\\ -13 \\end{pmatrix}$: You subtracted $\\mathbf{b}$, not $2\\mathbf{b}$.\n- $\\begin{pmatrix} 8 \\\\ -1 \\end{pmatrix}$: In the bottom entry, $-9 - 8 = -17$, not $-1$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e55c14e3-51ee-5e25-8dc1-14da775470d2",
+       "label": "A",
+       "content": "$\\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "32cf54cd-efd6-5890-9ddf-8da49e4dea07",
+       "label": "B",
+       "content": "$\\begin{pmatrix} 7 \\\\ -13 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0852cce0-c617-5951-974c-dc386218ca98",
+       "label": "C",
+       "content": "$\\begin{pmatrix} 8 \\\\ -1 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8b25ac4b-ffa0-5d1f-a75a-705507dc6623",
+       "label": "D",
+       "content": "$\\begin{pmatrix} 8 \\\\ -17 \\end{pmatrix}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2ecffc81-f208-58a3-821c-20d6e7494167",
+     "key": "maths-vectors-07",
+     "stem": "The position vectors of $A$ and $B$ are $\\overrightarrow{OA} = $ $\\begin{pmatrix} 4 \\\\ 6 \\end{pmatrix}$ and $\\overrightarrow{OB} = $ $\\begin{pmatrix} -2 \\\\ 2 \\end{pmatrix}$. Find the position vector of the mid-point of $AB$.",
+     "image_url": null,
+     "explanation": "Mid-point $= \\dfrac{1}{2}(\\overrightarrow{OA} + \\overrightarrow{OB}) = \\dfrac{1}{2}\\begin{pmatrix} 2 \\\\ 8 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 4 \\end{pmatrix}$\n\n**Why the other options are wrong**\n\n- $\\begin{pmatrix} -3 \\\\ -2 \\end{pmatrix}$: That is half of $\\overrightarrow{AB}$. The mid-point is the average of the two position vectors.\n- $\\begin{pmatrix} 2 \\\\ 8 \\end{pmatrix}$: You added the vectors but did not halve the sum.\n- $\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}$: You halved $\\overrightarrow{OA} - \\overrightarrow{OB}$. Add the vectors, then halve.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f08fdafd-2213-519e-926d-44384fd40d1d",
+       "label": "A",
+       "content": "$\\begin{pmatrix} -3 \\\\ -2 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aed4bde2-d66c-5b62-b447-1c9191ba91b6",
+       "label": "B",
+       "content": "$\\begin{pmatrix} 2 \\\\ 8 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1714a2ec-c549-5f17-9622-a5e47e3871a8",
+       "label": "C",
+       "content": "$\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "79e8ab58-a06b-5547-bb27-28360504fe29",
+       "label": "D",
+       "content": "$\\begin{pmatrix} 1 \\\\ 4 \\end{pmatrix}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a925e2a-66a4-56af-8996-9575e1eb9626",
+     "key": "maths-vectors-08",
+     "stem": "Find $x$ and $y$ if $\\begin{pmatrix} x + 2 \\\\ 5 \\end{pmatrix}$ $=$ $\\begin{pmatrix} 7 \\\\ y - 1 \\end{pmatrix}$.",
+     "image_url": null,
+     "explanation": "Equal vectors have equal entries: $x + 2 = 7$, so $x = 5$; and $5 = y - 1$, so $y = 6$.\n\n**Why the other options are wrong**\n\n- $x = 9$, $y = 4$: You added 2 to 7 and subtracted 1 from 5. Undo each operation: $x = 7 - 2$ and $y = 5 + 1$.\n- $x = 5$, $y = 4$: From $y - 1 = 5$, add 1: $y = 6$.\n- $x = 9$, $y = 6$: From $x + 2 = 7$, subtract 2: $x = 5$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1c0fd62a-a8e7-539a-943e-6148f05a5d4f",
+       "label": "A",
+       "content": "$x = 9$, $y = 4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "86a8e170-44aa-5449-8a78-4a5925745b34",
+       "label": "B",
+       "content": "$x = 5$, $y = 4$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "89dc230a-9ebd-564b-8469-ac230768f1fe",
+       "label": "C",
+       "content": "$x = 9$, $y = 6$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d03455e0-4794-57cc-8ac9-16f8511fda4b",
+       "label": "D",
+       "content": "$x = 5$, $y = 6$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "61575845-1d43-511e-a57b-a178b1259056",
+     "key": "maths-vectors-09",
+     "stem": "Given that $\\mathbf{p} = $ $\\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}$, find $|2\\mathbf{p}|$.",
+     "image_url": null,
+     "explanation": "$2\\mathbf{p} = \\begin{pmatrix} 6 \\\\ 8 \\end{pmatrix}$, so $|2\\mathbf{p}| = \\sqrt{6^{2} + 8^{2}} = \\sqrt{100} = 10$.\n\n**Why the other options are wrong**\n\n- $5$: 5 is $|\\mathbf{p}|$. Doubling the vector doubles its length.\n- $14$: You added the entries of $2\\mathbf{p}$, $6 + 8$. Use Pythagoras.\n- $25$: 25 is $|\\mathbf{p}|^{2}$. Take the square root, then double.",
+     "position": 4,
+     "options": [
+      {
+       "id": "bc1b45b5-a4d8-54d8-98d1-eaa18c25287f",
+       "label": "A",
+       "content": "$5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f665dd7a-f7bc-5f5c-b110-18139ae26498",
+       "label": "B",
+       "content": "$10$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a464907f-9ac0-5c22-ac89-1b08583c367e",
+       "label": "C",
+       "content": "$14$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9bc579df-5717-5b51-986d-a4eccbe40540",
+       "label": "D",
+       "content": "$25$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "65c2db98-43b7-5eab-beeb-3282db59fae3",
+     "key": "maths-vectors-10",
+     "stem": "$O$ is the origin, $\\overrightarrow{OA} = a$ and $\\overrightarrow{OB} = b$. Express $\\overrightarrow{AB}$ in terms of $a$ and $b$.",
+     "image_url": null,
+     "explanation": "$\\overrightarrow{AB} = \\overrightarrow{AO} + \\overrightarrow{OB} = -a + b = b - a$\n\n**Why the other options are wrong**\n\n- $a - b$: That is $\\overrightarrow{BA}$. To go from $A$ to $B$, go back to $O$ ($-a$) then out to $B$ ($+b$).\n- $a + b$: Going from $A$ to $O$ is $-a$, not $+a$.\n- $\\dfrac{1}{2}(a + b)$: That is the position vector of the mid-point of $AB$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e530a4d4-8c64-5ed0-acef-723adbc31543",
+       "label": "A",
+       "content": "$a - b$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dbca173c-64f4-517c-a380-aed2714cca89",
+       "label": "B",
+       "content": "$a + b$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "593a14ca-eaa3-54d1-b1b9-477dbb8c7235",
+       "label": "C",
+       "content": "$\\dfrac{1}{2}(a + b)$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "42af0810-0120-5298-9551-1640024ca42e",
+       "label": "D",
+       "content": "$b - a$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "69d00c8a4ae4"
+}

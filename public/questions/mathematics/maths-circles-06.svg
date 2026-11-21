@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img">
+  <title>Circle with points A, B, C and D on it. Angle ACB is 47 degrees. The angle marked x is angle ADB, on the same side of AB as C.</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <circle cx="150.0" cy="150.0" r="90.0" fill="none" stroke="#111827" stroke-width="2"/>
+  <line x1="195.0" y1="72.1" x2="81.1" y2="207.9" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+  <line x1="195.0" y1="72.1" x2="212.5" y2="214.7" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+  <line x1="98.4" y1="76.3" x2="81.1" y2="207.9" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+  <line x1="98.4" y1="76.3" x2="212.5" y2="214.7" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+  <path d="M178.3,92.0 A26,26 0 0 0 198.2,97.9" fill="none" stroke="#111827" stroke-width="1.6"/>
+  <text x="183.4" y="111.4" font-family="system-ui, sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">47°</text>
+  <path d="M95.0,102.1 A26,26 0 0 0 114.9,96.3" fill="none" stroke="#1d4ed8" stroke-width="1.6"/>
+  <text x="109.7" y="115.7" font-family="Georgia, serif" font-size="16" font-style="italic" font-weight="bold" fill="#1d4ed8" text-anchor="middle" dominant-baseline="central">x</text>
+  <circle cx="81.1" cy="207.9" r="3.2" fill="#111827"/>
+  <text x="69.6" y="217.5" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">A</text>
+  <circle cx="212.5" cy="214.7" r="3.2" fill="#111827"/>
+  <text x="222.9" y="225.5" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">B</text>
+  <circle cx="195.0" cy="72.1" r="3.2" fill="#111827"/>
+  <text x="202.5" y="59.1" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">C</text>
+  <circle cx="98.4" cy="76.3" r="3.2" fill="#111827"/>
+  <text x="89.8" y="64.0" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-style="italic" font-weight="normal" fill="#111827" text-anchor="middle" dominant-baseline="central">D</text>
+</svg>

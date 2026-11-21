@@ -110,6 +110,25 @@
   "questions": 50
  },
  {
+  "name": "maths_set7_p1",
+  "label": "Mathematics: practice set 2 for circles, angles, trigonometry, elevation, bearings, volumes, averages, logarithms, modular arithmetic and vectors",
+  "subject_slug": "mathematics",
+  "version": "69d00c8a4ae4",
+  "papers": [
+   "8a0e2ea7-700e-5381-bf17-dd9c4c6a6280",
+   "0e1936f2-9484-51eb-910c-3c0b7f45a183",
+   "b37d0e8c-63e5-5d71-9ab6-1aaad472d20a",
+   "0eff8438-bfad-5d8f-b006-448051b0fd58",
+   "285bfc2c-e502-5787-8e56-a7e95a19f6f3",
+   "e240b12c-a0a4-5379-9c7e-4ac2d73cfc4f",
+   "c92dd4b6-f26c-5c3b-99e0-4f68e6d105c2",
+   "ec483bc6-c6cc-5973-a35b-17e0a572fc78",
+   "d35628a0-1a18-5036-8fc1-ca7dd17dc2a8",
+   "334ad06d-b0c8-532f-b7a7-99e35d93d5b9"
+  ],
+  "questions": 50
+ },
+ {
   "name": "english_set1_p1",
   "label": "English Language: set 1 (grammar)",
   "subject_slug": "english-language",
