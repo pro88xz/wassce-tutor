@@ -100,6 +100,15 @@ SETS = [
         "practice_set": 2,
     },
     {
+        "module": ROOT / "content/questions/mathematics/set8_p1.py",
+        "subject_slug": "mathematics",
+        "name": "maths_set8_p1",
+        "label": "Mathematics: practice set 2 for areas, lengths, polygons, matrices, transformations, cumulative frequency, statistics, dispersion, ratio and inequalities",
+        "review": ROOT / "content/questions/mathematics/set8_p1.review.md",
+        "sort_from": 220,
+        "practice_set": 2,
+    },
+    {
         "module": ROOT / "content/questions/english-language/set1_p1.py",
         "subject_slug": "english-language",
         "name": "english_set1_p1",

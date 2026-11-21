@@ -129,6 +129,25 @@
   "questions": 50
  },
  {
+  "name": "maths_set8_p1",
+  "label": "Mathematics: practice set 2 for areas, lengths, polygons, matrices, transformations, cumulative frequency, statistics, dispersion, ratio and inequalities",
+  "subject_slug": "mathematics",
+  "version": "d219f308f5a4",
+  "papers": [
+   "a503fa5d-d147-52a5-bfd9-0b7a1a0f4332",
+   "9c0cdf0d-5303-5c08-b955-2fd26be554f7",
+   "99e546ef-e99c-5c4f-bcf8-32eb9439edb7",
+   "d01c6866-c3a5-5ec4-835e-b9acf3d9e1bf",
+   "3507c9b5-de43-55e6-afc8-0d92181e0085",
+   "13390a3e-aa85-5917-bcc1-81d31b0b3467",
+   "bba5cb0d-1601-5b9e-951b-34b1f7665f56",
+   "4b755dee-61c7-5c7b-92ae-cd5043411c5f",
+   "826078fd-22dd-5664-b8a9-e308c134caac",
+   "2bbfd09f-ab7a-5e9c-a07c-5b5881854a9b"
+  ],
+  "questions": 50
+ },
+ {
   "name": "english_set1_p1",
   "label": "English Language: set 1 (grammar)",
   "subject_slug": "english-language",
