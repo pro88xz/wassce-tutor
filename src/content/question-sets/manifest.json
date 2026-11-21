@@ -826,6 +826,20 @@
   "questions": 46
  },
  {
+  "name": "agricultural_science_set3_p1",
+  "label": "Agricultural Science: set 3 (weeds, pests and diseases, crop improvement, processing and storage, forestry)",
+  "subject_slug": "agricultural-science",
+  "version": "7ba0ac14f044",
+  "papers": [
+   "649d839f-dbef-55a7-a1bc-251fbc8b0149",
+   "0000bd7d-658c-578f-81f3-9a86cf37fa95",
+   "19baedca-4ac4-50de-8100-ae8e142407dd",
+   "79f2f128-a41a-58a9-af80-0589db10f9b9",
+   "e723d5d4-75ed-50ac-9899-3c14cc0921e1"
+  ],
+  "questions": 40
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",

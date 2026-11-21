@@ -1,0 +1,1578 @@
+{
+ "name": "agricultural_science_set3_p1",
+ "label": "Agricultural Science: set 3 (weeds, pests and diseases, crop improvement, processing and storage, forestry)",
+ "subject_slug": "agricultural-science",
+ "papers": [
+  {
+   "id": "649d839f-dbef-55a7-a1bc-251fbc8b0149",
+   "topic": "Weed Control",
+   "title": "Weed Control: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on weed control, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "ab32e771-a6b7-5296-8dcb-d3cfd4ea34e4",
+     "key": "agr-wc-01",
+     "stem": "Witchweed (*Striga*) is especially harmful to cereals such as maize and sorghum because it",
+     "image_url": null,
+     "explanation": "Parasitic weeds can cause heavy losses even when few are visible, because much of the damage happens underground before the weed emerges.\n\n**Why the other options are wrong**\n\n- climbs over them and shades out their leaves: *Striga* is a root parasite; it does not climb over the crop.\n- releases poison gas into the soil: *Striga* harms the crop by feeding on it, not with gas.\n- is eaten by the pests that attack cereals: *Striga* is not a food plant for cereal pests; its harm is as a parasite.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f88f7150-30ed-5364-b8d6-88864ac35e40",
+       "label": "A",
+       "content": "attaches to their roots and takes their food and water",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "94c90ee5-356f-503c-872d-33ee219d8d44",
+       "label": "B",
+       "content": "climbs over them and shades out their leaves",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7a7b866e-e1a3-52fa-b13f-7082f16c4c34",
+       "label": "C",
+       "content": "releases poison gas into the soil",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2f163f7d-7c1d-5e61-8d0e-850ae974a51b",
+       "label": "D",
+       "content": "is eaten by the pests that attack cereals",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6b9717d0-4897-5ae3-b9f8-8a7904e5b4aa",
+     "key": "agr-wc-02",
+     "stem": "Spear grass (*Imperata cylindrica*) is difficult to control mainly because it",
+     "image_url": null,
+     "explanation": "Slashing or hoeing removes only the top; the rhizomes sprout again. A systemic herbicide such as glyphosate, which moves down to the rhizomes, is effective.\n\n**Why the other options are wrong**\n\n- is an annual that produces seeds only once: An annual completes its life in one season; spear grass lives for many years.\n- is a parasite on the roots of crops: Spear grass is free-living; *Striga* is the parasitic weed.\n- grows only in water: Spear grass grows on dry land; water hyacinth and water lettuce are aquatic weeds.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c87a5bb2-d1c3-54db-b30d-a59994185c6c",
+       "label": "A",
+       "content": "is an annual that produces seeds only once",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8f64e80c-7b85-5f25-bdde-ae37e8cd6827",
+       "label": "B",
+       "content": "is a parasite on the roots of crops",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d735e992-c6ba-5665-83e9-b0264cafca24",
+       "label": "C",
+       "content": "is a perennial that regrows from underground rhizomes",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4d6dd182-bdc2-5c1b-b7ee-b37e96466fd7",
+       "label": "D",
+       "content": "grows only in water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d9f087e2-2182-51ea-ac65-29d5d0b534b3",
+     "key": "agr-wc-03",
+     "stem": "Nutgrass (*Cyperus*), with its triangular stem, is classified as",
+     "image_url": null,
+     "explanation": "Grouping weeds by leaf type (grasses, broad-leaved weeds, sedges) matters because many herbicides act on one group but not the others.\n\n**Why the other options are wrong**\n\n- a grass: Grasses have round, hollow stems and narrow leaves.\n- a broad-leaved weed: Broad-leaved weeds such as *Chromolaena* have wide leaves with net veins.\n- a parasitic weed: Nutgrass is free-living, not parasitic.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5973c43c-cf92-5c2c-8c6c-6291bebc1b29",
+       "label": "A",
+       "content": "a grass",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fdb6f7cb-c88b-5461-8963-80493d2d364d",
+       "label": "B",
+       "content": "a broad-leaved weed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "41268aac-d121-51e2-82ca-4fbf8405f2c0",
+       "label": "C",
+       "content": "a parasitic weed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a4fad8d9-4238-5ecb-a4c4-212dbb04d29e",
+       "label": "D",
+       "content": "a sedge",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "92cdb33b-d604-5bd4-bd37-7f042f9410b5",
+     "key": "agr-wc-04",
+     "stem": "A herbicide that kills certain weeds without harming the crop, such as 2,4-D used on broad-leaved weeds in rice, is described as",
+     "image_url": null,
+     "explanation": "Rice and maize are grasses, so 2,4-D, which acts on broad-leaved plants, kills the broad-leaved weeds and spares the crop.\n\n**Why the other options are wrong**\n\n- non-selective: A non-selective herbicide, such as glyphosate or paraquat, kills all green plants it touches.\n- contact: A contact herbicide kills only the parts it touches; it may or may not be selective.\n- pre-emergence: Pre-emergence describes the timing, before crops and weeds appear, not which plants are killed.",
+     "position": 4,
+     "options": [
+      {
+       "id": "ce1e8662-32ca-55f1-b37a-a17fcdfd3d90",
+       "label": "A",
+       "content": "selective",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b895cafa-5c96-5949-be3b-6be91a87be15",
+       "label": "B",
+       "content": "non-selective",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6a5b9d6d-069b-5569-ae39-3f3d4c6f25d1",
+       "label": "C",
+       "content": "contact",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "503ac678-3c14-54bd-b3e3-ed28193e91cf",
+       "label": "D",
+       "content": "pre-emergence",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "010a3c99-834d-565e-8867-4351c70a9fd3",
+     "key": "agr-wc-05",
+     "stem": "A herbicide that is absorbed by the leaves and moved through the plant to kill the roots and rhizomes is",
+     "image_url": null,
+     "explanation": "Glyphosate is systemic, which is why it can kill perennial weeds such as spear grass.\n\n**Why the other options are wrong**\n\n- contact: A contact herbicide kills only the parts it touches, so rhizomes survive and regrow.\n- pre-emergence: Pre-emergence herbicides are applied to the soil before weeds come up.\n- selective: Selective describes which plants are killed, not how the chemical moves.",
+     "position": 5,
+     "options": [
+      {
+       "id": "54afb213-2736-5bb4-949c-c7afcaa4cabc",
+       "label": "A",
+       "content": "contact",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "85140f62-2578-5cbf-97ad-c398eab05c34",
+       "label": "B",
+       "content": "systemic (translocated)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "493f22fb-d614-58b1-9a0f-2e216645e6f1",
+       "label": "C",
+       "content": "pre-emergence",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9d2e71f5-2943-59be-b57f-bbf0a6e40394",
+       "label": "D",
+       "content": "selective",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b571bb2-3dc3-5fec-83a1-1a9b1768aebb",
+     "key": "agr-wc-06",
+     "stem": "Which is a cultural method of weed control?",
+     "image_url": null,
+     "explanation": "Cultural methods use good farming practice: correct spacing, cover crops, mulching, rotation, timely planting and, in swamp rice, flooding.\n\n**Why the other options are wrong**\n\n- Spraying a herbicide: Using herbicides is chemical control.\n- Pulling weeds out by hand: Hand pulling is mechanical (physical) control.\n- Cleaning tools before moving to a new field: This is preventive control: it stops weed seeds being carried to new land.",
+     "position": 6,
+     "options": [
+      {
+       "id": "4992e1f8-3994-5fe9-8862-70b9b35212f8",
+       "label": "A",
+       "content": "Spraying a herbicide",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ef994bb4-78d1-54ee-90d3-6bd05ed45af3",
+       "label": "B",
+       "content": "Pulling weeds out by hand",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "386394ed-e83a-5f2b-958a-db0b46d1bbdd",
+       "label": "C",
+       "content": "Planting at the correct spacing so the crop canopy closes quickly and shades the weeds",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f28f2acb-d36e-57b5-b172-67e455602d6a",
+       "label": "D",
+       "content": "Cleaning tools before moving to a new field",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "307a1602-2fa7-5fc4-be71-f3f029c53862",
+     "key": "agr-wc-07",
+     "stem": "In swamp rice, flooding the field after transplanting helps to control weeds because",
+     "image_url": null,
+     "explanation": "Rice tolerates standing water, but most weeds cannot germinate or grow in it, so good water control in a developed swamp reduces weeding.\n\n**Why the other options are wrong**\n\n- the water carries herbicide to the weeds: Flooding itself is the control; no herbicide is needed for it to work.\n- rice cannot grow without weeds: Weeds compete with rice; they do not help it.\n- weeds are a source of food for the rice: Weeds take food from the rice; they do not supply it.",
+     "position": 7,
+     "options": [
+      {
+       "id": "149d212f-ddd0-5c52-a71e-535a6e47276f",
+       "label": "A",
+       "content": "the water carries herbicide to the weeds",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cab80d02-ddae-5b0e-9d09-d103dc9ff771",
+       "label": "B",
+       "content": "rice cannot grow without weeds",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "97441716-caf6-51a7-9429-e04fda267f24",
+       "label": "C",
+       "content": "weeds are a source of food for the rice",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb110fdd-36c7-5cdd-855c-040562033169",
+       "label": "D",
+       "content": "the water drowns many weeds and stops their seeds germinating",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "77533810-5c2c-5005-a736-cc682c8a6a37",
+     "key": "agr-wc-08",
+     "stem": "Burning is NOT recommended as a method of weed control on farmland because it",
+     "image_url": null,
+     "explanation": "Burning also kills useful soil organisms and can spread out of control into forests and other farms.\n\n**Why the other options are wrong**\n\n- makes the weeds grow faster afterwards: This is not the main reason; the harm is to the soil.\n- adds too much nitrogen to the soil: Burning loses nitrogen as gas; it does not add it.\n- is too slow to clear the land: Burning is quick; the problem is the damage it does.",
+     "position": 8,
+     "options": [
+      {
+       "id": "b82a0b20-87bf-5176-9ad7-40e0ab39799c",
+       "label": "A",
+       "content": "destroys organic matter and leaves the soil bare to erosion",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d27ab955-742d-5951-9931-b83a5a35fe33",
+       "label": "B",
+       "content": "makes the weeds grow faster afterwards",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9f009a83-9fad-50c3-a96d-7db419656771",
+       "label": "C",
+       "content": "adds too much nitrogen to the soil",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "63dee021-c161-5cda-aca8-0714887b36ba",
+       "label": "D",
+       "content": "is too slow to clear the land",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0000bd7d-658c-578f-81f3-9a86cf37fa95",
+   "topic": "Pests and Diseases of Crops",
+   "title": "Pests and Diseases of Crops: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on pests and diseases of crops, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "482acef7-1793-5d4d-9b64-4e7f097350da",
+     "key": "agr-pd-01",
+     "stem": "Swollen galls on the roots of a stunted, wilting tomato plant are a sign of attack by",
+     "image_url": null,
+     "explanation": "Nematodes are tiny worms in the soil. Rotation with non-host crops, resistant varieties and organic matter help to control them.\n\n**Why the other options are wrong**\n\n- stem borers: Stem borers tunnel inside stems, causing dead hearts and broken stems.\n- aphids: Aphids suck sap from leaves and shoots, causing curling and spreading viruses.\n- weaver birds: Weaver birds eat grain from cereal panicles.",
+     "position": 1,
+     "options": [
+      {
+       "id": "651bb3e1-96d6-55ea-9361-6caac3f04e19",
+       "label": "A",
+       "content": "stem borers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b7d0f5f-5883-5df1-8790-4d651a9b083f",
+       "label": "B",
+       "content": "root-knot nematodes",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a8bc2fab-e1f5-5b01-ac98-cbedb778d396",
+       "label": "C",
+       "content": "aphids",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3f1fc77d-a4cb-5298-ab84-6ce35fe22807",
+       "label": "D",
+       "content": "weaver birds",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "998d7fc9-baf5-5bfa-b44d-763498e14f77",
+     "key": "agr-pd-02",
+     "stem": "A farmer sprays an insecticide on a crop suffering from a fungal leaf disease. The spray will",
+     "image_url": null,
+     "explanation": "Identify the cause before treating: insecticides for insects, fungicides for fungi, and for virus diseases, control the vector and remove infected plants.\n\n**Why the other options are wrong**\n\n- cure the disease, because all pesticides kill all pests: Each pesticide acts on its own target: insecticides on insects, fungicides on fungi.\n- cure the disease, because fungi are insects: Fungi are not insects; they are a separate kingdom.\n- make the plant resistant to the fungus: A spray does not change the plant's resistance.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a8f54a08-19a8-5345-8afe-f323b71a4bc3",
+       "label": "A",
+       "content": "cure the disease, because all pesticides kill all pests",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "963f797a-b500-5b42-975c-f24ba5c80b16",
+       "label": "B",
+       "content": "cure the disease, because fungi are insects",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1db82886-8186-5428-8461-2f3a04961ebd",
+       "label": "C",
+       "content": "have no effect on the disease, because insecticides do not kill fungi",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b52b367d-c6d6-5b88-8aea-801d24be38fb",
+       "label": "D",
+       "content": "make the plant resistant to the fungus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c25f7da3-668a-5861-97b8-14a5b0016712",
+     "key": "agr-pd-03",
+     "stem": "Which pest damages crops by piercing them and sucking their sap?",
+     "image_url": null,
+     "explanation": "Piercing and sucking pests include aphids, whiteflies, mealybugs, mirids, cotton stainers and rice bugs. Many of them also spread viruses.\n\n**Why the other options are wrong**\n\n- Grasshopper: Grasshoppers have biting and chewing mouthparts.\n- Fall armyworm: Fall armyworm caterpillars bite and chew leaves.\n- Termite: Termites chew roots, stems and wood.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8c5ca73b-4de9-5290-8627-c627356c0ae4",
+       "label": "A",
+       "content": "Grasshopper",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "047951ac-d7f3-5be8-8f48-961ee436c24d",
+       "label": "B",
+       "content": "Fall armyworm",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8945ea52-0277-5389-b121-27072a9baad0",
+       "label": "C",
+       "content": "Termite",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "25ac073e-c64b-51c4-a8b2-436c41254bd0",
+       "label": "D",
+       "content": "Cocoa mirid",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "88074a85-47c2-58f1-96f4-2aa63d25cb33",
+     "key": "agr-pd-04",
+     "stem": "Laws that stop infected plants and seeds from entering the country are an example of",
+     "image_url": null,
+     "explanation": "Quarantine keeps new pests and diseases out; once a pest is established, it is very hard to remove.\n\n**Why the other options are wrong**\n\n- cultural control: Cultural control uses farming practices such as rotation and sanitation.\n- biological control: Biological control uses natural enemies of the pest.\n- chemical control: Chemical control uses pesticides.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3a46c8ef-0aea-5308-8829-e85945606273",
+       "label": "A",
+       "content": "legislative control (quarantine)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4240c170-a610-5db5-aa34-dab4924f5a76",
+       "label": "B",
+       "content": "cultural control",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "baf1c1ef-4ddb-5a65-bad5-b5f4e1a128d9",
+       "label": "C",
+       "content": "biological control",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "38d1013b-16d8-5757-9f15-1be0a01c3a1f",
+       "label": "D",
+       "content": "chemical control",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5db59ffb-5277-5bde-b6d5-f9542f82b8ef",
+     "key": "agr-pd-05",
+     "stem": "In integrated pest management (IPM), pesticides are used",
+     "image_url": null,
+     "explanation": "IPM combines resistant varieties, cultural practices, natural enemies and careful monitoring, so chemicals are used as little as possible.\n\n**Why the other options are wrong**\n\n- on a fixed schedule every week, whatever the pest numbers: Spraying by the calendar wastes money and kills natural enemies.\n- never, under any circumstances: IPM allows pesticides as a last step, used correctly and only when needed.\n- instead of all other methods: IPM combines several methods; chemicals are only one of them.",
+     "position": 5,
+     "options": [
+      {
+       "id": "3f84d1a3-af61-587e-98e1-5103b8ece138",
+       "label": "A",
+       "content": "on a fixed schedule every week, whatever the pest numbers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d94a2ecd-9038-5115-9571-4ac720372963",
+       "label": "B",
+       "content": "only when pest numbers reach the level that would cause economic loss",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6ec4ddf1-caae-5a6a-8ea9-3fc3a77e5b51",
+       "label": "C",
+       "content": "never, under any circumstances",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0f32c550-3e15-575a-a1b0-e2fcf17c3559",
+       "label": "D",
+       "content": "instead of all other methods",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ad285d54-32e5-5296-ab17-fe10923aa95b",
+     "key": "agr-pd-06",
+     "stem": "Which pesticide formulation is a liquid that is mixed with water to form an emulsion for spraying?",
+     "image_url": null,
+     "explanation": "The formulation code is printed on the label. Always read the label for the rate, the protective clothing needed and the waiting period before harvest.\n\n**Why the other options are wrong**\n\n- Wettable powder (WP): A wettable powder is a powder mixed with water, not a liquid.\n- Granules: Granules are coarse grains applied to the soil or into the whorl, not mixed for spraying.\n- Dust: A dust is a fine powder applied dry.",
+     "position": 6,
+     "options": [
+      {
+       "id": "93734c84-2f8c-5e85-b00d-2715a965e04d",
+       "label": "A",
+       "content": "Wettable powder (WP)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7aab778e-a9ee-5e36-94e3-2135e8223ad7",
+       "label": "B",
+       "content": "Granules",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4fa302e8-ee10-5bc0-819e-16358ce7ea75",
+       "label": "C",
+       "content": "Emulsifiable concentrate (EC)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8c2725ff-f593-527d-9209-28ecdd1c2fde",
+       "label": "D",
+       "content": "Dust",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6b2138f6-6291-5a55-9d60-39b813452e9a",
+     "key": "agr-pd-07",
+     "stem": "Fumigation of large grain stores should be carried out only by trained, licensed people because",
+     "image_url": null,
+     "explanation": "Fumigants penetrate stored produce to kill insects inside the grain, but they can kill anyone who breathes them.\n\n**Why the other options are wrong**\n\n- fumigants work only when applied by government officers: The chemistry is the same whoever applies it; the danger is why training is needed.\n- fumigation makes the grain germinate: Fumigation does not make grain germinate.\n- fumigants are expensive fertilisers: Fumigants are pesticides, not fertilisers.",
+     "position": 7,
+     "options": [
+      {
+       "id": "706d1c5f-dacd-5443-9ecb-f9ea3a0bdd2f",
+       "label": "A",
+       "content": "fumigants work only when applied by government officers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6765f6aa-5fc9-5874-96d1-90bc76358579",
+       "label": "B",
+       "content": "fumigation makes the grain germinate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "73f2fd33-9925-5950-bb01-2f17be1280b4",
+       "label": "C",
+       "content": "fumigants are expensive fertilisers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "407358b5-8948-51cb-a676-25730e1dc1a5",
+       "label": "D",
+       "content": "fumigants are gases that are deadly to people as well as pests",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "26cecdf9-44a4-5cb2-bf34-4b869a8c3cb0",
+     "key": "agr-pd-08",
+     "stem": "Seedlings in a nursery bed suddenly collapse at soil level and die. This disease is called",
+     "image_url": null,
+     "explanation": "Damping off is caused by soil fungi in wet, crowded conditions. Good drainage, sowing thinly and not overwatering help prevent it.\n\n**Why the other options are wrong**\n\n- mosaic: Mosaic is a mottled yellow and green pattern on leaves, caused by viruses.\n- leaf spot: Leaf spot is a disease that causes spots on the leaves.\n- dieback: Dieback is the death of branches from the tips backwards, as caused by mirids on cocoa.",
+     "position": 8,
+     "options": [
+      {
+       "id": "00a752cc-ee9a-55c1-aa12-055d94dd859d",
+       "label": "A",
+       "content": "damping off",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "babca211-1c18-54d7-b1cd-990627539072",
+       "label": "B",
+       "content": "mosaic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9a25dc05-5a1f-5feb-8cd2-763208764c12",
+       "label": "C",
+       "content": "leaf spot",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dfd01832-8a09-5ff1-9cf5-f520f6f6c22c",
+       "label": "D",
+       "content": "dieback",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "19baedca-4ac4-50de-8100-ae8e142407dd",
+   "topic": "Crop Improvement and Breeding",
+   "title": "Crop Improvement and Breeding: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on crop improvement and breeding, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "73b5fa77-a3ae-5a70-bda0-7e658ac13704",
+     "key": "agr-ci-01",
+     "stem": "In pure-line selection,",
+     "image_url": null,
+     "explanation": "Pure-line selection suits self-pollinated crops such as rice and cowpea, and gives a uniform new variety.\n\n**Why the other options are wrong**\n\n- seed from many good plants is mixed together and sown: Mixing seed from many good plants is mass selection.\n- two different varieties are crossed to combine their qualities: Crossing two varieties is hybridisation.\n- seeds are treated with radiation to cause new traits: Treating seeds with radiation is mutation breeding.",
+     "position": 1,
+     "options": [
+      {
+       "id": "02cc1fc6-26de-539e-9f66-a08b4aac4df8",
+       "label": "A",
+       "content": "seed from many good plants is mixed together and sown",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d54fbf0c-3aa3-52f0-b88d-cb06a8e27ec4",
+       "label": "B",
+       "content": "the seed of single outstanding plants of a self-pollinated crop is grown separately and the best line is chosen",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "dd215499-9fab-5c9e-beac-d9281e0b1630",
+       "label": "C",
+       "content": "two different varieties are crossed to combine their qualities",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d26aa97a-32f2-5f23-b17e-606a5b1296d0",
+       "label": "D",
+       "content": "seeds are treated with radiation to cause new traits",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "62891088-dd12-598a-9214-f4a1c0d079a9",
+     "key": "agr-ci-02",
+     "stem": "The extra vigour and yield shown by the first generation (F₁) from crossing two unrelated parents is called",
+     "image_url": null,
+     "explanation": "Hybrid maize uses hybrid vigour to give high yields.\n\n**Why the other options are wrong**\n\n- polyploidy: Polyploidy is having extra sets of chromosomes.\n- mutation: A mutation is a change in a gene or chromosome.\n- dormancy: Dormancy is a resting period of a seed.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d742bf5c-30cc-5aa3-b79e-bda6571e13ef",
+       "label": "A",
+       "content": "polyploidy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4367a329-cb25-5275-8077-60ce6bc710a6",
+       "label": "B",
+       "content": "mutation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "283ddca2-a504-5164-99b9-64bc34e813c1",
+       "label": "C",
+       "content": "hybrid vigour (heterosis)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d8cef3d1-5f08-5a10-bf02-bbeb55ef0066",
+       "label": "D",
+       "content": "dormancy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e0139aa2-cfb5-5740-860d-aefc1c3e5161",
+     "key": "agr-ci-03",
+     "stem": "A farmer saves seed from a field of hybrid maize and plants it the next season. The farmer is most likely to get",
+     "image_url": null,
+     "explanation": "Hybrid seed must be bought new each season. Seed of open-pollinated varieties can be saved and replanted.\n\n**Why the other options are wrong**\n\n- a crop exactly like the hybrid, with the same high yield: Hybrid vigour is lost in the next generation, because the offspring segregate.\n- a crop with even more hybrid vigour: Vigour falls, not rises, when hybrid seed is replanted.\n- seed that will not germinate at all: The seed usually germinates; the problem is a weaker, uneven crop.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8c8e1d74-caed-5bba-b480-ed4ce778d502",
+       "label": "A",
+       "content": "a crop exactly like the hybrid, with the same high yield",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fa163a59-cb0e-58d6-8c3b-2fc7786d91c1",
+       "label": "B",
+       "content": "a crop with even more hybrid vigour",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "93389ae9-2914-5610-88f9-5e43e47bac5a",
+       "label": "C",
+       "content": "seed that will not germinate at all",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a6f60bb8-1959-5f61-aeec-ded0987bd848",
+       "label": "D",
+       "content": "a mixed, weaker crop with a lower yield",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0767ee15-5b00-5b76-ad99-688967603680",
+     "key": "agr-ci-04",
+     "stem": "Crossing the offspring of a cross back to one of its parents, in order to transfer one useful gene such as disease resistance into a good variety, is called",
+     "image_url": null,
+     "explanation": "Repeated backcrossing keeps nearly all the good variety's qualities while adding the one desired gene.\n\n**Why the other options are wrong**\n\n- mass selection: Mass selection chooses many good plants from a crop and bulks their seed.\n- introduction: Introduction is bringing in a variety from another place and testing it.\n- tissue culture: Tissue culture grows many identical plantlets from small pieces of tissue.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e4eeebc5-62fc-5178-905e-cc7feb79dbe4",
+       "label": "A",
+       "content": "backcrossing",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "719dfcf6-baa2-514e-b3d3-b122202841a8",
+       "label": "B",
+       "content": "mass selection",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b871874a-edb1-5ae3-97a9-7883f2850488",
+       "label": "C",
+       "content": "introduction",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "89377dc6-ed84-50b5-9f8b-45dcd0ab6a2c",
+       "label": "D",
+       "content": "tissue culture",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "97c0740b-0917-504d-b152-414d1ed95199",
+     "key": "agr-ci-05",
+     "stem": "Certified seed is preferred to seed saved from a farmer's own crop because certified seed",
+     "image_url": null,
+     "explanation": "Seed classes run breeder seed → foundation seed → certified seed. Certified seed is grown by approved growers, inspected in the field and labelled.\n\n**Why the other options are wrong**\n\n- never needs fertiliser to give a good yield: Even the best seed needs good soil and nutrients.\n- is always cheaper than saved seed: Certified seed usually costs more; it is worth the price because of its quality.\n- can be saved and replanted for ever without any loss: Seed saved year after year slowly becomes mixed and diseased.",
+     "position": 5,
+     "options": [
+      {
+       "id": "267cb946-28e7-5a62-9301-511e4ef38f35",
+       "label": "A",
+       "content": "never needs fertiliser to give a good yield",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4fca08fe-a90d-5174-a4a8-b28bc964bb4b",
+       "label": "B",
+       "content": "is tested for purity, germination and freedom from disease",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "10d598d4-bdbc-5aa9-8e98-969858fe6c30",
+       "label": "C",
+       "content": "is always cheaper than saved seed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4151f345-a696-5337-b777-1ae6ea1058a7",
+       "label": "D",
+       "content": "can be saved and replanted for ever without any loss",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fc9d846a-4708-5631-a9c4-a692c520f784",
+     "key": "agr-ci-06",
+     "stem": "Orange-fleshed sweet potato and yellow cassava have been bred mainly to",
+     "image_url": null,
+     "explanation": "Breeding for better nutrition is one aim of crop improvement, alongside yield, resistance, tolerance, early maturity and quality.\n\n**Why the other options are wrong**\n\n- resist drought completely: Their main aim is better nutrition; drought tolerance is a separate breeding aim.\n- produce more starch for industry: Their orange or yellow colour comes from vitamin A precursors, not extra starch.\n- mature in two weeks: No root crop matures in two weeks.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e5645814-1735-506d-b8cf-19d6fe5e6784",
+       "label": "A",
+       "content": "resist drought completely",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "92e0b9e7-60c5-5e20-b6a5-34147a18be12",
+       "label": "B",
+       "content": "produce more starch for industry",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1d9195d1-b785-5ea6-8c76-b1de6d44238f",
+       "label": "C",
+       "content": "provide more vitamin A in the diet",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "774db288-ed36-5a9a-8358-e54536bccab7",
+       "label": "D",
+       "content": "mature in two weeks",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d0583766-7cf9-5ad5-9875-45f9efa529a7",
+     "key": "agr-ci-07",
+     "stem": "NERICA rice was developed by crossing *Oryza glaberrima* with *Oryza sativa*. From the African parent it gained",
+     "image_url": null,
+     "explanation": "Breeders combined the hardiness of African rice with the yield of Asian rice, then selected among the offspring.\n\n**Why the other options are wrong**\n\n- its very high yield: High yield came mainly from the Asian parent, *Oryza sativa*.\n- resistance to every rice disease: No variety resists every disease.\n- the ability to grow without any water: All rice needs water; NERICA tolerates drought better, but still needs water.",
+     "position": 7,
+     "options": [
+      {
+       "id": "75fe48fd-5429-5676-ac57-5817bd121846",
+       "label": "A",
+       "content": "its very high yield",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9a7449be-4542-553f-8ee7-25a0a00a7762",
+       "label": "B",
+       "content": "resistance to every rice disease",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c48c1798-3fe3-51d1-bbe4-76572e3cc312",
+       "label": "C",
+       "content": "the ability to grow without any water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1aab35a7-0ba6-51e6-aace-fdd49c468ec1",
+       "label": "D",
+       "content": "tolerance of weeds, drought and poor soils",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8ceb423b-1b00-514d-a05f-3d7fdad72351",
+     "key": "agr-ci-08",
+     "stem": "Which institution in Sierra Leone carries out teaching and research in agriculture?",
+     "image_url": null,
+     "explanation": "Njala and the agricultural research institutes test new varieties, such as cassava resistant to mosaic disease, before they are released to farmers.\n\n**Why the other options are wrong**\n\n- Fourah Bay College: Fourah Bay College is known mainly for arts, sciences and engineering, not agricultural research.\n- Bank of Sierra Leone: The Bank of Sierra Leone is the central bank.\n- National Revenue Authority: The National Revenue Authority collects taxes.",
+     "position": 8,
+     "options": [
+      {
+       "id": "12b5dec2-9b70-58a5-a54f-e40e5b27f772",
+       "label": "A",
+       "content": "Njala University",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7ee04b8c-b539-57a3-84dc-4c6ef7019bd7",
+       "label": "B",
+       "content": "Fourah Bay College",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1611b30c-49b7-5b78-b6ef-2c01972c9373",
+       "label": "C",
+       "content": "Bank of Sierra Leone",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7da1edc7-1d4f-5821-999f-517eb36a01b6",
+       "label": "D",
+       "content": "National Revenue Authority",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "79f2f128-a41a-58a9-af80-0589db10f9b9",
+   "topic": "Crop Processing and Storage",
+   "title": "Crop Processing and Storage: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on crop processing and storage, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "b5c55ef1-4b17-5a58-8853-782f725254db",
+     "key": "agr-ps-01",
+     "stem": "A farmer harvests 600 kg of maize grain with a moisture content of 25% and dries it to 10%. What will the grain weigh after drying?",
+     "image_url": null,
+     "explanation": "Dry matter = 75% of 600 kg = 450 kg. After drying, the dry matter is 90% of the new mass, so new mass = 450 ÷ 0.90 = 500 kg.\n\n**Why the other options are wrong**\n\n- 450 kg: 450 kg is the dry matter alone; the dried grain still contains 10% water.\n- 510 kg: This takes 15% (25% − 10%) off the fresh mass, but the percentages are of different totals.\n- 540 kg: This takes only 10% off the fresh mass.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4010f930-450b-5ccc-92f1-4f13a86f5baa",
+       "label": "A",
+       "content": "450 kg",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1b2f0a28-6e3b-5b0a-9a4c-4723396636a6",
+       "label": "B",
+       "content": "500 kg",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "240cf5af-8d43-576f-b4bb-c5a66e440464",
+       "label": "C",
+       "content": "510 kg",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "30ae80c8-ca04-56c7-9b77-b69fafd93375",
+       "label": "D",
+       "content": "540 kg",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e2e29e6e-eeb3-5c0e-9a34-e39e12ba3a66",
+     "key": "agr-ps-02",
+     "stem": "Groundnuts stored while still damp may develop moulds that produce aflatoxins. Aflatoxins are dangerous because they",
+     "image_url": null,
+     "explanation": "Proper drying, sorting out mouldy nuts and dry storage prevent aflatoxin contamination.\n\n**Why the other options are wrong**\n\n- make the groundnuts germinate in store: Aflatoxins are poisons; sprouting is a separate effect of damp storage.\n- attract weevils into the store: Aflatoxins are not insect attractants.\n- add extra protein to the groundnuts: Aflatoxins are poisons, not nutrients.",
+     "position": 2,
+     "options": [
+      {
+       "id": "4a0db903-0487-56c4-9f4e-71719417ef02",
+       "label": "A",
+       "content": "make the groundnuts germinate in store",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a23b1b99-070d-52c0-bf2d-20526d89a7a0",
+       "label": "B",
+       "content": "are poisons that can damage the liver of people and animals who eat them",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d123ab7f-8f88-5080-861f-8e023899ef57",
+       "label": "C",
+       "content": "attract weevils into the store",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f1ca8f81-b798-5ea6-9c9c-94989f1f738a",
+       "label": "D",
+       "content": "add extra protein to the groundnuts",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cb97c286-dcc3-58bb-b216-20a2bc3541c9",
+     "key": "agr-ps-03",
+     "stem": "A crib, a narrow slatted structure raised on legs with rat guards, is used to store",
+     "image_url": null,
+     "explanation": "Air flows through the slats and dries the cobs further; the raised legs and rat guards keep out rodents.\n\n**Why the other options are wrong**\n\n- yam tubers: Yams are stored in an airy, shaded barn, tied to frames or racks.\n- fresh fish: Fresh fish needs a cold store or must be smoked or dried.\n- palm oil: Palm oil is stored in clean, closed containers.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b7b37b71-2da6-5d9a-8177-b36348dfe045",
+       "label": "A",
+       "content": "yam tubers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "71afff14-8ff0-5247-8a9b-a2ebfd45d641",
+       "label": "B",
+       "content": "fresh fish",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6d37b499-e8f8-5f81-aa71-71138adfcdfe",
+       "label": "C",
+       "content": "maize cobs",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8aec36f4-c289-529b-978f-fefa1d571cf3",
+       "label": "D",
+       "content": "palm oil",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0588d5f3-ad85-5a8a-9a56-43fe9b4710f6",
+     "key": "agr-ps-04",
+     "stem": "Grain stored in hermetic (airtight) bags is protected from insects because",
+     "image_url": null,
+     "explanation": "Insects already in the grain use up the oxygen and die, and no new ones can get in. The grain must be dry when it is sealed.\n\n**Why the other options are wrong**\n\n- the bags contain a strong insecticide: Hermetic bags work without chemicals.\n- insects cannot see grain through the plastic: The protection comes from lack of oxygen, not from hiding the grain.\n- the grain inside keeps germinating: Grain in airtight bags does not germinate; it stays dormant.",
+     "position": 4,
+     "options": [
+      {
+       "id": "aef763a6-f851-5787-9f4c-1d082bbebe26",
+       "label": "A",
+       "content": "the bags contain a strong insecticide",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48d14240-9d9c-5afc-aec3-a638ea2c69f5",
+       "label": "B",
+       "content": "insects cannot see grain through the plastic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d7baf5da-e6b1-5ac7-939f-eb622a59b714",
+       "label": "C",
+       "content": "the grain inside keeps germinating",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c6422fdc-76c0-54b2-8e59-5dcb24154cda",
+       "label": "D",
+       "content": "the insects die from lack of oxygen, without any chemicals",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea62f12e-c787-543e-931a-081296263bbe",
+     "key": "agr-ps-05",
+     "stem": "Rice panicles and seed maize are often kept on a loft above the kitchen fire because",
+     "image_url": null,
+     "explanation": "The kitchen loft is a traditional storage method that uses the household's own fire to protect grain and seed.\n\n**Why the other options are wrong**\n\n- the fire cooks the grain so it keeps longer: The grain is kept above the fire, not cooked by it.\n- rats prefer to stay near fires: Rats are not attracted to a smoky loft; the smoke and heat help protect the produce.\n- the heat makes the seeds germinate faster: The aim is to keep seeds dry and dormant until planting.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0c584e8d-b2d2-52f7-bd3f-cb3cec46eb93",
+       "label": "A",
+       "content": "smoke and heat keep the produce dry and repel insects",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a701fccf-d084-537a-98c5-e17eae8589a3",
+       "label": "B",
+       "content": "the fire cooks the grain so it keeps longer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a68758e1-13bf-5ba8-bc5d-0598ca6370d5",
+       "label": "C",
+       "content": "rats prefer to stay near fires",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6216c4ef-92c1-5a62-8394-c9f14560daef",
+       "label": "D",
+       "content": "the heat makes the seeds germinate faster",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "76b29b79-be16-5ae2-b394-7fe30117e568",
+     "key": "agr-ps-06",
+     "stem": "Which practice helps to prevent pest attack in a grain store?",
+     "image_url": null,
+     "explanation": "Dry the produce well, clean and repair the store, sort out damaged grain, raise bags on pallets and keep rats out.\n\n**Why the other options are wrong**\n\n- Mixing the new harvest with old grain left in the store: Insects in old grain spread quickly into the new harvest.\n- Stacking bags directly on a damp floor against the walls: Bags on a damp floor absorb moisture and go mouldy; they should be on pallets, away from walls.\n- Storing the grain before it is fully dry: Damp grain goes mouldy and encourages insects.",
+     "position": 6,
+     "options": [
+      {
+       "id": "c4ae4127-43db-5e6f-a937-79b562703c4b",
+       "label": "A",
+       "content": "Mixing the new harvest with old grain left in the store",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "830354df-6ffe-5534-b858-0360a7ca41ff",
+       "label": "B",
+       "content": "Cleaning out the store completely before filling it with the new harvest",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "46376c96-fe1a-5449-bf4d-f3efb1784e7e",
+       "label": "C",
+       "content": "Stacking bags directly on a damp floor against the walls",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "943e771b-2918-573e-a98a-68537d6914bb",
+       "label": "D",
+       "content": "Storing the grain before it is fully dry",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4fdd73db-a236-5a38-8531-e4c023998834",
+     "key": "agr-ps-07",
+     "stem": "In processing oil palm fruit, the bunches are first sterilised (boiled or steamed). Which is a reason for this?",
+     "image_url": null,
+     "explanation": "Oil palm processing: sterilise, thresh, digest, press, clarify; the nuts are cracked for kernels and kernel oil.\n\n**Why the other options are wrong**\n\n- It removes the kernels from the nuts: Kernels are removed later by cracking the nuts.\n- It turns the oil into palm wine: Palm wine is tapped from the living palm, not made from the fruit.\n- It makes the fruit ferment to add flavour: Fermenting is part of cocoa processing; sterilising palm fruit stops spoilage.",
+     "position": 7,
+     "options": [
+      {
+       "id": "549019ef-841d-5041-b772-ca3aa5738025",
+       "label": "A",
+       "content": "It removes the kernels from the nuts",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8f02cc86-4f2d-5845-b597-80dd76edd705",
+       "label": "B",
+       "content": "It turns the oil into palm wine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3a12a9e3-3977-5c44-9894-f55bf0889e5a",
+       "label": "C",
+       "content": "It stops the enzymes that make the oil go rancid, and loosens the fruit from the bunch",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "81717e83-ad04-54a3-8445-f293271b7f56",
+       "label": "D",
+       "content": "It makes the fruit ferment to add flavour",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3da83515-99ca-5cfa-a35e-bb6b367d9e53",
+     "key": "agr-ps-08",
+     "stem": "Processing crops such as cassava into gari is important to farmers mainly because it",
+     "image_url": null,
+     "explanation": "Fresh cassava roots spoil within two or three days of harvest; gari keeps for months and sells for more.\n\n**Why the other options are wrong**\n\n- increases the weight of the produce: Processing usually reduces weight, as water is removed.\n- makes the produce perish more quickly: Processing makes produce keep longer, not shorter.\n- is needed before any crop can be eaten: Many crops are eaten fresh; processing is done to store, transport and add value.",
+     "position": 8,
+     "options": [
+      {
+       "id": "1ca50df5-786f-5e8c-a793-25d57a93ba69",
+       "label": "A",
+       "content": "increases the weight of the produce",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f54c148a-eeb6-580c-872a-bdbd544f323b",
+       "label": "B",
+       "content": "makes the produce perish more quickly",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6f764520-ad51-5b03-b4de-d568a7f1a1f6",
+       "label": "C",
+       "content": "is needed before any crop can be eaten",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "809ff41b-fe22-5f45-b190-78e3b539dc55",
+       "label": "D",
+       "content": "makes the produce safe to store for longer, adds value and removes poisons",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e723d5d4-75ed-50ac-9899-3c14cc0921e1",
+   "topic": "Forestry and Agroforestry",
+   "title": "Forestry and Agroforestry: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on forestry and agroforestry, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "15568fa8-d4dd-5fd7-b2d8-14c1b47e5469",
+     "key": "agr-fa-01",
+     "stem": "In the taungya system,",
+     "image_url": null,
+     "explanation": "Taungya gives farmers land for food crops and gives the forest department free weeding until the tree canopy closes.\n\n**Why the other options are wrong**\n\n- food crops are grown in alleys between rows of pruned leguminous trees: This is alley cropping.\n- animals graze under trees that give them shade and fodder: This is silvopasture.\n- rows of trees are planted to protect crops from wind: These are windbreaks or shelterbelts.",
+     "position": 1,
+     "options": [
+      {
+       "id": "eab0b153-fb1e-504c-8dd7-bd7fc2d1b0ab",
+       "label": "A",
+       "content": "farmers grow food crops between young timber trees in a new plantation, weeding the trees as they weed their crops",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "54f66378-299e-5e66-bb4e-7a8a5250ebbb",
+       "label": "B",
+       "content": "food crops are grown in alleys between rows of pruned leguminous trees",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "38ef1440-2893-516d-9e0c-e4891b5d04e8",
+       "label": "C",
+       "content": "animals graze under trees that give them shade and fodder",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9c1761d4-4f41-52f6-9fff-791c49c8febb",
+       "label": "D",
+       "content": "rows of trees are planted to protect crops from wind",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7e2d689c-87e8-5cb1-9da8-d1e02861449b",
+     "key": "agr-fa-02",
+     "stem": "In alley cropping, trees such as *Gliricidia* and *Leucaena* are planted in rows mainly because they",
+     "image_url": null,
+     "explanation": "The prunings are used as mulch and green manure, improving fertility without costly fertiliser.\n\n**Why the other options are wrong**\n\n- produce the most valuable timber: They are chosen for soil improvement, not timber.\n- shade out the food crops in the alleys: The trees are pruned so they do not shade the crops.\n- attract pests away from the crops: This is not why they are planted.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ae43429d-4751-5e56-ae09-d8a850e02ac2",
+       "label": "A",
+       "content": "produce the most valuable timber",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c843ad83-5103-5c58-8fee-3f87d7808903",
+       "label": "B",
+       "content": "are legumes whose prunings add nitrogen and organic matter to the soil",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f336f32b-2f61-5822-9ea5-3554c530aa11",
+       "label": "C",
+       "content": "shade out the food crops in the alleys",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b59896fd-a1e8-52fd-80f8-d5560848047f",
+       "label": "D",
+       "content": "attract pests away from the crops",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fbedfbf6-ca5d-5774-9f94-ed8287067779",
+     "key": "agr-fa-03",
+     "stem": "Planting trees on land where there was no forest before is called",
+     "image_url": null,
+     "explanation": "Afforestation and reforestation are both artificial regeneration, because trees are planted.\n\n**Why the other options are wrong**\n\n- reforestation: Reforestation is replanting where a forest has been cut down.\n- natural regeneration: Natural regeneration is letting a forest regrow on its own from seeds, stumps and roots.\n- deforestation: Deforestation is the clearing of forest.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2bd8d500-7c78-5430-b9c6-70de10fb76d0",
+       "label": "A",
+       "content": "reforestation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b6753bba-a8bd-5c16-8c90-d67bddbc9c1d",
+       "label": "B",
+       "content": "natural regeneration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "abd7664c-be7a-59c3-9226-6babe2cae67c",
+       "label": "C",
+       "content": "afforestation",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3bbecb65-edf9-58f6-924a-2e9eb46cf38d",
+       "label": "D",
+       "content": "deforestation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef679fd7-983e-5d6c-a7ba-6c5075ab42fb",
+     "key": "agr-fa-04",
+     "stem": "Which is the main cause of the high demand on Sierra Leone's forests for wood?",
+     "image_url": null,
+     "explanation": "Charcoal and firewood are cheap and widely used, so cutting for fuel is a major cause of deforestation around towns.\n\n**Why the other options are wrong**\n\n- Paper made from local trees: Little paper is made from local trees.\n- Wooden ships built for export: Shipbuilding is not a major use of the forests.\n- Railway sleepers: Sierra Leone's railway closed decades ago.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b8b4498f-74d3-5df5-8a37-af937b413362",
+       "label": "A",
+       "content": "Paper made from local trees",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "690a1aed-9591-5e71-b464-5f9d82cc73f3",
+       "label": "B",
+       "content": "Wooden ships built for export",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2e5b16e6-2f68-50d6-a55c-151f45da6200",
+       "label": "C",
+       "content": "Railway sleepers",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f79f2956-c0aa-5095-a040-e72d08609877",
+       "label": "D",
+       "content": "Firewood and charcoal, the main cooking fuels for most households",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2634f9ae-a468-5e08-90d3-dc2be6c5c7a1",
+     "key": "agr-fa-05",
+     "stem": "Which of the following is an effect of deforestation?",
+     "image_url": null,
+     "explanation": "Forests protect catchments, hold soil, store carbon and shelter wildlife; clearing them reverses all of these.\n\n**Why the other options are wrong**\n\n- More rainfall soaking slowly into the soil: Without trees, rain runs off quickly instead of soaking in.\n- More habitat for chimpanzees and forest elephants: Clearing forest destroys their habitat.\n- Less carbon dioxide in the air: Cutting and burning forests releases carbon dioxide.",
+     "position": 5,
+     "options": [
+      {
+       "id": "cd8af2d4-3fe4-5436-b10e-2b6f9ca28ab1",
+       "label": "A",
+       "content": "More soil erosion, flooding and drying of streams",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b10a0029-b8c0-5ea5-9499-500b3c0b8889",
+       "label": "B",
+       "content": "More rainfall soaking slowly into the soil",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9d1112cd-8e1b-581d-a751-ccdaf32a43ba",
+       "label": "C",
+       "content": "More habitat for chimpanzees and forest elephants",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "65c5709a-a4bf-58bf-a5cc-da9ac1084935",
+       "label": "D",
+       "content": "Less carbon dioxide in the air",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf984a7a-a5c4-522c-88e4-b08da4f498ba",
+     "key": "agr-fa-06",
+     "stem": "Young trees in a forest plantation must be protected with firebreaks during the dry season because",
+     "image_url": null,
+     "explanation": "A plantation also needs weeding, thinning and pruning for several years; it is not finished once it is planted.\n\n**Why the other options are wrong**\n\n- firebreaks supply water to the trees: A firebreak is a cleared strip of land; it does not supply water.\n- young trees need regular burning to grow: Fire kills young trees.\n- firebreaks are used to harvest the timber: Firebreaks are for protection, not harvesting.",
+     "position": 6,
+     "options": [
+      {
+       "id": "8f79a051-fa66-5a88-b2e9-e0b9cfaf7e8c",
+       "label": "A",
+       "content": "firebreaks supply water to the trees",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0240848d-7c62-5cb0-a751-e08ed1036f27",
+       "label": "B",
+       "content": "a single bush fire can destroy the whole plantation",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "581e7f2a-56d2-59cc-a45d-f83e23e7378d",
+       "label": "C",
+       "content": "young trees need regular burning to grow",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1b6108b0-1c64-5949-bba9-2e0f68853f8e",
+       "label": "D",
+       "content": "firebreaks are used to harvest the timber",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1113b88f-3127-5fa5-9e43-831caf49ff20",
+     "key": "agr-fa-07",
+     "stem": "Growing cocoa or coffee under taller shade trees, with plantain between them, is an example of",
+     "image_url": null,
+     "explanation": "Each layer uses light at a different height, and the trees protect the soil and provide shade the cocoa needs.\n\n**Why the other options are wrong**\n\n- monocropping: Monocropping is growing a single crop on its own.\n- shifting cultivation: Shifting cultivation moves the farm and homestead to new land.\n- pastoral farming: Pastoral farming is herding animals.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b1e42cf2-a8af-5e60-bc7b-911de35f0f0e",
+       "label": "A",
+       "content": "monocropping",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "be203fdf-235a-5b4a-b4e6-f0aeb55d4ab6",
+       "label": "B",
+       "content": "shifting cultivation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c5215e4-a7d4-543d-95f5-f4649ba3794e",
+       "label": "C",
+       "content": "multistorey cropping",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f1d768fa-d464-5d49-8152-4978296f328b",
+       "label": "D",
+       "content": "pastoral farming",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "30721765-0a3a-5ef3-b821-0415f9e5ee9a",
+     "key": "agr-fa-08",
+     "stem": "Which of these is a non-timber forest product?",
+     "image_url": null,
+     "explanation": "Non-timber forest products include honey, fruits, nuts, mushrooms, snails, medicines, rattan, bamboo, raffia and kola.\n\n**Why the other options are wrong**\n\n- Sawn planks: Planks are timber.\n- Electricity poles: Poles are timber products.\n- Logs for export: Logs are timber.",
+     "position": 8,
+     "options": [
+      {
+       "id": "7000bd61-2549-55d5-805a-4e8a737d071f",
+       "label": "A",
+       "content": "Sawn planks",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "904f09de-d2c5-5bc9-9b81-b74bd43ee1cb",
+       "label": "B",
+       "content": "Electricity poles",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7f4cc76a-5666-5cd0-bae4-81fa9bf68a2e",
+       "label": "C",
+       "content": "Logs for export",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cdf6e86f-9da7-5ee6-9267-8d19d781f3a8",
+       "label": "D",
+       "content": "Honey",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "7ba0ac14f044"
+}
