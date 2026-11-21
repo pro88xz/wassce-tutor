@@ -1,0 +1,1664 @@
+{
+ "name": "biology_set2_p1",
+ "label": "Biology: set 2 (the science of biology, classification, cell function, cell division and organisation)",
+ "subject_slug": "biology",
+ "papers": [
+  {
+   "id": "2e3a8637-9044-5280-add0-126e7285f949",
+   "topic": "Introduction to Biology",
+   "title": "Introduction to Biology: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on introduction to biology, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "6cf186e3-cd39-5442-8ba0-eeba2ddad97a",
+     "key": "bio-ib-01",
+     "stem": "A farmer notices that maize growing next to a compost heap is taller than maize elsewhere on the farm, and suggests that compost makes maize grow taller. In the scientific method, the farmer's suggestion is",
+     "image_url": null,
+     "explanation": "The steps run: observation (taller maize near compost), hypothesis (a testable explanation: compost makes maize taller), experiment (grow maize with and without compost, all else the same), results, and conclusion.\n\n**Why the other options are wrong**\n\n- an observation: The observation is what the farmer noticed: taller maize near the compost. The suggestion that explains it comes next.\n- a conclusion: A conclusion is drawn only after the hypothesis has been tested by an experiment and the results analysed.\n- a theory: A theory is an explanation that has been supported by many tested experiments; this idea has not yet been tested at all.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0d90bbee-b313-5f8a-836a-c6ab07ace129",
+       "label": "A",
+       "content": "a hypothesis",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4b99cc5a-bd35-55bc-8a10-c1f254c53dc6",
+       "label": "B",
+       "content": "an observation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4e4faf1a-46bc-52e4-b008-36a919c78552",
+       "label": "C",
+       "content": "a conclusion",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0c737d5a-ed9b-549c-b229-fe3a7a52f07e",
+       "label": "D",
+       "content": "a theory",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8d01905f-eefc-5e56-a0cb-31255e3bce3e",
+     "key": "bio-ib-02",
+     "stem": "Why is a control set up alongside a biological experiment?",
+     "image_url": null,
+     "explanation": "A control is identical to the experiment except for the one factor being investigated. If only the experiment changes, the change can be put down to that factor and not to something else, such as temperature or time.\n\n**Why the other options are wrong**\n\n- To make sure that the hypothesis is proved correct: An experiment tests a hypothesis; the results may support it or show that it is wrong.\n- To give a spare set-up in case the first one is damaged: A control is not a spare: it is set up differently on purpose, without the factor being tested.\n- To make the experiment finish more quickly: A control does not change how long the experiment takes.",
+     "position": 2,
+     "options": [
+      {
+       "id": "23552108-c589-501c-bac7-c66998f99115",
+       "label": "A",
+       "content": "To make sure that the hypothesis is proved correct",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "20b5398a-d306-51e8-a311-9cce46ca69aa",
+       "label": "B",
+       "content": "To give a spare set-up in case the first one is damaged",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "415e6beb-52e7-5f47-afeb-3bee7f0412b2",
+       "label": "C",
+       "content": "To show that any change observed is caused by the factor being tested",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c97d9791-e344-5790-83fc-219bdd850304",
+       "label": "D",
+       "content": "To make the experiment finish more quickly",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8b0b7008-93d4-56d7-8bc6-d7794fe94d55",
+     "key": "bio-ib-03",
+     "stem": "A biologist who studies how organisms interact with one another and with their surroundings is working in the branch of biology called",
+     "image_url": null,
+     "explanation": "Ecology studies the relationships between organisms and their environment, both living (biotic) and non-living (abiotic).\n\n**Why the other options are wrong**\n\n- genetics: Genetics is the study of inheritance: how characteristics pass from parents to offspring.\n- taxonomy: Taxonomy is the naming and classification of organisms.\n- physiology: Physiology is the study of how the parts of a living body work, such as how the kidney makes urine.",
+     "position": 3,
+     "options": [
+      {
+       "id": "68c8fbfe-330f-550c-8abb-28939a7fab76",
+       "label": "A",
+       "content": "genetics",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b601fa70-b94a-5a5d-96e4-3c05c5e9c261",
+       "label": "B",
+       "content": "taxonomy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5d8e0b17-b662-5398-82e5-35afb9be5b34",
+       "label": "C",
+       "content": "physiology",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e99d2dce-62e0-52d1-8568-8d14bddf6a1e",
+       "label": "D",
+       "content": "ecology",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "73308ebb-3c64-5098-9f79-ef6932d18907",
+     "key": "bio-ib-04",
+     "stem": "Which of the following is a rule for drawing a biological specimen in a WASSCE practical?",
+     "image_url": null,
+     "explanation": "Draw large, in pencil, with clean continuous lines and no shading. Rule the label lines, keep them from crossing, and add a title and the magnification.\n\n**Why the other options are wrong**\n\n- Dark parts of the specimen are shaded to show depth: Biological drawings are never shaded; only clean outlines are drawn.\n- The drawing is made in ink so that the lines are clear: Drawings are made in pencil, so that mistakes can be rubbed out cleanly.\n- The drawing is kept small, in a corner of the page: The drawing should be large, so that every part can be seen and labelled.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7e629089-6e25-56f7-b9c9-8b2d4cec0c2a",
+       "label": "A",
+       "content": "Label lines are drawn with a ruler and do not cross one another",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9a200b98-43b8-583c-bf64-a92285018c26",
+       "label": "B",
+       "content": "Dark parts of the specimen are shaded to show depth",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "68472792-c86a-50d0-b984-8dd447db099c",
+       "label": "C",
+       "content": "The drawing is made in ink so that the lines are clear",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b99e46c7-5ead-548b-b0c8-84ccbf767e3f",
+       "label": "D",
+       "content": "The drawing is kept small, in a corner of the page",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6e50154f-0223-5302-bd8b-be67950dccc3",
+     "key": "bio-ib-05",
+     "stem": "A student on a field trip wants to look closely at the stamens of a flower. Which piece of equipment should the student use?",
+     "image_url": null,
+     "explanation": "A hand lens (magnifying glass) enlarges small structures such as stamens, hairs and insect mouthparts in the field, usually by about ×5 to ×10.\n\n**Why the other options are wrong**\n\n- A quadrat: A quadrat is a square frame used to count or estimate the plants in a sample area.\n- A pooter: A pooter is used to suck up small insects so they can be collected without harm.\n- A sweep net: A sweep net is swept through grass to catch insects.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ed9825c4-0bbf-5da5-8fde-9573c7c775ff",
+       "label": "A",
+       "content": "A quadrat",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "078980d0-a8f3-556f-a00a-cd967363714a",
+       "label": "B",
+       "content": "A pooter",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b65ad83-e322-5b9c-acf6-5613e198d27f",
+       "label": "C",
+       "content": "A hand lens",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "757a9bff-b138-56e3-b5e0-5095ddbe5970",
+       "label": "D",
+       "content": "A sweep net",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "51c4dc81-cbd8-5517-a5f7-29deeaba059e",
+     "key": "bio-ib-06",
+     "stem": "During a practical, a student spills a little dilute acid on the hand. What should be done first?",
+     "image_url": null,
+     "explanation": "Plenty of running cold water dilutes and washes the acid away. Then report the accident to the teacher.\n\n**Why the other options are wrong**\n\n- Cover the area with a bandage at once: A bandage would hold the acid against the skin.\n- Rub the area dry with a cloth: Rubbing spreads the acid over more skin and can damage it further.\n- Pour a strong alkali on the area to neutralise it: A strong alkali also burns the skin, and the reaction gives out heat.",
+     "position": 6,
+     "options": [
+      {
+       "id": "3fb346bf-967c-5203-b812-e7c504ad10bf",
+       "label": "A",
+       "content": "Cover the area with a bandage at once",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "359868d2-caef-52b1-b831-d5c322307117",
+       "label": "B",
+       "content": "Rub the area dry with a cloth",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "62d46288-d160-57cf-bbba-7dfcf289a7b6",
+       "label": "C",
+       "content": "Pour a strong alkali on the area to neutralise it",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e3a5c039-5006-5ff0-8db3-1427e434af07",
+       "label": "D",
+       "content": "Wash the area under plenty of running water",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a90916c8-470b-5721-a3c8-e327b577470d",
+     "key": "bio-ib-07",
+     "stem": "A student tests how the amount of fertiliser given to maize plants affects their height after six weeks. Which is the dependent variable?",
+     "image_url": null,
+     "explanation": "The independent variable is changed (fertiliser); the dependent variable is measured (height); controlled variables are kept the same (water, light, soil, variety) so that the test is fair.\n\n**Why the other options are wrong**\n\n- The amount of fertiliser given: This is the independent variable: the factor the student changes on purpose.\n- The volume of water given to each plant: This is a controlled variable: it is kept the same so that it cannot affect the result.\n- The variety of maize used: This is a controlled variable: every plant should be of the same variety.",
+     "position": 7,
+     "options": [
+      {
+       "id": "ce1a1b36-fd5c-5d4f-a2a6-530809c8c4ec",
+       "label": "A",
+       "content": "The height of the maize plants",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3d9a139b-4ddb-5d90-b8e4-30c5777a2be1",
+       "label": "B",
+       "content": "The amount of fertiliser given",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7e22cd62-a408-5844-b1a8-79dbdf306a68",
+       "label": "C",
+       "content": "The volume of water given to each plant",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f2a9dae2-4359-5d18-ae75-c440cac3f416",
+       "label": "D",
+       "content": "The variety of maize used",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e879bb46-dfae-55be-9c6f-9d07269c9663",
+   "topic": "Classification of Living Things",
+   "title": "Classification of Living Things: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on classification of living things, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "e2f52191-044b-5b80-baed-686c3a6e21eb",
+     "key": "bio-cg-01",
+     "stem": "Which list gives the taxonomic ranks in order, from the largest group to the smallest?",
+     "image_url": null,
+     "explanation": "Kingdom, phylum, class, order, family, genus, species. A memory aid: King Philip Came Over For Good Soup. Each rank holds organisms with more features in common than the rank above it.\n\n**Why the other options are wrong**\n\n- Kingdom, class, phylum, order, family, species, genus: Phylum comes before class, and genus before species.\n- Species, genus, family, order, class, phylum, kingdom: This runs from the smallest group to the largest.\n- Kingdom, phylum, order, class, genus, family, species: Class comes before order, and family before genus.",
+     "position": 1,
+     "options": [
+      {
+       "id": "504e7603-a10e-5def-baec-aebbc78eabb3",
+       "label": "A",
+       "content": "Kingdom, class, phylum, order, family, species, genus",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f0345112-00c2-5f95-9439-ec1fea2ced67",
+       "label": "B",
+       "content": "Kingdom, phylum, class, order, family, genus, species",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3a961db1-3259-5635-affb-89d2cb1b6404",
+       "label": "C",
+       "content": "Species, genus, family, order, class, phylum, kingdom",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d59ffda8-3d38-5bc1-8bca-bf2e02ff3457",
+       "label": "D",
+       "content": "Kingdom, phylum, order, class, genus, family, species",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1421a44f-910c-5f56-ad10-538f1a8acc38",
+     "key": "bio-cg-02",
+     "stem": "In the scientific name of humans, *Homo sapiens*, the word *Homo* is the name of the",
+     "image_url": null,
+     "explanation": "In binomial nomenclature the first word is the genus, written with a capital letter, and the second is the specific name, in small letters. Both are printed in italics, or underlined separately when handwritten.\n\n**Why the other options are wrong**\n\n- species: The species is named by both words together, *Homo sapiens*; *sapiens* alone is the specific name.\n- family: The family is a larger group (Hominidae) and is not part of the two-word name.\n- kingdom: Humans are in the animal kingdom, which is not named in a binomial.",
+     "position": 2,
+     "options": [
+      {
+       "id": "17372f64-a966-5cad-aa10-1589f0d9b109",
+       "label": "A",
+       "content": "species",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9043a9ca-7664-59f2-8b44-3a0f9e2e8585",
+       "label": "B",
+       "content": "family",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c60a3a0d-a592-57ea-9f3c-1a6b31b91661",
+       "label": "C",
+       "content": "genus",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b7df0a3d-15d0-56ba-8220-10ee54b5b5a5",
+       "label": "D",
+       "content": "kingdom",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "182c3fc9-655d-5acc-b0ae-b127831c6860",
+     "key": "bio-cg-03",
+     "stem": "An organism is multicellular, has no chlorophyll, absorbs food that it has digested outside its body, and has cell walls containing chitin. It belongs to the kingdom",
+     "image_url": null,
+     "explanation": "Fungi, such as mushrooms and moulds, grow as threads (hyphae), release enzymes onto their food and absorb the products. Their walls contain chitin.\n\n**Why the other options are wrong**\n\n- Plantae: Plants have chlorophyll and make their own food, and their cell walls are made of cellulose.\n- Animalia: Animals have no cell walls at all, and they take food into their bodies before digesting it.\n- Prokaryotae: Prokaryotes such as bacteria are single cells with no nucleus.",
+     "position": 3,
+     "options": [
+      {
+       "id": "5f21e8c0-7fbd-5279-bee8-5c92ff189a29",
+       "label": "A",
+       "content": "Plantae",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9e464c7f-2e70-591c-ab19-e0aa52ec6a8f",
+       "label": "B",
+       "content": "Animalia",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3f335081-c718-5d85-b56e-c2639b031593",
+       "label": "C",
+       "content": "Prokaryotae",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1e1f7bbc-a296-523f-a03c-079e7609f9f1",
+       "label": "D",
+       "content": "Fungi",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ffa41ff0-efad-511b-9371-c97484c20306",
+     "key": "bio-cg-04",
+     "stem": "Which feature shows that a bacterium is a prokaryote?",
+     "image_url": null,
+     "explanation": "Prokaryotes have no true nucleus: their DNA lies free in the cytoplasm. They also lack membrane-bound organelles such as mitochondria.\n\n**Why the other options are wrong**\n\n- It has a cell wall: Plant and fungal cells also have cell walls, and they are not prokaryotes.\n- It consists of only one cell: *Amoeba* is also a single cell, but it has a true nucleus, so it is a eukaryote.\n- It reproduces by binary fission: *Amoeba* and *Paramecium* also divide by binary fission, and they are eukaryotes.",
+     "position": 4,
+     "options": [
+      {
+       "id": "408252de-5654-5312-a98d-b300ccb117cd",
+       "label": "A",
+       "content": "Its DNA is not enclosed in a nuclear membrane",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "be09ef8d-002a-53bb-bf20-20a1713bd555",
+       "label": "B",
+       "content": "It has a cell wall",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c0c59157-5df2-51db-b097-5a5ac2df3f44",
+       "label": "C",
+       "content": "It consists of only one cell",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a63e5370-4dbe-5140-8c62-35301ad51e87",
+       "label": "D",
+       "content": "It reproduces by binary fission",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3d8e557e-88c1-5af9-9ab6-e10a2912626a",
+     "key": "bio-cg-05",
+     "stem": "Two animals belong to the same species if they",
+     "image_url": null,
+     "explanation": "A species is a group of organisms that can interbreed in nature to produce fertile offspring. The fertility of the offspring is the key test.\n\n**Why the other options are wrong**\n\n- look exactly alike: Males and females of one species can look very different, and some different species look almost the same.\n- live in the same habitat: Many different species share one habitat.\n- can mate to produce offspring, even if the offspring are sterile: A horse and a donkey produce a mule, which is sterile, so they are different species.",
+     "position": 5,
+     "options": [
+      {
+       "id": "bd474bd8-92be-59c7-90dc-cc2002ab9c38",
+       "label": "A",
+       "content": "look exactly alike",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "61cb78a4-1621-57ba-93ce-9b7db7e5731f",
+       "label": "B",
+       "content": "can interbreed naturally to produce fertile offspring",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5582834c-c2d3-573c-9f72-42d66e3c0959",
+       "label": "C",
+       "content": "live in the same habitat",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "88ecbecd-7924-5d37-ab7a-80b5d13afb4f",
+       "label": "D",
+       "content": "can mate to produce offspring, even if the offspring are sterile",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3c52f612-a9b3-506e-899d-f487285a9c75",
+     "key": "bio-cg-06",
+     "stem": "Which feature is found in ALL insects?",
+     "image_url": null,
+     "explanation": "Every insect has a body in three parts (head, thorax, abdomen), three pairs of jointed legs on the thorax and one pair of antennae.\n\n**Why the other options are wrong**\n\n- Two pairs of wings: Houseflies and mosquitoes have only one pair of wings, and some insects, such as worker ants, have none.\n- Four pairs of jointed legs: Four pairs of legs is a feature of arachnids such as spiders and scorpions.\n- A body divided into two parts: Insects have three body parts (head, thorax and abdomen); spiders have two.",
+     "position": 6,
+     "options": [
+      {
+       "id": "34197532-cfe7-59f6-b65c-f886c6c3944e",
+       "label": "A",
+       "content": "Two pairs of wings",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e3fd6450-cfdd-50ba-934f-14a589e64bff",
+       "label": "B",
+       "content": "Four pairs of jointed legs",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a9b5142b-d40d-5af7-80d7-ced75b557a85",
+       "label": "C",
+       "content": "Three pairs of jointed legs",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "594a34bc-01a7-5a79-b4ba-f51dd59e57b2",
+       "label": "D",
+       "content": "A body divided into two parts",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2ead6712-37d0-5b4e-bf52-d09481646a0a",
+     "key": "bio-cg-07",
+     "stem": "An animal has a dry skin covered with scales, breathes with lungs, has a body temperature that changes with its surroundings, and lays eggs with leathery shells on land. It is",
+     "image_url": null,
+     "explanation": "Reptiles, such as lizards, snakes, crocodiles and tortoises, have dry scaly skin, breathe with lungs, are cold-blooded (ectothermic) and lay shelled eggs on land.\n\n**Why the other options are wrong**\n\n- an amphibian: Amphibians have a moist skin without scales and lay their eggs, without shells, in water.\n- a fish: Fish have scales but breathe with gills and lay their eggs in water.\n- a bird: Birds have feathers, keep a constant body temperature and lay eggs with hard shells.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b0e1de8e-72ba-5ca0-b78d-0a03b95ec504",
+       "label": "A",
+       "content": "an amphibian",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "44743a51-5311-5ca6-ad28-5357a9fb011c",
+       "label": "B",
+       "content": "a fish",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "088444e2-e787-589a-8e7b-336a80083090",
+       "label": "C",
+       "content": "a bird",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e7b34aa6-8d30-57a4-aa67-94506c37cb48",
+       "label": "D",
+       "content": "a reptile",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5506d79a-1f16-5c22-b527-a08d92060828",
+   "topic": "Cell Functions and Specialisation",
+   "title": "Cell Functions and Specialisation: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on cell functions and specialisation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "fdcc957e-801a-514a-a015-eb44cf1aac87",
+     "key": "bio-cf-01",
+     "stem": "Ribosomes are the site of",
+     "image_url": null,
+     "explanation": "Ribosomes join amino acids together to build proteins. Many sit on the rough endoplasmic reticulum, which carries the proteins away.\n\n**Why the other options are wrong**\n\n- lipid synthesis: Lipids are made mainly by the smooth endoplasmic reticulum, which has no ribosomes.\n- aerobic respiration: Aerobic respiration takes place in the mitochondria.\n- photosynthesis: Photosynthesis takes place in the chloroplasts.",
+     "position": 1,
+     "options": [
+      {
+       "id": "be018de3-d1fd-5043-b3c5-5b59a7fe9ae3",
+       "label": "A",
+       "content": "protein synthesis",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c58b6114-8919-5a92-8d78-24ef0d29a27d",
+       "label": "B",
+       "content": "lipid synthesis",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2e788209-cebd-5d6b-901f-ed067094a8ed",
+       "label": "C",
+       "content": "aerobic respiration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fedfee52-60c3-5422-a68a-796ecb9a5151",
+       "label": "D",
+       "content": "photosynthesis",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fa8ca30b-54f1-52e0-b21e-32bb63673e73",
+     "key": "bio-cf-02",
+     "stem": "Which organelle modifies proteins and packages them into vesicles so they can be secreted from the cell?",
+     "image_url": null,
+     "explanation": "Cells that secrete a lot, such as those making digestive enzymes, have a large Golgi apparatus.\n\n**Why the other options are wrong**\n\n- Rough endoplasmic reticulum: The rough ER makes proteins on its ribosomes and carries them to the Golgi apparatus, which then modifies and packages them.\n- Lysosome: A lysosome holds digestive enzymes that break down worn-out parts of the cell.\n- Nucleus: The nucleus holds the DNA and controls which proteins are made, but it does not package them.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8a9acca1-8e31-59dc-a4f7-406b3261f5a7",
+       "label": "A",
+       "content": "Rough endoplasmic reticulum",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a4d28f58-db72-5d20-a13c-fd8f343ecfad",
+       "label": "B",
+       "content": "Golgi apparatus",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0a2d1c58-edf9-5857-abb4-4280302fa357",
+       "label": "C",
+       "content": "Lysosome",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bb545d29-5468-5962-93a9-f96a4c08386d",
+       "label": "D",
+       "content": "Nucleus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7c48c360-e093-5426-8d46-6e1fffd07984",
+     "key": "bio-cf-03",
+     "stem": "A mature red blood cell has no nucleus. How does this help it to do its job?",
+     "image_url": null,
+     "explanation": "Red cells are biconcave discs packed with haemoglobin. Losing the nucleus gives more space for haemoglobin, and the biconcave shape gives a large surface for oxygen to diffuse in and out.\n\n**Why the other options are wrong**\n\n- It lets the cell divide quickly to replace lost blood: With no nucleus a red cell cannot divide at all; new red cells are made in the bone marrow.\n- It lets the cell change shape to engulf bacteria: Engulfing bacteria is the work of phagocytes, a kind of white blood cell.\n- It lets the cell make antibodies: Antibodies are made by lymphocytes, another kind of white blood cell.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ac6af55b-c047-518e-acf8-759f36ae5a57",
+       "label": "A",
+       "content": "It lets the cell divide quickly to replace lost blood",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a6f47177-934f-5f99-9a3a-f09f71828a03",
+       "label": "B",
+       "content": "It lets the cell change shape to engulf bacteria",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "538d6101-be96-56ee-9436-30f81eeb09f1",
+       "label": "C",
+       "content": "It leaves more room for haemoglobin, so the cell can carry more oxygen",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c3b3d1d1-07b3-569c-9b44-5c21d4a4f53e",
+       "label": "D",
+       "content": "It lets the cell make antibodies",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "abb4c8e7-550f-51f2-82bd-9200752586c8",
+     "key": "bio-cf-04",
+     "stem": "A root hair cell has a long, thin outgrowth. This adaptation",
+     "image_url": null,
+     "explanation": "The thin extension pushes between soil particles and gives a large surface through which water enters by osmosis and ions are absorbed.\n\n**Why the other options are wrong**\n\n- allows the cell to carry out photosynthesis in the soil: Root hair cells have no chloroplasts, and there is no light in the soil.\n- helps the cell carry food down from the leaves: Food made in the leaves is carried in the phloem, not by root hairs.\n- lets the cell store starch for the plant: Starch is stored in other tissues, such as the cortex of roots and stems.",
+     "position": 4,
+     "options": [
+      {
+       "id": "815e7e38-341c-5340-b20d-2b693686dae0",
+       "label": "A",
+       "content": "allows the cell to carry out photosynthesis in the soil",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "09fa7dab-2f62-58e8-918b-b5091fd0d204",
+       "label": "B",
+       "content": "helps the cell carry food down from the leaves",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "40f31640-a8a2-5dbb-baf3-25e146ec5ebd",
+       "label": "C",
+       "content": "lets the cell store starch for the plant",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "688a7682-6eb8-51b2-8214-4d20a6fdef3d",
+       "label": "D",
+       "content": "increases the surface area for absorbing water and mineral ions",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8075a8d8-e58e-507e-b22e-75d4a372f8ea",
+     "key": "bio-cf-05",
+     "stem": "The middle piece of a sperm cell contains many mitochondria. This is because the sperm",
+     "image_url": null,
+     "explanation": "Mitochondria release energy by aerobic respiration. The many mitochondria in the middle piece supply energy for the tail to lash and drive the sperm towards the egg.\n\n**Why the other options are wrong**\n\n- must carry the father's genes to the egg: The genes are in the nucleus, in the head of the sperm, not in the mitochondria.\n- must digest a way through the membrane around the egg: Digesting a way in is done by enzymes in the acrosome, at the tip of the head.\n- must supply food to the embryo after fertilisation: The embryo's first food comes from the egg, not from the sperm.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f35d0541-c941-5fab-a3b0-8f9c297246e2",
+       "label": "A",
+       "content": "needs a lot of energy to swim with its tail",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3a2addeb-b52d-5bac-b24b-6c91a67977c4",
+       "label": "B",
+       "content": "must carry the father's genes to the egg",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d7cbf006-e2f0-5bac-b9ef-0c201c168536",
+       "label": "C",
+       "content": "must digest a way through the membrane around the egg",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0a9fa569-6e52-5cfd-a5d4-08d5e4fc9fa2",
+       "label": "D",
+       "content": "must supply food to the embryo after fertilisation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4cefb110-73b2-56c9-85a2-acb86d182da2",
+     "key": "bio-cf-06",
+     "stem": "Palisade mesophyll cells are packed with chloroplasts and lie just below the upper epidermis of a leaf. This position",
+     "image_url": null,
+     "explanation": "Light enters through the transparent upper epidermis and reaches the palisade layer first, so most photosynthesis happens there.\n\n**Why the other options are wrong**\n\n- puts them close to the stomata, which are mostly on the upper surface: In most leaves the stomata are mostly on the lower surface, next to the spongy mesophyll.\n- lets them store the food made by the whole leaf: Food made in the leaf is carried away in the phloem, not stored in the palisade layer.\n- lets them protect the leaf from insects: Protection is given by the epidermis and its waxy cuticle.",
+     "position": 6,
+     "options": [
+      {
+       "id": "dd3b2941-32eb-5b3e-a476-ba51dffd5357",
+       "label": "A",
+       "content": "puts them close to the stomata, which are mostly on the upper surface",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9bcc1d16-fb5f-5f62-956b-c4a4c47c326f",
+       "label": "B",
+       "content": "lets them receive the most light for photosynthesis",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5b277ed6-1a46-5a5d-9263-8d2e60121d73",
+       "label": "C",
+       "content": "lets them store the food made by the whole leaf",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1831f316-af19-5fdc-a511-835204676c12",
+       "label": "D",
+       "content": "lets them protect the leaf from insects",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "15d88a84-09fe-5110-87bc-94ccd7833003",
+     "key": "bio-cf-07",
+     "stem": "Mature xylem vessels are dead, hollow tubes with walls thickened by lignin. These features let them",
+     "image_url": null,
+     "explanation": "With no cytoplasm or end walls, xylem vessels form open pipes for water and mineral salts. Lignin makes them strong, stops them collapsing and helps hold the plant up.\n\n**Why the other options are wrong**\n\n- carry sugars from the leaves to other parts of the plant: Sugars are carried by the phloem, whose sieve tubes are living cells.\n- carry out photosynthesis in the stem: Dead, hollow cells have no chloroplasts and cannot photosynthesise.\n- divide to make the stem grow longer: Dead cells cannot divide; growth in length comes from the meristems at the tips.",
+     "position": 7,
+     "options": [
+      {
+       "id": "0e04c4cd-5ea7-5242-9b60-c203f67fe577",
+       "label": "A",
+       "content": "carry sugars from the leaves to other parts of the plant",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f25e82f6-c923-52ea-ab0f-20dbabbdb795",
+       "label": "B",
+       "content": "carry out photosynthesis in the stem",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f402880e-3ce8-51a4-b9b5-fd97beb60ddb",
+       "label": "C",
+       "content": "carry water up the plant in a continuous column and help support it",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "977590c3-2773-5f2a-a494-c1325190c1ef",
+       "label": "D",
+       "content": "divide to make the stem grow longer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ef6731b1-43d7-55d1-a1f7-1c211537c360",
+   "topic": "Cell Division",
+   "title": "Cell Division: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on cell division, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "05e44712-cc28-575f-b529-4be7e8ac9439",
+     "key": "bio-cd-01",
+     "stem": "The body cells of a maize plant have 20 chromosomes. How many chromosomes are there in a male gamete in a pollen grain, and in a root-tip cell made by mitosis?",
+     "image_url": null,
+     "explanation": "Gametes come from meiosis, so they are haploid: 20 ÷ 2 = 10. Root-tip cells come from mitosis, so they are diploid like the parent: 20. At fertilisation 10 + 10 restores 20.\n\n**Why the other options are wrong**\n\n- 20 in the gamete and 10 in the root-tip cell: This is the wrong way round: meiosis halves the number in gametes, while mitosis keeps it the same.\n- 10 in the gamete and 10 in the root-tip cell: Mitosis gives daughter cells with the same number of chromosomes as the parent cell: 20.\n- 20 in the gamete and 20 in the root-tip cell: Gametes are made by meiosis, which halves the chromosome number to 10.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b29e32ce-3e04-5267-a76f-e064a82c03df",
+       "label": "A",
+       "content": "20 in the gamete and 10 in the root-tip cell",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a8f2252d-a668-5ea2-9a0d-a17039b17763",
+       "label": "B",
+       "content": "10 in the gamete and 10 in the root-tip cell",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f1f6fecc-6c1b-500f-8f0f-354daee5abb2",
+       "label": "C",
+       "content": "20 in the gamete and 20 in the root-tip cell",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3b20a8f0-6787-5942-be10-2c8f55d401a4",
+       "label": "D",
+       "content": "10 in the gamete and 20 in the root-tip cell",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1defd9f3-67b9-52a8-9aee-33ec30618a35",
+     "key": "bio-cd-02",
+     "stem": "During which stage of mitosis do the chromosomes line up across the equator of the spindle?",
+     "image_url": null,
+     "explanation": "Prophase, metaphase (line up at the equator), anaphase (chromatids pulled apart), telophase (two new nuclei form).\n\n**Why the other options are wrong**\n\n- Prophase: In prophase the chromosomes shorten and become visible, and the nuclear membrane breaks down.\n- Anaphase: In anaphase the chromatids of each chromosome are pulled apart to opposite poles.\n- Telophase: In telophase a nuclear membrane forms around each new set of chromosomes.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e1178957-e74f-5a2d-8fc8-72bd128d7ef6",
+       "label": "A",
+       "content": "Prophase",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e790d82a-ec3e-5395-9c6f-55a1a5b2e7a6",
+       "label": "B",
+       "content": "Metaphase",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6bdd3250-34b6-5b0b-a2f1-99237a15ec11",
+       "label": "C",
+       "content": "Anaphase",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "93e0bd51-1d37-5308-bf7a-167fdc8dcc24",
+       "label": "D",
+       "content": "Telophase",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9d498d49-808a-59a0-87c2-9a4f8eaf8c5d",
+     "key": "bio-cd-03",
+     "stem": "Which statement about a cell in interphase is correct?",
+     "image_url": null,
+     "explanation": "Interphase is the longest part of the cell cycle. The cell grows, makes new organelles and replicates its DNA, so each chromosome is two chromatids when division begins.\n\n**Why the other options are wrong**\n\n- It is resting and carries out no activity: Interphase is often wrongly called a resting stage: the cell is very active, growing and copying its DNA.\n- It divides its nucleus into two: Division of the nucleus happens during mitosis itself, after interphase.\n- It pulls its chromatids to opposite poles: Chromatids are pulled apart in anaphase of mitosis.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ab096099-ca47-536f-ba86-274e434fa600",
+       "label": "A",
+       "content": "It copies its DNA and makes new organelles",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "138ac11d-5f58-51fd-b16b-d445b0748b58",
+       "label": "B",
+       "content": "It is resting and carries out no activity",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c7d87cf7-29d5-5db7-a595-9372ec462806",
+       "label": "C",
+       "content": "It divides its nucleus into two",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3de4baa4-cb44-52ba-9675-eea961636d08",
+       "label": "D",
+       "content": "It pulls its chromatids to opposite poles",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ace1c7fc-81e2-5e07-8342-e72d80cd2008",
+     "key": "bio-cd-04",
+     "stem": "In a flowering plant, meiosis takes place in the",
+     "image_url": null,
+     "explanation": "Meiosis happens only where gametes are formed: in the anthers (pollen) and the ovules of the flower. Growing points use mitosis.\n\n**Why the other options are wrong**\n\n- root tips: Root tips grow by mitosis.\n- shoot tips: Shoot tips grow by mitosis.\n- cambium: The cambium divides by mitosis to make the stem and root thicker.",
+     "position": 4,
+     "options": [
+      {
+       "id": "891edce1-6d29-5ac6-a201-74ff0c0d44ae",
+       "label": "A",
+       "content": "root tips",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a18662d0-65f8-5e6f-9790-1a2fea186a32",
+       "label": "B",
+       "content": "anthers and ovules",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "eb6a5bba-b471-52a6-848f-16c4e72bbe83",
+       "label": "C",
+       "content": "shoot tips",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "83cfea3b-e4b4-5ae8-baa7-5ec52662ef84",
+       "label": "D",
+       "content": "cambium",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "34f75209-5717-5e79-b36d-5ac52cf11192",
+     "key": "bio-cd-05",
+     "stem": "Which feature of meiosis produces genetic variation among the gametes?",
+     "image_url": null,
+     "explanation": "In meiosis, paired chromosomes swap sections (crossing over), and each pair separates independently of the others. Every gamete receives a new mix of alleles.\n\n**Why the other options are wrong**\n\n- Copying of the DNA before division: DNA is copied before mitosis too, and the copying is exact, so it does not by itself give variation.\n- Formation of a spindle: A spindle forms in mitosis too; it only moves the chromosomes.\n- Division of the cytoplasm: The cytoplasm divides in mitosis too, and this does not change the genes a cell receives.",
+     "position": 5,
+     "options": [
+      {
+       "id": "cd3a150c-f9e3-5869-8661-ff953cb85c15",
+       "label": "A",
+       "content": "Copying of the DNA before division",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c9cd427c-84d5-5043-8771-1e1b19c9cc6f",
+       "label": "B",
+       "content": "Formation of a spindle",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a7ac03d5-5b5b-5b58-9d82-196f435247b6",
+       "label": "C",
+       "content": "Crossing over and the random assortment of chromosomes",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c6a03eb1-cc92-56be-814c-2be567d79860",
+       "label": "D",
+       "content": "Division of the cytoplasm",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "88d35913-b45d-55da-b3b4-cc663e5c7bab",
+     "key": "bio-cd-06",
+     "stem": "How many daughter cells are formed when one cell divides by meiosis, and how many chromosomes does each have compared with the parent cell?",
+     "image_url": null,
+     "explanation": "Meiosis: two divisions, four haploid cells, genetically different. Mitosis: one division, two diploid cells, genetically identical.\n\n**Why the other options are wrong**\n\n- Two cells, each with half the number: Meiosis has two divisions, so one cell gives four, not two.\n- Four cells, each with the same number: Meiosis halves the chromosome number.\n- Two cells, each with the same number: Two cells with the full number is the result of mitosis.",
+     "position": 6,
+     "options": [
+      {
+       "id": "1b1034fd-a5c5-5542-8ff3-2bb6da4e3453",
+       "label": "A",
+       "content": "Two cells, each with half the number",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ec27670c-8405-5d70-99cc-ab3af7f49450",
+       "label": "B",
+       "content": "Four cells, each with the same number",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3ce62c01-42f0-5315-9e7d-5e8e7c984fd2",
+       "label": "C",
+       "content": "Two cells, each with the same number",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e1059e1b-ab75-5175-ad6a-28e459003f13",
+       "label": "D",
+       "content": "Four cells, each with half the number",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "46238a07-3408-5a57-afb9-eaa56e67e1cb",
+     "key": "bio-cd-07",
+     "stem": "Which of the following depends on mitosis?",
+     "image_url": null,
+     "explanation": "Mitosis makes genetically identical cells for growth, the repair of damaged tissue, the replacement of worn-out cells and asexual reproduction.\n\n**Why the other options are wrong**\n\n- The formation of pollen grains in an anther: Pollen grains are formed by meiosis.\n- The formation of sperm in the testes: Sperm are formed by meiosis, which halves the chromosome number.\n- The fusion of a sperm with an egg: The fusion of gametes is fertilisation, not cell division.",
+     "position": 7,
+     "options": [
+      {
+       "id": "94137595-a7f2-5b1d-a064-629f316eb108",
+       "label": "A",
+       "content": "The healing of a cut in the skin",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cb052d18-4898-5466-b2c1-6f431b20f1e3",
+       "label": "B",
+       "content": "The formation of pollen grains in an anther",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8ada202f-a63e-542c-92f4-831ea560e651",
+       "label": "C",
+       "content": "The formation of sperm in the testes",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cf608164-e93c-5f70-92e1-d9186beffc53",
+       "label": "D",
+       "content": "The fusion of a sperm with an egg",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "954b91cf-ea69-5d74-9b8a-db8d5008fa6d",
+   "topic": "Levels of Organisation",
+   "title": "Levels of Organisation: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on levels of organisation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "da2e8630-bd88-5abb-ae91-240fba39296a",
+     "key": "bio-lo-01",
+     "stem": "Which sequence shows the levels of organisation in order of increasing complexity?",
+     "image_url": null,
+     "explanation": "Similar cells form a tissue; several tissues form an organ; organs working together form an organ system; the systems together make the organism.\n\n**Why the other options are wrong**\n\n- Tissue, cell, organ, organism, organ system: Cells make up tissues, so the cell comes first; and organ systems make up the organism.\n- Cell, organ, tissue, organ system, organism: Tissues make up organs, so tissue comes before organ.\n- Organism, organ system, organ, tissue, cell: This is the right list in the reverse order: decreasing complexity.",
+     "position": 1,
+     "options": [
+      {
+       "id": "eff0f0cb-69e5-5c85-ae79-d3ef593a7115",
+       "label": "A",
+       "content": "Tissue, cell, organ, organism, organ system",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2e9df0bb-f928-50f1-87d5-d56b4ab23187",
+       "label": "B",
+       "content": "Cell, tissue, organ, organ system, organism",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "498456b9-3784-5d4e-ab67-443e680ff944",
+       "label": "C",
+       "content": "Cell, organ, tissue, organ system, organism",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b1f7fcfd-c075-541f-aee3-10e6c1dec176",
+       "label": "D",
+       "content": "Organism, organ system, organ, tissue, cell",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b77f6273-8dcd-56e0-a09e-c0a1ebe8214b",
+     "key": "bio-lo-02",
+     "stem": "Which of the following is a tissue?",
+     "image_url": null,
+     "explanation": "A tissue is a group of cells working together to do one job. Xylem carries water and mineral salts; blood, muscle and epidermis are other tissues.\n\n**Why the other options are wrong**\n\n- Leaf: A leaf is an organ: it contains several tissues, such as epidermis, mesophyll, xylem and phloem.\n- Red blood cell: A red blood cell is a single cell.\n- Digestive system: The digestive system is an organ system made of many organs.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f255dd0a-40d6-596c-a147-7347e2ea3986",
+       "label": "A",
+       "content": "Leaf",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "eaa1a91b-bacf-52c0-9551-5adf0deca635",
+       "label": "B",
+       "content": "Red blood cell",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dd6ede3e-dd50-5362-8f31-4b1dbee6b985",
+       "label": "C",
+       "content": "Xylem",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fcea9a64-87bd-5ea7-8d76-abca75b0865d",
+       "label": "D",
+       "content": "Digestive system",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8a618489-b7f7-5df6-a79e-d2c2b1189739",
+     "key": "bio-lo-03",
+     "stem": "The heart is described as an organ because it",
+     "image_url": null,
+     "explanation": "An organ is a structure made of different tissues that work together for a particular function: in the heart, pumping blood.\n\n**Why the other options are wrong**\n\n- is made of only one type of cell: A group of one type of cell is a tissue; the heart has muscle, nervous, connective and lining tissues.\n- can carry out every life process on its own: Only a whole organism carries out every life process.\n- contains blood: Containing blood does not make something an organ: blood vessels and the skin also contain blood.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d7b2c77b-fe66-5d4a-a841-8e7b0b9121e8",
+       "label": "A",
+       "content": "is made of only one type of cell",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7f8f1dca-b148-5188-b24a-97d6fcb90a1f",
+       "label": "B",
+       "content": "can carry out every life process on its own",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c2ee351f-74cb-59c6-904c-66a8af6b4947",
+       "label": "C",
+       "content": "contains blood",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "dfbe2487-28ca-5559-82ba-b96ed9258c6f",
+       "label": "D",
+       "content": "is made of several tissues working together to carry out a function",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "33fca851-649a-5462-bb98-dfb5007ba586",
+     "key": "bio-lo-04",
+     "stem": "*Volvox* consists of hundreds of similar cells joined in a hollow ball, each able to feed and move. It is an example of",
+     "image_url": null,
+     "explanation": "In a colony, many similar cells live together, with little division of labour. It is the step between unicellular and truly multicellular organisms.\n\n**Why the other options are wrong**\n\n- a single-celled organism: Single-celled organisms, such as *Chlamydomonas* and *Amoeba*, consist of only one cell.\n- an organ: An organ is made of several different tissues; the cells of *Volvox* are all much alike.\n- an organ system: An organ system is a group of organs, which *Volvox* does not have.",
+     "position": 4,
+     "options": [
+      {
+       "id": "632972cf-25a2-50d5-b076-bc6073367af4",
+       "label": "A",
+       "content": "a colony",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ddd6a69a-0c7d-5dcb-b80e-69e786346378",
+       "label": "B",
+       "content": "a single-celled organism",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bea7c838-2b6e-5480-ac28-f9ebeee4a8e4",
+       "label": "C",
+       "content": "an organ",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "39fe8229-4da8-5825-a639-d10e53ccd5e0",
+       "label": "D",
+       "content": "an organ system",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5e936d66-88ee-59ad-8118-e0828f3badd7",
+     "key": "bio-lo-05",
+     "stem": "In a multicellular organism, the sharing of different jobs among specialised cells, tissues and organs is called",
+     "image_url": null,
+     "explanation": "With division of labour, each cell type does one job well, such as red cells carrying oxygen and nerve cells carrying impulses.\n\n**Why the other options are wrong**\n\n- differentiation: Differentiation is the process by which an unspecialised cell develops into a specialised one; division of labour is the sharing of jobs that results.\n- cell division: Cell division makes new cells for growth and repair; it does not share out jobs.\n- homeostasis: Homeostasis is keeping the internal conditions of the body constant.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d94af99d-ed05-5b97-8bb9-deb069da3958",
+       "label": "A",
+       "content": "differentiation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6e9f353d-f8e0-5fa2-bddf-f02dfc1d9b4b",
+       "label": "B",
+       "content": "division of labour",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "3697c24d-9408-58ed-ab6c-2907bbafa984",
+       "label": "C",
+       "content": "cell division",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8bdeb88f-cced-5e71-bc47-ff8ea92b390d",
+       "label": "D",
+       "content": "homeostasis",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "33c2f4bf-bf43-52fa-9fa0-1c26bddcf898",
+     "key": "bio-lo-06",
+     "stem": "Which group of organs belongs to the same organ system?",
+     "image_url": null,
+     "explanation": "The stomach, liver and pancreas are all part of the digestive system: the stomach digests protein, the liver makes bile and the pancreas makes digestive enzymes.\n\n**Why the other options are wrong**\n\n- Heart, lungs and kidneys: These belong to three systems: circulatory, respiratory and excretory.\n- Brain, ovary and stomach: These belong to the nervous, reproductive and digestive systems.\n- Trachea, ileum and ureter: These belong to the respiratory, digestive and excretory (urinary) systems.",
+     "position": 6,
+     "options": [
+      {
+       "id": "295e723f-a221-5bd7-a853-91e768365478",
+       "label": "A",
+       "content": "Heart, lungs and kidneys",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d5acb983-d8f8-50bd-a1cc-08fbb80123b9",
+       "label": "B",
+       "content": "Brain, ovary and stomach",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2ac9b9c4-5e76-5dc4-9b67-37aa68f31d2f",
+       "label": "C",
+       "content": "Stomach, liver and pancreas",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d697981b-2bfd-573d-a1a5-ad33f17c2c00",
+       "label": "D",
+       "content": "Trachea, ileum and ureter",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b70deaf0-9e91-5d2d-b42c-47bdce541feb",
+     "key": "bio-lo-07",
+     "stem": "An advantage of being multicellular rather than unicellular is that",
+     "image_url": null,
+     "explanation": "Multicellular organisms can have specialised cells, tissues and organs, each suited to one job, and can grow larger.\n\n**Why the other options are wrong**\n\n- every cell can carry out all the life processes on its own: That describes a unicellular organism; in a multicellular one, most cells depend on others.\n- the surface area to volume ratio becomes larger: As an organism gets bigger, its surface area to volume ratio becomes smaller.\n- materials no longer need to be transported around the body: Large multicellular organisms need transport systems, because diffusion alone is too slow over long distances.",
+     "position": 7,
+     "options": [
+      {
+       "id": "04948f0e-3596-51eb-8766-ae157c498136",
+       "label": "A",
+       "content": "every cell can carry out all the life processes on its own",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bf406064-ca2e-5b59-a699-1b63d6a2177c",
+       "label": "B",
+       "content": "the surface area to volume ratio becomes larger",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0351c6e5-b6ab-5d97-8037-a8b5b746a6ec",
+       "label": "C",
+       "content": "materials no longer need to be transported around the body",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eef19ae6-c28c-5590-8c7d-7e466d4759e4",
+       "label": "D",
+       "content": "cells can specialise, so that each function is carried out efficiently",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b1688a9e-5def-5b72-927b-d5fac33266b8",
+   "topic": "Transport in Lower Organisms",
+   "title": "Transport in Lower Organisms: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on transport in lower organisms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "d6d747db-d5c2-511c-afe6-85c01ca852d6",
+     "key": "bio-tl-01",
+     "stem": "In an *Amoeba* living in fresh water, the contractile vacuole",
+     "image_url": null,
+     "explanation": "Pond water is more dilute than the cytoplasm, so water keeps entering by osmosis. The contractile vacuole fills and empties it out, so the cell does not burst.\n\n**Why the other options are wrong**\n\n- digests the food particles that the cell takes in: Food is digested in food vacuoles.\n- takes in oxygen for respiration: Oxygen diffuses in across the whole cell membrane.\n- stores reserve food for the cell: The contractile vacuole holds water, not food.",
+     "position": 1,
+     "options": [
+      {
+       "id": "53bca155-14c9-58ce-933d-213bf51bb9ee",
+       "label": "A",
+       "content": "removes the excess water that enters the cell by osmosis",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7c9a2a13-3849-587f-be30-a88d7907ba4a",
+       "label": "B",
+       "content": "digests the food particles that the cell takes in",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f9f46b34-9449-5d7f-89e9-1f5942a85c67",
+       "label": "C",
+       "content": "takes in oxygen for respiration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a43edae-e0f5-5cad-912f-fd068cb6dfd9",
+       "label": "D",
+       "content": "stores reserve food for the cell",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "21f2a0d8-9245-5db8-9c51-2e7b4fb108e3",
+     "key": "bio-tl-02",
+     "stem": "*Amoeba* needs no blood or blood vessels to supply its cell with oxygen because",
+     "image_url": null,
+     "explanation": "A tiny organism has a large surface compared with its volume, and no part is far from the surface, so diffusion alone is fast enough.\n\n**Why the other options are wrong**\n\n- it does not respire: *Amoeba* respires all the time; that is why it needs oxygen.\n- it lives in water, so it needs no oxygen: *Amoeba* uses the oxygen dissolved in the water.\n- its cell wall pumps materials into the cell: *Amoeba* has no cell wall, and walls do not pump.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d5aa8ec4-8ab6-546d-b9be-01590d38f5cf",
+       "label": "A",
+       "content": "it does not respire",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d8e3e7f3-c770-53b9-aeef-c0b7dab9f6af",
+       "label": "B",
+       "content": "its large surface area to volume ratio allows diffusion to reach every part",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8280597b-5e31-588c-82b8-b018666b1c24",
+       "label": "C",
+       "content": "it lives in water, so it needs no oxygen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "99d7fc97-0a5a-55f0-8289-f55d6400c9ea",
+       "label": "D",
+       "content": "its cell wall pumps materials into the cell",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0051bbe8-baa1-5564-8be6-fbd4fb8244c6",
+     "key": "bio-tl-03",
+     "stem": "What is the surface area to volume ratio of a cube with sides of 2 cm?",
+     "image_url": null,
+     "explanation": "Surface area = 6 × 2 × 2 = 24 cm². Volume = 2 × 2 × 2 = 8 cm³. Ratio = 24 : 8 = 3 : 1. The bigger the organism, the smaller this ratio, which is why large organisms need transport systems.\n\n**Why the other options are wrong**\n\n- 1 : 3: This is volume to surface area, the ratio the wrong way round.\n- 6 : 1: 6 : 1 is the ratio for a cube with 1 cm sides.\n- 24 : 1: 24 cm² is the surface area alone; it must be compared with the volume, 8 cm³.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e252d8e5-c417-57bd-93c2-6197c5824b8d",
+       "label": "A",
+       "content": "1 : 3",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2304b054-6126-5f41-8553-ec86f32228b3",
+       "label": "B",
+       "content": "3 : 1",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f1a68ae0-79dd-5381-887d-28ed41a4043e",
+       "label": "C",
+       "content": "6 : 1",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ca54e9ab-34ca-505f-b2af-a797865b573d",
+       "label": "D",
+       "content": "24 : 1",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "060666ef-8d35-58c5-b853-45fc76c69257",
+     "key": "bio-tl-04",
+     "stem": "A strip of onion epidermis is left in a concentrated sugar solution for 30 minutes and then viewed under a microscope. The cells will appear",
+     "image_url": null,
+     "explanation": "The sugar solution has a lower water potential than the cell sap, so water leaves by osmosis. The vacuole and cytoplasm shrink and the membrane pulls away from the wall.\n\n**Why the other options are wrong**\n\n- turgid, with the cytoplasm pressed against the cell wall: Cells become turgid in a dilute solution, when water enters.\n- burst, because water has rushed into them: Water leaves cells in a concentrated solution; and the cell wall stops plant cells bursting.\n- unchanged, because the cell wall stops water leaving: The cell wall is fully permeable, so water passes through it freely.",
+     "position": 4,
+     "options": [
+      {
+       "id": "fcd8c2a0-72e1-59a8-8a15-9cd5d2902136",
+       "label": "A",
+       "content": "turgid, with the cytoplasm pressed against the cell wall",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6635a692-f93c-5240-86c2-3acee4939ad9",
+       "label": "B",
+       "content": "burst, because water has rushed into them",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e4838ca7-ce8f-5b27-b20c-15b44dd8afe6",
+       "label": "C",
+       "content": "plasmolysed, with the cytoplasm shrunk away from the cell wall",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "af07ffa8-a096-523c-a244-c79648c0e3fc",
+       "label": "D",
+       "content": "unchanged, because the cell wall stops water leaving",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c60694a3-ecf8-5cdf-b1b9-64be1efbeeae",
+     "key": "bio-tl-05",
+     "stem": "Red blood cells are placed in distilled water. What happens to them?",
+     "image_url": null,
+     "explanation": "Distilled water has a higher water potential than the cytoplasm, so water moves in. With no cell wall to resist, the cells swell and burst (haemolysis).\n\n**Why the other options are wrong**\n\n- They shrink, because water leaves by osmosis: Cells shrink in a solution more concentrated than their cytoplasm, not in pure water.\n- They become turgid but do not burst: Only plant cells become turgid; their cell wall stops them bursting. Red cells have no wall.\n- They do not change, because water cannot cross their membrane: The cell membrane lets water through easily.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b515e2f0-0852-5a55-840d-c6a03603a51e",
+       "label": "A",
+       "content": "They shrink, because water leaves by osmosis",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "165fbe8c-c405-5fa5-91c3-8d52b6844a31",
+       "label": "B",
+       "content": "They become turgid but do not burst",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fecc059d-e85b-56d2-a9a8-34396a76b3d7",
+       "label": "C",
+       "content": "They do not change, because water cannot cross their membrane",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d5c43e17-9deb-5e12-b582-07f59f8bbda7",
+       "label": "D",
+       "content": "They swell and burst, because water enters by osmosis",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "89fe6146-0bc0-5f64-9aec-7459d9aa6eb2",
+     "key": "bio-tl-06",
+     "stem": "A single-celled alga takes in potassium ions from pond water, although the concentration of potassium inside the cell is already higher than in the water. This uptake is by",
+     "image_url": null,
+     "explanation": "Moving ions from a low concentration to a high one, against the gradient, is active transport. It uses carrier proteins and energy (ATP) from respiration.\n\n**Why the other options are wrong**\n\n- diffusion, which needs energy from respiration: Diffusion is passive: it needs no energy from the cell.\n- diffusion, which needs no energy: Diffusion moves particles down a gradient, so it would carry potassium out of the cell, not in.\n- osmosis, which needs no energy: Osmosis is the movement of water only, not of ions.",
+     "position": 6,
+     "options": [
+      {
+       "id": "a7f118e7-ecf7-5e35-a2c1-ec57cec0056a",
+       "label": "A",
+       "content": "active transport, which needs energy from respiration",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a22bcd25-8549-56a7-9940-95ce32db89a4",
+       "label": "B",
+       "content": "diffusion, which needs energy from respiration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b7fb50e5-32e2-515c-b50e-3117f86e50f3",
+       "label": "C",
+       "content": "diffusion, which needs no energy",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c503ce65-92b2-5a7b-87d3-24a84f229087",
+       "label": "D",
+       "content": "osmosis, which needs no energy",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1503a411-1525-5297-93c1-f4e5db093302",
+     "key": "bio-tl-07",
+     "stem": "Which change would make oxygen diffuse into a cell faster?",
+     "image_url": null,
+     "explanation": "Diffusion is faster with a steeper concentration gradient, a larger surface area, a shorter distance and a higher temperature.\n\n**Why the other options are wrong**\n\n- A thicker cell membrane: A thicker membrane makes the diffusion distance longer, which slows diffusion.\n- A lower temperature: At a lower temperature particles move more slowly, so diffusion slows.\n- A smaller surface area for exchange: Less surface means fewer particles can cross at once.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a63b1784-20c9-5e3c-a68b-b7aad81553ba",
+       "label": "A",
+       "content": "A thicker cell membrane",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "28ad23f2-e649-50db-a4b6-6cb71057dc88",
+       "label": "B",
+       "content": "A steeper concentration gradient across the cell membrane",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7ad48ee8-9d04-51a3-8e45-3e6745108847",
+       "label": "C",
+       "content": "A lower temperature",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "844514c1-8b1d-58ac-8b3d-0d59bfa6eb38",
+       "label": "D",
+       "content": "A smaller surface area for exchange",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "4fbb4cb0bfa4"
+}

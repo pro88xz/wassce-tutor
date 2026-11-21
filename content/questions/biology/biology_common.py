@@ -2,10 +2,17 @@
 
 Biology questions in these sets are factual, so every item is a `concept`: the answer and
 each wrong option are text, and each was checked against the WAEC Biology syllabus
-(Section A, common to all candidates, and Section C, set for Sierra Leone).
+(Section A, common to all candidates, and Section C, set for Sierra Leone) and the
+WASSCE Tutor Biology notes.
+
+A question can carry a diagram (a function returning SVG, see biology_diagrams.py) and,
+when its options are quantities such as "×400", a fixed `order` so they appear in
+ascending order as on WAEC papers.
 """
 
 from __future__ import annotations
+
+from typing import Callable
 
 import sympy as sp
 
@@ -21,7 +28,8 @@ def _val(text: str):
 
 
 def make(topics: dict[str, str]):
-    def concept(id: str, topic: str, stem: str, answer: str, wrong: list[tuple[str, str]], working: str) -> Q:
+    def concept(id: str, topic: str, stem: str, answer: str, wrong: list[tuple[str, str]], working: str,
+                diagram: Callable[[], str] | None = None, order: list[str] | None = None) -> Q:
         assert len(wrong) == 3, id
         return Q(
             id=id, topic=topic, ref=topics[topic], stem=stem,
@@ -29,6 +37,8 @@ def make(topics: dict[str, str]):
             wrong=[Wrong(t, _val(t), why) for t, why in wrong],
             solve=lambda a=_val(answer): a,  # checked by an editor, not by code
             working=working,
+            diagram=diagram,
+            order=order,
         )
 
     return concept
