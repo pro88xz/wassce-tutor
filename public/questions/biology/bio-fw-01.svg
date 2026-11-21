@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 373" width="420" height="373" role="img">
+  <title>A food web: grass and maize are eaten by the grasshopper; maize by the rat; the grasshopper by the lizard and the toad; the toad and the rat by the snake; the rat, the lizard and the snake by the hawk</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <line x1="94.7" y1="304.2" x2="119.7" y2="270.8" stroke="#111827" stroke-width="1.8"/>
+  <path d="M117.3,280.5 L119.7,270.8 L111.1,275.8 Z" fill="#111827"/>
+  <line x1="220.7" y1="304.2" x2="162.2" y2="270.8" stroke="#111827" stroke-width="1.8"/>
+  <path d="M172.2,272.0 L162.2,270.8 L168.3,278.8 Z" fill="#111827"/>
+  <line x1="267.4" y1="304.2" x2="317.7" y2="254.0" stroke="#111827" stroke-width="1.8"/>
+  <path d="M313.9,263.2 L317.7,254.0 L308.4,257.7 Z" fill="#111827"/>
+  <line x1="128.7" y1="236.8" x2="106.0" y2="136.0" stroke="#111827" stroke-width="1.8"/>
+  <path d="M111.8,144.1 L106.0,136.0 L104.2,145.8 Z" fill="#111827"/>
+  <line x1="146.9" y1="236.8" x2="175.3" y2="203.4" stroke="#111827" stroke-width="1.8"/>
+  <path d="M172.3,212.9 L175.3,203.4 L166.4,207.9 Z" fill="#111827"/>
+  <line x1="207.6" y1="169.4" x2="242.7" y2="136.0" stroke="#111827" stroke-width="1.8"/>
+  <path d="M238.7,145.2 L242.7,136.0 L233.4,139.5 Z" fill="#111827"/>
+  <line x1="324.0" y1="220.0" x2="271.2" y2="136.0" stroke="#111827" stroke-width="1.8"/>
+  <path d="M279.4,141.7 L271.2,136.0 L272.8,145.9 Z" fill="#111827"/>
+  <line x1="334.7" y1="220.0" x2="334.7" y2="68.6" stroke="#111827" stroke-width="1.8"/>
+  <path d="M338.6,77.8 L334.7,68.6 L330.8,77.8 Z" fill="#111827"/>
+  <line x1="152.5" y1="104.4" x2="297.1" y2="62.5" stroke="#111827" stroke-width="1.8"/>
+  <path d="M289.3,68.8 L297.1,62.5 L287.2,61.3 Z" fill="#111827"/>
+  <line x1="279.3" y1="102.0" x2="316.0" y2="68.6" stroke="#111827" stroke-width="1.8"/>
+  <path d="M311.8,77.7 L316.0,68.6 L306.6,71.9 Z" fill="#111827"/>
+  <rect x="40.9" y="307.2" width="82.0" height="28.0" rx="7" fill="#dcfce7" stroke="#111827" stroke-width="1.4"/>
+  <text x="81.9" y="321.2" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" text-anchor="middle" dominant-baseline="central">Grass</text>
+  <rect x="209.4" y="307.2" width="82.0" height="28.0" rx="7" fill="#dcfce7" stroke="#111827" stroke-width="1.4"/>
+  <text x="250.4" y="321.2" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" text-anchor="middle" dominant-baseline="central">Maize</text>
+  <rect x="53.1" y="239.8" width="158.8" height="28.0" rx="7" fill="#ffffff" stroke="#111827" stroke-width="1.4"/>
+  <text x="132.5" y="253.8" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" text-anchor="middle" dominant-baseline="central">Grasshopper</text>
+  <rect x="306.5" y="223.0" width="56.4" height="28.0" rx="7" fill="#ffffff" stroke="#111827" stroke-width="1.4"/>
+  <text x="334.7" y="237.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" text-anchor="middle" dominant-baseline="central">Rat</text>
+  <rect x="155.2" y="172.4" width="69.2" height="28.0" rx="7" fill="#ffffff" stroke="#111827" stroke-width="1.4"/>
+  <text x="189.8" y="186.4" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" text-anchor="middle" dominant-baseline="central">Toad</text>
+  <rect x="54.7" y="105.0" width="94.8" height="28.0" rx="7" fill="#ffffff" stroke="#111827" stroke-width="1.4"/>
+  <text x="102.1" y="119.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" text-anchor="middle" dominant-baseline="central">Lizard</text>
+  <rect x="219.6" y="105.0" width="82.0" height="28.0" rx="7" fill="#ffffff" stroke="#111827" stroke-width="1.4"/>
+  <text x="260.6" y="119.0" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" text-anchor="middle" dominant-baseline="central">Snake</text>
+  <rect x="300.1" y="37.6" width="69.2" height="28.0" rx="7" fill="#ffffff" stroke="#111827" stroke-width="1.4"/>
+  <text x="334.7" y="51.6" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" fill="#111827" text-anchor="middle" dominant-baseline="central">Hawk</text>
+</svg>

@@ -1,0 +1,2016 @@
+{
+ "name": "biology_set5_p1",
+ "label": "Biology: set 5 (heredity, evolution, ecology, adaptation and conservation, with diagrams)",
+ "subject_slug": "biology",
+ "papers": [
+  {
+   "id": "3358404f-3e9f-57f3-a5cc-fe479b6879b0",
+   "topic": "Variation, Heredity, and DNA",
+   "title": "Variation, Heredity, and DNA: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on variation, heredity, and dna, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 180,
+   "questions": [
+    {
+     "id": "48aaf21d-223a-55ff-b6ff-dc6042560c8e",
+     "key": "bio-vh-01",
+     "stem": "Which of the following is an example of discontinuous variation in humans?",
+     "image_url": null,
+     "explanation": "Discontinuous variation falls into distinct groups with no in-between values: a person is group A, B, AB or O. Continuous variation is measured on a scale and gives a bell-shaped histogram.\n\n**Why the other options are wrong**\n\n- Height: Height varies smoothly from the shortest to the tallest person, so it is continuous variation.\n- Body mass: Body mass can take any value within a range, so it is continuous variation.\n- Skin colour: Skin colour shows a smooth range of shades, so it is continuous variation.",
+     "position": 1,
+     "options": [
+      {
+       "id": "250c8969-e926-548b-b934-e71f34c63dd1",
+       "label": "A",
+       "content": "ABO blood group",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "a49c3de9-0270-5747-89e1-dab70bcb2063",
+       "label": "B",
+       "content": "Height",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "035ecfca-977a-5f5a-92ac-ec44c6ee967f",
+       "label": "C",
+       "content": "Body mass",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d5a684b1-acd7-5e07-a1f0-c82deda53328",
+       "label": "D",
+       "content": "Skin colour",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "69ae5cfa-55b9-54b8-ba3f-07dfe3b90515",
+     "key": "bio-vh-02",
+     "stem": "In a molecule of DNA, the base adenine always pairs with",
+     "image_url": null,
+     "explanation": "The base pairs in DNA are A with T and G with C. Because pairing is fixed, each strand can act as a template for copying the other.\n\n**Why the other options are wrong**\n\n- guanine: Guanine pairs with cytosine.\n- cytosine: Cytosine pairs with guanine.\n- uracil: Uracil is found in RNA, not in DNA.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d69fa785-5382-54dd-9cbd-5997d1aa0291",
+       "label": "A",
+       "content": "thymine",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9b51e829-5ea1-562e-9844-0541baf0ef56",
+       "label": "B",
+       "content": "guanine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "18ea967e-1c49-529c-9ba4-ff040f78d6b8",
+       "label": "C",
+       "content": "cytosine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e5118ef7-d6aa-53d9-acaf-e52727a2bbba",
+       "label": "D",
+       "content": "uracil",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8d113f17-d6f9-5f08-9e17-c3312cccfa8e",
+     "key": "bio-vh-03",
+     "stem": "A gene is best described as",
+     "image_url": null,
+     "explanation": "Genes are lengths of DNA on chromosomes. Each gene has a fixed position (locus), and its alleles give the different forms of the characteristic.\n\n**Why the other options are wrong**\n\n- a whole chromosome: A chromosome carries hundreds or thousands of genes.\n- one of the two strands of the DNA double helix: A strand runs the whole length of the chromosome and includes many genes.\n- a different form of a characteristic, such as tall or short: Different forms of a gene are called alleles.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f1331d44-8898-55f9-a16b-7646cd2a9ccd",
+       "label": "A",
+       "content": "a whole chromosome",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b8ec18f3-c1e1-5afe-8a11-6ae2afe9250f",
+       "label": "B",
+       "content": "one of the two strands of the DNA double helix",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cadb7a5b-a116-52c1-8107-9c8456f741e3",
+       "label": "C",
+       "content": "a section of DNA that carries the instructions for one protein or characteristic",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "78d085ad-9e9b-5ead-8f83-a15ed639e034",
+       "label": "D",
+       "content": "a different form of a characteristic, such as tall or short",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fb89d0db-e01f-5cd0-8ec3-54be6c7a6a42",
+     "key": "bio-vh-04",
+     "stem": "Which of the following could be passed on to a person's children?",
+     "image_url": null,
+     "explanation": "Only changes in the DNA of gametes, or of the cells that make them, can be inherited. This is why Lamarck's idea of inherited acquired characteristics was rejected.\n\n**Why the other options are wrong**\n\n- A scar from an injury: A scar is acquired during life; it does not change the DNA of the gametes.\n- Large muscles built up by exercise: Muscles built by exercise are acquired characteristics, which are not inherited.\n- A mutation in a skin cell: A mutation in a body cell is not in the gametes, so it cannot be passed to children.",
+     "position": 4,
+     "options": [
+      {
+       "id": "fb03b10b-7161-5104-ba53-c12eac292cad",
+       "label": "A",
+       "content": "A scar from an injury",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "868c9b11-cc02-5b63-903f-dd819ffe1fa3",
+       "label": "B",
+       "content": "Large muscles built up by exercise",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "69499d56-8034-5f9a-b823-b3eadb5c2163",
+       "label": "C",
+       "content": "A mutation in a skin cell",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5728ad50-d60d-58c0-8b91-a74e0d8e8560",
+       "label": "D",
+       "content": "A mutation in a cell that forms sperm or eggs",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b6e43b10-48fc-5c05-b868-9c09b77ad7e7",
+     "key": "bio-vh-05",
+     "stem": "Identical twins who grew up in different countries differ in body mass. This difference is caused by",
+     "image_url": null,
+     "explanation": "Identical twins are clones, so any difference between them must come from the environment, such as diet and exercise. Studies of twins show how much a feature depends on genes and how much on surroundings.\n\n**Why the other options are wrong**\n\n- differences in their genes: Identical twins come from one zygote, so their genes are the same.\n- crossing over during meiosis: Crossing over happened before the zygote formed, so both twins received the same result.\n- a different number of chromosomes in each twin: Both twins have 46 chromosomes, the same as all normal human body cells.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ce9ff53d-cfef-5028-ac97-6a92aacf19e7",
+       "label": "A",
+       "content": "their environments, because identical twins have the same genes",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "764526a1-4305-5b6f-aa8d-ff22c9db8687",
+       "label": "B",
+       "content": "differences in their genes",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bee3b3bc-ff91-583f-b5c8-7764aafeb45f",
+       "label": "C",
+       "content": "crossing over during meiosis",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e219e4cb-2e8a-573d-a1bc-60993cffb5b1",
+       "label": "D",
+       "content": "a different number of chromosomes in each twin",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e8def1ac-4742-581c-89fc-11f498c4ac67",
+     "key": "bio-vh-06",
+     "stem": "The DNA molecule has the shape of",
+     "image_url": null,
+     "explanation": "Two strands of sugar and phosphate form the sides of a twisted ladder; pairs of bases joined by weak bonds form the rungs.\n\n**Why the other options are wrong**\n\n- a single straight strand: DNA has two strands, not one, and they are twisted, not straight.\n- a triple helix: DNA has two strands, not three.\n- a flat ring: DNA in human chromosomes is a long twisted ladder, not a ring.",
+     "position": 6,
+     "options": [
+      {
+       "id": "3b25a9e5-c76e-59df-9269-4475d7b13a2f",
+       "label": "A",
+       "content": "a single straight strand",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "09785a64-040f-5c81-b4a6-82d5bf9a65b7",
+       "label": "B",
+       "content": "a triple helix",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e01899ee-be41-53e9-b819-cdfbc3f5d53e",
+       "label": "C",
+       "content": "a double helix",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c798a49a-2951-5c99-82ed-a7f85bbb9752",
+       "label": "D",
+       "content": "a flat ring",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8a5d2d0e-6aba-5cf7-805e-6c56882dcb2d",
+     "key": "bio-vh-07",
+     "stem": "A mutation is",
+     "image_url": null,
+     "explanation": "Mutations happen by chance, more often after exposure to radiation (such as X-rays) or certain chemicals. Most are harmful or have no effect; a few are useful. Sickle-cell anaemia is caused by a mutation in the haemoglobin gene.\n\n**Why the other options are wrong**\n\n- the normal shuffling of genes during meiosis: Shuffling by crossing over and random assortment produces new combinations of existing genes, not new genes.\n- a change in the body caused by exercise or diet: Changes caused by the environment are acquired characteristics, not changes in DNA.\n- the fusion of a sperm and an egg: That is fertilisation.",
+     "position": 7,
+     "options": [
+      {
+       "id": "7be2e741-527f-5ab9-bcea-fe6b028ebbcb",
+       "label": "A",
+       "content": "the normal shuffling of genes during meiosis",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "69efedd9-918c-5acf-b23e-adfa623df31c",
+       "label": "B",
+       "content": "a change in the body caused by exercise or diet",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "43b78dbb-7c76-576b-a39b-9dd70ff59926",
+       "label": "C",
+       "content": "the fusion of a sperm and an egg",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fe620477-0a02-5b41-8144-67eab8ae747c",
+       "label": "D",
+       "content": "a sudden change in the DNA of a gene or chromosome",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6c065e86-d3a4-5aad-af75-842964dc6c1e",
+   "topic": "Evolution and Natural Selection",
+   "title": "Evolution and Natural Selection: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on evolution and natural selection, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 181,
+   "questions": [
+    {
+     "id": "7519e9c3-c569-5dc7-887e-4eb856f1acba",
+     "key": "bio-ev-01",
+     "stem": "The theory of evolution by natural selection was put forward by",
+     "image_url": null,
+     "explanation": "Darwin and Wallace published the idea of natural selection together in 1858; Darwin's book On the Origin of Species followed in 1859.\n\n**Why the other options are wrong**\n\n- Jean-Baptiste Lamarck: Lamarck suggested that characteristics acquired by use and disuse are inherited, an idea now rejected.\n- Gregor Mendel: Mendel worked out the laws of inheritance by breeding pea plants.\n- Carl Linnaeus: Linnaeus devised the system of binomial names for classifying organisms.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a907412d-9455-5c7c-9728-b8ff57ae1273",
+       "label": "A",
+       "content": "Charles Darwin and Alfred Russel Wallace",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "201805d1-8b6c-56ac-9a5c-fb0023ff4072",
+       "label": "B",
+       "content": "Jean-Baptiste Lamarck",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a4a9959a-afea-549e-ac93-da13ec7aa278",
+       "label": "C",
+       "content": "Gregor Mendel",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "68e926e8-8b64-5c7a-9e10-ab7bd90864cb",
+       "label": "D",
+       "content": "Carl Linnaeus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f037cf4e-934d-55a0-a051-ac6e22dd6381",
+     "key": "bio-ev-02",
+     "stem": "According to Lamarck, giraffes came to have long necks because",
+     "image_url": null,
+     "explanation": "Lamarck believed that use and disuse change a body during its life and that these acquired changes are inherited. Acquired characteristics do not change the DNA of the gametes, so they are not inherited.\n\n**Why the other options are wrong**\n\n- giraffes born with longer necks survived better and had more young: This is Darwin's explanation, by natural selection.\n- a single mutation produced long necks in one generation: Neither Lamarck nor Darwin explained it this way.\n- giraffes were created with long necks and have never changed: This is the idea of special creation, which both Lamarck and Darwin rejected.",
+     "position": 2,
+     "options": [
+      {
+       "id": "070a9fb9-a34f-538d-bcae-7757e1bb21a6",
+       "label": "A",
+       "content": "giraffes born with longer necks survived better and had more young",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a76cf58b-4a6c-5e30-9702-aed1873a4f59",
+       "label": "B",
+       "content": "a single mutation produced long necks in one generation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "992be02f-bb54-5ed5-b91c-b65ddaa02981",
+       "label": "C",
+       "content": "each generation stretched its neck to reach leaves and passed the longer neck on",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6313c428-df28-5e66-b193-895dadf02deb",
+       "label": "D",
+       "content": "giraffes were created with long necks and have never changed",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1d7a31fc-06b3-5303-ae5c-2c6774bbd214",
+     "key": "bio-ev-03",
+     "stem": "When an antibiotic is used carelessly, bacteria that resist it become common. This is because",
+     "image_url": null,
+     "explanation": "This is natural selection happening now: the antibiotic kills the bacteria without the resistance gene, and the survivors pass it on to all their offspring. Finishing every course of antibiotics helps to slow it.\n\n**Why the other options are wrong**\n\n- the antibiotic makes the bacteria become resistant: Resistance comes from random mutations that already exist; the antibiotic only selects them.\n- the bacteria learn how to resist the antibiotic: Bacteria cannot learn; resistance is inherited from the parent cell.\n- the patient's body becomes used to the antibiotic: It is the bacteria, not the patient, that become resistant.",
+     "position": 3,
+     "options": [
+      {
+       "id": "62259dfe-cccd-513f-a7d4-409a3032fa64",
+       "label": "A",
+       "content": "the antibiotic makes the bacteria become resistant",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e7621d07-2891-5a3c-9bea-26194d933b9a",
+       "label": "B",
+       "content": "the bacteria learn how to resist the antibiotic",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c3632b44-70d2-547d-880b-95fe2aab3eea",
+       "label": "C",
+       "content": "the patient's body becomes used to the antibiotic",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b469291a-ecef-5f9b-895f-47ad8e687d88",
+       "label": "D",
+       "content": "resistant bacteria survive and multiply, while the others are killed",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "376afa51-5195-529c-b607-fc0630439a38",
+     "key": "bio-ev-04",
+     "stem": "The forelimbs of a human, a bat and a whale contain the same basic set of bones but are used for grasping, flying and swimming. Such limbs are",
+     "image_url": null,
+     "explanation": "The five-fingered (pentadactyl) limb of mammals, birds, reptiles and amphibians has the same bones in each, changed in shape for different uses. This is evidence that they evolved from a common ancestor.\n\n**Why the other options are wrong**\n\n- analogous structures, which suggest a common ancestor: Analogous structures do the same job but are built differently, like the wings of a bird and an insect; they do not show common ancestry.\n- vestigial structures that no longer have any use: These limbs are fully used; a vestigial structure is reduced and has little or no function, like the human appendix.\n- analogous structures that evolved separately for the same job: The three limbs do different jobs, and their shared plan of bones shows they did not evolve separately.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1992731a-0590-53d6-81f6-0f2577199136",
+       "label": "A",
+       "content": "homologous structures, which suggest a common ancestor",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e4da2785-5297-5319-9a80-5cd64ba633a7",
+       "label": "B",
+       "content": "analogous structures, which suggest a common ancestor",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a843775c-54fa-53ff-aad1-88fdf881a943",
+       "label": "C",
+       "content": "vestigial structures that no longer have any use",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7330fbff-4173-5255-b06e-6530c159b8a2",
+       "label": "D",
+       "content": "analogous structures that evolved separately for the same job",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "89a30dce-47eb-52b6-a9b0-694ee0285d0c",
+     "key": "bio-ev-05",
+     "stem": "Fossils found in deeper (older) layers of rock are generally",
+     "image_url": null,
+     "explanation": "Rock layers are laid down one on top of another, so deeper layers are older. The fossil record shows living things becoming more varied and complex over time.\n\n**Why the other options are wrong**\n\n- more complex than those found in upper layers: The older the rock, the simpler the fossils usually are; complex forms appear later.\n- always of species that are still alive today: Many fossils in old rocks are of species that are now extinct.\n- exactly the same as those found in upper layers: The fossils change from layer to layer, which is the evidence for evolution.",
+     "position": 5,
+     "options": [
+      {
+       "id": "4b381882-1d53-5684-8daa-f9e32893dec7",
+       "label": "A",
+       "content": "more complex than those found in upper layers",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "83e80cc7-aaca-5349-98e7-b02532d2b685",
+       "label": "B",
+       "content": "simpler than those found in upper (younger) layers",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7f3c97ba-9f79-5a6a-8b15-aea29f33f2ed",
+       "label": "C",
+       "content": "always of species that are still alive today",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4f4ef8f0-3d1a-51c6-9526-7e31605d5ca0",
+       "label": "D",
+       "content": "exactly the same as those found in upper layers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "df0f0342-36e0-578a-93df-084dfd4c7d35",
+     "key": "bio-ev-06",
+     "stem": "In natural selection, 'the fittest' are the organisms that",
+     "image_url": null,
+     "explanation": "Fitness means success in surviving and reproducing in a particular environment. The fittest pass on more of their alleles, so their features become more common.\n\n**Why the other options are wrong**\n\n- are the strongest and largest: A small, well-camouflaged animal may be fitter than a large, conspicuous one; fitness depends on the environment.\n- exercise the most during their lives: Exercise does not change the genes passed to offspring.\n- live longest, even if they do not reproduce: An organism that leaves no offspring passes on none of its genes, however long it lives.",
+     "position": 6,
+     "options": [
+      {
+       "id": "1121fae9-6197-58ea-82bc-8cb371bf7649",
+       "label": "A",
+       "content": "are the strongest and largest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2dfc27f2-6fca-5991-909e-615e6c5f8d0d",
+       "label": "B",
+       "content": "exercise the most during their lives",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0e99adf7-9786-5fc5-a08c-3d863d0de774",
+       "label": "C",
+       "content": "are best suited to their environment, so they survive and leave the most offspring",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "612eddb3-e17e-572a-8f43-f86d958f65f8",
+       "label": "D",
+       "content": "live longest, even if they do not reproduce",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5cf69e4d-c05f-5d39-9748-40000fa6bd1a",
+     "key": "bio-ev-07",
+     "stem": "Natural selection can take place only if",
+     "image_url": null,
+     "explanation": "Darwin's argument: organisms overproduce; there is a struggle for existence; individuals vary; the best suited survive and breed; their inherited features become more common.\n\n**Why the other options are wrong**\n\n- all the individuals of a population are identical: If all were identical, none would be better suited than the others, so there would be nothing to select.\n- organisms produce only as many young as can survive: Darwin pointed out that organisms produce more young than can survive, which causes the struggle for existence.\n- acquired characteristics are passed to the offspring: Acquired characteristics are not inherited; natural selection works on inherited variation.",
+     "position": 7,
+     "options": [
+      {
+       "id": "1206dc56-d8f8-5698-8e2b-8269e69560fc",
+       "label": "A",
+       "content": "all the individuals of a population are identical",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e39a00f3-9f92-5608-ae81-2dd390baea80",
+       "label": "B",
+       "content": "organisms produce only as many young as can survive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "776844ee-394a-5027-b0a5-b184caf257f4",
+       "label": "C",
+       "content": "acquired characteristics are passed to the offspring",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "03fbb075-2e2b-5200-baf3-44b6c3a15d8b",
+       "label": "D",
+       "content": "the individuals of a population vary, and some of the variation is inherited",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f41dc512-aa02-53ba-bbb8-ff8336ca10b2",
+   "topic": "Introduction to Ecology",
+   "title": "Introduction to Ecology: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on introduction to ecology, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 182,
+   "questions": [
+    {
+     "id": "90195a8d-7384-50ab-896d-a6219fd14c34",
+     "key": "bio-ie-01",
+     "stem": "The role of an organism in its community, including what it feeds on and how it interacts with other organisms, is its",
+     "image_url": null,
+     "explanation": "Two species cannot share exactly the same niche for long: one will out-compete the other.\n\n**Why the other options are wrong**\n\n- habitat: The habitat is the place where an organism lives, its 'address'; the niche is its 'job'.\n- population: A population is all the members of one species in an area.\n- community: A community is all the populations of different species living in an area.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b533d584-9b70-5efe-98f0-661ef80d2401",
+       "label": "A",
+       "content": "niche",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "682c5538-91e5-5dd8-8a9e-82209043925e",
+       "label": "B",
+       "content": "habitat",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e111bd64-b044-5f22-b555-82bab3685e4c",
+       "label": "C",
+       "content": "population",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a5ab59e-0d4b-5a02-a7fb-fa994d2e1f51",
+       "label": "D",
+       "content": "community",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "10ef6f0b-124a-5733-83e8-16e697013e27",
+     "key": "bio-ie-02",
+     "stem": "All the tilapia living in a fish pond make up",
+     "image_url": null,
+     "explanation": "A population is a group of organisms of one species living in the same place at the same time.\n\n**Why the other options are wrong**\n\n- a community: A community would include every species in the pond: the fish, plants, insects and microorganisms.\n- an ecosystem: An ecosystem is the whole community together with the water, mud and other non-living parts of the pond.\n- a habitat: The pond itself is the habitat of the tilapia.",
+     "position": 2,
+     "options": [
+      {
+       "id": "92144a5a-f889-56d0-b8ba-b0c53667f412",
+       "label": "A",
+       "content": "a community",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7df2d429-c825-565d-9d1e-b7ab72e3daf1",
+       "label": "B",
+       "content": "a population",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "79d66f32-9223-5374-a8d8-921ed9d4adbb",
+       "label": "C",
+       "content": "an ecosystem",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "05b4fa66-7f11-5b5b-b46b-a25eaf8c03bc",
+       "label": "D",
+       "content": "a habitat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ff048fd3-c5f8-5b43-aa87-863d0779414d",
+     "key": "bio-ie-03",
+     "stem": "Which instrument is used to measure the relative humidity of the air?",
+     "image_url": null,
+     "explanation": "A wet-and-dry bulb hygrometer compares two thermometers. The drier the air, the faster water evaporates from the wet bulb and the bigger the difference between the readings.\n\n**Why the other options are wrong**\n\n- Anemometer: An anemometer measures wind speed.\n- Rain gauge: A rain gauge measures the amount of rainfall.\n- Wind vane: A wind vane shows the direction the wind is blowing from.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e6d28289-2e0f-5492-a1d5-e2df0216c4fe",
+       "label": "A",
+       "content": "Anemometer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "36cb2018-1982-54b3-9a6b-903c65394adc",
+       "label": "B",
+       "content": "Rain gauge",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0e21fe56-19f1-5a64-91c3-e4c9d574328d",
+       "label": "C",
+       "content": "Hygrometer",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6c496c01-775d-5da8-a0c0-5cd3aeb95a16",
+       "label": "D",
+       "content": "Wind vane",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a9a9fa21-ec89-563b-848c-384e4b6ea767",
+     "key": "bio-ie-04",
+     "stem": "Which of the following is an edaphic (soil) factor?",
+     "image_url": null,
+     "explanation": "Edaphic factors are the properties of the soil: its texture, water content, air content, humus, mineral salts and pH.\n\n**Why the other options are wrong**\n\n- Light intensity: Light intensity is a climatic factor.\n- Wind speed: Wind speed is a climatic factor.\n- Predation: Predation is a biotic factor, caused by living organisms.",
+     "position": 4,
+     "options": [
+      {
+       "id": "dcc35314-5a06-5182-a59a-388df5472336",
+       "label": "A",
+       "content": "Light intensity",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "72542f76-cf97-51be-942d-7aeb07eea9dc",
+       "label": "B",
+       "content": "Wind speed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a171bbf9-defe-5b19-9d1e-3b9746b711fc",
+       "label": "C",
+       "content": "Predation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9779efc5-b555-5d5b-a0d5-8f0a70c710e8",
+       "label": "D",
+       "content": "Soil pH",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "699f7720-7cfa-5a7c-91a3-51a1a127b39f",
+     "key": "bio-ie-05",
+     "stem": "Plants on the floor of a tropical rainforest often have broad, thin, dark green leaves. This is mainly an adaptation to",
+     "image_url": null,
+     "explanation": "Little light gets through the layers of trees, so broad leaves with plenty of chlorophyll trap as much as possible.\n\n**Why the other options are wrong**\n\n- strong winds at ground level: The tall trees shelter the forest floor, so the wind there is light.\n- very high temperatures on the forest floor: The forest floor is shaded and cooler than the open land outside.\n- dry soil: Rainforest soil is usually moist; broad, thin leaves would lose too much water in dry places.",
+     "position": 5,
+     "options": [
+      {
+       "id": "823a98d3-0c45-5be2-a227-92c821a357b3",
+       "label": "A",
+       "content": "the low light intensity beneath the canopy",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4395dda0-8f3e-59f2-82b8-0921131386d0",
+       "label": "B",
+       "content": "strong winds at ground level",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d605c5f2-c10c-5417-85e9-b4220b38756a",
+       "label": "C",
+       "content": "very high temperatures on the forest floor",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d05838e2-3922-5801-ba47-b7242ecb8048",
+       "label": "D",
+       "content": "dry soil",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "53a01e4f-75b8-563e-a3f0-655bda90a454",
+     "key": "bio-ie-06",
+     "stem": "The mangrove swamps along the coast of Sierra Leone, where rivers meet the sea, are an example of",
+     "image_url": null,
+     "explanation": "In an estuary, the salt content changes with the tides, the mud is waterlogged and short of oxygen, and organisms must tolerate these changes.\n\n**Why the other options are wrong**\n\n- a freshwater habitat: Mangrove water is a mixture of fresh river water and salty sea water.\n- a terrestrial savanna habitat: Savanna is grassland on dry land, not a waterlogged swamp.\n- an open-ocean habitat: Mangroves grow on muddy shores and in estuaries, not in the open sea.",
+     "position": 6,
+     "options": [
+      {
+       "id": "507e9fc1-2354-5a13-b48b-61351a997ef0",
+       "label": "A",
+       "content": "a freshwater habitat",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dfcf5548-3efc-53cb-a3f8-1b417ff6c9c5",
+       "label": "B",
+       "content": "an estuarine (brackish water) habitat",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "64b54efb-0bfe-5d6a-9b6b-cf164bea2d0d",
+       "label": "C",
+       "content": "a terrestrial savanna habitat",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "382a4cd5-6142-5a14-8ac4-d7c09b2726a4",
+       "label": "D",
+       "content": "an open-ocean habitat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8670c9a1-c052-5f6b-81b2-d6e539017acc",
+     "key": "bio-ie-07",
+     "stem": "Which of the following is a biotic factor affecting a population of grasshoppers in a grassland?",
+     "image_url": null,
+     "explanation": "Biotic factors come from living things: predators, prey, competitors, parasites and disease organisms.\n\n**Why the other options are wrong**\n\n- Temperature: Temperature is a non-living (abiotic) factor.\n- Rainfall: Rainfall is a non-living (abiotic) factor.\n- Soil type: Soil type is a non-living (abiotic, edaphic) factor.",
+     "position": 7,
+     "options": [
+      {
+       "id": "7a51ddc7-1dc3-5ee9-9d1a-fc0705a9b14d",
+       "label": "A",
+       "content": "Temperature",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d6cbe1a3-4b25-55d8-a7c4-24edaf542a21",
+       "label": "B",
+       "content": "Rainfall",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3c34427b-a713-581e-90a9-c53c77043788",
+       "label": "C",
+       "content": "Birds that feed on the grasshoppers",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "34448cca-62c7-5734-b957-4aa364996cd9",
+       "label": "D",
+       "content": "Soil type",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "299e0236-5e5c-5613-81d8-d30ce5195468",
+   "topic": "Food Chains and Food Webs",
+   "title": "Food Chains and Food Webs: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on food chains and food webs, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 183,
+   "questions": [
+    {
+     "id": "9919545c-36df-5544-a92f-e781bd0a2f7c",
+     "key": "bio-fw-01",
+     "stem": "The diagram shows a food web. If all the toads were removed, which population would most likely increase first?",
+     "image_url": "https://wasscetutor.com/questions/biology/bio-fw-01.svg?v=0723407e65",
+     "explanation": "Toads eat grasshoppers. With no toads, fewer grasshoppers are eaten, so their population rises. This shows how a change in one population spreads through a food web.\n\n**Why the other options are wrong**\n\n- Snake: The snake loses one of its foods, the toad, so its numbers are more likely to fall than rise.\n- Grass: With fewer toads, more grasshoppers survive and eat more grass, so the grass is likely to decrease.\n- Hawk: The hawk gains nothing directly; fewer snakes may mean less food for it.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8880cbed-e6c8-56fd-811e-6bd92cd0d37d",
+       "label": "A",
+       "content": "Snake",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b6967c84-6a52-5d2b-a5fe-ad415267c960",
+       "label": "B",
+       "content": "Grass",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d5cb10a6-14e5-5208-9845-087af9ca5b7b",
+       "label": "C",
+       "content": "Hawk",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1da1f838-8b8d-5fe3-80ca-cd71c3197f3e",
+       "label": "D",
+       "content": "Grasshopper",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "77f5f7d4-3ca5-5cd7-bcca-1de7e85a97e2",
+     "key": "bio-fw-02",
+     "stem": "In the food web shown, how many food chains include the toad?",
+     "image_url": "https://wasscetutor.com/questions/biology/bio-fw-02.svg?v=0723407e65",
+     "explanation": "The toad is eaten only by the snake, and the snake only by the hawk. The chains are grass → grasshopper → toad → snake → hawk and maize → grasshopper → toad → snake → hawk: 2 chains.\n\n**Why the other options are wrong**\n\n- 1: The grasshopper eats both grass and maize, so there is a chain through the toad starting from each producer.\n- 3: Three would wrongly add the chain maize → rat → snake → hawk, which passes through the snake but not the toad.\n- 4: Four is the number of chains through the grasshopper, which also counts the two that go through the lizard.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8ab7037f-b046-5c20-963b-c5bd76018e7c",
+       "label": "A",
+       "content": "1",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f2d9be3c-83df-5805-9fed-8727aea56790",
+       "label": "B",
+       "content": "2",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cfc4dc09-429e-5c89-bb82-9dfd07955077",
+       "label": "C",
+       "content": "3",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8962e0a9-c4b7-5f55-8333-a6d22b7c5a49",
+       "label": "D",
+       "content": "4",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "49153b8c-8ce5-5906-b3dd-a3e867421cc5",
+     "key": "bio-fw-03",
+     "stem": "In the food chain grass → grasshopper → lizard, the grass traps 20 000 kJ of energy. If about 10% of the energy at one level passes to the next, how much energy reaches the lizards?",
+     "image_url": null,
+     "explanation": "Grasshoppers: 10% of 20 000 = 2000 kJ. Lizards: 10% of 2000 = 200 kJ.\n\n**Why the other options are wrong**\n\n- 20 kJ: This takes 10% three times; there are only two transfers, grass to grasshopper and grasshopper to lizard.\n- 2000 kJ: This is the energy in the grasshoppers, after only one transfer.\n- 18 000 kJ: This takes away 10% instead of keeping 10%; about 90% is lost at each step.",
+     "position": 3,
+     "options": [
+      {
+       "id": "956bb951-2f71-568a-8fef-9fb81211ea8d",
+       "label": "A",
+       "content": "20 kJ",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "69c99dee-524c-51b7-ae38-b7f55a04ec3a",
+       "label": "B",
+       "content": "200 kJ",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bdf648e9-05fc-552a-a542-2dca270fd757",
+       "label": "C",
+       "content": "2000 kJ",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e25404f3-11de-5fbc-9a6c-201582f8ae32",
+       "label": "D",
+       "content": "18 000 kJ",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5a1d3ca6-cbe5-5430-8ca2-858b86c85552",
+     "key": "bio-fw-04",
+     "stem": "Why is only a small part of the energy at one trophic level passed on to the next?",
+     "image_url": null,
+     "explanation": "At each level energy is used in respiration (and lost as heat), and lost in uneaten parts such as roots and bones, and in faeces and urine. Only about 10% is built into the next level's bodies.\n\n**Why the other options are wrong**\n\n- Energy is destroyed at each level: Energy cannot be destroyed; it is changed into heat that escapes from the food chain.\n- Plants keep all the energy they trap: Plants use some energy themselves, but herbivores do get the energy in the parts they eat.\n- Predators eat only the smallest prey: The size of prey does not explain the loss; respiration and waste do.",
+     "position": 4,
+     "options": [
+      {
+       "id": "9a7f7af8-f696-54f5-b35c-d3a9733127c5",
+       "label": "A",
+       "content": "Most is lost as heat from respiration, and some parts are not eaten or digested",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d438d850-cd00-53fc-95ed-be0988d18a28",
+       "label": "B",
+       "content": "Energy is destroyed at each level",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "071725b8-8529-5d32-b1c9-e8562a572663",
+       "label": "C",
+       "content": "Plants keep all the energy they trap",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "946708d8-84d6-59b7-b66d-7ea251d96058",
+       "label": "D",
+       "content": "Predators eat only the smallest prey",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e00cd2f1-e06e-5f26-9d28-6200951653f9",
+     "key": "bio-fw-05",
+     "stem": "Which food chain would give the pyramid of numbers shown?",
+     "image_url": "https://wasscetutor.com/questions/biology/bio-fw-05.svg?v=25b308373a",
+     "explanation": "One large tree (the narrow bottom bar) can feed thousands of caterpillars (the wide middle bar), which feed a smaller number of birds. Pyramids of numbers are inverted at the base when the producer is large.\n\n**Why the other options are wrong**\n\n- Grass → grasshoppers → toads: Grass plants are very numerous, so this pyramid would have the widest bar at the bottom.\n- Phytoplankton → zooplankton → small fish: Phytoplankton are countless tiny producers, so the bottom bar would be the widest.\n- Grass → cattle → ticks: Grass would make a wide bottom bar and the few cattle a narrow middle bar, the opposite of the diagram.",
+     "position": 5,
+     "options": [
+      {
+       "id": "87f52422-35ab-537d-996a-56258c51254c",
+       "label": "A",
+       "content": "Grass → grasshoppers → toads",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7193e2a5-29de-553a-a9a8-712c54665dac",
+       "label": "B",
+       "content": "Mango tree → caterpillars → birds",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c250ac75-d68d-55f0-91f7-d96c93e805b8",
+       "label": "C",
+       "content": "Phytoplankton → zooplankton → small fish",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9d148256-aa64-593c-af78-1ab31cdde0e2",
+       "label": "D",
+       "content": "Grass → cattle → ticks",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7961ba19-d5f7-5107-8dd3-765b8af4f3e5",
+     "key": "bio-fw-06",
+     "stem": "In the food chain phytoplankton → zooplankton → small fish → kingfisher, the kingfisher is the",
+     "image_url": null,
+     "explanation": "Count the feeding steps: producer (phytoplankton), primary consumer (zooplankton), secondary consumer (small fish), tertiary consumer (kingfisher).\n\n**Why the other options are wrong**\n\n- secondary consumer: The secondary consumer is the small fish, which eats the zooplankton.\n- primary consumer: The primary consumer is the zooplankton, which eats the producer.\n- producer: The producer is the phytoplankton, which makes food by photosynthesis.",
+     "position": 6,
+     "options": [
+      {
+       "id": "5bb1ee9a-bce2-50e4-ae67-7ec3c8ea5a28",
+       "label": "A",
+       "content": "secondary consumer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "341c2ceb-fca8-5dcc-b731-08e823db1d1d",
+       "label": "B",
+       "content": "primary consumer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c93123d9-9342-5ab4-b6ab-f27847e97bb4",
+       "label": "C",
+       "content": "tertiary consumer",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a8c73e4a-b9bd-5d96-a716-53632f52e89a",
+       "label": "D",
+       "content": "producer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bbdad1f0-c542-5347-8102-e37fb84831fd",
+     "key": "bio-fw-07",
+     "stem": "A pyramid of energy is never inverted (upside down) because",
+     "image_url": null,
+     "explanation": "A pyramid of energy shows the energy flowing through each level. Since about 90% is lost at each step, each bar must be smaller than the one beneath it.\n\n**Why the other options are wrong**\n\n- each level always has fewer organisms than the level below: Numbers can be larger at a higher level, as when one tree feeds many caterpillars; that is why pyramids of numbers can be inverted.\n- organisms at higher levels are always smaller: Organisms at higher levels are often larger, like a hawk compared with a grasshopper.\n- decomposers are always placed at the top: Decomposers feed on dead matter from every level; they are not the top of a pyramid of energy.",
+     "position": 7,
+     "options": [
+      {
+       "id": "6f9f6ee5-f88f-5b38-829e-855d57d56028",
+       "label": "A",
+       "content": "each level always has fewer organisms than the level below",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "34c422c1-77ee-571f-b219-23814f904f38",
+       "label": "B",
+       "content": "organisms at higher levels are always smaller",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "42081059-b658-5c29-85a5-adcd9b124d85",
+       "label": "C",
+       "content": "decomposers are always placed at the top",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1e9bf510-2f90-5304-a1a5-921bf80402c0",
+       "label": "D",
+       "content": "energy is lost at every level, so each level always has less energy than the one below",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1439026d-854b-5520-a2da-a355870e3c20",
+     "key": "bio-fw-08",
+     "stem": "Food chains rarely have more than four or five links because",
+     "image_url": null,
+     "explanation": "With about 10% passed on at each step, a fifth level would receive only about 0.01% of the energy trapped by the producers: too little to support a population.\n\n**Why the other options are wrong**\n\n- top carnivores are too large to be eaten: Size is not the reason: many top carnivores are small, like a kingfisher.\n- there are never enough species in a habitat: Most habitats contain many species; the limit is energy, not the number of species.\n- decomposers eat all the top carnivores: Decomposers break down dead organisms from every level; they do not limit the length of chains.",
+     "position": 8,
+     "options": [
+      {
+       "id": "fc29db80-4c00-55f8-a111-1dd8f088f46d",
+       "label": "A",
+       "content": "too little energy is left at the top to support another trophic level",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "962e98fc-21ff-5640-bb33-39ab663dbbee",
+       "label": "B",
+       "content": "top carnivores are too large to be eaten",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1eac2424-3c15-5ea7-98e7-30c06c1937b9",
+       "label": "C",
+       "content": "there are never enough species in a habitat",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "99a98a63-7b49-5fca-865d-a48b737f12be",
+       "label": "D",
+       "content": "decomposers eat all the top carnivores",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c2125c90-ed87-5935-9b67-ada437425ee4",
+   "topic": "Population Ecology",
+   "title": "Population Ecology: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on population ecology, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 184,
+   "questions": [
+    {
+     "id": "d0cd6014-407c-549d-b2f7-356c1d75877c",
+     "key": "bio-pe-01",
+     "stem": "The graph shows the growth of a population of yeast in a flask over time. At which point is the population increasing most rapidly?",
+     "image_url": "https://wasscetutor.com/questions/biology/bio-pe-01.svg?v=6b39ab1173",
+     "explanation": "The steepest part of the curve, B, is the exponential (log) phase: there is plenty of food and space, so the number of individuals doubles regularly.\n\n**Why the other options are wrong**\n\n- A: At A, the lag phase, the yeast are only beginning to multiply, so numbers rise slowly.\n- C: At C, the growth is slowing as food runs short and wastes build up.\n- D: At D the curve is flat: the numbers are no longer increasing.",
+     "position": 1,
+     "options": [
+      {
+       "id": "e46d9e8a-771f-521e-8fa9-ec8497192219",
+       "label": "A",
+       "content": "A",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bfddd909-5ceb-515a-94c6-9e424eacf628",
+       "label": "B",
+       "content": "B",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "06609a07-5c78-5d08-84d3-0d30e92da15d",
+       "label": "C",
+       "content": "C",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "233493ff-89e1-507b-866d-1cdeb512f83f",
+       "label": "D",
+       "content": "D",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d642c6bb-964e-5716-a517-c12443892f6a",
+     "key": "bio-pe-02",
+     "stem": "The graph shows the growth of a population over time. At which point has the population reached the carrying capacity of its environment?",
+     "image_url": "https://wasscetutor.com/questions/biology/bio-pe-02.svg?v=6b39ab1173",
+     "explanation": "The carrying capacity is the largest population the environment can support for a long time. At D the birth rate equals the death rate, so the curve levels off.\n\n**Why the other options are wrong**\n\n- A: At A the population is still small and has hardly begun to grow.\n- B: At B the population is growing fastest; it has not yet reached its limit.\n- C: At C growth is slowing, but the population is still increasing.",
+     "position": 2,
+     "options": [
+      {
+       "id": "562030ad-847d-5cf0-ae27-1c3cb00b3235",
+       "label": "A",
+       "content": "A",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0550f334-3aed-5f62-be72-6c16fa112630",
+       "label": "B",
+       "content": "B",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d530f638-cace-5750-8096-ab42693b1b47",
+       "label": "C",
+       "content": "C",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "357ba061-4d76-550b-ba3b-bc223e82be40",
+       "label": "D",
+       "content": "D",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a0c26218-036b-5f8d-bf46-c9c21764f23a",
+     "key": "bio-pe-03",
+     "stem": "To estimate the number of snails in a garden, 40 snails were caught, marked and released. A week later 50 snails were caught, and 10 of them were marked. What is the estimated population?",
+     "image_url": null,
+     "explanation": "Capture–recapture (Lincoln index): N = (first catch × second catch) ÷ number marked in the second catch = (40 × 50) ÷ 10 = 200.\n\n**Why the other options are wrong**\n\n- 8: This works out 40 × 10 ÷ 50: the numbers are put in the wrong places.\n- 90: This simply adds the two catches, 40 + 50.\n- 2000: This multiplies 40 by 50 but forgets to divide by the 10 marked snails.",
+     "position": 3,
+     "options": [
+      {
+       "id": "08181a3a-937f-5f49-a9fb-c1aedad9d899",
+       "label": "A",
+       "content": "8",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7fb9b700-11f8-5971-b854-4d7b2b69360a",
+       "label": "B",
+       "content": "90",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4bd90918-ee88-5fb6-8ec3-f35c4625161a",
+       "label": "C",
+       "content": "200",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "53099ac6-3449-5b7f-a447-dfaca5ad31b7",
+       "label": "D",
+       "content": "2000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3c2d1ed7-9244-5957-ab48-c4253404a942",
+     "key": "bio-pe-04",
+     "stem": "A farmer counts 240 cassava plants on a plot 20 m long and 6 m wide. What is the population density of the cassava?",
+     "image_url": null,
+     "explanation": "Area = 20 × 6 = 120 m². Density = number ÷ area = 240 ÷ 120 = 2 plants per m².\n\n**Why the other options are wrong**\n\n- 0.5 plants per m²: This divides the area by the number of plants (120 ÷ 240), which is the wrong way round.\n- 12 plants per m²: This divides by the length only (240 ÷ 20) instead of by the area.\n- 40 plants per m²: This divides by the width only (240 ÷ 6) instead of by the area.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1f8d5277-9438-5e57-94ed-90b16b60170f",
+       "label": "A",
+       "content": "0.5 plants per m²",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "84146e87-b92a-59d0-9a65-c0aacca6e881",
+       "label": "B",
+       "content": "2 plants per m²",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e4187b73-c915-5e9f-bcb7-1ebf430880d7",
+       "label": "C",
+       "content": "12 plants per m²",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "97808269-bec6-5664-851a-6302467242aa",
+       "label": "D",
+       "content": "40 plants per m²",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7d09baa5-0f29-56d7-b669-2f9272850ec0",
+     "key": "bio-pe-05",
+     "stem": "A student throws a quadrat at random ten times to estimate the number of a weed on the school field. Why are the quadrats placed at random?",
+     "image_url": null,
+     "explanation": "Random sampling avoids bias. The mean number per quadrat is then multiplied up to the area of the whole field.\n\n**Why the other options are wrong**\n\n- So that the quadrat lands only where the weed is thickest: Choosing the thickest patches would overestimate the population.\n- So that fewer plants need to be counted: Random placing does not reduce the counting; using samples does.\n- So that every plant on the field is counted: Sampling is used precisely because counting every plant would take too long.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a3454176-5c65-5391-822b-2c594ad3f07d",
+       "label": "A",
+       "content": "So that the quadrat lands only where the weed is thickest",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "78ecc7f0-c11d-52ea-ac8f-f34c3c145210",
+       "label": "B",
+       "content": "So that the samples represent the whole field without bias",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "cfc635d3-17a6-5fab-904f-5954fe23f5f0",
+       "label": "C",
+       "content": "So that fewer plants need to be counted",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "61cd136d-92b4-51f1-94a0-e323f692762a",
+       "label": "D",
+       "content": "So that every plant on the field is counted",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b317dbdc-e075-5df2-96af-cfed96955862",
+     "key": "bio-pe-06",
+     "stem": "Which factor limits a population more strongly as the population becomes more crowded?",
+     "image_url": null,
+     "explanation": "Density-dependent factors, such as competition, predation, disease and the build-up of wastes, become stronger as numbers rise, and so keep a population near its carrying capacity.\n\n**Why the other options are wrong**\n\n- A sudden flood: A flood kills animals whatever the population size: it is density-independent.\n- A bush fire: A bush fire affects a population whatever its density: it is density-independent.\n- A long drought: A drought affects a population whatever its density: it is density-independent.",
+     "position": 6,
+     "options": [
+      {
+       "id": "92aec7b9-2275-56d5-a4e8-8985b47ca156",
+       "label": "A",
+       "content": "A sudden flood",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "38ad3241-d2f2-51bb-a917-f04fc3b84f74",
+       "label": "B",
+       "content": "A bush fire",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d5feee9c-660d-525d-895e-83eb395c7a4e",
+       "label": "C",
+       "content": "Competition for food",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c62f89c8-4c43-5cc6-9e4e-a7ab032ab2d8",
+       "label": "D",
+       "content": "A long drought",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bbe65bd0-54c5-55a0-89b6-be66b4704f97",
+     "key": "bio-pe-07",
+     "stem": "The size of a population will increase when",
+     "image_url": null,
+     "explanation": "Change in population = (births + immigration) − (deaths + emigration).\n\n**Why the other options are wrong**\n\n- deaths are greater than births, with no migration: More deaths than births makes the population fall.\n- births equal deaths and there is no migration: Then the population stays the same size.\n- emigration is greater than immigration, and births equal deaths: More individuals leaving than arriving makes the population fall.",
+     "position": 7,
+     "options": [
+      {
+       "id": "dbefa041-547a-5f71-ae58-adef6ee9ce1f",
+       "label": "A",
+       "content": "deaths are greater than births, with no migration",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "593b02a0-5fc4-5574-9517-2b89f76c04c0",
+       "label": "B",
+       "content": "births equal deaths and there is no migration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "63148853-b287-5687-9695-a01571aadc44",
+       "label": "C",
+       "content": "emigration is greater than immigration, and births equal deaths",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ad12ef52-cbcd-54ea-8e61-a0cc083c218c",
+       "label": "D",
+       "content": "births and immigration together are greater than deaths and emigration together",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c646e67c-3fb4-5a63-bef9-6729bd23c7e1",
+     "key": "bio-pe-08",
+     "stem": "Which change has done most to cause the rapid growth of the world's human population over the last 200 years?",
+     "image_url": null,
+     "explanation": "Vaccines, antibiotics, clean water and more food let far more children survive. With birth rates still high in many countries, the population grew rapidly.\n\n**Why the other options are wrong**\n\n- A fall in the birth rate: A falling birth rate slows population growth; it does not speed it up.\n- An increase in emigration: Moving from one country to another does not change the world's population.\n- More frequent famines: Famines raise the death rate and reduce the population.",
+     "position": 8,
+     "options": [
+      {
+       "id": "ce428261-b8fb-5c50-97b3-dc7cc1341742",
+       "label": "A",
+       "content": "A fall in the death rate, due to better medicine, sanitation and food supply",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3393a32a-32e6-50b5-8f9a-86eef6c8bbb0",
+       "label": "B",
+       "content": "A fall in the birth rate",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2b1c75c0-db16-514b-ad09-1b885cb93fa1",
+       "label": "C",
+       "content": "An increase in emigration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ee26f4c3-a356-5824-b2f8-8359ec1f200a",
+       "label": "D",
+       "content": "More frequent famines",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b032ec46-c5d2-59eb-9455-ce59d60c1af1",
+   "topic": "Adaptation in Plants and Animals",
+   "title": "Adaptation in Plants and Animals: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on adaptation in plants and animals, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 185,
+   "questions": [
+    {
+     "id": "d376fbe8-d418-5ecc-878c-200480e82555",
+     "key": "bio-ad-01",
+     "stem": "Which feature helps a desert plant such as a cactus to reduce water loss?",
+     "image_url": null,
+     "explanation": "Xerophytes save water with spines instead of leaves, a thick waxy cuticle, few sunken stomata and a swollen stem that stores water.\n\n**Why the other options are wrong**\n\n- Large, thin leaves: Large, thin leaves have a big surface from which water evaporates, so they increase water loss.\n- Many stomata on the upper surface of the leaf: Stomata on the sunny upper surface would lose more water; desert plants have few, often sunken, stomata.\n- A thin cuticle: Desert plants have a thick, waxy cuticle; a thin one lets more water escape.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2cec2861-f485-525f-bc5b-7afe6d6d2433",
+       "label": "A",
+       "content": "Large, thin leaves",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3000d5eb-5c46-5ce0-b5bb-f3e69c79c961",
+       "label": "B",
+       "content": "Leaves reduced to spines",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e206fe79-9b72-570a-ab28-e7041f4d878b",
+       "label": "C",
+       "content": "Many stomata on the upper surface of the leaf",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "73eddcb4-67db-51e5-bf08-e08c62352c8f",
+       "label": "D",
+       "content": "A thin cuticle",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5287c159-a6ef-5ac9-8777-3f455ab4da84",
+     "key": "bio-ad-02",
+     "stem": "The floating leaves of a water lily have their stomata mainly on the upper surface. This is because",
+     "image_url": null,
+     "explanation": "Water plants also have air spaces (aerenchyma) that let them float and carry oxygen to submerged parts, and little support tissue, because the water holds them up.\n\n**Why the other options are wrong**\n\n- this reduces the loss of water: A water lily has plenty of water; saving water is not its problem.\n- the upper surface is always shaded: The upper surface faces the sun.\n- the plant needs no carbon dioxide: Like all green plants, it needs carbon dioxide for photosynthesis.",
+     "position": 2,
+     "options": [
+      {
+       "id": "afb711c8-85ca-51f4-b925-d48105c2688a",
+       "label": "A",
+       "content": "this reduces the loss of water",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "62cc34c8-d06a-5a28-bebd-5985c8020e98",
+       "label": "B",
+       "content": "the upper surface is always shaded",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ef6029ce-d8e7-56ed-b50d-924e6732832a",
+       "label": "C",
+       "content": "the lower surface lies on the water, so gases can only be exchanged with the air above",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fb4c6fa7-2b82-5f1e-ba24-b892ebeb9002",
+       "label": "D",
+       "content": "the plant needs no carbon dioxide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b1b0b5ec-0082-5e37-9665-0c7f1a0dd1f1",
+     "key": "bio-ad-03",
+     "stem": "A harmless hoverfly has black and yellow stripes like those of a stinging wasp. This is an example of",
+     "image_url": null,
+     "explanation": "In mimicry, a harmless species looks like a harmful one, so predators that have learned to avoid the harmful species avoid the mimic too.\n\n**Why the other options are wrong**\n\n- camouflage: Camouflage is blending in with the background, so the animal is not seen.\n- warning colouration: Warning colours are the wasp's own: they advertise that the wasp really can sting.\n- hibernation: Hibernation is a deep sleep through a cold season.",
+     "position": 3,
+     "options": [
+      {
+       "id": "545c7f93-d56c-5979-8763-afb734fc828b",
+       "label": "A",
+       "content": "camouflage",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d2b6e002-b20e-52a7-b617-bf96e7be47dc",
+       "label": "B",
+       "content": "warning colouration",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4263e0ff-21f1-5837-b25d-002719372367",
+       "label": "C",
+       "content": "hibernation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "71e4e223-d839-5a3f-8b6b-702e093d2147",
+       "label": "D",
+       "content": "mimicry",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5fc55d6f-5706-5d62-b404-062423dd7119",
+     "key": "bio-ad-04",
+     "stem": "A chameleon changes the colour of its skin to match its surroundings. This adaptation is",
+     "image_url": null,
+     "explanation": "Blending with the background hides the chameleon from its predators and from the insects it hunts.\n\n**Why the other options are wrong**\n\n- mimicry: Mimicry is resembling another species, not the background.\n- warning colouration: Warning colours are bright and make an animal easy to see, the opposite of matching the background.\n- aestivation: Aestivation is a resting state during a hot, dry season.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e49b7ad2-7a59-5e94-821c-936c0771643a",
+       "label": "A",
+       "content": "camouflage",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c707626e-e9c7-5b10-8241-3899ced0d87c",
+       "label": "B",
+       "content": "mimicry",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d5eeb290-7e84-58ed-a88b-86723f5ad929",
+       "label": "C",
+       "content": "warning colouration",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "be55195a-5f34-5484-aa6c-becf8a5ed198",
+       "label": "D",
+       "content": "aestivation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "42983b2a-ebd7-571f-80fa-c89a4bb55534",
+     "key": "bio-ad-05",
+     "stem": "Which feature of a tapeworm is an adaptation to life as a parasite in the human intestine?",
+     "image_url": null,
+     "explanation": "A tapeworm also has a thick cuticle that resists the host's digestive enzymes, and is hermaphrodite, so a single worm can reproduce.\n\n**Why the other options are wrong**\n\n- A large, well-developed gut: A tapeworm has no gut at all: it absorbs digested food through its body surface.\n- Well-developed eyes and sense organs: The intestine is dark and unchanging, so a tapeworm has very simple sense organs.\n- A small number of eggs, each with a lot of yolk: A tapeworm produces huge numbers of eggs, because few will reach a new host.",
+     "position": 5,
+     "options": [
+      {
+       "id": "eee9d42a-4b3e-50dc-8cca-d35d0f5c9657",
+       "label": "A",
+       "content": "A large, well-developed gut",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0e9782a3-f097-57f7-86fb-d3c4f66ed33a",
+       "label": "B",
+       "content": "Hooks and suckers that attach it to the wall of the intestine",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "438c4d95-c5ba-5c6a-b153-045af92da725",
+       "label": "C",
+       "content": "Well-developed eyes and sense organs",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e505b318-b2f2-54e2-a2d1-9edbd305af38",
+       "label": "D",
+       "content": "A small number of eggs, each with a lot of yolk",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "359e8d6f-0ca6-5bae-a502-5be098ab5ac6",
+     "key": "bio-ad-06",
+     "stem": "White mangroves growing in waterlogged coastal mud have pneumatophores, roots that grow upwards out of the mud. These roots help the plant to",
+     "image_url": null,
+     "explanation": "At low tide, air enters the pneumatophores through small pores and diffuses down to the roots buried in the airless mud.\n\n**Why the other options are wrong**\n\n- absorb more salt from the sea water: Mangroves need to keep salt out, not take more in.\n- catch insects to obtain nitrogen: Catching insects is an adaptation of insect-eating plants, not of mangroves.\n- store water for the dry season: Mangroves stand in water all year round.",
+     "position": 6,
+     "options": [
+      {
+       "id": "f831aa80-8e2f-5900-9014-c20058eca6a0",
+       "label": "A",
+       "content": "absorb more salt from the sea water",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "38ca8f84-8f29-50ab-80be-1ea410c5ca70",
+       "label": "B",
+       "content": "catch insects to obtain nitrogen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dfa7785f-245d-56d5-9b8e-6648089a8fea",
+       "label": "C",
+       "content": "obtain oxygen for the roots, because the mud contains very little air",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2ec1c1d1-fd33-5147-a2d6-e62398a3ebeb",
+       "label": "D",
+       "content": "store water for the dry season",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "04fd9be5-79c9-5bf5-85de-5449ce9ed6f5",
+     "key": "bio-ad-07",
+     "stem": "A camel can survive in a hot desert partly because it",
+     "image_url": null,
+     "explanation": "Camels also have dry faeces, broad padded feet for walking on sand, long eyelashes and nostrils that close against blowing sand.\n\n**Why the other options are wrong**\n\n- sweats heavily to keep cool: Sweating heavily would waste water; a camel's body temperature can rise a lot before it sweats.\n- stores water in its hump: The hump stores fat, not water; some water is released when the fat is respired.\n- can drink sea water instead of fresh water: Camels need fresh water; they survive by losing very little of it.",
+     "position": 7,
+     "options": [
+      {
+       "id": "db443062-1b51-569f-9257-c3ae55470e5c",
+       "label": "A",
+       "content": "sweats heavily to keep cool",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f53ce782-ca84-581c-8eb4-a33c115eed55",
+       "label": "B",
+       "content": "stores water in its hump",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eeef7a4a-cbc1-5811-bd8d-ff2d6f6f41f0",
+       "label": "C",
+       "content": "can drink sea water instead of fresh water",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0af28b14-bdcd-5ce0-8895-38cfda3e075e",
+       "label": "D",
+       "content": "produces a small volume of very concentrated urine",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5860f2b6-7696-513c-a4cb-9dd0c90ba810",
+   "topic": "Conservation of Natural Resources",
+   "title": "Conservation of Natural Resources: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on conservation of natural resources, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 186,
+   "questions": [
+    {
+     "id": "affe92aa-3d81-531b-949c-dedcec0c8089",
+     "key": "bio-co-01",
+     "stem": "Which of the following is a non-renewable natural resource?",
+     "image_url": null,
+     "explanation": "Minerals such as diamonds, gold, bauxite and iron ore took millions of years to form; once mined, they are gone. Renewable resources can be replaced, but only if they are used carefully.\n\n**Why the other options are wrong**\n\n- Forests: Forests are renewable: trees can be replanted and regrow, if they are managed well.\n- Fish: Fish stocks are renewable: fish breed and replace those caught, if fishing is controlled.\n- Fresh water: Fresh water is renewed by rain through the water cycle.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1d694919-60a8-5dcb-b474-086007fc8e4d",
+       "label": "A",
+       "content": "Diamonds",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "60d7a9f7-0782-5b81-b1e7-bb3fd73fb64c",
+       "label": "B",
+       "content": "Forests",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "00a4e9af-39b5-53f4-9fea-cb659dd119c6",
+       "label": "C",
+       "content": "Fish",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eae6228a-76ef-55b6-bab8-240af5dc7e6a",
+       "label": "D",
+       "content": "Fresh water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7b9bc86d-9734-562f-873c-6caa948275f3",
+     "key": "bio-co-02",
+     "stem": "Which protected area in Sierra Leone conserves one of the largest remaining blocks of Upper Guinea rainforest, on the border with Liberia?",
+     "image_url": null,
+     "explanation": "Gola, in the east, is home to forest elephants, pygmy hippos, chimpanzees and hundreds of bird species.\n\n**Why the other options are wrong**\n\n- Outamba-Kilimi National Park: Outamba-Kilimi is in the north, with savanna and forest, known for chimpanzees and hippos.\n- Tiwai Island Wildlife Sanctuary: Tiwai is an island in the Moa River, known for its many kinds of primates.\n- Western Area Peninsula National Park: This protects the forested hills above Freetown and the city's water supply.",
+     "position": 2,
+     "options": [
+      {
+       "id": "906bd644-699d-583e-9598-4d8832644b0f",
+       "label": "A",
+       "content": "Outamba-Kilimi National Park",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d0d2932f-63c8-50ca-9753-3268b3d07f31",
+       "label": "B",
+       "content": "Gola Rainforest National Park",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "64758c99-610d-5a0b-8cf8-44ea63c9ab3e",
+       "label": "C",
+       "content": "Tiwai Island Wildlife Sanctuary",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "947c3f7d-0d02-5f0e-9ab8-7d9e18036b39",
+       "label": "D",
+       "content": "Western Area Peninsula National Park",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "902805bf-b75e-5078-8834-ef597699f02a",
+     "key": "bio-co-03",
+     "stem": "Protecting the forest on the hills of the Western Area Peninsula is especially important because the forest",
+     "image_url": null,
+     "explanation": "Tree roots hold the soil, and forest cover lets rain soak in slowly. Clearing it sends soil into the Guma reservoir and makes slopes unstable, as the 2017 Regent mudslide showed.\n\n**Why the other options are wrong**\n\n- is the only place in Sierra Leone where chimpanzees live: Chimpanzees live in many parts of the country, including Gola and Outamba-Kilimi.\n- provides most of Sierra Leone's timber exports: The peninsula forest is protected, not logged for export.\n- contains most of the country's diamond deposits: Diamonds are mined mainly in the east, in Kono and Kenema districts.",
+     "position": 3,
+     "options": [
+      {
+       "id": "518c8402-3bfa-5f76-8721-6cf3ec46ca93",
+       "label": "A",
+       "content": "is the only place in Sierra Leone where chimpanzees live",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bdb460c7-6b05-599c-badc-0c57587d2d90",
+       "label": "B",
+       "content": "provides most of Sierra Leone's timber exports",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "47c04996-0a0b-565c-880c-b53c217438d9",
+       "label": "C",
+       "content": "protects Freetown's water supply and reduces run-off and landslides",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e1699e6e-8f59-5799-9656-0ea369c76d69",
+       "label": "D",
+       "content": "contains most of the country's diamond deposits",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7e2ed225-d0eb-5dcb-a261-06a916c4c8ac",
+     "key": "bio-co-04",
+     "stem": "Fishermen are required to use nets with a minimum mesh size. This rule",
+     "image_url": null,
+     "explanation": "If young fish are caught before they breed, the stock collapses. Closed seasons and banning poisons and very fine nets also protect fisheries.\n\n**Why the other options are wrong**\n\n- lets fishermen catch more small fish: The rule is meant to stop small fish being caught.\n- protects the mangroves from being cut down: Mesh size has nothing to do with mangroves; separate rules protect them.\n- stops oil and waste polluting the sea: Mesh size does not affect pollution.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f22c94a9-da84-5368-961e-cb6a05bd13c5",
+       "label": "A",
+       "content": "lets fishermen catch more small fish",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7709b226-8dcd-5686-9408-6f43b2040f13",
+       "label": "B",
+       "content": "protects the mangroves from being cut down",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ee28e081-cd3b-597f-a469-f911e44632ac",
+       "label": "C",
+       "content": "stops oil and waste polluting the sea",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9bd385e0-6b20-58c3-9be8-12f6dd736670",
+       "label": "D",
+       "content": "lets young fish escape, so they can grow and breed",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9409c976-7ff8-5446-9ddd-f38267ca14f7",
+     "key": "bio-co-05",
+     "stem": "On a sloping farm, which practice best reduces soil erosion?",
+     "image_url": null,
+     "explanation": "Ridges along the contour hold back rainwater so it soaks in. Terracing, cover crops and mulching also protect the soil.\n\n**Why the other options are wrong**\n\n- Making ridges up and down the slope: Ridges up and down the slope make channels that speed up run-off and wash soil away.\n- Burning the bush before planting: Burning removes the plant cover and leaves the soil bare to rain.\n- Clearing all plant cover after harvest: Bare soil is quickly washed away by heavy rain.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a93267fe-377a-5caf-8738-642ee6dfb890",
+       "label": "A",
+       "content": "Making ridges across the slope (contour ploughing)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e44181be-43c2-55e2-91ec-1ccabf2fbdfe",
+       "label": "B",
+       "content": "Making ridges up and down the slope",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f74bc88f-f58e-5d99-b325-e0f6073e8d66",
+       "label": "C",
+       "content": "Burning the bush before planting",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aacd9ac4-6e4b-51f7-a0fe-0f410cacc7fd",
+       "label": "D",
+       "content": "Clearing all plant cover after harvest",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ba30e5b8-9a49-5579-8cf2-d2f38909024b",
+     "key": "bio-co-06",
+     "stem": "Planting trees on land that has not carried forest before is called",
+     "image_url": null,
+     "explanation": "Afforestation creates new forest; reforestation replaces forest that has been lost. Both help to conserve soil, water and wildlife.\n\n**Why the other options are wrong**\n\n- reforestation: Reforestation is replanting trees where a forest has been cut down.\n- deforestation: Deforestation is the clearing of forest.\n- agroforestry: Agroforestry is growing crops among useful trees on the same land.",
+     "position": 6,
+     "options": [
+      {
+       "id": "caa2c3e5-cf5b-5cc9-8ac1-68791f807adb",
+       "label": "A",
+       "content": "reforestation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4e4261ac-f268-513d-be0b-4492b37df968",
+       "label": "B",
+       "content": "afforestation",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "aaf04745-99c2-5550-973b-8f8785523a85",
+       "label": "C",
+       "content": "deforestation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bc0175b3-d4e8-5341-9c54-d632c5af3008",
+       "label": "D",
+       "content": "agroforestry",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0bb2ce84-92c1-5e67-82a2-0c99b4b391f3",
+     "key": "bio-co-07",
+     "stem": "Teaching people in Sierra Leone about the risks of hunting and eating bushmeat is part of conservation because it",
+     "image_url": null,
+     "explanation": "Hunting threatens species such as chimpanzees, monkeys and duikers, and handling bushmeat can pass on diseases such as Ebola and Lassa fever.\n\n**Why the other options are wrong**\n\n- is the main way of stopping soil erosion: Soil erosion is reduced by keeping plant cover and contour farming, not by bushmeat education.\n- increases the number of hunting licences issued: Conservation aims to control hunting, not to increase it.\n- stops wild animals competing with crops for sunlight: Animals do not compete with crops for sunlight.",
+     "position": 7,
+     "options": [
+      {
+       "id": "0be662d2-63f7-5944-ab49-9562a1303ab0",
+       "label": "A",
+       "content": "is the main way of stopping soil erosion",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cee59f6f-1870-5402-8e96-a77396126507",
+       "label": "B",
+       "content": "increases the number of hunting licences issued",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bffede23-56ce-5aa0-874e-147fa3343ba2",
+       "label": "C",
+       "content": "protects threatened wildlife and reduces the risk of diseases passing from animals to people",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "299df4b6-cd2a-57fe-9194-ee166d3e5959",
+       "label": "D",
+       "content": "stops wild animals competing with crops for sunlight",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "d8e43b4da38b"
+}
