@@ -25,6 +25,10 @@ f**oo**d
 
 *Food* has the long vowel /uː/, the same sound as in *shoe*, *blue* and *true*. The spelling *oo* can stand for /uː/, /ʊ/ or /ʌ/, so listen to the sound, not the letters.
 
+**Listen** (standard British English)
+
+[food /fuːd/](https://wasscetutor.com/audio/oral/food.mp3?v=e2b81eb32a) [shoe /ʃuː/](https://wasscetutor.com/audio/oral/shoe.mp3?v=5278cb5a8e) [good /ɡʊd/](https://wasscetutor.com/audio/oral/good.mp3?v=b7a3537164) [blood /blʌd/](https://wasscetutor.com/audio/oral/blood.mp3?v=e1f6cc3451) [boat /bəʊt/](https://wasscetutor.com/audio/oral/boat.mp3?v=996143f877)
+
 **Why the other options are wrong**
 
 - good: *Good* has the short vowel /ʊ/, as in *put*, although it is spelt with *oo* like *food*.
@@ -44,6 +48,10 @@ Which of the following words has a different vowel sound from the others?
 
 *Seize*, *field* and *key* all have the long vowel /iː/ of *see*. *Busy* is pronounced /ˈbɪzi/: its first vowel is the short /ɪ/ of *sit*, although it is spelt with *u*.
 
+**Listen** (standard British English)
+
+[busy /ˈbɪzi/](https://wasscetutor.com/audio/oral/busy.mp3?v=3ea3c98d5b) [seize /siːz/](https://wasscetutor.com/audio/oral/seize.mp3?v=001621b0ae) [field /fiːld/](https://wasscetutor.com/audio/oral/field.mp3?v=c7af2e5ee5) [key /kiː/](https://wasscetutor.com/audio/oral/key.mp3?v=83f54f5ecb)
+
 **Why the other options are wrong**
 
 - seize: *Seize* has /iː/, like the others.
@@ -62,6 +70,10 @@ Choose the word that rhymes with *blood*.
 - **D.** road
 
 *Blood* is pronounced /blʌd/, with the vowel of *cut*, so it rhymes with *mud*, *flood* and *bud*. Rhyme depends on sound: *food* and *good* look like *blood* but do not rhyme with it.
+
+**Listen** (standard British English)
+
+[blood /blʌd/](https://wasscetutor.com/audio/oral/blood.mp3?v=e1f6cc3451) [mud /mʌd/](https://wasscetutor.com/audio/oral/mud.mp3?v=6b53f15e03) [food /fuːd/](https://wasscetutor.com/audio/oral/food.mp3?v=e2b81eb32a) [good /ɡʊd/](https://wasscetutor.com/audio/oral/good.mp3?v=b7a3537164) [road /rəʊd/](https://wasscetutor.com/audio/oral/road.mp3?v=7d8802edf8)
 
 **Why the other options are wrong**
 
@@ -101,6 +113,10 @@ In which of the following words is the letter in bold pronounced as the weak vow
 
 The schwa /ə/ appears only in unstressed syllables. In *about* (/əˈbaʊt/) the stress falls on the second syllable, so the first *a* weakens to /ə/.
 
+**Listen** (standard British English)
+
+[about /əˈbaʊt/](https://wasscetutor.com/audio/oral/about.mp3?v=a5dce7a38a) [cat /kæt/](https://wasscetutor.com/audio/oral/cat.mp3?v=324bad803b) [father /ˈfɑːðə/](https://wasscetutor.com/audio/oral/father.mp3?v=6f3f6315b5) [make /meɪk/](https://wasscetutor.com/audio/oral/make.mp3?v=4c4b9660b8)
+
 **Why the other options are wrong**
 
 - c**a**t: The *a* in *cat* is the short vowel /æ/.
@@ -121,6 +137,10 @@ w**or**d
 - **D.** w**ear**
 
 *Word* has the long vowel /ɜː/ of *bird* and *nurse*, the same sound as in *heard*. Many West African speakers say /ɜː/ like /e/ or /a/, so the examination often tests it.
+
+**Listen** (standard British English)
+
+[word /wɜːd/](https://wasscetutor.com/audio/oral/word.mp3?v=f9d785c3cf) [heard /hɜːd/](https://wasscetutor.com/audio/oral/heard.mp3?v=42aa97192e) [ward /wɔːd/](https://wasscetutor.com/audio/oral/ward.mp3?v=3351a8f6a4) [wood /wʊd/](https://wasscetutor.com/audio/oral/wood.mp3?v=2eb25c06e1) [wear /weə/](https://wasscetutor.com/audio/oral/wear.mp3?v=81e608b5c4)
 
 **Why the other options are wrong**
 
@@ -143,6 +163,10 @@ c**augh**t
 
 *Caught* has the long vowel /ɔː/, as in *law*, *port* and *walk*. Telling /ɔː/ from /əʊ/ (*caught / coat*) and from /ɒ/ (*caught / cot*) is a common test.
 
+**Listen** (standard British English)
+
+[caught /kɔːt/](https://wasscetutor.com/audio/oral/caught.mp3?v=4cf92b6eb4) [law /lɔː/](https://wasscetutor.com/audio/oral/law.mp3?v=ab76523aef) [coat /kəʊt/](https://wasscetutor.com/audio/oral/coat.mp3?v=540664177d) [cot /kɒt/](https://wasscetutor.com/audio/oral/cot.mp3?v=7b30587507) [cut /kʌt/](https://wasscetutor.com/audio/oral/cut.mp3?v=36a49b80e1)
+
 **Why the other options are wrong**
 
 - c**oa**t: *Coat* has the diphthong /əʊ/; *caught* has a pure long vowel.
@@ -161,6 +185,10 @@ Which of the following words contains the diphthong /eɪ/?
 - **D.** h**ea**rt
 
 *Great* rhymes with *late* and *weight*: /eɪ/. The letters *ea* spell different sounds in *great*, *bread* and *heart*, and *said* does not rhyme with *paid*.
+
+**Listen** (standard British English)
+
+[great /ɡreɪt/](https://wasscetutor.com/audio/oral/great.mp3?v=80ce7eec8e) [bread /bred/](https://wasscetutor.com/audio/oral/bread.mp3?v=2ad7534c4d) [said /sed/](https://wasscetutor.com/audio/oral/said.mp3?v=cb0195b465) [heart /hɑːt/](https://wasscetutor.com/audio/oral/heart.mp3?v=72d6490041)
 
 **Why the other options are wrong**
 
@@ -185,6 +213,10 @@ Which of the following words begins with the sound /θ/?
 
 /θ/ is the voiceless *th* of *thin*, *think* and *three*. Its voiced partner /ð/ begins *this*, *these* and *though*. Saying /θ/ as /t/ (*tick* for *thick*) is a common substitution.
 
+**Listen** (standard British English)
+
+[thick /θɪk/](https://wasscetutor.com/audio/oral/thick.mp3?v=84eaed36a1) [these /ðiːz/](https://wasscetutor.com/audio/oral/these.mp3?v=7375766c20) [Thomas /ˈtɒməs/](https://wasscetutor.com/audio/oral/thomas.mp3?v=c13258a6ca) [though /ðəʊ/](https://wasscetutor.com/audio/oral/though.mp3?v=3654f11cf8)
+
 **Why the other options are wrong**
 
 - these: *These* begins with the voiced sound /ð/, as in *this*.
@@ -203,6 +235,10 @@ Which of the following words contains the sound /ʒ/?
 - **D.** pressure
 
 /ʒ/ is the voiced partner of /ʃ/, heard in *measure*, *pleasure*, *vision* and *television* (/ˈtelɪvɪʒn/). It is rare in English and often replaced by /ʃ/ or /dʒ/.
+
+**Listen** (standard British English)
+
+[television /ˈtelɪvɪʒn/](https://wasscetutor.com/audio/oral/television.mp3?v=fe7a1ea22e) [mission /ˈmɪʃn/](https://wasscetutor.com/audio/oral/mission.mp3?v=93f80730b3) [nation /ˈneɪʃn/](https://wasscetutor.com/audio/oral/nation.mp3?v=2a90f3017b) [pressure /ˈpreʃə/](https://wasscetutor.com/audio/oral/pressure.mp3?v=ff3fcad898)
 
 **Why the other options are wrong**
 
@@ -223,6 +259,10 @@ In which of the following words is the ending *-ed* pronounced /ɪd/?
 
 *-ed* adds a syllable, /ɪd/, only after /t/ or /d/: *land* + *-ed* = /ˈlændɪd/. After other voiceless sounds it is /t/; after voiced sounds it is /d/.
 
+**Listen** (standard British English)
+
+[landed /ˈlændɪd/](https://wasscetutor.com/audio/oral/landed.mp3?v=ccc2d5adf3) [hoped /həʊpt/](https://wasscetutor.com/audio/oral/hoped.mp3?v=0440ad55c6) [begged /beɡd/](https://wasscetutor.com/audio/oral/begged.mp3?v=baab378fc6) [fixed /fɪkst/](https://wasscetutor.com/audio/oral/fixed.mp3?v=8e28f2b33e)
+
 **Why the other options are wrong**
 
 - hoped: *Hope* ends in the voiceless /p/, so *-ed* is /t/: /həʊpt/.
@@ -241,6 +281,10 @@ In which of the following words is the final *-s* or *-es* pronounced /ɪz/?
 - **D.** rooms
 
 The ending adds a syllable, /ɪz/, after the hissing sounds /s/, /z/, /ʃ/, /ʒ/, /tʃ/ and /dʒ/. *Judge* ends in /dʒ/, so *judges* is /ˈdʒʌdʒɪz/.
+
+**Listen** (standard British English)
+
+[judges /ˈdʒʌdʒɪz/](https://wasscetutor.com/audio/oral/judges.mp3?v=d6f584f3dd) [beds /bedz/](https://wasscetutor.com/audio/oral/beds.mp3?v=a2f3625447) [caps /kæps/](https://wasscetutor.com/audio/oral/caps.mp3?v=4366769a33) [rooms /ruːmz/](https://wasscetutor.com/audio/oral/rooms.mp3?v=a750df2eb6)
 
 **Why the other options are wrong**
 
@@ -261,6 +305,10 @@ Which of the following words contains a silent consonant?
 
 In *listen* (/ˈlɪsn/) the *t* is silent, as in *castle* and *whistle*. Other silent consonants: the *k* in *knife*, the *b* in *climb*, the *h* in *hour*.
 
+**Listen** (standard British English)
+
+[listen /ˈlɪsn/](https://wasscetutor.com/audio/oral/listen.mp3?v=38284437a4) [lemon /ˈlemən/](https://wasscetutor.com/audio/oral/lemon.mp3?v=96579ac4d3) [limit /ˈlɪmɪt/](https://wasscetutor.com/audio/oral/limit.mp3?v=3bfa5f9326) [lentil /ˈlentl/](https://wasscetutor.com/audio/oral/lentil.mp3?v=4491558fab)
+
 **Why the other options are wrong**
 
 - lemon: Every consonant in *lemon* is pronounced: /ˈlemən/.
@@ -280,6 +328,10 @@ Which of the following words begins with a cluster of three consonant sounds?
 
 A cluster is counted in sounds, not letters. *Street* begins with /s/ + /t/ + /r/: three consonant sounds with no vowel between them.
 
+**Listen** (standard British English)
+
+[street /striːt/](https://wasscetutor.com/audio/oral/street.mp3?v=d4569b1177) [sheep /ʃiːp/](https://wasscetutor.com/audio/oral/sheep.mp3?v=6f8eb8e2cb) [photo /ˈfəʊtəʊ/](https://wasscetutor.com/audio/oral/photo.mp3?v=96b1ac88cb) [think /θɪŋk/](https://wasscetutor.com/audio/oral/think.mp3?v=c7c3735bbd)
+
 **Why the other options are wrong**
 
 - sheep: *Sh* is one sound, /ʃ/, so *sheep* begins with a single consonant.
@@ -298,6 +350,10 @@ In which of the following words is *ch* pronounced /k/?
 - **D.** chemistry  ✅
 
 *Ch* spells /tʃ/ (*church*), /k/ (*chemistry*, *character*, *school*) or /ʃ/ (*machine*, *chef*).
+
+**Listen** (standard British English)
+
+[chemistry /ˈkemɪstri/](https://wasscetutor.com/audio/oral/chemistry.mp3?v=e85f45cfbe) [church /tʃɜːtʃ/](https://wasscetutor.com/audio/oral/church.mp3?v=d49d23f8e2) [machine /məˈʃiːn/](https://wasscetutor.com/audio/oral/machine.mp3?v=f6fb7f9452) [cheap /tʃiːp/](https://wasscetutor.com/audio/oral/cheap.mp3?v=c11f36bba2)
 
 **Why the other options are wrong**
 
@@ -319,6 +375,10 @@ na**ti**on
 - **D.** **s**un
 
 The *ti* in *nation* is /ʃ/, the same sound as *sh* in *shop*. Confusing /ʃ/ with /tʃ/ (*shop / chop*, *share / chair*) is a common test.
+
+**Listen** (standard British English)
+
+[nation /ˈneɪʃn/](https://wasscetutor.com/audio/oral/nation.mp3?v=2a90f3017b) [shop /ʃɒp/](https://wasscetutor.com/audio/oral/shop.mp3?v=fe578a17bc) [chop /tʃɒp/](https://wasscetutor.com/audio/oral/chop.mp3?v=625ae3a18c) [measure /ˈmeʒə/](https://wasscetutor.com/audio/oral/measure.mp3?v=d474d766b4) [sun /sʌn/](https://wasscetutor.com/audio/oral/sun.mp3?v=9dd7eb170d)
 
 **Why the other options are wrong**
 
@@ -343,6 +403,10 @@ Which of the following words is stressed on the first syllable?
 
 Two-syllable nouns and adjectives are usually stressed on the first syllable: VILlage, MARket, HAPpy. Many two-syllable verbs stress the second.
 
+**Listen** (standard British English)
+
+[village /ˈvɪlɪdʒ/](https://wasscetutor.com/audio/oral/village.mp3?v=169090293e) [arrive /əˈraɪv/](https://wasscetutor.com/audio/oral/arrive.mp3?v=47233103d9) [complete /kəmˈpliːt/](https://wasscetutor.com/audio/oral/complete.mp3?v=820e4387a3) [believe /bɪˈliːv/](https://wasscetutor.com/audio/oral/believe.mp3?v=51442e67bf)
+
 **Why the other options are wrong**
 
 - arrive: *Arrive* is a verb stressed on the second syllable: arRIVE.
@@ -361,6 +425,10 @@ In which sentence is the word *record* correctly stressed? (The stressed syllabl
 - **D.** The teacher keeps a reCORD of attendance.
 
 Many noun–verb pairs are spelt alike but stressed differently: the noun on the first syllable (a REcord, a PREsent), the verb on the second (to reCORD, to preSENT).
+
+**Listen** (standard British English)
+
+[record (verb) /rɪˈkɔːd/](https://wasscetutor.com/audio/oral/record-verb.mp3?v=2245f809e2) [record (noun) /ˈrekɔːd/](https://wasscetutor.com/audio/oral/record-noun.mp3?v=9f1315a701)
 
 **Why the other options are wrong**
 
@@ -384,6 +452,10 @@ Which of the following shows the correct stress for *examination*?
 
 Words ending in *-tion* and *-sion* are stressed on the syllable just before the ending: examiNAtion, eduCAtion, deCIsion.
 
+**Listen** (standard British English)
+
+[examination /ɪɡˌzæmɪˈneɪʃn/](https://wasscetutor.com/audio/oral/examination.mp3?v=60461f4a35)
+
 **Why the other options are wrong**
 
 - exAMination: The stress is not on the second syllable; *-tion* moves it to the syllable just before.
@@ -402,6 +474,10 @@ Which of the following words is stressed on the second syllable?
 - **D.** interesting
 
 Words ending in *-ity* are stressed on the syllable just before the ending: aBILity, uniVERsity, elecTRIcity.
+
+**Listen** (standard British English)
+
+[ability /əˈbɪlɪti/](https://wasscetutor.com/audio/oral/ability.mp3?v=da592e74e5) [photograph /ˈfəʊtəɡrɑːf/](https://wasscetutor.com/audio/oral/photograph.mp3?v=02ea741adc) [engineer /ˌendʒɪˈnɪə/](https://wasscetutor.com/audio/oral/engineer.mp3?v=7021464047) [interesting /ˈɪntrɪstɪŋ/](https://wasscetutor.com/audio/oral/interesting.mp3?v=0d9602ae8c)
 
 **Why the other options are wrong**
 
@@ -422,6 +498,10 @@ Which of the following words is stressed on the last syllable?
 
 The endings *-eer*, *-ee*, *-ese* and *-ique* take the stress themselves: volunTEER, engiNEER, refuGEE, ChiNESE, uNIQUE.
 
+**Listen** (standard British English)
+
+[volunteer /ˌvɒlənˈtɪə/](https://wasscetutor.com/audio/oral/volunteer.mp3?v=9a92f94cf6) [pencil /ˈpensl/](https://wasscetutor.com/audio/oral/pencil.mp3?v=6935892a34) [calendar /ˈkælɪndə/](https://wasscetutor.com/audio/oral/calendar.mp3?v=fc376f36bd) [family /ˈfæmɪli/](https://wasscetutor.com/audio/oral/family.mp3?v=9665c5949c)
+
 **Why the other options are wrong**
 
 - pencil: *Pencil* is a two-syllable noun stressed on the first syllable: PENcil.
@@ -440,6 +520,10 @@ Which of the following words is correctly stressed? (The stressed syllable is in
 - **D.** deveLOP
 
 These are words often stressed differently in everyday Sierra Leonean speech. The standard forms are INteresting, FAMily, ADvertise and deVELop.
+
+**Listen** (standard British English)
+
+[interesting /ˈɪntrɪstɪŋ/](https://wasscetutor.com/audio/oral/interesting.mp3?v=0d9602ae8c) [family /ˈfæmɪli/](https://wasscetutor.com/audio/oral/family.mp3?v=9665c5949c) [advertise /ˈædvətaɪz/](https://wasscetutor.com/audio/oral/advertise.mp3?v=b6171f1d42) [develop /dɪˈveləp/](https://wasscetutor.com/audio/oral/develop.mp3?v=f0dd701c42)
 
 **Why the other options are wrong**
 
@@ -460,6 +544,10 @@ Which of the following words is stressed on the third syllable?
 
 Words ending in *-ic* are stressed on the syllable just before the ending: e-co-NOM-ic, so the stress falls on the third syllable.
 
+**Listen** (standard British English)
+
+[economic /ˌiːkəˈnɒmɪk/](https://wasscetutor.com/audio/oral/economic.mp3?v=620c93d226) [photography /fəˈtɒɡrəfi/](https://wasscetutor.com/audio/oral/photography.mp3?v=7dafdc2e32) [politics /ˈpɒlɪtɪks/](https://wasscetutor.com/audio/oral/politics.mp3?v=dbea992070) [development /dɪˈveləpmənt/](https://wasscetutor.com/audio/oral/development.mp3?v=2b78def367)
+
 **Why the other options are wrong**
 
 - photography: *Photography* is stressed on the second syllable: phoTOgraphy.
@@ -478,6 +566,10 @@ Which of the following words has the same stress pattern as *beGIN*?
 - **D.** market
 
 *Begin* has two syllables with the stress on the second. *Decide* (deCIDE) has the same pattern.
+
+**Listen** (standard British English)
+
+[begin /bɪˈɡɪn/](https://wasscetutor.com/audio/oral/begin.mp3?v=3e92f9f112) [decide /dɪˈsaɪd/](https://wasscetutor.com/audio/oral/decide.mp3?v=367b6134f2) [table /ˈteɪbl/](https://wasscetutor.com/audio/oral/table.mp3?v=37d79fe7ea) [open /ˈəʊpən/](https://wasscetutor.com/audio/oral/open.mp3?v=e78ab020d8) [market /ˈmɑːkɪt/](https://wasscetutor.com/audio/oral/market.mp3?v=ead05dd275)
 
 **Why the other options are wrong**
 
@@ -688,6 +780,8 @@ Knowing the questions tells you what to listen for: a time, a name, a reason. Th
 
 A speaker says:
 
+[Play the passage](https://wasscetutor.com/audio/oral/eng-lis-02.mp3?v=86adbea5a5)
+
 > Many people think the market opens at eight o'clock. However, it actually opens at nine.
 
 At what time does the market open?
@@ -710,6 +804,8 @@ Signal words such as *however*, *actually* and *in fact* warn that a correction 
 ### 35. `eng-lis-03`
 
 The following conversation is read aloud.
+
+[Play the conversation](https://wasscetutor.com/audio/oral/eng-lis-03.mp3?v=629825f98a)
 
 > **Man:** Take two tablets three times a day, after meals, and finish the whole course.
 >
@@ -737,6 +833,8 @@ Inference comes from clues: *tablets*, *three times a day*, *finish the whole co
 ### 36. `eng-lis-04`
 
 The following conversation is read aloud.
+
+[Play the conversation](https://wasscetutor.com/audio/oral/eng-lis-04.mp3?v=80e721b0bb)
 
 > **Man:** How much are the oranges?
 >
@@ -767,6 +865,8 @@ Twenty oranges at NLe 20 for ten cost NLe 40; with the pineapple, 40 + 15 = NLe 
 
 A speaker says, slowly:
 
+[Play the passage](https://wasscetutor.com/audio/oral/eng-lis-05.mp3?v=b2ac2be9ca)
+
 > Well... I suppose I could help you move on Saturday, if there's really nobody else.
 
 How does the speaker feel about helping?
@@ -790,6 +890,8 @@ How does the speaker feel about helping?
 
 A speaker at a school meeting says:
 
+[Play the passage](https://wasscetutor.com/audio/oral/eng-lis-06.mp3?v=a7ce6ec15f)
+
 > Last year, three pupils from this very school were injured crossing the highway. That is why we are asking the council to build a footbridge.
 
 Why does the speaker mention the three injured pupils?
@@ -812,6 +914,8 @@ Why does the speaker mention the three injured pupils?
 ### 39. `eng-lis-07`
 
 The following announcement is read aloud.
+
+[Play the announcement](https://wasscetutor.com/audio/oral/eng-lis-07.mp3?v=e8d9bbad3b)
 
 > Good morning. From Monday, the library will open at eight o'clock instead of nine, and close at six. Pupils may now borrow three books at a time instead of two, and books may be kept for two weeks.
 

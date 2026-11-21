@@ -1,0 +1,1844 @@
+{
+ "ability": {
+  "detail": {
+   "dictionary": "əbˈɪlɪti",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Ability",
+    "whisper": "Ability"
+   },
+   "phonemes": "əbˈɪlɪti",
+   "score": 2,
+   "seconds": 1.32,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "1a8acc9379191ca8",
+  "ok": true
+ },
+ "about": {
+  "detail": {
+   "dictionary": "əbˈWt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "And about",
+    "whisper": "about"
+   },
+   "phonemes": "əbˈWt",
+   "score": 1,
+   "seconds": 1.04,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "dc90f831802427ee",
+  "ok": true
+ },
+ "advertise": {
+  "detail": {
+   "dictionary": "ˈadvətIz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Advertise",
+    "whisper": "advertise"
+   },
+   "phonemes": "ˈadvətIz",
+   "score": 2,
+   "seconds": 1.33,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "0ddc29f7133a390a",
+  "ok": true
+ },
+ "arrive": {
+  "detail": {
+   "dictionary": "əɹˈIv",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Arrive.",
+    "whisper": "Arrive"
+   },
+   "phonemes": "əɹˈIv",
+   "score": 2,
+   "seconds": 1.25,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_isabella"
+  },
+  "key": "9fea3fb95df7e1fc",
+  "ok": true
+ },
+ "beds": {
+  "detail": {
+   "dictionary": "bˈɛdz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Beds",
+    "whisper": "BEDS"
+   },
+   "phonemes": "bˈɛdz",
+   "score": 2,
+   "seconds": 1.43,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "797804ef4cde285a",
+  "ok": true
+ },
+ "begged": {
+  "detail": {
+   "dictionary": null,
+   "ending": ".",
+   "heard": {
+    "parakeet": "Begged.",
+    "whisper": "begged"
+   },
+   "phonemes": "bˈɛɡd",
+   "score": 2,
+   "seconds": 1.32,
+   "source": "editor override",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "cca92f570f70a2b9",
+  "ok": true
+ },
+ "begin": {
+  "detail": {
+   "dictionary": "bɪɡˈɪn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Begin.",
+    "whisper": "Begin."
+   },
+   "phonemes": "bɪɡˈɪn",
+   "score": 2,
+   "seconds": 1.36,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "7ea46354417c5273",
+  "ok": true
+ },
+ "believe": {
+  "detail": {
+   "dictionary": "bɪlˈiːv",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Believe.",
+    "whisper": "believe"
+   },
+   "phonemes": "bɪlˈiːv",
+   "score": 2,
+   "seconds": 1.48,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "6799addddafff440",
+  "ok": true
+ },
+ "blood": {
+  "detail": {
+   "dictionary": "blˈʌd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Blood.",
+    "whisper": "Blood"
+   },
+   "phonemes": "blˈʌd",
+   "score": 2,
+   "seconds": 1.43,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "80ee06b5e0020d9c",
+  "ok": true
+ },
+ "boat": {
+  "detail": {
+   "dictionary": "bˈQt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Boat.",
+    "whisper": "boat"
+   },
+   "phonemes": "bˈQt",
+   "score": 2,
+   "seconds": 1.15,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "ded6db6720521475",
+  "ok": true
+ },
+ "bread": {
+  "detail": {
+   "dictionary": "bɹˈɛd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Bread",
+    "whisper": "bread"
+   },
+   "phonemes": "bɹˈɛd",
+   "score": 2,
+   "seconds": 1.38,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "209fdc4bb0f3b0cc",
+  "ok": true
+ },
+ "busy": {
+  "detail": {
+   "dictionary": "bˈɪzi",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Busy.",
+    "whisper": "busy"
+   },
+   "phonemes": "bˈɪzi",
+   "score": 2,
+   "seconds": 1.3,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "61d1c91f2e5c269d",
+  "ok": true
+ },
+ "calendar": {
+  "detail": {
+   "dictionary": "kˈalɪndə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Calendar",
+    "whisper": "calendar"
+   },
+   "phonemes": "kˈalɪndə",
+   "score": 2,
+   "seconds": 1.28,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "019b7fff772afe00",
+  "ok": true
+ },
+ "caps": {
+  "detail": {
+   "dictionary": "kˈaps",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Caps.",
+    "whisper": "He caps it."
+   },
+   "phonemes": "kˈaps",
+   "score": 1,
+   "seconds": 1.24,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "f46e31bbf129fa91",
+  "ok": true
+ },
+ "cat": {
+  "detail": {
+   "dictionary": "kˈat",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Cat",
+    "whisper": "cat"
+   },
+   "phonemes": "kˈat",
+   "score": 2,
+   "seconds": 1.1,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "42592b4ccf5752cd",
+  "ok": true
+ },
+ "caught": {
+  "detail": {
+   "dictionary": "kˈɔːt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Court",
+    "whisper": "Caught"
+   },
+   "phonemes": "kˈɔːt",
+   "score": 2,
+   "seconds": 1.05,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "e8945fd671630999",
+  "ok": true
+ },
+ "cheap": {
+  "detail": {
+   "dictionary": "ʧˈiːp",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A cheap.",
+    "whisper": "A cheap"
+   },
+   "phonemes": "ʧˈiːp",
+   "score": 2,
+   "seconds": 1.07,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "1cccbf6cbdbc01ee",
+  "ok": true
+ },
+ "chemistry": {
+  "detail": {
+   "dictionary": "kˈɛmɪstɹi",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Chemistry",
+    "whisper": "Chemistry"
+   },
+   "phonemes": "kˈɛmɪstɹi",
+   "score": 2,
+   "seconds": 1.3,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "994d5e7f9373abbe",
+  "ok": true
+ },
+ "chop": {
+  "detail": {
+   "dictionary": "ʧˈɒp",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Chop",
+    "whisper": "Job it."
+   },
+   "phonemes": "ʧˈɒp",
+   "score": 1,
+   "seconds": 1.15,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_alice"
+  },
+  "key": "c57579e8a41da764",
+  "ok": true
+ },
+ "church": {
+  "detail": {
+   "dictionary": "ʧˈɜːʧ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Church",
+    "whisper": "church"
+   },
+   "phonemes": "ʧˈɜːʧ",
+   "score": 2,
+   "seconds": 1.03,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "b291e32c890e682c",
+  "ok": true
+ },
+ "coat": {
+  "detail": {
+   "dictionary": "kˈQt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Coat",
+    "whisper": "coat"
+   },
+   "phonemes": "kˈQt",
+   "score": 2,
+   "seconds": 1.08,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "65b865189e5e4c84",
+  "ok": true
+ },
+ "complete": {
+  "detail": {
+   "dictionary": "kəmplˈiːt",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Complete.",
+    "whisper": "A complete"
+   },
+   "phonemes": "kəmplˈiːt",
+   "score": 2,
+   "seconds": 1.62,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "c8e5d5bb44100bef",
+  "ok": true
+ },
+ "cot": {
+  "detail": {
+   "check": "after 'The word is'",
+   "dictionary": "kˈɒt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "The word is God.",
+    "whisper": "The word is cot."
+   },
+   "phonemes": "kˈɒt",
+   "score": 1,
+   "seconds": 1.1,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_isabella"
+  },
+  "key": "77a5e3a7ce6c1db8",
+  "ok": true
+ },
+ "cut": {
+  "detail": {
+   "dictionary": "kˈʌt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "He cut.",
+    "whisper": "Cut"
+   },
+   "phonemes": "kˈʌt",
+   "score": 1,
+   "seconds": 1.16,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "03dc4c091cd6225a",
+  "ok": true
+ },
+ "decide": {
+  "detail": {
+   "dictionary": "dɪsˈId",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Decide",
+    "whisper": "Decide."
+   },
+   "phonemes": "dɪsˈId",
+   "score": 2,
+   "seconds": 1.19,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "ce19297cc516d18b",
+  "ok": true
+ },
+ "develop": {
+  "detail": {
+   "dictionary": "dɪvˈɛləp",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Develop",
+    "whisper": "develop"
+   },
+   "phonemes": "dɪvˈɛləp",
+   "score": 2,
+   "seconds": 1.18,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "aadc0ec5e3f0ee9c",
+  "ok": true
+ },
+ "development": {
+  "detail": {
+   "dictionary": "dɪvˈɛləpmᵊnt",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Development",
+    "whisper": "Development development"
+   },
+   "phonemes": "dɪvˈɛləpmᵊnt",
+   "score": 1,
+   "seconds": 1.47,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "5290ee1b5acdcabd",
+  "ok": true
+ },
+ "economic": {
+  "detail": {
+   "dictionary": "ˌiːkənˈɒmɪk",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Economic",
+    "whisper": "Economic"
+   },
+   "phonemes": "ˌiːkənˈɒmɪk",
+   "score": 2,
+   "seconds": 1.33,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "c32f158348dd1eed",
+  "ok": true
+ },
+ "eng-lis-02": {
+  "detail": {
+   "seconds": 5.54,
+   "turns": [
+    {
+     "heard": {
+      "parakeet": "Many people think the market opens at 8 o'clock, however, it actually opens at 9.",
+      "whisper": "Many people think the market opens at 8 o'clock, however it actually opens at 9."
+     },
+     "phonemes": "mˈɛni pˈiːpᵊl θˈɪŋk ðə mˈɑːkɪt ˈQpᵊnz at ˈAt əklˈɒk. hWˈɛvə, ɪt ˈakʧʊəli ˈQpᵊnz at nˈIn.",
+     "speaker": "Narrator",
+     "speed": 0.9,
+     "text": "Many people think the market opens at eight o'clock. However, it actually opens at nine.",
+     "voice": "bf_emma",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  "key": "a8d0a661c3560d3c",
+  "ok": true
+ },
+ "eng-lis-03": {
+  "detail": {
+   "seconds": 13.29,
+   "turns": [
+    {
+     "heard": {
+      "parakeet": "Take two tablets three times a day after meals and finish the whole course.",
+      "whisper": "Take two tablets three times a day after meals and finish the whole course."
+     },
+     "phonemes": "tˈAk tˈuː tˈablɪts θɹˈiː tˈImz ɐ dˈA, ˈɑːftə mˈiːlz, and fˈɪnɪʃ ðə hˈQl kˈɔːs.",
+     "speaker": "Man",
+     "speed": 0.9,
+     "text": "Take two tablets three times a day, after meals, and finish the whole course.",
+     "voice": "bm_george",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "heard": {
+      "parakeet": "Even if I feel better after two days.",
+      "whisper": "Even if I feel better after two days."
+     },
+     "phonemes": "ˈiːvᵊn ɪf ˌI fˈiːl bˈɛtə ˈɑːftə tˈuː dˈAz?",
+     "speaker": "Woman",
+     "speed": 0.9,
+     "text": "Even if I feel better after two days?",
+     "voice": "bf_emma",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "heard": {
+      "parakeet": "Yes, even then, and come back if the fever returns.",
+      "whisper": "Yes, even then, and come back if the fever returns."
+     },
+     "phonemes": "jˈɛs, ˈiːvᵊn ðˈɛn. ˌand kˈʌm bˈak ɪf ðə fˈiːvə ɹɪtˈɜːnz.",
+     "speaker": "Man",
+     "speed": 0.9,
+     "text": "Yes, even then. And come back if the fever returns.",
+     "voice": "bm_george",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  "key": "498eb4e31f01e605",
+  "ok": true
+ },
+ "eng-lis-04": {
+  "detail": {
+   "seconds": 11.54,
+   "turns": [
+    {
+     "heard": {
+      "parakeet": "How much are the oranges?",
+      "whisper": "How much are the oranges?"
+     },
+     "phonemes": "hˌW mˈʌʧ ɑː ði ˈɒɹɪnʤɪz?",
+     "speaker": "Man",
+     "speed": 0.9,
+     "text": "How much are the oranges?",
+     "voice": "bm_george",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "heard": {
+      "parakeet": "20 newly owns for 10.",
+      "whisper": "20 newly owns for 10"
+     },
+     "phonemes": "twˈɛnti njˈuː liːˈQnz fɔː tˈɛn.",
+     "speaker": "Woman",
+     "speed": 0.9,
+     "text": "Twenty new leones for ten.",
+     "voice": "bf_emma",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "heard": {
+      "parakeet": "I'll take twenty, and that pineapple.",
+      "whisper": "I'll take 20 and that pineapple."
+     },
+     "phonemes": "ˌIl tˈAk twˈɛnti, and ðat pˈInˌapᵊl.",
+     "speaker": "Man",
+     "speed": 0.9,
+     "text": "I'll take twenty, and that pineapple.",
+     "voice": "bm_george",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "heard": {
+      "parakeet": "The pineapple is 15 newly owns.",
+      "whisper": "The pineapple is 15 newly owns."
+     },
+     "phonemes": "ðə pˈInˌapᵊl ɪz fˌɪftˈiːn njˈuː liːˈQnz.",
+     "speaker": "Woman",
+     "speed": 0.9,
+     "text": "The pineapple is fifteen new leones.",
+     "voice": "bf_emma",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  "key": "10f480f7be807e52",
+  "ok": true
+ },
+ "eng-lis-05": {
+  "detail": {
+   "seconds": 4.55,
+   "turns": [
+    {
+     "heard": {
+      "parakeet": "Well, I suppose I could help you move on Saturday, if there's really nobody else.",
+      "whisper": "Well, I suppose I could help you move on Saturday if there's really nobody else."
+     },
+     "phonemes": "wˈɛl... ˌI səpˈQz ˌI kʊd hˈɛlp juː mˈuːv ˌɒn sˈatədA, ɪf ðɛːz ɹˈɪəli nˈQbədi ˈɛls.",
+     "speaker": "Narrator",
+     "speed": 0.9,
+     "text": "Well... I suppose I could help you move on Saturday, if there's really nobody else.",
+     "voice": "bf_emma",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  "key": "185daf54cd6437e5",
+  "ok": true
+ },
+ "eng-lis-06": {
+  "detail": {
+   "seconds": 7.73,
+   "turns": [
+    {
+     "heard": {
+      "parakeet": "Last year, three pupils from this very school were injured crossing the highway. That is why we are asking the council to build a footbridge.",
+      "whisper": "Last year, three pupils from this very school were injured crossing the highway. That is why we are asking the council to build a footbridge."
+     },
+     "phonemes": "lˈɑːst jˈɪə, θɹˈiː pjˈuːpᵊlz fɹɒm ðɪs vˈɛɹi skˈuːl wɜː ˈɪnʤəd kɹˈɒsɪŋ ðə hˈIwA. ðˌat ɪz wˌI wiː ɑː ˈaskɪŋ ðə kˈWnsᵊl tə bˈɪld ɐ fˈʊtbɹɪʤ.",
+     "speaker": "Narrator",
+     "speed": 0.9,
+     "text": "Last year, three pupils from this very school were injured crossing the highway. That is why we are asking the council to build a footbridge.",
+     "voice": "bf_emma",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  "key": "04679172d9c03dba",
+  "ok": true
+ },
+ "eng-lis-07": {
+  "detail": {
+   "seconds": 11.74,
+   "turns": [
+    {
+     "heard": {
+      "parakeet": "Good morning. From Monday, the library will open at eight o'clock instead of nine, and close at six. Pupils may now borrow three books at a time instead of two, and books may be kept for two weeks.",
+      "whisper": "Good morning. From Monday, the library will open at eight o'clock instead of nine, and close at six. Pupils may now borrow three books at a time instead of two, and books may be kept for two weeks."
+     },
+     "phonemes": "ɡˈʊd mˈɔːnɪŋ. fɹˌɒm mˈʌndA, ðə lˈIbɹəɹi wɪl ˈQpᵊn at ˈAt əklˈɒk ɪnstˈɛd ɒv nˈIn, and klˈQs at sˈɪks. pjˈuːpᵊlz mˈA nˈW bˈɒɹQ θɹˈiː bˈʊks at ɐ tˈIm ɪnstˈɛd ɒv tˈuː, and bˈʊks mˈA biː kˈɛpt fɔː tˈuː wˈiːks.",
+     "speaker": "Narrator",
+     "speed": 0.9,
+     "text": "Good morning. From Monday, the library will open at eight o'clock instead of nine, and close at six. Pupils may now borrow three books at a time instead of two, and books may be kept for two weeks.",
+     "voice": "bf_emma",
+     "wer": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  "key": "574dbaf3e648d32d",
+  "ok": true
+ },
+ "engineer": {
+  "detail": {
+   "dictionary": "ˌɛnʤɪnˈɪə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Engineer",
+    "whisper": "engineer"
+   },
+   "phonemes": "ˌɛnʤɪnˈɪə",
+   "score": 2,
+   "seconds": 1.51,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "eb0aae695966363e",
+  "ok": true
+ },
+ "examination": {
+  "detail": {
+   "dictionary": "ɪɡzˌamɪnˈAʃᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Examination",
+    "whisper": "examination"
+   },
+   "phonemes": "ɪɡzˌamɪnˈAʃᵊn",
+   "score": 2,
+   "seconds": 1.67,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "6edddcfd0683a124",
+  "ok": true
+ },
+ "family": {
+  "detail": {
+   "dictionary": "fˈamɪli",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Family.",
+    "whisper": "Family"
+   },
+   "phonemes": "fˈamɪli",
+   "score": 2,
+   "seconds": 1.54,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "5dceb9b6cf9bc61e",
+  "ok": true
+ },
+ "father": {
+  "detail": {
+   "dictionary": "fˈɑːðə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Father",
+    "whisper": "father"
+   },
+   "phonemes": "fˈɑːðə",
+   "score": 2,
+   "seconds": 1.21,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "0c60055444e4c2eb",
+  "ok": true
+ },
+ "field": {
+  "detail": {
+   "dictionary": "fˈiːld",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Field.",
+    "whisper": "field"
+   },
+   "phonemes": "fˈiːld",
+   "score": 2,
+   "seconds": 1.49,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "1ac1e6f2e08a8db1",
+  "ok": true
+ },
+ "fixed": {
+  "detail": {
+   "dictionary": "fˈɪkst",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Vexed.",
+    "whisper": "fixed"
+   },
+   "phonemes": "fˈɪkst",
+   "score": 1,
+   "seconds": 1.08,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "047a12a0b4940889",
+  "ok": true
+ },
+ "food": {
+  "detail": {
+   "dictionary": "fˈuːd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Food",
+    "whisper": "Food"
+   },
+   "phonemes": "fˈuːd",
+   "score": 2,
+   "seconds": 1.4,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "87b690caa1ae478a",
+  "ok": true
+ },
+ "good": {
+  "detail": {
+   "dictionary": "ɡˈʊd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Good.",
+    "whisper": "Good"
+   },
+   "phonemes": "ɡˈʊd",
+   "score": 2,
+   "seconds": 1.25,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "dbafd19cabc46efb",
+  "ok": true
+ },
+ "great": {
+  "detail": {
+   "dictionary": "ɡɹˈAt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Great.",
+    "whisper": "Great"
+   },
+   "phonemes": "ɡɹˈAt",
+   "score": 2,
+   "seconds": 1.19,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "64c93b09854e2e74",
+  "ok": true
+ },
+ "hair": {
+  "detail": {
+   "dictionary": "hˈɛː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "The head.",
+    "whisper": "This is..."
+   },
+   "phonemes": "hˈɛː",
+   "problem": "neither recogniser heard the word in any take",
+   "score": 0,
+   "seconds": 1.02,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "b4ee7ca2e1385fa0",
+  "ok": false
+ },
+ "hat": {
+  "detail": {
+   "dictionary": "hˈat",
+   "ending": ".",
+   "heard": {
+    "parakeet": "The hat.",
+    "whisper": "A hat"
+   },
+   "phonemes": "hˈat",
+   "score": 1,
+   "seconds": 1.02,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "611fc42e2291268d",
+  "ok": true
+ },
+ "heard": {
+  "detail": {
+   "dictionary": "hˈɜːd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Heard.",
+    "whisper": "heard"
+   },
+   "phonemes": "hˈɜːd",
+   "score": 2,
+   "seconds": 1.35,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "cd2da9bf13be0169",
+  "ok": true
+ },
+ "heart": {
+  "detail": {
+   "dictionary": "hˈɑːt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A heart.",
+    "whisper": "A heart."
+   },
+   "phonemes": "hˈɑːt",
+   "score": 2,
+   "seconds": 1.11,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "a9cc9f4319bed3ed",
+  "ok": true
+ },
+ "her": {
+  "detail": {
+   "dictionary": "hɜː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Huh.",
+    "whisper": "It's her."
+   },
+   "phonemes": "hɜː",
+   "problem": "neither recogniser heard the word in any take",
+   "score": 0,
+   "seconds": 1.11,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "3d01991459dd1021",
+  "ok": false
+ },
+ "hoped": {
+  "detail": {
+   "dictionary": "hˈQpt",
+   "ending": "!",
+   "heard": {
+    "parakeet": "I hoped it.",
+    "whisper": "Hoped."
+   },
+   "phonemes": "hˈQpt",
+   "score": 1,
+   "seconds": 1.16,
+   "source": "silver",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "f13a0d29fa3a4905",
+  "ok": true
+ },
+ "interesting": {
+  "detail": {
+   "dictionary": "ˈɪntɹɪstɪŋ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Interesting.",
+    "whisper": "Interesting."
+   },
+   "phonemes": "ˈɪntɹɪstɪŋ",
+   "score": 2,
+   "seconds": 1.39,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "ac05384ac934850a",
+  "ok": true
+ },
+ "judges": {
+  "detail": {
+   "dictionary": "ʤˈʌʤɪz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Judges",
+    "whisper": "Judges"
+   },
+   "phonemes": "ʤˈʌʤɪz",
+   "score": 2,
+   "seconds": 1.22,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "1d478cfd22d1f7c3",
+  "ok": true
+ },
+ "key": {
+  "detail": {
+   "dictionary": "kˈiː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A key",
+    "whisper": "Okay."
+   },
+   "phonemes": "kˈiː",
+   "score": 1,
+   "seconds": 1.21,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "c636395306b2f2b0",
+  "ok": true
+ },
+ "landed": {
+  "detail": {
+   "dictionary": "lˈandɪd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Landed.",
+    "whisper": "landed"
+   },
+   "phonemes": "lˈandɪd",
+   "score": 2,
+   "seconds": 1.65,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "2c853ab543db1713",
+  "ok": true
+ },
+ "law": {
+  "detail": {
+   "dictionary": "lˈɔː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Law",
+    "whisper": "law"
+   },
+   "phonemes": "lˈɔː",
+   "score": 2,
+   "seconds": 1.04,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "913b9bf6a15fc3b9",
+  "ok": true
+ },
+ "lemon": {
+  "detail": {
+   "dictionary": "lˈɛmən",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Lemon",
+    "whisper": "lemon"
+   },
+   "phonemes": "lˈɛmən",
+   "score": 2,
+   "seconds": 1.27,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "42ca7af99f239e9f",
+  "ok": true
+ },
+ "lentil": {
+  "detail": {
+   "dictionary": "lˈɛntɪl",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Lentil",
+    "whisper": "lentil"
+   },
+   "phonemes": "lˈɛntᵊl",
+   "score": 2,
+   "seconds": 1.63,
+   "source": "editor override",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "fdfb366a9eb5f65f",
+  "ok": true
+ },
+ "limit": {
+  "detail": {
+   "dictionary": "lˈɪmɪt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Limit",
+    "whisper": "limit"
+   },
+   "phonemes": "lˈɪmɪt",
+   "score": 2,
+   "seconds": 1.5,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "e39710f61f8fde68",
+  "ok": true
+ },
+ "listen": {
+  "detail": {
+   "dictionary": "lˈɪsᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Listen.",
+    "whisper": "Listen."
+   },
+   "phonemes": "lˈɪsᵊn",
+   "score": 2,
+   "seconds": 1.57,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "9b206a20a71666a2",
+  "ok": true
+ },
+ "machine": {
+  "detail": {
+   "dictionary": "məʃˈiːn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A machine.",
+    "whisper": "A machine."
+   },
+   "phonemes": "məʃˈiːn",
+   "score": 2,
+   "seconds": 1.83,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "2a0d3e93ae37d30f",
+  "ok": true
+ },
+ "make": {
+  "detail": {
+   "dictionary": "mˌAk",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Make",
+    "whisper": "Make"
+   },
+   "phonemes": "mˌAk",
+   "score": 2,
+   "seconds": 1.19,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "6631118e4eeb0769",
+  "ok": true
+ },
+ "market": {
+  "detail": {
+   "dictionary": "mˈɑːkɪt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Market",
+    "whisper": "market"
+   },
+   "phonemes": "mˈɑːkɪt",
+   "score": 2,
+   "seconds": 1.22,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "14db583da98aaf3a",
+  "ok": true
+ },
+ "measure": {
+  "detail": {
+   "dictionary": "mˈɛʒə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Measure.",
+    "whisper": "We measure"
+   },
+   "phonemes": "mˈɛʒə",
+   "score": 1,
+   "seconds": 1.32,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "e0f44d27ff703379",
+  "ok": true
+ },
+ "mission": {
+  "detail": {
+   "dictionary": "mˈɪʃᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Mission",
+    "whisper": "Mission De"
+   },
+   "phonemes": "mˈɪʃᵊn",
+   "score": 1,
+   "seconds": 1.35,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_isabella"
+  },
+  "key": "ab3786eab1e38d14",
+  "ok": true
+ },
+ "mud": {
+  "detail": {
+   "dictionary": "mˈʌd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Mud.",
+    "whisper": "MUD"
+   },
+   "phonemes": "mˈʌd",
+   "score": 2,
+   "seconds": 1.42,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "389f2a5ca7f29bd3",
+  "ok": true
+ },
+ "nation": {
+  "detail": {
+   "dictionary": "nˈAʃᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Nation",
+    "whisper": "Nation"
+   },
+   "phonemes": "nˈAʃᵊn",
+   "score": 2,
+   "seconds": 1.16,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "f7f33d84ae45dbc9",
+  "ok": true
+ },
+ "open": {
+  "detail": {
+   "dictionary": "ˈQpᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Open",
+    "whisper": "Open"
+   },
+   "phonemes": "ˈQpᵊn",
+   "score": 2,
+   "seconds": 1.33,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "bac7cfc4bf2cab6b",
+  "ok": true
+ },
+ "pencil": {
+  "detail": {
+   "dictionary": "pˈɛnsᵊl",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A pencil.",
+    "whisper": "A pencil."
+   },
+   "phonemes": "pˈɛnsᵊl",
+   "score": 2,
+   "seconds": 1.67,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "bdd8daeba11a95ed",
+  "ok": true
+ },
+ "photo": {
+  "detail": {
+   "dictionary": "fˈQtQ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Photo",
+    "whisper": "photo"
+   },
+   "phonemes": "fˈQtQ",
+   "score": 2,
+   "seconds": 1.1,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "c5f3a293e58bbe5e",
+  "ok": true
+ },
+ "photograph": {
+  "detail": {
+   "dictionary": "fˈQtəɡɹɑːf",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Photograph",
+    "whisper": "Photograph"
+   },
+   "phonemes": "fˈQtəɡɹɑːf",
+   "score": 2,
+   "seconds": 1.42,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "b95428fca39f609b",
+  "ok": true
+ },
+ "photography": {
+  "detail": {
+   "dictionary": "fətˈɒɡɹəfi",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Photography",
+    "whisper": "Photography"
+   },
+   "phonemes": "fətˈɒɡɹəfi",
+   "score": 2,
+   "seconds": 1.42,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "1787890b3295b254",
+  "ok": true
+ },
+ "politics": {
+  "detail": {
+   "dictionary": "pˈɒlɪtɪks",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Politics",
+    "whisper": "Politics"
+   },
+   "phonemes": "pˈɒlɪtɪks",
+   "score": 2,
+   "seconds": 1.32,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "c0da30cc5b23cbdb",
+  "ok": true
+ },
+ "pressure": {
+  "detail": {
+   "dictionary": "pɹˈɛʃə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Pressure.",
+    "whisper": "pressure"
+   },
+   "phonemes": "pɹˈɛʃə",
+   "score": 2,
+   "seconds": 1.12,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "bf3c0bb1aaa1b8b3",
+  "ok": true
+ },
+ "record-noun": {
+  "detail": {
+   "dictionary": "ɹˈɛkɔːd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Record",
+    "whisper": "Record"
+   },
+   "phonemes": "ɹˈɛkɔːd",
+   "score": 2,
+   "seconds": 1.27,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "ad2997227e7428c2",
+  "ok": true
+ },
+ "record-verb": {
+  "detail": {
+   "dictionary": "ɹɪkˈɔːd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Record.",
+    "whisper": "record"
+   },
+   "phonemes": "ɹɪkˈɔːd",
+   "score": 2,
+   "seconds": 1.68,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "3bc0b66b4cfae1e7",
+  "ok": true
+ },
+ "road": {
+  "detail": {
+   "dictionary": "ɹˈQd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Rode",
+    "whisper": "road"
+   },
+   "phonemes": "ɹˈQd",
+   "score": 2,
+   "seconds": 1.1,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "8464c80f156df036",
+  "ok": true
+ },
+ "rooms": {
+  "detail": {
+   "dictionary": "ɹˈuːmz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Rooms",
+    "whisper": "rooms"
+   },
+   "phonemes": "ɹˈuːmz",
+   "score": 2,
+   "seconds": 1.25,
+   "source": "silver",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "be40a97785db713c",
+  "ok": true
+ },
+ "said": {
+  "detail": {
+   "dictionary": "sˈɛd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Said",
+    "whisper": "said"
+   },
+   "phonemes": "sˈɛd",
+   "score": 2,
+   "seconds": 1.06,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "a100fbed48d591b0",
+  "ok": true
+ },
+ "seize": {
+  "detail": {
+   "dictionary": "sˈiːz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "",
+    "whisper": "\"A-seize!\""
+   },
+   "phonemes": "sˈiːz",
+   "score": 1,
+   "seconds": 1.29,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_alice"
+  },
+  "key": "c588d78074dcc98a",
+  "ok": true
+ },
+ "sheep": {
+  "detail": {
+   "dictionary": "ʃˈiːp",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A sheep.",
+    "whisper": "A sheep."
+   },
+   "phonemes": "ʃˈiːp",
+   "score": 2,
+   "seconds": 1.19,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "aa0d8c97cf44734e",
+  "ok": true
+ },
+ "shoe": {
+  "detail": {
+   "dictionary": "ʃˈuː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Shoe.",
+    "whisper": "shoe"
+   },
+   "phonemes": "ʃˈuː",
+   "score": 2,
+   "seconds": 0.99,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "4500efb4deaac10a",
+  "ok": true
+ },
+ "shop": {
+  "detail": {
+   "dictionary": "ʃˈɒp",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A shop.",
+    "whisper": "A shop."
+   },
+   "phonemes": "ʃˈɒp",
+   "score": 2,
+   "seconds": 1.13,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "b163ce55ec333ed1",
+  "ok": true
+ },
+ "street": {
+  "detail": {
+   "dictionary": "stɹˈiːt",
+   "ending": ".",
+   "heard": {
+    "parakeet": "A street.",
+    "whisper": "a street"
+   },
+   "phonemes": "stɹˈiːt",
+   "score": 2,
+   "seconds": 1.14,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "f41e3229ea4d89f6",
+  "ok": true
+ },
+ "sun": {
+  "detail": {
+   "dictionary": "sˈʌn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Son",
+    "whisper": "Sun"
+   },
+   "phonemes": "sˈʌn",
+   "score": 2,
+   "seconds": 1.15,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "dc815e962c4f2dfc",
+  "ok": true
+ },
+ "table": {
+  "detail": {
+   "dictionary": "tˈAbᵊl",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Table",
+    "whisper": "Table"
+   },
+   "phonemes": "tˈAbᵊl",
+   "score": 2,
+   "seconds": 1.41,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "95b088fceb655094",
+  "ok": true
+ },
+ "television": {
+  "detail": {
+   "dictionary": "tˈɛlɪvˌɪʒᵊn",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Television",
+    "whisper": "Television"
+   },
+   "phonemes": "tˈɛlɪvˌɪʒᵊn",
+   "score": 2,
+   "seconds": 1.45,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "736fdd86e88be094",
+  "ok": true
+ },
+ "these": {
+  "detail": {
+   "dictionary": "ðiːz",
+   "ending": ".",
+   "heard": {
+    "parakeet": "These",
+    "whisper": "These."
+   },
+   "phonemes": "ðiːz",
+   "score": 2,
+   "seconds": 1.58,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "f08ba4ba30cb6d8f",
+  "ok": true
+ },
+ "thick": {
+  "detail": {
+   "dictionary": "θˈɪk",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Thick.",
+    "whisper": "thick"
+   },
+   "phonemes": "θˈɪk",
+   "score": 2,
+   "seconds": 0.98,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "12534c5d50f37694",
+  "ok": true
+ },
+ "think": {
+  "detail": {
+   "dictionary": "θˈɪŋk",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Think",
+    "whisper": "Think"
+   },
+   "phonemes": "θˈɪŋk",
+   "score": 2,
+   "seconds": 1.2,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "74947e6d2e68cf21",
+  "ok": true
+ },
+ "thomas": {
+  "detail": {
+   "dictionary": "tˈɒməs",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Thomas",
+    "whisper": "Thomas."
+   },
+   "phonemes": "tˈɒməs",
+   "score": 2,
+   "seconds": 1.13,
+   "source": "gold",
+   "speed": 1.0,
+   "voice": "bf_emma"
+  },
+  "key": "3168162d2df055fc",
+  "ok": true
+ },
+ "though": {
+  "detail": {
+   "dictionary": "ðˌQ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Though",
+    "whisper": "though"
+   },
+   "phonemes": "ðˌQ",
+   "score": 2,
+   "seconds": 0.98,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_emma"
+  },
+  "key": "ef777aaed68ae337",
+  "ok": true
+ },
+ "village": {
+  "detail": {
+   "dictionary": "vˈɪlɪʤ",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Village.",
+    "whisper": "village"
+   },
+   "phonemes": "vˈɪlɪʤ",
+   "score": 2,
+   "seconds": 1.14,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "5fa3faceab40ce72",
+  "ok": true
+ },
+ "volunteer": {
+  "detail": {
+   "dictionary": "vˌɒləntˈɪə",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Volunteer",
+    "whisper": "Volunteer"
+   },
+   "phonemes": "vˌɒləntˈɪə",
+   "score": 2,
+   "seconds": 1.43,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "d0b9d6849ddd2221",
+  "ok": true
+ },
+ "ward": {
+  "detail": {
+   "dictionary": "wˈɔːd",
+   "ending": "!",
+   "heard": {
+    "parakeet": "Ward",
+    "whisper": "WOD"
+   },
+   "phonemes": "wˈɔːd",
+   "score": 1,
+   "seconds": 1.35,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_lily"
+  },
+  "key": "8b7855d4f72aeeb1",
+  "ok": true
+ },
+ "wear": {
+  "detail": {
+   "dictionary": "wˈɛː",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Where",
+    "whisper": "Where's..."
+   },
+   "phonemes": "wˈɛː",
+   "score": 1,
+   "seconds": 1.25,
+   "source": "gold",
+   "speed": 0.85,
+   "voice": "bf_lily"
+  },
+  "key": "3e8bf4545861124b",
+  "ok": true
+ },
+ "wood": {
+  "detail": {
+   "dictionary": "wˈʊd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Wood.",
+    "whisper": "would"
+   },
+   "phonemes": "wˈʊd",
+   "score": 2,
+   "seconds": 1.12,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "f0145aaf5998014e",
+  "ok": true
+ },
+ "word": {
+  "detail": {
+   "dictionary": "wˈɜːd",
+   "ending": ".",
+   "heard": {
+    "parakeet": "Word",
+    "whisper": "word"
+   },
+   "phonemes": "wˈɜːd",
+   "score": 2,
+   "seconds": 1.39,
+   "source": "gold",
+   "speed": 0.9,
+   "voice": "bf_emma"
+  },
+  "key": "4ca5ab478fabacc6",
+  "ok": true
+ }
+}
