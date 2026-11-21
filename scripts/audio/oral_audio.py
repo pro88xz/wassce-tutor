@@ -4,12 +4,15 @@
     python3 scripts/audio/oral_audio.py           # build clips that are new or changed
     python3 scripts/audio/oral_audio.py --force   # rebuild every clip
 
-Reads CLIPS from content/questions/english-language/set5_p1.py and writes:
+Reads CLIPS from content/questions/english-language/set5_p1.py, and the audio
+links in the lessons (content/notes/*.md), and writes:
 
 - public/audio/oral/<slug>.mp3, one per clip;
 - content/questions/english-language/audio_manifest.json, the clips that passed,
   which set5_p1.py links to (a clip that fails is never linked);
-- content/questions/english-language/AUDIO.md, the check report for each clip.
+- content/questions/english-language/AUDIO.md, the check report for each clip;
+- the lessons' audio links, each given its file's hash. A lesson that links to a
+  clip that failed stops the script: choose another example word.
 
 Then run scripts/questions/build.py so the questions pick up the manifest.
 
@@ -432,6 +435,65 @@ def report(clips: dict, results: dict) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
+# ── Lessons ───────────────────────────────────────────────────────────────
+# A lesson asks for a clip by linking to it in its Markdown, labelled with the
+# word and its RP transcription: [seat /siːt/](https://wasscetutor.com/audio/oral/seat.mp3).
+# The words on one line (a table row, a Listen line) are a row: each must not be
+# heard as another. After a build, every link gets its file's hash (?v=...).
+NOTES = ROOT / "content/notes"
+LESSON_LINK = re.compile(r"\[([^\]/]+?) /([^/\]]+)/\]\(https://wasscetutor\.com/audio/oral/([\w-]+)\.mp3(?:\?v=\w+)?\)")
+# Words that sound the same as a lesson word in RP, which the recognisers may write instead.
+HOMOPHONES = {
+    "key": ["quay"], "caught": ["court"], "law": ["lore"], "here": ["hear"], "there": ["their", "they're"],
+    "pain": ["pane"], "seed": ["cede"], "time": ["thyme"], "boy": ["buoy"], "beer": ["bier"], "high": ["hi"],
+    "cart": ["kart"], "heart": ["hart"], "coat": ["cote"], "bread": ["bred"], "word": ["whirred"],
+    "ward": ["warred"], "father": ["farther"], "great": ["grate"], "heard": ["herd"], "wood": ["would"],
+    "wear": ["where", "ware"], "road": ["rode", "rowed"], "sun": ["son"], "seize": ["sees", "seas"],
+    "made": ["maid"], "sure": ["shore"],
+}
+
+
+def read_lessons(question_clips: dict) -> tuple[dict, list[list[str]]]:
+    clips: dict[str, dict] = {}
+    rows: list[list[str]] = []
+    for path in sorted(NOTES.glob("*.md")):
+        for line in path.read_text().split("\n"):
+            found = LESSON_LINK.findall(line)
+            for label, ipa, slug in found:
+                text = label.split(" (")[0]
+                # "present (verb)": the dictionary's verb entry; "(noun)" its noun entry where it has one.
+                pos = {"(verb)": "VERB", "(noun)": "NOUN"}.get(label[len(text):].strip(), "DEFAULT")
+                clip = question_clips.get(slug) or {
+                    "kind": "word", "text": text, "label": label, "ipa": ipa.replace("g", "ɡ"), "pos": pos,
+                    "phonemes": None, "also": HOMOPHONES.get(text.lower(), [])}
+                if sounds(clip["ipa"]) != sounds(ipa.replace("g", "ɡ")) or clip["text"] != text:
+                    raise SystemExit(f"{path.name}: {label} /{ipa}/ differs from the clip {slug} (/{clip['ipa']}/)")
+                if clips.setdefault(slug, clip) != clip:
+                    raise SystemExit(f"{path.name}: {slug} is labelled two ways")
+            if len(found) > 1:
+                rows.append([slug for _, _, slug in found])
+    return clips, rows
+
+
+def link_lessons(manifest: dict[str, str]) -> dict[str, list[str]]:
+    """Give every lesson link its file's hash; return the links to clips that failed."""
+    dead: dict[str, list[str]] = {}
+    for path in sorted(NOTES.glob("*.md")):
+        text = path.read_text()
+
+        def stamp(m: re.Match) -> str:
+            label, ipa, slug = m.groups()
+            if slug not in manifest:
+                dead.setdefault(path.name, []).append(slug)
+                return m.group(0)
+            return f"[{label} /{ipa}/](https://wasscetutor.com/audio/oral/{slug}.mp3?v={manifest[slug]})"
+
+        new = LESSON_LINK.sub(stamp, text)
+        if new != text:
+            path.write_text(new)
+    return dead
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--force", action="store_true", help="rebuild every clip")
@@ -439,10 +501,12 @@ def main() -> None:
     args = ap.parse_args()
 
     import set5_p1
-    clips = set5_p1.CLIPS
+    clips = dict(set5_p1.CLIPS)
+    lesson_clips, lesson_rows = read_lessons(clips)
+    clips.update(lesson_clips)
     # Each word's rivals: the other words of every row it is in, and their homophones.
     rivals: dict[str, set[str]] = {slug: set() for slug in clips}
-    for row in set5_p1.ROWS.values():
+    for row in [*set5_p1.ROWS.values(), *lesson_rows]:
         for slug in row:
             for other in row:
                 if clips[other]["text"].lower() != clips[slug]["text"].lower():
@@ -479,6 +543,10 @@ def main() -> None:
     REPORT.write_text(report(clips, results))
     failed = [s for s in clips if not results[s]["ok"]]
     print(f"{len(clips) - len(failed)} of {len(clips)} clips passed" + (f"; failed: {', '.join(failed)}" if failed else ""))
+    dead = link_lessons(manifest)
+    if dead:
+        sys.exit("Lessons link to clips that failed their checks; choose other words for: "
+                 + "; ".join(f"{name}: {', '.join(slugs)}" for name, slugs in dead.items()))
 
 
 if __name__ == "__main__":

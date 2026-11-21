@@ -42,12 +42,19 @@ function quizQuestion(q: PublicQuestion): QuizQuestion {
   }
 }
 
-function describe({ subject, topic, questions }: TopicQuestionsPageData): string {
+// Oral English questions link to audio clips (their words, or a passage read
+// aloud), which the page plays: a reason to choose this page over a plain list.
+const AUDIO_CLIP = /\/audio\/[\w/-]+\.mp3/
+const hasAudio = ({ questions }: TopicQuestionsPageData) => questions.some((q) => AUDIO_CLIP.test(`${q.stem}\n${q.explanation ?? ''}`))
+
+function describe(data: TopicQuestionsPageData): string {
+  const { subject, topic, questions } = data
   const n = questions.length
   const diagrams = questions.filter((q) => q.image_url).length
   const first = plain(questions[0].stem)
   return fitDescription([
     `${n} WASSCE ${subject.name} questions on ${topic.name.toLowerCase()} with answers and full working${diagrams ? `, ${diagrams === 1 ? 'one with a diagram' : `${diagrams} with diagrams`}` : ''}.`,
+    hasAudio(data) ? 'Hear every word in standard British English.' : '',
     'Free, with why each wrong option is wrong.',
     `Question 1: ${first.length > 70 ? `${first.slice(0, first.lastIndexOf(' ', 70))}…` : first}`,
   ])
@@ -66,7 +73,11 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/questions')({
     const name = `${data.topic.name}: WASSCE ${data.subject.name} questions and answers`
     return indexablePageTags({
       path,
-      title: brandedTitle(`WASSCE ${data.subject.name}: ${data.topic.name} Questions and Answers`),
+      title: brandedTitle(
+        hasAudio(data)
+          ? `WASSCE Oral English: ${data.topic.name} Questions with Audio`
+          : `WASSCE ${data.subject.name}: ${data.topic.name} Questions and Answers`,
+      ),
       ogTitle: name,
       description: describe(data),
       jsonLd: [
