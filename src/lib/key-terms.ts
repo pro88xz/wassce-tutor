@@ -8,9 +8,10 @@
 //   An **adjective** is a word that ...                     (with an article first)
 //   **Coulomb's law:** the force between two charges ...   (term, then a colon or dash)
 //   - **Puberty**: the age at which an animal ...          (one card per list item)
+//   | Term | Meaning |  ...  | **allele** | one form of a gene |   (a table of terms, see tableUnits)
 //
-// Anything else in a box (tables, worked lists, a formula on its own) makes no
-// card: a wrong card is worse than a missing one. The back of the card is the
+// Anything else in a box (other tables, worked lists, a formula on its own)
+// makes no card: a wrong card is worse than a missing one. The back of the card is the
 // sentence as the lesson wrote it, so the words never drift from the lesson.
 // Pure functions, no imports: used by the pages, the app, and the build's
 // page list (scripts/public-page-list.ts, loaded by vite.config.ts in Node).
@@ -44,13 +45,44 @@ const GENERIC = /^(verify|check|notation|note|notes|step \d+|method|rule|rules|f
 const slugOf = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 const words = (s: string) => s.replace(/\$[^$]*\$/g, ' x ').replace(/[*_`>#|]/g, ' ').split(/\s+/).filter(Boolean).length
 
-/** A box's text as units: list items, and the sentences of a paragraph that each start by defining a bold term. */
+// A table defines terms only when its headings say so: the first column names
+// terms and the second gives their meaning. "Type" tables (Simple / Compound,
+// whose entries are adjectives) and tables of stages, parts, marks, rules,
+// symbols or formulas make no card, and nor do "the question it answers" tables.
+const TERM_COLUMN = /^(terms?|words?|figures?|process(es)?|associations?|concepts?|propert(y|ies))$/i
+const MEANING_COLUMN = /^(meaning|definition|what happens|how it works)$/i
+// Further columns that belong on the card (an example, the organisms involved); others ("Here", "How to find it") stay in the lesson.
+const EXTRA_COLUMN = /^(examples?|organisms?)$/i
+
+/** A table of terms as units, one per row with its term in bold: "**term**: meaning. Example: ...". */
+function tableUnits(block: string): string[] {
+  const rows = block.split('\n').map((l) => l.trim()).filter((l) => l.startsWith('|'))
+  if (rows.length < 3 || !/^\|[\s:|-]+\|?$/.test(rows[1])) return []
+  const cells = (row: string) => row.replace(/^\|/, '').replace(/\|$/, '').split('|').map((c) => c.trim())
+  const head = cells(rows[0]).map((h) => h.replace(/\*/g, '').split(':')[0].trim())
+  if (head.length < 2 || !TERM_COLUMN.test(head[0]) || !MEANING_COLUMN.test(head[1])) return []
+  return rows.slice(2).flatMap((row) => {
+    const c = cells(row)
+    if (!/^\*\*[^*\n]{2,60}\*\*/.test(c[0] ?? '') || !c[1]) return []
+    // End each part with a full stop, unless it already ends a sentence (also inside italics: "*… a cheetah.*").
+    const sentence = (v: string) => (/[.!?]["'”’]?[*_]*$/.test(v) ? v : `${v}.`)
+    const meaning = sentence(c[1])
+    const extra = c.slice(2).flatMap((v, i) => (v && EXTRA_COLUMN.test(head[i + 2] ?? '') ? [`${head[i + 2]}: ${sentence(v)}`] : []))
+    return [[`${c[0]}: ${meaning}`, ...extra].join(' ')]
+  })
+}
+
+/** A box's text as units: list items, table rows that define terms, and the sentences of a paragraph that each start by defining a bold term. */
 function units(box: string): string[] {
   const out: string[] = []
   const blocks = box.split(/\n\s*\n/)
   for (let b = 0; b < blocks.length; b++) {
     const block = blocks[b].trim()
-    if (!block || block.startsWith('|')) continue
+    if (!block) continue
+    if (block.startsWith('|')) {
+      out.push(...tableUnits(block))
+      continue
+    }
     const lines = block.split('\n')
     if (lines.every((l) => /^\s*([-*+]|\d+[.)])\s+/.test(l) || /^\s{2,}\S/.test(l))) {
       // A list: one unit per item (continuation lines join their item).
