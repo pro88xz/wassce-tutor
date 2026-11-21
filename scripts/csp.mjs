@@ -33,7 +33,8 @@ const BASE = {
   'frame-src': [GOOGLE],
   'worker-src': ["'self'", 'blob:'],
   'manifest-src': ["'self'"],
-  'media-src': ["'self'"],
+  // Pronunciation and listening clips (public/audio), which the Android app loads from the site.
+  'media-src': ["'self'", 'https://wasscetutor.com'],
   'object-src': ["'none'"],
   'base-uri': ["'self'"],
   'form-action': ["'self'"],

@@ -17,6 +17,7 @@ import { Diagram } from './lesson/Diagram'
 import { Zoomable } from './lesson/Zoomable'
 import { Marked, ModelAnswer, Reveal, RightAligned } from './lesson/WritingBlocks'
 import { MdTable } from './MdTable'
+import { MarkdownLink } from './AudioChip'
 import { fitLongMath, splitForNarrow } from '@/lib/math-split'
 
 // Custom remark plugin: rewrite directive nodes to use HTML element names
@@ -182,6 +183,8 @@ const MD_COMPONENTS = {
   mark: ({ n, children }: any) => <Marked n={n}>{children}</Marked>,
   // Wide tables scroll sideways on phones; short-cell tables fit the screen.
   table: MdTable,
+  // A link to a clip under /audio/ is a play button (AudioChip); other links stay links.
+  a: MarkdownLink,
   // Diagrams sit on a white card, so line drawings stay readable in dark mode.
   // Tapping one opens it full screen (Zoomable), where its labels are readable on a phone.
   img: ({ node: _node, src, alt }: any) => (

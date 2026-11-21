@@ -3,6 +3,7 @@
 // the first time MarkdownView mounts on any page.
 import { lazy, Suspense, useEffect, useState } from 'react'
 import { MdTable } from './MdTable'
+import { MarkdownLink } from './AudioChip'
 
 const ReactMarkdown = lazy(() => import('react-markdown'))
 
@@ -37,7 +38,7 @@ export function MarkdownView({ content, className }: { content: string; classNam
         <ReactMarkdown
           remarkPlugins={[[plugins!.gfm, { singleTilde: false }], plugins!.remark]}
           rehypePlugins={[plugins!.rehype]}
-          components={{ table: (props: any) => <MdTable className="not-prose my-3" {...props} /> } as any}
+          components={{ table: (props: any) => <MdTable className="not-prose my-3" {...props} />, a: MarkdownLink } as any}
         >
           {content}
         </ReactMarkdown>

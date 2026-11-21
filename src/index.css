@@ -383,6 +383,68 @@ html.promo-hidden [data-app-promo] { display: none; }
 .q-stem blockquote p::after { content: none; }
 [id^='q'].scroll-mt-24 { scroll-margin-top: 6rem; }
 
+/* Play buttons for pronunciation and listening clips (src/components/AudioChip.tsx):
+   a row of them wraps like words, each big enough to tap on a phone. */
+.audio-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.5rem;
+  margin: 0.2rem 0.4rem 0.2rem 0;
+  padding: 0.25rem 0.9rem 0.25rem 0.25rem;
+  border: 1px solid var(--border);
+  border-color: color-mix(in oklab, var(--primary) 30%, transparent);
+  border-radius: 999px;
+  background: var(--card);
+  background: color-mix(in oklab, var(--primary) 6%, var(--card));
+  color: var(--foreground);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: left;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s, transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+}
+.audio-chip:hover { background: color-mix(in oklab, var(--primary) 12%, var(--card)); }
+.audio-chip:active { transform: scale(0.97); }
+.audio-chip:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+.audio-chip__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+.audio-chip__icon svg { width: 1rem; height: 1rem; }
+.audio-chip__ipa { color: var(--muted-foreground); font-weight: 400; }
+.audio-chip.is-playing {
+  border-color: var(--primary);
+  background: color-mix(in oklab, var(--primary) 16%, var(--card));
+}
+.audio-chip.is-playing .audio-chip__icon { animation: audio-chip-pulse 1.2s ease-in-out infinite; }
+@keyframes audio-chip-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 45%, transparent); }
+  50% { box-shadow: 0 0 0 6px transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .audio-chip.is-playing .audio-chip__icon { animation: none; }
+}
+/* A listening passage: one larger button above the text. */
+.audio-chip--passage {
+  min-height: 3rem;
+  margin-block: 0.35rem;
+  padding-right: 1.15rem;
+  font-weight: 600;
+}
+.audio-chip--passage .audio-chip__icon { width: 2.4rem; height: 2.4rem; }
+.audio-chip--passage .audio-chip__icon svg { width: 1.15rem; height: 1.15rem; margin-left: 2px; }
+
 /* Markdown tables (lessons, AI tutor): readable on phones, scroll sideways when wide. */
 .md-table {
   margin: 0;

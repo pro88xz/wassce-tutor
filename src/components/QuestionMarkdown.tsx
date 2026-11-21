@@ -11,12 +11,14 @@ import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import 'katex/dist/katex.min.css'
 import { MdTable } from './MdTable'
+import { MarkdownLink } from './AudioChip'
 
 const REMARK = [[remarkGfm, { singleTilde: false }], remarkMath] as const
 // strict: 'ignore': a dash typed inside a formula renders fine; KaTeX only warns about it.
 const REHYPE = [[rehypeKatex, { strict: 'ignore' }]] as const
+// Links to a clip under /audio/ become play buttons (AudioChip).
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const COMPONENTS = { table: (props: any) => <MdTable className="not-prose my-3" {...props} /> }
+const COMPONENTS = { table: (props: any) => <MdTable className="not-prose my-3" {...props} />, a: MarkdownLink }
 // Inline: paragraphs become block spans, so the markup is valid inside a button (an answer option).
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const INLINE_COMPONENTS = { ...COMPONENTS, p: ({ children }: any) => <span className="block">{children}</span> }

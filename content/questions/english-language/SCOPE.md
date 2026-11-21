@@ -60,6 +60,15 @@ emphatic stress, tunes). RP symbols as in the lessons; letters in **bold** mark
 the sound tested and CAPITALS mark stress. Listening items carry a short
 transcript in the question.
 
+**Audio.** Vowel, consonant and word-stress items end their explanation with a
+**Listen** row: every word in the question, spoken in standard British English
+with its RP transcription. Listening items have a play button above the
+transcript (a man's and a woman's voice in the dialogues). Sentence stress and
+intonation items have none yet: a synthetic voice cannot be relied on to put
+emphatic stress or a tune exactly where the question needs it. Clips are made
+and checked by `scripts/audio/oral_audio.py` (see its README); a clip that fails
+its checks is not linked, and `AUDIO.md` records the result for every clip.
+
 ## Set 6: reading approach and writing tasks, 84 questions
 
 Seven items each on Approaching a Comprehension Passage, Essay Writing
@@ -73,8 +82,8 @@ Sets 1 to 4 have two more items per topic (one per passage in set 4), added at
 the end of each file so earlier answer letters never move. Every English topic
 now has at least seven questions: 334 in all.
 
-Next: more passages (narrative, argumentative, a report), and audio for the
-oral English items.
+Next: more passages (narrative, argumentative, a report), and audio in the
+oral English lessons.
 
 ## House rules
 
