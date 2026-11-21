@@ -41,7 +41,8 @@ export function AppPromoBanner() {
         >
           <X className="h-4 w-4" aria-hidden />
         </button>
-        <a href={PROMO.href} target="_blank" rel="noopener" onClick={install} className="group flex min-w-0 flex-1 items-center gap-3">
+        {/* An advert: "sponsored" tells search engines so, as Google asks of ad links. */}
+        <a href={PROMO.href} target="_blank" rel="sponsored noopener" onClick={install} className="group flex min-w-0 flex-1 items-center gap-3">
           <img
             src={PROMO.icon}
             srcSet={`${PROMO.icon} 2x, ${PROMO.icon3x} 3x`}

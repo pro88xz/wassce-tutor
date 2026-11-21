@@ -31,6 +31,10 @@ export function SignInLink({
   return (
     <a
       href={signInHref(target, options)}
+      // Every page links to its own /auth?next=…, a noindex page: nofollow
+      // keeps search engines from crawling thousands of copies of the sign-in
+      // screen instead of the pages that matter.
+      rel="nofollow"
       className={className}
       onClick={(e) => {
         if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
