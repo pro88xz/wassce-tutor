@@ -248,10 +248,22 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
       'What inflation is, how the price index measures it, and its five causes: demand-pull, cost-push, imported, monetary and structural. With Sierra Leone examples.',
   },
   // "vowels and diphthongs in english" (position 5), "vowels and diphthongs examples" (4), "... list".
+  // The three oral English lessons play their example words (scripts/audio), which few
+  // pages for these searches do: the titles say so.
   '/wassce/english-language/vowels-and-diphthongs/vowels-and-diphthongs-the-20-vowel-sounds-of-english': {
-    title: 'Vowels and Diphthongs in English: List with Examples | WASSCE',
+    title: 'Vowels and Diphthongs in English, with Audio | WASSCE',
     description:
-      'All 20 vowel sounds of English: the 12 pure vowels and 8 diphthongs, each with its symbol and example words, the pairs students confuse, and practice.',
+      'Hear all 20 vowel sounds of English: the 12 pure vowels and 8 diphthongs, with symbols and example words to play, and the vowel pairs WASSCE tests most.',
+  },
+  '/wassce/english-language/consonants-and-consonant-clusters/consonants-the-24-sounds-ed-and-s-endings-clusters-and-silent-letters': {
+    title: 'English Consonant Sounds, with Audio | WASSCE Oral English',
+    description:
+      'Hear the 24 consonant sounds of English: voiced and voiceless pairs, the th sounds, -ed and -s endings, clusters and silent letters, with words to play.',
+  },
+  '/wassce/english-language/word-stress/word-stress-the-patterns-behind-the-right-syllable': {
+    title: 'Word Stress Rules in English, with Audio | WASSCE',
+    description:
+      'Hear where the stress falls: nouns and verbs, PREsent and preSENT, endings like -tion and -ic, compounds, and words often mis-stressed in Sierra Leone.',
   },
 }
 

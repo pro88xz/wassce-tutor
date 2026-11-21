@@ -24,22 +24,22 @@ Spelling is an unreliable guide. The letters **ea** spell three different vowel 
 
 ## The 12 pure vowels
 
-The colon ( ː ) means the vowel is **long**.
+The colon ( ː ) means the vowel is **long**. Tap a word in the **Listen** column to hear it in standard British English.
 
-| Symbol | Short or long | Example words |
-|---|---|---|
-| /iː/ | long | s**ee**, s**ea**t, k**ey**, rec**ei**ve, p**eo**ple |
-| /ɪ/ | short | s**i**t, b**u**sy, w**o**men, pr**e**tty, g**y**m |
-| /e/ | short | b**e**d, br**ea**d, s**ai**d, fr**ie**nd, **a**ny |
-| /æ/ | short | c**a**t, m**a**n, pl**ai**t, b**a**d |
-| /ɑː/ | long | c**ar**t, f**a**ther, h**ear**t, c**al**m, **au**nt |
-| /ʌ/ | short | c**u**t, l**o**ve, bl**oo**d, t**ou**gh, m**o**ney |
-| /ɒ/ | short | p**o**t, w**a**sh, kn**ow**ledge, c**ou**gh |
-| /ɔː/ | long | p**or**t, b**ough**t, l**aw**, w**al**k, d**oor** |
-| /ʊ/ | short | b**oo**k, p**u**t, c**ou**ld, w**o**man |
-| /uː/ | long | f**oo**d, bl**ue**, tr**ue**, sh**oe**, fr**ui**t |
-| /ɜː/ | long | b**ir**d, w**or**d, h**ear**d, n**ur**se, f**ir**st |
-| /ə/ | short (the *schwa*) | **a**bout, teach**er**, doct**or**, Sat**ur**day, **a** banana |
+| Symbol | Short or long | Example words | Listen |
+|---|---|---|---|
+| /iː/ | long | s**ee**, s**ea**t, k**ey**, rec**ei**ve, p**eo**ple | [seat /siːt/](https://wasscetutor.com/audio/oral/seat.mp3?v=e7d1c9b38d) [key /kiː/](https://wasscetutor.com/audio/oral/key.mp3?v=83f54f5ecb) |
+| /ɪ/ | short | s**i**t, b**u**sy, w**o**men, pr**e**tty, g**y**m | [sit /sɪt/](https://wasscetutor.com/audio/oral/sit.mp3?v=fff37eb533) [busy /ˈbɪzi/](https://wasscetutor.com/audio/oral/busy.mp3?v=3ea3c98d5b) |
+| /e/ | short | b**e**d, br**ea**d, s**ai**d, fr**ie**nd, **a**ny | [bed /bed/](https://wasscetutor.com/audio/oral/bed.mp3?v=3341d5579d) [bread /bred/](https://wasscetutor.com/audio/oral/bread.mp3?v=2ad7534c4d) |
+| /æ/ | short | c**a**t, m**a**n, pl**ai**t, b**a**d | [cat /kæt/](https://wasscetutor.com/audio/oral/cat.mp3?v=324bad803b) [man /mæn/](https://wasscetutor.com/audio/oral/man.mp3?v=cd4ce1b7f2) |
+| /ɑː/ | long | c**ar**t, f**a**ther, h**ear**t, c**al**m, **au**nt | [cart /kɑːt/](https://wasscetutor.com/audio/oral/cart.mp3?v=0447f75cc6) [father /ˈfɑːðə/](https://wasscetutor.com/audio/oral/father.mp3?v=6f3f6315b5) |
+| /ʌ/ | short | c**u**t, l**o**ve, bl**oo**d, t**ou**gh, m**o**ney | [cut /kʌt/](https://wasscetutor.com/audio/oral/cut.mp3?v=36a49b80e1) [blood /blʌd/](https://wasscetutor.com/audio/oral/blood.mp3?v=e1f6cc3451) |
+| /ɒ/ | short | p**o**t, w**a**sh, kn**ow**ledge, c**ou**gh | [pot /pɒt/](https://wasscetutor.com/audio/oral/pot.mp3?v=c0550461fc) [wash /wɒʃ/](https://wasscetutor.com/audio/oral/wash.mp3?v=3e00dca40b) |
+| /ɔː/ | long | p**or**t, b**ough**t, l**aw**, w**al**k, d**oor** | [port /pɔːt/](https://wasscetutor.com/audio/oral/port.mp3?v=ab38c85609) [law /lɔː/](https://wasscetutor.com/audio/oral/law.mp3?v=ab76523aef) |
+| /ʊ/ | short | b**oo**k, p**u**t, c**ou**ld, w**o**man | [book /bʊk/](https://wasscetutor.com/audio/oral/book.mp3?v=d189b1e57a) [put /pʊt/](https://wasscetutor.com/audio/oral/put.mp3?v=ce37cded98) |
+| /uː/ | long | f**oo**d, bl**ue**, tr**ue**, sh**oe**, fr**ui**t | [food /fuːd/](https://wasscetutor.com/audio/oral/food.mp3?v=e2b81eb32a) [shoe /ʃuː/](https://wasscetutor.com/audio/oral/shoe.mp3?v=5278cb5a8e) |
+| /ɜː/ | long | b**ir**d, w**or**d, h**ear**d, n**ur**se, f**ir**st | [bird /bɜːd/](https://wasscetutor.com/audio/oral/bird.mp3?v=2537fe48d6) [word /wɜːd/](https://wasscetutor.com/audio/oral/word.mp3?v=f9d785c3cf) |
+| /ə/ | short (the *schwa*) | **a**bout, teach**er**, doct**or**, Sat**ur**day, **a** banana | [about /əˈbaʊt/](https://wasscetutor.com/audio/oral/about.mp3?v=a5dce7a38a) [teacher /ˈtiːtʃə/](https://wasscetutor.com/audio/oral/teacher.mp3?v=8b26402c04) |
 
 :::callout{type=tip}
 The **schwa** /ə/ is the most common vowel sound in English. It appears only in **unstressed** syllables: the first *a* in *about*, the *-er* in *teacher*, the *-or* in *doctor*. If a question asks which word contains /ə/, look for a weak, unstressed syllable.
@@ -47,16 +47,16 @@ The **schwa** /ə/ is the most common vowel sound in English. It appears only in
 
 ## The 8 diphthongs
 
-| Symbol | Glides from → to | Example words |
-|---|---|---|
-| /eɪ/ | /e/ → /ɪ/ | d**ay**, m**a**ke, r**ai**n, gr**ea**t, w**eigh** |
-| /aɪ/ | /a/ → /ɪ/ | m**y**, t**i**me, h**igh**, b**uy**, **eye** |
-| /ɔɪ/ | /ɔ/ → /ɪ/ | b**oy**, c**oi**n, n**oi**se |
-| /əʊ/ | /ə/ → /ʊ/ | g**o**, h**o**me, b**oa**t, kn**ow**, th**ough** |
-| /aʊ/ | /a/ → /ʊ/ | n**ow**, h**ou**se, l**ou**d, b**ough** |
-| /ɪə/ | /ɪ/ → /ə/ | h**ere**, n**ear**, b**eer**, id**ea** |
-| /eə/ | /e/ → /ə/ | h**air**, th**ere**, c**are**, w**ear** |
-| /ʊə/ | /ʊ/ → /ə/ | p**oor**, t**our**, s**ure** (in careful speech) |
+| Symbol | Glides from → to | Example words | Listen |
+|---|---|---|---|
+| /eɪ/ | /e/ → /ɪ/ | d**ay**, m**a**ke, r**ai**n, gr**ea**t, w**eigh** | [day /deɪ/](https://wasscetutor.com/audio/oral/day.mp3?v=95da4b622f) [make /meɪk/](https://wasscetutor.com/audio/oral/make.mp3?v=4c4b9660b8) |
+| /aɪ/ | /a/ → /ɪ/ | m**y**, t**i**me, h**igh**, b**uy**, **eye** | [time /taɪm/](https://wasscetutor.com/audio/oral/time.mp3?v=0699a59d20) [my /maɪ/](https://wasscetutor.com/audio/oral/my.mp3?v=35f6988811) |
+| /ɔɪ/ | /ɔ/ → /ɪ/ | b**oy**, c**oi**n, n**oi**se | [boy /bɔɪ/](https://wasscetutor.com/audio/oral/boy.mp3?v=422cf0fe0c) [coin /kɔɪn/](https://wasscetutor.com/audio/oral/coin.mp3?v=32fc25a957) |
+| /əʊ/ | /ə/ → /ʊ/ | g**o**, h**o**me, b**oa**t, kn**ow**, th**ough** | [home /həʊm/](https://wasscetutor.com/audio/oral/home.mp3?v=221416b26d) [boat /bəʊt/](https://wasscetutor.com/audio/oral/boat.mp3?v=996143f877) |
+| /aʊ/ | /a/ → /ʊ/ | n**ow**, h**ou**se, l**ou**d, b**ough** | [house /haʊs/](https://wasscetutor.com/audio/oral/house.mp3?v=5d41f53d02) [now /naʊ/](https://wasscetutor.com/audio/oral/now.mp3?v=9e97656f53) |
+| /ɪə/ | /ɪ/ → /ə/ | h**ere**, n**ear**, b**eer**, id**ea** | [here /hɪə/](https://wasscetutor.com/audio/oral/here.mp3?v=d68c36b68b) [near /nɪə/](https://wasscetutor.com/audio/oral/near.mp3?v=c7a17eb717) |
+| /eə/ | /e/ → /ə/ | h**air**, th**ere**, c**are**, w**ear** | [there /ðeə/](https://wasscetutor.com/audio/oral/there.mp3?v=fbd5e4010f) [care /keə/](https://wasscetutor.com/audio/oral/care.mp3?v=b14156e70b) |
+| /ʊə/ | /ʊ/ → /ə/ | p**oor**, t**our**, s**ure** (in careful speech) | [tour /tʊə/](https://wasscetutor.com/audio/oral/tour.mp3?v=dcede4269b) [sure /ʃʊə/](https://wasscetutor.com/audio/oral/sure.mp3?v=40c9a87d0b) |
 
 :::callout{type=tip}
 To tell a diphthong from a pure vowel, say the word slowly and feel your tongue and jaw. In *day* your mouth **moves** as you say the vowel; in *bed* it stays still.
@@ -67,15 +67,15 @@ To tell a diphthong from a pure vowel, say the word slowly and feel your tongue 
 :::callout{type=local-example}
 In Krio and in much West African English, several English vowel pairs are pronounced the same. That is perfectly normal in conversation, but the examination asks you to **hear the difference**. These are the pairs to practise:
 
-| Pair | Often merged as | Practise with |
-|---|---|---|
-| /iː/ and /ɪ/ | one *i* sound | *seat / sit, leave / live, feel / fill, sheep / ship* |
-| /uː/ and /ʊ/ | one *u* sound | *pool / pull, food / foot, Luke / look* |
-| /ɑː/, /æ/ and /ʌ/ | one *a* sound | *cart / cat / cut, heart / hat / hut, barn / ban / bun* |
-| /ɔː/ and /ɒ/ | one *o* sound | *port / pot, caught / cot, short / shot* |
-| /ɜː/ and /e/ or /a/ | *bed* or *bad* | *bird / bed, word / ward, girl / gel* |
-| /eɪ/ and /e/ | a pure *e* | *late / let, pain / pen, gate / get* |
-| /əʊ/ and /ɔː/ | a pure *o* | *coat / caught, boat / bought, low / law* |
+| Pair | Often merged as | Practise with | Listen |
+|---|---|---|---|
+| /iː/ and /ɪ/ | one *i* sound | *seat / sit, leave / live, feel / fill, sheep / ship* | [seat /siːt/](https://wasscetutor.com/audio/oral/seat.mp3?v=e7d1c9b38d) [sit /sɪt/](https://wasscetutor.com/audio/oral/sit.mp3?v=fff37eb533) [sheep /ʃiːp/](https://wasscetutor.com/audio/oral/sheep.mp3?v=6f8eb8e2cb) [ship /ʃɪp/](https://wasscetutor.com/audio/oral/ship.mp3?v=df5744501d) |
+| /uː/ and /ʊ/ | one *u* sound | *pool / pull, food / foot, Luke / look* | [pool /puːl/](https://wasscetutor.com/audio/oral/pool.mp3?v=e45d37ee94) [pull /pʊl/](https://wasscetutor.com/audio/oral/pull.mp3?v=3beb49a79d) [food /fuːd/](https://wasscetutor.com/audio/oral/food.mp3?v=e2b81eb32a) [foot /fʊt/](https://wasscetutor.com/audio/oral/foot.mp3?v=f131676629) |
+| /ɑː/, /æ/ and /ʌ/ | one *a* sound | *cart / cat / cut, heart / hat / hut, barn / ban / bun* | [cart /kɑːt/](https://wasscetutor.com/audio/oral/cart.mp3?v=0447f75cc6) [cat /kæt/](https://wasscetutor.com/audio/oral/cat.mp3?v=324bad803b) [cut /kʌt/](https://wasscetutor.com/audio/oral/cut.mp3?v=36a49b80e1) [heart /hɑːt/](https://wasscetutor.com/audio/oral/heart.mp3?v=72d6490041) [hat /hæt/](https://wasscetutor.com/audio/oral/hat.mp3?v=9010fb5560) [hut /hʌt/](https://wasscetutor.com/audio/oral/hut.mp3?v=41e87896a2) |
+| /ɔː/ and /ɒ/ | one *o* sound | *port / pot, caught / cot, short / shot* | [port /pɔːt/](https://wasscetutor.com/audio/oral/port.mp3?v=ab38c85609) [pot /pɒt/](https://wasscetutor.com/audio/oral/pot.mp3?v=c0550461fc) [caught /kɔːt/](https://wasscetutor.com/audio/oral/caught.mp3?v=4cf92b6eb4) [cot /kɒt/](https://wasscetutor.com/audio/oral/cot.mp3?v=7b30587507) |
+| /ɜː/ and /e/ or /a/ | *bed* or *bad* | *bird / bed, word / ward, girl / gel* | [bird /bɜːd/](https://wasscetutor.com/audio/oral/bird.mp3?v=2537fe48d6) [bed /bed/](https://wasscetutor.com/audio/oral/bed.mp3?v=3341d5579d) [word /wɜːd/](https://wasscetutor.com/audio/oral/word.mp3?v=f9d785c3cf) [ward /wɔːd/](https://wasscetutor.com/audio/oral/ward.mp3?v=3351a8f6a4) |
+| /eɪ/ and /e/ | a pure *e* | *late / let, pain / pen, gate / get* | [late /leɪt/](https://wasscetutor.com/audio/oral/late.mp3?v=019d67b3f2) [let /let/](https://wasscetutor.com/audio/oral/let.mp3?v=d40434683b) [pain /peɪn/](https://wasscetutor.com/audio/oral/pain.mp3?v=1ca655a397) [pen /pen/](https://wasscetutor.com/audio/oral/pen.mp3?v=692d577056) |
+| /əʊ/ and /ɔː/ | a pure *o* | *coat / caught, boat / bought, low / law* | [coat /kəʊt/](https://wasscetutor.com/audio/oral/coat.mp3?v=540664177d) [caught /kɔːt/](https://wasscetutor.com/audio/oral/caught.mp3?v=4cf92b6eb4) [boat /bəʊt/](https://wasscetutor.com/audio/oral/boat.mp3?v=996143f877) [bought /bɔːt/](https://wasscetutor.com/audio/oral/bought.mp3?v=b081fd49a7) |
 :::
 
 :::callout{type=common-mistake}
@@ -90,17 +90,23 @@ In Krio and in much West African English, several English vowel pairs are pronou
 
 **Answer: C. port** (/ɔː/). *Boat* has /əʊ/, *bout* has /aʊ/, *pot* has /ɒ/.
 
+**Listen:** [bought /bɔːt/](https://wasscetutor.com/audio/oral/bought.mp3?v=b081fd49a7) [boat /bəʊt/](https://wasscetutor.com/audio/oral/boat.mp3?v=996143f877) [bout /baʊt/](https://wasscetutor.com/audio/oral/bout.mp3?v=c0b448b0a6) [port /pɔːt/](https://wasscetutor.com/audio/oral/port.mp3?v=ab38c85609) [pot /pɒt/](https://wasscetutor.com/audio/oral/pot.mp3?v=c0550461fc)
+
 ### Rhyme
 
 > *Choose the word that rhymes with **said**: A. paid B. bed C. raid D. seed*
 
 **Answer: B. bed.** *Said* is pronounced /sed/, not with the /eɪ/ of *paid*. Rhyme depends on **sound**, not spelling.
 
+**Listen:** [said /sed/](https://wasscetutor.com/audio/oral/said.mp3?v=cb0195b465) [paid /peɪd/](https://wasscetutor.com/audio/oral/paid.mp3?v=7da142282b) [bed /bed/](https://wasscetutor.com/audio/oral/bed.mp3?v=3341d5579d) [raid /reɪd/](https://wasscetutor.com/audio/oral/raid.mp3?v=14d2db3f56) [seed /siːd/](https://wasscetutor.com/audio/oral/seed.mp3?v=cf726fa254)
+
 ### Odd one out
 
 > *Which word has a different vowel sound? A. heart B. calm C. hat D. father*
 
 **Answer: C. hat** (/æ/); the others have /ɑː/.
+
+**Listen:** [heart /hɑːt/](https://wasscetutor.com/audio/oral/heart.mp3?v=72d6490041) [calm /kɑːm/](https://wasscetutor.com/audio/oral/calm.mp3?v=ee1d1a7a9c) [hat /hæt/](https://wasscetutor.com/audio/oral/hat.mp3?v=9010fb5560) [father /ˈfɑːðə/](https://wasscetutor.com/audio/oral/father.mp3?v=6f3f6315b5)
 
 ## Practice
 
