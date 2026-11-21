@@ -1,0 +1,1978 @@
+{
+ "name": "biology_set6_p1",
+ "label": "Biology: set 6 (pollution, microorganisms, disease, public health, crop pests, applied and practical biology)",
+ "subject_slug": "biology",
+ "papers": [
+  {
+   "id": "edbcaa8a-8a2f-5a1d-8ad8-2218e2dbf6b2",
+   "topic": "Pollution and Environmental Issues",
+   "title": "Pollution and Environmental Issues: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on pollution and environmental issues, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 200,
+   "questions": [
+    {
+     "id": "80d5e28d-f44b-5847-9072-918ff0311dad",
+     "key": "bio-po-01",
+     "stem": "Running a generator inside a closed room can kill. This is because the exhaust contains carbon monoxide, which",
+     "image_url": null,
+     "explanation": "Carbon monoxide binds to haemoglobin far more firmly than oxygen does, so less oxygen reaches the brain and other organs. Generators and charcoal stoves belong outside.\n\n**Why the other options are wrong**\n\n- destroys the ozone layer: The ozone layer is damaged by CFCs, not by carbon monoxide.\n- causes acid rain: Acid rain comes mainly from sulfur dioxide and nitrogen oxides.\n- has a strong smell that irritates the lungs: Carbon monoxide has no colour and no smell, which is why victims do not notice it.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c1d314a9-56f8-5687-91a9-de9a06bf73e6",
+       "label": "A",
+       "content": "combines with haemoglobin and stops the blood carrying oxygen",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bcf7c611-c983-588e-a785-da3b9413b199",
+       "label": "B",
+       "content": "destroys the ozone layer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b53dda95-b178-593b-b627-f8c3af23ec6d",
+       "label": "C",
+       "content": "causes acid rain",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7825167d-d9eb-5a26-b409-b62947169033",
+       "label": "D",
+       "content": "has a strong smell that irritates the lungs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "32aed576-f6e3-5a67-84a0-2f185d02bb28",
+     "key": "bio-po-02",
+     "stem": "Fertiliser washed from farms into a lake causes algae to grow rapidly. Later many fish in the lake die. The main reason is that",
+     "image_url": null,
+     "explanation": "This is eutrophication: nutrients → algal bloom → algae die → decomposers multiply and respire → dissolved oxygen falls → fish suffocate. Sewage has the same effect.\n\n**Why the other options are wrong**\n\n- the fertiliser poisons the fish directly: Fertiliser at these levels does not poison fish; it feeds the algae.\n- the algae produce too much oxygen: Living algae add oxygen; the problem comes when they die and are decomposed.\n- the dead algae stop the fish reaching the surface to breathe air: Fish breathe oxygen dissolved in water through their gills, not air at the surface.",
+     "position": 2,
+     "options": [
+      {
+       "id": "995ab50a-f678-5680-914b-20049b6b60b1",
+       "label": "A",
+       "content": "the fertiliser poisons the fish directly",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2cb75e9d-39a2-5250-81fa-8879544d2574",
+       "label": "B",
+       "content": "the algae produce too much oxygen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cca9b144-1490-5482-8863-bc1b8f02d8a2",
+       "label": "C",
+       "content": "the dead algae stop the fish reaching the surface to breathe air",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d21023ac-5de5-57ce-9070-32908b8ac792",
+       "label": "D",
+       "content": "bacteria decomposing the dead algae use up the oxygen dissolved in the water",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "943abd5f-7097-50a2-a52e-f068eda46c2f",
+     "key": "bio-po-03",
+     "stem": "Acid rain is caused mainly by",
+     "image_url": null,
+     "explanation": "These gases dissolve in rainwater to form acids, which damage leaves, buildings and the life in lakes.\n\n**Why the other options are wrong**\n\n- carbon monoxide from car exhausts: Carbon monoxide is poisonous to breathe, but it does not form acid rain.\n- CFCs from old refrigerators: CFCs destroy the ozone layer.\n- methane from rice fields and cattle: Methane is a greenhouse gas; it does not form acid rain.",
+     "position": 3,
+     "options": [
+      {
+       "id": "583c348d-f973-547f-88c8-92b5afa33677",
+       "label": "A",
+       "content": "sulfur dioxide and nitrogen oxides from burning fuels",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2e669ca3-edc9-5ed0-8f05-272396b326b7",
+       "label": "B",
+       "content": "carbon monoxide from car exhausts",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a3dcf508-83da-575a-ba77-743aad76b0af",
+       "label": "C",
+       "content": "CFCs from old refrigerators",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "07f20708-ab4f-524f-b819-1bc04988bb35",
+       "label": "D",
+       "content": "methane from rice fields and cattle",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ddbd0eea-1505-52c8-8c90-e092fe887534",
+     "key": "bio-po-04",
+     "stem": "Which gas, released in large amounts by burning fuels and cutting down forests, is the main cause of global warming?",
+     "image_url": null,
+     "explanation": "Carbon dioxide, methane and other greenhouse gases let sunlight in but trap heat given off by the Earth. More carbon dioxide traps more heat: global warming.\n\n**Why the other options are wrong**\n\n- Oxygen: Oxygen is not a greenhouse gas, and burning fuels uses it up rather than releasing it.\n- Nitrogen: Nitrogen makes up most of the air but does not trap heat.\n- Carbon monoxide: Carbon monoxide is poisonous, but it is not the main gas that traps heat.",
+     "position": 4,
+     "options": [
+      {
+       "id": "79eee346-6c3c-5cb2-ac3f-c9cb94553eb9",
+       "label": "A",
+       "content": "Oxygen",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "32e90c4f-a91f-54aa-b8e9-e84462c59bb2",
+       "label": "B",
+       "content": "Carbon dioxide",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "070f4827-6260-58e5-9148-55d8fab7dec7",
+       "label": "C",
+       "content": "Nitrogen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a940ac29-b1fe-5cfc-8e62-9a1d80beef75",
+       "label": "D",
+       "content": "Carbon monoxide",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a57ebdb3-f0a3-5cc5-9b16-63aea5138456",
+     "key": "bio-po-05",
+     "stem": "The ozone layer high in the atmosphere is important because it",
+     "image_url": null,
+     "explanation": "Where CFCs have thinned the ozone layer, more UV reaches the ground, causing more skin cancer and eye cataracts and damaging crops.\n\n**Why the other options are wrong**\n\n- traps heat to keep the Earth warm: Keeping the Earth warm is the greenhouse effect, caused by gases such as carbon dioxide.\n- supplies the oxygen that animals breathe: The oxygen we breathe is in the lower air and comes from photosynthesis.\n- protects the Earth from acid rain: The ozone layer has nothing to do with acid rain.",
+     "position": 5,
+     "options": [
+      {
+       "id": "65a3a2f1-fefa-52ca-bc76-b1492b34a809",
+       "label": "A",
+       "content": "traps heat to keep the Earth warm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "49aa2cf0-c4b5-5082-9975-a46440c2b76e",
+       "label": "B",
+       "content": "supplies the oxygen that animals breathe",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dedb0634-91b5-5d94-a39a-1c39db95abe3",
+       "label": "C",
+       "content": "absorbs much of the harmful ultraviolet radiation from the sun",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2baed118-22d5-5b16-928b-abc25b2c36b5",
+       "label": "D",
+       "content": "protects the Earth from acid rain",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a9ad84d-ef35-5ac2-9441-23a038a31d6f",
+     "key": "bio-po-06",
+     "stem": "Which of these wastes is non-biodegradable?",
+     "image_url": null,
+     "explanation": "Plastics, glass and metals such as mercury and lead are not broken down by decomposers, so they build up in the environment. Plastic bags block drains and add to flooding.\n\n**Why the other options are wrong**\n\n- Sewage: Sewage is broken down by bacteria, so it is biodegradable.\n- Food waste: Food waste rots, broken down by decomposers.\n- Paper: Paper is made from plant fibres and is broken down by microorganisms.",
+     "position": 6,
+     "options": [
+      {
+       "id": "12417942-f429-52d7-a5bc-c1f6e8c76d25",
+       "label": "A",
+       "content": "Sewage",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1370fc28-3b6c-571f-9fbd-db9317306524",
+       "label": "B",
+       "content": "Food waste",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7bebdbc9-606b-5a90-94a3-0d46272a8390",
+       "label": "C",
+       "content": "Paper",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "28ec6a69-a5db-5373-9b5b-4ce75351148d",
+       "label": "D",
+       "content": "Plastic bags",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a66183a0-fa8d-5465-ad70-1a3e01a96c1d",
+     "key": "bio-po-07",
+     "stem": "Mercury used in small-scale gold mining gets into a river. Fish-eating birds living by the river are harmed most because",
+     "image_url": null,
+     "explanation": "This is bioaccumulation: each organism eats many of those below it and keeps their mercury, so the concentration rises at each step of the food chain.\n\n**Why the other options are wrong**\n\n- birds drink more river water than fish do: Fish live in the water all the time; the birds are harmed mainly through the fish they eat.\n- mercury breaks down quickly in water, so only birds receive it: Mercury is not broken down; that is why it builds up in living things.\n- mercury is used as food by bacteria that then infect birds: Mercury is a poison, not a food for bacteria.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f413949b-4e86-5080-8921-feff51c5a97c",
+       "label": "A",
+       "content": "mercury builds up along the food chain and is most concentrated in top consumers",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "10435e06-d96b-5136-98bb-8c12931fc700",
+       "label": "B",
+       "content": "birds drink more river water than fish do",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3355a819-b55d-566d-9f9b-f029c93fa310",
+       "label": "C",
+       "content": "mercury breaks down quickly in water, so only birds receive it",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "58ed9a75-7bdc-515d-ac23-cb5c65b47b1d",
+       "label": "D",
+       "content": "mercury is used as food by bacteria that then infect birds",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "68c2f366-3f9d-58d4-aec2-27f3a1f905df",
+   "topic": "Microorganisms",
+   "title": "Microorganisms: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on microorganisms, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 201,
+   "questions": [
+    {
+     "id": "50f12e8d-3749-548a-bd7a-1d6c05e3d60a",
+     "key": "bio-mo-01",
+     "stem": "Which statement is true of viruses but NOT of bacteria?",
+     "image_url": null,
+     "explanation": "A virus takes over a host cell and makes it build new viruses, often destroying the cell. HIV, Ebola, measles and cassava mosaic disease are caused by viruses.\n\n**Why the other options are wrong**\n\n- They have a cell wall and cytoplasm: This is true of bacteria; viruses are not cells and have only genetic material inside a protein coat.\n- They reproduce by binary fission: Bacteria reproduce by binary fission; viruses cannot reproduce on their own.\n- They are killed by antibiotics: Antibiotics act on bacteria; they have no effect on viruses.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f9540867-a73d-53b3-8d44-53e438299792",
+       "label": "A",
+       "content": "They have a cell wall and cytoplasm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16c69d5b-121c-5361-a5b2-2698971e5ada",
+       "label": "B",
+       "content": "They can reproduce only inside a living host cell",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8f55ae5a-19c5-5417-a072-b5f02539cb00",
+       "label": "C",
+       "content": "They reproduce by binary fission",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9ebfd9db-b3e0-55e7-be0d-002b5f909ccb",
+       "label": "D",
+       "content": "They are killed by antibiotics",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2a707fab-cfe6-5b73-b37a-137e70b1d476",
+     "key": "bio-mo-02",
+     "stem": "The bread mould *Rhizopus* reproduces asexually by",
+     "image_url": null,
+     "explanation": "*Rhizopus* grows as a mass of threads (hyphae). Upright hyphae carry round sporangia that release thousands of light spores, which grow into new moulds wherever they land on damp food.\n\n**Why the other options are wrong**\n\n- binary fission: Binary fission is how bacteria and protozoa such as *Amoeba* reproduce.\n- budding: Budding is how yeast, a single-celled fungus, reproduces.\n- seeds formed in fruits: Seeds are formed by flowering plants, not by fungi.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c4f46404-a8b9-5e30-a053-be87e0f458bc",
+       "label": "A",
+       "content": "binary fission",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4a138ebe-0a0b-59e3-a0a7-3d42073a49f9",
+       "label": "B",
+       "content": "budding",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d281d134-764a-51b4-8838-4dac86cfcf19",
+       "label": "C",
+       "content": "spores formed in sporangia",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "e04d4013-3773-55d6-9f2e-f526d020235f",
+       "label": "D",
+       "content": "seeds formed in fruits",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea871f15-f2dc-5e2c-b290-1b9ae08c2e46",
+     "key": "bio-mo-03",
+     "stem": "Milk is turned into yoghurt by",
+     "image_url": null,
+     "explanation": "The bacteria ferment the milk sugar into lactic acid, which thickens the milk and gives yoghurt its sour taste. The acid also stops harmful microbes growing.\n\n**Why the other options are wrong**\n\n- yeast: Yeast is used for bread, palm wine and beer, producing carbon dioxide and alcohol.\n- *Penicillium*: *Penicillium* is a mould that produces the antibiotic penicillin.\n- *Rhizobium*: *Rhizobium* fixes nitrogen in the root nodules of legumes.",
+     "position": 3,
+     "options": [
+      {
+       "id": "8ad763f8-c998-53e7-bb4b-7e565c3415fc",
+       "label": "A",
+       "content": "yeast",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "52a50a51-bf59-5b00-8b16-651434cf8cac",
+       "label": "B",
+       "content": "*Penicillium*",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d1e70dd5-e20e-5ba2-a9eb-44ad2789128a",
+       "label": "C",
+       "content": "*Rhizobium*",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5e7fd1cc-d422-5f60-a728-605232bb6065",
+       "label": "D",
+       "content": "lactic acid bacteria (*Lactobacillus*)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "05d56422-8ba3-5a90-b298-53f61a0f1f6e",
+     "key": "bio-mo-04",
+     "stem": "*Rhizobium* living in the root nodules of groundnut and beans is useful to the plant because it",
+     "image_url": null,
+     "explanation": "Legumes enrich the soil with nitrogen, which is why farmers grow groundnut or beans in rotation with crops such as maize.\n\n**Why the other options are wrong**\n\n- makes the roots rot so they release minerals: *Rhizobium* lives in partnership with the living roots; it does not rot them.\n- produces the antibiotic streptomycin: Streptomycin is made by another bacterium, *Streptomyces*.\n- turns sugar into alcohol: Turning sugar into alcohol is done by yeast.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5ee6e99f-62d0-5b09-9d5d-eee6f52a2fb7",
+       "label": "A",
+       "content": "fixes nitrogen from the air into compounds the plant can use",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "37f708f0-1e5b-59ba-9a2f-3d2a5ad1e210",
+       "label": "B",
+       "content": "makes the roots rot so they release minerals",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "16ef4246-7b13-599d-a76e-44ebff180222",
+       "label": "C",
+       "content": "produces the antibiotic streptomycin",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "914b329b-456c-5cef-b05b-a584ebe71b77",
+       "label": "D",
+       "content": "turns sugar into alcohol",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "717054a1-0aec-5e0f-b811-af7bfc5a5556",
+     "key": "bio-mo-05",
+     "stem": "Which condition slows the growth of microorganisms in food, and is the reason a refrigerator keeps food fresh?",
+     "image_url": null,
+     "explanation": "Microorganisms need water, warmth, food and (for most) oxygen. Cold slows their enzymes, so they grow very slowly; drying, salting and smoking remove the water they need.\n\n**Why the other options are wrong**\n\n- Plenty of moisture: Moisture helps microorganisms grow; that is why drying preserves food.\n- A warm temperature, close to body temperature: Warmth speeds up the growth of most microorganisms; many grow fastest at about 37 °C.\n- A good supply of nutrients: Nutrients feed microorganisms and help them grow.",
+     "position": 5,
+     "options": [
+      {
+       "id": "66c5f722-c0ed-5d15-9cb9-328d3ee83bab",
+       "label": "A",
+       "content": "Plenty of moisture",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8f694662-b23d-50a4-b44e-b6851e93d347",
+       "label": "B",
+       "content": "A low temperature",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "53aa88b6-640f-5823-9127-9919c1c68d7a",
+       "label": "C",
+       "content": "A warm temperature, close to body temperature",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e0dc9066-73b6-5fd3-8b00-75527d467934",
+       "label": "D",
+       "content": "A good supply of nutrients",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "991e1060-5a98-5941-8c76-a1561524de2c",
+     "key": "bio-mo-06",
+     "stem": "Which of the following microorganisms is a protozoan?",
+     "image_url": null,
+     "explanation": "Protozoa are single cells with a nucleus. *Plasmodium* (malaria), *Amoeba*, *Paramecium* and *Trypanosoma* (sleeping sickness) are protozoa.\n\n**Why the other options are wrong**\n\n- *Vibrio cholerae*: *Vibrio cholerae*, which causes cholera, is a bacterium.\n- *Rhizopus*: *Rhizopus*, the bread mould, is a fungus.\n- Ebola virus: The Ebola virus is a virus, not a cell at all.",
+     "position": 6,
+     "options": [
+      {
+       "id": "10723042-2628-516d-9857-e0cc941e4acb",
+       "label": "A",
+       "content": "*Vibrio cholerae*",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4dc48fab-352b-527f-95c8-9062e30c23f3",
+       "label": "B",
+       "content": "*Rhizopus*",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "558bd1ec-26a1-56a8-96f6-52e9ea474b26",
+       "label": "C",
+       "content": "*Plasmodium*",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "84d2e889-5828-5c3f-a7d2-3fda5dd21464",
+       "label": "D",
+       "content": "Ebola virus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "58acb875-cfbd-501a-a0ce-dd7d7f937f83",
+     "key": "bio-mo-07",
+     "stem": "Yeast is unusual among fungi because it",
+     "image_url": null,
+     "explanation": "A yeast cell forms a small bud that grows and breaks off as a new cell. In bread and palm wine, yeast ferments sugar to alcohol and carbon dioxide.\n\n**Why the other options are wrong**\n\n- has no nucleus: Yeast cells have a nucleus; it is bacteria that have none.\n- makes its own food by photosynthesis: Like all fungi, yeast has no chlorophyll and takes in food from its surroundings.\n- is made of long threads called hyphae: Most fungi, such as moulds, are made of hyphae; yeast is not.",
+     "position": 7,
+     "options": [
+      {
+       "id": "08ce58b5-b979-5e9c-a779-e60b3cc3a210",
+       "label": "A",
+       "content": "has no nucleus",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f16ccaaf-b5a4-5b2c-887c-414873ef5aa1",
+       "label": "B",
+       "content": "makes its own food by photosynthesis",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e1d315be-7c74-5bff-b71b-fc59ff5b4444",
+       "label": "C",
+       "content": "is made of long threads called hyphae",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a4c2a83e-af5e-5d0c-955d-4f0363571867",
+       "label": "D",
+       "content": "is single-celled and reproduces by budding",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0e12090f-32ff-57d9-aa3d-fb109d93d5e8",
+   "topic": "Diseases and Their Causes",
+   "title": "Diseases and Their Causes: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on diseases and their causes, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 202,
+   "questions": [
+    {
+     "id": "01a893a6-3a51-5aad-869d-e7157d20f4ef",
+     "key": "bio-dc-01",
+     "stem": "Malaria is caused by",
+     "image_url": null,
+     "explanation": "Examiners mark the difference between the cause (pathogen) and the carrier (vector). Only the female *Anopheles* bites, because she needs blood to make her eggs.\n\n**Why the other options are wrong**\n\n- the female *Anopheles* mosquito itself: The mosquito is the vector that carries the pathogen; it is not the cause of the disease.\n- a virus carried by the male *Anopheles* mosquito: The cause is a protozoan, and male mosquitoes do not bite: they feed on plant juices.\n- a bacterium in dirty drinking water: Malaria is not spread by water; it is passed on by mosquito bites.",
+     "position": 1,
+     "options": [
+      {
+       "id": "cb4f59d4-8cbc-54f0-bba0-a88e542c287f",
+       "label": "A",
+       "content": "the protozoan *Plasmodium*, which is carried by the female *Anopheles* mosquito",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "cdf0787a-e0c3-55e2-98e8-61103cbe38fc",
+       "label": "B",
+       "content": "the female *Anopheles* mosquito itself",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "23d965fe-028b-55e4-bb51-cb0bfc2a4fb0",
+       "label": "C",
+       "content": "a virus carried by the male *Anopheles* mosquito",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a525ca1-625d-5241-b661-556a2d5cf8cc",
+       "label": "D",
+       "content": "a bacterium in dirty drinking water",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7473c939-8a45-59a5-ab6d-83d4f2f0f66d",
+     "key": "bio-dc-02",
+     "stem": "Cholera is spread mainly through",
+     "image_url": null,
+     "explanation": "Cholera bacteria (*Vibrio cholerae*) leave the body in the faeces of sick people. Where toilets are unsafe, they reach drinking water and food. Safe water, latrines and hand washing prevent it.\n\n**Why the other options are wrong**\n\n- the bite of an infected mosquito: Mosquitoes spread malaria and yellow fever, not cholera.\n- droplets in the air from coughing: Droplets spread diseases such as tuberculosis and measles.\n- sexual contact: Cholera is not a sexually transmitted infection.",
+     "position": 2,
+     "options": [
+      {
+       "id": "a34523a5-1e38-5f28-8823-9cd84fe18f94",
+       "label": "A",
+       "content": "the bite of an infected mosquito",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bc002c8c-8c57-50c2-929f-3afc3570a40c",
+       "label": "B",
+       "content": "water and food contaminated with faeces",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "823b8556-745e-5fcf-ae31-a343321045ab",
+       "label": "C",
+       "content": "droplets in the air from coughing",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "02fee37b-57a6-5379-904f-3276dd6b73a9",
+       "label": "D",
+       "content": "sexual contact",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "025d3c67-ac78-5b07-b8f5-88d48f69393e",
+     "key": "bio-dc-03",
+     "stem": "The most important first treatment for a person with cholera is",
+     "image_url": null,
+     "explanation": "Cholera kills by dehydration from severe watery diarrhoea. A solution of clean water, salt and sugar, taken quickly and often, replaces what is lost and saves most patients.\n\n**Why the other options are wrong**\n\n- sleeping under an insecticide-treated net: Nets prevent malaria; they do nothing for cholera.\n- the BCG vaccine: BCG is a vaccine against tuberculosis, and vaccines prevent disease rather than treat it.\n- antiretroviral drugs: Antiretroviral drugs are used to treat HIV.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2ec6fcca-1583-540e-a21f-dbd1020cfae5",
+       "label": "A",
+       "content": "sleeping under an insecticide-treated net",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9c09f7f7-ec1a-57ce-a5da-6efad960368e",
+       "label": "B",
+       "content": "the BCG vaccine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "93a54a2c-0a66-5874-aa49-ba7f5f349d7c",
+       "label": "C",
+       "content": "oral rehydration solution, to replace the water and salts lost",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "45766c6c-f2a8-571d-a2b3-926ad808c586",
+       "label": "D",
+       "content": "antiretroviral drugs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a85ebf64-c10c-5a12-acbd-27ec84017480",
+     "key": "bio-dc-04",
+     "stem": "Lassa fever, which occurs in eastern Sierra Leone, is spread mainly through",
+     "image_url": null,
+     "explanation": "Lassa virus lives in a kind of rat. Storing food in rat-proof containers and keeping homes clean are the main ways to prevent it; it can also pass between people in body fluids.\n\n**Why the other options are wrong**\n\n- the bite of the tsetse fly: The tsetse fly spreads sleeping sickness.\n- the bite of blackflies near fast-flowing rivers: Blackflies spread river blindness.\n- contact with water snails in streams: Water snails release the larvae that cause bilharzia.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d169b551-c4cc-582f-ba06-26ce3dcfb2af",
+       "label": "A",
+       "content": "the bite of the tsetse fly",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "33a9772e-e577-5b0c-879f-8bdaa2d6bae3",
+       "label": "B",
+       "content": "the bite of blackflies near fast-flowing rivers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9e0b79ef-76e0-5b10-9023-05ff0f7c9700",
+       "label": "C",
+       "content": "contact with water snails in streams",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "632bb1d3-1324-58b4-930a-70a12b9d5568",
+       "label": "D",
+       "content": "food and surfaces contaminated by the urine and droppings of rats",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ed97f1d8-a668-593e-8301-ae17ffa60af6",
+     "key": "bio-dc-05",
+     "stem": "Walking barefoot on soil contaminated with human faeces can lead to infection with",
+     "image_url": null,
+     "explanation": "Hookworm larvae in the soil enter through the skin of bare feet, travel to the intestine and feed on blood, causing anaemia and tiredness. Wearing shoes and using latrines prevent it.\n\n**Why the other options are wrong**\n\n- tuberculosis: Tuberculosis is spread by droplets in the air.\n- measles: Measles is spread by droplets in the air.\n- malaria: Malaria is spread by the bite of an infected mosquito.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e5e6c48f-e3b1-5636-a77d-6808fb769136",
+       "label": "A",
+       "content": "hookworm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "de056938-9f14-588b-852c-2443ed962055",
+       "label": "B",
+       "content": "tuberculosis",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cda86a9b-7023-54d2-8477-cd3e2ed6f982",
+       "label": "C",
+       "content": "measles",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a2b4e0af-71bd-52a3-9940-0c8d597a0ef5",
+       "label": "D",
+       "content": "malaria",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea898bf8-40bf-50c0-a430-71fc5626a3f0",
+     "key": "bio-dc-06",
+     "stem": "Which of the following is a non-infectious (deficiency) disease?",
+     "image_url": null,
+     "explanation": "Kwashiorkor is caused by too little protein in the diet, often after a child stops breastfeeding. It cannot be caught from another person.\n\n**Why the other options are wrong**\n\n- Typhoid: Typhoid is an infectious disease caused by a bacterium.\n- Measles: Measles is an infectious disease caused by a virus.\n- Tuberculosis: Tuberculosis is an infectious disease caused by a bacterium.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e853d050-1a93-5ca5-859e-0644dd3c2b36",
+       "label": "A",
+       "content": "Typhoid",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2df5264c-515d-5405-8d03-afb8f627bf4b",
+       "label": "B",
+       "content": "Kwashiorkor",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4ad3ad96-3568-5d0b-bc7c-5d5dd60ffc09",
+       "label": "C",
+       "content": "Measles",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6d1f8cb3-ce99-50b5-a25a-5daf4fbccbe2",
+       "label": "D",
+       "content": "Tuberculosis",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "267f8272-27b5-57b7-88ef-6bac2ffc5bec",
+     "key": "bio-dc-07",
+     "stem": "A person becomes infected with bilharzia (schistosomiasis) when",
+     "image_url": null,
+     "explanation": "Eggs in urine or faeces reach water and hatch; the larvae develop in water snails, then leave them and burrow into the skin of people who wade, wash or swim. Latrines and avoiding infested water prevent it.\n\n**Why the other options are wrong**\n\n- an infected blackfly bites the person: Blackflies spread river blindness.\n- the person eats undercooked pork: Undercooked pork can pass on the pork tapeworm.\n- the person breathes in droplets from an infected person: Droplets spread diseases such as tuberculosis and measles.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d68a00b3-4ab8-5776-8d2f-fa549280bc16",
+       "label": "A",
+       "content": "an infected blackfly bites the person",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "69b89967-56ac-58d9-bae8-3272f1e6b461",
+       "label": "B",
+       "content": "the person eats undercooked pork",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9539b6bd-623c-5f2f-bd79-a79f42ed8869",
+       "label": "C",
+       "content": "larvae released by water snails enter the skin in infested water",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "4ed40f6a-429d-5ec3-a661-793d90944fcf",
+       "label": "D",
+       "content": "the person breathes in droplets from an infected person",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e5bc94e1-b077-5f83-a76c-36691dc0e4e1",
+   "topic": "Public Health and Disease Prevention",
+   "title": "Public Health and Disease Prevention: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on public health and disease prevention, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 203,
+   "questions": [
+    {
+     "id": "bea6b34f-6d62-585f-be72-e85c4848b32c",
+     "key": "bio-ph-01",
+     "stem": "A baby receives antibodies from its mother's breast milk. This gives the baby",
+     "image_url": null,
+     "explanation": "Passive immunity uses antibodies made by another body; it acts at once but does not last. Active immunity is slower to start but lasts, because memory cells are made.\n\n**Why the other options are wrong**\n\n- natural active immunity: Active immunity means the body makes its own antibodies, for example after recovering from measles.\n- artificial active immunity: Artificial active immunity comes from vaccination.\n- artificial passive immunity: Artificial passive immunity comes from an injection of ready-made antibodies, such as anti-tetanus serum.",
+     "position": 1,
+     "options": [
+      {
+       "id": "78edc614-e801-5850-b217-a2e42e3b3aa8",
+       "label": "A",
+       "content": "natural active immunity",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7e9169c0-eff1-5f7e-b90b-a834fa0914ef",
+       "label": "B",
+       "content": "artificial active immunity",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c7e924c7-bcf8-5c4e-8da5-77a30affb3d3",
+       "label": "C",
+       "content": "artificial passive immunity",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d8e447c6-b4a6-590e-a6c3-d7065ee3ea85",
+       "label": "D",
+       "content": "natural passive immunity",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9d546bbd-e7d4-5f48-aef7-c20aa98dcc4f",
+     "key": "bio-ph-02",
+     "stem": "A vaccine protects a person against a disease because it",
+     "image_url": null,
+     "explanation": "A vaccine contains a dead or weakened pathogen, or part of one. If the real pathogen enters later, memory cells make antibodies quickly, before the disease can develop.\n\n**Why the other options are wrong**\n\n- contains ready-made antibodies that last for life: Ready-made antibodies give passive immunity, which lasts only a short time.\n- kills all the bacteria in the body: A vaccine does not kill microbes; it trains the immune system to recognise one pathogen.\n- is an antibiotic that kills the pathogen: Antibiotics are medicines that kill bacteria; vaccines prevent disease.",
+     "position": 2,
+     "options": [
+      {
+       "id": "92ba715c-652f-5002-b8e2-ea8a66bb8d2e",
+       "label": "A",
+       "content": "makes the body produce its own antibodies and memory cells, without causing the disease",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "dd0ba322-66c3-5f8b-b3b8-9ab7d6e6454e",
+       "label": "B",
+       "content": "contains ready-made antibodies that last for life",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ee034bc0-91f4-503c-b0a0-5be162835005",
+       "label": "C",
+       "content": "kills all the bacteria in the body",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bf6f39b8-369d-5788-9627-74fce7ff09ba",
+       "label": "D",
+       "content": "is an antibiotic that kills the pathogen",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ffcb678b-1054-59e7-b3e7-aab2fa389064",
+     "key": "bio-ph-03",
+     "stem": "In a ventilated improved pit (VIP) latrine, the fly screen over the top of the vent pipe",
+     "image_url": null,
+     "explanation": "The shelter is kept dark, so flies in the pit fly up towards the light at the top of the pipe, where they are trapped by the screen and die.\n\n**Why the other options are wrong**\n\n- lets rainwater into the pit to wash it out: The pit is meant to stay dry and covered; the pipe has a fly screen, not a rain inlet.\n- stops smells escaping from the vent pipe: The vent pipe is meant to carry smells up and away; the screen does not block them.\n- lets flies escape from the pit: The screen is there to stop flies escaping and carrying germs.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3be1c55e-e437-50e6-9398-1f1516729242",
+       "label": "A",
+       "content": "lets rainwater into the pit to wash it out",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4369e27a-36ed-5214-9c24-9769c596093d",
+       "label": "B",
+       "content": "traps flies, which are attracted to the light at the top of the pipe",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ef6da8d2-b5c0-5dbe-bdc1-46730ea91662",
+       "label": "C",
+       "content": "stops smells escaping from the vent pipe",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a4abea48-e99e-5eb5-977d-e10a60ce6de4",
+       "label": "D",
+       "content": "lets flies escape from the pit",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a346ecfb-d3aa-59f9-859b-a46bdcc58397",
+     "key": "bio-ph-04",
+     "stem": "A pit latrine should be dug at least 30 m from a well, and downhill from it, in order to",
+     "image_url": null,
+     "explanation": "Water moves downhill through the soil, so a latrine above a well, or too close to it, can contaminate it with cholera and typhoid bacteria.\n\n**Why the other options are wrong**\n\n- keep the latrine in the shade: Shade has nothing to do with where a latrine should be placed.\n- make it easy to carry water to the latrine: The rule keeps the latrine away from the water, not near it.\n- keep rats away from the well: Rats are controlled by covering food and refuse, not by the latrine's position.",
+     "position": 4,
+     "options": [
+      {
+       "id": "dc1563fd-348b-568f-8d66-b9332e8a923c",
+       "label": "A",
+       "content": "keep the latrine in the shade",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "72309cda-c0dc-59a4-b381-3848cb7ec217",
+       "label": "B",
+       "content": "make it easy to carry water to the latrine",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ce803ae7-37c2-5465-bcdb-297bfb41092d",
+       "label": "C",
+       "content": "stop germs from faeces seeping through the soil into the drinking water",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "656143b1-2b6c-54b3-805f-ffdf0a3935b8",
+       "label": "D",
+       "content": "keep rats away from the well",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2d99bcc7-e27a-53ed-8b91-269ccfe82773",
+     "key": "bio-ph-05",
+     "stem": "In the treatment of a town's water supply, chlorine is added in order to",
+     "image_url": null,
+     "explanation": "Screening, then sedimentation with alum, then filtration through sand and gravel, then chlorination, then covered storage. At home, boiling or chlorine tablets make water safe.\n\n**Why the other options are wrong**\n\n- make suspended particles settle out: Particles are made to settle by adding alum in the sedimentation tanks.\n- filter out fine particles: Fine particles are removed by filtering through beds of sand and gravel.\n- add minerals that improve the taste: Chlorine is added to kill germs, not to add minerals.",
+     "position": 5,
+     "options": [
+      {
+       "id": "bce652c5-9e34-52c8-9b76-23423558d7ab",
+       "label": "A",
+       "content": "make suspended particles settle out",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "572dc816-b3e8-5d2e-b0cf-2cf80a3f9964",
+       "label": "B",
+       "content": "filter out fine particles",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b2a685ab-6bc6-59b0-bd5c-901dd944589b",
+       "label": "C",
+       "content": "add minerals that improve the taste",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3d0b7b70-bd19-553c-aaa8-eb5377355b6c",
+       "label": "D",
+       "content": "kill the microorganisms that remain in the water",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b41f6e99-bd83-57ae-8db4-2cf9d288bfdd",
+     "key": "bio-ph-06",
+     "stem": "Which measure reduces malaria by destroying the breeding places of mosquitoes?",
+     "image_url": null,
+     "explanation": "Mosquito larvae live in still water: in old tyres, tins, blocked drains and puddles. Removing or covering such water stops them breeding.\n\n**Why the other options are wrong**\n\n- Sleeping under an insecticide-treated net: Nets protect people from bites; they do not destroy breeding places.\n- Taking anti-malarial drugs: Drugs treat or prevent the infection in people; they do not affect the mosquitoes.\n- Spraying insecticide inside houses: Indoor spraying kills adult mosquitoes resting on walls, not the larvae in water.",
+     "position": 6,
+     "options": [
+      {
+       "id": "0a111565-a5c5-5be7-826d-a4f06ea57bb9",
+       "label": "A",
+       "content": "Draining or covering stagnant water",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5da9a2e9-f831-502a-8072-76053eee0687",
+       "label": "B",
+       "content": "Sleeping under an insecticide-treated net",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "afd1c508-9ce0-5cf7-9cee-1ecfee64fc79",
+       "label": "C",
+       "content": "Taking anti-malarial drugs",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f0b3eb8d-9a43-53e9-8a09-11355e10dc15",
+       "label": "D",
+       "content": "Spraying insecticide inside houses",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "904291db-1a45-5aac-b649-4715675cbf20",
+     "key": "bio-ph-07",
+     "stem": "Which is the safest way for a household to dispose of food remains and leaves?",
+     "image_url": null,
+     "explanation": "Composting lets decomposers turn the waste into manure, while the cover keeps flies and rats away.\n\n**Why the other options are wrong**\n\n- Dumping them in a nearby stream: This pollutes the water and spreads disease to people downstream.\n- Leaving them in an open heap beside the road: Open heaps breed flies, mosquitoes and rats, and block drains.\n- Burning them in the open together with plastics: Burning plastics gives off poisonous smoke.",
+     "position": 7,
+     "options": [
+      {
+       "id": "11ef17da-bfdb-519b-9ef0-201e89670b0c",
+       "label": "A",
+       "content": "Dumping them in a nearby stream",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "622f9898-1962-57a8-82aa-fb9b30e639d0",
+       "label": "B",
+       "content": "Composting them in a covered pit",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "01406088-7667-50d8-aa7d-a895d79d4d5b",
+       "label": "C",
+       "content": "Leaving them in an open heap beside the road",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a928e725-6200-5369-b260-951420b18132",
+       "label": "D",
+       "content": "Burning them in the open together with plastics",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6b648d5e-c21c-560b-80c2-24eaffc17088",
+   "topic": "Pests and Diseases of Crops",
+   "title": "Pests and Diseases of Crops: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on pests and diseases of crops, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 204,
+   "questions": [
+    {
+     "id": "7d925deb-58c4-5426-b945-cfa93218bb00",
+     "key": "bio-pc-01",
+     "stem": "Cassava mosaic disease is caused by",
+     "image_url": null,
+     "explanation": "Infected plants have mottled, twisted, yellow-green leaves and small roots. Planting mosaic-resistant varieties and clean cuttings are the main control methods.\n\n**Why the other options are wrong**\n\n- a fungus, spread by wind-blown spores: Wind-blown fungal spores spread diseases such as rice blast.\n- a bacterium, spread in irrigation water: Cassava mosaic is a virus disease, and cassava is not usually irrigated.\n- a shortage of nitrogen in the soil: A shortage of nitrogen makes leaves yellow, but it is not an infectious disease.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1095302f-f128-5551-ae8f-ae85f4782a27",
+       "label": "A",
+       "content": "a fungus, spread by wind-blown spores",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ed5b6ea2-1e54-5a3f-9498-e3f359acd930",
+       "label": "B",
+       "content": "a bacterium, spread in irrigation water",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "abd4cad7-00b9-5d83-a45b-211bbb1ad9fd",
+       "label": "C",
+       "content": "a virus, spread by whiteflies and by infected stem cuttings",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7316ca65-9d37-50dd-9b8b-325c8cb9b191",
+       "label": "D",
+       "content": "a shortage of nitrogen in the soil",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3a79c6b4-a8e2-55de-bd8e-07e5672f0a54",
+     "key": "bio-pc-02",
+     "stem": "Aphids and whiteflies damage crops by",
+     "image_url": null,
+     "explanation": "These insects have piercing and sucking mouthparts. They weaken the plant and act as vectors, carrying viruses from plant to plant.\n\n**Why the other options are wrong**\n\n- biting and chewing the leaves: Biting and chewing is done by pests such as caterpillars and grasshoppers.\n- boring tunnels inside the stems: Boring is done by the larvae of stem borers.\n- eating grain in the store: Stored grain is attacked by weevils and rats.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c1028c17-a20a-5795-b72b-4e68a18cdf1a",
+       "label": "A",
+       "content": "biting and chewing the leaves",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2d1f9d62-c88f-568c-bdcd-3a94ea5d122e",
+       "label": "B",
+       "content": "boring tunnels inside the stems",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2c1e4840-e0ce-53b2-b32e-730f3c1a89a0",
+       "label": "C",
+       "content": "eating grain in the store",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "048f8a88-67a6-5907-97a4-e6e8c7f71dd3",
+       "label": "D",
+       "content": "sucking sap and spreading plant viruses",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ff857dd9-3cf0-5ec0-a7dc-d463306a03ab",
+     "key": "bio-pc-03",
+     "stem": "Stored maize grains have small round holes and there is fine powder in the bag. The grain has been attacked by",
+     "image_url": null,
+     "explanation": "Weevil larvae develop inside the grains and adults bore out, leaving holes and powder. Drying the grain well and storing it in clean, sealed containers reduces the damage.\n\n**Why the other options are wrong**\n\n- stem borers: Stem borers tunnel in the stems of maize and rice in the field.\n- whiteflies: Whiteflies suck sap from living leaves in the field.\n- rice blast: Rice blast is a fungal disease of rice leaves and panicles in the field.",
+     "position": 3,
+     "options": [
+      {
+       "id": "9bcf7e62-828f-5f5e-9f5e-c80a9d18df90",
+       "label": "A",
+       "content": "weevils",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7d547553-add3-5071-88e9-a88b2beca007",
+       "label": "B",
+       "content": "stem borers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "010c26b2-ce38-5d71-b167-1eb90ca18f43",
+       "label": "C",
+       "content": "whiteflies",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1e3a8422-a40d-5933-992d-eab7eba14a92",
+       "label": "D",
+       "content": "rice blast",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "accb92b2-b478-5db0-9d69-836f1ed97070",
+     "key": "bio-pc-04",
+     "stem": "The cassava mealybug in Africa was brought under control by releasing a tiny wasp that lays its eggs inside the mealybugs. This is an example of",
+     "image_url": null,
+     "explanation": "Biological control uses a pest's natural enemies. The wasp larvae kill the mealybugs, and the wasps keep breeding, so the control continues by itself at low cost.\n\n**Why the other options are wrong**\n\n- chemical control: Chemical control uses pesticides; no chemicals were used here.\n- cultural control: Cultural control uses farming practices such as crop rotation and timely planting.\n- legislative control: Legislative control uses laws, such as quarantine rules on importing plants.",
+     "position": 4,
+     "options": [
+      {
+       "id": "677ed67d-75f2-5f7b-89a0-fd8884baad22",
+       "label": "A",
+       "content": "chemical control",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "93cee9be-853d-5352-9d9d-ed35c0a9ea99",
+       "label": "B",
+       "content": "biological control",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "54d57573-198e-57c3-8c43-df485d8c6a98",
+       "label": "C",
+       "content": "cultural control",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "68b36961-484b-5c69-8ff8-9599ed5a5d7c",
+       "label": "D",
+       "content": "legislative control",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2ccde836-b5f2-5dec-b67c-6c7fbf26cc0d",
+     "key": "bio-pc-05",
+     "stem": "Crop rotation helps to control pests because",
+     "image_url": null,
+     "explanation": "Many pests and pathogens attack only one crop or crop family. Changing the crop each season breaks their life cycle, and rotation also helps keep the soil fertile.\n\n**Why the other options are wrong**\n\n- it kills the pests with chemicals: Crop rotation is a cultural method; it uses no chemicals.\n- it makes the crops grow too tall for pests to reach: Rotation does not change how tall the crops grow.\n- it brings in predators that eat the pests: Bringing in natural enemies is biological control.",
+     "position": 5,
+     "options": [
+      {
+       "id": "21ff935b-39ab-594a-b258-e0573945cacd",
+       "label": "A",
+       "content": "it kills the pests with chemicals",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "dff5319c-fba7-5b5d-9d63-9f1eccbd7147",
+       "label": "B",
+       "content": "it makes the crops grow too tall for pests to reach",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3f419d0a-0ddb-57a2-a89e-35944f12ada8",
+       "label": "C",
+       "content": "pests that feed on one crop die out when a different crop is grown on the land",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "6043e5c4-7d57-5ee8-ad4a-135d2c60cad9",
+       "label": "D",
+       "content": "it brings in predators that eat the pests",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23e5cb4a-9b1b-54ce-811a-a4b7abc894ae",
+     "key": "bio-pc-06",
+     "stem": "An advantage of biological control over chemical control is that it",
+     "image_url": null,
+     "explanation": "Pesticides can poison farmers, kill useful insects and build up in food chains. Integrated pest management combines methods to use as little chemical as possible.\n\n**Why the other options are wrong**\n\n- kills the pests immediately: Biological control is usually slow; chemicals act faster.\n- can be used against every kind of pest: A natural enemy usually attacks only one or a few kinds of pest.\n- must be repeated every week: Once established, a biological control agent keeps breeding and needs little repeating.",
+     "position": 6,
+     "options": [
+      {
+       "id": "87db152d-90d8-5dc1-b3b5-a4ab9dfc18d6",
+       "label": "A",
+       "content": "kills the pests immediately",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "115f4ad0-9f2a-5b01-be4c-e490fc11f868",
+       "label": "B",
+       "content": "can be used against every kind of pest",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8df1e989-ed11-53d2-afbd-a8ac2e24fcad",
+       "label": "C",
+       "content": "must be repeated every week",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "96b0e9c0-cb4a-5f6c-b671-53a3f5e3d6d2",
+       "label": "D",
+       "content": "leaves no poisonous residues on crops or in the environment",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0ba8e8ab-9c12-574b-8162-841e4647d26e",
+     "key": "bio-pc-07",
+     "stem": "Diamond-shaped spots on rice leaves, and rotting at the neck of the panicle that leaves the grains empty, are signs of",
+     "image_url": null,
+     "explanation": "Rice blast spreads by wind-blown spores, especially in humid weather. Resistant varieties and balanced fertiliser use help to control it.\n\n**Why the other options are wrong**\n\n- cassava mosaic, a virus disease: Cassava mosaic affects cassava, not rice, and causes mottled, twisted leaves.\n- a stem borer attack: Stem borers cause 'dead hearts' and white, empty heads, without leaf spots.\n- a rat attack: Rats cut and eat stems and grain; they do not cause spots on leaves.",
+     "position": 7,
+     "options": [
+      {
+       "id": "26535226-e1cb-5ccb-a2b7-d649706b83c4",
+       "label": "A",
+       "content": "rice blast, a fungal disease",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8adad5fd-d70b-520e-b28f-fbd445cbb75e",
+       "label": "B",
+       "content": "cassava mosaic, a virus disease",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8f9656c5-53fd-5029-95b9-2adc9284ebe1",
+       "label": "C",
+       "content": "a stem borer attack",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0cfc17bf-939d-5e37-a5cc-10716e782d23",
+       "label": "D",
+       "content": "a rat attack",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "49946b3d-a1ee-5b67-94d6-6819f2637361",
+   "topic": "Applied Biology in Agriculture and Industry",
+   "title": "Applied Biology in Agriculture and Industry: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on applied biology in agriculture and industry, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 205,
+   "questions": [
+    {
+     "id": "2640e5e8-89c0-57c9-ac4d-cc28417dc1d7",
+     "key": "bio-ab-01",
+     "stem": "Growing many identical, disease-free banana plantlets from small pieces of tissue on a sterile nutrient jelly is called",
+     "image_url": null,
+     "explanation": "Tissue culture produces large numbers of clean planting material quickly; it is used for banana, cassava and pineapple.\n\n**Why the other options are wrong**\n\n- hybridisation: Hybridisation is crossing two different varieties to combine their good qualities.\n- selective breeding: Selective breeding is choosing the best plants or animals as parents, generation after generation.\n- grafting: Grafting joins a shoot of one plant onto the rooted stem of another.",
+     "position": 1,
+     "options": [
+      {
+       "id": "c96749e5-b332-5cec-b1ce-4b441b1c1506",
+       "label": "A",
+       "content": "hybridisation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "228e85be-ea9f-5c9c-b653-403f8b870939",
+       "label": "B",
+       "content": "tissue culture",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0eec1210-dd00-5ac4-8632-0cde9aa3c95c",
+       "label": "C",
+       "content": "selective breeding",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9d8c99fe-8451-5681-8d34-92299e402ecb",
+       "label": "D",
+       "content": "grafting",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0ada3b30-3c4d-5cb0-8f46-6c81c304125f",
+     "key": "bio-ab-02",
+     "stem": "NERICA rice was produced by crossing African rice with Asian rice to combine the hardiness of one with the high yield of the other. This method is",
+     "image_url": null,
+     "explanation": "Hybridisation crosses two varieties so the offspring may combine the good traits of both, such as drought tolerance and higher yield.\n\n**Why the other options are wrong**\n\n- genetic engineering: Genetic engineering inserts a single gene from another organism directly into the DNA.\n- tissue culture: Tissue culture copies one plant exactly; it does not combine two varieties.\n- vegetative propagation: Vegetative propagation produces copies of one parent, with no crossing.",
+     "position": 2,
+     "options": [
+      {
+       "id": "3b5c87f6-73c7-5d24-90fa-8dbf2023d5d4",
+       "label": "A",
+       "content": "genetic engineering",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aecf34f6-fc5b-511b-99c9-c29d52785e7e",
+       "label": "B",
+       "content": "tissue culture",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "35ae97ca-accd-53ed-8732-6fc16072cffb",
+       "label": "C",
+       "content": "hybridisation",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f2753e54-6f98-507b-ab62-ca5e825fd557",
+       "label": "D",
+       "content": "vegetative propagation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3c70c062-d9b0-5cd6-8807-81c2ad5fba7b",
+     "key": "bio-ab-03",
+     "stem": "Human insulin for people with diabetes is now made by bacteria. This became possible when",
+     "image_url": null,
+     "explanation": "The bacteria carrying the human gene are grown in large fermenters, and the insulin they make is collected and purified.\n\n**Why the other options are wrong**\n\n- bacteria were found that naturally make human insulin: No bacterium makes human insulin naturally; the human gene had to be put in.\n- bacteria were fed on extracts of human pancreas: Eating pancreas would not give bacteria the instructions to make insulin.\n- bacteria were selectively bred over many generations: Selective breeding cannot give bacteria a human gene.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d1bf24ce-d6d0-5f5a-9ef4-4695e54e2337",
+       "label": "A",
+       "content": "bacteria were found that naturally make human insulin",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bfa8ddb5-d196-5a13-a486-dee8347468ad",
+       "label": "B",
+       "content": "bacteria were fed on extracts of human pancreas",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "273290de-9a54-5d1f-931f-567f5a19a3bf",
+       "label": "C",
+       "content": "bacteria were selectively bred over many generations",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8de7632d-c4b2-5515-bee3-e1e71df72ad0",
+       "label": "D",
+       "content": "the human insulin gene was inserted into the bacteria by genetic engineering",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2e49b1ed-43c4-5e69-a794-7dea17d4e473",
+     "key": "bio-ab-04",
+     "stem": "In a biogas digester, animal dung and plant waste are broken down by",
+     "image_url": null,
+     "explanation": "The sealed digester has no air, so anaerobic bacteria break the waste down to methane. The sludge left behind makes a good fertiliser.\n\n**Why the other options are wrong**\n\n- aerobic bacteria, producing oxygen: The digester is sealed, so there is no oxygen; and bacteria breaking down waste do not release oxygen.\n- yeast, producing alcohol for fuel: Yeast ferments sugars to alcohol; biogas is made by bacteria from dung.\n- fungi, producing carbon monoxide for lighting: Biogas is mostly methane; carbon monoxide is a poisonous gas, not the fuel.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2f5bed48-dea1-53e5-b3ed-9d246214e4d6",
+       "label": "A",
+       "content": "anaerobic bacteria, producing methane that can be burned for cooking",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "fc192fd1-5e28-56f9-b146-b8d4e515cf40",
+       "label": "B",
+       "content": "aerobic bacteria, producing oxygen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1d057321-b47c-59a7-b1b5-466900567240",
+       "label": "C",
+       "content": "yeast, producing alcohol for fuel",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "82d5e24b-d1f8-539b-80ba-2d501985a899",
+       "label": "D",
+       "content": "fungi, producing carbon monoxide for lighting",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1860dfbc-f28d-584b-93c8-92a3cfe6eaa7",
+     "key": "bio-ab-05",
+     "stem": "When making gari, grated cassava is left to ferment for two or three days before it is pressed and roasted. The fermentation",
+     "image_url": null,
+     "explanation": "Cassava roots contain compounds that release cyanide. Fermentation by lactic acid bacteria and other microbes, followed by pressing and roasting, removes most of it.\n\n**Why the other options are wrong**\n\n- adds protein to the cassava: Fermentation does not make cassava a good source of protein.\n- makes the cassava sweeter by producing sugar: Fermentation turns sugars into acids, so it makes the cassava sour, not sweet.\n- kills all the microorganisms in the cassava: Fermentation is carried out by microorganisms; it does not kill them.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ac136d09-6123-5a82-8062-a3c10630de09",
+       "label": "A",
+       "content": "adds protein to the cassava",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "52c91055-f55a-5d75-9c6a-b4d78850aef7",
+       "label": "B",
+       "content": "helps to remove poisonous cyanide compounds and gives gari its sour taste",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0b53557f-d549-5626-b8b2-9d30bc3cbcb0",
+       "label": "C",
+       "content": "makes the cassava sweeter by producing sugar",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "319ad43e-b8c3-5daa-89b1-c14f82846c82",
+       "label": "D",
+       "content": "kills all the microorganisms in the cassava",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a46bc0ec-ceca-599b-b983-c296cf846018",
+     "key": "bio-ab-06",
+     "stem": "Local N'Dama cattle are crossed with higher-yielding breeds because N'Dama cattle",
+     "image_url": null,
+     "explanation": "Cross-breeding aims to combine the N'Dama's tolerance of local disease with the greater milk or meat yield of another breed.\n\n**Why the other options are wrong**\n\n- give more milk than any other breed: N'Dama are valued for hardiness, not for high milk yield; that is why they are crossed with higher-yielding breeds.\n- grow faster than any other breed: N'Dama are small and grow slowly compared with many imported breeds.\n- are resistant to every cattle disease: No breed resists every disease; N'Dama are known for tolerating trypanosomiasis.",
+     "position": 6,
+     "options": [
+      {
+       "id": "8848dbcc-49a1-53c4-a81d-582b73c7feb2",
+       "label": "A",
+       "content": "give more milk than any other breed",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "34cd14a0-8b71-5055-839b-bfc82a362d81",
+       "label": "B",
+       "content": "grow faster than any other breed",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a9a23875-487b-57e1-827b-753212292b96",
+       "label": "C",
+       "content": "tolerate trypanosomiasis, the sleeping sickness of cattle spread by tsetse flies",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "3cbe2cfd-49df-5d19-b3ca-77a93ed2b0db",
+       "label": "D",
+       "content": "are resistant to every cattle disease",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bc099c51-6a7a-5505-a788-47f4ea20ce38",
+     "key": "bio-ab-07",
+     "stem": "Smoking and drying fish, as at Tombo and Shenge, preserves the fish mainly because",
+     "image_url": null,
+     "explanation": "Microorganisms need water to grow. Drying, smoking, salting and refrigeration all work by taking away the conditions microbes need.\n\n**Why the other options are wrong**\n\n- the smoke adds bacteria that protect the fish: Smoking does not add useful bacteria; the smoke and heat discourage microbes.\n- it makes the fish ferment: Fermentation is not the aim; smoking and drying stop microbial activity.\n- it keeps insects away for ever: Dried fish can still be attacked by insects if it is stored badly.",
+     "position": 7,
+     "options": [
+      {
+       "id": "1e545020-25b2-54ae-92fa-561de4246f09",
+       "label": "A",
+       "content": "the smoke adds bacteria that protect the fish",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "936102e0-d43f-59cd-af0b-0da966e94edd",
+       "label": "B",
+       "content": "it makes the fish ferment",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7fabbf2d-ba44-5ade-ade4-1b746787b7d8",
+       "label": "C",
+       "content": "it keeps insects away for ever",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "62a03ebb-f930-54bb-8076-5d62e6c2646a",
+       "label": "D",
+       "content": "removing water stops microorganisms growing in the fish",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "31359dd8-8ac1-58f4-bd78-a1cc1a77b03a",
+   "topic": "Practical Biology Skills",
+   "title": "Practical Biology Skills: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on practical biology skills, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 206,
+   "questions": [
+    {
+     "id": "467e1029-c529-5d34-adc2-38fae9975622",
+     "key": "bio-pb-01",
+     "stem": "A student views a slide with a ×10 eyepiece and a ×40 objective. What is the total magnification?",
+     "image_url": null,
+     "explanation": "Total magnification = eyepiece magnification × objective magnification = 10 × 40 = ×400.\n\n**Why the other options are wrong**\n\n- ×4: This divides 40 by 10; the two magnifications must be multiplied.\n- ×50: This adds 10 and 40; the two magnifications must be multiplied.\n- ×4000: This multiplies by 10 once too often: 10 × 40 = 400.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7b172603-eeec-589e-bf9d-3e5a785090c0",
+       "label": "A",
+       "content": "×4",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5d438653-6fdf-5749-a4d7-38b8c42dc594",
+       "label": "B",
+       "content": "×50",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e49b0e26-9d63-5e30-a6cf-4892ece1cb0d",
+       "label": "C",
+       "content": "×400",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "760a8ae9-19f8-54ae-a1e4-45f62bc6c0dc",
+       "label": "D",
+       "content": "×4000",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d490ba5a-b21d-5aeb-84f8-17d0fa95ed4d",
+     "key": "bio-pb-02",
+     "stem": "A student's drawing of a leaf is 120 mm long. The leaf itself is 40 mm long. What is the magnification of the drawing?",
+     "image_url": null,
+     "explanation": "Magnification = length of drawing ÷ actual length = 120 ÷ 40 = ×3. Both lengths must be in the same units.\n\n**Why the other options are wrong**\n\n- ×0.33: This divides the actual length by the drawing length, the wrong way round.\n- ×80: This subtracts the lengths (120 − 40); magnification is a ratio, found by dividing.\n- ×4800: This multiplies the lengths (120 × 40); they must be divided.",
+     "position": 2,
+     "options": [
+      {
+       "id": "cead190c-c98a-5d6d-98ec-1ad980b3a063",
+       "label": "A",
+       "content": "×0.33",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c332fb4-6ed0-556c-98c9-737a10c090c1",
+       "label": "B",
+       "content": "×3",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "ccca37bd-c27f-5331-878b-3cdd4d1eef7c",
+       "label": "C",
+       "content": "×80",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "01232463-30b4-59dd-8809-9dfcef612fd1",
+       "label": "D",
+       "content": "×4800",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "feb13c15-e7ce-5835-869c-0f35935e0831",
+     "key": "bio-pb-03",
+     "stem": "After changing to the high-power objective of a microscope, a student should focus the specimen using",
+     "image_url": null,
+     "explanation": "Focus first at low power with the coarse knob, looking from the side while lowering the objective; then at high power use only the fine knob.\n\n**Why the other options are wrong**\n\n- only the coarse focus knob: The coarse knob moves the lens a long way, so at high power it can crash the objective into the slide.\n- the mirror: The mirror controls the light reaching the specimen, not the focus.\n- the stage clips: The clips hold the slide in place; they do not focus.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1a27366b-dbf4-5064-851f-2295aa6d6635",
+       "label": "A",
+       "content": "only the fine focus knob",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "22c3d7d8-06db-54e1-ae98-5ffd3b622c97",
+       "label": "B",
+       "content": "only the coarse focus knob",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dc7920af-c40a-57ec-9b5e-6cb0aa727f2c",
+       "label": "C",
+       "content": "the mirror",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "af03630a-ecb0-510f-830c-0727d7041e9d",
+       "label": "D",
+       "content": "the stage clips",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "40288484-f289-5156-8aeb-c621b791fd7c",
+     "key": "bio-pb-04",
+     "stem": "A food sample turns violet when sodium hydroxide solution and a few drops of copper(II) sulfate solution are added. The food contains",
+     "image_url": null,
+     "explanation": "This is the Biuret test. The violet (purple) colour shows protein; a blue colour that does not change shows no protein.\n\n**Why the other options are wrong**\n\n- starch: Starch is shown by iodine solution turning blue-black.\n- reducing sugar: Reducing sugar gives a brick-red precipitate when heated with Benedict's solution.\n- fat: Fat leaves a translucent spot on paper, or gives a cloudy white emulsion with ethanol and water.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e97c26c4-ba66-50dd-8772-288aeffbf2aa",
+       "label": "A",
+       "content": "starch",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "62903056-109c-51f7-b68c-6a807c897cbf",
+       "label": "B",
+       "content": "protein",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1a13edbe-a5b7-5364-9b6e-67e861070f34",
+       "label": "C",
+       "content": "reducing sugar",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e632dc3d-43e2-5088-b8b5-27632ab3afe6",
+       "label": "D",
+       "content": "fat",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bee38536-833c-5369-8e0a-c87350f454cd",
+     "key": "bio-pb-05",
+     "stem": "Sucrose gives a brick-red precipitate with Benedict's solution only after it has first been",
+     "image_url": null,
+     "explanation": "Sucrose is a non-reducing sugar. Boiling with acid breaks it into glucose and fructose, which are reducing sugars, so the Benedict's test then works.\n\n**Why the other options are wrong**\n\n- mixed with iodine solution: Iodine solution tests for starch; it does not change sucrose.\n- shaken with ethanol: Shaking with ethanol is the emulsion test for fat.\n- cooled in ice: Cooling does not change sucrose; Benedict's test needs heat, not cold.",
+     "position": 5,
+     "options": [
+      {
+       "id": "fb33241a-d9a8-5324-8899-3e1edc45627c",
+       "label": "A",
+       "content": "mixed with iodine solution",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3e024226-4a5c-5d37-b211-b25497c6c75d",
+       "label": "B",
+       "content": "shaken with ethanol",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d670a267-e181-54f7-b797-8574f579b81c",
+       "label": "C",
+       "content": "boiled with dilute hydrochloric acid and then neutralised",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "068bea88-3d6a-5ff2-8c03-99e0b7e56e1d",
+       "label": "D",
+       "content": "cooled in ice",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a4654ad-b596-5a78-9d7d-069be080cdfc",
+     "key": "bio-pb-06",
+     "stem": "A student tests a food. Iodine solution stays brown; Benedict's solution gives a brick-red precipitate on heating; the Biuret test turns violet; the food leaves no translucent spot on paper. The food contains",
+     "image_url": null,
+     "explanation": "Read each test in turn: iodine negative (no starch), Benedict's positive (reducing sugar), Biuret positive (protein), grease spot negative (no fat).\n\n**Why the other options are wrong**\n\n- starch and protein: Iodine stayed brown, so there is no starch.\n- reducing sugar and fat: There was no translucent spot, so there is no fat.\n- protein only: The brick-red precipitate with Benedict's solution shows reducing sugar as well.",
+     "position": 6,
+     "options": [
+      {
+       "id": "fafcb780-1ea5-54e4-aa6b-226800365d61",
+       "label": "A",
+       "content": "starch and protein",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2b5b3bbb-e2af-5787-8140-9d09f8179e3b",
+       "label": "B",
+       "content": "reducing sugar and fat",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "52705fb1-1d9c-56ca-96a6-1cf14a44367a",
+       "label": "C",
+       "content": "protein only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "def6273c-be2a-52f4-b95e-d4bf40d1ca8d",
+       "label": "D",
+       "content": "reducing sugar and protein",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6a72e2ef-3c4e-56b4-a96a-6188700615e8",
+     "key": "bio-pb-07",
+     "stem": "Which apparatus is used to collect small animals, such as mites and springtails, from soil and leaf litter?",
+     "image_url": null,
+     "explanation": "In a Tullgren funnel, a lamp above the soil heats and dries it, so the animals move down, away from the heat, and fall through a sieve into a collecting tube.\n\n**Why the other options are wrong**\n\n- Pitfall trap: A pitfall trap catches animals crawling over the surface of the ground.\n- Sweep net: A sweep net catches insects in long grass.\n- Baermann funnel: A Baermann funnel collects animals that live in soil water, such as nematodes.",
+     "position": 7,
+     "options": [
+      {
+       "id": "363181c3-104d-554b-a836-640579c68c36",
+       "label": "A",
+       "content": "Tullgren funnel",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5ab95e70-316a-516c-961d-f857a5c2146e",
+       "label": "B",
+       "content": "Pitfall trap",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f7628c6d-df3a-5632-ad5f-175eddee9c5e",
+       "label": "C",
+       "content": "Sweep net",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "864cdd46-0a1a-57da-b023-38238b327741",
+       "label": "D",
+       "content": "Baermann funnel",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "49cc6552-4ee7-590d-85eb-0ea93c08c7c1",
+     "key": "bio-pb-08",
+     "stem": "In an experiment on the effect of temperature on the enzyme amylase, the control is a tube of starch with",
+     "image_url": null,
+     "explanation": "The control is identical except that the enzyme cannot work. If starch disappears only where active amylase is present, the enzyme must be the cause.\n\n**Why the other options are wrong**\n\n- amylase kept at body temperature: A tube at body temperature (about 37 °C) is one of the test tubes in the experiment, not the control.\n- amylase and iodine solution kept in the dark: Light is not a factor in this experiment, so darkness is irrelevant.\n- twice as much amylase: Changing the amount of enzyme adds a new variable, which makes the test unfair.",
+     "position": 8,
+     "options": [
+      {
+       "id": "299f9317-14b2-540e-9dd6-cd04fd5ede6d",
+       "label": "A",
+       "content": "amylase kept at body temperature",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "487c046d-93e9-5312-927e-947e6fbdf579",
+       "label": "B",
+       "content": "boiled (denatured) amylase",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "905f6d73-570c-51c6-ab7c-d38a03630833",
+       "label": "C",
+       "content": "amylase and iodine solution kept in the dark",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eec84c06-44d7-5c02-a8a1-f63c3b3bacb2",
+       "label": "D",
+       "content": "twice as much amylase",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "1763ffe85b9e"
+}

@@ -778,6 +778,22 @@
   "questions": 51
  },
  {
+  "name": "biology_set6_p1",
+  "label": "Biology: set 6 (pollution, microorganisms, disease, public health, crop pests, applied and practical biology)",
+  "subject_slug": "biology",
+  "version": "1763ffe85b9e",
+  "papers": [
+   "edbcaa8a-8a2f-5a1d-8ad8-2218e2dbf6b2",
+   "68c2f366-3f9d-58d4-aec2-27f3a1f905df",
+   "0e12090f-32ff-57d9-aa3d-fb109d93d5e8",
+   "e5bc94e1-b077-5f83-a76c-36691dc0e4e1",
+   "6b648d5e-c21c-560b-80c2-24eaffc17088",
+   "49946b3d-a1ee-5b67-94d6-6819f2637361",
+   "31359dd8-8ac1-58f4-bd78-a1cc1a77b03a"
+  ],
+  "questions": 50
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",

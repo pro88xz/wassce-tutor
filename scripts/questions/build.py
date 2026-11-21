@@ -355,6 +355,7 @@ SETS += [
         (3, "Biology: set 3 (blood and circulation, gas exchange, excretion, the kidney, support and movement)"),
         (4, "Biology: set 4 (senses, nerves, hormones, reproduction and growth)"),
         (5, "Biology: set 5 (heredity, evolution, ecology, adaptation and conservation, with diagrams)"),
+        (6, "Biology: set 6 (pollution, microorganisms, disease, public health, crop pests, applied and practical biology)"),
     )
 ]
 
