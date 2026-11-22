@@ -8,6 +8,10 @@
 // the homepage's "Try a question" does. "Try again" clears it. The answer is
 // folded but always in the HTML, so search engines read it, and the fold
 // still opens by itself before the page's script has loaded.
+//
+// Choosing moves too (index.css, "Answer feedback"): a right answer lifts and
+// glows; a wrong one shakes, then the right one glows. No sound. A page that
+// totals the score passes onAnswer (the questions pages: QuestionScore).
 import { useState } from 'react'
 import { CircleCheck, CircleX, Lightbulb, RotateCcw } from 'lucide-react'
 import { QuestionMarkdown } from '@/components/QuestionMarkdown'
@@ -39,7 +43,31 @@ const OPTION_STYLE: Record<OptionState, string> = {
   other: 'border-border bg-card opacity-55',
 }
 
-export function QuestionCard({ q, n, topic, heading: Heading = 'h2' }: { q: PublicQuestion; n: number; topic: string; heading?: 'h2' | 'h3' }) {
+// The movement each option makes once a choice is made (index.css): the right
+// answer chosen pops and glows, a wrong choice shakes, and the right answer
+// then glows to show where the mark was.
+const MOTION: Record<OptionState | 'reveal', string> = {
+  open: '',
+  correct: 'answer-correct',
+  reveal: 'answer-reveal',
+  'chosen-wrong': 'answer-wrong',
+  other: '',
+}
+
+export function QuestionCard({
+  q,
+  n,
+  topic,
+  heading: Heading = 'h2',
+  onAnswer,
+}: {
+  q: PublicQuestion
+  n: number
+  topic: string
+  heading?: 'h2' | 'h3'
+  /** Called with whether the choice was right, and with null on "Try again". */
+  onAnswer?: (right: boolean | null) => void
+}) {
   const [chosen, setChosen] = useState<string | null>(null)
   const [open, setOpen] = useState(false)
   const correct = q.options.find((o) => o.is_correct)
@@ -49,16 +77,18 @@ export function QuestionCard({ q, n, topic, heading: Heading = 'h2' }: { q: Publ
     if (chosen !== null) return
     setChosen(label)
     setOpen(true)
+    onAnswer?.(label === correct?.label)
   }
   const reset = () => {
     setChosen(null)
     setOpen(false)
+    onAnswer?.(null)
   }
   const stateOf = (label: string, isCorrect: boolean): OptionState =>
     chosen === null ? 'open' : isCorrect ? 'correct' : label === chosen ? 'chosen-wrong' : 'other'
 
   return (
-    <li id={`q${n}`} className="site-card scroll-mt-24 p-5 sm:p-6">
+    <li id={`q${n}`} className="answer-live site-card scroll-mt-24 p-5 sm:p-6">
       <Heading className="text-xs font-bold uppercase tracking-[.14em] text-muted-foreground">Question {n}</Heading>
       <QuestionMarkdown content={q.stem} className="question-md mt-2 text-[17px] leading-relaxed" />
       {q.image_url && <ZoomableImage src={q.image_url} alt={diagramAlt(q, n, topic)} {...diagramSize(q.image_url)} />}
@@ -74,7 +104,7 @@ export function QuestionCard({ q, n, topic, heading: Heading = 'h2' }: { q: Publ
                 onClick={() => choose(o.label)}
                 aria-pressed={shaded}
                 aria-disabled={chosen !== null}
-                className={`flex w-full items-start gap-3 rounded-xl border-2 px-3 py-2.5 text-left transition ${OPTION_STYLE[state]} ${chosen === null ? 'cursor-pointer' : 'cursor-default'}`}
+                className={`flex w-full items-start gap-3 rounded-xl border-2 px-3 py-2.5 text-left transition ${OPTION_STYLE[state]} ${chosen === null ? 'cursor-pointer' : 'cursor-default'} ${MOTION[state === 'correct' && !shaded ? 'reveal' : state]}`}
               >
                 {/* The option's bubble, as on an answer sheet: shaded in pencil when chosen. */}
                 <span
@@ -87,12 +117,12 @@ export function QuestionCard({ q, n, topic, heading: Heading = 'h2' }: { q: Publ
                 <QuestionMarkdown content={o.content} inline className="question-md min-w-0 flex-1 pt-0.5" />
                 {/* Never colour alone: an icon and words say which option is which. */}
                 {state === 'correct' && (
-                  <span className="mt-1 inline-flex shrink-0 items-center gap-1 text-xs font-bold text-emerald-700">
+                  <span className="answer-mark mt-1 inline-flex shrink-0 items-center gap-1 text-xs font-bold text-emerald-700">
                     <CircleCheck className="h-4 w-4" aria-hidden /> {shaded ? 'Your answer' : 'Correct'}
                   </span>
                 )}
                 {state === 'chosen-wrong' && (
-                  <span className="mt-1 inline-flex shrink-0 items-center gap-1 text-xs font-bold text-rose-700">
+                  <span className="answer-mark mt-1 inline-flex shrink-0 items-center gap-1 text-xs font-bold text-rose-700">
                     <CircleX className="h-4 w-4" aria-hidden /> Your answer
                   </span>
                 )}

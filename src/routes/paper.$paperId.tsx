@@ -4,12 +4,12 @@
 // with a calm interpretation and links every miss back to its lesson.
 import { createFileRoute, Link, useParams } from '@tanstack/react-router'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { AlarmClock, ArrowLeft, ArrowRight, BookOpen, Check, CircleCheck, CircleX, FileText, Info, RotateCcw, Timer, X } from 'lucide-react'
+import { AlarmClock, ArrowLeft, ArrowRight, BookOpen, Check, CircleCheck, CircleX, FileText, Info, RotateCcw, Sparkles, Timer, X } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { LockedPanel } from '@/components/AccessGate'
 import { paperLocked } from '@/lib/access'
 import { useAccess } from '@/lib/useAccess'
-import { usePaper, usePaperMeta, type PaperMeta, type QuestionRow } from '@/lib/queries'
+import { usePaper, usePaperBest, usePaperMeta, type PaperMeta, type QuestionRow } from '@/lib/queries'
 import { useSaveAttempt } from '@/lib/mutations'
 import { useAuth } from '@/lib/auth'
 import { useCurriculum, type CurriculumTopic } from '@/lib/progress'
@@ -22,6 +22,7 @@ import { ProgressBar } from '@/components/ds/Progress'
 import { percent } from '@/components/ds/percent'
 import { EmptyState, Skeleton } from '@/components/ds/Primitives'
 import { Button } from '@/components/ui/button'
+import { ScoreRing } from '@/components/practice/ScoreRing'
 
 export const Route = createFileRoute('/paper/$paperId')({
   head: privateHead('Practice'),
@@ -49,6 +50,12 @@ function PaperPage() {
   const [missedOnly, setMissedOnly] = useState(false)
   // A timed mock exam starts when the student starts the clock.
   const [startedAt, setStartedAt] = useState<number | null>(null)
+  // The best score before this attempt, kept at submit (saving the attempt refreshes the query).
+  const { data: best } = usePaperBest(user?.id ?? null, paperId)
+  const [bestBefore, setBestBefore] = useState<{ score: number; total: number } | null>(null)
+  // Questions whose result has been on screen since submitting: their answers
+  // move then (index.css, "Answer feedback"), not while scrolled out of view.
+  const [live, setLive] = useState<Set<string>>(() => new Set())
   const refs = useRef<Record<string, HTMLLIElement | null>>({})
   const minutes = mockMinutes(paperId)
 
@@ -60,6 +67,20 @@ function PaperPage() {
   }, [meta, curriculum])
 
   const exitTo = meta?.subject ? { to: '/subject/$subjectId' as const, params: { subjectId: meta.subject.id } } : { to: '/practice' as const }
+
+  // After submitting, each question's answers move as the question comes on screen.
+  useEffect(() => {
+    if (!submitted || typeof IntersectionObserver === 'undefined') return
+    const io = new IntersectionObserver(
+      (entries) => {
+        const seen = entries.filter((e) => e.isIntersecting).map((e) => (e.target as HTMLElement).dataset.question ?? '')
+        if (seen.length) setLive((prev) => new Set([...prev, ...seen]))
+      },
+      { threshold: 0.35 },
+    )
+    for (const el of Object.values(refs.current)) if (el) io.observe(el)
+    return () => io.disconnect()
+  }, [submitted, missedOnly])
 
   if (isLoading || accessLoading) {
     return (
@@ -119,6 +140,7 @@ function PaperPage() {
       return
     }
     setConfirming(false)
+    setBestBefore(best ?? null)
     setSubmitted(true)
     document.getElementById('main')?.scrollTo({ top: 0, behavior: 'smooth' })
     if (!user) return
@@ -140,6 +162,7 @@ function PaperPage() {
     setAnswers({})
     setSubmitted(false)
     setMissedOnly(false)
+    setLive(new Set())
     setStartedAt(null)
     document.getElementById('main')?.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -230,6 +253,12 @@ function PaperPage() {
             saveFailed={saveAttempt.isError}
             onRetry={restart}
             mock={!!minutes}
+            best={user ? bestBefore : undefined}
+            marks={questions.map((q) => (answers[q.id] ? isRight(q) : null))}
+            onJump={(i) => {
+              setMissedOnly(false)
+              requestAnimationFrame(() => jump(questions[i].id))
+            }}
           />
         )}
 
@@ -275,7 +304,12 @@ function PaperPage() {
             const correct = correctOf(q)
             const right = isRight(q)
             return (
-              <li key={q.id} ref={(el) => { refs.current[q.id] = el }} className="scroll-mt-20 rounded-2xl border bg-card p-5">
+              <li
+                key={q.id}
+                ref={(el) => { refs.current[q.id] = el }}
+                data-question={q.id}
+                className={`scroll-mt-20 rounded-2xl border bg-card p-5 ${live.has(q.id) ? 'answer-live' : ''}`}
+              >
                 <p className="mb-2 flex items-center justify-between text-xs font-semibold text-muted-foreground">
                   <span className="flex items-center gap-3">
                     Question {i + 1} of {total}
@@ -287,9 +321,9 @@ function PaperPage() {
                   </span>
                   {submitted && (
                     right ? (
-                      <span className="inline-flex items-center gap-1 text-success"><CircleCheck className="h-4 w-4" aria-hidden /> Correct</span>
+                      <span className="answer-mark inline-flex items-center gap-1 text-success"><CircleCheck className="h-4 w-4" aria-hidden /> Correct</span>
                     ) : chosen ? (
-                      <span className="inline-flex items-center gap-1 text-danger"><CircleX className="h-4 w-4" aria-hidden /> Incorrect</span>
+                      <span className="answer-mark inline-flex items-center gap-1 text-danger"><CircleX className="h-4 w-4" aria-hidden /> Incorrect</span>
                     ) : (
                       <span>Not answered</span>
                     )
@@ -307,6 +341,8 @@ function PaperPage() {
                     let row = 'border-border hover:border-primary/40 hover:bg-muted/40'
                     let badge = 'border-border text-muted-foreground'
                     let mark: React.ReactNode = null
+                    // How the option moves once its question's result is on screen (index.css).
+                    const motion = !submitted ? '' : o.is_correct ? (isChosen ? 'answer-correct' : 'answer-reveal') : isChosen ? 'answer-wrong' : ''
                     if (submitted) {
                       if (o.is_correct) {
                         row = 'border-success bg-success/10'
@@ -330,9 +366,9 @@ function PaperPage() {
                         aria-checked={submitted ? undefined : isChosen}
                         onClick={() => select(q.id, o.id)}
                         disabled={submitted}
-                        className={`flex min-h-14 w-full items-center gap-3 rounded-xl border bg-card px-4 py-3 text-left text-[15px] transition-colors ${row}`}
+                        className={`flex min-h-14 w-full items-center gap-3 rounded-xl border bg-card px-4 py-3 text-left text-[15px] transition-colors ${row} ${motion}`}
                       >
-                        <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border text-sm font-bold ${badge}`} aria-hidden>
+                        <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border text-sm font-bold ${badge} ${!submitted && isChosen ? 'answer-picked' : ''}`} aria-hidden>
                           {o.label}
                         </span>
                         <span className="sr-only">Option {o.label}: </span>
@@ -442,6 +478,9 @@ function Result({
   saveFailed,
   onRetry,
   mock = false,
+  best,
+  marks,
+  onJump,
 }: {
   score: number
   total: number
@@ -454,6 +493,12 @@ function Result({
   onRetry: () => void
   /** A timed mock exam: the reading talks about the paper, not one topic */
   mock?: boolean
+  /** The best earlier score on this set: null on a first attempt, undefined when signed out (nothing saved). */
+  best?: { score: number; total: number } | null
+  /** Each question in order: true right, false wrong, null not answered. */
+  marks: (boolean | null)[]
+  /** Show question i's review. */
+  onJump: (i: number) => void
 }) {
   const p = percent(score, total)
   const reading = mock
@@ -474,14 +519,14 @@ function Result({
 
   return (
     <section aria-labelledby="result-title" className="space-y-4 rounded-2xl border bg-card p-5 sm:p-6">
-      <div>
-        <p className="text-sm font-medium text-muted-foreground">Your score</p>
-        <p className="mt-1 text-4xl font-bold tabular-nums">
-          {score}<span className="text-2xl text-muted-foreground">/{total}</span>
-          <span className="ml-2 text-lg font-semibold text-muted-foreground">{p}%</span>
-        </p>
-        <h1 id="result-title" className="mt-3 text-xl font-bold">{reading.title}</h1>
-        <p className="mt-1 text-[15px] text-muted-foreground">{reading.body}</p>
+      <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:items-center sm:text-left">
+        <ScoreRing score={score} total={total} />
+        <div className="min-w-0">
+          <p className="text-sm font-medium text-muted-foreground">Your score</p>
+          <h1 id="result-title" className="mt-1 text-xl font-bold">{reading.title}</h1>
+          <p className="mt-1 text-[15px] text-muted-foreground">{reading.body}</p>
+          <PersonalBest score={score} total={total} best={best} />
+        </div>
       </div>
 
       <dl className="grid grid-cols-3 gap-2 text-center">
@@ -498,6 +543,28 @@ function Result({
           <dd className="text-lg font-bold tabular-nums">{skipped}</dd>
         </div>
       </dl>
+
+      {total > 1 && (
+        <div className="space-y-2">
+          <p className="text-center text-xs font-semibold text-muted-foreground sm:text-left">Tap a question to see its working</p>
+          <ol className="flex flex-wrap justify-center gap-1.5 sm:justify-start" aria-label="Your answers, question by question">
+            {marks.map((m, i) => (
+              <li key={i}>
+                <button
+                  type="button"
+                  onClick={() => onJump(i)}
+                  className={`flex h-9 min-w-9 items-center justify-center rounded-full border-2 px-2 text-xs font-bold tabular-nums transition-colors ${
+                    m === true ? 'border-success bg-success text-white' : m === false ? 'border-danger bg-danger text-white' : 'border-border text-muted-foreground hover:border-primary hover:text-primary'
+                  }`}
+                >
+                  {i + 1}
+                  <span className="sr-only">{m === true ? ': correct' : m === false ? ': incorrect' : ': not answered'}</span>
+                </button>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
 
       <div className="flex flex-col gap-2 sm:flex-row">
         {score < total && topic ? (
@@ -522,6 +589,26 @@ function Result({
         {saving ? 'Saving your result…' : saveFailed ? "We couldn't save this result to your history. Your score above is still correct." : 'Saved to your progress.'}
       </p>
     </section>
+  )
+}
+
+/** How this score compares with the student's best before it, on this set. */
+function PersonalBest({ score, total, best }: { score: number; total: number; best?: { score: number; total: number } | null }) {
+  if (!best) return null
+  const now = score / total
+  const before = best.total ? best.score / best.total : 0
+  if (now > before) {
+    return (
+      <p className="answer-live mt-3 inline-flex items-center gap-1.5 rounded-full bg-success/10 px-3 py-1 text-sm font-semibold text-success">
+        <Sparkles className="answer-mark h-4 w-4" aria-hidden /> New personal best
+        <span className="font-normal text-muted-foreground">(was {best.score}/{best.total})</span>
+      </p>
+    )
+  }
+  return (
+    <p className="mt-3 text-sm text-muted-foreground">
+      {now === before ? 'You matched your best on this set' : 'Your best on this set'}: <span className="font-semibold tabular-nums text-foreground">{best.score}/{best.total}</span>
+    </p>
   )
 }
 

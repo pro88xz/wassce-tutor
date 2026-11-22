@@ -6,10 +6,12 @@
 // elements with sizes and descriptive alt text, so they can appear in image
 // search. Prerendered at build time.
 import { createFileRoute, notFound } from '@tanstack/react-router'
+import { useState } from 'react'
 import { ArrowLeft, ArrowRight, BookOpen, Layers } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { StartCta } from '@/components/public/StartCta'
 import { QuestionCard } from '@/components/public/QuestionCard'
+import { QuestionScore } from '@/components/public/QuestionScore'
 import { markdownWithMath, plainText as plain, splitExplanation } from '@/lib/question-text'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchTopicQuestionsPage, keyTermsPath, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-content'
@@ -101,6 +103,16 @@ function TopicQuestionsPage() {
   const { palette } = subjectTheme(subject.slug)
   const diagrams = questions.filter((q) => q.image_url).length
   const firstLesson = topic.lessons[0]
+  // Each question's result, for the running score under the list (QuestionScore).
+  // "Try them again" starts a new round: the cards are made afresh.
+  const [results, setResults] = useState<(boolean | null)[]>(() => questions.map(() => null))
+  const [round, setRound] = useState(0)
+  const answer = (i: number) => (right: boolean | null) => setResults((r) => r.map((v, j) => (j === i ? right : v)))
+  const retry = () => {
+    setResults(questions.map(() => null))
+    setRound((n) => n + 1)
+    document.getElementById('q1')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   return (
     <article className="app-page site-page mx-auto w-full max-w-4xl space-y-8 pb-12">
@@ -146,9 +158,16 @@ function TopicQuestionsPage() {
 
       <ol className="space-y-5">
         {questions.map((q, i) => (
-          <QuestionCard key={q.id} q={q} n={i + 1} topic={topic.name} />
+          <QuestionCard key={`${q.id}-${round}`} q={q} n={i + 1} topic={topic.name} onAnswer={answer(i)} />
         ))}
       </ol>
+
+      <QuestionScore
+        results={results}
+        onRetry={retry}
+        revise={firstLesson ? { href: lessonPath(subject.slug, topic.slug, firstLesson.slug), label: `Revise ${topic.name}` } : undefined}
+        next={nextQuestions ? { href: questionsPath(subject.slug, nextQuestions.slug), label: `Next: ${nextQuestions.name} questions` } : undefined}
+      />
 
       {(previousQuestions || nextQuestions) && (
         <nav aria-label={`More ${subject.name} questions`} className="grid gap-3 sm:grid-cols-2">

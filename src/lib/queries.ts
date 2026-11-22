@@ -217,6 +217,25 @@ export function useAttempts(profileId: string | null) {
   })
 }
 
+/** A student's best score so far on one practice set or mock, or null before their first attempt. */
+export function usePaperBest(profileId: string | null, paperId: string) {
+  return useQuery({
+    queryKey: ['paper-best', profileId, paperId],
+    enabled: !!profileId,
+    queryFn: async (): Promise<{ score: number; total: number } | null> => {
+      const { data, error } = await supabase
+        .from('attempts')
+        .select('score, total')
+        .eq('profile_id', profileId!)
+        .eq('paper_id', paperId)
+        .order('score', { ascending: false })
+        .limit(1)
+      if (error) throw error
+      return (data?.[0] as { score: number; total: number } | undefined) ?? null
+    },
+  })
+}
+
 // --- Phase 5: topics & lessons ---
 
 export type Topic = {
