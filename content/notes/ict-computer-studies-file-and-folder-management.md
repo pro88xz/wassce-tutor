@@ -31,6 +31,8 @@ By the end of this lesson you should be able to:
 
 ![A folder tree: the drive Local Disk (C:) is the root directory. It holds the folders Program Files, Users and Windows. Users holds the folder Aminata, which holds Documents and Pictures. Documents holds the subfolder School, which holds SSS3, which holds the files ICT notes.docx and Maths results.xlsx. Pictures holds graduation.jpg. The path to the ICT notes file is C:\Users\Aminata\Documents\School\SSS3\ICT notes.docx](https://wasscetutor.com/img/ict/folder-tree.svg)
 
+*Figure 1. Folders, subfolders and files on drive C:, with the path to one file. WASSCE Tutor diagram.*
+
 | File | Folder |
 |---|---|
 | holds **data** (text, a picture, a song, a program) | holds **files and other folders** |
@@ -149,5 +151,5 @@ A **file** is a named collection of data, such as a document or a picture. A **f
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to define file, folder and path, to state what given file extensions mean, to list the steps for creating, renaming, copying or deleting a file or folder, to distinguish Save from Save As and copy from move, and to explain why backups are needed. In practical questions write the steps in order, naming the exact menu or keys used.
+Questions on files and folders usually ask you to define file, folder and path, to state what given file extensions mean, to list the steps for creating, renaming, copying or deleting a file or folder, to distinguish Save from Save As and copy from move, and to explain why backups are needed. In practical questions write the steps in order, naming the exact menu or keys used.
 :::

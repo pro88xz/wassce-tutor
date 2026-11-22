@@ -19,6 +19,8 @@ By the end of this lesson you should be able to:
 
 ![The booting process in five steps: 1, power on: the CPU starts the BIOS or UEFI firmware stored in ROM; 2, the power-on self-test (POST) checks memory, keyboard and disks and beeps if there is a fault; 3, the BIOS looks for the operating system on the SSD, hard disk or USB drive; 4, the boot loader copies the operating system's kernel into RAM; 5, the operating system shows the log-in screen, then the desktop](https://wasscetutor.com/img/ict/booting-process.svg)
 
+*Figure 1. The five steps of the booting process. WASSCE Tutor diagram.*
+
 :::callout{type=definition}
 **Power-on self-test (POST):** a set of checks the BIOS runs when a computer is switched on, to make sure the memory, keyboard, disks and other key hardware are working.
 
@@ -45,6 +47,8 @@ To start a desktop computer safely: switch on the power at the wall socket (and 
 ## The desktop
 
 ![Parts of the desktop: desktop icons such as This PC, Recycle Bin and Documents on the wallpaper (background); an open window with a title bar and minimise, maximise and close buttons; a mouse pointer; and the taskbar along the bottom with the Start button at the left, buttons for open programs and the notification area and clock at the right](https://wasscetutor.com/img/ict/desktop-elements.svg)
+
+*Figure 2. The parts of a computer desktop. WASSCE Tutor diagram.*
 
 :::callout{type=definition}
 **Desktop:** the main screen shown after logging in, on which icons, windows and the taskbar appear.
@@ -164,5 +168,5 @@ Any two: to avoid **losing unsaved work**; to avoid **corrupting files** and the
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to define booting, to distinguish cold from warm booting, to list the steps for starting or shutting down a computer, to name parts of the desktop or of a window, to state the uses of mouse actions and keyboard shortcuts, and to explain the use of a UPS. Practical questions may ask you to write the steps of a task in order, so number each step.
+Theory questions on this topic ask you to define booting, to distinguish cold from warm booting, to list the steps for starting or shutting down a computer, to name parts of the desktop or of a window, to state the uses of mouse actions and keyboard shortcuts, and to explain the use of a UPS. Practical questions may ask you to write the steps of a task in order, so number each step.
 :::

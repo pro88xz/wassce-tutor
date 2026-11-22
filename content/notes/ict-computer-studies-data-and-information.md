@@ -55,6 +55,8 @@ Good information is:
 
 ![The data processing cycle: raw data is collected, input into the computer, processed and output as information on a screen or in print. Processing reads from and saves to storage, and feedback from the output goes back to the input so that mistakes can be corrected](https://wasscetutor.com/img/ict/data-processing-cycle.svg)
 
+*Figure 1. The data processing cycle, with storage and feedback. WASSCE Tutor diagram.*
+
 1. **Data collection:** gathering the raw facts, for example from forms, questionnaires, registers, sensors or barcodes.
 2. **Input:** entering the data into the computer, using input devices such as a keyboard or scanner. Data is often **prepared** (sorted, coded) and **checked** before or as it is entered.
 3. **Processing:** the computer calculates, sorts, compares, classifies and summarises the data under the control of a program.
@@ -112,19 +114,23 @@ Data in a computer is organised in levels, each built from the one below.
 
 ![The data hierarchy as stacked levels: a bit is a single 0 or 1; a byte is 8 bits and holds one character; a field is one item of data, such as a surname; a record is all the fields about one student; a file is the set of related records for a class; a database is a set of related files such as students, fees and results](https://wasscetutor.com/img/ict/data-hierarchy.svg)
 
+*Figure 2. The data hierarchy, from a single bit to a database. WASSCE Tutor diagram.*
+
 :::callout{type=definition}
 **Bit:** a binary digit, 0 or 1, the smallest unit of data in a computer.
 
 **Byte:** a group of 8 bits, enough to store one character such as a letter or a digit.
 
-**Field:** a single item of data about a person or thing, such as a surname or a date of birth.
-
-**Record:** a collection of related fields about one person or thing, such as all the details of one student.
-
-**File:** a collection of related records, such as the records of all the students in a class.
-
-**Database:** an organised collection of related files or tables, such as students, fees and results.
 :::
+
+Above the byte, each level is a group of the level below it:
+
+| Level | Made from | Size, from small to large |
+|---|---|---|
+| **Field** | characters (bytes) | one item, such as a surname |
+| **Record** | related fields | everything about one student |
+| **File** | related records | every student in one class |
+| **Database** | related files (tables) | students, fees and results together |
 
 :::callout{type=local-example}
 **A school's data, level by level.** "K" is stored as one byte. "Kamara" is a field. Aminata Kamara's ID number, name, class and date of birth together make one record. All the records for SSS3 make a file. The students, fees and results files of the whole school make a database.
@@ -164,5 +170,5 @@ A **range check** (a validation check) makes sure a value lies between limits, s
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to distinguish data from information, to list the stages of the data processing cycle in order, to give qualities of good information, to give examples of batch and real-time processing, and to explain validation and verification or name validation checks. Questions on the data hierarchy ask you to arrange bit, byte, field, record, file and database in order or to define one of them.
+Examiners regularly ask candidates to distinguish data from information, to list the stages of the data processing cycle in order, to give qualities of good information, to give examples of batch and real-time processing, and to explain validation and verification or name validation checks. Questions on the data hierarchy ask you to arrange bit, byte, field, record, file and database in order or to define one of them.
 :::

@@ -27,6 +27,8 @@ By the end of this lesson you should be able to:
 All four examples in the table are the **same number**, written in different bases. The small number written below and after a number (the subscript) shows its base.
 
 :::callout{type=definition}
+**Decimal (denary) number system:** the base-10 number system used in everyday life, with the ten digits 0 to 9.
+
 **Binary number system:** the base-2 number system, which uses only the digits 0 and 1; each digit is a bit.
 
 **Octal number system:** the base-8 number system, which uses the digits 0 to 7.
@@ -38,7 +40,9 @@ All four examples in the table are the **same number**, written in different bas
 
 ## Place value
 
-In every base, each place is worth the base times the place to its right.
+:::callout{type=definition}
+**Place value:** the value a digit has because of its position in a number; in any base, each place is worth the base times the place to its right, so in binary each place is worth twice the one before.
+:::
 
 - Decimal: $352 = 3 \times 100 + 5 \times 10 + 2 \times 1$
 - Binary place values, from the right: 1, 2, 4, 8, 16, 32, 64, 128 (each doubles)
@@ -51,6 +55,8 @@ Divide by 2 again and again, writing down each **remainder**, until the number i
 
 ![Converting 25 to binary by repeated division by 2: 25 divided by 2 is 12 remainder 1; 12 by 2 is 6 remainder 0; 6 by 2 is 3 remainder 0; 3 by 2 is 1 remainder 1; 1 by 2 is 0 remainder 1. Reading the remainders upwards gives 25 in decimal as 11001 in binary](https://wasscetutor.com/img/ict/decimal-to-binary.svg)
 
+*Figure 1. Converting 25 to binary by repeated division by 2. WASSCE Tutor diagram.*
+
 :::callout{type=worked-example}
 **Convert 25 to binary.** $25 \div 2 = 12$ r 1, $12 \div 2 = 6$ r 0, $6 \div 2 = 3$ r 0, $3 \div 2 = 1$ r 1, $1 \div 2 = 0$ r 1. Reading upwards: $25_{10} = 11001_2$.
 
@@ -62,6 +68,8 @@ Check: $16 + 8 + 1 = 25$.
 Write the place values above the bits and **add the place values where the bit is 1**.
 
 ![Converting the binary number 10011101 to decimal: the place values 128, 64, 32, 16, 8, 4, 2 and 1 sit above the bits 1, 0, 0, 1, 1, 1, 0, 1; adding the values where the bit is 1 gives 128 + 16 + 8 + 4 + 1 = 157](https://wasscetutor.com/img/ict/binary-place-values.svg)
+
+*Figure 2. Adding the place values of the 1 bits turns 10011101 into 157. WASSCE Tutor diagram.*
 
 :::callout{type=worked-example}
 **Convert $10011101_2$ to decimal.** The 1s are in the places worth 128, 16, 8, 4 and 1, so $128 + 16 + 8 + 4 + 1 = 157$. So $10011101_2 = 157_{10}$.
@@ -89,6 +97,8 @@ Because $8 = 2^3$ and $16 = 2^4$, you can convert straight from binary:
 - **Hexadecimal:** split the bits into groups of **4** from the right and write each group as one digit.
 
 ![Grouping binary digits: for octal, 10011101 is split into 10, 011 and 101, giving 2, 3 and 5, so it is 235 in octal; for hexadecimal it is split into 1001 and 1101, giving 9 and 13, and 13 is D, so it is 9D in hexadecimal](https://wasscetutor.com/img/ict/binary-octal-hex.svg)
+
+*Figure 3. Grouping bits in threes gives octal; grouping in fours gives hexadecimal. WASSCE Tutor diagram.*
 
 To go the other way, write each octal digit as 3 bits or each hexadecimal digit as 4 bits: $A7_{16} = 1010\ 0111_2$, because A = 1010 and 7 = 0111.
 
@@ -140,10 +150,11 @@ Every letter, digit and symbol is stored as a binary **code**.
 **Unicode:** a character code that covers the letters and symbols of almost every language in the world, as well as emoji; UTF-8 is the form used on most web pages.
 
 **Binary coded decimal (BCD):** a code in which each decimal digit is written separately as a 4-bit binary number; 25 is 0010 0101.
+
+**EBCDIC:** the Extended Binary Coded Decimal Interchange Code, an 8-bit character code used mainly on IBM mainframe computers.
 :::
 
 - In **ASCII**, A = 65, B = 66 and so on; a = 97; the digit 0 = 48. An **extended ASCII** uses 8 bits for 256 characters.
-- **EBCDIC** (Extended Binary Coded Decimal Interchange Code) is an 8-bit code used on IBM mainframe computers.
 - **Unicode** is needed for scripts such as Arabic and Chinese, and for symbols ASCII does not have.
 
 :::callout{type=common-mistake}
@@ -185,5 +196,5 @@ $2 \times 1024 \times 8 = 16\,384$ bits.
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to convert numbers between decimal, binary, octal and hexadecimal, to add or subtract binary numbers, to state the base or digits of a number system, to convert between data units, and to explain ASCII or BCD. Show every division or every place value in your working; a correct answer with no working may lose marks, and a check in decimal catches most mistakes.
+Number systems appear in almost every paper; you may need to convert numbers between decimal, binary, octal and hexadecimal, to add or subtract binary numbers, to state the base or digits of a number system, to convert between data units, and to explain ASCII or BCD. Show every division or every place value in your working; a correct answer with no working may lose marks, and a check in decimal catches most mistakes.
 :::

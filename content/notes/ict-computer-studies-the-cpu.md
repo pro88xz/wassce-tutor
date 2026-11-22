@@ -19,6 +19,8 @@ By the end of this lesson you should be able to:
 
 ![Block diagram of a computer system: input devices such as a keyboard, mouse and scanner send data to the central processing unit, which contains the control unit, the arithmetic and logic unit and registers. The CPU exchanges data with main memory (RAM and ROM) and with secondary storage, and sends results to output devices such as a monitor, printer and speakers. Buses carry signals between the parts](https://wasscetutor.com/img/ict/computer-system-block-diagram.svg)
 
+*Figure 1. Block diagram of a computer system. WASSCE Tutor diagram.*
+
 Data flows **in** through input devices, is **processed** by the CPU using main memory, goes **out** through output devices and is **saved** on secondary storage. In a modern computer the CPU is a single **microprocessor** chip, fitted into a socket on the **motherboard** under a heat sink and fan that keep it cool.
 
 ## The parts of the CPU
@@ -46,13 +48,15 @@ Data flows **in** through input devices, is **processed** by the CPU using main 
 
 ### The main registers
 
-| Register | What it holds |
+:::callout{type=definition}
+| Term | Meaning |
 |---|---|
-| **Program counter (PC)** | the address of the **next** instruction to be fetched |
-| **Memory address register (MAR)** | the address of the memory location to be read from or written to |
-| **Memory data register (MDR)**, also called the memory buffer register | the data or instruction just read from memory, or about to be written to it |
-| **Current instruction register (CIR / IR)** | the instruction being decoded and carried out |
-| **Accumulator (ACC)** | the result of the latest calculation by the ALU |
+| **Program counter (PC)** | the register that holds the address of the **next** instruction to be fetched |
+| **Memory address register (MAR)** | the register that holds the address of the memory location about to be read from or written to |
+| **Memory data register (MDR)** | the register, also called the memory buffer register, that holds the data or instruction just read from memory or about to be written to it |
+| **Current instruction register (CIR)** | the register that holds the instruction being decoded and carried out |
+| **Accumulator (ACC)** | the register that holds the result of the latest calculation by the ALU |
+:::
 
 ## Buses
 
@@ -73,6 +77,8 @@ Data flows **in** through input devices, is **processed** by the CPU using main 
 :::
 
 ![The fetch–decode–execute cycle: 1, fetch: copy the next instruction from main memory into the CPU using the program counter; 2, decode: the control unit works out what the instruction means; 3, execute: carry it out, using the ALU, and store any result; then repeat for the next instruction](https://wasscetutor.com/img/ict/fetch-decode-execute.svg)
+
+*Figure 2. The fetch–decode–execute (machine) cycle. WASSCE Tutor diagram.*
 
 1. **Fetch:** the address in the **program counter** is copied to the **MAR**; the instruction at that address travels along the data bus into the **MDR** and then into the **instruction register**; the program counter goes up by one, ready for the next instruction.
 2. **Decode:** the **control unit** works out what the instruction means and what it needs (for example "add the number at address 200").
@@ -136,5 +142,5 @@ Any three: **clock speed**, **number of cores**, **cache size**, **word size**, 
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to name the components of the CPU and state their functions, to draw a labelled block diagram of a computer, to describe the fetch–decode–execute cycle, to state what a named register holds, to distinguish the data, address and control buses, and to give factors affecting processor speed. In a block diagram, show the arrows: input to the CPU, the CPU to output, and two-way arrows between the CPU and memory.
+Questions on the processor commonly ask you to name the components of the CPU and state their functions, to draw a labelled block diagram of a computer, to describe the fetch–decode–execute cycle, to state what a named register holds, to distinguish the data, address and control buses, and to give factors affecting processor speed. In a block diagram, show the arrows: input to the CPU, the CPU to output, and two-way arrows between the CPU and memory.
 :::

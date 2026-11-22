@@ -29,6 +29,8 @@ By the end of this lesson you should be able to:
 
 ![Parts of a presentation program window in Normal view: the title bar; the menu tabs File, Home, Insert, Design, Transitions, Animations and Slide Show; the slide pane at the left showing thumbnails of four slides with slide 2 selected; the slide being edited, with a title placeholder reading Our school clubs and a content placeholder of bullet points; the notes pane below for the speaker's notes; and the status bar showing Slide 2 of 4 with the view buttons and the Slide Show button](https://wasscetutor.com/img/ict/presentation-window.svg)
 
+*Figure 1. The parts of a presentation program window in Normal view. WASSCE Tutor diagram.*
+
 :::callout{type=definition}
 **Slide:** a single page of a presentation, shown full-screen during a slide show.
 
@@ -105,6 +107,8 @@ By the end of this lesson you should be able to:
 
 ![The same circle enlarged two ways: a bitmap (raster) image is made of pixels, so when it is enlarged the square pixels show and the edge looks jagged; it suits photographs in formats such as .jpg, .png and .bmp. A vector image is made of shapes described by mathematics, with points that define the curve, so when it is enlarged the edge stays smooth; it suits logos and drawings in formats such as .svg and .ai](https://wasscetutor.com/img/ict/bitmap-vs-vector.svg)
 
+*Figure 2. A bitmap and a vector image of the same circle, enlarged. WASSCE Tutor diagram.*
+
 :::callout{type=definition}
 **Bitmap (raster) graphic:** an image made of a grid of tiny coloured dots called pixels; it loses quality and looks jagged when it is enlarged.
 
@@ -160,5 +164,5 @@ Any two: bitmaps are made of **pixels**, vectors of **shapes** described by math
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to name presentation and graphics packages, to state uses of presentation software, to explain terms such as slide, transition, animation, slide master and placeholder, to name the views and say what each is for, and to distinguish bitmap from vector graphics. In practical work, follow the instructions on layout, theme, transitions and the order of slides exactly.
+Be prepared to name presentation and graphics packages, to state uses of presentation software, to explain terms such as slide, transition, animation, slide master and placeholder, to name the views and say what each is for, and to distinguish bitmap from vector graphics. In practical work, follow the instructions on layout, theme, transitions and the order of slides exactly.
 :::

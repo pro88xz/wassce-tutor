@@ -31,6 +31,8 @@ A DBMS lets users **create** the structure, **enter and edit** data, **search an
 
 ![Two tables in a school database. The Students table has the fields StudentID, Surname, First name and Class; each row is a record, such as S002, Kamara, Aminata, SSS3; a column such as Surname is a field; StudentID is the primary key, underlined, and no two students can share one. The Fees table has Receipt No, StudentID, Amount and Date. StudentID in Fees is a foreign key linking each payment to one student: one student can have many fee payments, a one-to-many relationship](https://wasscetutor.com/img/ict/database-tables.svg)
 
+*Figure 1. Fields, records and keys in two linked tables. WASSCE Tutor diagram.*
+
 :::callout{type=definition}
 **Table:** a set of related records arranged in rows and columns, such as a table of students.
 
@@ -167,5 +169,5 @@ Any three: **faster** searching and sorting; **less redundancy**; data can be **
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to define database terms (database, DBMS, table, field, record, primary key), to name examples of DBMS software, to state the use of queries, forms and reports, to choose a suitable primary key or data type for a field, to describe the types of database, and to give advantages of a computerised database. When asked for a primary key, choose a field that can never repeat and say why.
+Database questions commonly ask you to define database terms (database, DBMS, table, field, record, primary key), to name examples of DBMS software, to state the use of queries, forms and reports, to choose a suitable primary key or data type for a field, to describe the types of database, and to give advantages of a computerised database. When asked for a primary key, choose a field that can never repeat and say why.
 :::

@@ -29,6 +29,14 @@ Long before electricity, people built tools to count and calculate faster and wi
 | **Analytical Engine** | Charles Babbage | 1837 | a design for a general-purpose mechanical computer |
 | **Tabulating machine** | Herman Hollerith (USA) | 1890 | counted the US census from punched cards using electricity |
 
+:::callout{type=definition}
+**Abacus:** the earliest known calculating aid: a frame of beads that slide on rods, used for adding and subtracting.
+
+**Punched card:** a stiff card with holes punched in set places to stand for data or instructions; punched cards controlled Jacquard's loom, fed Babbage's design and Hollerith's tabulator, and were used with computers until the 1970s.
+
+**Analytical Engine:** Charles Babbage's 1837 design for a general-purpose mechanical computer, with a mill to calculate, a store to hold numbers, and input and output on punched cards.
+:::
+
 Hollerith's company later became part of **IBM** (International Business Machines), which grew into one of the largest computer makers in the world.
 
 ## Charles Babbage, the father of the computer
@@ -53,11 +61,19 @@ Two scientists shaped how every computer since works:
 - **Alan Turing** (England) described in 1936 a "universal machine" that could carry out any calculation that can be written as steps. During the Second World War he helped break German secret codes. He is often called the father of computer science and of artificial intelligence.
 - **John von Neumann** (Hungary, later USA) set out in 1945 the **stored-program concept**: the program and the data are both kept in the computer's memory. Almost every computer today follows this design, called the **von Neumann architecture**.
 
+:::callout{type=definition}
+**Stored-program concept:** the idea, set out by John von Neumann in 1945, that a computer keeps its program in memory alongside its data, so it can be given a new task by loading a new program instead of being rewired.
+:::
+
 ## The five generations of computers
 
-A **generation of computers** is a stage in the development of computers marked by a major change in the technology used to build them.
+:::callout{type=definition}
+**Generation of computers:** a stage in the development of computers marked by a major change in the technology used to build them, such as the change from vacuum tubes to transistors.
+:::
 
 ![A timeline of the generations of computers. Before the 1940s: mechanical devices such as the abacus, the Pascaline and the Analytical Engine. First generation, 1940s to 1956: vacuum tubes, for example ENIAC and UNIVAC I. Second generation, 1956 to 1963: transistors, for example the IBM 1401. Third generation, 1964 to 1971: integrated circuits, for example the IBM System/360. Fourth generation, 1971 to today: microprocessors, for example the IBM PC, laptops and smartphones. Fifth generation: artificial intelligence](https://wasscetutor.com/img/ict/computer-generations.svg)
+
+*Figure 1. The five generations of computers and the technology that marks each. WASSCE Tutor diagram.*
 
 | Generation | Period (about) | Main technology | Programming | Examples |
 |---|---|---|---|---|
@@ -77,6 +93,8 @@ Textbooks give slightly different years for each generation; the technology is w
 **Integrated circuit (IC):** a single silicon chip that carries many transistors and other components; the basis of third-generation computers.
 
 **Microprocessor:** a single chip that contains the whole central processing unit; the basis of fourth-generation computers.
+
+**Very large scale integration (VLSI):** the making of chips that each carry hundreds of thousands to billions of transistors, which made the microprocessor possible.
 
 **Artificial intelligence (AI):** the ability of a computer to do tasks that normally need human intelligence, such as understanding speech, recognising images and learning from experience.
 :::
@@ -166,5 +184,5 @@ Any three: very large and heavy; very expensive; produced much heat and needed a
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to name early calculating devices and their inventors, to state the technology of each generation of computers, to give features or examples of a generation, and to explain why Babbage is called the father of the computer. Learn the order of the generations and one example of each; when asked for features, give short points such as "used vacuum tubes" or "produced a lot of heat".
+In WASSCE ICT papers you may be asked to name early calculating devices and their inventors, to state the technology of each generation of computers, to give features or examples of a generation, and to explain why Babbage is called the father of the computer. Learn the order of the generations and one example of each; when asked for features, give short points such as "used vacuum tubes" or "produced a lot of heat".
 :::
