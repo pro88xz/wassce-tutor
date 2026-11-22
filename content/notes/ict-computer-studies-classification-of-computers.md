@@ -16,6 +16,8 @@ By the end of this lesson you should be able to:
 
 ![A tree diagram: computers are classified by type (analogue, digital, hybrid), by size (supercomputer, mainframe, minicomputer, microcomputer) and by purpose (general-purpose, special-purpose). Microcomputers include desktops, laptops, tablets and smartphones](https://wasscetutor.com/img/ict/classification-of-computers.svg)
 
+*Figure 1. Computers classified by type, by size and by purpose. WASSCE Tutor diagram.*
+
 ## Classification by type: analogue, digital and hybrid
 
 This is how a computer **represents and handles data**.
@@ -128,5 +130,5 @@ A **supercomputer**, because forecasting needs an enormous number of calculation
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to classify computers, to give examples of analogue, digital and hybrid computers, to compare analogue and digital computers, and to name the type of computer suited to a job (supercomputer for weather forecasting, mainframe for a bank, microcomputer for a home). Give a clear example with each type, and for comparisons set the two side by side, point for point.
+Classification questions usually ask you to classify computers, to give examples of analogue, digital and hybrid computers, to compare analogue and digital computers, and to name the type of computer suited to a job (supercomputer for weather forecasting, mainframe for a bank, microcomputer for a home). Give a clear example with each type, and for comparisons set the two side by side, point for point.
 :::

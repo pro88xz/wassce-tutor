@@ -27,6 +27,8 @@ By the end of this lesson you should be able to:
 
 ![A spreadsheet of test marks: columns are lettered A to D and rows numbered 1 to 6. The name box shows D2, the active cell, and the formula bar shows its formula =SUM(B2:C2). Column A holds the names Aminata, Ibrahim, Fatmata and Mohamed; columns B and C two test marks; column D the totals 33, 28, 36 and 25. The range B2:C5 is shaded. Cell C4, in column C and row 4, holds 19. Row 6 holds averages worked out with formulas such as =AVERAGE(B2:B5): 14.5, 16 and 30.5](https://wasscetutor.com/img/ict/spreadsheet-window.svg)
 
+*Figure 1. The parts of a spreadsheet, shown on a sheet of test marks. WASSCE Tutor diagram.*
+
 :::callout{type=definition}
 **Workbook:** a spreadsheet file, which holds one or more worksheets.
 
@@ -170,5 +172,5 @@ A **relative** reference (B2) **changes** when the formula is copied; an **absol
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to define spreadsheet terms (cell, cell reference, range, workbook, worksheet), to write formulas and functions for a given table, to work out the result of a formula, to state what a copied formula becomes, to explain relative and absolute references, and to choose a suitable chart. Write formulas exactly as you would type them, starting with =, with the right cell references and a colon in every range.
+Spreadsheet questions typically ask you to define spreadsheet terms (cell, cell reference, range, workbook, worksheet), to write formulas and functions for a given table, to work out the result of a formula, to state what a copied formula becomes, to explain relative and absolute references, and to choose a suitable chart. Write formulas exactly as you would type them, starting with =, with the right cell references and a colon in every range.
 :::

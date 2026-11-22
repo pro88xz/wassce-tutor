@@ -17,9 +17,15 @@ By the end of this lesson you should be able to:
 
 ## The keyboard
 
-The **keyboard** is the most common input device for text and numbers. Most keyboards use the **QWERTY** layout, named after the first six letters on the top row of letters.
+:::callout{type=definition}
+**Keyboard:** the most common input device for text and numbers, with keys for letters, digits, symbols and commands; most use the **QWERTY** layout, named after the first six letters on the top row of letters.
+
+**Function keys:** the keys F1 to F12 along the top of a keyboard, which carry out special tasks set by each program, such as F1 for help.
+:::
 
 ![The groups of keys on a computer keyboard: function keys F1 to F12 along the top; alphanumeric keys (letters, numbers and symbols) and the Space bar in the main block; modifier and special keys such as Esc, Tab, Caps Lock, Shift, Ctrl, Alt, Enter and Backspace at its edges; cursor (arrow) keys and editing keys such as Insert, Delete, Home and End to the right; and the numeric keypad on the far right](https://wasscetutor.com/img/ict/keyboard-key-groups.svg)
+
+*Figure 1. The groups of keys on a computer keyboard. WASSCE Tutor diagram.*
 
 | Group of keys | Examples | Use |
 |---|---|---|
@@ -45,6 +51,8 @@ The **keyboard** is the most common input device for text and numbers. Most keyb
 
 :::callout{type=definition}
 **Pointing device:** an input device used to move a pointer on the screen and to select items, such as a mouse, a touchpad, a trackball or a joystick.
+
+**Touch screen:** a display that also detects where it is touched by a finger or stylus, so it works as both an input device and an output device.
 :::
 
 - **Mouse:** moved on a flat surface to control the pointer. A **left click** selects, a **double-click** opens, a **right click** shows a menu of options, **dragging** moves items and the **scroll wheel** moves up and down a page. Most mice today are **optical** (they use a light), and many are **wireless**.
@@ -87,17 +95,21 @@ These devices read data **directly** from a document or a product, so there is n
 
 ## Audio, video and biometric devices
 
-- **Microphone:** inputs sound and voice; used for voice calls, recordings and **speech recognition** (speaking commands instead of typing).
+- **Microphone:** inputs sound and voice, for voice calls, recordings and voice notes.
 - **Webcam:** a camera that inputs video, used for video calls and online lessons.
 - **Digital camera and video camera:** input photographs and video.
 
 :::callout{type=definition}
+**Speech (voice) recognition:** the use of software to turn words spoken into a microphone into text or commands, so a user can dictate or give orders without typing.
+
 **Biometric device:** an input device that identifies a person by a body feature, such as a fingerprint, the face, the iris of the eye or the voice.
+
+**Sensor:** an input device that measures a physical quantity, such as temperature, light, motion or pressure, and sends the readings to a computer automatically.
 :::
 
 Biometric devices are used to unlock phones, record staff attendance and register people for identity cards and passports. A fingerprint cannot be forgotten like a password, which makes them secure.
 
-**Sensors** measure physical quantities, such as temperature, light, motion or pressure, and input the readings automatically, for example in a burglar alarm, an automatic door or a weather station.
+Sensors are found in burglar alarms (motion), automatic doors (infrared), weather stations (temperature and rainfall) and phones (light, tilt and fingerprint).
 
 ## Choosing an input device
 
@@ -146,5 +158,5 @@ Any two: a **fingerprint scanner** (unlocking a phone, staff attendance); a **fa
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to name input devices and state their uses, to explain the function of particular keys, to say where OMR, OCR, MICR or barcode readers are used, and to choose a suitable input device for a situation and give a reason. Name the device in full the first time (optical mark reader, not just OMR) and link it to a clear use.
+On input devices, the paper typically asks you to name input devices and state their uses, to explain the function of particular keys, to say where OMR, OCR, MICR or barcode readers are used, and to choose a suitable input device for a situation and give a reason. Name the device in full the first time (optical mark reader, not just OMR) and link it to a clear use.
 :::

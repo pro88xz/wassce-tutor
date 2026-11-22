@@ -18,6 +18,12 @@ By the end of this lesson you should be able to:
 
 ![The operating system sits between application software and the hardware: four layers from top to bottom are the user, application software such as a word processor or browser, the operating system such as Windows, Android, Linux, macOS or iOS, and the hardware such as the CPU, memory, disks, keyboard and screen, with arrows both ways between each layer. A panel lists the functions of an operating system: managing the processor, memory, files and storage, and input and output devices, providing the user interface, keeping the computer secure and reporting errors](https://wasscetutor.com/img/ict/operating-system-layers.svg)
 
+*Figure 1. The operating system sits between application software and the hardware. WASSCE Tutor diagram.*
+
+:::callout{type=definition}
+**Kernel:** the core of an operating system, which stays in memory while the computer is on and directly controls the processor, memory and devices.
+:::
+
 An application never controls the hardware directly. When you press **Print** in a word processor, the word processor asks the operating system, and the operating system uses the printer's driver to send the page to the printer.
 
 ## Functions of an operating system
@@ -40,6 +46,12 @@ An application never controls the hardware directly. When you press **Print** in
 **Multi-user operating system:** an operating system that lets many users use one computer's resources at the same time, through terminals or a network.
 
 **Real-time operating system:** an operating system that responds to input immediately, within a fixed short time, used to control machines and processes.
+
+**Multiprocessing:** the use of two or more processors, or processor cores, in one computer, so that several instructions are carried out at the same moment.
+
+**Network operating system:** an operating system that runs on a server and manages a network's users, shared files, printers and security.
+
+**Mobile operating system:** an operating system built for smartphones and tablets, designed for touch screens, long battery life and wireless connections, such as Android and iOS.
 :::
 
 | Type | What it does | Examples |
@@ -130,5 +142,5 @@ A **real-time** operating system, because it must **respond immediately** to cha
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to define an operating system, to state its functions, to name examples, to explain types such as multitasking, multi-user and real-time with examples, and to compare a command-line interface with a graphical user interface. When listing functions, name the resource managed and say what is done to it ("memory management: gives each program its own share of RAM").
+Expect to be asked to define an operating system, to state its functions, to name examples, to explain types such as multitasking, multi-user and real-time with examples, and to compare a command-line interface with a graphical user interface. When listing functions, name the resource managed and say what is done to it ("memory management: gives each program its own share of RAM").
 :::

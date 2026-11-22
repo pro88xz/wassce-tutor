@@ -74,6 +74,8 @@ By the end of this lesson you should be able to:
 
 ![The memory hierarchy drawn as a pyramid: registers inside the CPU at the top are the fastest and smallest; below them come cache memory, then main memory (RAM), then secondary storage such as SSDs and hard disks, and at the bottom offline and cloud storage such as USB drives, DVDs and online storage, which are the largest and cheapest per gigabyte but the slowest](https://wasscetutor.com/img/ict/memory-hierarchy.svg)
 
+*Figure 1. The memory hierarchy: speed, size and cost. WASSCE Tutor diagram.*
+
 Going **up** the hierarchy, memory is **faster** and **dearer** per gigabyte; going **down**, it is **larger** and **cheaper**. A computer uses a little of each fast type and a lot of the cheap types.
 
 ## Secondary storage devices
@@ -172,5 +174,5 @@ Any two: **faster** start-up and loading; **no moving parts**, so it is more dur
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to state the differences between RAM and ROM, to explain volatile and non-volatile memory, to name types of ROM, to explain cache memory, to classify storage devices as magnetic, optical or solid-state, to compare primary and secondary storage, and to give the capacity of a CD or DVD. When comparing, set the two side by side in a table, point for point.
+Memory and storage questions often require you to state the differences between RAM and ROM, to explain volatile and non-volatile memory, to name types of ROM, to explain cache memory, to classify storage devices as magnetic, optical or solid-state, to compare primary and secondary storage, and to give the capacity of a CD or DVD. When comparing, set the two side by side in a table, point for point.
 :::

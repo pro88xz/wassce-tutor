@@ -40,6 +40,8 @@ By the end of this lesson you should be able to:
 
 ![Parts of a word processor window: the title bar with the document name and the minimise, maximise and close buttons; the menu tabs File, Home, Insert, Layout, Review and View; the ribbon of command buttons in groups such as Clipboard, Font, Paragraph and Styles; the ruler showing margins and tabs; the document area with the flashing insertion point (cursor); the scroll bar at the right; and the status bar at the bottom showing the page number, word count and zoom](https://wasscetutor.com/img/ict/word-processor-window.svg)
 
+*Figure 1. The parts of a word processor window. WASSCE Tutor diagram.*
+
 :::callout{type=definition}
 **Insertion point (cursor):** the flashing vertical line that shows where the next character typed will appear.
 
@@ -90,10 +92,19 @@ By the end of this lesson you should be able to:
 
 ### Page formatting (page layout)
 
-- **Margins:** the blank space around the edge of the page.
-- **Orientation:** **portrait** (taller than wide) or **landscape** (wider than tall).
+:::callout{type=definition}
+**Margin:** the blank border between the edge of the paper and the text; margins are set from the Layout tab.
+
+**Page orientation:** the direction in which a page is laid out: **portrait** (taller than wide) or **landscape** (wider than tall).
+
+**Header:** text or pictures repeated in the top margin of every page, such as the school's name.
+
+**Footer:** text repeated in the bottom margin of every page, such as page numbers or the date.
+
+**Justification:** the alignment that spaces each line so the text is even at both the left and the right margins.
+:::
+
 - **Paper size:** usually **A4**.
-- **Header and footer:** text repeated at the **top** (header) or **bottom** (footer) of every page, such as the school name or **page numbers**.
 - **Page break** (Ctrl + Enter): starts a new page at once.
 - **Columns:** text in two or more columns, as in a newsletter.
 
@@ -156,5 +167,5 @@ The **main document** (the standard letter with merge fields) and the **data sou
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to define word processing and name word processors, to give advantages of word processing, to identify parts of the window, to explain formatting terms such as justification, orientation, margins, headers and footers, to give keyboard shortcuts, and to explain mail merge. Practical tasks ask you to type, format and print a document: follow every instruction on font, size, alignment and spacing exactly.
+In both theory and practical papers you may be asked to define word processing and name word processors, to give advantages of word processing, to identify parts of the window, to explain formatting terms such as justification, orientation, margins, headers and footers, to give keyboard shortcuts, and to explain mail merge. Practical tasks ask you to type, format and print a document: follow every instruction on font, size, alignment and spacing exactly.
 :::

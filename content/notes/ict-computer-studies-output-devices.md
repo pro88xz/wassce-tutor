@@ -68,6 +68,8 @@ A **multimedia (data) projector** shows the computer's output on a large screen 
 
 ![Types of printers: printers are impact or non-impact. Impact printers, such as dot-matrix, daisy-wheel and line printers, strike an inked ribbon against the paper; they are noisy but can print carbon copies. Non-impact printers, such as inkjet, laser, thermal and 3D printers, do not strike the paper; they are quiet and give high-quality output](https://wasscetutor.com/img/ict/types-of-printers.svg)
 
+*Figure 1. Impact and non-impact printers, with examples. WASSCE Tutor diagram.*
+
 ### Impact printers
 
 - **Dot-matrix printer:** a print head with a grid of small pins strikes the ribbon, so each character is made of dots. Cheap to run and can print **multi-part (carbon) forms**, such as invoices and receipts, but noisy and of low quality.
@@ -145,5 +147,5 @@ The screen shows **1920 pixels across** and **1080 pixels down**, about 2 millio
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to name output devices and state their uses, to distinguish soft copy from hard copy, to classify printers as impact or non-impact and compare them, to give advantages and disadvantages of inkjet, laser and dot-matrix printers, and to choose a suitable output device for a task. Name a device that is both input and output (a touch screen) when asked, and give the reason.
+For output devices, be ready to name output devices and state their uses, to distinguish soft copy from hard copy, to classify printers as impact or non-impact and compare them, to give advantages and disadvantages of inkjet, laser and dot-matrix printers, and to choose a suitable output device for a task. Name a device that is both input and output (a touch screen) when asked, and give the reason.
 :::

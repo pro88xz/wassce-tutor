@@ -31,6 +31,8 @@ By the end of this lesson you should be able to:
 
 ![Levels of programming languages: at the bottom, machine language, a low-level language written in binary, for example 00000001 11011000; in the middle, assembly language, a low-level language using mnemonics such as MOV, ADD and JMP, for example ADD AX, BX, which an assembler translates into machine code; at the top, high-level languages such as Python, Java, C, BASIC and Pascal, for example total = a + b, which a compiler or interpreter translates. Going up, languages are easier for people to read and write; going down, they are closer to the machine and faster](https://wasscetutor.com/img/ict/levels-of-programming-languages.svg)
 
+*Figure 1. The same addition written at each level of programming language. WASSCE Tutor diagram.*
+
 :::callout{type=definition}
 **Machine language:** the lowest-level language, made of binary codes (0s and 1s) that the CPU carries out directly; it is the first generation of programming languages.
 
@@ -82,6 +84,8 @@ By the end of this lesson you should be able to:
 ## Language translators
 
 ![Three translators: a compiler translates a whole high-level source program at once into object code (machine code) that can be run any time; an interpreter translates and runs a high-level program line by line and stops at the first error; an assembler translates an assembly-language program into machine code that runs on the CPU. All three turn a program into machine code, the only language the CPU understands](https://wasscetutor.com/img/ict/compiler-vs-interpreter.svg)
+
+*Figure 2. How a compiler, an interpreter and an assembler translate programs. WASSCE Tutor diagram.*
 
 :::callout{type=definition}
 **Assembler:** a translator that converts a program written in assembly language into machine code.
@@ -144,5 +148,5 @@ Any three, such as: **FORTRAN** (science), **COBOL** (business), **BASIC** (teac
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to name and explain the levels (or generations) of programming languages, to give advantages and disadvantages of low-level and high-level languages, to expand names such as COBOL, FORTRAN and BASIC, to state the function of an assembler, a compiler and an interpreter, and to give differences between a compiler and an interpreter. Set comparisons side by side, point for point.
+On programming languages, examiners like to ask you to name and explain the levels (or generations) of programming languages, to give advantages and disadvantages of low-level and high-level languages, to expand names such as COBOL, FORTRAN and BASIC, to state the function of an assembler, a compiler and an interpreter, and to give differences between a compiler and an interpreter. Set comparisons side by side, point for point.
 :::

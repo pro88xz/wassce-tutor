@@ -30,6 +30,8 @@ Hardware and software need each other: hardware does nothing without software, a
 
 ![Types of software: software is either system software, which runs and manages the computer, or application software, which does the user's tasks. System software includes the operating system (Windows, Android, Linux, macOS), utility programs (antivirus, backup, disk cleanup), language translators (compiler, interpreter, assembler) and device drivers. Application software includes general-purpose packages such as word processors and spreadsheets, special-purpose software such as payroll and school results programs, and bespoke (custom) software written for one organisation](https://wasscetutor.com/img/ict/types-of-software.svg)
 
+*Figure 1. System software and application software, with examples. WASSCE Tutor diagram.*
+
 :::callout{type=definition}
 **System software:** programs that control and manage the computer's hardware and provide a platform on which application software runs, such as the operating system and utility programs.
 
@@ -68,9 +70,7 @@ The **operating system (OS)** is the most important system software: it starts t
 
 ### 3. Language translators
 
-:::callout{type=definition}
-**Language translator (language processor):** system software that converts a program written in a programming language into machine code that the computer can carry out; compilers, interpreters and assemblers are translators.
-:::
+Programmers write in programming languages, but the processor understands only machine code. The three kinds of translator, the **assembler**, the **compiler** and the **interpreter**, are compared in the lesson on programming languages and translators.
 
 ### 4. Device drivers
 
@@ -80,7 +80,9 @@ The **operating system (OS)** is the most important system software: it starts t
 
 When you connect a new printer, the computer needs its driver before it can print.
 
-**Firmware** is software stored permanently in ROM or flash memory inside a device, such as the **BIOS** that starts a computer.
+:::callout{type=definition}
+**Firmware:** software held permanently in ROM or flash memory inside a device to control it, such as the start-up program of a computer or the program in a washing machine or a TV remote.
+:::
 
 ## Application software
 
@@ -103,7 +105,9 @@ When you connect a new printer, the computer needs its driver before it can prin
 | **Web browser** | viewing web pages | Google Chrome, Mozilla Firefox, Microsoft Edge |
 | **Accounting** | keeping business accounts | Sage, QuickBooks |
 
-An **integrated package** or **office suite**, such as Microsoft Office or LibreOffice, combines several of these programs, which share data easily.
+:::callout{type=definition}
+**Office suite (integrated package):** a set of application programs sold or installed together, such as Microsoft Office or LibreOffice, whose word processor, spreadsheet, database and presentation programs look alike and exchange data easily.
+:::
 
 ### Off-the-shelf and bespoke software
 
@@ -116,10 +120,15 @@ An **integrated package** or **office suite**, such as Microsoft Office or Libre
 
 ## Software licences
 
-- **Proprietary (commercial) software:** must be bought; the user may not copy or change it. Example: Microsoft Office.
-- **Freeware:** free to use, but the source code is not given out. Example: many free mobile apps.
-- **Shareware:** free to try for a limited time, then must be paid for.
-- **Open-source software:** free, and its source code can be read, changed and shared. Examples: Linux, LibreOffice, Mozilla Firefox.
+:::callout{type=definition}
+**Proprietary (commercial) software:** software owned by a company that must be paid for under a licence, which forbids copying or changing it, such as Microsoft Office.
+
+**Freeware:** software that may be used without paying, but whose source code is kept secret, such as many free mobile apps.
+
+**Shareware:** software that may be tried free for a limited time or with limited features, after which it must be paid for.
+
+**Open-source software:** software whose source code is published so anyone may read, change and share it, usually at no cost, such as Linux, LibreOffice and Mozilla Firefox.
+:::
 
 :::callout{type=local-example}
 **Software in a Sierra Leone school office.** The computers run **Windows** (system software); the bursar keeps fees in **Excel** (general-purpose); the school's results may be processed with a **special-purpose** results program; an **antivirus** protects files brought in on flash drives; and the printer works because its **driver** is installed.
@@ -162,5 +171,5 @@ Software whose **source code is freely available** to be read, changed and share
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
-WASSCE often asks you to define software, to distinguish system software from application software with examples, to name and explain utility programs, to name application packages and say what each is used for, and to compare off-the-shelf with bespoke software. Give a named example (Windows, Excel, an antivirus) with every type you mention.
+Software questions commonly ask you to define software, to distinguish system software from application software with examples, to name and explain utility programs, to name application packages and say what each is used for, and to compare off-the-shelf with bespoke software. Give a named example (Windows, Excel, an antivirus) with every type you mention.
 :::
