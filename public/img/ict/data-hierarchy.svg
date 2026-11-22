@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The data hierarchy</title>
+<desc id="d">Data is organised in levels, each made of the one below. A bit is a 0 or a 1. A byte is 8 bits and holds one character, such as A. A field is one item of data, such as a surname. A record is all the fields about one person or thing, such as one student. A file is a set of related records, such as every student in a class. A database is a set of related files, such as students, fees and results.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="700" height="470" rx="20" fill="#f8fafc"/>
+<text x="350.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">From a single bit to a database</text>
+<rect x="200.0" y="62.0" width="300.0" height="52.0" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="350.0" y="79.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Database</text>
+<text x="350.0" y="99.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">related files: students, fees, results</text>
+<rect x="170.0" y="126.0" width="360.0" height="52.0" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="350.0" y="143.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">File</text>
+<text x="350.0" y="163.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">related records: every student in SSS3</text>
+<rect x="140.0" y="190.0" width="420.0" height="52.0" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="350.0" y="207.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Record</text>
+<text x="350.0" y="227.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">one student: ID, surname, class, age</text>
+<rect x="110.0" y="254.0" width="480.0" height="52.0" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="350.0" y="271.0" font-size="18" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Field</text>
+<text x="350.0" y="291.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">one item: Surname = Kamara</text>
+<rect x="80.0" y="318.0" width="540.0" height="52.0" rx="10" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="350.0" y="335.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Byte</text>
+<text x="350.0" y="355.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">8 bits = one character, such as A</text>
+<rect x="50.0" y="382.0" width="600.0" height="52.0" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="350.0" y="399.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bit</text>
+<text x="350.0" y="419.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a single 0 or 1</text>
+<line x1="40.0" y1="440.0" x2="40.0" y2="70.0" stroke="#475569" stroke-width="3" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="52.0" y="80.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">larger</text>
+</svg>

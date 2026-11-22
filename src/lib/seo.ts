@@ -265,6 +265,90 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
     description:
       'Hear where the stress falls: nouns and verbs, PREsent and preSENT, endings like -tion and -ic, compounds, and words often mis-stressed in Sierra Leone.',
   },
+  // Nov 2026: ICT / Computer Studies, batch 1 (computer fundamentals and hardware): the terms
+  // students search for ("generations of computers", "types of computers", "difference between
+  // data and information", "binary to decimal", "parts of the CPU", "input devices and their
+  // functions", "types of printers", "difference between RAM and ROM").
+  '/wassce/ict-computer-studies/history-and-evolution-of-computers': {
+    title: 'Generations of Computers: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on the history of computers: the abacus, Babbage, Lovelace, Turing and the five generations of computers.',
+  },
+  '/wassce/ict-computer-studies/history-and-evolution-of-computers/history-and-generations-of-computers': {
+    title: 'History and Generations of Computers | WASSCE ICT',
+    description:
+      'The history of computers from the abacus to AI: early devices, the pioneers, and the five generations of computers with their technology, examples and features.',
+  },
+  '/wassce/ict-computer-studies/classification-of-computers': {
+    title: 'Types of Computers: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on the classification of computers: analogue, digital and hybrid; supercomputer to microcomputer; special purpose.',
+  },
+  '/wassce/ict-computer-studies/classification-of-computers/types-of-computers-by-type-size-and-purpose': {
+    title: 'Classification of Computers by Type and Size | WASSCE ICT',
+    description:
+      'Types of computers explained: analogue, digital and hybrid; supercomputers, mainframes, minicomputers and microcomputers; general and special purpose.',
+  },
+  '/wassce/ict-computer-studies/data-and-information': {
+    title: 'Data and Information: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on data and information: the data processing cycle, batch and real-time processing, validation and the data hierarchy.',
+  },
+  '/wassce/ict-computer-studies/data-and-information/data-vs-information-and-the-data-processing-cycle': {
+    title: 'Difference Between Data and Information | WASSCE ICT',
+    description:
+      'Data vs information with examples, qualities of good information, the stages of the data processing cycle, batch and real-time processing, and validation.',
+  },
+  '/wassce/ict-computer-studies/number-systems-and-data-representation': {
+    title: 'Number Systems: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on number systems: binary, octal and hexadecimal conversions, binary addition, bits and bytes, and ASCII codes.',
+  },
+  '/wassce/ict-computer-studies/number-systems-and-data-representation/binary-octal-and-hexadecimal-conversions': {
+    title: 'Binary to Decimal Conversion, Octal and Hex | WASSCE ICT',
+    description:
+      'Convert decimal to binary, binary to decimal, octal and hexadecimal step by step, with worked examples, binary addition and subtraction, and ASCII explained.',
+  },
+  '/wassce/ict-computer-studies/the-cpu': {
+    title: 'The CPU: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on the central processing unit: the control unit, ALU, registers, buses and the fetch-decode-execute cycle.',
+  },
+  '/wassce/ict-computer-studies/the-cpu/parts-of-the-cpu-and-the-fetch-decode-execute-cycle': {
+    title: 'Parts of the CPU and Their Functions | WASSCE ICT',
+    description:
+      'The parts of the CPU and their functions: control unit, ALU and registers; data, address and control buses; the fetch-decode-execute cycle; and processor speed.',
+  },
+  '/wassce/ict-computer-studies/input-devices': {
+    title: 'Input Devices: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on input devices: keyboard keys, the mouse and other pointing devices, scanners, OMR, OCR, MICR and barcode readers.',
+  },
+  '/wassce/ict-computer-studies/input-devices/input-devices-and-their-functions': {
+    title: 'Input Devices and Their Functions | WASSCE ICT',
+    description:
+      'Input devices and their uses: keyboard keys, mouse, touch screen, scanner, OMR, OCR, MICR, barcode and QR readers, microphone, webcam and biometric devices.',
+  },
+  '/wassce/ict-computer-studies/output-devices': {
+    title: 'Output Devices: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on output devices: monitors, resolution, soft and hard copy, impact and non-impact printers, plotters and speakers.',
+  },
+  '/wassce/ict-computer-studies/output-devices/output-devices-and-types-of-printers': {
+    title: 'Output Devices and Types of Printers | WASSCE ICT',
+    description:
+      'Output devices and their uses: monitors and resolution, soft and hard copy, impact and non-impact printers (dot-matrix, inkjet, laser), plotters and speakers.',
+  },
+  '/wassce/ict-computer-studies/memory-and-storage-devices': {
+    title: 'Memory and Storage Devices: Notes and Questions | WASSCE',
+    description:
+      'WASSCE ICT notes and practice questions on computer memory and storage: RAM and ROM, cache, hard disks, SSDs, flash drives, CDs, DVDs and cloud storage.',
+  },
+  '/wassce/ict-computer-studies/memory-and-storage-devices/ram-rom-and-storage-devices': {
+    title: 'Difference Between RAM and ROM, and Storage Devices | WASSCE',
+    description:
+      'RAM vs ROM, volatile and non-volatile memory, types of ROM, cache, the memory hierarchy, and magnetic, optical and solid-state storage devices with capacities.',
+  },
 }
 
 /** Google shows about 60 characters of a title: add the brand only when it still fits. */
