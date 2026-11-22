@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Client-server and peer-to-peer networks</title>
+<desc id="d">Two ways of organising a network. In a client-server network, one powerful central computer, the server, stores the shared files, programs and security, and the other computers, the clients, ask it for services. In a peer-to-peer network there is no server: every computer is equal and shares its own files and printer directly with the others.</desc>
+<defs></defs>
+<rect width="880" height="380" rx="20" fill="#f8fafc"/>
+<text x="220.0" y="30.0" font-size="19" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Client-server</text>
+<rect x="145.0" y="78.0" width="150.0" height="64.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="220.0" y="99.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Server</text>
+<text x="220.0" y="121.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">files, security, backups</text>
+<rect x="62.0" y="246.0" width="56.0" height="30.0" rx="4" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<line x1="90.0" y1="276.0" x2="90.0" y2="282.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="80.0" y1="282.0" x2="100.0" y2="282.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="90.0" y="296.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">client 1</text>
+<line x1="90.0" y1="246.0" x2="174.5" y2="142.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="192.0" y="246.0" width="56.0" height="30.0" rx="4" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<line x1="220.0" y1="276.0" x2="220.0" y2="282.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="210.0" y1="282.0" x2="230.0" y2="282.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="220.0" y="296.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">client 2</text>
+<line x1="220.0" y1="246.0" x2="220.0" y2="142.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="322.0" y="246.0" width="56.0" height="30.0" rx="4" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<line x1="350.0" y1="276.0" x2="350.0" y2="282.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="340.0" y1="282.0" x2="360.0" y2="282.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="350.0" y="296.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">client 3</text>
+<line x1="350.0" y1="246.0" x2="265.5" y2="142.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<text x="220.0" y="345.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">clients ask; the server provides</text>
+<line x1="440.0" y1="20.0" x2="440.0" y2="360.0" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+<text x="660.0" y="30.0" font-size="19" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Peer-to-peer</text>
+<line x1="560.0" y1="120.0" x2="760.0" y2="120.0" stroke="#15803d" stroke-width="2" stroke-linecap="round"/>
+<line x1="560.0" y1="120.0" x2="560.0" y2="260.0" stroke="#15803d" stroke-width="2" stroke-linecap="round"/>
+<line x1="560.0" y1="120.0" x2="760.0" y2="260.0" stroke="#15803d" stroke-width="2" stroke-linecap="round"/>
+<line x1="760.0" y1="120.0" x2="560.0" y2="260.0" stroke="#15803d" stroke-width="2" stroke-linecap="round"/>
+<line x1="760.0" y1="120.0" x2="760.0" y2="260.0" stroke="#15803d" stroke-width="2" stroke-linecap="round"/>
+<line x1="560.0" y1="260.0" x2="760.0" y2="260.0" stroke="#15803d" stroke-width="2" stroke-linecap="round"/>
+<rect x="526.0" y="98.0" width="68.0" height="44.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="560.0" y="120.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">peer 1</text>
+<rect x="726.0" y="98.0" width="68.0" height="44.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="760.0" y="120.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">peer 2</text>
+<rect x="526.0" y="238.0" width="68.0" height="44.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="560.0" y="260.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">peer 3</text>
+<rect x="726.0" y="238.0" width="68.0" height="44.0" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="760.0" y="260.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">peer 4</text>
+<text x="660.0" y="345.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">every computer is equal and shares</text>
+</svg>

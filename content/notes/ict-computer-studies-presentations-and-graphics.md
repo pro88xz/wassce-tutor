@@ -140,8 +140,8 @@ Programs (any two): **PowerPoint, Google Slides, Keynote, LibreOffice Impress, P
 A **transition** is the effect seen **as one slide changes to the next**. An **animation** is a movement effect given to **an object on a slide**.
 :::
 
-:::reveal{title="3. Which view is best for rearranging the order of slides?"}
-**Slide Sorter view**, because it shows small copies of all the slides together, so they can be dragged into a new order.
+:::reveal{title="3. State three ways in which a presentation can be printed."}
+Any three: as **full-page slides**; as **handouts** with several slides on each page for the audience; as **notes pages** with the speaker notes under each slide; as an **outline** of the text only.
 :::
 
 :::reveal{title="4. State three rules for designing good slides."}

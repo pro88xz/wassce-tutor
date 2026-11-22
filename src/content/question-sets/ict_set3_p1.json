@@ -1,0 +1,1388 @@
+{
+ "name": "ict_set3_p1",
+ "label": "ICT: set 3 (networks, the Internet and email, mobile technology, computer ethics, viruses and cybersecurity)",
+ "subject_slug": "ict-computer-studies",
+ "papers": [
+  {
+   "id": "7e5c7587-956d-58f7-84ed-7327a347faca",
+   "topic": "Networks and Networking",
+   "title": "Networks and Networking: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on networks and networking, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 140,
+   "questions": [
+    {
+     "id": "d6018b26-b0be-5bf1-a9b5-c63f693d5ce2",
+     "key": "ict-nw-01",
+     "stem": "The computers in one school's laboratory, linked to share a printer and files, form",
+     "image_url": null,
+     "explanation": "A LAN covers a small area such as a room, a building or a school compound, and is usually owned by one organisation.\n\n**Why the other options are wrong**\n\n- a wide area network (WAN): A WAN covers countries or continents, not one building.\n- a metropolitan area network (MAN): A MAN covers a whole town or city.\n- a personal area network (PAN): A PAN links one person's devices within a few metres.",
+     "position": 1,
+     "options": [
+      {
+       "id": "09351215-dae4-59b0-a3d9-ea4bb5bf659d",
+       "label": "A",
+       "content": "a local area network (LAN)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6016b1df-ab0a-5c12-8a6c-1f02af56e82a",
+       "label": "B",
+       "content": "a wide area network (WAN)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fd5cdad2-9bdd-5acb-90c8-df1b48959b4f",
+       "label": "C",
+       "content": "a metropolitan area network (MAN)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d3f40689-8d5d-5e6c-bc56-1eecc76aed79",
+       "label": "D",
+       "content": "a personal area network (PAN)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7f373070-1630-5538-a001-10d96f180e22",
+     "key": "ict-nw-02",
+     "stem": "In which topology does a break in the single main cable stop the whole network?",
+     "image_url": null,
+     "explanation": "In a bus topology every node shares one backbone cable with a terminator at each end, so a break in the backbone stops all communication.\n\n**Why the other options are wrong**\n\n- star: In a star, a broken cable cuts off only the computer on that cable.\n- mesh: A mesh has many routes, so it keeps working if one link fails.\n- tree: A tree joins several stars; a break affects only part of it.",
+     "position": 2,
+     "options": [
+      {
+       "id": "9b9d4261-6f53-55c6-910b-e795abbb5ee7",
+       "label": "A",
+       "content": "star",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "893f584a-567e-59bf-b1c2-1014b7267227",
+       "label": "B",
+       "content": "bus",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "28b46fde-b416-5d5c-a5d4-012e4b018105",
+       "label": "C",
+       "content": "mesh",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "25550508-985a-521e-82b1-f410c378b984",
+       "label": "D",
+       "content": "tree",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bcb96f5e-0e4b-5a80-8618-45cd179496c8",
+     "key": "ict-nw-03",
+     "stem": "Which device sends data only to the computer it is addressed to, rather than to every computer on the network?",
+     "image_url": null,
+     "explanation": "A switch reads the address on each piece of data and forwards it only to the right device, making the network faster and more private than one built on a hub.\n\n**Why the other options are wrong**\n\n- a hub: A hub sends every message out to all connected devices.\n- a repeater: A repeater only boosts a weak signal.\n- a modem: A modem converts signals for a telephone, cable or mobile line.",
+     "position": 3,
+     "options": [
+      {
+       "id": "c7b7f5b7-0101-5915-84cb-b09032795041",
+       "label": "A",
+       "content": "a hub",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6280180c-ff75-5c80-b90f-2b340c57340a",
+       "label": "B",
+       "content": "a repeater",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0e16906f-251c-5e99-bdca-2919a0535f95",
+       "label": "C",
+       "content": "a switch",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "196a3d15-4b69-55c4-9d74-3c602659faaa",
+       "label": "D",
+       "content": "a modem",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b125494d-1797-5232-8a58-70d154c78dd3",
+     "key": "ict-nw-04",
+     "stem": "Which transmission medium carries data as pulses of light?",
+     "image_url": null,
+     "explanation": "Fibre-optic cable sends pulses of light along thin glass fibres. It is very fast, works over long distances and is not affected by electrical interference.\n\n**Why the other options are wrong**\n\n- twisted-pair cable: Twisted pair carries electrical signals on copper wires.\n- coaxial cable: Coaxial cable carries electrical signals on a copper core.\n- microwave link: Microwaves are radio waves beamed through the air.",
+     "position": 4,
+     "options": [
+      {
+       "id": "6bf6eb2d-340a-58cf-a02d-60dc2654d126",
+       "label": "A",
+       "content": "twisted-pair cable",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2c823b8f-2618-5261-a07a-6b5a6f559eb9",
+       "label": "B",
+       "content": "coaxial cable",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "706b572f-8fbb-5b1c-b2ce-3e6a3adf1048",
+       "label": "C",
+       "content": "microwave link",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "22b3e28d-0f6c-5a47-8a34-64086f7b1142",
+       "label": "D",
+       "content": "fibre-optic cable",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8e02599e-9c34-503b-aba7-7a07d728fc29",
+     "key": "ict-nw-05",
+     "stem": "Communication between two walkie-talkies, where only one person can speak at a time, is an example of",
+     "image_url": null,
+     "explanation": "In half-duplex transmission data travels in both directions, but only one way at a time.\n\n**Why the other options are wrong**\n\n- simplex transmission: Simplex sends in one direction only, as in radio broadcasting.\n- full-duplex transmission: Full duplex lets both sides send at the same time, as in a phone call.\n- parallel transmission: Parallel transmission sends several bits at once along separate wires.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e1024fd2-74fb-57a3-bd47-3bc3219ebb11",
+       "label": "A",
+       "content": "half-duplex transmission",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2a43ee1f-9e71-5ade-884d-4bd7e0b4f19d",
+       "label": "B",
+       "content": "simplex transmission",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "906483c2-1a11-57f2-9eda-ac24fc2a3146",
+       "label": "C",
+       "content": "full-duplex transmission",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "45e0d5c3-d970-5a4a-a812-79072d262931",
+       "label": "D",
+       "content": "parallel transmission",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "251bac52-5272-58c6-af10-2a61d1d4afbb",
+     "key": "ict-nw-06",
+     "stem": "A device that connects a school's local network to the Internet and chooses the path for data between networks is",
+     "image_url": null,
+     "explanation": "A router joins different networks, such as a LAN and the Internet, and directs data along the best path between them.\n\n**Why the other options are wrong**\n\n- a network interface card: A NIC connects a single device to a network.\n- a hub: A hub only joins devices within one network.\n- a repeater: A repeater boosts signals but makes no routing decisions.",
+     "position": 6,
+     "options": [
+      {
+       "id": "6d1da73a-c417-560f-8701-948f54da1edf",
+       "label": "A",
+       "content": "a network interface card",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "12fd1fcd-a789-5562-9580-67b4473e952b",
+       "label": "B",
+       "content": "a router",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "74d5b591-87cd-555f-bd4b-c35ec63ddaad",
+       "label": "C",
+       "content": "a hub",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6c70e6eb-c825-59e4-a56e-b1b9d3d21b93",
+       "label": "D",
+       "content": "a repeater",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6479f01c-3ed4-5730-a3fe-65e743216119",
+     "key": "ict-nw-07",
+     "stem": "In which type of network is every computer equal, sharing its own files directly with the others?",
+     "image_url": null,
+     "explanation": "In a peer-to-peer network there is no central server; each computer shares its own resources. It suits small networks of a few computers.\n\n**Why the other options are wrong**\n\n- a client-server network: A client-server network depends on a central server.\n- a wide area network: WAN describes the area covered, not how computers share.\n- a star network: Star describes the layout of the cables, not how computers share.",
+     "position": 7,
+     "options": [
+      {
+       "id": "d609b219-10df-5b6a-807f-e54fd9f36fca",
+       "label": "A",
+       "content": "a client-server network",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3127e8b3-f112-552e-ac3d-4e83642b276e",
+       "label": "B",
+       "content": "a wide area network",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "25f60709-1e19-5c58-a46d-1a7c42579d69",
+       "label": "C",
+       "content": "a peer-to-peer network",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "0a53980b-1649-5d1d-a3cf-7a653996cc1e",
+       "label": "D",
+       "content": "a star network",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "def176de-2414-598a-8b0c-606d4460f25c",
+   "topic": "The Internet and Email",
+   "title": "The Internet and Email: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on the internet and email, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 141,
+   "questions": [
+    {
+     "id": "ca2d0167-b0f1-5284-bfca-8ba4ffa7fb60",
+     "key": "ict-ie-01",
+     "stem": "Who invented the World Wide Web?",
+     "image_url": null,
+     "explanation": "Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN, linking pages across the Internet with hyperlinks.\n\n**Why the other options are wrong**\n\n- Bill Gates: Bill Gates co-founded Microsoft.\n- Charles Babbage: Babbage designed mechanical computers in the 1800s.\n- Steve Jobs: Steve Jobs co-founded Apple.",
+     "position": 1,
+     "options": [
+      {
+       "id": "04958f16-8e0c-51a8-9227-12cda1fce63a",
+       "label": "A",
+       "content": "Bill Gates",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "27013bc4-33d5-5239-9649-95c186c1382a",
+       "label": "B",
+       "content": "Charles Babbage",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2d2187a9-d644-5e95-918e-5d398b487130",
+       "label": "C",
+       "content": "Steve Jobs",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "39c7147a-b18f-5b9f-8a07-6b9b97e5f0e4",
+       "label": "D",
+       "content": "Tim Berners-Lee",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "902696c6-9d52-564b-8f98-6593bff89312",
+     "key": "ict-ie-02",
+     "stem": "Which system translates a domain name such as example.com into an IP address?",
+     "image_url": null,
+     "explanation": "DNS works like a directory: it looks up the domain name a person types and returns the IP address computers use to find the server.\n\n**Why the other options are wrong**\n\n- HTTPS: HTTPS is the secure protocol for sending web pages.\n- an Internet service provider: An ISP connects customers to the Internet.\n- a search engine: A search engine finds web pages that match key words.",
+     "position": 2,
+     "options": [
+      {
+       "id": "878e0d94-7190-58fb-8169-506c84160473",
+       "label": "A",
+       "content": "the Domain Name System (DNS)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2591b36e-01aa-56e0-9570-c95768d9d682",
+       "label": "B",
+       "content": "HTTPS",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "632d9d86-040c-588e-b2c3-d0d94c80bf6d",
+       "label": "C",
+       "content": "an Internet service provider",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9f3a6145-4fb1-5785-af4a-c6f37728f887",
+       "label": "D",
+       "content": "a search engine",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "69168b5e-198a-5a46-aafd-c405cedd7e7a",
+     "key": "ict-ie-03",
+     "stem": "In the web address https://www.example.org/news.html, which part is the top-level domain?",
+     "image_url": null,
+     "explanation": "The top-level domain is the last part of the domain name, here .org, used mainly by organisations.\n\n**Why the other options are wrong**\n\n- https: https is the protocol.\n- www: www is the host.\n- news.html: news.html is the page at the end of the path.",
+     "position": 3,
+     "options": [
+      {
+       "id": "55dbb852-8106-5de6-91b3-05e4c001d39c",
+       "label": "A",
+       "content": "https",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b4fe7754-1d7d-5169-8238-e019a9960717",
+       "label": "B",
+       "content": ".org",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7b03178b-f937-5c79-b248-c1361543d6c0",
+       "label": "C",
+       "content": "www",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a80a950-aba2-59c1-afa9-77ce10c9ef2b",
+       "label": "D",
+       "content": "news.html",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0752ccdd-8537-5623-af33-7db5b3edd20c",
+     "key": "ict-ie-04",
+     "stem": "Which of the following is a web browser?",
+     "image_url": null,
+     "explanation": "Web browsers include Google Chrome, Mozilla Firefox, Microsoft Edge, Safari and Opera Mini.\n\n**Why the other options are wrong**\n\n- Google Search: Google Search is a search engine, used inside a browser.\n- Microsoft Outlook: Outlook is an email program.\n- WhatsApp: WhatsApp is a messaging app.",
+     "position": 4,
+     "options": [
+      {
+       "id": "cab9b731-09a8-5253-b432-6026324c0ab8",
+       "label": "A",
+       "content": "Google Search",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cdd5210d-72bb-51df-97f6-48bcebe7e00e",
+       "label": "B",
+       "content": "Microsoft Outlook",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e0c1a004-bea0-5d8d-8ff4-790bc009d72b",
+       "label": "C",
+       "content": "Mozilla Firefox",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "76042803-423a-58c9-bf36-f6c6bb9a4b16",
+       "label": "D",
+       "content": "WhatsApp",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "56cd2b81-3451-5ed3-a8e8-6b2ec3efe046",
+     "key": "ict-ie-05",
+     "stem": "A student wants a teacher to receive a copy of an email without the other recipients seeing the teacher's address. The teacher's address should go in the",
+     "image_url": null,
+     "explanation": "BCC (blind carbon copy) sends a copy while hiding that address from the other recipients.\n\n**Why the other options are wrong**\n\n- CC field: Addresses in CC are visible to every recipient.\n- To field: Addresses in To are visible to every recipient.\n- Subject field: The subject holds the title of the message, not addresses.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b19c1c62-824b-5e26-aee9-539ee7f3a3c7",
+       "label": "A",
+       "content": "CC field",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7fe136ae-b8ab-5955-92e9-9a8ff2e73e17",
+       "label": "B",
+       "content": "To field",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "37124dcd-8215-5c93-9418-9b40f208b340",
+       "label": "C",
+       "content": "Subject field",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9f49672c-b091-53be-9c09-b8f4cff1dfee",
+       "label": "D",
+       "content": "BCC field",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "afa60b23-50a6-5b92-b195-ea1d298a6d0c",
+     "key": "ict-ie-06",
+     "stem": "Copying a file from a website onto your own phone is called",
+     "image_url": null,
+     "explanation": "Downloading copies data from the Internet to your device; uploading sends data from your device to the Internet.\n\n**Why the other options are wrong**\n\n- uploading: Uploading sends a file from your device to the Internet.\n- browsing: Browsing is viewing web pages.\n- forwarding: Forwarding sends a received email on to someone else.",
+     "position": 6,
+     "options": [
+      {
+       "id": "28d2f1b7-cafd-5e46-a126-9833dcebebf2",
+       "label": "A",
+       "content": "downloading",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9823ea3e-722d-5c14-a023-9d929eedc1b1",
+       "label": "B",
+       "content": "uploading",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7a867395-bc38-59fe-b9a4-d4e1ab40dc62",
+       "label": "C",
+       "content": "browsing",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5e2d5d7d-5300-594d-82ac-9c60ea8ad9e0",
+       "label": "D",
+       "content": "forwarding",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "16f3f2dc-a451-5f30-b50f-e76e77cf31db",
+     "key": "ict-ie-07",
+     "stem": "A private network that works like the Internet but is open only to the staff of one organisation is called",
+     "image_url": null,
+     "explanation": "An intranet uses Internet technology, such as web pages and email, inside one organisation, and outsiders cannot reach it.\n\n**Why the other options are wrong**\n\n- an extranet: An extranet also lets chosen outsiders, such as suppliers, log in.\n- the World Wide Web: The Web is public, open to anyone with a browser.\n- a search engine: A search engine is a website for finding pages.",
+     "position": 7,
+     "options": [
+      {
+       "id": "18a6808a-a824-5ab4-8983-603ebf3ed707",
+       "label": "A",
+       "content": "an extranet",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6c3642be-787c-522d-a67f-ab75c9864de8",
+       "label": "B",
+       "content": "an intranet",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "4511ef55-553b-58c5-83e3-62ae71a68a4e",
+       "label": "C",
+       "content": "the World Wide Web",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c9c409e8-ca98-5f20-b3bf-81bc0fdb9ef6",
+       "label": "D",
+       "content": "a search engine",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d36141c2-aba7-5cd3-8979-6c25cb2ba09f",
+   "topic": "Mobile Technology and ICT Gadgets",
+   "title": "Mobile Technology and ICT Gadgets: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on mobile technology and ict gadgets, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 142,
+   "questions": [
+    {
+     "id": "4b3f06ee-5d9d-5a03-9d12-b06f221263a9",
+     "key": "ict-mt-01",
+     "stem": "SMS text messaging was introduced with which generation of mobile networks?",
+     "image_url": null,
+     "explanation": "2G (GSM) networks of the 1990s made calls digital and introduced SMS text messages.\n\n**Why the other options are wrong**\n\n- 1G: 1G carried analogue voice calls only.\n- 3G: 3G added mobile Internet and video calls; SMS already existed.\n- 4G: 4G added fast mobile broadband.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7b1d2f67-a8c5-54ad-bdf5-af67df5b8dba",
+       "label": "A",
+       "content": "1G",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3449c4be-295a-5e77-8821-a2b6f48c9017",
+       "label": "B",
+       "content": "3G",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d281220f-f60e-568e-a84c-b4d6e501de8d",
+       "label": "C",
+       "content": "2G",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9fbc02b0-4ac2-55e3-b3ec-ca8d432f2871",
+       "label": "D",
+       "content": "4G",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c3a6fef4-d609-52b2-a2a4-f55bbc2a4854",
+     "key": "ict-mt-02",
+     "stem": "The 15-digit number that identifies a mobile phone handset, shown by dialling *#06#, is the",
+     "image_url": null,
+     "explanation": "The IMEI (International Mobile Equipment Identity) stays with the phone; operators can use it to block a stolen handset.\n\n**Why the other options are wrong**\n\n- SIM number: The SIM identifies the subscriber, not the handset.\n- PIN: A PIN is a secret code chosen by the user.\n- IP address: An IP address identifies a device on a network connection, not the handset itself.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e292288c-3ac4-5b68-bdff-b6f48731f545",
+       "label": "A",
+       "content": "SIM number",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "82afbfa7-4348-586e-9321-18fea6436985",
+       "label": "B",
+       "content": "PIN",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "87f0be15-a157-5938-b3a3-c7c4bfb23f92",
+       "label": "C",
+       "content": "IP address",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "141699e1-df01-5e75-8efd-240434aeb6b5",
+       "label": "D",
+       "content": "IMEI number",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8ca0c498-4e8d-5c38-9a4c-c7cc30232ac7",
+     "key": "ict-mt-03",
+     "stem": "Which technology lets a phone connect to wireless earphones over a short distance?",
+     "image_url": null,
+     "explanation": "Bluetooth is a short-range radio technology, about 10 metres, for linking nearby devices without cables.\n\n**Why the other options are wrong**\n\n- GPS: GPS uses satellites to find position.\n- USSD: USSD is a menu service reached by dialling short codes.\n- 4G: 4G connects a phone to the mobile network's masts.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6eae39f4-25a9-56b6-abb1-4e272c2923a3",
+       "label": "A",
+       "content": "Bluetooth",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "31204547-f1a8-5e31-a705-c565828dc67b",
+       "label": "B",
+       "content": "GPS",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "be2cafab-0a8c-5cef-aab0-b82448692d3e",
+       "label": "C",
+       "content": "USSD",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3d225222-5965-52ce-8866-422505f99b7b",
+       "label": "D",
+       "content": "4G",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27ab17d6-8d11-5f02-8437-a4e31c24ee26",
+     "key": "ict-mt-04",
+     "stem": "Which feature lets a smartphone share its mobile data connection with a laptop by Wi-Fi?",
+     "image_url": null,
+     "explanation": "Turning on the hotspot makes the phone act as a small Wi-Fi access point for other devices, using its mobile data.\n\n**Why the other options are wrong**\n\n- near-field communication (NFC): NFC works over a few centimetres, for contactless payment.\n- the accelerometer: The accelerometer detects movement and tilt.\n- GPS: GPS finds the phone's position.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b20563e7-2e5c-5069-95c5-8659d07ea8c3",
+       "label": "A",
+       "content": "near-field communication (NFC)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d2f1408c-a8a0-5599-bc37-940f4fa681c5",
+       "label": "B",
+       "content": "mobile hotspot (tethering)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d2166d51-ed71-5fc9-98dc-8d08397bb88b",
+       "label": "C",
+       "content": "the accelerometer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f6d489b6-dff2-510f-95bf-a74dde43fd10",
+       "label": "D",
+       "content": "GPS",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6074713b-83ba-56af-ba2b-4901ce60faf2",
+     "key": "ict-mt-05",
+     "stem": "Which of the following is NOT usually done with mobile money?",
+     "image_url": null,
+     "explanation": "Mobile money is used to send and receive money, pay bills, buy airtime, pay in shops and withdraw cash from agents. Printing is done with a computer and printer.\n\n**Why the other options are wrong**\n\n- paying an electricity bill: Bill payment is a common mobile money service.\n- sending money to a relative: Sending money is the main use of mobile money.\n- buying airtime: Airtime can be bought from a mobile money account.",
+     "position": 5,
+     "options": [
+      {
+       "id": "0c25434c-7ffa-580e-877a-6db558261c46",
+       "label": "A",
+       "content": "paying an electricity bill",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e846a827-06bc-5c40-9a9c-8b343b0ee4de",
+       "label": "B",
+       "content": "sending money to a relative",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e0897d0e-bbb6-552e-8307-e0bba8886f13",
+       "label": "C",
+       "content": "printing a document",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "531c5c8e-e1e1-57c8-b888-af2b3a6583f1",
+       "label": "D",
+       "content": "buying airtime",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1fb2618b-7a7c-5553-be25-a67ad773c2b8",
+     "key": "ict-mt-06",
+     "stem": "Everyday objects such as meters, cameras and lights fitted with sensors and connected to the Internet make up",
+     "image_url": null,
+     "explanation": "In the Internet of Things, objects send data and can be controlled remotely, such as smart meters and security cameras viewed on a phone.\n\n**Why the other options are wrong**\n\n- the World Wide Web: The Web is linked pages of information, not connected objects.\n- a personal area network: A PAN is a few devices around one person.\n- an intranet: An intranet is a private network of one organisation.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d4ba5573-bc70-53f8-93cf-272d53444f8c",
+       "label": "A",
+       "content": "the World Wide Web",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "341e138b-4e06-5795-a7d5-a447b559ba3d",
+       "label": "B",
+       "content": "a personal area network",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cbf5cd93-9e54-5bb2-81b5-4322103e14b8",
+       "label": "C",
+       "content": "an intranet",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "52667b20-d835-5131-9041-ec95bfbb52e7",
+       "label": "D",
+       "content": "the Internet of Things (IoT)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "26d09386-8d8d-51b8-becf-09bf507616e5",
+     "key": "ict-mt-07",
+     "stem": "A wearable gadget that counts steps and shows messages from a phone is",
+     "image_url": null,
+     "explanation": "Smartwatches and fitness bands are wearables: they track steps and heartbeat and show notifications from a paired phone, usually by Bluetooth.\n\n**Why the other options are wrong**\n\n- an e-reader: An e-reader is for reading electronic books.\n- a power bank: A power bank stores charge for recharging devices.\n- a drone: A drone is a remote-controlled flying device.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b9229434-034b-573c-ba2b-c4ce5d619e2e",
+       "label": "A",
+       "content": "a smartwatch",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ad4ae474-35df-5536-aae9-4742121e18b2",
+       "label": "B",
+       "content": "an e-reader",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6f19f897-3bb3-54d1-8226-7d640170868c",
+       "label": "C",
+       "content": "a power bank",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a1e04e4a-5d13-5bff-b237-7eb4cc9d97a6",
+       "label": "D",
+       "content": "a drone",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3eff2bb6-23f6-5035-9e7c-fd950d3934b2",
+   "topic": "Computer Ethics",
+   "title": "Computer Ethics: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on computer ethics, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 143,
+   "questions": [
+    {
+     "id": "23f01c74-30e4-5c00-8575-ccb8456b465e",
+     "key": "ict-ce-01",
+     "stem": "Installing one licensed copy of a program on twenty computers is an example of",
+     "image_url": null,
+     "explanation": "A licence allows a set number of installations. Using it on more computers than it allows breaks copyright: that is software piracy.\n\n**Why the other options are wrong**\n\n- plagiarism: Plagiarism is passing off someone else's work or ideas as your own.\n- hacking: Hacking is gaining unauthorised access to a computer system.\n- phishing: Phishing is tricking people into giving away passwords.",
+     "position": 1,
+     "options": [
+      {
+       "id": "5ce9fe8d-ffab-57e2-80f8-2d70674f66b2",
+       "label": "A",
+       "content": "plagiarism",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "265fc386-7ef1-5fb4-8f5e-da7ddacdd7e0",
+       "label": "B",
+       "content": "software piracy",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "b3209de4-3dc4-56bb-9fb8-8ca68f8ef774",
+       "label": "C",
+       "content": "hacking",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "692734b4-c094-5f01-bf92-19cc66f4a029",
+       "label": "D",
+       "content": "phishing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8d63bc13-2b63-55ba-a76d-dcc63ad8bf8a",
+     "key": "ict-ce-02",
+     "stem": "Which form of intellectual property protects a company's name, logo or slogan?",
+     "image_url": null,
+     "explanation": "A trademark is a registered name, symbol, logo or slogan that identifies a company's goods or services.\n\n**Why the other options are wrong**\n\n- a patent: A patent protects a new invention.\n- copyright: Copyright protects original creative works such as books, music and software.\n- a licence: A licence is permission to use something, not a form of protection.",
+     "position": 2,
+     "options": [
+      {
+       "id": "36480262-b696-5e12-be13-70dbf4d44da4",
+       "label": "A",
+       "content": "a patent",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "815bde0f-bc9a-5afa-a990-b7368a0b93e0",
+       "label": "B",
+       "content": "copyright",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bc28cf13-10df-57c7-ad05-136075454c45",
+       "label": "C",
+       "content": "a trademark",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "79e4f185-6961-5d3b-b1f6-dd3e4be3917b",
+       "label": "D",
+       "content": "a licence",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "996efd8d-96bc-57c8-a489-b5c136d07fcb",
+     "key": "ict-ce-03",
+     "stem": "Copying paragraphs from a website into an assignment without quotation marks or a reference is",
+     "image_url": null,
+     "explanation": "Plagiarism is presenting another person's words or ideas as your own. Use your own words, put quotes in quotation marks and cite the source.\n\n**Why the other options are wrong**\n\n- software piracy: Piracy is the illegal copying of software.\n- netiquette: Netiquette is good manners online.\n- data protection: Data protection is the safe and fair handling of personal data.",
+     "position": 3,
+     "options": [
+      {
+       "id": "dce7be0c-4dd2-5107-a308-aed4797d94dc",
+       "label": "A",
+       "content": "software piracy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "590d7148-57f3-5858-9920-6df6d779f6f3",
+       "label": "B",
+       "content": "netiquette",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fa505e23-ce42-5cf3-a9fb-c9a50a6b566d",
+       "label": "C",
+       "content": "data protection",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3e0f6a03-5306-544a-a24c-021368a3e39d",
+       "label": "D",
+       "content": "plagiarism",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fe9fdc5b-759b-5b29-99bf-3892021d15e2",
+     "key": "ict-ce-04",
+     "stem": "Typing a whole message in CAPITAL LETTERS is considered poor netiquette because it",
+     "image_url": null,
+     "explanation": "Online, capital letters are read as shouting, which is rude; netiquette asks users to write politely and normally.\n\n**Why the other options are wrong**\n\n- spreads computer viruses: Capital letters cannot carry a virus.\n- breaks copyright law: Capital letters have nothing to do with copyright.\n- cannot be read by email programs: Email programs show capital letters normally.",
+     "position": 4,
+     "options": [
+      {
+       "id": "94438bff-5a9a-5959-98ea-05b3175b0a3e",
+       "label": "A",
+       "content": "reads as shouting",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "5a527a90-59e7-53dc-b953-8097a3203043",
+       "label": "B",
+       "content": "spreads computer viruses",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ef84ae94-63ee-5b57-8643-4e9ccd712121",
+       "label": "C",
+       "content": "breaks copyright law",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f141cfbf-b38e-5183-b0f5-735ec762e347",
+       "label": "D",
+       "content": "cannot be read by email programs",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "698f3d8b-79c3-51c8-9a02-c8a638baa5c5",
+     "key": "ict-ce-05",
+     "stem": "Repeatedly sending threatening or insulting messages to a classmate on social media is",
+     "image_url": null,
+     "explanation": "Cyberbullying uses phones and online tools to threaten, embarrass or exclude someone. Victims should save evidence, block, report and tell a trusted adult.\n\n**Why the other options are wrong**\n\n- spam: Spam is unwanted bulk messages, usually advertising.\n- identity theft: Identity theft is pretending to be someone else to commit fraud.\n- encryption: Encryption is scrambling data to keep it secret.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ea472c59-4543-57e7-9335-c52863489188",
+       "label": "A",
+       "content": "spam",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "37acc686-dcd6-5b12-b3e3-7f1602d17ffd",
+       "label": "B",
+       "content": "cyberbullying",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6ef1cd3d-3fa7-52c9-85d8-53270e1bb8e6",
+       "label": "C",
+       "content": "identity theft",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a256c6a3-c897-50e4-902f-170fb0432bd4",
+       "label": "D",
+       "content": "encryption",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f1a8dac6-ebaa-5712-b9bb-d7b13ae6cf7b",
+     "key": "ict-ce-06",
+     "stem": "The trail of posts, photos and other information a person leaves on the Internet is called their",
+     "image_url": null,
+     "explanation": "A digital footprint can last for years and can be seen by future schools and employers, so think before posting.\n\n**Why the other options are wrong**\n\n- digital divide: The digital divide is the gap between people with and without access to ICT.\n- password: A password is a secret word used to log in.\n- IP address: An IP address is the number that identifies a device on a network.",
+     "position": 6,
+     "options": [
+      {
+       "id": "9c6b9595-bc58-5415-9a45-c1de44e83de6",
+       "label": "A",
+       "content": "digital divide",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9ad0298d-643d-56cb-9b52-d3d6753f20ac",
+       "label": "B",
+       "content": "password",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d53b5fa1-3ac2-5bbb-8cd2-e2ea726aa0c6",
+       "label": "C",
+       "content": "digital footprint",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "29ee9a5e-6e52-5b41-9d58-dbd402c61186",
+       "label": "D",
+       "content": "IP address",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9a414fee-ff0e-5199-9837-2dd7717f9483",
+     "key": "ict-ce-07",
+     "stem": "A set of rules that students agree to follow when using a school's computers and Internet connection is",
+     "image_url": null,
+     "explanation": "An acceptable use policy (AUP) sets out how an organisation's computers, network and Internet may be used, such as using only your own account and not installing software.\n\n**Why the other options are wrong**\n\n- a licence agreement: A licence agreement sets the terms for using one piece of software.\n- a patent: A patent protects an invention.\n- a firewall: A firewall is security hardware or software, not a set of rules for users.",
+     "position": 7,
+     "options": [
+      {
+       "id": "6d748b42-103d-5448-a167-a13d0e40ffd1",
+       "label": "A",
+       "content": "a licence agreement",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e116575f-e383-5c13-a870-be265c9679f6",
+       "label": "B",
+       "content": "a patent",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "bcf75d0c-d5ae-54c9-a2d2-8e2455b3f3ef",
+       "label": "C",
+       "content": "a firewall",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6fe6a8b9-6b5d-531c-a8f4-9f9aa8ba8637",
+       "label": "D",
+       "content": "an acceptable use policy",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cd681388-a7be-5f83-8f6d-da9f7f44e772",
+   "topic": "Computer Viruses and Cybersecurity",
+   "title": "Computer Viruses and Cybersecurity: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on computer viruses and cybersecurity, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 144,
+   "questions": [
+    {
+     "id": "3ab6c5cc-df52-5d1b-97a9-aad1150ba57c",
+     "key": "ict-cs-01",
+     "stem": "Malware that spreads across networks by itself, without attaching to a file, is a",
+     "image_url": null,
+     "explanation": "Worms copy themselves from computer to computer across networks without any user action, often slowing networks down.\n\n**Why the other options are wrong**\n\n- virus: A virus needs to attach to a file that is opened or run.\n- Trojan horse: A Trojan relies on the user installing it, and does not copy itself.\n- cookie: A cookie is a small text file a website stores; it is not malware.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4584d318-2808-5f63-a708-77174f09a0ef",
+       "label": "A",
+       "content": "worm",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1512aeb2-46f2-5cdc-a996-04cc721b8df6",
+       "label": "B",
+       "content": "virus",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f49b79ea-a387-5bd8-ba5d-2bc520e37a5e",
+       "label": "C",
+       "content": "Trojan horse",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8d8744e7-4c09-5735-9fe8-3c8a303eeb13",
+       "label": "D",
+       "content": "cookie",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a35b6bd1-1cde-5e40-a0b3-66dcc30dbe21",
+     "key": "ict-cs-02",
+     "stem": "A free game that secretly gives an attacker control of the computer once installed is an example of",
+     "image_url": null,
+     "explanation": "Like the wooden horse of the Greek story, a Trojan looks harmless or useful but carries something hostile inside.\n\n**Why the other options are wrong**\n\n- a worm: A worm spreads by itself; it does not need to look like a useful program.\n- adware: Adware shows unwanted advertisements.\n- a firewall: A firewall protects a computer; it is not malware.",
+     "position": 2,
+     "options": [
+      {
+       "id": "30a5309e-024f-535b-a958-42ded3c0824d",
+       "label": "A",
+       "content": "a worm",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f07145ae-038b-5135-ae6c-87f59b912a8b",
+       "label": "B",
+       "content": "a Trojan horse",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "58ee5fe1-064e-54cd-a7cd-2e14e8591ef4",
+       "label": "C",
+       "content": "adware",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "67c7e7c9-4a86-5a2a-a40d-3133ac5e453c",
+       "label": "D",
+       "content": "a firewall",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "63aab1a0-f9af-5bcf-9e3f-fb4304b795b8",
+     "key": "ict-cs-03",
+     "stem": "Malware that encrypts a user's files and demands payment to unlock them is",
+     "image_url": null,
+     "explanation": "Ransomware such as WannaCry (2017) locks or encrypts files and demands a ransom. Regular backups mean the files can be restored without paying.\n\n**Why the other options are wrong**\n\n- spyware: Spyware secretly records activity; it does not lock files.\n- adware: Adware shows advertisements.\n- a keylogger: A keylogger records keystrokes to steal passwords.",
+     "position": 3,
+     "options": [
+      {
+       "id": "dd1438a6-fadb-503a-abde-cae951d8b2e6",
+       "label": "A",
+       "content": "spyware",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f9a27529-435e-5ab8-8bb8-d7dcd0bc75ec",
+       "label": "B",
+       "content": "adware",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9867e0db-6646-5e88-a795-43f9a2b9fba8",
+       "label": "C",
+       "content": "ransomware",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c49ff4b4-6f1e-578c-96a3-66516d554396",
+       "label": "D",
+       "content": "a keylogger",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8bcbc8d8-04cb-5f16-b8f9-b0073bdbcb3b",
+     "key": "ict-cs-04",
+     "stem": "An SMS claiming to be from a bank, asking the receiver to reply with their PIN to avoid their account being closed, is an example of",
+     "image_url": null,
+     "explanation": "Phishing uses fake messages that pretend to come from trusted organisations, often with urgent threats, to trick people into revealing passwords or PINs.\n\n**Why the other options are wrong**\n\n- hacking a firewall: No firewall is involved; the message tricks the person.\n- a denial-of-service attack: A DoS attack floods a server with requests.\n- encryption: Encryption protects data; it is not an attack.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f110d64c-16ea-5b57-8552-73755e748358",
+       "label": "A",
+       "content": "hacking a firewall",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0448632c-9c6d-5dee-8d7d-adb5f9c5f541",
+       "label": "B",
+       "content": "a denial-of-service attack",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6d73a2ac-17b7-53f1-abc5-f626f5ece477",
+       "label": "C",
+       "content": "encryption",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "addc668c-06b3-5986-bf56-4269326735f4",
+       "label": "D",
+       "content": "phishing",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "29fc2286-4eab-5025-ad83-0c642d92547e",
+     "key": "ict-cs-05",
+     "stem": "Which of the following is the strongest password?",
+     "image_url": null,
+     "explanation": "A strong password is long and mixes upper- and lower-case letters, digits and symbols, and is not a name, date or common word.\n\n**Why the other options are wrong**\n\n- password123: A common word with simple digits is guessed in seconds.\n- Aminata2008: A name with a birth year is easy to guess.\n- 12345678: A simple number sequence is among the first passwords attackers try.",
+     "position": 5,
+     "options": [
+      {
+       "id": "a00dec7f-a621-5ebd-9ede-64d4c4e08529",
+       "label": "A",
+       "content": "Mango!River7Kite",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ea9d0424-2921-5480-bd90-285a44dc224a",
+       "label": "B",
+       "content": "password123",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7fcb0588-35bc-58e3-8ed0-e9b7e829c425",
+       "label": "C",
+       "content": "Aminata2008",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aa6fd642-5457-54e8-8ef7-f420020a3a99",
+       "label": "D",
+       "content": "12345678",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ced5ac03-3f75-5f9e-b223-a9c858ca1127",
+     "key": "ict-cs-06",
+     "stem": "Scrambling data so that only someone with the correct key can read it is called",
+     "image_url": null,
+     "explanation": "Encryption turns readable data into code; with the key it can be turned back. It protects passwords, messages and web pages sent over HTTPS.\n\n**Why the other options are wrong**\n\n- compression: Compression makes files smaller; it does not hide them.\n- backup: A backup is a spare copy of data.\n- formatting: Formatting prepares or erases a storage device.",
+     "position": 6,
+     "options": [
+      {
+       "id": "655c35e7-4ce3-5a86-a613-60d2099fbb1d",
+       "label": "A",
+       "content": "compression",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ddc6aca5-3b5a-5a80-9437-e33664ab6d1f",
+       "label": "B",
+       "content": "encryption",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2b79df82-ac46-5cd7-b7db-fc8dd8bd8949",
+       "label": "C",
+       "content": "backup",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72a01df1-2ec6-51d0-9be3-9d824a142d56",
+       "label": "D",
+       "content": "formatting",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "38a48db3-1a97-5a52-a305-9a449733a548",
+     "key": "ict-cs-07",
+     "stem": "Which of the following is the FIRST thing to do when a computer is found to be infected with malware?",
+     "image_url": null,
+     "explanation": "Disconnecting stops the malware spreading and sending data. Then scan with up-to-date antivirus software, change passwords from a clean device, and restore files from backups.\n\n**Why the other options are wrong**\n\n- reinstall the operating system: Reinstalling is a last resort if scanning and cleaning fail.\n- share the files with friends to save them: Sharing infected files spreads the malware.\n- switch off the antivirus program: The antivirus is needed to find and remove the malware.",
+     "position": 7,
+     "options": [
+      {
+       "id": "c22c5293-e4fb-56a1-b3f7-10eb3569575e",
+       "label": "A",
+       "content": "reinstall the operating system",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e07fd752-4be6-5302-97a6-0a6ca0134d1f",
+       "label": "B",
+       "content": "share the files with friends to save them",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7612668d-7c83-5dd6-8860-e71c8c6493cc",
+       "label": "C",
+       "content": "disconnect it from the Internet and the network",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7902a01d-7d15-523c-9169-53506202e8f5",
+       "label": "D",
+       "content": "switch off the antivirus program",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "43a42ddd842a"
+}

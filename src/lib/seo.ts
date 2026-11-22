@@ -442,6 +442,58 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
     description:
       'Presentation software: slides, layouts, themes, transitions, animations and views, rules for good slides, graphics packages, and bitmap vs vector graphics.',
   },
+  // Nov 2026: ICT / Computer Studies, batch 3a: "types of network", "network topology", "internet vs www",
+  // "parts of a url", "mobile money", "sim card and imei", "computer ethics", "software piracy", "computer virus".
+  '/wassce/ict-computer-studies/networks-and-networking': {
+    title: 'Computer Networks: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on computer networks: LAN, MAN and WAN, bus, star and ring topologies, network devices and transmission media.',
+  },
+  '/wassce/ict-computer-studies/networks-and-networking/types-of-networks-topologies-and-network-devices': {
+    title: 'Types of Networks, Topologies and Devices | WASSCE ICT',
+    description:
+      'Types of computer network (PAN, LAN, MAN, WAN), bus, star, ring and mesh topologies, the router, switch and modem, cables, and simplex vs duplex transmission.',
+  },
+  '/wassce/ict-computer-studies/the-internet-and-email': {
+    title: 'The Internet and Email: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on the Internet and email: WWW, URLs, IP addresses and DNS, browsers, search engines, ISPs, CC, BCC and attachments.',
+  },
+  '/wassce/ict-computer-studies/the-internet-and-email/internet-www-url-and-email': {
+    title: 'Internet vs WWW, Parts of a URL and Email | WASSCE ICT',
+    description:
+      'How the Internet works: IP addresses, DNS and ISPs, the Internet vs the World Wide Web, parts of a URL, browsers and search engines, and how to send an email.',
+  },
+  '/wassce/ict-computer-studies/mobile-technology-and-ict-gadgets': {
+    title: 'Mobile Technology: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on mobile technology: 1G to 5G, smartphones, SIM and IMEI, Bluetooth, GPS, mobile money and ICT gadgets.',
+  },
+  '/wassce/ict-computer-studies/mobile-technology-and-ict-gadgets/mobile-technology-smartphones-and-mobile-money': {
+    title: 'Mobile Technology, Smartphones and Mobile Money | WASSCE',
+    description:
+      'Mobile networks from 1G to 5G, parts of a smartphone, SIM card vs IMEI, Bluetooth, GPS, NFC and hotspots, mobile money and USSD, and everyday ICT gadgets.',
+  },
+  '/wassce/ict-computer-studies/computer-ethics': {
+    title: 'Computer Ethics: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on computer ethics: privacy, intellectual property, copyright, software piracy, plagiarism and netiquette.',
+  },
+  '/wassce/ict-computer-studies/computer-ethics/computer-ethics-privacy-copyright-and-piracy': {
+    title: 'Computer Ethics: Copyright, Piracy, Netiquette | WASSCE ICT',
+    description:
+      'What computer ethics means: privacy and data protection, copyright, patents and trademarks, software piracy, plagiarism, cyberbullying and netiquette.',
+  },
+  '/wassce/ict-computer-studies/computer-viruses-and-cybersecurity': {
+    title: 'Computer Viruses: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on computer viruses and cybersecurity: malware, symptoms, hacking, phishing, firewalls, encryption and passwords.',
+  },
+  '/wassce/ict-computer-studies/computer-viruses-and-cybersecurity/computer-viruses-malware-and-how-to-stay-safe': {
+    title: 'Computer Viruses, Malware and Cybersecurity | WASSCE ICT',
+    description:
+      'Types of malware, how computer viruses spread and their symptoms, hacking, phishing and SIM swap fraud, and protection: antivirus, firewall, encryption and 2FA.',
+  },
 }
 
 /**

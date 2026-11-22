@@ -142,8 +142,8 @@ Above the byte, each level is a group of the level below it:
 Any two: data is **raw and unprocessed**, information is **processed**; data has **no meaning on its own**, information is **meaningful**; data is the **input**, information is the **output**; information can be used to **make decisions**.
 :::
 
-:::reveal{title="2. List the stages of the data processing cycle in order."}
-**Data collection → input → processing → output → storage**, with **feedback** from the output.
+:::reveal{title="2. Explain what happens at the processing stage and the storage stage of the data processing cycle."}
+**Processing**: the computer **calculates, sorts, compares and summarises** the data under the control of a program, turning it into information. **Storage**: the data, programs and results are **saved** on a storage device so they can be used again later.
 :::
 
 :::reveal{title="3. State three qualities of good information."}

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Generations of mobile networks</title>
+<desc id="d">A timeline of mobile network generations. 1G, 1980s: analogue voice calls only. 2G, 1990s: digital calls and SMS text messages. 3G, 2000s: mobile Internet and video calls. 4G, 2010s: fast mobile broadband for streaming video and apps. 5G, 2020s: very fast speeds and very low delay, for many connected devices.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="900" height="330" rx="20" fill="#f8fafc"/>
+<line x1="40.0" y1="120.0" x2="870.0" y2="120.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<circle cx="110.0" cy="120.0" r="30.0" fill="#e2e8f0" stroke="#475569" stroke-width="3"/>
+<text x="110.0" y="120.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1G</text>
+<text x="110.0" y="72.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1980s</text>
+<rect x="32.0" y="183.0" width="156.0" height="64.0" rx="12" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+<text x="110.0" y="205.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">analogue</text>
+<text x="110.0" y="225.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">voice calls only</text>
+<line x1="110.0" y1="150.0" x2="110.0" y2="183.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<circle cx="280.0" cy="120.0" r="30.0" fill="#fef3c7" stroke="#ea580c" stroke-width="3"/>
+<text x="280.0" y="120.0" font-size="20" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2G</text>
+<text x="280.0" y="72.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1990s</text>
+<rect x="202.0" y="183.0" width="156.0" height="64.0" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2.5"/>
+<text x="280.0" y="205.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">digital calls,</text>
+<text x="280.0" y="225.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">SMS texts</text>
+<line x1="280.0" y1="150.0" x2="280.0" y2="183.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="450.0" cy="120.0" r="30.0" fill="#ccfbf1" stroke="#0f766e" stroke-width="3"/>
+<text x="450.0" y="120.0" font-size="20" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3G</text>
+<text x="450.0" y="72.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2000s</text>
+<rect x="372.0" y="183.0" width="156.0" height="64.0" rx="12" fill="#ffffff" stroke="#0f766e" stroke-width="2.5"/>
+<text x="450.0" y="205.0" font-size="14" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">mobile Internet,</text>
+<text x="450.0" y="225.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">video calls</text>
+<line x1="450.0" y1="150.0" x2="450.0" y2="183.0" stroke="#0f766e" stroke-width="2" stroke-linecap="round"/>
+<circle cx="620.0" cy="120.0" r="30.0" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<text x="620.0" y="120.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4G</text>
+<text x="620.0" y="72.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2010s</text>
+<rect x="542.0" y="183.0" width="156.0" height="64.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="620.0" y="205.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fast broadband,</text>
+<text x="620.0" y="225.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">HD video, apps</text>
+<line x1="620.0" y1="150.0" x2="620.0" y2="183.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<circle cx="790.0" cy="120.0" r="30.0" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+<text x="790.0" y="120.0" font-size="20" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5G</text>
+<text x="790.0" y="72.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2020s</text>
+<rect x="712.0" y="183.0" width="156.0" height="64.0" rx="12" fill="#ffffff" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="790.0" y="205.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="normal">very fast, tiny delay,</text>
+<text x="790.0" y="225.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">many devices (IoT)</text>
+<line x1="790.0" y1="150.0" x2="790.0" y2="183.0" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+<text x="450.0" y="300.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Each generation is faster and carries more data than the one before.</text>
+</svg>
