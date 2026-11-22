@@ -14,7 +14,7 @@ import { plainText } from '@/lib/question-text'
 import { fetchKeyTermsPage, keyTermsPath, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-content'
 import type { KeyTermsPageData } from '@/lib/public-content'
 import { sectionId } from '@/lib/lesson-outlines'
-import { brandedTitle, breadcrumbJsonLd, fitDescription, flashcardsJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { brandedTitle, breadcrumbJsonLd, fitDescription, flashcardsJsonLd, indexablePageTags, privatePageTags, titleSubject } from '@/lib/seo'
 import { SubjectIcon } from '@/components/SubjectIcon'
 import { subjectTheme } from '@/lib/subject-theme'
 
@@ -47,7 +47,7 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/key-terms')({
     const name = `${data.topic.name}: WASSCE ${data.subject.name} key terms`
     return indexablePageTags({
       path,
-      title: brandedTitle(`WASSCE ${data.subject.name}: ${data.topic.name} Key Terms and Definitions`),
+      title: brandedTitle(`WASSCE ${titleSubject(data.subject.name)}: ${data.topic.name} Key Terms and Definitions`),
       ogTitle: name,
       description: describe(data),
       jsonLd: [

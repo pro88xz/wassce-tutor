@@ -349,7 +349,109 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
     description:
       'RAM vs ROM, volatile and non-volatile memory, types of ROM, cache, the memory hierarchy, and magnetic, optical and solid-state storage devices with capacities.',
   },
+  // Nov 2026: ICT / Computer Studies, batch 2 (software and applications): "types of software",
+  // "functions of operating system", "compiler vs interpreter", "cold and warm booting", "file
+  // extensions", "mail merge", "absolute cell reference", "primary key", "bitmap vs vector".
+  '/wassce/ict-computer-studies/types-of-software': {
+    title: 'Types of Software: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on types of software: system and application software, utility programs, translators, drivers and licences.',
+  },
+  '/wassce/ict-computer-studies/types-of-software/system-software-and-application-software': {
+    title: 'System Software and Application Software | WASSCE ICT',
+    description:
+      'Types of software explained: system vs application software, utility programs with examples, translators, drivers, packages, bespoke software and licences.',
+  },
+  '/wassce/ict-computer-studies/operating-systems': {
+    title: 'Operating Systems: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on operating systems: functions, types such as multitasking and real-time, GUI and command line, and examples.',
+  },
+  '/wassce/ict-computer-studies/operating-systems/functions-and-types-of-operating-systems': {
+    title: 'Functions and Types of Operating Systems | WASSCE ICT',
+    description:
+      'Functions of an operating system, types (multi-user, multitasking, real-time, mobile), GUI vs command-line interface, and examples such as Windows and Android.',
+  },
+  '/wassce/ict-computer-studies/programming-languages-and-translators': {
+    title: 'Programming Languages: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on programming languages: machine, assembly and high-level languages, compilers, interpreters and assemblers.',
+  },
+  '/wassce/ict-computer-studies/programming-languages-and-translators/levels-of-programming-languages-compiler-and-interpreter': {
+    title: 'Compiler vs Interpreter, Levels of Languages | WASSCE ICT',
+    description:
+      'Levels of programming languages, from machine code and assembly to high-level languages, and the difference between a compiler, an interpreter and an assembler.',
+  },
+  '/wassce/ict-computer-studies/basic-computer-operations': {
+    title: 'Basic Computer Operations: Notes and Questions | WASSCE',
+    description:
+      'WASSCE ICT notes and practice questions on basic computer operations: booting, cold and warm boot, the desktop, mouse actions, shortcuts and shutting down.',
+  },
+  '/wassce/ict-computer-studies/basic-computer-operations/booting-the-desktop-mouse-and-keyboard-shortcuts': {
+    title: 'Booting Process: Cold and Warm Booting | WASSCE ICT',
+    description:
+      'The booting process step by step, cold vs warm booting, parts of the desktop, mouse and window operations, keyboard shortcuts and how to shut down properly.',
+  },
+  '/wassce/ict-computer-studies/file-and-folder-management': {
+    title: 'File Management: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on file and folder management: paths, file extensions, Save and Save As, copy and move, compression and backup.',
+  },
+  '/wassce/ict-computer-studies/file-and-folder-management/files-folders-paths-and-file-extensions': {
+    title: 'Files, Folders, Paths and File Extensions | WASSCE ICT',
+    description:
+      'The difference between a file and a folder, folder trees and paths, common file extensions, creating, renaming, copying, moving and deleting files, and backups.',
+  },
+  '/wassce/ict-computer-studies/word-processing': {
+    title: 'Word Processing: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on word processing: the Word window, editing, formatting, alignment, headers and footers, and mail merge.',
+  },
+  '/wassce/ict-computer-studies/word-processing/word-processing-features-formatting-and-mail-merge': {
+    title: 'Word Processing: Features, Formatting, Mail Merge | WASSCE',
+    description:
+      'Features of a word processor: parts of the window, editing, character, paragraph and page formatting, tables, spelling check and mail merge, with shortcuts.',
+  },
+  '/wassce/ict-computer-studies/spreadsheets': {
+    title: 'Spreadsheets: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on spreadsheets: cells and ranges, formulas, SUM, AVERAGE and IF functions, absolute references and charts.',
+  },
+  '/wassce/ict-computer-studies/spreadsheets/spreadsheet-formulas-functions-and-cell-references': {
+    title: 'Excel Formulas, Functions and Cell References | WASSCE ICT',
+    description:
+      'Spreadsheet basics: cells, ranges, formulas, SUM, AVERAGE, MAX, MIN, COUNT and IF, relative and absolute cell references, sorting, charts and error messages.',
+  },
+  '/wassce/ict-computer-studies/databases': {
+    title: 'Databases: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on databases: DBMS, tables, fields, records, primary and foreign keys, queries, forms, reports and database types.',
+  },
+  '/wassce/ict-computer-studies/databases/database-tables-fields-records-and-primary-key': {
+    title: 'Database Fields, Records and Primary Key | WASSCE ICT',
+    description:
+      'Database basics: DBMS examples, tables, fields and records, data types, primary and foreign keys, queries, forms and reports, relationships and database types.',
+  },
+  '/wassce/ict-computer-studies/presentations-and-graphics': {
+    title: 'Presentations and Graphics: Notes and Questions | WASSCE',
+    description:
+      'WASSCE ICT notes and practice questions on presentation software and graphics: slides, transitions, animations, views, and bitmap vs vector graphics.',
+  },
+  '/wassce/ict-computer-studies/presentations-and-graphics/presentation-software-and-graphics-packages': {
+    title: 'Presentation Software and Bitmap vs Vector | WASSCE ICT',
+    description:
+      'Presentation software: slides, layouts, themes, transitions, animations and views, rules for good slides, graphics packages, and bitmap vs vector graphics.',
+  },
 }
+
+/**
+ * The subject's name as it reads in a page title. "ICT / Computer Studies" is
+ * too long to leave room for the topic ("WASSCE ICT / Computer Studies: Number
+ * Systems and Data Representation Key Terms..."), so titles say "ICT"; every
+ * other subject keeps its full name.
+ */
+const TITLE_SUBJECT: Partial<Record<string, string>> = { 'ICT / Computer Studies': 'ICT' }
+export const titleSubject = (name: string): string => TITLE_SUBJECT[name] ?? name
 
 /** Google shows about 60 characters of a title: add the brand only when it still fits. */
 export function brandedTitle(title: string, max = 65): string {

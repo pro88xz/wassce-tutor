@@ -14,7 +14,7 @@ import { markdownWithMath, plainText as plain, splitExplanation } from '@/lib/qu
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchTopicQuestionsPage, keyTermsPath, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-content'
 import type { PublicQuestion, TopicQuestionsPageData } from '@/lib/public-content'
-import { brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags, quizJsonLd } from '@/lib/seo'
+import { brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags, quizJsonLd, titleSubject } from '@/lib/seo'
 import type { QuizQuestion } from '@/lib/seo'
 import { SubjectIcon } from '@/components/SubjectIcon'
 import { subjectTheme } from '@/lib/subject-theme'
@@ -76,7 +76,7 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/questions')({
       title: brandedTitle(
         hasAudio(data)
           ? `WASSCE Oral English: ${data.topic.name} Questions with Audio`
-          : `WASSCE ${data.subject.name}: ${data.topic.name} Questions and Answers`,
+          : `WASSCE ${titleSubject(data.subject.name)}: ${data.topic.name} Questions and Answers`,
       ),
       ogTitle: name,
       description: describe(data),

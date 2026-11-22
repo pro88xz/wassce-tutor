@@ -1016,6 +1016,24 @@
   "questions": 53
  },
  {
+  "name": "ict_set2_p1",
+  "label": "ICT: set 2 (software, operating systems, programming languages, computer operations, files, word processing, spreadsheets, databases, presentations and graphics)",
+  "subject_slug": "ict-computer-studies",
+  "version": "8135f5396063",
+  "papers": [
+   "d128cc70-de91-5581-8718-bf135c6c6f38",
+   "29fa40e9-0893-5c4b-ad9e-821f2f1b5978",
+   "86692cf8-ab16-5bdf-85a3-bbe0bc43d320",
+   "99d7d940-2f90-5163-8eab-863a5245cb3c",
+   "f81499a8-cf6b-5056-9026-52962cadb761",
+   "bee6206f-1fa0-584f-85b9-8dbaf89da19d",
+   "3a68210a-bf33-55a7-b5cd-5917a1e2e23a",
+   "1173aaac-fe94-5dd7-8670-26cac0dcaeca",
+   "8e7355eb-6433-5808-8f43-0b40fa992d7c"
+  ],
+  "questions": 62
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",

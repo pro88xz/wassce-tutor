@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Types of software</title>
+<desc id="d">Software is divided into system software, which runs and manages the computer, and application software, which does users&#x27; tasks. System software includes the operating system, utility programs, language translators and device drivers. Application software includes general-purpose packages such as word processors and spreadsheets, special-purpose software such as payroll programs, and bespoke (custom) software written for one organisation.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="820" height="460" rx="20" fill="#f8fafc"/>
+<rect x="310.0" y="25.0" width="200.0" height="46.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="410.0" y="48.0" font-size="20" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Software</text>
+<rect x="65.0" y="112.0" width="300.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="215.0" y="128.5" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">System software</text>
+<text x="215.0" y="151.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">runs and manages the computer</text>
+<rect x="455.0" y="112.0" width="300.0" height="56.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="605.0" y="128.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Application software</text>
+<text x="605.0" y="151.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">does the user&#x27;s tasks</text>
+<line x1="410.0" y1="75.0" x2="410.0" y2="93.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="215.0" y1="93.0" x2="605.0" y2="93.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="215.0" y1="93.0" x2="215.0" y2="106.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="605.0" y1="93.0" x2="605.0" y2="106.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="85.0" y1="168.0" x2="85.0" y2="366.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="85.0" y1="198.0" x2="89.0" y2="198.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="95.0" y="174.0" width="290.0" height="48.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="240.0" y="187.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Operating system</text>
+<text x="240.0" y="208.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Windows, Android, Linux, macOS</text>
+<line x1="85.0" y1="254.0" x2="89.0" y2="254.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="95.0" y="230.0" width="290.0" height="48.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="240.0" y="243.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Utility programs</text>
+<text x="240.0" y="264.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">antivirus, backup, disk cleanup</text>
+<line x1="85.0" y1="310.0" x2="89.0" y2="310.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="95.0" y="286.0" width="290.0" height="48.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="240.0" y="299.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Language translators</text>
+<text x="240.0" y="320.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">compiler, interpreter, assembler</text>
+<line x1="85.0" y1="366.0" x2="89.0" y2="366.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="95.0" y="342.0" width="290.0" height="48.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="240.0" y="355.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Device drivers</text>
+<text x="240.0" y="376.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">printer and graphics drivers</text>
+<line x1="475.0" y1="168.0" x2="475.0" y2="310.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="475.0" y1="198.0" x2="479.0" y2="198.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="485.0" y="174.0" width="290.0" height="48.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="630.0" y="187.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">General-purpose packages</text>
+<text x="630.0" y="208.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">word processor, spreadsheet</text>
+<line x1="475.0" y1="254.0" x2="479.0" y2="254.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="485.0" y="230.0" width="290.0" height="48.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="630.0" y="243.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Special-purpose software</text>
+<text x="630.0" y="264.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">payroll, school results, hotel booking</text>
+<line x1="475.0" y1="310.0" x2="479.0" y2="310.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="485.0" y="286.0" width="290.0" height="48.0" rx="12" fill="#ffffff" stroke="#15803d" stroke-width="2.5"/>
+<text x="630.0" y="299.5" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bespoke (custom) software</text>
+<text x="630.0" y="320.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">written for one organisation</text>
+<text x="630.0" y="400.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">packages are bought ready-made (&#x27;off the shelf&#x27;);</text>
+<text x="630.0" y="422.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">bespoke software is written to order</text>
+</svg>
