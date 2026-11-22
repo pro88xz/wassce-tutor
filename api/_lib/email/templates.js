@@ -322,7 +322,7 @@ export function withStudyExtras(content, p, programme) {
       title: `Book ${t.name} for ${t.subject}`,
       lines: [
         `Your ${t.subject} practice average is ${t.avg}% over ${plural(t.sets ?? 2, 'set')}. A few lessons with a teacher can turn that around before the exam.`,
-        `${first} teaches WASSCE ${t.subject}${t.location ? ` in ${t.location}` : ''}${terms.length ? `: ${terms.join(', ')}` : ''}. You agree the days, times and place on WhatsApp.`,
+        `${first} teaches WASSCE ${t.subject}${t.location ? ` in ${t.location}` : ''}${terms.length ? `: ${terms.join(', ')}` : ''}. You agree the days, times and place with ${first}.`,
       ],
       cta: { label: `Book ${first}`, link: 'tutor' },
     }
