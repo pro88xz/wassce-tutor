@@ -4,7 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 import { CONTACT } from '../../api/_lib/email/config.js'
 import { renderEmail } from '../../api/_lib/email/layout.js'
-import { SAMPLES, TEMPLATES } from '../../api/_lib/email/templates.js'
+import { SAMPLES, TEMPLATES, withStudyExtras } from '../../api/_lib/email/templates.js'
 
 const out = resolve(process.argv[2] ?? 'email-preview')
 mkdirSync(out, { recursive: true })
@@ -13,7 +13,8 @@ const stats = { subjects: 18, lessons: 673, questions: 1568 } // example figures
 
 const index = []
 for (const [key, template] of Object.entries(TEMPLATES)) {
-  const content = template(SAMPLES[key], { stats })
+  // The programme is the key without its step number (pending_payment_1 → pending_payment).
+  const content = withStudyExtras(template(SAMPLES[key], { stats }), SAMPLES[key], key.replace(/_\d+$/, ''))
   const { html, text } = renderEmail(content, {
     site,
     contact: CONTACT,

@@ -3,11 +3,11 @@ import assert from 'node:assert/strict'
 import crypto from 'node:crypto'
 import { test } from 'node:test'
 import { mergeConfig } from '../../api/_lib/email/config.js'
-import { addWeekData, runEngine } from '../../api/_lib/email/engine.js'
+import { addStudyExtras, addWeekData, runEngine } from '../../api/_lib/email/engine.js'
 import { renderEmail } from '../../api/_lib/email/layout.js'
 import { sendViaResend } from '../../api/_lib/email/resend.js'
 import { firstName, planForStudent, rankCandidates, snapshotFromRow, weekOf } from '../../api/_lib/email/rules.js'
-import { SAMPLES, TEMPLATES } from '../../api/_lib/email/templates.js'
+import { SAMPLES, TEMPLATES, withStudyExtras } from '../../api/_lib/email/templates.js'
 import { clickSignature, safePath, unsubscribeToken, verifyClick, verifyUnsubscribeToken } from '../../api/_lib/email/tokens.js'
 import { verifyResendSignature } from '../../api/_lib/email/webhook-signature.js'
 
@@ -483,4 +483,88 @@ test('weekly email copy: only what happened, plurals right, no plan pitch for le
   assert.ok(!one.lists[0].items.some((i) => i.startsWith('Practice')), 'no practice line when there was no practice')
   assert.ok(!one.after.some((t) => t.includes('full access')), 'no plan line for a paying student')
   assert.equal(one.cta.label, 'Start the next lesson')
+})
+
+
+// ── Study extras: a question to answer, a tutor for a weak subject, where to continue ──
+
+const EXTRAS_ROW = {
+  user_id: 'u1',
+  question_id: '11111111-2222-3333-4444-555555555555',
+  question_stem: 'Choose the word with the same vowel sound as f**oo**d.',
+  question_options: [{ label: 'A', content: 'shoe' }, { label: 'B', content: 'good' }, { label: 'C', content: 'blood' }, { label: 'D', content: 'boat' }],
+  question_subject: 'English Language',
+  question_topic: 'Vowels and Diphthongs',
+  weak_subject_id: 's1',
+  weak_subject_name: 'English Language',
+  weak_subject_slug: 'english-language',
+  weak_avg: 38,
+  weak_sets: 3,
+  tutor_slug: 'nicholas-norman',
+  tutor_name: 'Nicholas Norman',
+  tutor_location: 'Freetown',
+  tutor_price: '700.00',
+  tutor_lessons_per_week: 3,
+  next_lesson_id: 'l1',
+  next_lesson_title: 'Diphthongs',
+  next_topic_name: 'Vowels and Diphthongs',
+  next_subject_name: 'English Language',
+}
+const fakeClient = (rows, error = null) => ({ rpc: async (name) => (name === 'email_student_extras' ? { data: error ? null : rows, error } : { data: null, error: { message: 'unexpected' } }) })
+
+test('study extras: the question, a tutor for the weak subject and the next lesson go into a study email', async () => {
+  const chosen = [
+    { userId: 'u1', programme: 'reengage', payload: { firstName: 'Aminata', links: { cta: '/subjects' } } },
+    { userId: 'u1', programme: 'access_started', payload: { links: { cta: '/subjects' } } },
+  ]
+  const summary = {}
+  const out = await addStudyExtras(fakeClient([EXTRAS_ROW]), chosen, summary)
+  const p = out[0].payload
+  assert.equal(p.question.options.length, 4)
+  assert.equal(p.links.q_B, '/q/11111111-2222-3333-4444-555555555555?a=B')
+  assert.equal(p.links.tutor, '/tutors/nicholas-norman?book=english-language')
+  assert.equal(p.links.next, '/lesson/l1')
+  assert.equal(p.links.cta, '/subjects')
+  assert.deepEqual({ ...p.tutor }, { name: 'Nicholas Norman', location: 'Freetown', subject: 'English Language', avg: 38, sets: 3, price: 700, perWeek: 3 })
+  for (const key of ['q_A', 'q_B', 'q_C', 'q_D', 'tutor', 'next']) assert.ok(safePath(p.links[key]), `${key} passes the click redirect`)
+  // A service email gets nothing added.
+  assert.equal(out[1].payload.question, undefined)
+  assert.deepEqual(summary.extras, { questions: 1, tutors: 1 })
+})
+
+test('study extras: missing parts are left out, and a database error sends the emails without them', async () => {
+  const bare = { ...EXTRAS_ROW, question_id: null, tutor_slug: null, next_lesson_id: null }
+  const one = [{ userId: 'u1', programme: 'weekly_digest', payload: { links: { cta: '/x' } } }]
+  const out = await addStudyExtras(fakeClient([bare]), one, {})
+  assert.equal(out[0].payload.question, undefined)
+  assert.equal(out[0].payload.tutor, undefined)
+  assert.deepEqual(out[0].payload.links, { cta: '/x' })
+
+  const summary = {}
+  const same = [{ userId: 'u1', programme: 'reengage', payload: { links: { cta: '/x' } } }]
+  const after = await addStudyExtras(fakeClient(null, { message: 'function does not exist' }), same, summary)
+  assert.deepEqual(after[0].payload, { links: { cta: '/x' } })
+  assert.equal(summary.extras, 'unavailable')
+})
+
+test('study extras render: answer buttons, tutor card, and the continue line only where the button does not continue', () => {
+  const ctx = { site: 'https://wasscetutor.com', contact: { phoneDisplay: '+232' }, url: (k) => `https://wasscetutor.com/go/${k}`, displayUrl: () => 'x', unsubscribeUrl: 'https://u', preferencesUrl: 'https://p' }
+  const payload = { ...SAMPLES.pending_payment_1 }
+  const pending = withStudyExtras(TEMPLATES.pending_payment_1(payload, {}), payload, 'pending_payment')
+  const { html, text } = renderEmail(pending, ctx)
+  for (const l of ['A', 'B', 'C', 'D']) assert.ok(html.includes(`https://wasscetutor.com/go/q_${l}`), `option ${l} links to its answer`)
+  assert.ok(html.includes('<strong>oo</strong>'), 'bold letters stay bold')
+  assert.ok(html.includes('Book Nicholas'))
+  assert.ok(html.includes('https://wasscetutor.com/go/next'), 'pending payment: a free lesson to carry on with')
+  assert.ok(text.includes('fOOd'), 'plain text shows the bold letters in capitals')
+  assert.doesNotMatch(html + text, /undefined|null|NaN/)
+
+  const re = { ...SAMPLES.reengage_1 }
+  const back = withStudyExtras(TEMPLATES.reengage_1(re, {}), re, 'reengage')
+  assert.equal(back.continueLine, undefined, 'the re-engagement button already continues')
+
+  const none = withStudyExtras(TEMPLATES.activation_2(SAMPLES.activation_2, {}), SAMPLES.activation_2, 'activation')
+  assert.equal(none.question, undefined)
+  assert.equal(none.tutor, undefined)
+  assert.equal(none.continueLine, undefined)
 })

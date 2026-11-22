@@ -341,3 +341,19 @@ jobs:
           test "$RESULT" = "0" || { echo "Expected every lesson in those topics to be reviewed"; exit 1; }
           # For the record: lessons per reviewer and subject.
           psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(line, '; ') from (select t.full_name || ', ' || s.name || ': ' || count(*) as line from public.lessons l join public.tutors t on t.user_id = l.reviewed_by join public.topics tp on tp.id = l.topic_id join public.subjects s on s.id = tp.subject_id where l.is_published group by t.full_name, s.name order by t.full_name, s.name) r;"
+
+      - name: Verify (34) the study emails can find a question, a tutor and the next lesson
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          # The function exists, only the server key may call it, and it answers for real students.
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select (to_regprocedure('public.email_student_extras(uuid[])') is not null)::text || ',' || has_function_privilege('anon', 'public.email_student_extras(uuid[])', 'execute')::text || ',' || has_function_privilege('authenticated', 'public.email_student_extras(uuid[])', 'execute')::text;" | tr -d '[:space:]')"
+          echo "exists, anon may call, signed-in may call: $RESULT"
+          test "$RESULT" = "true,false,false" || { echo "Expected the function to exist for the server key only"; exit 1; }
+          # For the record: of 200 recent students, how many would get each part.
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select 'students ' || count(*) || '; with a question ' || count(question_id) || '; with a weak subject ' || count(weak_subject_id) || '; with a tutor ' || count(tutor_slug) || '; with a next lesson ' || count(next_lesson_id) from public.email_student_extras(array(select id from public.profiles order by created_at desc limit 200));"
+          # Questions offered never carry the answer.
+          LEAK="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select count(*) from public.email_student_extras(array(select id from public.profiles order by created_at desc limit 200)) e, jsonb_array_elements(e.question_options) o where o ? 'is_correct';" | tr -d '[:space:]')"
+          test "$LEAK" = "0" || { echo "Question options must not carry the answer"; exit 1; }

@@ -5,7 +5,11 @@
 //
 // Content shape (from templates.js):
 //   { subject, preheader, headline, paragraphs[], lists[{ title, items[] }],
-//     cta: { label, link }, after[], note, category: 'marketing' | 'service' }
+//     cta: { label, link }, after[], note, category: 'marketing' | 'service',
+//     question?: { eyebrow, topic, stem, options[{ label, text, link }], footnote },
+//     continueLine?: { hint, label, link },
+//     tutor?: { eyebrow, title, lines[], cta: { label, link } } }
+// A question's stem and options may use **bold** and *italic* (as the questions do).
 
 const BRAND = '#6438d8'
 const BAND = '#4720b5'
@@ -17,6 +21,16 @@ const FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, 
 
 const escape = (s) =>
   String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c])
+
+/** Question text as HTML: escaped, with **bold**, *italic* and line breaks kept. */
+const inline = (t) =>
+  escape(t)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/(^|[^*])\*([^*\n]+?)\*/g, '$1<em>$2</em>')
+    .replace(/\n{2,}/g, '<br><br>')
+    .replace(/\n/g, '<br>')
+/** The same text for the plain-text email: bold (the letters a question asks about) in capitals, italics dropped. */
+const plainInline = (t) => String(t ?? '').replace(/\*\*(.+?)\*\*/g, (_, b) => b.toUpperCase()).replace(/\*([^*\n]+?)\*/g, '$1')
 
 /** Fails loudly if a template left a placeholder or an empty value in the copy. */
 export function assertClean(content) {
@@ -55,6 +69,51 @@ export function renderEmail(content, ctx) {
       </td></tr>`,
     )
     .join('')
+
+  const q = content.question
+  const question = q
+    ? `
+      <tr><td style="padding:4px 0 22px">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #ddd3fb;border-radius:16px;background:#f7f4ff">
+          <tr><td style="padding:18px 18px 4px">
+            <p style="margin:0;font:700 11px/1.4 ${FONT};letter-spacing:0.12em;text-transform:uppercase;color:${BRAND}">${escape(q.eyebrow)}</p>
+            ${q.topic ? `<p style="margin:2px 0 0;font:400 13px/1.4 ${FONT};color:${MUTED}">${escape(q.topic)}</p>` : ''}
+            <p style="margin:12px 0 14px;font:600 17px/1.5 ${FONT};color:${INK}">${inline(q.stem)}</p>
+          </td></tr>
+          ${q.options
+            .map(
+              (o) => `<tr><td style="padding:0 18px 10px">
+            <a href="${escape(ctx.url(o.link))}" style="display:block;text-decoration:none;border:1px solid #d6ccf7;border-radius:12px;background:#ffffff;padding:11px 14px;font:500 15px/1.45 ${FONT};color:${INK}">
+              <span style="display:inline-block;min-width:26px;height:26px;margin-right:10px;border-radius:13px;background:${BRAND};color:#ffffff;font:700 13px/26px ${FONT};text-align:center;vertical-align:middle">${escape(o.label)}</span><span style="vertical-align:middle">${inline(o.text)}</span>
+            </a>
+          </td></tr>`,
+            )
+            .join('')}
+          <tr><td style="padding:2px 18px 16px"><p style="margin:0;font:400 13px/1.5 ${FONT};color:${MUTED}">${escape(q.footnote)}</p></td></tr>
+        </table>
+      </td></tr>`
+    : ''
+  const cont = content.continueLine
+    ? `<tr><td style="padding:0 0 22px">${p(`${content.continueLine.hint}:`, `font-size:14px;color:${MUTED};margin:0 0 4px`)}<a href="${escape(ctx.url(content.continueLine.link))}" style="font:700 15px/1.5 ${FONT};color:${BRAND};text-decoration:none">${escape(content.continueLine.label)} &rarr;</a></td></tr>`
+    : ''
+  const t = content.tutor
+  const tutor = t
+    ? `
+      <tr><td style="padding:0 0 24px">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #f1dcb8;border-radius:16px;background:#fff9ef">
+          <tr><td style="padding:18px">
+            <p style="margin:0 0 6px;font:700 11px/1.4 ${FONT};letter-spacing:0.12em;text-transform:uppercase;color:#a85d0d">${escape(t.eyebrow)}</p>
+            <p style="margin:0 0 10px;font:700 18px/1.35 ${FONT};color:${INK}">${escape(t.title)}</p>
+            ${t.lines.map((line) => p(line, 'font-size:15px;margin:0 0 10px')).join('')}
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:6px"><tr>
+              <td style="border:2px solid ${BRAND};border-radius:12px;background:#ffffff">
+                <a href="${escape(ctx.url(t.cta.link))}" style="display:inline-block;padding:11px 22px;font:700 15px/1.2 ${FONT};color:${BRAND};text-decoration:none">${escape(t.cta.label)}</a>
+              </td>
+            </tr></table>
+          </td></tr>
+        </table>
+      </td></tr>`
+    : ''
 
   const reason =
     content.category === 'marketing'
@@ -100,6 +159,7 @@ export function renderEmail(content, ctx) {
             <h1 class="h1" style="margin:0 0 18px;font:800 26px/1.2 ${FONT};letter-spacing:-0.01em;color:${INK}">${escape(content.headline)}</h1>
             ${(content.paragraphs ?? []).map((t) => p(t)).join('')}
           </td></tr>
+          ${question}
           ${lists}
           ${(content.after ?? []).length ? `<tr><td>${content.after.map((t) => p(t)).join('')}</td></tr>` : ''}
           <tr><td style="padding:8px 0 24px">
@@ -110,6 +170,8 @@ export function renderEmail(content, ctx) {
             </tr></table>
             <p style="margin:14px 0 0;font:400 13px/1.5 ${FONT};color:${MUTED}">Button not working? Open <a href="${escape(ctaUrl)}" style="color:${BRAND};word-break:break-all">${escape(ctx.displayUrl(content.cta.link))}</a></p>
           </td></tr>
+          ${cont}
+          ${tutor}
           ${content.note ? `<tr><td style="padding:0 0 24px">${p(content.note, `font-size:14px;color:${MUTED};margin:0`)}</td></tr>` : ''}
         </table>
       </td></tr>
@@ -125,6 +187,11 @@ export function renderEmail(content, ctx) {
 </html>`
 
   const lines = [content.headline, '', ...(content.paragraphs ?? []).flatMap((t) => [t, ''])]
+  if (q) {
+    lines.push(q.eyebrow.toUpperCase(), plainInline(q.stem), '')
+    for (const o of q.options) lines.push(`  ${o.label}. ${plainInline(o.text)}: ${ctx.url(o.link)}`)
+    lines.push('', q.footnote, '')
+  }
   for (const l of content.lists ?? []) {
     if (l.title) lines.push(l.title)
     for (const item of l.items) lines.push(`  ✓ ${item}`)
@@ -132,6 +199,8 @@ export function renderEmail(content, ctx) {
   }
   for (const t of content.after ?? []) lines.push(t, '')
   lines.push(`${content.cta.label}: ${ctaUrl}`, '')
+  if (content.continueLine) lines.push(`${content.continueLine.hint}: ${content.continueLine.label}: ${ctx.url(content.continueLine.link)}`, '')
+  if (t) lines.push(t.title, ...t.lines, `${t.cta.label}: ${ctx.url(t.cta.link)}`, '')
   if (content.note) lines.push(content.note, '')
   lines.push('—', reason)
   if (content.category === 'marketing' && ctx.unsubscribeUrl) lines.push(`Unsubscribe: ${ctx.unsubscribeUrl}`)

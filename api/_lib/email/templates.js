@@ -249,12 +249,29 @@ export const TEMPLATES = {
 }
 
 /** Sample data for previews and test sends: one example per template. */
+// What engine.js addStudyExtras adds to a study email, for the previews.
+const SAMPLE_EXTRAS = {
+  question: {
+    stem: 'Choose the word that has the same vowel sound as the one represented by the letters in bold.\n\nf**oo**d',
+    subject: 'English Language',
+    topic: 'Vowels and Diphthongs',
+    options: [
+      { label: 'A', text: 'shoe' },
+      { label: 'B', text: 'good' },
+      { label: 'C', text: 'blood' },
+      { label: 'D', text: 'boat' },
+    ],
+  },
+  tutor: { name: 'Nicholas Norman', location: 'Freetown', subject: 'English Language', avg: 38, sets: 3, price: 700, perWeek: 3 },
+  next: { title: 'Consonants: the 24 sounds', topic: 'Consonants and Consonant Clusters', subject: 'English Language' },
+}
+
 export const SAMPLES = {
-  pending_payment_1: { firstName: 'Fatmata', plan: 'term', amount: 25, startedAt: '2026-11-14T09:30:00Z' },
-  pending_payment_2: { firstName: 'Fatmata', plan: 'term', amount: 25, startedAt: '2026-11-11T09:30:00Z' },
-  activation_1: { firstName: 'Mohamed' },
+  pending_payment_1: { firstName: 'Fatmata', plan: 'term', amount: 25, startedAt: '2026-11-14T09:30:00Z', ...SAMPLE_EXTRAS },
+  pending_payment_2: { firstName: 'Fatmata', plan: 'term', amount: 25, startedAt: '2026-11-11T09:30:00Z', question: SAMPLE_EXTRAS.question, next: SAMPLE_EXTRAS.next },
+  activation_1: { firstName: 'Mohamed', question: SAMPLE_EXTRAS.question, next: SAMPLE_EXTRAS.next },
   activation_2: { firstName: null },
-  reengage_1: { firstName: 'Aminata', studied: true, subject: { id: 'x', name: 'Biology' }, access: null },
+  reengage_1: { firstName: 'Aminata', studied: true, subject: { id: 'x', name: 'English Language' }, access: null, ...SAMPLE_EXTRAS },
   reengage_2: { firstName: 'Aminata', studied: true, subject: { id: 'x', name: 'Biology' }, access: null },
   weekly_digest: {
     firstName: 'Aminata',
@@ -270,7 +287,52 @@ export const SAMPLES = {
       newLessons: 4,
       next: { title: 'Cell division', topic: 'Cells and their structure', free: false },
     },
+    question: SAMPLE_EXTRAS.question,
+    tutor: SAMPLE_EXTRAS.tutor,
   },
   access_started: { firstName: 'Isata', plan: 'term', amount: 25, until: '2026-12-15T10:00:00Z' },
   access_ending: { firstName: 'Isata', plan: 'term', until: '2026-12-15T10:00:00Z' },
+}
+
+// ── Study extras (engine.js addStudyExtras, migration 34) ────────────────────
+// Added to the study emails from the student's own records: a question from
+// their subject to answer straight from the email, a tutor who teaches the
+// subject they score lowest in, and, where the button does not already lead
+// there, the next lesson to continue with. Each part appears only with real data.
+
+const CONTINUE_LINE = new Set(['pending_payment', 'activation'])
+
+export function withStudyExtras(content, p, programme) {
+  const out = { ...content }
+  if (p.question?.stem && p.question.options?.length === 4) {
+    out.question = {
+      eyebrow: `Your question for today${p.question.subject ? ` · ${p.question.subject}` : ''}`,
+      topic: p.question.topic || null,
+      stem: p.question.stem,
+      options: p.question.options.map((o) => ({ label: o.label, text: o.text, link: `q_${o.label}` })),
+      footnote: 'Tap your answer. The site marks it at once and shows the full working.',
+    }
+  }
+  if (p.tutor?.name && p.tutor.subject && Number.isFinite(p.tutor.avg)) {
+    const t = p.tutor
+    const first = String(t.name).trim().split(/\s+/)[0]
+    const terms = [t.perWeek ? plural(t.perWeek, 'lesson') + ' a week' : null, t.price ? `NLe ${n(t.price)} a month` : null].filter(Boolean)
+    out.tutor = {
+      eyebrow: 'Help from a real teacher',
+      title: `Book ${t.name} for ${t.subject}`,
+      lines: [
+        `Your ${t.subject} practice average is ${t.avg}% over ${plural(t.sets ?? 2, 'set')}. A few lessons with a teacher can turn that around before the exam.`,
+        `${first} teaches WASSCE ${t.subject}${t.location ? ` in ${t.location}` : ''}${terms.length ? `: ${terms.join(', ')}` : ''}. You agree the days, times and place on WhatsApp.`,
+      ],
+      cta: { label: `Book ${first}`, link: 'tutor' },
+    }
+  }
+  if (CONTINUE_LINE.has(programme) && p.next?.title) {
+    out.continueLine = {
+      label: `${p.next.subject ? `${p.next.subject}: ` : ''}${p.next.title}`,
+      hint: programme === 'activation' ? 'A good first lesson' : 'Or carry on for free where you stopped',
+      link: 'next',
+    }
+  }
+  return out
 }

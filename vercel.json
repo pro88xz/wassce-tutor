@@ -713,7 +713,7 @@
       "destination": "/_shell"
     },
     {
-      "source": "/(subject|topic|lesson|paper)/:id",
+      "source": "/(subject|topic|lesson|paper|q)/:id",
       "destination": "/_shell"
     },
     {
@@ -799,7 +799,7 @@
       ]
     },
     {
-      "source": "/(admin|subject|topic|lesson|paper)/:path*",
+      "source": "/(admin|subject|topic|lesson|paper|q)/:path*",
       "headers": [
         {
           "key": "X-Robots-Tag",

@@ -60,6 +60,7 @@ export function QuestionCard({
   topic,
   heading: Heading = 'h2',
   onAnswer,
+  initial,
 }: {
   q: PublicQuestion
   n: number
@@ -67,9 +68,11 @@ export function QuestionCard({
   heading?: 'h2' | 'h3'
   /** Called with whether the choice was right, and with null on "Try again". */
   onAnswer?: (right: boolean | null) => void
+  /** An answer already chosen elsewhere (an option tapped in an email): shown marked, with the working open. */
+  initial?: string
 }) {
-  const [chosen, setChosen] = useState<string | null>(null)
-  const [open, setOpen] = useState(false)
+  const [chosen, setChosen] = useState<string | null>(initial ?? null)
+  const [open, setOpen] = useState(!!initial)
   const correct = q.options.find((o) => o.is_correct)
   const right = chosen !== null && chosen === correct?.label
 

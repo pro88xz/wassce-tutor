@@ -5,7 +5,7 @@
 import { canSend, CONTACT } from './config.js'
 import { renderEmail } from './layout.js'
 import { planForStudent, rankCandidates, snapshotFromRow } from './rules.js'
-import { TEMPLATES } from './templates.js'
+import { TEMPLATES, withStudyExtras } from './templates.js'
 import { clickSignature, unsubscribeToken } from './tokens.js'
 
 const PAGE = 1000
@@ -36,7 +36,7 @@ export function composeMessage(env, job, stats) {
   const template = TEMPLATES[job.template_key]
   if (!template) throw new Error(`Unknown template ${job.template_key}`)
   const payload = job.payload ?? {}
-  const content = template(payload, { stats })
+  const content = withStudyExtras(template(payload, { stats }), payload, job.programme)
   const ctx = linkContext(env, { jobId: job.job_id, userId: job.user_id, programme: job.programme, links: payload.links ?? {} })
   const { html, text } = renderEmail(content, ctx)
   const headers = {}
@@ -97,6 +97,63 @@ export async function addWeekData(client, chosen, summary) {
   })
 }
 
+/** The study emails that also carry a question to answer, a tutor for a weak subject and where to continue. */
+export const STUDY_EXTRAS = new Set(['pending_payment', 'activation', 'weekly_digest', 'reengage'])
+
+/**
+ * Adds, from the student's own records (email_student_extras(), migration 34):
+ * a question from their subject to answer from the email (each option links
+ * to /q/<id>?a=<letter>, where the site marks it), a tutor who teaches the
+ * subject they score lowest in, and the next lesson to continue with. Each
+ * part is left out when there is nothing true to say; if the data cannot be
+ * read, the emails go out without them.
+ */
+export async function addStudyExtras(client, chosen, summary) {
+  const study = chosen.filter((c) => STUDY_EXTRAS.has(c.programme))
+  if (!study.length) return chosen
+  const { data, error } = await client.rpc('email_student_extras', { p_users: study.map((c) => c.userId) })
+  if (error) {
+    console.error(`[email] study extras unavailable, emails go without them: ${error.message}`)
+    summary.extras = 'unavailable'
+    return chosen
+  }
+  const byUser = new Map((data ?? []).map((x) => [x.user_id, x]))
+  let questions = 0
+  let tutors = 0
+  for (const c of study) {
+    const x = byUser.get(c.userId)
+    if (!x) continue
+    const links = { ...(c.payload.links ?? {}) }
+    const extra = {}
+    const options = Array.isArray(x.question_options) ? x.question_options : []
+    if (x.question_id && x.question_stem && options.length === 4) {
+      extra.question = { stem: x.question_stem, subject: x.question_subject, topic: x.question_topic, options: options.map((o) => ({ label: o.label, text: o.content })) }
+      for (const o of options) links[`q_${o.label}`] = `/q/${x.question_id}?a=${encodeURIComponent(o.label)}`
+      questions++
+    }
+    if (x.tutor_slug && x.weak_subject_name && x.weak_avg !== null && x.weak_avg !== undefined) {
+      extra.tutor = {
+        name: x.tutor_name,
+        location: x.tutor_location,
+        subject: x.weak_subject_name,
+        avg: x.weak_avg,
+        sets: x.weak_sets,
+        price: x.tutor_price !== null && x.tutor_price !== undefined ? Number(x.tutor_price) : null,
+        perWeek: x.tutor_lessons_per_week ?? null,
+      }
+      links.tutor = `/tutors/${x.tutor_slug}?book=${encodeURIComponent(x.weak_subject_slug ?? '')}`
+      tutors++
+    }
+    if (x.next_lesson_id && x.next_lesson_title) {
+      extra.next = { title: x.next_lesson_title, topic: x.next_topic_name, subject: x.next_subject_name }
+      links.next = `/lesson/${x.next_lesson_id}`
+    }
+    c.payload = { ...c.payload, ...extra, links }
+  }
+  summary.extras = { questions, tutors }
+  return chosen
+}
+
 /**
  * @param deps { client: Supabase (secret key), env: loadEmailConfig(), now, send(message) → { ok, id, error, permanent }, sleep }
  */
@@ -140,7 +197,7 @@ export async function runEngine({ client, env, now = Date.now(), send, sleep = (
     after = rows[rows.length - 1].user_id
   }
   summary.due = due.length
-  const chosen = await addWeekData(client, rankCandidates(due).slice(0, allowance), summary)
+  const chosen = await addStudyExtras(client, await addWeekData(client, rankCandidates(due).slice(0, allowance), summary), summary)
   for (const c of chosen) summary.byProgramme[c.programme] = (summary.byProgramme[c.programme] ?? 0) + 1
   if (env.mode === 'dry-run') return { ...summary, wouldSend: chosen.length }
   if (chosen.length === 0) return summary
