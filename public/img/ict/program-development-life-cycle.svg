@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The program development life cycle</title>
+<desc id="d">The program development life cycle as a circle of seven stages: problem definition, problem analysis, program design (algorithms, flowcharts, pseudocode), coding, testing and debugging, implementation, and maintenance, which leads back to problem definition when changes are needed. Documentation, in the centre, is written at every stage.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="900" height="600" rx="20" fill="#f8fafc"/>
+<path d="M 541.7 90.7 Q 601.0 81.8 628.0 119.6" stroke="#475569" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 742.4 219.4 Q 789.4 246.1 763.7 284.4" stroke="#475569" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 722.9 408.8 Q 722.2 451.0 663.2 460.9" stroke="#475569" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 497.9 516.2 Q 450.0 542.2 402.1 516.2" stroke="#475569" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 236.8 460.9 Q 177.8 451.0 177.1 408.8" stroke="#475569" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 136.3 284.4 Q 110.6 246.1 157.6 219.4" stroke="#475569" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 272.0 119.6 Q 299.0 81.8 358.3 90.7" stroke="#475569" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="352.0" y="32.0" width="196.0" height="56.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="450.0" y="49.5" font-size="15" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Problem definition</text>
+<text x="450.0" y="70.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">what must be solved?</text>
+<rect x="621.7" y="122.4" width="196.0" height="56.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="719.7" y="139.9" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Analysis</text>
+<text x="719.7" y="160.9" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">inputs, processes, outputs</text>
+<rect x="688.4" y="325.4" width="196.0" height="56.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="786.4" y="342.9" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Design</text>
+<text x="786.4" y="363.9" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">algorithm, flowchart</text>
+<rect x="501.7" y="488.2" width="196.0" height="56.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="599.7" y="505.7" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. Coding</text>
+<text x="599.7" y="526.7" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">write the program</text>
+<rect x="202.3" y="488.2" width="196.0" height="56.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="300.3" y="505.7" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5. Testing and debugging</text>
+<text x="300.3" y="526.7" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">find and fix errors</text>
+<rect x="15.6" y="325.4" width="196.0" height="56.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="113.6" y="342.9" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6. Implementation</text>
+<text x="113.6" y="363.9" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">install and start using</text>
+<rect x="82.3" y="122.4" width="196.0" height="56.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="180.3" y="139.9" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7. Maintenance</text>
+<text x="180.3" y="160.9" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">update and improve</text>
+<rect x="350.0" y="265.0" width="200.0" height="70.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="450.0" y="289.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Documentation</text>
+<text x="450.0" y="311.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">written at every stage</text>
+</svg>

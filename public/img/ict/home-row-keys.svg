@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Home row keys for touch typing</title>
+<desc id="d">The home row of a keyboard for touch typing. The left hand&#x27;s little, ring, middle and index fingers rest on A, S, D and F; the right hand&#x27;s index, middle, ring and little fingers rest on J, K, L and the semicolon. The F and J keys have small raised bumps so the index fingers can find them without looking. The thumbs rest on the space bar.</desc>
+<defs></defs>
+<rect width="900" height="330" rx="20" fill="#f8fafc"/>
+<text x="250.0" y="50.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Left hand</text>
+<text x="660.0" y="50.0" font-size="17" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Right hand</text>
+<rect x="95.0" y="100.0" width="70.0" height="70.0" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="130.0" y="131.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A</text>
+<text x="130.0" y="192.0" font-size="13" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">little</text>
+<rect x="167.0" y="100.0" width="70.0" height="70.0" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="202.0" y="131.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">S</text>
+<text x="202.0" y="192.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ring</text>
+<rect x="239.0" y="100.0" width="70.0" height="70.0" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="274.0" y="131.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">D</text>
+<text x="274.0" y="192.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">middle</text>
+<rect x="311.0" y="100.0" width="70.0" height="70.0" rx="8" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="346.0" y="131.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">F</text>
+<line x1="337.0" y1="156.0" x2="355.0" y2="156.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="346.0" y="192.0" font-size="13" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">index</text>
+<rect x="383.0" y="100.0" width="70.0" height="70.0" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="418.0" y="131.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">G</text>
+<rect x="455.0" y="100.0" width="70.0" height="70.0" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="490.0" y="131.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">H</text>
+<rect x="527.0" y="100.0" width="70.0" height="70.0" rx="8" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="562.0" y="131.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">J</text>
+<line x1="553.0" y1="156.0" x2="571.0" y2="156.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+<text x="562.0" y="192.0" font-size="13" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">index</text>
+<rect x="599.0" y="100.0" width="70.0" height="70.0" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="634.0" y="131.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">K</text>
+<text x="634.0" y="192.0" font-size="13" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">middle</text>
+<rect x="671.0" y="100.0" width="70.0" height="70.0" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="706.0" y="131.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">L</text>
+<text x="706.0" y="192.0" font-size="13" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">ring</text>
+<rect x="743.0" y="100.0" width="70.0" height="70.0" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="778.0" y="131.0" font-size="24" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">;</text>
+<text x="778.0" y="192.0" font-size="13" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">little</text>
+<rect x="239.0" y="230.0" width="430.0" height="44.0" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="454.0" y="252.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">space bar: thumbs</text>
+<text x="450.0" y="312.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">The bumps on F and J let the index fingers find the home row without looking.</text>
+</svg>

@@ -494,6 +494,58 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
     description:
       'Types of malware, how computer viruses spread and their symptoms, hacking, phishing and SIM swap fraud, and protection: antivirus, firewall, encryption and 2FA.',
   },
+  // Nov 2026: ICT / Computer Studies, batch 3b: "flowchart symbols", "algorithm and pseudocode",
+  // "data types in programming", "program development life cycle", "uses of ICT", "computer lab rules".
+  '/wassce/ict-computer-studies/algorithms-flowcharts-and-pseudocode': {
+    title: 'Algorithms and Flowcharts: Notes and Questions | WASSCE',
+    description:
+      'WASSCE ICT notes and practice questions on algorithms, flowcharts and pseudocode: flowchart symbols, sequence, selection, loops and trace tables.',
+  },
+  '/wassce/ict-computer-studies/algorithms-flowcharts-and-pseudocode/algorithms-flowchart-symbols-and-pseudocode': {
+    title: 'Flowchart Symbols, Algorithms and Pseudocode | WASSCE ICT',
+    description:
+      'What an algorithm is, flowchart symbols and their meaning, writing pseudocode, sequence, selection and iteration with worked flowcharts, and trace tables.',
+  },
+  '/wassce/ict-computer-studies/programming-concepts': {
+    title: 'Programming Concepts: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on programming concepts: variables, data types, operators, truth tables, arrays, subprograms and errors.',
+  },
+  '/wassce/ict-computer-studies/programming-concepts/variables-data-types-operators-and-errors': {
+    title: 'Variables, Data Types and Operators | WASSCE ICT',
+    description:
+      'Programming concepts explained: variables and constants, data types, arithmetic, relational and logical operators, arrays, functions, and types of errors.',
+  },
+  '/wassce/ict-computer-studies/introduction-to-programming': {
+    title: 'Introduction to Programming: Notes and Questions | WASSCE',
+    description:
+      'WASSCE ICT notes and practice questions on programming: the program development life cycle, IPO charts, QBASIC and Python, and good program qualities.',
+  },
+  '/wassce/ict-computer-studies/introduction-to-programming/program-development-life-cycle-and-first-programs': {
+    title: 'Program Development Life Cycle, First Programs | WASSCE ICT',
+    description:
+      'The stages of the program development life cycle, IPO charts, keywords and comments, and simple QBASIC and Python programs for area, temperature and interest.',
+  },
+  '/wassce/ict-computer-studies/ict-and-society': {
+    title: 'ICT and Society: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on ICT and society: uses of ICT in each sector, e-commerce, telemedicine, the digital divide and ICT careers.',
+  },
+  '/wassce/ict-computer-studies/ict-and-society/uses-and-effects-of-ict-in-society': {
+    title: 'Uses and Effects of ICT in Society | WASSCE ICT',
+    description:
+      'Uses of ICT in education, health, banking, agriculture and government, e-learning and e-commerce, positive and negative effects, the digital divide, careers.',
+  },
+  '/wassce/ict-computer-studies/practical-computer-skills': {
+    title: 'Practical Computer Skills: Notes and Questions | WASSCE',
+    description:
+      'WASSCE ICT notes and practice questions on practical skills: lab rules, ergonomics, RSI and eye strain, touch typing, computer ports and troubleshooting.',
+  },
+  '/wassce/ict-computer-studies/practical-computer-skills/computer-lab-safety-ergonomics-ports-and-troubleshooting': {
+    title: 'Computer Lab Rules, Ergonomics and Ports | WASSCE ICT',
+    description:
+      'Computer laboratory safety rules, ergonomics and health problems, touch typing and home row keys, ports such as USB and HDMI, and basic troubleshooting.',
+  },
 }
 
 /**

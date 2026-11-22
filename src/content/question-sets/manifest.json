@@ -1048,6 +1048,20 @@
   "questions": 35
  },
  {
+  "name": "ict_set4_p1",
+  "label": "ICT: set 4 (algorithms, flowcharts and pseudocode, programming concepts, introduction to programming, ICT and society, practical skills)",
+  "subject_slug": "ict-computer-studies",
+  "version": "44dc5bd9d476",
+  "papers": [
+   "0099457c-891d-56d3-b761-014d44b016fd",
+   "36d0cdd2-43fd-5450-b151-293438994040",
+   "a02a754d-8e9d-5a76-9ddf-014bd2efd4ff",
+   "27dc7bd3-6c92-55f6-80a3-4e82f1ea74ac",
+   "c9917653-e8da-5895-826b-c010a26b7e43"
+  ],
+  "questions": 36
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",
