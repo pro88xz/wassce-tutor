@@ -78,10 +78,13 @@ function QuestionPage() {
 
   return (
     <article className="mx-auto max-w-2xl space-y-6 pt-2">
-      <p className="dash-eyebrow">
-        Your question for today{subject ? ` · ${subject.name}` : ''}
-        {topic ? ` · ${topic.name}` : ''}
-      </p>
+      <div className="space-y-2">
+        <p className="dash-eyebrow">
+          Your question for today{subject ? ` · ${subject.name}` : ''}
+          {topic ? ` · ${topic.name}` : ''}
+        </p>
+        {chosen === undefined && <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Try today's question</h1>}
+      </div>
 
       {chosen !== undefined && (
         <section aria-live="polite" className="answer-live dash-card overflow-hidden p-6 text-center sm:p-7">
@@ -115,7 +118,7 @@ function QuestionPage() {
       </ol>
 
       <section className="dash-card space-y-3 p-5 sm:p-6" aria-labelledby="next-title">
-        <h2 id="next-title" className="text-lg font-bold tracking-tight">{right ? 'Keep going' : 'Make it stick'}</h2>
+        <h2 id="next-title" className="text-lg font-bold tracking-tight">{chosen === undefined || right ? 'Keep going' : 'Make it stick'}</h2>
         <div className="grid gap-2.5 sm:grid-cols-2">
           <Link
             to={user ? '/' : '/auth'}
@@ -134,7 +137,7 @@ function QuestionPage() {
           {lessons && (
             <a href={lessons} className="flex min-h-14 items-center gap-3 rounded-2xl border bg-card px-4 py-3 text-sm font-semibold transition hover:border-primary/40 hover:bg-muted/40">
               <BookOpen className="h-5 w-5 shrink-0 text-primary" aria-hidden />
-              <span className="flex-1">{right ? `${topic!.name} lessons` : `Revise ${topic!.name}`}</span>
+              <span className="flex-1">{chosen === undefined || right ? `${topic!.name} lessons` : `Revise ${topic!.name}`}</span>
             </a>
           )}
         </div>
