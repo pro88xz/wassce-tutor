@@ -20,17 +20,28 @@ const GOOGLE = 'https://accounts.google.com'
 /** Google Analytics (src/lib/analytics.ts): gtag.js, and the hosts it reports to. */
 const GA_SCRIPT = 'https://www.googletagmanager.com'
 const GA_CONNECT = ['https://*.google-analytics.com', 'https://*.analytics.google.com', 'https://*.googletagmanager.com']
+/**
+ * Google AdSense (src/lib/ads.ts): the tag loads more of its own scripts, shows
+ * each ad in a frame, and reports views and clicks, from these Google hosts.
+ * Google publishes no fixed list (it recommends a nonce-based policy, which
+ * prerendered pages cannot carry), so these are its ad and ad-quality domains
+ * by wildcard. If an ad space stays empty, look for "Refused to" in the
+ * browser console and add the host it names.
+ */
+const ADS = ['https://*.googlesyndication.com', 'https://*.doubleclick.net', 'https://*.adtrafficquality.google', 'https://fundingchoicesmessages.google.com']
+const ADS_SCRIPT = [...ADS, 'https://*.googletagservices.com', 'https://adservice.google.com']
+const ADS_FRAME = [...ADS, 'https://www.google.com']
 
 const BASE = {
   'default-src': ["'self'"],
   // The site's API when the page is served from the Android app (https://localhost).
-  'connect-src': ["'self'", 'https://wasscetutor.com', `https://${SUPABASE}`, `wss://${SUPABASE}`, GOOGLE, 'https://www.googleapis.com', 'https://oauth2.googleapis.com', ...GA_CONNECT],
+  'connect-src': ["'self'", 'https://wasscetutor.com', `https://${SUPABASE}`, `wss://${SUPABASE}`, GOOGLE, 'https://www.googleapis.com', 'https://oauth2.googleapis.com', ...GA_CONNECT, ...ADS, 'https://adservice.google.com'],
   // Photographs and question images may be on any https host; never http.
   'img-src': ["'self'", 'data:', 'blob:', 'https:'],
   'font-src': ["'self'", 'data:'],
   // KaTeX positions maths with inline styles.
   'style-src': ["'self'", "'unsafe-inline'", GOOGLE],
-  'frame-src': [GOOGLE],
+  'frame-src': [GOOGLE, ...ADS_FRAME],
   'worker-src': ["'self'", 'blob:'],
   'manifest-src': ["'self'"],
   // Pronunciation and listening clips (public/audio), which the Android app loads from the site.
@@ -49,7 +60,7 @@ const serialise = (directives) =>
 export function headerPolicy() {
   return serialise({
     ...BASE,
-    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT, 'https://pagead2.googlesyndication.com'],
+    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT, ...ADS_SCRIPT],
     // Header-only directives: a <meta> policy cannot carry these.
     'frame-ancestors': ["'none'"],
     'upgrade-insecure-requests': [],
@@ -69,7 +80,7 @@ export function pagePolicy(html) {
   for (const [, attrs, body] of html.matchAll(INLINE_SCRIPT)) {
     if (isExecutable(attrs) && body.length > 0) hashes.add(`'sha256-${crypto.createHash('sha256').update(body, 'utf8').digest('base64')}'`)
   }
-  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT, 'https://pagead2.googlesyndication.com'] })
+  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT, ...ADS_SCRIPT] })
 }
 
 const META = /<meta http-equiv="Content-Security-Policy"[^>]*>/i

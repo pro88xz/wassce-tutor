@@ -1,5 +1,5 @@
 import { createRootRoute, HeadContent, Outlet, Scripts, useNavigate, useRouterState } from '@tanstack/react-router'
-import { lazy, Suspense, useEffect, useRef } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { useIsFetching } from '@tanstack/react-query'
 import { BottomNav } from '@/components/BottomNav'
@@ -14,6 +14,7 @@ import { PublicHeader } from '@/components/public/PublicHeader'
 import { WorkspaceBar } from '@/components/shell/WorkspaceBar'
 import { useSendToSignIn } from '@/lib/use-send-to-sign-in'
 import { needsAccount } from '@/lib/return-to'
+import { adsAllowed, adsRunning, clearAdsReload, hasStoredSession, isAppPath, reloadWithoutAds } from '@/lib/ads'
 import { SITE } from '@/lib/seo'
 import { analyticsScript, GA_MEASUREMENT_ID } from '@/lib/analytics'
 import { PROMO_HIDDEN_UNTIL_KEY } from '@/lib/app-promo'
@@ -41,14 +42,17 @@ const ReactQueryDevtools = import.meta.env.PROD
 //    AuthProvider removes "app-boot" once the session check finishes.
 //  - hides the app banner ("promo-hidden") for visitors who closed it or are
 //    on iPhone/iPad (src/lib/app-promo.ts)
+//  - pauses Google ads on the student's dashboard ("/" with a stored session)
+//    and in the Android app (src/lib/ads.ts)
 // It must act only once per document. The router re-inserts head scripts when
 // it renders a route in the browser, which runs this again; without the guard
 // that second run put "app-boot" back for anyone signed in, and after signing
 // out the landing page stayed hidden behind the spinner until a reload.
 const BOOT_SCRIPT = `(function(){try{if(window.__wtBooted)return;window.__wtBooted=1;var d=document.documentElement;
 if(localStorage.getItem('wassce_theme')==='sepia')d.classList.add('dark');
-var C=window.Capacitor;if(C&&C.isNativePlatform&&C.isNativePlatform())d.classList.add('native-app');
-for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&/^sb-.+-auth-token$/.test(k)){d.classList.add('app-boot');break}}
+var C=window.Capacitor,n=C&&C.isNativePlatform&&C.isNativePlatform(),s=0;if(n)d.classList.add('native-app');
+for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&/^sb-.+-auth-token$/.test(k)){d.classList.add('app-boot');s=1;break}}
+if(n||(s&&location.pathname==='/')){window.__wtAdsPaused=1;(window.adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1}
 if(+localStorage.getItem('${PROMO_HIDDEN_UNTIL_KEY}')>Date.now()||/iPhone|iPad|iPod/.test(navigator.userAgent))d.classList.add('promo-hidden');
 }catch(e){}})();`
 
@@ -94,22 +98,35 @@ export const Route = createRootRoute({
   // defaultSsr: false would otherwise apply here too). Children stay
   // client-only unless they set `ssr: true` themselves.
   ssr: true,
+  // Leaving a page that shows ads for the app or the dashboard: open it as a
+  // fresh page, so no ad follows them in (src/lib/ads.ts).
+  beforeLoad: ({ location, preload }) => {
+    if (typeof window === 'undefined' || preload || !adsRunning()) return
+    if (adsAllowed(location.pathname, hasStoredSession())) return
+    if (reloadWithoutAds(location.href)) return new Promise<never>(() => {})
+  },
   shellComponent: RootDocument,
   component: RootComponent,
   notFoundComponent: NotFoundPage,
 })
 
 function RootDocument({ children }: { children: ReactNode }) {
+  // Google AdSense, on public pages only (src/lib/ads.ts). Decided once per
+  // document: the prerendered public pages carry the tag, /_shell does not.
+  const pathname = useRouterState({ select: (st) => st.location.pathname })
+  const [adTag] = useState(() => !isAppPath(pathname))
   return (
     // The boot script adds classes to <html> before React hydrates.
     <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9121922395304175"
-          crossOrigin="anonymous"
-        />
+        {adTag && (
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9121922395304175"
+            crossOrigin="anonymous"
+          />
+        )}
       </head>
       <body>
         {children}
@@ -168,9 +185,25 @@ function useRoleHome(pathname: string) {
   }, [role, isAdmin, pathname, navigate])
 }
 
+/**
+ * Signed in on a page that shows ads where they may not (the homepage turning
+ * into the dashboard): load it afresh once, so the boot script pauses ads.
+ */
+function useNoAdsWhenSignedIn(pathname: string) {
+  const { user } = useAuth()
+  useEffect(() => {
+    if (!adsRunning() || adsAllowed(pathname, !!user || hasStoredSession())) {
+      clearAdsReload()
+      return
+    }
+    reloadWithoutAds(window.location.href, true)
+  }, [pathname, user])
+}
+
 function RootComponent() {
   const pathname = useRouterState({ select: (st) => st.location.pathname })
   useSignInForAppPages()
+  useNoAdsWhenSignedIn(pathname)
   useRoleHome(pathname)
   const studentNav = useHasBottomNav(pathname)
   const roleWorkspace = pathname === '/tutor-dashboard' || pathname.startsWith('/tutor-dashboard/') || pathname === '/affiliate-dashboard'
