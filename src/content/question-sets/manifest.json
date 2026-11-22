@@ -1034,6 +1034,20 @@
   "questions": 62
  },
  {
+  "name": "ict_set3_p1",
+  "label": "ICT: set 3 (networks, the Internet and email, mobile technology, computer ethics, viruses and cybersecurity)",
+  "subject_slug": "ict-computer-studies",
+  "version": "43a42ddd842a",
+  "papers": [
+   "7e5c7587-956d-58f7-84ed-7327a347faca",
+   "def176de-2414-598a-8b0c-606d4460f25c",
+   "d36141c2-aba7-5cd3-8979-6c25cb2ba09f",
+   "3eff2bb6-23f6-5035-9e7c-fd950d3934b2",
+   "cd681388-a7be-5f83-8f6d-da9f7f44e772"
+  ],
+  "questions": 35
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",

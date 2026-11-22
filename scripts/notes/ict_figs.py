@@ -11,6 +11,7 @@ https://wasscetutor.com/img/ict/<name>.svg. All drawn by WASSCE Tutor.
 
 from __future__ import annotations
 
+import itertools
 import math
 import sys
 from pathlib import Path
@@ -932,6 +933,364 @@ def bitmap_vs_vector():
     s.text(vx, oy + n * p + 30, "enlarged: edges stay smooth", size=15, color=INK)
     s.text(vx, oy + n * p + 54, "best for logos and drawings (.svg, .ai)", size=15, color=MUTED)
     s.text(vx, oy + n * p + 78, "red squares: points that define the curve", size=13, color=RED)
+    return s
+
+
+# ═══ Networks, the Internet, mobile, ethics and security ════════════════════
+
+def node(s: Svg, x, y, label="", col=BLUE, fill=F_BLUE, w=56, h=38, size=13):
+    """A small computer: a screen on a stand, with a label underneath."""
+    s.rect(x - w / 2, y - h / 2, w, h - 8, fill=fill, stroke=col, width=2, rx=4)
+    s.line(x, y + h / 2 - 8, x, y + h / 2 - 2, color=col, width=2)
+    s.line(x - 10, y + h / 2 - 2, x + 10, y + h / 2 - 2, color=col, width=2)
+    if label:
+        s.text(x, y + h / 2 + 12, label, size=size, color=INK)
+
+
+@fig
+def network_topologies():
+    s = Svg(880, 560, "Network topologies",
+            "Four network topologies. Bus: every computer joins one main cable, the backbone, with a terminator at "
+            "each end; a break in the backbone stops the network. Star: every computer has its own cable to a "
+            "central switch; if one cable fails only that computer is cut off, but if the switch fails all are. "
+            "Ring: each computer joins the next to form a closed loop, and data passes round in one direction. "
+            "Mesh: every computer is linked to every other, so there are many routes and the network keeps working "
+            "if a link fails.")
+    panels = [(220, 40, "Bus", BLUE, "one backbone cable; a break stops all"),
+              (660, 40, "Star", GREEN, "a central switch; most common in LANs"),
+              (220, 300, "Ring", ORANGE, "a closed loop; data goes one way round"),
+              (660, 300, "Mesh", PURPLE, "many links; works if one fails")]
+    for cx, top, name, col, note in panels:
+        s.rect(cx - 205, top, 410, 240, fill="#ffffff", stroke=GRID_C, width=1.5, rx=12)
+        s.text(cx, top + 24, name, size=19, color=col, weight="bold")
+        s.text(cx, top + 222, note, size=14, color=MUTED)
+    # bus
+    by = 160
+    s.line(50, by, 390, by, color=BLUE, width=4)
+    for x in (50, 390):
+        s.rect(x - 5, by - 12, 10, 24, fill=BLUE, stroke=BLUE, width=1)
+    for i, x in enumerate((95, 175, 255, 335)):
+        y = by - 62 if i % 2 == 0 else by + 52
+        node(s, x, y, "", BLUE, F_BLUE)
+        s.line(x, by, x, y + (19 if i % 2 == 0 else -19), color=BLUE, width=2.5)
+    s.text(60, by + 26, "terminator", size=12, color=MUTED, anchor="start")
+    # star
+    hx, hy = 660, 152
+    s.rect(hx - 34, hy - 16, 68, 32, fill=F_GREEN, stroke=GREEN, width=2.5, rx=6)
+    s.text(hx, hy, "switch", size=13, color=GREEN, weight="bold")
+    for ang in (200, 250, 290, 340, 20, 160):
+        x = hx + 150 * math.cos(math.radians(ang)) * 1.15
+        y = hy + 62 * math.sin(math.radians(ang)) + (8 if math.sin(math.radians(ang)) > 0 else -4)
+        s.line(hx + (34 if x > hx + 30 else -34 if x < hx - 30 else 0), hy, x, y, color=GREEN, width=2.5)
+        node(s, x, y, "", GREEN, F_GREEN, w=48, h=34)
+    # ring
+    rx_, ry_ = 220, 430
+    pts = [(rx_ + 120 * math.cos(math.radians(a)), ry_ + 60 * math.sin(math.radians(a))) for a in range(-90, 270, 60)]
+    for (x1, y1), (x2, y2) in zip(pts, pts[1:] + pts[:1]):
+        s.mid_arrow(x1, y1, x2, y2, color=ORANGE, width=2.5, at=0.55, size=11)
+    for x, y in pts:
+        node(s, x, y, "", ORANGE, F_AMBER, w=46, h=32)
+    # mesh
+    mx, my = 660, 430
+    mp = [(mx + 130 * math.cos(math.radians(a)), my + 62 * math.sin(math.radians(a))) for a in (-90, -18, 54, 126, 198)]
+    for (x1, y1), (x2, y2) in itertools.combinations(mp, 2):
+        s.line(x1, y1, x2, y2, color=PURPLE, width=2)
+    for x, y in mp:
+        node(s, x, y, "", PURPLE, F_PURPLE, w=46, h=32)
+    return s
+
+
+@fig
+def types_of_networks():
+    s = Svg(840, 420, "Types of networks by area",
+            "Four types of network drawn as nested areas from smallest to largest. A personal area network (PAN) "
+            "covers a few metres around one person, such as a phone linked to wireless earphones by Bluetooth. A "
+            "local area network (LAN) covers one building or site, such as a school computer laboratory. A "
+            "metropolitan area network (MAN) covers a town or city, such as a university's campuses across Freetown. "
+            "A wide area network (WAN) covers countries and continents; the Internet is the largest WAN.")
+    levels = [("WAN", "wide area network", "countries and continents: the Internet, a bank's branches", PURPLE, F_PURPLE),
+              ("MAN", "metropolitan area network", "a town or city: campuses across Freetown", TEAL, F_TEAL),
+              ("LAN", "local area network", "one building or site: a school computer lab", GREEN, F_GREEN),
+              ("PAN", "personal area network", "a few metres: phone and Bluetooth earphones", ORANGE, F_AMBER)]
+    cx = 420
+    for i, (ab, name, ex, col, fill) in enumerate(levels):
+        w, top, bot = 800 - i * 160, 20 + i * 80, 400 - i * 20
+        s.rect(cx - w / 2, top, w, bot - top, fill=fill, stroke=col, width=2.5, rx=28)
+        s.text(cx, top + 28, f"{ab}: {name}", size=18 if i < 3 else 16, color=col, weight="bold")
+        s.text(cx, top + 52, ex, size=14, color=INK)
+    return s
+
+
+def join(s: Svg, a, b, color=MUTED, width=2.5, gap=6):
+    """A plain line (a cable) between the edges of two boxes."""
+    ax, ay, aw, ah = a
+    bx, by, bw, bh = b
+    if abs(bx - ax) * ah > abs(by - ay) * aw:
+        s.line(ax + math.copysign(aw / 2 + gap, bx - ax), ay, bx - math.copysign(bw / 2 + gap, bx - ax), by, color=color, width=width)
+    else:
+        s.line(ax, ay + math.copysign(ah / 2 + gap, by - ay), bx, by - math.copysign(bh / 2 + gap, by - ay), color=color, width=width)
+
+
+@fig
+def small_office_network():
+    s = Svg(900, 480, "Devices in a small network",
+            "A small office or school network. Three desktop computers and a shared printer are joined by cables "
+            "to a switch. A wireless access point, also cabled to the switch, lets a laptop and a phone join by "
+            "Wi-Fi. The switch connects to a router with a firewall, which links the local network to the outside; "
+            "a modem connects the router to the Internet service provider (ISP), which connects to the Internet.")
+    s.rect(24, 14, 478, 452, fill="none", stroke=GREEN, width=2, rx=16, dash="8 6")
+    s.text(40, 450, "local area network (LAN)", size=14, color=GREEN, anchor="start", weight="bold")
+    sw = box(s, 330, 285, 140, 54, ["Switch", "joins LAN devices"], GREEN, F_GREEN, size=16)
+    for i in range(3):
+        y = 190 + i * 95
+        node(s, 90, y, f"PC {i + 1}", BLUE, F_BLUE)
+        s.line(120, y - 4, sw[0] - 76, sw[1] + (i - 1) * 16, color=MUTED, width=2.5)
+    pr = box(s, 330, 400, 130, 48, ["Printer", "shared by all"], INK, F_GREY, size=15)
+    join(s, sw, pr)
+    ap = box(s, 330, 135, 150, 50, ["Access point", "gives Wi-Fi"], ORANGE, F_AMBER, size=15)
+    join(s, ap, sw)
+    lx, ly = 160, 66
+    s.rect(lx - 24, ly - 16, 48, 28, fill="#ffffff", stroke=ORANGE, width=2, rx=3)
+    s.polygon([(lx - 30, ly + 12), (lx + 30, ly + 12), (lx + 35, ly + 19), (lx - 35, ly + 19)], fill="#ffffff", stroke=ORANGE, width=2)
+    s.text(lx, ly + 34, "laptop", size=12, color=MUTED)
+    px, py = 470, 60
+    s.rect(px - 12, py - 22, 24, 42, fill="#ffffff", stroke=ORANGE, width=2, rx=5)
+    s.text(px, py + 36, "phone", size=12, color=MUTED)
+    s.line(255, 122, lx + 38, ly + 14, color=ORANGE, width=2, dash="5 5")
+    s.line(405, 122, px - 16, py + 10, color=ORANGE, width=2, dash="5 5")
+    s.label(226, 84, "Wi-Fi", size=12, color=ORANGE)
+    s.label(428, 82, "Wi-Fi", size=12, color=ORANGE)
+    rt = box(s, 590, 285, 140, 56, ["Router", "+ firewall"], RED, F_RED, size=17)
+    join(s, sw, rt)
+    md = box(s, 590, 400, 140, 50, ["Modem", "or fibre box"], PURPLE, F_PURPLE, size=16)
+    join(s, rt, md)
+    isp = box(s, 790, 400, 150, 50, ["ISP", "e.g. a mobile network"], TEAL, F_TEAL, size=16)
+    join(s, md, isp)
+    net = box(s, 790, 285, 150, 56, ["The Internet", "networks worldwide"], BLUE, F_BLUE, size=17)
+    join(s, isp, net)
+    return s
+
+
+@fig
+def client_server_vs_peer_to_peer():
+    s = Svg(880, 380, "Client-server and peer-to-peer networks",
+            "Two ways of organising a network. In a client-server network, one powerful central computer, the "
+            "server, stores the shared files, programs and security, and the other computers, the clients, ask it "
+            "for services. In a peer-to-peer network there is no server: every computer is equal and shares its "
+            "own files and printer directly with the others.")
+    s.text(220, 30, "Client-server", size=19, color=BLUE, weight="bold")
+    srv = box(s, 220, 110, 150, 64, ["Server", "files, security, backups"], BLUE, F_BLUE, size=16)
+    for i, x in enumerate((90, 220, 350)):
+        node(s, x, 265, f"client {i + 1}", BLUE, "#ffffff")
+        s.line(x, 246, srv[0] + (x - 220) * 0.35, srv[1] + 32, color=BLUE, width=2.5)
+    s.text(220, 345, "clients ask; the server provides", size=14, color=MUTED)
+    s.line(440, 20, 440, 360, color=GRID_C, width=2)
+    s.text(660, 30, "Peer-to-peer", size=19, color=GREEN, weight="bold")
+    pts = [(560, 120), (760, 120), (560, 260), (760, 260)]
+    for (x1, y1), (x2, y2) in itertools.combinations(pts, 2):
+        s.line(x1, y1, x2, y2, color=GREEN, width=2)
+    for i, (x, y) in enumerate(pts):
+        s.rect(x - 34, y - 22, 68, 44, fill=F_GREEN, stroke=GREEN, width=2, rx=6)
+        s.text(x, y, f"peer {i + 1}", size=13, color=GREEN, weight="bold")
+    s.text(660, 345, "every computer is equal and shares", size=14, color=MUTED)
+    return s
+
+
+@fig
+def how_the_internet_works():
+    s = Svg(900, 430, "How a web page reaches you",
+            "Five steps when you open a website on a phone. 1, you type the address, such as www.example.com, in "
+            "the browser. 2, a DNS server looks up the domain name and returns the server's IP address. 3, the "
+            "request travels through your Wi-Fi router or mobile network to your Internet service provider and on "
+            "across the Internet. 4, the web server sends back the page's files. 5, the browser displays the page.")
+    you = box(s, 110, 130, 170, 70, ["1. Your browser", "www.example.com"], PURPLE, F_PURPLE, size=16)
+    dns = box(s, 110, 320, 170, 70, ["2. DNS server", "name → 203.0.113.10"], ORANGE, F_AMBER, size=15)
+    isp = box(s, 360, 130, 170, 70, ["3. Router and ISP", "your way in"], TEAL, F_TEAL, size=16)
+    net = box(s, 590, 130, 150, 70, ["The Internet", "linked networks"], BLUE, F_BLUE, size=16)
+    web = box(s, 800, 130, 150, 70, ["4. Web server", "sends the page"], GREEN, F_GREEN, size=16)
+    s.arrow(80, 167, 80, 283, color=ORANGE, width=2.5)
+    s.arrow(140, 283, 140, 167, color=ORANGE, width=2.5)
+    s.text(162, 225, "IP address", size=13, color=ORANGE, anchor="start")
+    s.text(58, 225, "name", size=13, color=ORANGE, anchor="end")
+    link(s, you, isp)
+    link(s, isp, net)
+    link(s, net, web)
+    s.path("M 800 167 C 800 300, 360 300, 200 168", color=GREEN, width=2.5, arrow="end", dash="7 5")
+    s.label(520, 262, "5. the page comes back and is shown", size=14, color=GREEN)
+    s.text(450, 400, "Every device on the Internet has an IP address; DNS turns names people remember into these numbers.", size=13, color=MUTED)
+    return s
+
+
+@fig
+def url_and_email_address():
+    s = Svg(900, 400, "Parts of a web address and an email address",
+            "Top: the web address https://www.example.com/results/sss3.html divided into its parts: https is the "
+            "protocol, www the host, example the domain name, .com the top-level domain, and /results/sss3.html the "
+            "path to the page. Bottom: the email address aminata.kamara@example.com divided into the user name "
+            "aminata.kamara, the at sign, and the domain example.com.")
+
+    def parts(y, segs, title_text):
+        s.text(30, y - 52, title_text, size=16, color=MUTED, anchor="start", weight="bold")
+        widths = [len(t) * 15.7 + 18 for t, _, _ in segs]
+        x = (900 - sum(widths)) / 2
+        for k, ((t, lab, col), w) in enumerate(zip(segs, widths)):
+            s.rect(x + 1, y - 22, w - 2, 44, fill={BLUE: F_BLUE, GREEN: F_GREEN, ORANGE: F_AMBER, PURPLE: F_PURPLE, RED: F_RED, TEAL: F_TEAL}[col], stroke=col, width=2, rx=5)
+            s.raw(f'<text x="{x + w / 2:.1f}" y="{y}" font-size="26" fill="{INK}" text-anchor="middle" dominant-baseline="middle" '
+                  f'font-family="Consolas, Courier New, monospace">{t}</text>')
+            drop = 26 if k % 2 else 0
+            s.line(x + w / 2, y + 24, x + w / 2, y + 40 + drop, color=col, width=2)
+            s.text(x + w / 2, y + 54 + drop, lab, size=14, color=col, weight="bold")
+            x += w
+
+    parts(110, [("https://", "protocol", PURPLE), ("www.", "host", TEAL), ("example", "domain name", BLUE),
+                (".com", "top-level domain", ORANGE), ("/results/sss3.html", "path to the page", GREEN)], "Web address (URL)")
+    parts(296, [("aminata.kamara", "user name", BLUE), ("@", "at", RED), ("example.com", "domain (mail provider)", GREEN)], "Email address")
+    return s
+
+
+@fig
+def mobile_generations():
+    s = Svg(900, 330, "Generations of mobile networks",
+            "A timeline of mobile network generations. 1G, 1980s: analogue voice calls only. 2G, 1990s: digital "
+            "calls and SMS text messages. 3G, 2000s: mobile Internet and video calls. 4G, 2010s: fast mobile "
+            "broadband for streaming video and apps. 5G, 2020s: very fast speeds and very low delay, for many "
+            "connected devices.")
+    gens = [("1G", "1980s", ["analogue", "voice calls only"], MUTED, F_GREY),
+            ("2G", "1990s", ["digital calls,", "SMS texts"], ORANGE, F_AMBER),
+            ("3G", "2000s", ["mobile Internet,", "video calls"], TEAL, F_TEAL),
+            ("4G", "2010s", ["fast broadband,", "HD video, apps"], BLUE, F_BLUE),
+            ("5G", "2020s", ["very fast, tiny delay,", "many devices (IoT)"], PURPLE, F_PURPLE)]
+    s.arrow(40, 120, 870, 120, color=INK, width=3)
+    for i, (g, yr, lines, col, fill) in enumerate(gens):
+        x = 110 + i * 170
+        s.circle(x, 120, 30, fill=fill, stroke=col, width=3)
+        s.text(x, 120, g, size=20, color=col, weight="bold")
+        s.text(x, 72, yr, size=15, color=MUTED, weight="bold")
+        box(s, x, 215, 156, 64, lines, col, "#ffffff", size=14, bold_first=False)
+        s.line(x, 150, x, 183, color=col, width=2)
+    s.text(450, 300, "Each generation is faster and carries more data than the one before.", size=14, color=MUTED)
+    return s
+
+
+@fig
+def smartphone_parts():
+    s = Svg(860, 560, "Parts of a smartphone",
+            "Front and back of a smartphone with labelled parts. Front: the touch screen, the front camera, the "
+            "earpiece speaker, the microphone and the charging port (USB-C). Back: the rear cameras with flash, and "
+            "the fingerprint sensor. Inside: the battery, the SIM card tray, the processor and memory, and sensors "
+            "such as GPS, the accelerometer and the gyroscope.")
+    # front
+    fx, fy, fw, fh = 210, 50, 200, 420
+    s.rect(fx, fy, fw, fh, fill="#1e293b", stroke=INK, width=3, rx=28)
+    s.rect(fx + 10, fy + 34, fw - 20, fh - 64, fill="#e0f2fe", stroke="none", width=0, rx=6)
+    for r in range(4):
+        for c in range(4):
+            s.rect(fx + 26 + c * 42, fy + 56 + r * 52, 30, 30, fill=[F_BLUE, F_GREEN, F_AMBER, F_PURPLE][(r + c) % 4], stroke="none", width=0, rx=8)
+    s.circle(fx + fw / 2, fy + 18, 6, fill="#475569", stroke="#94a3b8", width=1.5)
+    s.rect(fx + fw / 2 - 24, fy + 8, 14, 4, fill="#94a3b8", stroke="none", width=0, rx=2)
+    s.rect(fx + fw / 2 - 16, fy + fh - 6, 32, 8, fill="#94a3b8", stroke=INK, width=1.5, rx=3)
+    s.dot(fx + fw / 2 + 40, fy + fh - 14, r=2.5, color="#94a3b8")
+    s.text(fx + fw / 2, fy + fh + 30, "front", size=15, color=MUTED, weight="bold")
+    # back
+    bx = 470
+    s.rect(bx, fy, fw, fh, fill="#334155", stroke=INK, width=3, rx=28)
+    s.rect(bx + 18, fy + 20, 74, 104, fill="#1e293b", stroke="#64748b", width=2, rx=16)
+    for k in range(2):
+        s.circle(bx + 55, fy + 48 + k * 48, 17, fill="#0f172a", stroke="#94a3b8", width=2)
+    s.dot(bx + 110, fy + 40, r=6, color="#fde68a")
+    s.circle(bx + fw / 2, fy + 200, 22, fill="#475569", stroke="#94a3b8", width=2)
+    s.rect(bx + fw - 4, fy + 120, 8, 40, fill="#94a3b8", stroke=INK, width=1, rx=2)
+    s.text(bx + fw / 2, fy + fh + 30, "back", size=15, color=MUTED, weight="bold")
+
+    def lab(px, py, lx, ly, t, anchor):
+        s.polyline([(px, py), (lx + (8 if anchor == "end" else -8), ly), (lx, ly)], color=MUTED, width=1.8)
+        s.dot(px, py, r=4, color=RED)
+        s.text(lx + (-6 if anchor == "end" else 6), ly, t, size=15, color=INK, anchor=anchor)
+
+    lab(fx + fw / 2, fy + 18, 178, 60, "Front camera", "end")
+    lab(fx + fw / 2 - 17, fy + 10, 178, 30, "Earpiece speaker", "end")
+    lab(fx + 60, fy + 250, 178, 250, "Touch screen", "end")
+    lab(fx + fw / 2 + 40, fy + fh - 14, 178, 430, "Microphone", "end")
+    lab(fx + fw / 2, fy + fh - 2, 178, 470, "USB-C charging port", "end")
+    lab(bx + 55, fy + 20, 700, 30, "Rear cameras", "start")
+    lab(bx + 110, fy + 40, 700, 100, "Flash", "start")
+    lab(bx + fw / 2 + 22, fy + 200, 700, 250, "Fingerprint sensor", "start")
+    lab(bx + fw, fy + 140, 700, 160, "SIM card tray", "start")
+    s.rect(700, 330, 150, 140, fill="#ffffff", stroke=GRID_C, width=1.5, rx=10)
+    s.text(775, 350, "Inside", size=15, color=BLUE, weight="bold")
+    for k, t in enumerate(["battery", "processor (SoC)", "RAM and storage", "GPS receiver", "accelerometer"]):
+        s.text(712, 376 + k * 21, "• " + t, size=13, color=INK, anchor="start")
+    return s
+
+
+@fig
+def intellectual_property():
+    s = Svg(880, 340, "Types of intellectual property",
+            "Intellectual property is protected in four main ways. Copyright protects original creative works such "
+            "as books, music, films, photographs and software. A patent protects a new invention. A trademark "
+            "protects a brand name, logo or slogan. A trade secret protects private business knowledge such as a "
+            "recipe or a method.")
+    root = box(s, 440, 50, 300, 52, ["Intellectual property", "creations of the mind"], PURPLE, F_PURPLE, size=18)
+    kids = [("Copyright", ["books, music, films,", "photos, software"], BLUE, F_BLUE),
+            ("Patent", ["new inventions", "and processes"], GREEN, F_GREEN),
+            ("Trademark", ["brand names, logos,", "slogans"], ORANGE, F_AMBER),
+            ("Trade secret", ["recipes, formulas,", "private methods"], TEAL, F_TEAL)]
+    bs = []
+    for i, (t, lines, col, fill) in enumerate(kids):
+        x = 115 + i * 217
+        bs.append(box(s, x, 175, 190, 46, t, col, fill, size=17))
+        s.text(x, 225, lines[0], size=14, color=INK)
+        s.text(x, 245, lines[1], size=14, color=INK)
+    tree(s, root, bs)
+    s.text(440, 305, "Copying software, music or films without permission breaks copyright: it is piracy.", size=14, color=MUTED)
+    return s
+
+
+@fig
+def types_of_malware():
+    s = Svg(900, 400, "Types of malware",
+            "Malware, short for malicious software, includes: a virus, which attaches itself to a file and spreads "
+            "when the file is opened; a worm, which copies itself across networks on its own; a Trojan horse, which "
+            "pretends to be a useful program; ransomware, which locks or encrypts files and demands payment; "
+            "spyware, which secretly records what you do, including keyloggers that record what you type; and "
+            "adware, which shows unwanted advertisements.")
+    root = box(s, 450, 50, 340, 52, ["Malware", "malicious software"], RED, F_RED, size=19)
+    kids = [("Virus", "joins a file; spreads when it is run"),
+            ("Worm", "spreads across networks by itself"),
+            ("Trojan horse", "pretends to be a useful program"),
+            ("Ransomware", "locks files and demands payment"),
+            ("Spyware", "secretly records what you do"),
+            ("Adware", "floods the screen with adverts")]
+    bs = []
+    for i, (t, d) in enumerate(kids):
+        x = 160 + (i % 3) * 290
+        y = 170 + (i // 3) * 120
+        bs.append(box(s, x, y, 272, 64, [t, d], RED if i < 4 else ORANGE, "#ffffff", size=17))
+    tree(s, root, bs[:3])
+    for b, a in zip(bs[3:], bs[:3]):
+        s.line(a[0], a[1] + 32, b[0], b[1] - 32, color=MUTED, width=2)
+    s.text(450, 385, "All of them run without the owner's permission; up-to-date antivirus software finds and removes them.", size=14, color=MUTED)
+    return s
+
+
+@fig
+def two_factor_authentication():
+    s = Svg(900, 300, "Two-factor authentication",
+            "Two-factor authentication in four steps: 1, enter your user name and password, something you know; "
+            "2, the service sends a one-time code to your phone, something you have; 3, type the code; 4, you are "
+            "let in. A thief who has stolen only your password cannot get past step 3.")
+    steps = [("1. Password", ["something you", "know"], BLUE, F_BLUE),
+             ("2. Code sent", ["to your phone:", "something you have"], ORANGE, F_AMBER),
+             ("3. Enter code", ["e.g. 482 913,", "valid for minutes"], PURPLE, F_PURPLE),
+             ("4. Access", ["only with", "both factors"], GREEN, F_GREEN)]
+    prev = None
+    for i, (t, lines, col, fill) in enumerate(steps):
+        b = box(s, 115 + i * 223, 120, 190, 100, [t] + lines, col, fill, size=17)
+        if prev:
+            link(s, prev, b)
+        prev = b
+    s.text(450, 230, "A stolen password alone is not enough: the thief does not have your phone.", size=15, color=RED, weight="bold")
+    s.text(450, 262, "Never share a one-time code with anyone, even someone who says they work for the bank.", size=14, color=MUTED)
     return s
 
 

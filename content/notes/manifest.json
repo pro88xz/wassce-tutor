@@ -10133,6 +10133,71 @@
       "rights_verified": true,
       "original_author": "WASSCE Tutor editorial team",
       "auto_sync": true
+    },
+    {
+      "file": "ict-computer-studies-networks-and-networking.md",
+      "subject": "ICT / Computer Studies",
+      "topic": "networks-and-networking",
+      "title": "Computer networks: types, topologies, devices and media",
+      "slug": "types-of-networks-topologies-and-network-devices",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "ict-computer-studies-the-internet-and-email.md",
+      "subject": "ICT / Computer Studies",
+      "topic": "the-internet-and-email",
+      "title": "The Internet and email: how the Web works, URLs and sending email",
+      "slug": "internet-www-url-and-email",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "ict-computer-studies-mobile-technology-and-ict-gadgets.md",
+      "subject": "ICT / Computer Studies",
+      "topic": "mobile-technology-and-ict-gadgets",
+      "title": "Mobile technology: networks, smartphones, mobile money and gadgets",
+      "slug": "mobile-technology-smartphones-and-mobile-money",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "ict-computer-studies-computer-ethics.md",
+      "subject": "ICT / Computer Studies",
+      "topic": "computer-ethics",
+      "title": "Computer ethics: privacy, copyright, piracy and netiquette",
+      "slug": "computer-ethics-privacy-copyright-and-piracy",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "ict-computer-studies-computer-viruses-and-cybersecurity.md",
+      "subject": "ICT / Computer Studies",
+      "topic": "computer-viruses-and-cybersecurity",
+      "title": "Computer viruses and cybersecurity: malware, attacks and protection",
+      "slug": "computer-viruses-malware-and-how-to-stay-safe",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
     }
   ]
 }

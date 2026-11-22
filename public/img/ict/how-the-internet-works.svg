@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">How a web page reaches you</title>
+<desc id="d">Five steps when you open a website on a phone. 1, you type the address, such as www.example.com, in the browser. 2, a DNS server looks up the domain name and returns the server&#x27;s IP address. 3, the request travels through your Wi-Fi router or mobile network to your Internet service provider and on across the Internet. 4, the web server sends back the page&#x27;s files. 5, the browser displays the page.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="900" height="430" rx="20" fill="#f8fafc"/>
+<rect x="25.0" y="95.0" width="170.0" height="70.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="110.0" y="119.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Your browser</text>
+<text x="110.0" y="141.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">www.example.com</text>
+<rect x="25.0" y="285.0" width="170.0" height="70.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="110.0" y="309.5" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. DNS server</text>
+<text x="110.0" y="330.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">name → 203.0.113.10</text>
+<rect x="275.0" y="95.0" width="170.0" height="70.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="360.0" y="119.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Router and ISP</text>
+<text x="360.0" y="141.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">your way in</text>
+<rect x="515.0" y="95.0" width="150.0" height="70.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="590.0" y="119.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">The Internet</text>
+<text x="590.0" y="141.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">linked networks</text>
+<rect x="725.0" y="95.0" width="150.0" height="70.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="800.0" y="119.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. Web server</text>
+<text x="800.0" y="141.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sends the page</text>
+<line x1="80.0" y1="167.0" x2="80.0" y2="283.0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<line x1="140.0" y1="283.0" x2="140.0" y2="167.0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="162.0" y="225.0" font-size="13" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="normal">IP address</text>
+<text x="58.0" y="225.0" font-size="13" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="normal">name</text>
+<line x1="201.0" y1="130.0" x2="269.0" y2="130.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="451.0" y1="130.0" x2="509.0" y2="130.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="671.0" y1="130.0" x2="719.0" y2="130.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<path d="M 800 167 C 800 300, 360 300, 200 168" stroke="#15803d" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5" marker-end="url(#a15803d)"/>
+<rect x="377.8" y="250.0" width="284.4" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="520.0" y="262.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">5. the page comes back and is shown</text>
+<text x="450.0" y="400.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Every device on the Internet has an IP address; DNS turns names people remember into these numbers.</text>
+</svg>

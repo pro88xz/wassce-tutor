@@ -456,6 +456,7 @@ SETS += [
     for n, label in (
         (1, "ICT: set 1 (history and classes of computers, data, number systems, the CPU, input, output, memory and storage)"),
         (2, "ICT: set 2 (software, operating systems, programming languages, computer operations, files, word processing, spreadsheets, databases, presentations and graphics)"),
+        (3, "ICT: set 3 (networks, the Internet and email, mobile technology, computer ethics, viruses and cybersecurity)"),
     )
 ]
 

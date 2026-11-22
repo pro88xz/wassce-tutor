@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Two-factor authentication</title>
+<desc id="d">Two-factor authentication in four steps: 1, enter your user name and password, something you know; 2, the service sends a one-time code to your phone, something you have; 3, type the code; 4, you are let in. A thief who has stolen only your password cannot get past step 3.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="900" height="300" rx="20" fill="#f8fafc"/>
+<rect x="20.0" y="70.0" width="190.0" height="100.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="115.0" y="97.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Password</text>
+<text x="115.0" y="120.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">something you</text>
+<text x="115.0" y="143.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">know</text>
+<rect x="243.0" y="70.0" width="190.0" height="100.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="338.0" y="97.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Code sent</text>
+<text x="338.0" y="120.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to your phone:</text>
+<text x="338.0" y="143.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">something you have</text>
+<line x1="216.0" y1="120.0" x2="237.0" y2="120.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="466.0" y="70.0" width="190.0" height="100.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="561.0" y="97.0" font-size="17" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Enter code</text>
+<text x="561.0" y="120.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">e.g. 482 913,</text>
+<text x="561.0" y="143.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">valid for minutes</text>
+<line x1="439.0" y1="120.0" x2="460.0" y2="120.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="689.0" y="70.0" width="190.0" height="100.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="784.0" y="97.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. Access</text>
+<text x="784.0" y="120.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">only with</text>
+<text x="784.0" y="143.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">both factors</text>
+<line x1="662.0" y1="120.0" x2="683.0" y2="120.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="450.0" y="230.0" font-size="15" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">A stolen password alone is not enough: the thief does not have your phone.</text>
+<text x="450.0" y="262.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Never share a one-time code with anyone, even someone who says they work for the bank.</text>
+</svg>

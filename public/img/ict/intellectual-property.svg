@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Types of intellectual property</title>
+<desc id="d">Intellectual property is protected in four main ways. Copyright protects original creative works such as books, music, films, photographs and software. A patent protects a new invention. A trademark protects a brand name, logo or slogan. A trade secret protects private business knowledge such as a recipe or a method.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="880" height="340" rx="20" fill="#f8fafc"/>
+<rect x="290.0" y="24.0" width="300.0" height="52.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="440.0" y="38.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Intellectual property</text>
+<text x="440.0" y="62.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">creations of the mind</text>
+<rect x="20.0" y="152.0" width="190.0" height="46.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="115.0" y="175.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Copyright</text>
+<text x="115.0" y="225.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">books, music, films,</text>
+<text x="115.0" y="245.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">photos, software</text>
+<rect x="237.0" y="152.0" width="190.0" height="46.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="332.0" y="175.0" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Patent</text>
+<text x="332.0" y="225.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">new inventions</text>
+<text x="332.0" y="245.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and processes</text>
+<rect x="454.0" y="152.0" width="190.0" height="46.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="549.0" y="175.0" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Trademark</text>
+<text x="549.0" y="225.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">brand names, logos,</text>
+<text x="549.0" y="245.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">slogans</text>
+<rect x="671.0" y="152.0" width="190.0" height="46.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="766.0" y="175.0" font-size="17" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Trade secret</text>
+<text x="766.0" y="225.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">recipes, formulas,</text>
+<text x="766.0" y="245.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">private methods</text>
+<line x1="440.0" y1="80.0" x2="440.0" y2="98.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="115.0" y1="98.0" x2="766.0" y2="98.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="115.0" y1="98.0" x2="115.0" y2="146.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="332.0" y1="98.0" x2="332.0" y2="146.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="549.0" y1="98.0" x2="549.0" y2="146.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="766.0" y1="98.0" x2="766.0" y2="146.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="440.0" y="305.0" font-size="14" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Copying software, music or films without permission breaks copyright: it is piracy.</text>
+</svg>

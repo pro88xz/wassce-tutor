@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Types of networks by area</title>
+<desc id="d">Four types of network drawn as nested areas from smallest to largest. A personal area network (PAN) covers a few metres around one person, such as a phone linked to wireless earphones by Bluetooth. A local area network (LAN) covers one building or site, such as a school computer laboratory. A metropolitan area network (MAN) covers a town or city, such as a university&#x27;s campuses across Freetown. A wide area network (WAN) covers countries and continents; the Internet is the largest WAN.</desc>
+<defs></defs>
+<rect width="840" height="420" rx="20" fill="#f8fafc"/>
+<rect x="20.0" y="20.0" width="800.0" height="380.0" rx="28" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="420.0" y="48.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">WAN: wide area network</text>
+<text x="420.0" y="72.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">countries and continents: the Internet, a bank&#x27;s branches</text>
+<rect x="100.0" y="100.0" width="640.0" height="280.0" rx="28" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="420.0" y="128.0" font-size="18" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">MAN: metropolitan area network</text>
+<text x="420.0" y="152.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a town or city: campuses across Freetown</text>
+<rect x="180.0" y="180.0" width="480.0" height="180.0" rx="28" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="420.0" y="208.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">LAN: local area network</text>
+<text x="420.0" y="232.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">one building or site: a school computer lab</text>
+<rect x="260.0" y="260.0" width="320.0" height="80.0" rx="28" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="420.0" y="288.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PAN: personal area network</text>
+<text x="420.0" y="312.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a few metres: phone and Bluetooth earphones</text>
+</svg>

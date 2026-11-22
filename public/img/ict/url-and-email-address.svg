@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Parts of a web address and an email address</title>
+<desc id="d">Top: the web address https://www.example.com/results/sss3.html divided into its parts: https is the protocol, www the host, example the domain name, .com the top-level domain, and /results/sss3.html the path to the page. Bottom: the email address aminata.kamara@example.com divided into the user name aminata.kamara, the at sign, and the domain example.com.</desc>
+<defs></defs>
+<rect width="900" height="400" rx="20" fill="#f8fafc"/>
+<text x="30.0" y="58.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">Web address (URL)</text>
+<rect x="84.2" y="88.0" width="141.6" height="44.0" rx="5" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="155.0" y="110" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">https://</text>
+<line x1="155.0" y1="134.0" x2="155.0" y2="150.0" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+<text x="155.0" y="164.0" font-size="14" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">protocol</text>
+<rect x="227.8" y="88.0" width="78.8" height="44.0" rx="5" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+<text x="267.2" y="110" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">www.</text>
+<line x1="267.2" y1="134.0" x2="267.2" y2="176.0" stroke="#0f766e" stroke-width="2" stroke-linecap="round"/>
+<text x="267.2" y="190.0" font-size="14" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">host</text>
+<rect x="308.6" y="88.0" width="125.9" height="44.0" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="371.5" y="110" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">example</text>
+<line x1="371.5" y1="134.0" x2="371.5" y2="150.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="371.5" y="164.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">domain name</text>
+<rect x="436.4" y="88.0" width="78.8" height="44.0" rx="5" fill="#fef3c7" stroke="#ea580c" stroke-width="2"/>
+<text x="475.8" y="110" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">.com</text>
+<line x1="475.8" y1="134.0" x2="475.8" y2="176.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+<text x="475.8" y="190.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">top-level domain</text>
+<rect x="517.2" y="88.0" width="298.6" height="44.0" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="666.5" y="110" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">/results/sss3.html</text>
+<line x1="666.5" y1="134.0" x2="666.5" y2="150.0" stroke="#15803d" stroke-width="2" stroke-linecap="round"/>
+<text x="666.5" y="164.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">path to the page</text>
+<text x="30.0" y="244.0" font-size="16" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">Email address</text>
+<rect x="219.9" y="274.0" width="235.8" height="44.0" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="337.8" y="296" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">aminata.kamara</text>
+<line x1="337.8" y1="320.0" x2="337.8" y2="336.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="337.8" y="350.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">user name</text>
+<rect x="457.7" y="274.0" width="31.7" height="44.0" rx="5" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="473.6" y="296" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">@</text>
+<line x1="473.6" y1="320.0" x2="473.6" y2="362.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<text x="473.6" y="376.0" font-size="14" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">at</text>
+<rect x="491.4" y="274.0" width="188.7" height="44.0" rx="5" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="585.8" y="296" font-size="26" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">example.com</text>
+<line x1="585.8" y1="320.0" x2="585.8" y2="336.0" stroke="#15803d" stroke-width="2" stroke-linecap="round"/>
+<text x="585.8" y="350.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">domain (mail provider)</text>
+</svg>
