@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Common computer ports</title>
+<desc id="d">Eight common ports with what they connect: USB-A for flash drives, mice, keyboards and printers; USB-C for charging, data and displays on newer devices; HDMI for sending video and sound to a monitor, TV or projector; VGA, an older analogue video port for monitors and projectors; Ethernet (RJ-45) for a wired network cable; the 3.5 mm audio jack for headphones and speakers; the SD card slot for camera memory cards; and the power socket for the charger.</desc>
+<defs></defs>
+<rect width="900" height="420" rx="20" fill="#f8fafc"/>
+<rect x="15.0" y="33.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="45.0" y="53.0" width="140.0" height="74.0" rx="8" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<rect x="85.0" y="79.0" width="60.0" height="22.0" rx="2" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
+<rect x="93.0" y="79.0" width="44.0" height="8.0" rx="0" fill="#94a3b8" stroke="none" stroke-width="0"/>
+<text x="115.0" y="151.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">USB-A</text>
+<text x="115.0" y="175.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">flash drives, mouse,</text>
+<text x="115.0" y="193.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">keyboard, printer</text>
+<rect x="238.0" y="33.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="268.0" y="53.0" width="140.0" height="74.0" rx="8" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<rect x="312.0" y="81.0" width="52.0" height="18.0" rx="9" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
+<rect x="323.0" y="88.0" width="30.0" height="4.0" rx="2" fill="#94a3b8" stroke="none" stroke-width="0"/>
+<text x="338.0" y="151.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">USB-C</text>
+<text x="338.0" y="175.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">charging, data and</text>
+<text x="338.0" y="193.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">video on new devices</text>
+<rect x="461.0" y="33.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="491.0" y="53.0" width="140.0" height="74.0" rx="8" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<polygon points="529.0,77.0 593.0,77.0 593.0,89.0 585.0,99.0 537.0,99.0 529.0,89.0" fill="#0f172a" stroke="#94a3b8" stroke-width="2" stroke-linejoin="round"/>
+<text x="561.0" y="151.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">HDMI</text>
+<text x="561.0" y="175.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">digital video and</text>
+<text x="561.0" y="193.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">sound to a TV or projector</text>
+<rect x="684.0" y="33.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="714.0" y="53.0" width="140.0" height="74.0" rx="8" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<polygon points="744.0,73.0 824.0,73.0 816.0,103.0 752.0,103.0" fill="#1d4ed8" stroke="#93c5fd" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="764.0" cy="81.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="774.0" cy="81.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="784.0" cy="81.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="794.0" cy="81.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="804.0" cy="81.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="768.0" cy="90.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="778.0" cy="90.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="788.0" cy="90.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="798.0" cy="90.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="808.0" cy="90.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="764.0" cy="99.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="774.0" cy="99.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="784.0" cy="99.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="794.0" cy="99.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<circle cx="804.0" cy="99.0" r="2.2" fill="#e0f2fe" stroke="#e0f2fe" stroke-width="1"/>
+<text x="784.0" y="151.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">VGA</text>
+<text x="784.0" y="175.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">older analogue video</text>
+<text x="784.0" y="193.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">to monitors, projectors</text>
+<rect x="15.0" y="233.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="45.0" y="253.0" width="140.0" height="74.0" rx="8" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<polygon points="91.0,271.0 139.0,271.0 139.0,301.0 125.0,301.0 125.0,309.0 105.0,309.0 105.0,301.0 91.0,301.0" fill="#0f172a" stroke="#94a3b8" stroke-width="2" stroke-linejoin="round"/>
+<line x1="98.0" y1="273.0" x2="98.0" y2="281.0" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="102.8" y1="273.0" x2="102.8" y2="281.0" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="107.6" y1="273.0" x2="107.6" y2="281.0" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="112.4" y1="273.0" x2="112.4" y2="281.0" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="117.2" y1="273.0" x2="117.2" y2="281.0" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="122.0" y1="273.0" x2="122.0" y2="281.0" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="126.8" y1="273.0" x2="126.8" y2="281.0" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="131.6" y1="273.0" x2="131.6" y2="281.0" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+<text x="115.0" y="351.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Ethernet (RJ-45)</text>
+<text x="115.0" y="375.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">wired network</text>
+<text x="115.0" y="393.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">cable</text>
+<rect x="238.0" y="233.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="268.0" y="253.0" width="140.0" height="74.0" rx="8" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<circle cx="338.0" cy="290.0" r="15.0" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="338.0" cy="290.0" r="6.0" fill="#475569" stroke="none" stroke-width="0"/>
+<text x="338.0" y="351.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Audio jack (3.5 mm)</text>
+<text x="338.0" y="375.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">headphones,</text>
+<text x="338.0" y="393.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">speakers, microphone</text>
+<rect x="461.0" y="233.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="491.0" y="253.0" width="140.0" height="74.0" rx="8" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<rect x="525.0" y="285.0" width="72.0" height="10.0" rx="2" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
+<text x="561.0" y="351.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SD card slot</text>
+<text x="561.0" y="375.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">camera and phone</text>
+<text x="561.0" y="393.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">memory cards</text>
+<rect x="684.0" y="233.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="714.0" y="253.0" width="140.0" height="74.0" rx="8" fill="#334155" stroke="#0f172a" stroke-width="2"/>
+<circle cx="784.0" cy="290.0" r="14.0" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
+<circle cx="784.0" cy="290.0" r="4.0" fill="#94a3b8" stroke="#94a3b8" stroke-width="1"/>
+<text x="784.0" y="351.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Power (DC in)</text>
+<text x="784.0" y="375.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the charger or</text>
+<text x="784.0" y="393.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">power adapter</text>
+</svg>

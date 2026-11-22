@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">An input-process-output chart</title>
+<desc id="d">An input-process-output (IPO) chart for a program that finds the area and perimeter of a rectangle. Input: the length and the width. Process: area = length × width and perimeter = 2 × (length + width). Output: the area and the perimeter.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="860" height="300" rx="20" fill="#f8fafc"/>
+<rect x="35.0" y="40.0" width="180.0" height="44.0" rx="8" fill="#2563eb" stroke="#2563eb" stroke-width="2.5"/>
+<text x="125.0" y="62.0" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">INPUT</text>
+<rect x="35.0" y="84.0" width="180.0" height="150.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="125.0" y="130.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">length</text>
+<text x="125.0" y="174.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">width</text>
+<rect x="270.0" y="40.0" width="320.0" height="44.0" rx="8" fill="#ea580c" stroke="#ea580c" stroke-width="2.5"/>
+<text x="430.0" y="62.0" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PROCESS</text>
+<rect x="270.0" y="84.0" width="320.0" height="150.0" rx="0" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="430.0" y="130.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">area = length × width</text>
+<text x="430.0" y="174.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">perimeter = 2 × (length + width)</text>
+<rect x="645.0" y="40.0" width="180.0" height="44.0" rx="8" fill="#15803d" stroke="#15803d" stroke-width="2.5"/>
+<text x="735.0" y="62.0" font-size="18" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">OUTPUT</text>
+<rect x="645.0" y="84.0" width="180.0" height="150.0" rx="0" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="735.0" y="130.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">area</text>
+<text x="735.0" y="174.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">perimeter</text>
+<line x1="222.0" y1="160.0" x2="264.0" y2="160.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<line x1="596.0" y1="160.0" x2="638.0" y2="160.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="430.0" y="272.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Program: find the area and perimeter of a rectangle</text>
+</svg>

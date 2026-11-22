@@ -10198,6 +10198,71 @@
       "rights_verified": true,
       "original_author": "WASSCE Tutor editorial team",
       "auto_sync": true
+    },
+    {
+      "file": "ict-computer-studies-algorithms-flowcharts-and-pseudocode.md",
+      "subject": "ICT / Computer Studies",
+      "topic": "algorithms-flowcharts-and-pseudocode",
+      "title": "Algorithms, flowcharts and pseudocode: sequence, selection and loops",
+      "slug": "algorithms-flowchart-symbols-and-pseudocode",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "ict-computer-studies-programming-concepts.md",
+      "subject": "ICT / Computer Studies",
+      "topic": "programming-concepts",
+      "title": "Programming concepts: variables, data types, operators, arrays and errors",
+      "slug": "variables-data-types-operators-and-errors",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "ict-computer-studies-introduction-to-programming.md",
+      "subject": "ICT / Computer Studies",
+      "topic": "introduction-to-programming",
+      "title": "Introduction to programming: the development life cycle and first programs",
+      "slug": "program-development-life-cycle-and-first-programs",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "ict-computer-studies-ict-and-society.md",
+      "subject": "ICT / Computer Studies",
+      "topic": "ict-and-society",
+      "title": "ICT and society: uses, effects, the digital divide and careers",
+      "slug": "uses-and-effects-of-ict-in-society",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "ict-computer-studies-practical-computer-skills.md",
+      "subject": "ICT / Computer Studies",
+      "topic": "practical-computer-skills",
+      "title": "Practical computer skills: safety, ergonomics, typing, ports and troubleshooting",
+      "slug": "computer-lab-safety-ergonomics-ports-and-troubleshooting",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
     }
   ]
 }

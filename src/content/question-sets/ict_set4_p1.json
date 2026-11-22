@@ -1,0 +1,1426 @@
+{
+ "name": "ict_set4_p1",
+ "label": "ICT: set 4 (algorithms, flowcharts and pseudocode, programming concepts, introduction to programming, ICT and society, practical skills)",
+ "subject_slug": "ict-computer-studies",
+ "papers": [
+  {
+   "id": "0099457c-891d-56d3-b761-014d44b016fd",
+   "topic": "Algorithms, Flowcharts, and Pseudocode",
+   "title": "Algorithms, Flowcharts, and Pseudocode: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on algorithms, flowcharts, and pseudocode, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 160,
+   "questions": [
+    {
+     "id": "5d270f4f-583b-5a6f-8471-74564ee451d6",
+     "key": "ict-al-01",
+     "stem": "Which flowchart symbol is a parallelogram?",
+     "image_url": null,
+     "explanation": "The parallelogram is used for input (such as reading a mark) and output (such as printing a result).\n\n**Why the other options are wrong**\n\n- decision: A decision is drawn as a diamond.\n- process: A process is drawn as a rectangle.\n- terminal: A terminal (Start or Stop) is drawn as an oval or rounded rectangle.",
+     "position": 1,
+     "options": [
+      {
+       "id": "1eb4c09d-ad92-5aa5-a49c-8093cd779bd6",
+       "label": "A",
+       "content": "decision",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4f1188e0-836e-58dc-8461-6717bbacc39d",
+       "label": "B",
+       "content": "input/output",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c3c60d21-2fc4-558a-ba75-9ece358aa194",
+       "label": "C",
+       "content": "process",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9fea5887-f918-5022-abf3-b56f8400eb5c",
+       "label": "D",
+       "content": "terminal",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cfe9d35e-089c-5f5a-bbf6-c27acb2848ef",
+     "key": "ict-al-02",
+     "stem": "The property of an algorithm that says it must end after a limited number of steps is",
+     "image_url": null,
+     "explanation": "A good algorithm is finite (it stops), definite (clear), effective (each step can be done), and has input and output.\n\n**Why the other options are wrong**\n\n- definiteness: Definiteness means every step is clear and has one meaning.\n- effectiveness: Effectiveness means each step can actually be carried out.\n- portability: Portability describes programs that run on different computers, not algorithms ending.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e55d4236-f0d0-57fa-bf14-1caae0c247a4",
+       "label": "A",
+       "content": "definiteness",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07b8234e-d63a-51ba-9a3f-b5d46a609c43",
+       "label": "B",
+       "content": "effectiveness",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a64a9788-ad86-5a85-a705-a3ef67362999",
+       "label": "C",
+       "content": "portability",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6ab0aa89-294b-5187-a227-c08556a89fc8",
+       "label": "D",
+       "content": "finiteness",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c2f1fafc-2170-5550-a112-3f2545b27a83",
+     "key": "ict-al-03",
+     "stem": "The control structure in which a group of steps is repeated is",
+     "image_url": null,
+     "explanation": "Iteration (looping) repeats steps a fixed number of times (FOR) or while a condition is true (WHILE), or until a condition becomes true (REPEAT … UNTIL).\n\n**Why the other options are wrong**\n\n- sequence: Sequence carries out steps once each, in order.\n- selection: Selection chooses between paths; it does not repeat steps.\n- assignment: Assignment stores a value in a variable; it is a single step.",
+     "position": 3,
+     "options": [
+      {
+       "id": "26923d92-3a75-5564-8608-df812da73339",
+       "label": "A",
+       "content": "sequence",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4de19bf7-3a29-5055-954c-53b602629bc6",
+       "label": "B",
+       "content": "iteration",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "92c0f507-1450-5972-a02e-53a76798deb5",
+       "label": "C",
+       "content": "selection",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5ff7570e-ed28-5fb8-929a-298579c0af0b",
+       "label": "D",
+       "content": "assignment",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dceb6b49-762a-5563-bbb1-184c2a0c41da",
+     "key": "ict-al-04",
+     "stem": "Consider: SET total = 0; FOR k = 1 TO 4; SET total = total + k; NEXT k; PRINT total. What is printed?",
+     "image_url": null,
+     "explanation": "The loop adds k = 1, 2, 3 and 4 to total: 0 + 1 = 1, 1 + 2 = 3, 3 + 3 = 6, 6 + 4 = 10. So 10 is printed.\n\n**Why the other options are wrong**\n\n- 4: 4 is the last value of k, not the total.\n- 6: 6 is the total after only three passes (1 + 2 + 3).\n- 24: 24 is 1 × 2 × 3 × 4; the algorithm adds, it does not multiply.",
+     "position": 4,
+     "options": [
+      {
+       "id": "f4b9cdcb-e2f4-5a3c-963b-02507640c517",
+       "label": "A",
+       "content": "4",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b4319548-3621-5c20-b3e6-46b112357286",
+       "label": "B",
+       "content": "6",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "89844056-e6d6-5983-83de-66c89fccdb74",
+       "label": "C",
+       "content": "10",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c47c665b-48ad-5210-8e63-75e28af5569c",
+       "label": "D",
+       "content": "24",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "df8cd931-fbf9-5203-afab-7ae44eaeec8e",
+     "key": "ict-al-05",
+     "stem": "Which pseudocode statement correctly tests whether a number is greater than 100?",
+     "image_url": null,
+     "explanation": "Selection in pseudocode uses IF condition THEN … ELSE … ENDIF; the condition here is number > 100.\n\n**Why the other options are wrong**\n\n- WHILE number = 100: This tests for equality, and starts a loop rather than a test.\n- PRINT number > 100: PRINT outputs; it does not choose between paths.\n- INPUT number > 100: INPUT reads a value; it cannot test a condition.",
+     "position": 5,
+     "options": [
+      {
+       "id": "62f403ac-e3e5-5fa8-8b14-51865a8397b4",
+       "label": "A",
+       "content": "WHILE number = 100",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "136e13dc-db6d-5958-b306-4c15e854a2bf",
+       "label": "B",
+       "content": "PRINT number > 100",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2a3757c9-d034-516e-980a-695ea93f3869",
+       "label": "C",
+       "content": "INPUT number > 100",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b019ff28-93c6-5aed-a78c-fc23f04e1e36",
+       "label": "D",
+       "content": "IF number > 100 THEN",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "76805f1c-e840-549a-b71c-c62c09641e77",
+     "key": "ict-al-06",
+     "stem": "A table used to record the values of variables as an algorithm is worked through by hand is",
+     "image_url": null,
+     "explanation": "During a dry run, a trace table has a column for each variable, and a row is filled in each time a value changes.\n\n**Why the other options are wrong**\n\n- a truth table: A truth table lists the results of logical operations such as AND and OR.\n- an IPO chart: An IPO chart lists a program's inputs, processes and outputs.\n- a flowchart: A flowchart is a diagram of the steps, not a record of values.",
+     "position": 6,
+     "options": [
+      {
+       "id": "a310585f-c348-5283-a80a-0a9f48a382c0",
+       "label": "A",
+       "content": "a trace table",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4672a173-5eed-5312-b958-fdef2d8ef4e2",
+       "label": "B",
+       "content": "a truth table",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6b7e6acd-f763-51fa-98b6-852191cfe1ff",
+       "label": "C",
+       "content": "an IPO chart",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a7180ac2-3b89-5665-8566-04385fdafbc6",
+       "label": "D",
+       "content": "a flowchart",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8ec61dd4-f1db-5bf0-bfb4-255e840f63f9",
+     "key": "ict-al-07",
+     "stem": "A WHILE loop never stops because the variable in its condition is never changed. This is",
+     "image_url": null,
+     "explanation": "If the loop's condition can never become false, the loop repeats for ever. Increasing the counter inside the loop fixes it.\n\n**Why the other options are wrong**\n\n- a nested loop: A nested loop is a loop inside another loop.\n- a syntax error: The code may be grammatically correct; the loop just never ends.\n- a counter: A counter is the variable that should change but does not.",
+     "position": 7,
+     "options": [
+      {
+       "id": "08da0001-b9e3-5f9d-b73e-4ff4419c5e42",
+       "label": "A",
+       "content": "a nested loop",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "27a3258e-d8ba-52bf-b9ba-d54e45aae364",
+       "label": "B",
+       "content": "an infinite loop",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "519a78bf-1e1d-5aac-8777-db1a24ca8e42",
+       "label": "C",
+       "content": "a syntax error",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "67ec1826-0a00-56d3-a2c0-80503ab7a45f",
+       "label": "D",
+       "content": "a counter",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "36d0cdd2-43fd-5450-b151-293438994040",
+   "topic": "Programming Concepts",
+   "title": "Programming Concepts: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on programming concepts, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 161,
+   "questions": [
+    {
+     "id": "a81f569e-f034-5053-9024-e76605f8e5ce",
+     "key": "ict-pc-01",
+     "stem": "Which data type is most suitable for storing whether a student has paid school fees?",
+     "image_url": null,
+     "explanation": "A Boolean holds only True or False, which fits a yes/no question such as fees paid.\n\n**Why the other options are wrong**\n\n- integer: An integer holds whole numbers, not yes/no values.\n- real: A real holds numbers with decimal parts.\n- string: A string could hold the words, but Boolean holds exactly two values.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a23d53dd-e334-55e2-83fd-d6af7c419c83",
+       "label": "A",
+       "content": "integer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b8537f56-aa5f-5734-b664-828f68c217d5",
+       "label": "B",
+       "content": "real",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3f68e301-417d-5871-ba9f-0e1d7753acb6",
+       "label": "C",
+       "content": "Boolean",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fe3783cb-8d0b-5102-b37d-317bcb572276",
+       "label": "D",
+       "content": "string",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ef6ebfb9-50f3-57d0-bb24-91892bbaf2a7",
+     "key": "ict-pc-02",
+     "stem": "What is the value of 23 MOD 4?",
+     "image_url": null,
+     "explanation": "23 ÷ 4 = 5 remainder 3, because 4 × 5 = 20 and 23 − 20 = 3. MOD gives the remainder, so 23 MOD 4 = 3.\n\n**Why the other options are wrong**\n\n- 5: 5 is 23 DIV 4, the whole-number part of the division.\n- 4: 4 is the divisor, not the remainder.\n- 27: 27 is 23 + 4; MOD gives a remainder.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2dae2ae7-d65b-570a-ade3-7266b3092c1a",
+       "label": "A",
+       "content": "3",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8bf82336-c9b3-56e9-8542-92d4e79d7d66",
+       "label": "B",
+       "content": "4",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f8b2417a-717f-56e9-81a7-b74564ba94bf",
+       "label": "C",
+       "content": "5",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "660e8e16-64be-57af-acf1-2bee8288aa83",
+       "label": "D",
+       "content": "27",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7e449404-aec1-5047-9dd9-afa57d33ec16",
+     "key": "ict-pc-03",
+     "stem": "If x = True and y = False, which expression is True?",
+     "image_url": null,
+     "explanation": "OR is True when at least one value is True. x is True, so x OR y is True.\n\n**Why the other options are wrong**\n\n- x AND y: AND needs both to be True; y is False.\n- NOT x: NOT reverses True to False.\n- (NOT x) AND y: NOT x is False and y is False, so the result is False.",
+     "position": 3,
+     "options": [
+      {
+       "id": "79efbb1b-184b-597d-a811-cc5364b885ed",
+       "label": "A",
+       "content": "x AND y",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b43c9160-7b82-5d04-807c-7e1c8ab09cbb",
+       "label": "B",
+       "content": "NOT x",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c3aa928c-e468-5aa1-b94f-12a8634f5c3e",
+       "label": "C",
+       "content": "(NOT x) AND y",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ff3635ad-3f71-5c52-b639-61eaa3f3508c",
+       "label": "D",
+       "content": "x OR y",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "27dd6135-1eee-5716-831a-c3f5fee421dc",
+     "key": "ict-pc-04",
+     "stem": "Which of the following is a valid variable name in most programming languages?",
+     "image_url": null,
+     "explanation": "Identifiers start with a letter, contain only letters, digits and underscores, and are not reserved words.\n\n**Why the other options are wrong**\n\n- total marks: Spaces are not allowed in identifiers.\n- 2total: An identifier cannot start with a digit.\n- print: print is a reserved word in Python and cannot be used as a name.",
+     "position": 4,
+     "options": [
+      {
+       "id": "46815123-1f77-53d3-bfff-6649980b6cfc",
+       "label": "A",
+       "content": "total_marks",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "64f5a981-4393-54b3-82ba-7e0e133d2969",
+       "label": "B",
+       "content": "total marks",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2e4847dd-59d5-528e-8bda-3c0ab6b80cf4",
+       "label": "C",
+       "content": "2total",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9c940595-51c2-57e0-a46d-1cb4d2ab4618",
+       "label": "D",
+       "content": "print",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "906de8fe-cbc4-5ce3-8978-e30bdedf8f56",
+     "key": "ict-pc-05",
+     "stem": "A program runs but prints the average of five marks as the total divided by 4. This is",
+     "image_url": null,
+     "explanation": "A logic error is a mistake in the steps: the program runs but gives wrong results. Dividing by 5 corrects it.\n\n**Why the other options are wrong**\n\n- a syntax error: A syntax error stops the program from being translated at all.\n- a runtime error: A runtime error makes the program crash while running.\n- a hardware fault: The computer works correctly; the instructions are wrong.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2c558d6a-af42-535c-bcab-465f08a28cf7",
+       "label": "A",
+       "content": "a syntax error",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ed83a209-1b71-51be-ad5a-70438d498775",
+       "label": "B",
+       "content": "a logic error",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "182804cb-433c-56cc-9b02-695ffab0ddb1",
+       "label": "C",
+       "content": "a runtime error",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14546f73-41e4-5616-91e1-e4b079c473ef",
+       "label": "D",
+       "content": "a hardware fault",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e6dfca69-4bb2-52e6-97d7-0cae2147c638",
+     "key": "ict-pc-06",
+     "stem": "A program accepts marks from 0 to 100. Which of the following is boundary test data?",
+     "image_url": null,
+     "explanation": "Boundary (extreme) data lies at the edges of the allowed range: 0 and 100, with values just outside them such as -1 and 101.\n\n**Why the other options are wrong**\n\n- 57: 57 is normal data, well inside the range.\n- 150: 150 is erroneous data, outside the range.\n- -30: -30 is erroneous data, outside the range.",
+     "position": 6,
+     "options": [
+      {
+       "id": "793217b4-6fd8-5824-8a12-5a1c84778eba",
+       "label": "A",
+       "content": "57",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "52c12265-735e-57d2-81dd-02c085574b07",
+       "label": "B",
+       "content": "150",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2c16da32-d078-52f8-9ed4-5b7e15e311d4",
+       "label": "C",
+       "content": "100",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9c1f5267-2696-516b-965f-edf2dce83921",
+       "label": "D",
+       "content": "-30",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e70f0241-8dc7-5e16-b582-3469676dfa82",
+     "key": "ict-pc-07",
+     "stem": "An array marks holds 67, 82, 45, 90 and 73, with the first item at index 0. What is marks[2]?",
+     "image_url": null,
+     "explanation": "With indexes starting at 0: marks[0] = 67, marks[1] = 82, marks[2] = 45, marks[3] = 90, marks[4] = 73.\n\n**Why the other options are wrong**\n\n- 82: 82 is marks[1]; counting starts at index 0.\n- 90: 90 is marks[3].\n- 67: 67 is marks[0], the first item.",
+     "position": 7,
+     "options": [
+      {
+       "id": "4b28389d-3227-5959-84b5-1f1140929227",
+       "label": "A",
+       "content": "45",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "f7d924c2-e688-5136-9088-6f1e293d1d3c",
+       "label": "B",
+       "content": "67",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5f9b52b8-e018-5f9c-bc3e-a1bed8688be2",
+       "label": "C",
+       "content": "82",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "241711aa-2a0f-5d87-a2f9-fadb352f0e2f",
+       "label": "D",
+       "content": "90",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "09b0b8ab-8a7d-5f98-b286-ca1e1695730c",
+     "key": "ict-pc-08",
+     "stem": "A subprogram that sends a value back to the part of the program that called it is called",
+     "image_url": null,
+     "explanation": "A function returns a value, such as area_of_circle(7) returning 153.958; a procedure carries out a task without returning a value.\n\n**Why the other options are wrong**\n\n- a parameter: A parameter receives a value passed into a subprogram.\n- a constant: A constant is a fixed named value.\n- a comment: A comment is a note that the computer ignores.",
+     "position": 8,
+     "options": [
+      {
+       "id": "80eb910f-7878-5f2b-94c5-4a5f0f6a7a5f",
+       "label": "A",
+       "content": "a parameter",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "53ef3649-6fe1-5cd5-9be7-7ab064bcef68",
+       "label": "B",
+       "content": "a constant",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e3297971-4a9c-5882-b0ff-b0a6b73b920d",
+       "label": "C",
+       "content": "a comment",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eeaefd1f-00de-5387-94e9-0c2677fe1ab7",
+       "label": "D",
+       "content": "a function",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a02a754d-8e9d-5a76-9ddf-014bd2efd4ff",
+   "topic": "Introduction to Programming",
+   "title": "Introduction to Programming: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on introduction to programming, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 162,
+   "questions": [
+    {
+     "id": "6cf2e933-fc6e-53c0-b073-f81df23b904c",
+     "key": "ict-ip-01",
+     "stem": "In the program development life cycle, which stage comes immediately after coding?",
+     "image_url": null,
+     "explanation": "The order is problem definition, analysis, design, coding, testing and debugging, implementation and maintenance, with documentation throughout.\n\n**Why the other options are wrong**\n\n- problem definition: Problem definition is the first stage.\n- design: Design comes before coding.\n- maintenance: Maintenance comes after the program is in use.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b55dde21-a227-5cc9-b421-b73b92e0429d",
+       "label": "A",
+       "content": "testing and debugging",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3240390c-3f08-5bc6-a45e-f182319d9fbe",
+       "label": "B",
+       "content": "problem definition",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "38f68826-abfa-557a-b829-d258b2326197",
+       "label": "C",
+       "content": "design",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eaeb5862-35b9-5048-ac05-ac9806493277",
+       "label": "D",
+       "content": "maintenance",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6f232bc6-d432-51dc-ba7c-1d7c53880c6e",
+     "key": "ict-ip-02",
+     "stem": "In QBASIC, which statement is used to write a comment that the computer ignores?",
+     "image_url": null,
+     "explanation": "REM (short for remark) starts a comment that explains the program to people; an apostrophe (') does the same.\n\n**Why the other options are wrong**\n\n- PRINT: PRINT displays output on the screen.\n- INPUT: INPUT reads a value from the keyboard.\n- CLS: CLS clears the screen.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8fcfc671-1f82-577e-9465-0ba4b121d84e",
+       "label": "A",
+       "content": "PRINT",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "f36031f3-79c2-5b26-a032-5f1a5ce13416",
+       "label": "B",
+       "content": "REM",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6e9d72e2-5636-5871-a9e4-b8c44c2e3ef9",
+       "label": "C",
+       "content": "INPUT",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "101312cd-eb91-551c-a142-7ade0b1a90d3",
+       "label": "D",
+       "content": "CLS",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7dff718e-4e1c-5e68-8c8c-517f16a643a4",
+     "key": "ict-ip-03",
+     "stem": "A program contains A = 6, B = 4 and PRINT A + B * 2. What is displayed?",
+     "image_url": null,
+     "explanation": "Multiplication comes before addition: B × 2 = 4 × 2 = 8, then A + 8 = 6 + 8 = 14.\n\n**Why the other options are wrong**\n\n- 20: 20 adds first, (6 + 4) × 2; multiplication is done before addition.\n- 12: 12 is 6 × 2, leaving out B.\n- 10: 10 is A + B, leaving out the multiplication.",
+     "position": 3,
+     "options": [
+      {
+       "id": "e4c6cbd2-caaa-5453-b85b-0c4e30c0b76e",
+       "label": "A",
+       "content": "10",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b583905c-a706-5a33-bcb5-a7f40722daa0",
+       "label": "B",
+       "content": "12",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a0c92666-cdc2-565c-8fb6-b51bcdf2fcfd",
+       "label": "C",
+       "content": "14",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d180745f-75f8-5000-8a0e-579268cad583",
+       "label": "D",
+       "content": "20",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "30ee2c55-ccbf-55f1-8fb7-54de35a79691",
+     "key": "ict-ip-04",
+     "stem": "Changing a program after it is in use, to correct new errors or add features, is called program",
+     "image_url": null,
+     "explanation": "Maintenance is the last stage of the cycle and can lead back to problem definition when a new need arises.\n\n**Why the other options are wrong**\n\n- implementation: Implementation is installing the program and starting to use it.\n- analysis: Analysis finds the inputs, processes and outputs before design.\n- compilation: Compilation translates the program into machine code.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3b51cc94-6f26-5ed0-88d5-588dd8bca2ae",
+       "label": "A",
+       "content": "implementation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "844c1c60-86d9-5f10-8b6a-19339cf9e09e",
+       "label": "B",
+       "content": "analysis",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5968c6cd-cc2b-5f74-be43-21a1029e0062",
+       "label": "C",
+       "content": "maintenance",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "28bb5cfc-8a0d-5a4b-976e-43600c5a6553",
+       "label": "D",
+       "content": "compilation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1a157d6c-39a8-565b-bb70-d19c10274378",
+     "key": "ict-ip-05",
+     "stem": "A user manual that explains how to install and use a program is an example of",
+     "image_url": null,
+     "explanation": "User documentation is written for the people who use the program; technical documentation is for those who maintain it.\n\n**Why the other options are wrong**\n\n- technical documentation: Technical documentation explains how the program works, for programmers.\n- source code: Source code is the program itself.\n- an IPO chart: An IPO chart is a planning table of inputs, processes and outputs.",
+     "position": 5,
+     "options": [
+      {
+       "id": "2325b136-aec7-51ef-974f-283f1b81e0ab",
+       "label": "A",
+       "content": "technical documentation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1a1e6f15-d8b5-5c19-a5c2-df6f0019a836",
+       "label": "B",
+       "content": "source code",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "14119aa8-fd9a-5f7c-b62a-172ad6f88cda",
+       "label": "C",
+       "content": "an IPO chart",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aa420a0e-949c-565d-8222-4aa025a1a14e",
+       "label": "D",
+       "content": "user documentation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e3e515e7-72d9-5972-9fff-b5f1cfe76d0d",
+     "key": "ict-ip-06",
+     "stem": "In Python, why is float() used in length = float(input(\"Length: \"))?",
+     "image_url": null,
+     "explanation": "Python's input() always gives a string. float() converts it to a real number (int() to a whole number) so it can be used in calculations.\n\n**Why the other options are wrong**\n\n- to print the length on the screen: print() displays output; float() converts a value.\n- to make the program run faster: float() changes the data type; it does not change speed.\n- to store the length as a string: input() already returns a string; float() changes it to a number.",
+     "position": 6,
+     "options": [
+      {
+       "id": "7c6020b8-fce2-5de7-ad4b-95ad60700e52",
+       "label": "A",
+       "content": "input() returns text, and float() turns it into a number",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b18d3d2d-8fad-5171-a7a4-637fea416932",
+       "label": "B",
+       "content": "to print the length on the screen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fba6170f-baa0-5b04-ba1c-9b714f71a405",
+       "label": "C",
+       "content": "to make the program run faster",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "810dbe47-a2a9-5607-9c6e-35c57a018a15",
+       "label": "D",
+       "content": "to store the length as a string",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3b873009-78ad-597a-8cbd-1c2e79f5296b",
+     "key": "ict-ip-07",
+     "stem": "A program that combines an editor, a translator and a debugger in one package is",
+     "image_url": null,
+     "explanation": "An IDE, such as IDLE for Python or QB64 for BASIC, gives programmers the tools to write, translate, run and debug code in one place.\n\n**Why the other options are wrong**\n\n- an operating system: An operating system manages the whole computer.\n- a spreadsheet: A spreadsheet is an application for calculations.\n- a web browser: A browser displays web pages.",
+     "position": 7,
+     "options": [
+      {
+       "id": "5c4aa76f-8fb6-574c-917e-e64f22e1fd08",
+       "label": "A",
+       "content": "an operating system",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5618dcad-2eb3-5546-a2b2-097f13fd4d7c",
+       "label": "B",
+       "content": "an integrated development environment (IDE)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bbb59d40-51e9-5a20-b51f-362ab2f5854a",
+       "label": "C",
+       "content": "a spreadsheet",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f8cbd331-4304-53c1-88c9-c87962d420e8",
+       "label": "D",
+       "content": "a web browser",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "27dc7bd3-6c92-55f6-80a3-4e82f1ea74ac",
+   "topic": "ICT and Society",
+   "title": "ICT and Society: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on ict and society, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 163,
+   "questions": [
+    {
+     "id": "38cb17df-c2ef-53ec-9397-90c840c449b0",
+     "key": "ict-is-01",
+     "stem": "A doctor in Freetown advises a patient in a distant town by video call. This is an example of",
+     "image_url": null,
+     "explanation": "Telemedicine uses telecommunications, such as video calls and shared records, to give medical care at a distance.\n\n**Why the other options are wrong**\n\n- e-commerce: E-commerce is buying and selling online.\n- teleworking: Teleworking is working away from the office using ICT, not giving medical care.\n- e-government: E-government is government services delivered with ICT.",
+     "position": 1,
+     "options": [
+      {
+       "id": "470d94ff-e5c5-5f16-87dd-14752e986207",
+       "label": "A",
+       "content": "e-commerce",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a8ad0a0c-e6f3-57df-abf4-458b5256b53f",
+       "label": "B",
+       "content": "teleworking",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5583839f-5395-51cb-b619-bc07f00e1356",
+       "label": "C",
+       "content": "telemedicine",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2e94d880-b6de-5699-be1c-7738935484a8",
+       "label": "D",
+       "content": "e-government",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6e095dc0-d53a-50f4-b9ef-9231566969b5",
+     "key": "ict-is-02",
+     "stem": "The gap between people who have access to ICT and those who do not is called",
+     "image_url": null,
+     "explanation": "The digital divide separates people with devices, connections and skills from those without, such as between towns and rural areas.\n\n**Why the other options are wrong**\n\n- digital literacy: Digital literacy is the skill of using digital technology well.\n- automation: Automation is machines and computers doing work people once did.\n- e-waste: E-waste is discarded electronic devices.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8ce7e45c-97ba-5f19-8f34-dd7232cf6cce",
+       "label": "A",
+       "content": "digital literacy",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bb2e8781-9f89-5cbf-9f30-a272ba315aef",
+       "label": "B",
+       "content": "automation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "668a0053-02ae-518a-9f5e-e405a86ed6b9",
+       "label": "C",
+       "content": "e-waste",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c90f3bc8-4074-52d6-b217-5e45529ddffc",
+       "label": "D",
+       "content": "the digital divide",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3d1f82f3-eab7-5ec3-a890-8dc8a2c4a298",
+     "key": "ict-is-03",
+     "stem": "Buying goods from an online shop and paying by mobile money is an example of",
+     "image_url": null,
+     "explanation": "E-commerce is buying and selling goods and services over the Internet or mobile networks, with electronic payment.\n\n**Why the other options are wrong**\n\n- e-learning: E-learning is learning through electronic media.\n- telemedicine: Telemedicine is health care at a distance.\n- video conferencing: Video conferencing is a live meeting by camera and Internet.",
+     "position": 3,
+     "options": [
+      {
+       "id": "ebf4115e-7021-5fe6-a513-b0ead73f640a",
+       "label": "A",
+       "content": "e-commerce",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d351c822-2aa0-5876-8868-01d36054be83",
+       "label": "B",
+       "content": "e-learning",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3f65a9de-31e1-5ae5-bc6d-9289e55427dd",
+       "label": "C",
+       "content": "telemedicine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "14719a96-77e8-50d8-933a-effdda03b6d4",
+       "label": "D",
+       "content": "video conferencing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d2f64b8c-7d09-573d-bf7a-6112542bb1fe",
+     "key": "ict-is-04",
+     "stem": "Which of the following is a negative effect of ICT on society?",
+     "image_url": null,
+     "explanation": "Automation lets machines and computers do work people once did, so some jobs disappear and workers need retraining.\n\n**Why the other options are wrong**\n\n- faster communication: Faster communication is a benefit of ICT.\n- access to online learning: Online learning is a benefit of ICT.\n- mobile banking for people without bank accounts: Financial inclusion is a benefit of ICT.",
+     "position": 4,
+     "options": [
+      {
+       "id": "028c7bcd-ac02-55a7-9db5-daab7844280f",
+       "label": "A",
+       "content": "faster communication",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "930e08ea-adbe-5f56-aaaf-42652d7a05cf",
+       "label": "B",
+       "content": "job losses caused by automation",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "bbbfb24f-3baf-5920-9a5b-a5dd8769edb7",
+       "label": "C",
+       "content": "access to online learning",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f4526463-3bb5-57ff-bd74-0332d0811d49",
+       "label": "D",
+       "content": "mobile banking for people without bank accounts",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2c9ce7e8-f6d8-5d4b-92f9-3e161f680442",
+     "key": "ict-is-05",
+     "stem": "Old phones, computers and batteries thrown away without safe recycling are called",
+     "image_url": null,
+     "explanation": "Electronic waste can release harmful substances into soil and water if it is burnt or dumped; green computing encourages safe recycling.\n\n**Why the other options are wrong**\n\n- spam: Spam is unwanted bulk email.\n- malware: Malware is harmful software.\n- misinformation: Misinformation is false information that spreads.",
+     "position": 5,
+     "options": [
+      {
+       "id": "94fec57a-758d-5363-912f-7cac2d7187c4",
+       "label": "A",
+       "content": "spam",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6f2651ad-c1e1-589e-ac9d-7327bc552953",
+       "label": "B",
+       "content": "malware",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f2cbd92f-ce14-5152-bfc3-093c9eadd2ca",
+       "label": "C",
+       "content": "e-waste",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "67229eb7-e4d7-58a8-9e6c-697c79728a0a",
+       "label": "D",
+       "content": "misinformation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "114cda34-a27f-52ab-82e7-586afeec7421",
+     "key": "ict-is-06",
+     "stem": "The ICT professional who sets up, runs and secures an organisation's computer network is",
+     "image_url": null,
+     "explanation": "Network administrators install and manage switches, routers, servers and user accounts, and keep the network secure.\n\n**Why the other options are wrong**\n\n- a graphic designer: A graphic designer creates images and layouts.\n- a data analyst: A data analyst turns data into useful information.\n- a web designer: A web designer creates websites.",
+     "position": 6,
+     "options": [
+      {
+       "id": "f17d56a4-8857-5120-bf5a-b3c12515dc52",
+       "label": "A",
+       "content": "a graphic designer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c6615921-633e-5158-859d-cb12a6854333",
+       "label": "B",
+       "content": "a data analyst",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "afdc20de-393e-5d84-8734-4fb643b722cc",
+       "label": "C",
+       "content": "a web designer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e538c855-3688-5b41-b7db-a81e6e3f9148",
+       "label": "D",
+       "content": "a network administrator",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "10fba7b1-0f5b-5e70-9d3c-300d8f053a64",
+     "key": "ict-is-07",
+     "stem": "Staff who work from home and keep in touch with their office by email and video calls are",
+     "image_url": null,
+     "explanation": "Teleworking (telecommuting) saves travel time and cost, but needs reliable Internet access and self-discipline.\n\n**Why the other options are wrong**\n\n- e-learning: E-learning is studying through electronic media.\n- telemedicine: Telemedicine is medical care at a distance.\n- e-government: E-government is government services delivered online.",
+     "position": 7,
+     "options": [
+      {
+       "id": "acb93746-aa29-55c8-b893-c4d60aabf988",
+       "label": "A",
+       "content": "teleworking",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ebeebd87-3d27-56d6-a386-0d1f4246ff95",
+       "label": "B",
+       "content": "e-learning",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "088b1a6d-946b-5eef-b5cc-e55293a82ac8",
+       "label": "C",
+       "content": "telemedicine",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9899353c-c782-56d5-a708-837abe80f12d",
+       "label": "D",
+       "content": "e-government",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c9917653-e8da-5895-826b-c010a26b7e43",
+   "topic": "Practical Computer Skills",
+   "title": "Practical Computer Skills: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on practical computer skills, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 164,
+   "questions": [
+    {
+     "id": "da636878-7023-5f63-bff5-222017fb45f2",
+     "key": "ict-ps-01",
+     "stem": "Which type of fire extinguisher should be used on a fire in a computer laboratory?",
+     "image_url": null,
+     "explanation": "A CO₂ extinguisher smothers the fire without conducting electricity. Switch off the power first if it is safe to do so.\n\n**Why the other options are wrong**\n\n- water: Water conducts electricity and can cause an electric shock.\n- sand bucket only: Sand is not the recommended extinguisher for live electrical equipment.\n- foam: Foam contains water and should not be used on live electrical equipment.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b769d439-677d-568c-a0c6-c1d597e3980d",
+       "label": "A",
+       "content": "water",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a9e4b20d-53cc-5447-bf22-533e5dba4372",
+       "label": "B",
+       "content": "carbon dioxide (CO₂)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "68030608-65e3-5b51-873f-f49cac68451a",
+       "label": "C",
+       "content": "sand bucket only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f44e843f-3e0a-5b97-b5a8-f65f446ed24e",
+       "label": "D",
+       "content": "foam",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a168fbe7-ce8f-5131-9ea8-44615b500448",
+     "key": "ict-ps-02",
+     "stem": "Pain in the wrists caused by typing and using a mouse for long periods without breaks is called",
+     "image_url": null,
+     "explanation": "RSI comes from repeating the same movements. Keeping the wrists straight, using a wrist rest and taking regular breaks help prevent it.\n\n**Why the other options are wrong**\n\n- computer vision syndrome: Computer vision syndrome affects the eyes.\n- a virus infection: Viruses infect computers, not people's wrists.\n- back strain: Back strain affects the back, from poor posture.",
+     "position": 2,
+     "options": [
+      {
+       "id": "96b9191d-8bd2-5fc6-a13c-b7551bebe3ad",
+       "label": "A",
+       "content": "computer vision syndrome",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "43598db0-7d10-59e8-93f2-065b53905b41",
+       "label": "B",
+       "content": "a virus infection",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2b44e633-6a14-53c7-b64e-609a7767b90f",
+       "label": "C",
+       "content": "repetitive strain injury (RSI)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c5b5cd64-51f4-5dba-a5be-ce89803ca365",
+       "label": "D",
+       "content": "back strain",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f05a8d19-c924-5e3a-9133-60548bad583a",
+     "key": "ict-ps-03",
+     "stem": "For comfortable viewing, the top of a computer screen should be",
+     "image_url": null,
+     "explanation": "With the top of the screen at or just below eye level, about 50 to 70 cm away, the neck stays straight and the eyes are relaxed.\n\n**Why the other options are wrong**\n\n- well above eye level: Looking up strains the neck.\n- at the level of the keyboard: A screen that low makes the user bend the neck forward.\n- as close to the eyes as possible: The screen should be about an arm's length away.",
+     "position": 3,
+     "options": [
+      {
+       "id": "755e80e2-13f6-56c6-862b-f1e996345862",
+       "label": "A",
+       "content": "well above eye level",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3d6e6890-aeac-5798-a486-ff1635f33c8d",
+       "label": "B",
+       "content": "at the level of the keyboard",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "39f6664a-76d1-54d3-b1ed-b7849acfa9a1",
+       "label": "C",
+       "content": "as close to the eyes as possible",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7f0299ca-d48b-5bd4-91b8-47bf6fdb0dcb",
+       "label": "D",
+       "content": "at or just below eye level",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9b54a0fb-4fd1-5e63-8c1f-c9210a56b001",
+     "key": "ict-ps-04",
+     "stem": "On which keys do the left-hand fingers rest in touch typing?",
+     "image_url": null,
+     "explanation": "The home row is A S D F for the left hand and J K L ; for the right hand; bumps on F and J guide the index fingers.\n\n**Why the other options are wrong**\n\n- Q, W, E and R: These are on the row above the home row.\n- J, K, L and ;: These are the right-hand home keys.\n- Z, X, C and V: These are on the row below the home row.",
+     "position": 4,
+     "options": [
+      {
+       "id": "442fb95e-cfac-5d60-850b-2efe59f58c28",
+       "label": "A",
+       "content": "A, S, D and F",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "925e5a13-ca58-557f-8998-37ed5695557f",
+       "label": "B",
+       "content": "Q, W, E and R",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d52a1c86-04c1-5de8-bc70-7a541be5d822",
+       "label": "C",
+       "content": "J, K, L and ;",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3a206c6c-af9c-5bb4-8902-8d49bb6b3c2e",
+       "label": "D",
+       "content": "Z, X, C and V",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d8002f92-a318-5829-b851-cff7dcfdd49e",
+     "key": "ict-ps-05",
+     "stem": "Which port sends both digital video and sound from a laptop to a projector?",
+     "image_url": null,
+     "explanation": "HDMI carries high-definition video and audio together. Older projectors may use the analogue VGA port, which carries video only.\n\n**Why the other options are wrong**\n\n- Ethernet (RJ-45): Ethernet carries network data, not video to a projector.\n- 3.5 mm audio jack: The audio jack carries sound only.\n- SD card slot: The SD slot reads memory cards.",
+     "position": 5,
+     "options": [
+      {
+       "id": "7ec8824d-d79b-59fc-a931-e39f4caa5253",
+       "label": "A",
+       "content": "Ethernet (RJ-45)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ca20cede-b54f-5e6c-9327-29876b6729dc",
+       "label": "B",
+       "content": "HDMI",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "13cf143a-926b-5037-9977-2b5c6a8dcb7a",
+       "label": "C",
+       "content": "3.5 mm audio jack",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "3de9c04e-c79f-5f89-b45d-b1a431731336",
+       "label": "D",
+       "content": "SD card slot",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7f2ed99d-c27c-5910-b566-11ca61608f41",
+     "key": "ict-ps-06",
+     "stem": "A program has stopped responding. Which keys open Task Manager so the program can be closed?",
+     "image_url": null,
+     "explanation": "Ctrl + Shift + Esc opens Task Manager; select the frozen program and click End task.\n\n**Why the other options are wrong**\n\n- Ctrl + C: Ctrl + C copies selected items.\n- Alt + Tab: Alt + Tab switches between open windows.\n- Windows + P: Windows + P chooses how to use a second screen or projector.",
+     "position": 6,
+     "options": [
+      {
+       "id": "b8e82db4-7efe-5dac-a80a-0d4cc4cbc608",
+       "label": "A",
+       "content": "Ctrl + C",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e929dfc2-23a5-5cd2-982a-77b78680f58c",
+       "label": "B",
+       "content": "Alt + Tab",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3e65b88a-dd09-5f17-b08e-0cf75c583c29",
+       "label": "C",
+       "content": "Ctrl + Shift + Esc",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2a106d32-35be-58f3-abee-02d2bf2eef3f",
+       "label": "D",
+       "content": "Windows + P",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ac6e6be1-b3a7-5f46-b7e0-59c844a41087",
+     "key": "ict-ps-07",
+     "stem": "A computer recognises a new USB mouse as soon as it is plugged in and sets it up automatically. This feature is called",
+     "image_url": null,
+     "explanation": "With plug and play, the operating system detects the device and installs its driver without the user doing anything.\n\n**Why the other options are wrong**\n\n- touch typing: Touch typing is typing without looking at the keys.\n- troubleshooting: Troubleshooting is finding and fixing faults.\n- multitasking: Multitasking is running several programs at once.",
+     "position": 7,
+     "options": [
+      {
+       "id": "efdf3ff7-6188-55f4-ac76-49abe8d058f9",
+       "label": "A",
+       "content": "touch typing",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b3f23a14-e484-5693-9f26-ab634166437f",
+       "label": "B",
+       "content": "troubleshooting",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "16ea34d2-7397-5f19-aa09-478b178ecd21",
+       "label": "C",
+       "content": "multitasking",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "06c9957b-10fc-5ed8-993f-4d7a7e2b13e8",
+       "label": "D",
+       "content": "plug and play",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "44dc5bd9d476"
+}

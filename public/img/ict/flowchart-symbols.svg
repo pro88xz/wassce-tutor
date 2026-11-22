@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Flowchart symbols</title>
+<desc id="d">The standard flowchart symbols: the terminal, an oval, marks Start and Stop; the parallelogram is for input and output, such as reading a number or printing a result; the rectangle is a process, such as a calculation; the diamond is a decision with Yes and No exits; the small circle is a connector that joins parts of a flowchart; the arrow, a flow line, shows the order of steps; and a rectangle with double sides is a predefined process, a subroutine described elsewhere.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="880" height="430" rx="20" fill="#f8fafc"/>
+<rect x="15.0" y="25.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="50.0" y="70.0" width="130.0" height="50.0" rx="25.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="115.0" y="95.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Start</text>
+<text x="115.0" y="157.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Terminal</text>
+<text x="115.0" y="179.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Start / Stop</text>
+<rect x="231.0" y="25.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<polygon points="282.0,70.0 396.0,70.0 380.0,120.0 266.0,120.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="331.0" y="95.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Input mark</text>
+<text x="331.0" y="157.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Input / output</text>
+<text x="331.0" y="179.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">read data, print results</text>
+<rect x="447.0" y="25.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="482.0" y="70.0" width="130.0" height="50.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="547.0" y="95.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">total = a + b</text>
+<text x="547.0" y="157.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Process</text>
+<text x="547.0" y="179.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a calculation or action</text>
+<rect x="663.0" y="25.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<polygon points="763.0,60.0 828.0,95.0 763.0,130.0 698.0,95.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="763.0" y="95.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">mark ≥ 50?</text>
+<text x="763.0" y="157.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Decision</text>
+<text x="763.0" y="179.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a question: Yes or No</text>
+<rect x="15.0" y="225.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<circle cx="115.0" cy="295.0" r="23.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="115.0" y="295.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">A</text>
+<text x="115.0" y="357.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Connector</text>
+<text x="115.0" y="379.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">joins parts of a chart</text>
+<rect x="231.0" y="225.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<line x1="281.0" y1="295.0" x2="381.0" y2="295.0" stroke="#0f172a" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="331.0" y="357.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Flow line</text>
+<text x="331.0" y="379.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">shows the order of steps</text>
+<rect x="447.0" y="225.0" width="200.0" height="180.0" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="482.0" y="270.0" width="130.0" height="50.0" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<line x1="492.0" y1="270.0" x2="492.0" y2="320.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<line x1="602.0" y1="270.0" x2="602.0" y2="320.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="547.0" y="295.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Sort list</text>
+<text x="547.0" y="357.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Predefined process</text>
+<text x="547.0" y="379.0" font-size="13" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">a subroutine</text>
+</svg>
