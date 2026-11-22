@@ -495,11 +495,12 @@ const EXTRAS_ROW = {
   question_options: [{ label: 'A', content: 'shoe' }, { label: 'B', content: 'good' }, { label: 'C', content: 'blood' }, { label: 'D', content: 'boat' }],
   question_subject: 'English Language',
   question_topic: 'Vowels and Diphthongs',
-  weak_subject_id: 's1',
+  weak_subject_id: '66666666-7777-8888-9999-000000000000',
   weak_subject_name: 'English Language',
   weak_subject_slug: 'english-language',
   weak_avg: 38,
   weak_sets: 3,
+  tutor_id: 'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee',
   tutor_slug: 'nicholas-norman',
   tutor_name: 'Nicholas Norman',
   tutor_location: 'Freetown',
@@ -522,7 +523,8 @@ test('study extras: the question, a tutor for the weak subject and the next less
   const p = out[0].payload
   assert.equal(p.question.options.length, 4)
   assert.equal(p.links.q_B, '/q/11111111-2222-3333-4444-555555555555?a=B')
-  assert.equal(p.links.tutor, '/tutors/nicholas-norman?book=english-language')
+  // Opens the booking on the tutor's page with the subject chosen (the format src/lib/book-return.ts reads).
+  assert.equal(p.links.tutor, '/tutors/nicholas-norman?book=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee&s=66666666-7777-8888-9999-000000000000')
   assert.equal(p.links.next, '/lesson/l1')
   assert.equal(p.links.cta, '/subjects')
   assert.deepEqual({ ...p.tutor }, { name: 'Nicholas Norman', location: 'Freetown', subject: 'English Language', avg: 38, sets: 3, price: 700, perWeek: 3 })

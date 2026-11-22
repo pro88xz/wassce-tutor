@@ -12,7 +12,8 @@
 --   - their weakest subject: a practice average under 50% over at least two
 --     sets in the last 60 days (the lowest, if several);
 --   - a tutor for it: an active, listed tutor who teaches that subject, with
---     their fee and lessons a week;
+--     their fee and lessons a week (the email's "Book" link opens their
+--     booking with that subject chosen);
 --   - where to continue: the next published lesson they have not done in the
 --     subject they studied last.
 -- Anything not found is null, and the email leaves that part out.
@@ -32,6 +33,7 @@ returns table (
   weak_subject_slug text,
   weak_avg integer,             -- %, over weak_sets sets
   weak_sets integer,
+  tutor_id uuid,
   tutor_slug text,
   tutor_name text,
   tutor_location text,
@@ -83,7 +85,7 @@ language sql stable security definer set search_path = '' as $$
     p.id,
     q.id, q.stem, q.options, qs.name, qt.name,
     w.subject_id, ws.name, ws.slug, w.avg_pct, w.sets,
-    tu.slug, tu.full_name, tu.location, tu.price_nle, tu.lessons_per_week,
+    tu.id, tu.slug, tu.full_name, tu.location, tu.price_nle, tu.lessons_per_week,
     nl.id, nl.title, nl.topic_name, fs.name
   from people p
   left join focus f on f.profile_id = p.id
@@ -118,7 +120,7 @@ language sql stable security definer set search_path = '' as $$
   left join weak w on w.profile_id = p.id
   left join public.subjects ws on ws.id = w.subject_id
   left join lateral (
-    select t.slug, t.full_name, t.location, ts.price_nle, ts.lessons_per_week
+    select t.id, t.slug, t.full_name, t.location, ts.price_nle, ts.lessons_per_week
     from public.tutors t
     join public.tutor_subjects ts on ts.tutor_id = t.id
     where ts.subject_id = w.subject_id and t.status = 'active' and t.listed and t.slug is not null

@@ -25,6 +25,33 @@ highest priority first:
 | Weekly progress | Studied in the last 7 days; sent Sunday (Monday or Tuesday if the daily limit was reached) | Their real week: lessons, practice and average score, progress in their subject, new lessons, and the next lesson | Yes |
 | Come back to studying | No study and no sign-in for 7 days (up to a year) | Their last subject, or their paid access; a second one a week later | Yes |
 
+### What the study emails add
+
+Unfinished payment, First study session, Weekly progress and Come back to
+studying also carry, from the student's own records
+(`public.email_student_extras`, migration 34, server key only):
+
+- **A question to answer.** A reviewed practice question from the subject
+  they studied last (else the first subject they chose) that they have not
+  answered, chosen to read well in an email: no diagram, maths, table, quoted
+  passage or link, four short options. The same one all day, a new one the
+  next day. Each option is a link to `/q/<question>?a=<letter>`
+  (`src/routes/q.$questionId.tsx`): the site marks it at once ("Spot on." with
+  a check and a small burst, or "Needs work" with the right answer), shows the
+  full working, then offers: continue where you stopped, more questions on the
+  topic, or the topic's lessons. The page needs no account and is not indexed.
+- **A tutor for a weak subject.** When their practice average in a subject
+  is under 50% over two sets or more in the last 60 days, a card names an
+  active, listed tutor who teaches it, with their town, lessons a week and fee.
+  "Book <name>" opens the tutor's page with the booking open and that subject
+  chosen (the same link format as signing in to book, `src/lib/book-return.ts`).
+- **Where to carry on** (Unfinished payment and First study session): the
+  next lesson they have not done in that subject.
+
+Anything not found is left out of the email. If the function fails, the
+emails go without these parts and the run's summary says `extras:
+unavailable`.
+
 Limits: one engine email per student per day; at most 2 marketing emails in 7
 days and 48 hours between them; every sequence ends by itself (paying,
 studying, signing in, or time passing). Unconfirmed, bounced and complained
@@ -103,7 +130,8 @@ cancels anything queued.
 
 ## Changing things
 
-- Wording: `api/_lib/email/templates.js`. Preview with
+- Wording: `api/_lib/email/templates.js` (the question, tutor and
+  continue parts: `withStudyExtras`). Preview with
   `npm run email:preview -- <folder>` and open the HTML files.
 - Timings and caps: `RULES` in `api/_lib/email/rules.js`.
 - Prices and benefits come from `api/_lib/plans.js`; keep it in step with

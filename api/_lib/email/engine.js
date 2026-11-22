@@ -141,7 +141,8 @@ export async function addStudyExtras(client, chosen, summary) {
         price: x.tutor_price !== null && x.tutor_price !== undefined ? Number(x.tutor_price) : null,
         perWeek: x.tutor_lessons_per_week ?? null,
       }
-      links.tutor = `/tutors/${x.tutor_slug}?book=${encodeURIComponent(x.weak_subject_slug ?? '')}`
+      // The tutor's page with the booking open and the weak subject chosen (src/lib/book-return.ts).
+      links.tutor = x.tutor_id && x.weak_subject_id ? `/tutors/${x.tutor_slug}?book=${x.tutor_id}&s=${x.weak_subject_id}` : `/tutors/${x.tutor_slug}`
       tutors++
     }
     if (x.next_lesson_id && x.next_lesson_title) {
