@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Parts of a word processor window</title>
+<desc id="d">A word processor window. From the top: the title bar with the document&#x27;s name and the minimise, maximise and close buttons; the menu tabs (File, Home, Insert, Layout, Review, View); the ribbon of command buttons in groups such as Clipboard, Font and Paragraph; the ruler showing margins and tabs; the document area, where text is typed at the flashing insertion point (cursor); the vertical scroll bar at the right; and the status bar at the bottom, showing the page number, word count and zoom.</desc>
+<defs></defs>
+<rect width="880" height="540" rx="20" fill="#f8fafc"/>
+<rect x="30.0" y="50.0" width="580.0" height="460.0" rx="6" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="30.0" y="50.0" width="580.0" height="30.0" rx="6" fill="#2563eb" stroke="#0f172a" stroke-width="2.5"/>
+<text x="44.0" y="65.0" font-size="14" fill="#ffffff" text-anchor="start" dominant-baseline="middle" font-weight="normal">Letter.docx – Word processor</text>
+<text x="540.0" y="65.0" font-size="15" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">–</text>
+<text x="562.0" y="65.0" font-size="15" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">□</text>
+<text x="584.0" y="65.0" font-size="15" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">×</text>
+<text x="60.0" y="96.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">File</text>
+<text x="132.0" y="96.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Home</text>
+<text x="204.0" y="96.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Insert</text>
+<text x="276.0" y="96.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Layout</text>
+<text x="348.0" y="96.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Review</text>
+<text x="420.0" y="96.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">View</text>
+<line x1="30.0" y1="110.0" x2="610.0" y2="110.0" stroke="#cbd5e1" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="44.0" y="116.0" width="128.0" height="52.0" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="1.2"/>
+<text x="108.0" y="134.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Paste</text>
+<text x="108.0" y="156.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Clipboard</text>
+<rect x="184.0" y="116.0" width="128.0" height="52.0" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="1.2"/>
+<text x="248.0" y="134.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">B  I  U</text>
+<text x="248.0" y="156.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Font</text>
+<rect x="324.0" y="116.0" width="128.0" height="52.0" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="1.2"/>
+<text x="388.0" y="134.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">≡  ≡  ≡</text>
+<text x="388.0" y="156.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Paragraph</text>
+<rect x="464.0" y="116.0" width="128.0" height="52.0" rx="4" fill="#e2e8f0" stroke="#475569" stroke-width="1.2"/>
+<text x="528.0" y="134.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Aa</text>
+<text x="528.0" y="156.0" font-size="12" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Styles</text>
+<rect x="80.0" y="176.0" width="460.0" height="16.0" rx="0" fill="#ffffff" stroke="#475569" stroke-width="1.2"/>
+<line x1="84.0" y1="192.0" x2="84.0" y2="182.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="103.0" y1="192.0" x2="103.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="122.0" y1="192.0" x2="122.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="141.0" y1="192.0" x2="141.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="160.0" y1="192.0" x2="160.0" y2="182.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="179.0" y1="192.0" x2="179.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="198.0" y1="192.0" x2="198.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="217.0" y1="192.0" x2="217.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="236.0" y1="192.0" x2="236.0" y2="182.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="255.0" y1="192.0" x2="255.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="274.0" y1="192.0" x2="274.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="293.0" y1="192.0" x2="293.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="312.0" y1="192.0" x2="312.0" y2="182.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="331.0" y1="192.0" x2="331.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="350.0" y1="192.0" x2="350.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="369.0" y1="192.0" x2="369.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="388.0" y1="192.0" x2="388.0" y2="182.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="407.0" y1="192.0" x2="407.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="426.0" y1="192.0" x2="426.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="445.0" y1="192.0" x2="445.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="464.0" y1="192.0" x2="464.0" y2="182.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="483.0" y1="192.0" x2="483.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="502.0" y1="192.0" x2="502.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<line x1="521.0" y1="192.0" x2="521.0" y2="187.0" stroke="#475569" stroke-width="1" stroke-linecap="round"/>
+<rect x="30.0" y="198.0" width="580.0" height="282.0" rx="0" fill="#f1f5f9" stroke="none" stroke-width="0"/>
+<rect x="100.0" y="210.0" width="430.0" height="270.0" rx="0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="130.0" y="232.0" width="180.0" height="12.0" rx="3" fill="#0f172a" stroke="none" stroke-width="0"/>
+<rect x="130.0" y="266.0" width="370.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="130.0" y="290.0" width="370.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="130.0" y="314.0" width="370.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="130.0" y="338.0" width="310.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="130.0" y="362.0" width="370.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="130.0" y="386.0" width="370.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="130.0" y="410.0" width="310.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<line x1="444.0" y1="403.0" x2="444.0" y2="425.0" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="588.0" y="202.0" width="16.0" height="290.0" rx="3" fill="#e2e8f0" stroke="#475569" stroke-width="1.2"/>
+<rect x="590.0" y="216.0" width="12.0" height="60.0" rx="3" fill="#94a3b8" stroke="none" stroke-width="0"/>
+<rect x="30.0" y="482.0" width="580.0" height="28.0" rx="0" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="44.0" y="496.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Page 1 of 2</text>
+<text x="150.0" y="496.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">245 words</text>
+<text x="240.0" y="496.0" font-size="13" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">English (UK)</text>
+<text x="540.0" y="496.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">100%</text>
+<path d="M 430.0 56.0 L 632.0 24.0 L 644.0 24.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="430.0" cy="56.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="652.0" y="24.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Title bar</text>
+<path d="M 470.0 96.0 L 632.0 96.0 L 644.0 96.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="470.0" cy="96.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="652.0" y="96.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Menu tabs</text>
+<path d="M 592.0 142.0 L 632.0 142.0 L 644.0 142.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="592.0" cy="142.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="652.0" y="142.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Ribbon (command buttons)</text>
+<path d="M 510.0 184.0 L 632.0 190.0 L 644.0 190.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="510.0" cy="184.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="652.0" y="190.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Ruler (margins, tabs)</text>
+<path d="M 450.0 238.0 L 632.0 248.0 L 644.0 248.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="450.0" cy="238.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="652.0" y="248.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Document area</text>
+<path d="M 596.0 376.0 L 632.0 360.0 L 644.0 360.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="596.0" cy="376.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="652.0" y="360.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Scroll bar</text>
+<path d="M 444.0 414.0 L 632.0 430.0 L 644.0 430.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="444.0" cy="414.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="652.0" y="430.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Insertion point (cursor)</text>
+<path d="M 598.0 496.0 L 632.0 496.0 L 644.0 496.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="598.0" cy="496.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="652.0" y="496.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Status bar (page, word count)</text>
+</svg>

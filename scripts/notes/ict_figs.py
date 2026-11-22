@@ -26,6 +26,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "public/img/ict"
 FIGS: dict[str, callable] = {}
 F_TEAL = "#ccfbf1"
+GRID_C = "#cbd5e1"
 
 
 def fig(fn):
@@ -435,6 +436,502 @@ def memory_hierarchy():
     s.arrow(30, 70, 30, 420, color=TEAL, width=3)
     for j, t in enumerate(("larger", "cheaper")):
         s.text(44, 100 + j * 22, t, size=15, color=TEAL, anchor="start", weight="bold")
+    return s
+
+
+# ═══ Software and applications ══════════════════════════════════════════════
+
+def items(s: Svg, spine_x, top_y, cx, w, rows, col, fill, h=48, step=56, size=15):
+    """A vertical spine from top_y with one box per row, joined by short arrows."""
+    ys = [top_y + 30 + i * step for i in range(len(rows))]
+    s.line(spine_x, top_y, spine_x, ys[-1], color=MUTED, width=2.5)
+    out = []
+    for y, lines in zip(ys, rows):
+        s.arrow(spine_x, y, cx - w / 2 - 6, y, color=MUTED, width=2.5)
+        out.append(box(s, cx, y, w, h, lines, col, fill, size=size))
+    return out
+
+
+@fig
+def types_of_software():
+    s = Svg(820, 460, "Types of software",
+            "Software is divided into system software, which runs and manages the computer, and application software, "
+            "which does users' tasks. System software includes the operating system, utility programs, language "
+            "translators and device drivers. Application software includes general-purpose packages such as word "
+            "processors and spreadsheets, special-purpose software such as payroll programs, and bespoke (custom) "
+            "software written for one organisation.")
+    root = box(s, 410, 48, 200, 46, "Software", INK, F_GREY, size=20)
+    sys_ = box(s, 215, 140, 300, 56, ["System software", "runs and manages the computer"], BLUE, F_BLUE, size=17)
+    app = box(s, 605, 140, 300, 56, ["Application software", "does the user's tasks"], GREEN, F_GREEN, size=17)
+    tree(s, root, [sys_, app])
+    items(s, 85, 168, 240, 290, [
+        ["Operating system", "Windows, Android, Linux, macOS"],
+        ["Utility programs", "antivirus, backup, disk cleanup"],
+        ["Language translators", "compiler, interpreter, assembler"],
+        ["Device drivers", "printer and graphics drivers"],
+    ], BLUE, "#ffffff")
+    items(s, 475, 168, 630, 290, [
+        ["General-purpose packages", "word processor, spreadsheet"],
+        ["Special-purpose software", "payroll, school results, hotel booking"],
+        ["Bespoke (custom) software", "written for one organisation"],
+    ], GREEN, "#ffffff")
+    s.text(630, 400, "packages are bought ready-made ('off the shelf');", size=14, color=MUTED)
+    s.text(630, 422, "bespoke software is written to order", size=14, color=MUTED)
+    return s
+
+
+@fig
+def operating_system_layers():
+    s = Svg(840, 430, "Where the operating system sits",
+            "Four layers, from top to bottom: the user, application software, the operating system and the hardware. "
+            "Arrows run both ways between each pair of layers: the operating system sits between applications and "
+            "the hardware. A side panel lists the functions of an operating system: managing the processor, memory, "
+            "files and storage, and input and output devices, providing the user interface, and security.")
+    layers = [("User", "gives commands, sees results", PURPLE, F_PURPLE),
+              ("Application software", "word processor, browser, games", GREEN, F_GREEN),
+              ("Operating system", "Windows, Android, Linux, macOS, iOS", BLUE, F_BLUE),
+              ("Hardware", "CPU, memory, disks, keyboard, screen", ORANGE, F_AMBER)]
+    ys = [60, 160, 260, 360]
+    boxes = [box(s, 230, y, 380, 62, [n, d], c, f, size=18) for (n, d, c, f), y in zip(layers, ys)]
+    for a, b in zip(boxes, boxes[1:]):
+        x = a[0]
+        s.arrow(x - 14, a[1] + 37, x - 14, b[1] - 37, color=MUTED, width=2.5)
+        s.arrow(x + 14, b[1] - 37, x + 14, a[1] + 37, color=MUTED, width=2.5)
+    s.rect(470, 60, 340, 330, fill="#ffffff", stroke=BLUE, width=2.5, rx=12)
+    s.text(640, 92, "Functions of an operating system", size=17, color=BLUE, weight="bold")
+    for i, t in enumerate(["manages the processor (tasks)", "manages memory (RAM)", "manages files and storage",
+                           "controls input and output devices", "provides the user interface", "keeps the computer secure",
+                           "reports errors"]):
+        s.text(492, 136 + i * 38, "• " + t, size=16, color=INK, anchor="start")
+    return s
+
+
+@fig
+def levels_of_programming_languages():
+    s = Svg(820, 450, "Levels of programming languages",
+            "Three levels. Machine language, the lowest, is written in binary such as 10110000 01100001 and runs "
+            "directly on the CPU. Assembly language uses short mnemonics such as MOV and ADD and is turned into "
+            "machine code by an assembler. High-level languages such as Python, Java, C and BASIC use English-like "
+            "statements such as total = a + b and are turned into machine code by a compiler or an interpreter. "
+            "Going up, languages are easier for people; going down, they are closer to the machine.")
+    rows = [("High-level language", "Python, Java, C, BASIC, Pascal", "total = a + b", GREEN, F_GREEN, "compiler or interpreter"),
+            ("Assembly language (low-level)", "mnemonics such as MOV, ADD, JMP", "ADD AX, BX", ORANGE, F_AMBER, "assembler"),
+            ("Machine language (low-level)", "binary: 0s and 1s", "00000001 11011000", RED, F_RED, "")]
+    ys = [75, 225, 375]
+    bs = []
+    for (name, note, code, col, fill, tr), y in zip(rows, ys):
+        b = box(s, 310, y, 440, 104, [], col, fill)
+        s.text(310, y - 32, name, size=18, color=col, weight="bold")
+        s.text(310, y - 8, note, size=15, color=INK)
+        s.rect(118, y + 12, 384, 28, fill="#ffffff", stroke=col, width=1.5, rx=5)
+        s.raw(f'<text x="310" y="{y + 26}" font-size="15" fill="{INK}" text-anchor="middle" dominant-baseline="middle" '
+              f'font-family="Consolas, Courier New, monospace">{code}</text>')
+        bs.append((b, tr))
+    for (a, tr), (b, _) in zip(bs, bs[1:]):
+        s.arrow(310, a[1] + 56, 310, b[1] - 56, color=MUTED, width=3)
+        s.label(310 + 12, (a[1] + b[1]) / 2, tr, size=14, color=MUTED, anchor="start")
+    s.arrow(600, 420, 600, 30, color=GREEN, width=3)
+    s.text(616, 60, "easier for people", size=15, color=GREEN, anchor="start", weight="bold")
+    s.text(616, 82, "to read and write", size=15, color=GREEN, anchor="start", weight="bold")
+    s.arrow(780, 30, 780, 420, color=RED, width=3)
+    s.text(764, 370, "closer to the", size=15, color=RED, anchor="end", weight="bold")
+    s.text(764, 392, "machine; faster", size=15, color=RED, anchor="end", weight="bold")
+    return s
+
+
+@fig
+def compiler_vs_interpreter():
+    s = Svg(880, 440, "Compiler, interpreter and assembler",
+            "Three translators. A compiler translates the whole high-level source program into machine code (object "
+            "code) in one go, and reports all errors together; the object code can then be run any number of times "
+            "without the compiler. An interpreter translates and runs a high-level program one line at a time and "
+            "stops at the first error; it is needed every time the program runs. An assembler translates assembly "
+            "language into machine code.")
+    rows = [
+        ("Source program", "(high-level)", "Compiler", "translates the whole program at once", "Object code", "(machine code): run any time", BLUE, F_BLUE),
+        ("Source program", "(high-level)", "Interpreter", "translates and runs line by line", "Results, line by line", "stops at the first error", ORANGE, F_AMBER),
+        ("Assembly program", "(mnemonics)", "Assembler", "translates assembly language", "Machine code", "runs on the CPU", PURPLE, F_PURPLE),
+    ]
+    for i, (a1, a2, t1, t2, o1, o2, col, fill) in enumerate(rows):
+        y = 75 + i * 130
+        a = box(s, 125, y, 200, 66, [a1, a2], INK, F_GREY, size=17)
+        t = box(s, 440, y, 290, 66, [t1, t2], col, fill, size=18)
+        o = box(s, 755, y, 220, 66, [o1, o2], GREEN, F_GREEN, size=17)
+        link(s, a, t)
+        link(s, t, o)
+    s.text(440, 420, "All three turn a program into machine code, the only language the CPU understands.", size=15, color=MUTED)
+    return s
+
+
+@fig
+def booting_process():
+    s = Svg(660, 520, "The booting process",
+            "Five steps from switching on to a ready computer: 1, power on: the power supply starts and the CPU runs "
+            "the BIOS or UEFI firmware stored in ROM; 2, the power-on self-test (POST) checks the memory, keyboard "
+            "and disks; 3, the BIOS finds a boot device such as the hard disk or SSD; 4, the boot loader loads the "
+            "operating system's core (the kernel) into RAM; 5, the operating system finishes starting and shows the "
+            "log-in screen or desktop.")
+    steps = [("1. Power on", "the CPU starts the BIOS/UEFI firmware stored in ROM"),
+             ("2. Power-on self-test (POST)", "checks memory, keyboard and disks; a beep if a fault"),
+             ("3. Find the boot device", "the BIOS looks for the OS on the SSD, hard disk or USB"),
+             ("4. Load the operating system", "the boot loader copies the OS kernel into RAM"),
+             ("5. Ready", "the OS shows the log-in screen, then the desktop")]
+    cols = [(PURPLE, F_PURPLE), (RED, F_RED), (ORANGE, F_AMBER), (BLUE, F_BLUE), (GREEN, F_GREEN)]
+    prev = None
+    for i, ((t, d), (c, f)) in enumerate(zip(steps, cols)):
+        b = box(s, 330, 55 + i * 102, 560, 66, [t, d], c, f, size=18)
+        if prev:
+            link(s, prev, b)
+        prev = b
+    return s
+
+
+@fig
+def desktop_elements():
+    s = Svg(1000, 490, "Parts of the desktop",
+            "A computer desktop. Icons such as This PC, Recycle Bin and Documents sit on the background (wallpaper). "
+            "An open window has a title bar with minimise, maximise and close buttons. Along the bottom is the "
+            "taskbar, with the Start button at the left, buttons for open and pinned programs, and the notification "
+            "area with the clock at the right. A mouse pointer is on the screen.")
+    s.raw('<g transform="translate(24 0)">')
+    x0, y0, x1, y1 = 190, 30, 750, 430
+    s.rect(x0, y0, x1 - x0, y1 - y0, fill="#e0f2fe", stroke=INK, width=3, rx=6)
+    for i, name in enumerate(["This PC", "Recycle Bin", "Documents"]):
+        y = 60 + i * 82
+        s.rect(x0 + 32, y, 44, 36, fill=F_AMBER if i == 2 else "#ffffff", stroke=BLUE, width=2, rx=4)
+        s.text(x0 + 54, y + 52, name, size=13, color=INK)
+    wx0, wy0, wx1, wy1 = 350, 80, 710, 320
+    s.rect(wx0, wy0, wx1 - wx0, wy1 - wy0, fill="#ffffff", stroke=INK, width=2.5, rx=4)
+    s.rect(wx0, wy0, wx1 - wx0, 30, fill=BLUE, stroke=INK, width=2.5, rx=4)
+    s.text(wx0 + 12, wy0 + 15, "My Letter – Word processor", size=13, color="#ffffff", anchor="start")
+    for j, sym in enumerate(["–", "□", "×"]):
+        s.text(wx1 - 66 + j * 22, wy0 + 15, sym, size=15, color="#ffffff", weight="bold")
+    for k in range(6):
+        s.rect(wx0 + 24, wy0 + 56 + k * 30, 260 - (k % 3) * 40, 8, fill=F_GREY, stroke="none", width=0, rx=3)
+    px, py = 620, 352
+    s.polygon([(px, py), (px, py + 28), (px + 7, py + 21), (px + 13, py + 34), (px + 18, py + 32), (px + 12, py + 19), (px + 22, py + 19)],
+              fill="#ffffff", stroke=INK, width=2)
+    ty = y1 - 40
+    s.rect(x0, ty, x1 - x0, 40, fill="#1e293b", stroke=INK, width=3)
+    s.rect(x0 + 8, ty + 7, 34, 26, fill=BLUE, stroke="none", width=0, rx=4)
+    for j in range(4):
+        s.rect(x0 + 60 + j * 40, ty + 8, 30, 24, fill="#475569" if j else "#94a3b8", stroke="none", width=0, rx=3)
+    s.text(x1 - 92, ty + 20, "ENG", size=12, color="#ffffff")
+    s.text(x1 - 40, ty + 20, "10:45", size=13, color="#ffffff")
+
+    def lead(pts, t, anchor):
+        s.polyline(pts, color=MUTED, width=1.8)
+        s.dot(*pts[0], r=4, color=RED)
+        lx, ly = pts[-1]
+        dx = {"start": 8, "end": -8}.get(anchor, 0)
+        dy = 14 if anchor == "middle" else 0
+        s.text(lx + dx, ly + dy, t, size=15, color=INK, anchor=anchor)
+
+    lead([(x0 + 32, 78), (x0 - 20, 78)], "Desktop icons", "end")
+    lead([(x0 + 60, 330), (x0 - 20, 330)], "Wallpaper (background)", "end")
+    lead([(580, wy0 + 4), (600, wy0 - 16), (770, wy0 - 16)], "Title bar", "start")
+    lead([(wx1 - 22, wy0 + 15), (770, wy0 + 30)], "Minimise, maximise, close", "start")
+    lead([(wx1, 220), (770, 220)], "Window", "start")
+    lead([(px + 22, py + 19), (770, py + 19)], "Mouse pointer", "start")
+    lead([(x0 + 25, ty + 32), (x0 + 25, 448)], "Start button", "middle")
+    lead([(x0 + 195, ty + 32), (x0 + 195, 448)], "Taskbar (open programs)", "middle")
+    lead([(x1 - 40, ty + 32), (x1 - 40, 448)], "Notification area and clock", "middle")
+    s.raw("</g>")
+    return s
+
+
+@fig
+def folder_tree():
+    s = Svg(820, 520, "Folders and files on a drive",
+            "A folder tree, as shown in a file manager. The drive Local Disk (C:) is the root. It contains the folders "
+            "Program Files, Users and Windows. Users contains the folder Aminata, which contains Documents and "
+            "Pictures. Documents contains School, which contains SSS3, which holds the files ICT notes.docx and "
+            "Maths results.xlsx. Pictures holds graduation.jpg. The path to the ICT notes file is "
+            "C:\\Users\\Aminata\\Documents\\School\\SSS3\\ICT notes.docx.")
+    rows = [(0, "Local Disk (C:)", "drive"), (1, "Program Files", "folder"), (1, "Users", "folder"),
+            (2, "Aminata", "folder"), (3, "Documents", "folder"), (4, "School", "folder"), (5, "SSS3", "folder"),
+            (6, "ICT notes.docx", "file"), (6, "Maths results.xlsx", "file"), (3, "Pictures", "folder"),
+            (4, "graduation.jpg", "file"), (1, "Windows", "folder")]
+    X0, Y0, IND, STEP = 50, 50, 34, 34
+    pos = []
+    last_child_y: dict[int, float] = {}
+    parents: list[int] = []
+    for i, (lvl, name, kind) in enumerate(rows):
+        x, y = X0 + lvl * IND, Y0 + i * STEP
+        pos.append((x, y))
+        while parents and rows[parents[-1]][0] >= lvl:
+            parents.pop()
+        if parents:
+            p = parents[-1]
+            px, py = pos[p]
+            s.line(px + 10, y, x - 2, y, color=MUTED, width=1.8)
+            last_child_y[p] = y
+        if kind == "drive":
+            s.rect(x - 2, y - 9, 26, 18, fill=F_GREY, stroke=INK, width=2, rx=3)
+            s.dot(x + 18, y + 3, r=2.5, color=GREEN)
+        elif kind == "folder":
+            s.polygon([(x, y - 9), (x + 9, y - 9), (x + 12, y - 6), (x + 24, y - 6), (x + 24, y + 9), (x, y + 9)],
+                      fill="#fcd34d", stroke=ORANGE, width=1.8)
+        else:
+            s.polygon([(x + 3, y - 11), (x + 15, y - 11), (x + 21, y - 5), (x + 21, y + 11), (x + 3, y + 11)],
+                      fill="#ffffff", stroke=BLUE, width=1.8)
+        s.text(x + 32, y, name, size=16, color=INK if kind != "file" else BLUE, anchor="start",
+               weight="bold" if kind == "drive" else "normal")
+        parents.append(i)
+    for p, y in last_child_y.items():
+        px, py = pos[p]
+        s.line(px + 10, py + 12, px + 10, y, color=MUTED, width=1.8)
+    notes = [(0, "root directory (the drive)"), (5, "a subfolder: a folder inside a folder"), (7, "a file: name + extension"),
+             (8, ".xlsx shows a spreadsheet file")]
+    for i, t in notes:
+        x, y = pos[i]
+        s.arrow(560, y, x + 32 + len(rows[i][1]) * 8.8 + 10, y, color=RED, width=2)
+        s.text(570, y, t, size=14, color=RED, anchor="start")
+    s.rect(30, 455, 760, 44, fill=F_BLUE, stroke=BLUE, width=2, rx=8)
+    s.text(46, 477, "Path:", size=15, color=BLUE, anchor="start", weight="bold")
+    s.raw(f'<text x="100" y="477" font-size="15" fill="{INK}" text-anchor="start" dominant-baseline="middle" '
+          'font-family="Consolas, Courier New, monospace">C:\\Users\\Aminata\\Documents\\School\\SSS3\\ICT notes.docx</text>')
+    return s
+
+
+def _window(s, x0, y0, x1, y1, title_text):
+    s.rect(x0, y0, x1 - x0, y1 - y0, fill="#ffffff", stroke=INK, width=2.5, rx=6)
+    s.rect(x0, y0, x1 - x0, 30, fill=BLUE, stroke=INK, width=2.5, rx=6)
+    s.text(x0 + 14, y0 + 15, title_text, size=14, color="#ffffff", anchor="start")
+    for j, sym in enumerate(["–", "□", "×"]):
+        s.text(x1 - 70 + j * 22, y0 + 15, sym, size=15, color="#ffffff", weight="bold")
+
+
+def _labels(s, lab, lx=652):
+    for ly, t, px, py in lab:
+        s.polyline([(px, py), (lx - 20, ly), (lx - 8, ly)], color=MUTED, width=1.8)
+        s.dot(px, py, r=4, color=RED)
+        s.text(lx, ly, t, size=15, color=INK, anchor="start")
+
+
+@fig
+def word_processor_window():
+    s = Svg(880, 540, "Parts of a word processor window",
+            "A word processor window. From the top: the title bar with the document's name and the minimise, maximise "
+            "and close buttons; the menu tabs (File, Home, Insert, Layout, Review, View); the ribbon of command "
+            "buttons in groups such as Clipboard, Font and Paragraph; the ruler showing margins and tabs; the "
+            "document area, where text is typed at the flashing insertion point (cursor); the vertical scroll bar "
+            "at the right; and the status bar at the bottom, showing the page number, word count and zoom.")
+    x0, y0, x1, y1 = 30, 50, 610, 510
+    _window(s, x0, y0, x1, y1, "Letter.docx – Word processor")
+    for j, t in enumerate(["File", "Home", "Insert", "Layout", "Review", "View"]):
+        s.text(x0 + 30 + j * 72, y0 + 46, t, size=14, color=BLUE if t == "Home" else INK, weight="bold" if t == "Home" else "normal")
+    s.line(x0, y0 + 60, x1, y0 + 60, color=GRID_C, width=1.5)
+    for j, (g, sym) in enumerate([("Clipboard", "Paste"), ("Font", "B  I  U"), ("Paragraph", "≡  ≡  ≡"), ("Styles", "Aa")]):
+        gx = x0 + 14 + j * 140
+        s.rect(gx, y0 + 66, 128, 52, fill=F_GREY, stroke=MUTED, width=1.2, rx=4)
+        s.text(gx + 64, y0 + 84, sym, size=15, color=INK, weight="bold")
+        s.text(gx + 64, y0 + 106, g, size=12, color=MUTED)
+    ry = y0 + 126
+    s.rect(x0 + 50, ry, 460, 16, fill="#ffffff", stroke=MUTED, width=1.2)
+    for k in range(24):
+        s.line(x0 + 54 + k * 19, ry + 16, x0 + 54 + k * 19, ry + (6 if k % 4 == 0 else 11), color=MUTED, width=1)
+    s.rect(x0, ry + 22, x1 - x0, y1 - ry - 52, fill="#f1f5f9", stroke="none", width=0)
+    s.rect(x0 + 70, ry + 34, 430, 270, fill="#ffffff", stroke=GRID_C, width=1.5)
+    s.rect(x0 + 100, ry + 56, 180, 12, fill=INK, stroke="none", width=0, rx=3)
+    for k in range(7):
+        s.rect(x0 + 100, ry + 90 + k * 24, 370 - (60 if k in (3, 6) else 0), 8, fill=F_GREY, stroke="none", width=0, rx=3)
+    cx_, cy_ = x0 + 100 + 310 + 4, ry + 90 + 6 * 24 + 4
+    s.line(cx_, cy_ - 11, cx_, cy_ + 11, color=RED, width=2.5)
+    s.rect(x1 - 22, ry + 26, 16, 290, fill=F_GREY, stroke=MUTED, width=1.2, rx=3)
+    s.rect(x1 - 20, ry + 40, 12, 60, fill="#94a3b8", stroke="none", width=0, rx=3)
+    sy = y1 - 28
+    s.rect(x0, sy, x1 - x0, 28, fill="#e2e8f0", stroke=INK, width=2.5)
+    for t, tx in (("Page 1 of 2", 14), ("245 words", 120), ("English (UK)", 210)):
+        s.text(x0 + tx, sy + 14, t, size=13, color=INK, anchor="start")
+    s.text(x1 - 70, sy + 14, "100%", size=13, color=INK)
+    _labels(s, [(24, "Title bar", x0 + 400, y0 + 6), (y0 + 46, "Menu tabs", x0 + 440, y0 + 46),
+                (y0 + 92, "Ribbon (command buttons)", x0 + 562, y0 + 92), (ry + 14, "Ruler (margins, tabs)", x0 + 480, ry + 8),
+                (ry + 72, "Document area", x0 + 420, ry + 62), (ry + 184, "Scroll bar", x1 - 14, ry + 200),
+                (cy_ + 16, "Insertion point (cursor)", cx_, cy_), (sy + 14, "Status bar (page, word count)", x1 - 12, sy + 14)])
+    return s
+
+
+@fig
+def spreadsheet_window():
+    s = Svg(880, 500, "Parts of a spreadsheet",
+            "A spreadsheet of test marks. Columns are lettered A to D and rows numbered 1 to 6; the cell where "
+            "column D meets row 2 is cell D2. The name box shows D2, the active cell, and the formula bar shows its "
+            "formula =SUM(B2:C2). Column A holds names, B and C two test marks and D the totals 33, 28, 36 and 25. "
+            "The range B2:C5 is shaded, and cell C4, in column C and row 4, holds 19. Row 6 holds averages worked "
+            "out with formulas such as =AVERAGE(B2:B5) in cell B6: 14.5, 16 and 30.5.")
+    # name box and formula bar
+    s.text(80, 28, "Name box", size=14, color=MUTED, weight="bold")
+    s.rect(40, 42, 80, 30, fill="#ffffff", stroke=INK, width=2, rx=3)
+    s.text(80, 57, "D2", size=15, color=INK, weight="bold")
+    s.text(140, 57, "fx", size=15, color=MUTED, italic=True)
+    s.text(350, 28, "Formula bar: the formula in the active cell", size=14, color=MUTED, weight="bold")
+    s.rect(160, 42, 380, 30, fill="#ffffff", stroke=INK, width=2, rx=3)
+    s.raw(f'<text x="172" y="57" font-size="15" fill="{INK}" text-anchor="start" dominant-baseline="middle" '
+          'font-family="Consolas, Courier New, monospace">=SUM(B2:C2)</text>')
+    gx, gy, rh = 40, 92, 36
+    widths = [44, 136, 120, 120, 120]
+    xs = [gx]
+    for w in widths:
+        xs.append(xs[-1] + w)
+    data = [["", "A", "B", "C", "D"], ["1", "Name", "Test 1", "Test 2", "Total"],
+            ["2", "Aminata", "15", "18", "33"], ["3", "Ibrahim", "12", "16", "28"],
+            ["4", "Fatmata", "17", "19", "36"], ["5", "Mohamed", "14", "11", "25"],
+            ["6", "Average", "14.5", "16", "30.5"]]
+    for r, row in enumerate(data):
+        y = gy + r * rh
+        for c, val in enumerate(row):
+            hdr = r == 0 or c == 0
+            fill = F_GREY if hdr else ("#bfdbfe" if (2 <= r <= 5 and c in (2, 3)) else "#ffffff")
+            s.rect(xs[c], y, widths[c], rh, fill=fill, stroke="#94a3b8", width=1.2)
+            if val:
+                bold = hdr or r == 1
+                anchor = "start" if (c == 1 and not hdr) else ("end" if (c >= 2 and r >= 2) else "middle")
+                tx = xs[c] + 10 if anchor == "start" else (xs[c + 1] - 12 if anchor == "end" else xs[c] + widths[c] / 2)
+                s.text(tx, y + rh / 2, val, size=15, color=MUTED if hdr else INK, anchor=anchor, weight="bold" if bold else "normal")
+    s.rect(xs[4], gy + 2 * rh, widths[4], rh, fill="none", stroke=GREEN, width=4)
+    s.dot(xs[4] + widths[4], gy + 3 * rh, r=4, color=GREEN)
+    bottom = gy + 7 * rh
+    s.rect(xs[3] + 3, gy + 4 * rh + 3, widths[3] - 6, rh - 6, fill="none", stroke=RED, width=2.5, dash="5 3")
+    _labels(s, [(gy + rh / 2, "Column heading (letter)", xs[4] + 100, gy + rh / 2), (gy + 2.5 * rh, "Active cell D2", xs[5], gy + 2.5 * rh),
+                (gy + 6.5 * rh, "Row 6: B6 holds =AVERAGE(B2:B5)", xs[5], gy + 6.5 * rh)], lx=620)
+    s.arrow(gx + 22, bottom + 34, gx + 22, bottom + 6, color=RED, width=2)
+    s.text(gx + 4, bottom + 48, "Row heading (number)", size=14, color=INK, anchor="start")
+    s.rect(300, bottom + 22, 30, 20, fill="#bfdbfe", stroke="#94a3b8", width=1.2)
+    s.text(340, bottom + 32, "range B2:C5 (a block of cells)", size=14, color=INK, anchor="start")
+    s.rect(300, bottom + 52, 30, 20, fill="#ffffff", stroke=GREEN, width=3)
+    s.text(340, bottom + 62, "active cell: where you type", size=14, color=INK, anchor="start")
+    s.rect(300, bottom + 82, 30, 20, fill="#ffffff", stroke=RED, width=2.5, dash="5 3")
+    s.text(340, bottom + 92, "cell C4: column C, row 4 (it holds 19)", size=14, color=INK, anchor="start")
+    return s
+
+
+@fig
+def database_tables():
+    s = Svg(900, 520, "A database table and a relationship",
+            "Two tables in a school database. The Students table has the fields StudentID, Surname, First name and "
+            "Class; each row is a record, such as S002 Kamara Aminata SSS3. StudentID is the primary key: it is "
+            "different for every student. The Fees table has Receipt No, StudentID, Amount and Date. StudentID in "
+            "Fees is a foreign key that links each payment to one student: one student can have many fee payments, "
+            "a one-to-many relationship.")
+
+    def table(x, y, name, cols, widths, rows, key_col, col, fill):
+        s.text(x, y - 16, f"Table: {name}", size=16, color=col, anchor="start", weight="bold")
+        rh = 32
+        cx = x
+        for c, (hdr, w) in enumerate(zip(cols, widths)):
+            s.rect(cx, y, w, rh, fill=fill, stroke=col, width=1.5)
+            s.text(cx + w / 2, y + rh / 2, hdr, size=14, color=col, weight="bold")
+            if c == key_col:
+                s.line(cx + w / 2 - len(hdr) * 4.4, y + rh / 2 + 10, cx + w / 2 + len(hdr) * 4.4, y + rh / 2 + 10, color=col, width=2)
+            for r, row in enumerate(rows):
+                s.rect(cx, y + (r + 1) * rh, w, rh, fill="#ffffff", stroke="#94a3b8", width=1.2)
+                s.text(cx + w / 2, y + (r + 1.5) * rh, row[c], size=14, color=INK)
+            cx += w
+        return rh
+
+    sw = [120, 130, 130, 100]
+    rh = table(60, 80, "Students", ["StudentID", "Surname", "First name", "Class"], sw,
+               [["S001", "Bangura", "Ibrahim", "SSS3"], ["S002", "Kamara", "Aminata", "SSS3"], ["S003", "Sesay", "Mohamed", "SSS2"]], 0, BLUE, F_BLUE)
+    # record bracket around row S002
+    ry = 80 + 2 * rh
+    s.rect(54, ry - 3, sum(sw) + 12, rh + 6, fill="none", stroke=ORANGE, width=3, rx=6)
+    s.arrow(620, ry + rh / 2, sum(sw) + 72, ry + rh / 2, color=ORANGE, width=2.5)
+    s.text(628, ry + rh / 2, "Record (row): one student", size=15, color=ORANGE, anchor="start", weight="bold")
+    # field bracket over Surname column
+    fx = 60 + sw[0]
+    s.rect(fx - 3, 77, sw[1] + 6, 4 * rh + 6, fill="none", stroke=PURPLE, width=3, rx=6)
+    s.arrow(fx + sw[1] / 2, 36, fx + sw[1] / 2, 72, color=PURPLE, width=2.5)
+    s.text(fx + sw[1] / 2 + 10, 30, "Field (column): one item about every student", size=15, color=PURPLE, anchor="start", weight="bold")
+    s.text(560, 78, "Primary key: StudentID (underlined)", size=15, color=BLUE, anchor="start", weight="bold")
+    s.text(560, 100, "no two students can share one", size=14, color=INK, anchor="start")
+    fw = [130, 120, 120, 130]
+    table(300, 330, "Fees", ["Receipt No", "StudentID", "Amount", "Date"], fw,
+          [["R101", "S002", "Le 500", "08/01/2026"], ["R102", "S001", "Le 500", "09/01/2026"], ["R103", "S002", "Le 250", "02/05/2026"]], -1, GREEN, F_GREEN)
+    # relationship line from Students.StudentID to Fees.StudentID
+    sx, sy = 60 + sw[0] / 2, 80 + 4 * rh
+    ex, ey = 300 + fw[0] + fw[1] / 2, 330
+    s.polyline([(sx, sy + 4), (sx, 270), (ex, 270), (ex, ey - 4)], color=RED, width=3)
+    s.label(sx + 18, 252, "1", size=16, color=RED, weight="bold")
+    s.label(ex + 30, 300, "many", size=15, color=RED, weight="bold")
+    s.text(ex + 70, 270, "one-to-many relationship", size=15, color=RED, anchor="start", weight="bold")
+    s.text(300, 500, "StudentID in Fees is a foreign key: it links each payment to a student.", size=15, color=MUTED, anchor="start")
+    return s
+
+
+@fig
+def presentation_window():
+    s = Svg(1000, 490, "Parts of a presentation program window",
+            "A presentation program in Normal view. At the left is the slide pane (thumbnails) showing four slides, "
+            "with slide 2 selected. In the middle is the slide being edited, with a title placeholder and a content "
+            "placeholder of bullet points. Below it is the notes pane for the speaker's notes. The status bar shows "
+            "Slide 2 of 4 and buttons to change the view and start the slide show.")
+    x0, y0, x1, y1 = 180, 50, 740, 470
+    _window(s, x0, y0, x1, y1, "Our school – Presentation program")
+    for j, t in enumerate(["File", "Home", "Insert", "Design", "Transitions", "Animations", "Slide Show"]):
+        s.text(x0 + 30 + j * 78, y0 + 46, t, size=12, color=INK)
+    s.line(x0, y0 + 60, x1, y0 + 60, color=GRID_C, width=1.5)
+    for k in range(4):
+        ty = y0 + 74 + k * 74
+        s.text(x0 + 14, ty + 26, str(k + 1), size=12, color=MUTED)
+        s.rect(x0 + 24, ty, 92, 56, fill="#ffffff", stroke=ORANGE if k == 1 else "#94a3b8", width=3 if k == 1 else 1.2)
+        s.rect(x0 + 32, ty + 8, 60, 6, fill=F_GREY, stroke="none", width=0)
+        s.rect(x0 + 32, ty + 22, 76, 4, fill=F_GREY, stroke="none", width=0)
+        s.rect(x0 + 32, ty + 32, 70, 4, fill=F_GREY, stroke="none", width=0)
+    s.rect(x0 + 140, y0 + 74, 410, 250, fill="#ffffff", stroke="#94a3b8", width=1.5)
+    s.rect(x0 + 160, y0 + 90, 370, 50, fill="none", stroke=MUTED, width=1.5, dash="6 4")
+    s.text(x0 + 345, y0 + 115, "Our school clubs", size=22, color=INK, weight="bold")
+    s.rect(x0 + 160, y0 + 154, 370, 154, fill="none", stroke=MUTED, width=1.5, dash="6 4")
+    for k, t in enumerate(["Debating club", "Science club", "Football team", "ICT club"]):
+        s.text(x0 + 180, y0 + 180 + k * 34, "• " + t, size=16, color=INK, anchor="start")
+    s.rect(x0 + 140, y0 + 334, 410, 46, fill="#f1f5f9", stroke="#94a3b8", width=1.2)
+    s.text(x0 + 154, y0 + 357, "Notes: mention the ICT club meets on Fridays", size=13, color=MUTED, anchor="start", italic=True)
+    sy = y1 - 28
+    s.rect(x0, sy, x1 - x0, 28, fill="#e2e8f0", stroke=INK, width=2.5)
+    s.text(x0 + 14, sy + 14, "Slide 2 of 4", size=13, color=INK, anchor="start")
+    for k in range(2):
+        s.rect(x1 - 118 + k * 26, sy + 7, 16, 14, fill="#ffffff", stroke=INK, width=1.5, rx=2)
+    s.polygon([(x1 - 62, sy + 6), (x1 - 62, sy + 22), (x1 - 48, sy + 14)], fill=INK, stroke=INK, width=1)
+    _labels(s, [(22, "Title bar", x0 + 320, y0 + 4), (y0 + 115, "Title placeholder", x0 + 530, y0 + 115),
+                (y0 + 240, "Content placeholder", x0 + 530, y0 + 240), (y0 + 357, "Notes pane (speaker notes)", x0 + 550, y0 + 357),
+                (sy + 14, "Views and Slide Show button", x1 - 46, sy + 14)], lx=772)
+    s.polyline([(x0 + 24, y0 + 82), (x0 - 22, y0 + 82)], color=MUTED, width=1.8)
+    s.dot(x0 + 24, y0 + 82, r=4, color=RED)
+    s.text(x0 - 30, y0 + 82, "Slide pane", size=15, color=INK, anchor="end")
+    s.text(x0 - 30, y0 + 104, "(thumbnails)", size=15, color=INK, anchor="end")
+    return s
+
+
+@fig
+def bitmap_vs_vector():
+    s = Svg(820, 450, "Bitmap and vector graphics",
+            "The same circle enlarged two ways. On the left, a bitmap (raster) image is made of pixels: when it is "
+            "enlarged, the square pixels show and the edge looks jagged. On the right, a vector image is stored as "
+            "shapes described by mathematics: when it is enlarged, the edge stays smooth. Bitmaps suit photographs; "
+            "vectors suit logos, diagrams and drawings.")
+    # bitmap circle on a pixel grid
+    ox, oy, n, p = 60, 70, 14, 20
+    c = (n - 1) / 2
+    for i in range(n):
+        for j in range(n):
+            d = math.hypot(i - c, j - c)
+            on = d <= 6.2
+            edge = on and d > 5.0
+            s.rect(ox + i * p, oy + j * p, p, p, fill=(BLUE if not edge else "#60a5fa") if on else "#ffffff", stroke="#cbd5e1", width=0.8)
+    s.text(ox + n * p / 2, 40, "Bitmap (raster): made of pixels", size=17, color=BLUE, weight="bold")
+    s.text(ox + n * p / 2, oy + n * p + 30, "enlarged: jagged, blocky edges", size=15, color=INK)
+    s.text(ox + n * p / 2, oy + n * p + 54, "best for photographs (.jpg, .png, .bmp)", size=15, color=MUTED)
+    # vector circle
+    vx = 590
+    s.circle(vx, oy + n * p / 2, 124, fill=BLUE, stroke=INK, width=2)
+    for a in (0, 90, 180, 270):
+        x = vx + 124 * math.cos(math.radians(a))
+        y = oy + n * p / 2 + 124 * math.sin(math.radians(a))
+        s.rect(x - 5, y - 5, 10, 10, fill="#ffffff", stroke=RED, width=2)
+    s.text(vx, 40, "Vector: made of shapes and maths", size=17, color=GREEN, weight="bold")
+    s.text(vx, oy + n * p + 30, "enlarged: edges stay smooth", size=15, color=INK)
+    s.text(vx, oy + n * p + 54, "best for logos and drawings (.svg, .ai)", size=15, color=MUTED)
+    s.text(vx, oy + n * p + 78, "red squares: points that define the curve", size=13, color=RED)
     return s
 
 

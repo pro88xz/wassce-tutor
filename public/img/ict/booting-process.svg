@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The booting process</title>
+<desc id="d">Five steps from switching on to a ready computer: 1, power on: the power supply starts and the CPU runs the BIOS or UEFI firmware stored in ROM; 2, the power-on self-test (POST) checks the memory, keyboard and disks; 3, the BIOS finds a boot device such as the hard disk or SSD; 4, the boot loader loads the operating system&#x27;s core (the kernel) into RAM; 5, the operating system finishes starting and shows the log-in screen or desktop.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="660" height="520" rx="20" fill="#f8fafc"/>
+<rect x="50.0" y="22.0" width="560.0" height="66.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="330.0" y="43.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Power on</text>
+<text x="330.0" y="67.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the CPU starts the BIOS/UEFI firmware stored in ROM</text>
+<rect x="50.0" y="124.0" width="560.0" height="66.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="330.0" y="145.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Power-on self-test (POST)</text>
+<text x="330.0" y="169.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">checks memory, keyboard and disks; a beep if a fault</text>
+<line x1="330.0" y1="94.0" x2="330.0" y2="118.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="50.0" y="226.0" width="560.0" height="66.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="330.0" y="247.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Find the boot device</text>
+<text x="330.0" y="271.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the BIOS looks for the OS on the SSD, hard disk or USB</text>
+<line x1="330.0" y1="196.0" x2="330.0" y2="220.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="50.0" y="328.0" width="560.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="330.0" y="349.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4. Load the operating system</text>
+<text x="330.0" y="373.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the boot loader copies the OS kernel into RAM</text>
+<line x1="330.0" y1="298.0" x2="330.0" y2="322.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="50.0" y="430.0" width="560.0" height="66.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="330.0" y="451.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5. Ready</text>
+<text x="330.0" y="475.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the OS shows the log-in screen, then the desktop</text>
+<line x1="330.0" y1="400.0" x2="330.0" y2="424.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+</svg>

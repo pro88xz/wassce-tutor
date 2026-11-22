@@ -1,0 +1,2454 @@
+{
+ "name": "ict_set2_p1",
+ "label": "ICT: set 2 (software, operating systems, programming languages, computer operations, files, word processing, spreadsheets, databases, presentations and graphics)",
+ "subject_slug": "ict-computer-studies",
+ "papers": [
+  {
+   "id": "d128cc70-de91-5581-8718-bf135c6c6f38",
+   "topic": "Types of Software",
+   "title": "Types of Software: practice set 1",
+   "paper_type": "Practice",
+   "description": "6 original WASSCE-style objective questions on types of software, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 120,
+   "questions": [
+    {
+     "id": "11619f30-a590-5bb3-b69a-76de8a1abe26",
+     "key": "ict-sw-01",
+     "stem": "Which of the following is system software?",
+     "image_url": null,
+     "explanation": "System software runs and manages the computer. The operating system is the main system software; utility programs, translators and device drivers are the others.\n\n**Why the other options are wrong**\n\n- a word processor: A word processor does a task for the user, so it is application software.\n- a spreadsheet program: A spreadsheet is an application package for calculations.\n- a web browser: A browser is an application used to view web pages.",
+     "position": 1,
+     "options": [
+      {
+       "id": "4d65f6c6-7bec-5032-abb1-bbc0095af64b",
+       "label": "A",
+       "content": "an operating system",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0e54d100-8b57-5680-af2d-7dd9b1bc1684",
+       "label": "B",
+       "content": "a word processor",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4749f9e6-c50a-5511-a50f-9ee75fab034b",
+       "label": "C",
+       "content": "a spreadsheet program",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "de325dbd-49bb-5eff-95bc-2b18e65435ce",
+       "label": "D",
+       "content": "a web browser",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ac088f03-602c-5b5d-9997-9ecabe6dda1f",
+     "key": "ict-sw-02",
+     "stem": "Antivirus programs are examples of",
+     "image_url": null,
+     "explanation": "Utility programs maintain, protect or improve the computer. Antivirus, backup, disk cleanup, defragmenter and file compression programs are utilities, a kind of system software.\n\n**Why the other options are wrong**\n\n- application packages: Antivirus programs look after the computer itself, not a user task such as typing.\n- device drivers: A device driver lets the operating system work with one hardware device.\n- programming languages: A programming language is used to write programs.",
+     "position": 2,
+     "options": [
+      {
+       "id": "e56bc6c0-e933-520d-8bf5-1425ac436cc6",
+       "label": "A",
+       "content": "application packages",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "632b612e-8f9a-5a08-9b2c-731361fc5d48",
+       "label": "B",
+       "content": "device drivers",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ece6f280-f61f-5ce7-9c20-3cb60842bdd8",
+       "label": "C",
+       "content": "programming languages",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1440afaf-8c54-59c1-a25f-837ef0f172c1",
+       "label": "D",
+       "content": "utility programs",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5c089535-5348-5300-9a51-19ec067431b8",
+     "key": "ict-sw-03",
+     "stem": "Software written specially for one organisation to meet its exact needs is called",
+     "image_url": null,
+     "explanation": "Bespoke (custom-written or tailor-made) software is written to order for one person or organisation. It fits their needs exactly but costs more and takes time to write.\n\n**Why the other options are wrong**\n\n- off-the-shelf software: Off-the-shelf software is ready-made and sold to many buyers.\n- freeware: Freeware is software that is free to use.\n- shareware: Shareware is free to try for a time, then must be paid for.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2c5716fc-b369-5d85-bab7-b255383e8072",
+       "label": "A",
+       "content": "bespoke software",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "21e5c14f-31ae-5999-8ad6-4ad10b055978",
+       "label": "B",
+       "content": "off-the-shelf software",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a90e7d35-d887-5864-a96b-5f15a609e8ca",
+       "label": "C",
+       "content": "freeware",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "265d791c-93a7-5547-b4aa-e5acf88385b8",
+       "label": "D",
+       "content": "shareware",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cbc35402-4b50-5e30-8d3c-e9d09c2f8df0",
+     "key": "ict-sw-04",
+     "stem": "A small program that allows the operating system to communicate with a printer is called",
+     "image_url": null,
+     "explanation": "Each hardware device, such as a printer, scanner or graphics card, needs its device driver so that the operating system can send it instructions.\n\n**Why the other options are wrong**\n\n- a compiler: A compiler translates a high-level program into machine code.\n- an antivirus program: An antivirus program finds and removes malware.\n- a spreadsheet: A spreadsheet is an application for calculations.",
+     "position": 4,
+     "options": [
+      {
+       "id": "3ef2f2f5-53f6-58cd-8fd6-1bcfe7871b8c",
+       "label": "A",
+       "content": "a compiler",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e3726113-d248-50a4-aaef-855b16f845cf",
+       "label": "B",
+       "content": "a device driver",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "64f10f1a-09cb-5cef-acab-d9ab6bb165a5",
+       "label": "C",
+       "content": "an antivirus program",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8b9d18b0-e6e1-51b2-bbd1-7de5818daf45",
+       "label": "D",
+       "content": "a spreadsheet",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1c626ac4-1eb2-57e8-affa-380702e7b22a",
+     "key": "ict-sw-05",
+     "stem": "Software whose source code can be freely read, changed and shared is called",
+     "image_url": null,
+     "explanation": "Open-source software, such as Linux, LibreOffice and Firefox, makes its source code available for anyone to read, change and share, usually at no cost.\n\n**Why the other options are wrong**\n\n- shareware: Shareware may be tried free for a time; its code is not shared.\n- proprietary software: Proprietary software is bought, and users may not copy or change it.\n- bespoke software: Bespoke software is written for one organisation.",
+     "position": 5,
+     "options": [
+      {
+       "id": "36b6772b-2259-540f-aa85-ee6ae6a60308",
+       "label": "A",
+       "content": "shareware",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "07c4af1e-c418-55ae-a8fa-ab24bb021282",
+       "label": "B",
+       "content": "proprietary software",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b64149f8-15a0-518f-980c-b32d3568abe3",
+       "label": "C",
+       "content": "open-source software",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "40e46959-7874-5815-92b7-4298cfe22992",
+       "label": "D",
+       "content": "bespoke software",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b8c8a833-2f80-5936-99eb-c00b1996b8e2",
+     "key": "ict-sw-06",
+     "stem": "Which of the following is an advantage of off-the-shelf software over bespoke software?",
+     "image_url": null,
+     "explanation": "Off-the-shelf software is cheaper because many buyers share the cost, is available immediately, and has been tested by many users; but it may not fit every need.\n\n**Why the other options are wrong**\n\n- It fits the organisation's needs exactly.  \n  That is an advantage of bespoke software.\n- It can be changed whenever the organisation wishes.  \n  Bespoke software, not a ready-made package, can be changed to order.\n- It is written for only one user.  \n  Off-the-shelf software is written for many users.",
+     "position": 6,
+     "options": [
+      {
+       "id": "f5c3bed7-45ef-5fc2-9d9c-8692e71c2ae3",
+       "label": "A",
+       "content": "It fits the organisation's needs exactly.",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b7ffc024-27ce-5f8f-8782-aca450c9beb5",
+       "label": "B",
+       "content": "It can be changed whenever the organisation wishes.",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7c9978bf-7e01-55cd-ba6a-29a883f82e5c",
+       "label": "C",
+       "content": "It is written for only one user.",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "fca3e753-ae88-5825-8f1e-9d7582973559",
+       "label": "D",
+       "content": "It is cheaper and available at once.",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "29fa40e9-0893-5c4b-ad9e-821f2f1b5978",
+   "topic": "Operating Systems",
+   "title": "Operating Systems: practice set 1",
+   "paper_type": "Practice",
+   "description": "6 original WASSCE-style objective questions on operating systems, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 121,
+   "questions": [
+    {
+     "id": "6e2eca76-8e59-5c8a-80eb-a0f73f3de136",
+     "key": "ict-os-01",
+     "stem": "Which of the following is NOT a function of an operating system?",
+     "image_url": null,
+     "explanation": "The operating system manages the processor, memory, files and devices, provides the user interface and security. Typing and formatting a letter is done by an application, a word processor.\n\n**Why the other options are wrong**\n\n- managing memory: Memory management is a main function of the operating system.\n- managing files and folders: File management is a main function of the operating system.\n- controlling input and output devices: Device management is a main function of the operating system.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9335983a-2603-5ac0-b58c-f87323157b93",
+       "label": "A",
+       "content": "typing and formatting a letter",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e3992097-adb1-58f9-8a96-50415822ccd0",
+       "label": "B",
+       "content": "managing memory",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "04de29e9-c662-59fe-8799-5e08742dbf07",
+       "label": "C",
+       "content": "managing files and folders",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e1b05867-c79b-507c-9467-4187b905aee2",
+       "label": "D",
+       "content": "controlling input and output devices",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "10f177d4-1f4b-51e2-a1fa-f1b8179c0c5b",
+     "key": "ict-os-02",
+     "stem": "An operating system that responds to input immediately, as needed to control traffic lights or an aircraft, is",
+     "image_url": null,
+     "explanation": "A real-time operating system must react to events within a fixed, very short time, so it is used where delays would be dangerous: aircraft, medical machines, traffic control and factory robots.\n\n**Why the other options are wrong**\n\n- a batch operating system: A batch system runs groups of jobs later, with no immediate response.\n- a single-user, single-task operating system: This describes an old system such as MS-DOS, not its speed of response.\n- a network operating system: A network operating system manages users, files and printers on a network.",
+     "position": 2,
+     "options": [
+      {
+       "id": "1f58f2e6-1256-548f-a129-1dee46365dbf",
+       "label": "A",
+       "content": "a batch operating system",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8460ebfb-a359-5c34-87a2-0c68d270333e",
+       "label": "B",
+       "content": "a real-time operating system",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a65bb639-a7f8-55d3-a1c0-16f13bbcf2f5",
+       "label": "C",
+       "content": "a single-user, single-task operating system",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "de13fc4d-7221-54f5-af26-64e87d6f7e33",
+       "label": "D",
+       "content": "a network operating system",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "533e4098-bb4e-534d-bb9b-8dd001a166b3",
+     "key": "ict-os-03",
+     "stem": "In a graphical user interface, WIMP stands for",
+     "image_url": null,
+     "explanation": "WIMP names the main parts of a graphical user interface: windows, icons, menus and a pointer controlled by a mouse or touchpad.\n\n**Why the other options are wrong**\n\n- windows, Internet, mouse, printer: The Internet and the printer are not parts of a GUI.\n- words, images, menus, programs: W stands for windows and I for icons.\n- windows, icons, monitors, processors: M stands for menus and P for the pointer.",
+     "position": 3,
+     "options": [
+      {
+       "id": "2545f758-64cb-5daf-838e-bfb0e68764c2",
+       "label": "A",
+       "content": "windows, Internet, mouse, printer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d177e067-67ab-5cc4-981e-24c77801225b",
+       "label": "B",
+       "content": "words, images, menus, programs",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b304ab00-686a-5798-afca-c2657e485aed",
+       "label": "C",
+       "content": "windows, icons, menus, pointer",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5ce5f00c-524d-5e33-9b00-f588229ef5ad",
+       "label": "D",
+       "content": "windows, icons, monitors, processors",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cb9d23c3-10b5-5bae-a89a-ad25f3e54558",
+     "key": "ict-os-04",
+     "stem": "Which of the following is a mobile operating system?",
+     "image_url": null,
+     "explanation": "Android (by Google) and iOS (by Apple) are mobile operating systems, made for touch screens, battery life and wireless networks.\n\n**Why the other options are wrong**\n\n- Microsoft Word: Microsoft Word is a word processor, an application.\n- CorelDRAW: CorelDRAW is a graphics application.\n- MS-DOS: MS-DOS was an early operating system for desktop PCs.",
+     "position": 4,
+     "options": [
+      {
+       "id": "b8996c68-ba48-5818-8aef-662134c5e24f",
+       "label": "A",
+       "content": "Microsoft Word",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c9d4fe5e-9335-5b30-936a-4f2481466984",
+       "label": "B",
+       "content": "CorelDRAW",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d8325aff-a694-5d96-aa49-b3b6bfcb7aa0",
+       "label": "C",
+       "content": "MS-DOS",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6ae53894-4fa4-5b79-80c4-c5accedb4e47",
+       "label": "D",
+       "content": "Android",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c33cd8a8-b19a-56c3-bf6f-65641bc33196",
+     "key": "ict-os-05",
+     "stem": "One advantage of a graphical user interface over a command-line interface is that it",
+     "image_url": null,
+     "explanation": "In a GUI, users click or touch icons and menus they can see, so there is nothing to memorise; a CLI is faster for experts and uses fewer resources, but commands must be typed exactly.\n\n**Why the other options are wrong**\n\n- uses less memory and processing power: A command-line interface uses less memory.\n- requires commands to be remembered and typed: Typed commands are a feature of a command-line interface.\n- needs no pointing device: A GUI is normally used with a pointing device.",
+     "position": 5,
+     "options": [
+      {
+       "id": "db59d182-9b57-5b3b-b9af-0a8ff2e45d31",
+       "label": "A",
+       "content": "is easier for beginners to learn and use",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2d652107-a1a7-5d13-aeb6-f18a88b9c731",
+       "label": "B",
+       "content": "uses less memory and processing power",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7ef9b2ae-4ea1-55c2-bdca-fc63f0bdbcce",
+       "label": "C",
+       "content": "requires commands to be remembered and typed",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "21171759-4816-5959-9637-efd4f7ae3fff",
+       "label": "D",
+       "content": "needs no pointing device",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a75533e8-0e0e-5486-bda3-735ad0a69e78",
+     "key": "ict-os-06",
+     "stem": "The ability of an operating system to run two or more programs at the same time is called",
+     "image_url": null,
+     "explanation": "Multitasking lets you, for example, play music while typing a document; the operating system shares the processor's time between the programs.\n\n**Why the other options are wrong**\n\n- booting: Booting is starting the computer.\n- formatting: Formatting prepares a disk, or changes the look of a document.\n- compiling: Compiling translates a program into machine code.",
+     "position": 6,
+     "options": [
+      {
+       "id": "5da1dd45-8191-5a02-beb6-5075665eae74",
+       "label": "A",
+       "content": "booting",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8638d7e2-5c1c-5591-aa25-397bf3f72221",
+       "label": "B",
+       "content": "multitasking",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6364f8c0-3c16-540c-acd3-4ed6e8d8628a",
+       "label": "C",
+       "content": "formatting",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f62a8bf4-b781-5e28-970a-4f91f765505a",
+       "label": "D",
+       "content": "compiling",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "86692cf8-ab16-5bdf-85a3-bbe0bc43d320",
+   "topic": "Programming Languages and Translators",
+   "title": "Programming Languages and Translators: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on programming languages and translators, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 122,
+   "questions": [
+    {
+     "id": "c17ffce5-9846-5996-acfa-199926c771e1",
+     "key": "ict-pl-01",
+     "stem": "The only language that a computer's processor understands directly is",
+     "image_url": null,
+     "explanation": "Machine language is made of binary codes (0s and 1s) that the CPU carries out directly. Every other language must be translated into it.\n\n**Why the other options are wrong**\n\n- assembly language: Assembly language must first be translated by an assembler.\n- a high-level language: A high-level language must be compiled or interpreted.\n- SQL: SQL is a database query language that must be processed by a DBMS.",
+     "position": 1,
+     "options": [
+      {
+       "id": "8d7b21e3-f0dd-576c-a81c-e3ae4010129b",
+       "label": "A",
+       "content": "assembly language",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9aa7b9ce-b477-5878-869b-e389be24ea9b",
+       "label": "B",
+       "content": "a high-level language",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "42714de6-e507-516a-b78b-46abe60d0cd7",
+       "label": "C",
+       "content": "machine language",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "14d09569-1c96-5d1c-8b33-9a6a54fc1b06",
+       "label": "D",
+       "content": "SQL",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "32bab352-ef43-5de1-a6a6-9e7239e14186",
+     "key": "ict-pl-02",
+     "stem": "A translator that converts a whole high-level program into object code before it is run is",
+     "image_url": null,
+     "explanation": "A compiler translates the whole source program in one go and produces an object-code file, which can then be run many times without the compiler.\n\n**Why the other options are wrong**\n\n- an interpreter: An interpreter translates and runs one statement at a time.\n- an assembler: An assembler translates assembly language, not a high-level language.\n- a device driver: A device driver lets the operating system control a hardware device.",
+     "position": 2,
+     "options": [
+      {
+       "id": "55534ada-33ec-5ab6-ab3a-b6e4f6da09cd",
+       "label": "A",
+       "content": "an interpreter",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "60e745c3-2dfd-5228-a70e-f8731fb5e7c8",
+       "label": "B",
+       "content": "an assembler",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3e30968a-876b-5f58-a7d2-d3c458049191",
+       "label": "C",
+       "content": "a device driver",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8693d177-6919-51f5-afc2-1a028088f523",
+       "label": "D",
+       "content": "a compiler",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5a00c430-7cf6-54c0-8731-67fdca9679d7",
+     "key": "ict-pl-03",
+     "stem": "Which of the following uses mnemonics such as ADD, SUB and MOV?",
+     "image_url": null,
+     "explanation": "Assembly language replaces each binary instruction with a short memorable word (a mnemonic). An assembler translates it into machine code.\n\n**Why the other options are wrong**\n\n- machine language: Machine language uses binary codes, not words.\n- a high-level language: High-level languages use English-like statements such as PRINT or total = a + b.\n- a fourth-generation language: Fourth-generation languages such as SQL use near-English commands for databases.",
+     "position": 3,
+     "options": [
+      {
+       "id": "d8cfeb72-7896-59e2-bb8a-2d5e3a46c1c3",
+       "label": "A",
+       "content": "assembly language",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "828ea5e4-c0a4-5e97-8eef-25d67f2090ac",
+       "label": "B",
+       "content": "machine language",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d5aa808a-d7b7-52b0-a6dc-c4252a8c8744",
+       "label": "C",
+       "content": "a high-level language",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b4319b6d-a025-57cf-b276-593b31297445",
+       "label": "D",
+       "content": "a fourth-generation language",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8e5a1823-2b4d-58e1-859a-434ae21738ed",
+     "key": "ict-pl-04",
+     "stem": "Which of the following is a high-level programming language?",
+     "image_url": null,
+     "explanation": "Python, Java, C, BASIC, Pascal, COBOL and FORTRAN are high-level languages: English-like, easier to write and portable between computers.\n\n**Why the other options are wrong**\n\n- machine code: Machine code is the lowest-level language.\n- assembly language: Assembly language is a low-level language.\n- an assembler: An assembler is a translator, not a language.",
+     "position": 4,
+     "options": [
+      {
+       "id": "cae8edb2-6651-56cd-a7ca-916ca23a8ea1",
+       "label": "A",
+       "content": "machine code",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "42e2866a-b21e-5586-bdcf-390c2e164f14",
+       "label": "B",
+       "content": "Python",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f90347e7-8123-547e-9bb7-be0ed6a59bf4",
+       "label": "C",
+       "content": "assembly language",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "92c5e043-51b2-5408-bfb2-fc6110ae472a",
+       "label": "D",
+       "content": "an assembler",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fac10ade-d37c-570e-ba0c-aeacfc1cc77c",
+     "key": "ict-pl-05",
+     "stem": "An interpreter differs from a compiler because an interpreter",
+     "image_url": null,
+     "explanation": "An interpreter translates each statement and runs it before going on to the next, so it stops at the first error; it must be present every time the program runs.\n\n**Why the other options are wrong**\n\n- produces an object-code file: A compiler produces object code; an interpreter does not.\n- translates the whole program before it is run: That is how a compiler works.\n- translates assembly language into machine code: That is the job of an assembler.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f70af7cf-3b42-5a8c-ae34-5a68fccc7d0e",
+       "label": "A",
+       "content": "produces an object-code file",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cfe0b2c4-c43a-570a-b713-8813b914bd13",
+       "label": "B",
+       "content": "translates the whole program before it is run",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "185449cb-e0a3-5673-a4b0-c144d02fef71",
+       "label": "C",
+       "content": "translates and runs a program one statement at a time",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f6c813d2-ea47-5210-a800-01a15ff24e47",
+       "label": "D",
+       "content": "translates assembly language into machine code",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c6c10d96-d0de-5c31-a1b9-ad941b74f939",
+     "key": "ict-pl-06",
+     "stem": "COBOL was designed mainly for",
+     "image_url": null,
+     "explanation": "COBOL stands for COmmon Business-Oriented Language; it is used for business records such as payroll, banking and insurance.\n\n**Why the other options are wrong**\n\n- scientific and engineering calculations: FORTRAN was designed for scientific work.\n- teaching beginners to program: BASIC was designed for beginners.\n- building websites: JavaScript and PHP are used for websites.",
+     "position": 6,
+     "options": [
+      {
+       "id": "f04edccf-2f9e-5b44-a017-c2ed94cb6a7f",
+       "label": "A",
+       "content": "scientific and engineering calculations",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c6fe2a18-8d6e-509a-a4b7-8e87a2bee2c6",
+       "label": "B",
+       "content": "teaching beginners to program",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "95979fec-8cc1-56cb-bf99-82a38861e587",
+       "label": "C",
+       "content": "building websites",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c3c4450c-3937-5af8-a8ec-3699007089b3",
+       "label": "D",
+       "content": "business data processing",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ba45356a-9a12-5eba-aacb-d3d8181af505",
+     "key": "ict-pl-07",
+     "stem": "An advantage of high-level languages over low-level languages is that high-level programs",
+     "image_url": null,
+     "explanation": "High-level languages are machine-independent: the same source program can be translated for different computers. They are also easier to read, write and correct.\n\n**Why the other options are wrong**\n\n- run faster than machine code: Low-level programs usually run faster.\n- need no translation: High-level programs must be compiled or interpreted.\n- give direct control of the processor's registers: That is a feature of low-level languages.",
+     "position": 7,
+     "options": [
+      {
+       "id": "4df19ce7-301a-5bff-8105-b67fb425f2fc",
+       "label": "A",
+       "content": "can run on different types of computer (are portable)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "857d2cec-94ed-5e86-bb58-217f11a14777",
+       "label": "B",
+       "content": "run faster than machine code",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e2b47215-089e-51bc-9452-b58c252d7b67",
+       "label": "C",
+       "content": "need no translation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "858dcc1d-b0b7-57cb-8268-132d84d33cb1",
+       "label": "D",
+       "content": "give direct control of the processor's registers",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "99d7d940-2f90-5163-8eab-863a5245cb3c",
+   "topic": "Basic Computer Operations",
+   "title": "Basic Computer Operations: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on basic computer operations, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 123,
+   "questions": [
+    {
+     "id": "073dc296-407d-528f-8b73-ed4f6872bcee",
+     "key": "ict-bo-01",
+     "stem": "Restarting a computer that is already switched on is called",
+     "image_url": null,
+     "explanation": "Warm (soft) booting restarts a running computer, using Restart or Ctrl + Alt + Delete, without switching off the power. It is used after installing software or when a program hangs.\n\n**Why the other options are wrong**\n\n- cold booting: Cold booting starts a computer from the off state.\n- logging off: Logging off ends a user's session without restarting the computer.\n- hibernating: Hibernating saves the work to disk and switches off.",
+     "position": 1,
+     "options": [
+      {
+       "id": "b1d5fda9-8b43-576e-92bc-f5c24996a28c",
+       "label": "A",
+       "content": "cold booting",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "309cf0ff-60b8-56a6-b302-6a61f0fc69e8",
+       "label": "B",
+       "content": "warm booting",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9c23fcbb-9f84-57e7-b1c7-8c6ff61eeff7",
+       "label": "C",
+       "content": "logging off",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "6a17b2c9-a24d-563b-813b-ca54096d232e",
+       "label": "D",
+       "content": "hibernating",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b237621a-7a44-5200-81ef-e40315322cd5",
+     "key": "ict-bo-02",
+     "stem": "The checks that the BIOS makes on the hardware when a computer is switched on are called",
+     "image_url": null,
+     "explanation": "During booting, the BIOS runs the power-on self-test to check the memory, keyboard and disks. If a fault is found it shows a message or gives beeps.\n\n**Why the other options are wrong**\n\n- defragmentation: Defragmentation rearranges files on a hard disk.\n- formatting: Formatting prepares a disk for use.\n- a virus scan: A virus scan is done by an antivirus program after start-up.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d67df49e-c2d2-512e-bb69-b77a525fdaf2",
+       "label": "A",
+       "content": "defragmentation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a3117588-01e7-5b5e-85d6-9df6d7f7b670",
+       "label": "B",
+       "content": "formatting",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8920bb23-8613-5970-9ca5-a76dd3779fc7",
+       "label": "C",
+       "content": "the power-on self-test (POST)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "37e2b73c-d976-5c29-9974-41c7fd358b5e",
+       "label": "D",
+       "content": "a virus scan",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "301b64f7-692d-5b31-9e5a-d44c1381ed32",
+     "key": "ict-bo-03",
+     "stem": "Which keyboard shortcut undoes the last action?",
+     "image_url": null,
+     "explanation": "Ctrl + Z undoes the last action, Ctrl + Y redoes it, Ctrl + C copies, Ctrl + X cuts and Ctrl + V pastes.\n\n**Why the other options are wrong**\n\n- Ctrl + Y: Ctrl + Y redoes an action that was undone.\n- Ctrl + U: Ctrl + U underlines selected text.\n- Ctrl + X: Ctrl + X cuts selected items.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b69b813f-edc3-5e3c-b9f1-91670efc1ad7",
+       "label": "A",
+       "content": "Ctrl + Y",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ca3de3f9-5dd7-5edc-b8c3-4468ea76a13b",
+       "label": "B",
+       "content": "Ctrl + U",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "1d1f89ea-b96e-58a9-9585-a2bf2e956221",
+       "label": "C",
+       "content": "Ctrl + X",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "743948b9-e9d0-523e-bfa7-9120c79645d4",
+       "label": "D",
+       "content": "Ctrl + Z",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23d2299e-aa84-5e67-bd7f-4b5a3b2d3836",
+     "key": "ict-bo-04",
+     "stem": "Right-clicking an item on the desktop usually",
+     "image_url": null,
+     "explanation": "A right-click shows a shortcut (context) menu of commands for that item, such as Open, Copy, Rename, Delete and Properties.\n\n**Why the other options are wrong**\n\n- opens the item: Double-clicking opens an item.\n- deletes the item: Items are deleted with the Delete key or the Delete command.\n- moves the item to another folder: Dragging and dropping moves an item.",
+     "position": 4,
+     "options": [
+      {
+       "id": "22f5ae3c-5c95-57b5-bbd7-11c4b7c55d72",
+       "label": "A",
+       "content": "shows a shortcut menu of options",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "7f10a799-887e-5039-9096-46dd02d15380",
+       "label": "B",
+       "content": "opens the item",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "24dfb965-04e0-5da9-a98f-2fb9a21a0350",
+       "label": "C",
+       "content": "deletes the item",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bdc99c14-bd9b-529f-b2fc-e138604a393c",
+       "label": "D",
+       "content": "moves the item to another folder",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "022cc378-8e4c-5ae4-ad08-a8f346e9e7f6",
+     "key": "ict-bo-05",
+     "stem": "Which device keeps a computer running for a short time when the mains electricity fails?",
+     "image_url": null,
+     "explanation": "A UPS has a battery that takes over at once when the power fails, giving time to save work and shut down properly.\n\n**Why the other options are wrong**\n\n- a stabiliser: A stabiliser keeps the voltage steady but has no battery.\n- a surge protector: A surge protector blocks sudden voltage spikes but cannot supply power.\n- a modem: A modem connects a computer to the Internet.",
+     "position": 5,
+     "options": [
+      {
+       "id": "fdb1ab33-7254-53d2-89f2-c8e636c71901",
+       "label": "A",
+       "content": "a stabiliser",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "619c8909-4339-5cfe-be96-c15d7c2ad048",
+       "label": "B",
+       "content": "an uninterruptible power supply (UPS)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5f8a327a-5709-57f7-a38f-b4cb42ac78d3",
+       "label": "C",
+       "content": "a surge protector",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "69c779c4-33d1-522e-8820-57c5d3ccfa98",
+       "label": "D",
+       "content": "a modem",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4e4a4052-f51d-5189-8c38-1ed3caa65fb1",
+     "key": "ict-bo-06",
+     "stem": "Why should a computer be shut down properly rather than switched off at the socket?",
+     "image_url": null,
+     "explanation": "Shutting down closes programs and saves settings in order. Cutting the power can lose unsaved work and corrupt open files and the operating system.\n\n**Why the other options are wrong**\n\n- to empty the Recycle Bin: Shutting down does not empty the Recycle Bin.\n- to make the screen brighter at the next start: Shutting down has nothing to do with screen brightness.\n- to delete the user's documents: Shutting down keeps the user's saved documents.",
+     "position": 6,
+     "options": [
+      {
+       "id": "3dbbf348-b657-51d5-9c23-00f7eca6798d",
+       "label": "A",
+       "content": "to empty the Recycle Bin",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "fcc17b16-5ad2-51be-8550-a4540f9ddc70",
+       "label": "B",
+       "content": "to make the screen brighter at the next start",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e5b37f7a-84ad-5424-a17f-4318109539e6",
+       "label": "C",
+       "content": "to avoid losing unsaved work and damaging files",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "273b46f1-e7dd-59b4-9830-112f77aac751",
+       "label": "D",
+       "content": "to delete the user's documents",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e7494ad6-0473-51de-abe5-8fad431c7373",
+     "key": "ict-bo-07",
+     "stem": "Clicking the minimise button of a window",
+     "image_url": null,
+     "explanation": "A minimised window disappears from view but its program keeps running; clicking its taskbar button brings it back.\n\n**Why the other options are wrong**\n\n- closes the program: The close button (×) closes a program.\n- makes the window fill the whole screen: The maximise button does that.\n- deletes the open document: Minimising does not change or delete any document.",
+     "position": 7,
+     "options": [
+      {
+       "id": "5842e405-f58a-5816-ba3a-ba3afd7c10bb",
+       "label": "A",
+       "content": "closes the program",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b576b1b3-e807-584c-8357-7ac9d5dea937",
+       "label": "B",
+       "content": "makes the window fill the whole screen",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f0346642-fb30-54f5-9511-a4b3bf3b3757",
+       "label": "C",
+       "content": "deletes the open document",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c746fe6-7bd8-5ae1-85b4-772a44889b00",
+       "label": "D",
+       "content": "hides the window as a button on the taskbar while the program keeps running",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f81499a8-cf6b-5056-9026-52962cadb761",
+   "topic": "File and Folder Management",
+   "title": "File and Folder Management: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on file and folder management, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 124,
+   "questions": [
+    {
+     "id": "9a840e05-7478-5b61-bd7b-32c28241b9dd",
+     "key": "ict-ff-01",
+     "stem": "A file named results.xlsx was most likely created with",
+     "image_url": null,
+     "explanation": "The extension .xlsx shows a Microsoft Excel workbook, a spreadsheet file.\n\n**Why the other options are wrong**\n\n- a word processor: Word-processed documents usually end in .docx.\n- a presentation program: Presentations usually end in .pptx.\n- a database program: Access databases usually end in .accdb.",
+     "position": 1,
+     "options": [
+      {
+       "id": "99f93291-b055-5169-a911-f383edb75d8a",
+       "label": "A",
+       "content": "a spreadsheet program",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "500196ac-cbe7-5867-a7b0-9141abb950fc",
+       "label": "B",
+       "content": "a word processor",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ca35ba35-fd27-5e5e-844f-9e0f3dc245f0",
+       "label": "C",
+       "content": "a presentation program",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4a3a5009-9bb7-5ba7-8132-f8934e864fb5",
+       "label": "D",
+       "content": "a database program",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "89aabd59-fb34-5697-a820-03500c7492ea",
+     "key": "ict-ff-02",
+     "stem": "In the path C:\\School\\SSS3\\ICT\\notes.docx, which folder directly contains the file notes.docx?",
+     "image_url": null,
+     "explanation": "A path lists the drive and then each folder in turn, down to the file. The name just before the file name, ICT, is the folder that holds it.\n\n**Why the other options are wrong**\n\n- SSS3: SSS3 contains the folder ICT, not the file itself.\n- School: School is two levels above ICT.\n- C:: C: is the root directory of the drive.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c511a0d1-3a1e-5b53-9e0c-05b7a5295d56",
+       "label": "A",
+       "content": "SSS3",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "94ac33dd-217e-5806-ab80-69258a6715d7",
+       "label": "B",
+       "content": "ICT",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "e84a486e-21ce-56d5-b3c2-86528ce10d84",
+       "label": "C",
+       "content": "School",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ac52a00e-970d-568d-bd90-61d853d4aca5",
+       "label": "D",
+       "content": "C:",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9b0ca532-aaff-582e-858a-c10d2ebbbd68",
+     "key": "ict-ff-03",
+     "stem": "Which command saves a copy of a document with a new name, leaving the original unchanged?",
+     "image_url": null,
+     "explanation": "Save As stores the document under a new name, in a new place or in a new format. The original file stays as it was.\n\n**Why the other options are wrong**\n\n- Save: Save stores the changes under the same name and place.\n- Rename: Rename changes the name of the existing file; no copy is made.\n- Cut: Cut removes a selection so that it can be moved.",
+     "position": 3,
+     "options": [
+      {
+       "id": "49a33f9c-2cfb-5a8f-968a-bf3b9bd0f718",
+       "label": "A",
+       "content": "Save",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "675f97d6-5cb6-59cd-8a62-57c95a1e6f83",
+       "label": "B",
+       "content": "Rename",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3946f289-bc2f-5bfb-9f98-a2f3a9eee515",
+       "label": "C",
+       "content": "Save As",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "444b6735-b064-5198-8385-31ffb02adbc1",
+       "label": "D",
+       "content": "Cut",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7f151d61-5e29-5e08-ae1f-81920af2449e",
+     "key": "ict-ff-04",
+     "stem": "Files deleted from the hard disk with the Delete key are first sent to",
+     "image_url": null,
+     "explanation": "Deleted files go to the Recycle Bin, from which they can be restored until the bin is emptied. Shift + Delete removes a file permanently.\n\n**Why the other options are wrong**\n\n- the Clipboard: The Clipboard holds items that have been copied or cut.\n- the desktop: The desktop is the main screen; it does not collect deleted files.\n- the Documents folder: Documents is where files are usually saved, not deleted to.",
+     "position": 4,
+     "options": [
+      {
+       "id": "20461b62-42dd-5459-a729-b9c784e4d6ee",
+       "label": "A",
+       "content": "the Clipboard",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d3fc3d88-39f0-5042-a980-797d6eb7f245",
+       "label": "B",
+       "content": "the desktop",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9eeab017-1141-5f3f-b566-348e2af53efc",
+       "label": "C",
+       "content": "the Documents folder",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9768d1ba-4d23-532f-9152-a75a7f96e623",
+       "label": "D",
+       "content": "the Recycle Bin",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b8cb3a16-b887-5991-9c92-6da490af66eb",
+     "key": "ict-ff-05",
+     "stem": "Moving a file, rather than copying it,",
+     "image_url": null,
+     "explanation": "Moving (Cut, then Paste) leaves one file, in its new place. Copying (Copy, then Paste) leaves two: the original and the copy.\n\n**Why the other options are wrong**\n\n- leaves the original and places a copy in the new location: That describes copying.\n- makes the file smaller: File compression makes files smaller.\n- changes the file's extension: Moving does not change the file's name or type.",
+     "position": 5,
+     "options": [
+      {
+       "id": "ae955a8c-a053-5850-ab56-02369d277a4c",
+       "label": "A",
+       "content": "removes it from its old location and places it in the new one",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "51bc4ed1-fbb8-5f8e-8fe9-90df680368e7",
+       "label": "B",
+       "content": "leaves the original and places a copy in the new location",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e4ecb034-335c-5310-bfcd-24bb19f029b2",
+       "label": "C",
+       "content": "makes the file smaller",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "959b848d-c612-51f8-b5c2-d8dfae639778",
+       "label": "D",
+       "content": "changes the file's extension",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bcd342e1-425f-5cdb-864b-3e0fd51d1580",
+     "key": "ict-ff-06",
+     "stem": "Which of the following characters is NOT allowed in a Windows file name?",
+     "image_url": null,
+     "explanation": "Windows file names may not contain a backslash, forward slash, colon, asterisk, question mark, quotation mark, less-than or greater-than sign or vertical bar, because these characters have special meanings to the operating system.\n\n**Why the other options are wrong**\n\n- the hyphen (-): A hyphen is allowed, as in term-1.docx.\n- the underscore (_): An underscore is allowed, as in my_notes.docx.\n- the full stop (.): A full stop is allowed; one separates the name from the extension.",
+     "position": 6,
+     "options": [
+      {
+       "id": "cdbdd9d1-7ed1-5489-98a5-38b6dc283868",
+       "label": "A",
+       "content": "the hyphen (-)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "187ffd1b-daa4-5192-8bc9-dacea1ffc5cd",
+       "label": "B",
+       "content": "the question mark (?)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c074bf5a-8ce4-5654-be3c-1a62b4eb499c",
+       "label": "C",
+       "content": "the underscore (_)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5006e2c4-77e3-5606-8ec6-f8edbe380c3d",
+       "label": "D",
+       "content": "the full stop (.)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fa47c665-505a-5d1e-ab9a-c0b9cffbb459",
+     "key": "ict-ff-07",
+     "stem": "Making files smaller so that they use less storage space and are quicker to send is called",
+     "image_url": null,
+     "explanation": "Compression programs reduce file size, often producing a .zip file. The files are extracted (decompressed) before use.\n\n**Why the other options are wrong**\n\n- backing up: A backup is a spare copy of files kept for safety.\n- formatting: Formatting prepares a disk for use and erases it.\n- defragmentation: Defragmentation rearranges files on a hard disk to load faster.",
+     "position": 7,
+     "options": [
+      {
+       "id": "299cc348-59d6-5d5a-8915-6fbc269e7242",
+       "label": "A",
+       "content": "backing up",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "91482971-245c-5a5e-bcd4-387854ea2811",
+       "label": "B",
+       "content": "formatting",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "51f07027-639e-5166-9607-a01b97fba07d",
+       "label": "C",
+       "content": "file compression",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7fe7f728-d0c0-56c9-8476-010598ce1f93",
+       "label": "D",
+       "content": "defragmentation",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bee6206f-1fa0-584f-85b9-8dbaf89da19d",
+   "topic": "Word Processing",
+   "title": "Word Processing: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on word processing, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 125,
+   "questions": [
+    {
+     "id": "645f1eb2-21be-5bf0-8452-cf78be9bde2e",
+     "key": "ict-wp-01",
+     "stem": "The alignment that makes the lines of a paragraph even at both the left and the right margins is",
+     "image_url": null,
+     "explanation": "Justified text is spaced out so that every full line starts at the left margin and ends at the right margin, as in newspapers and books.\n\n**Why the other options are wrong**\n\n- centre: Centre places each line in the middle of the page.\n- left: Left alignment leaves the right edge ragged.\n- right: Right alignment leaves the left edge ragged.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a570d112-1ab3-5327-90d7-0ab78b391250",
+       "label": "A",
+       "content": "centre",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4a638d6d-6615-566c-8011-70d9f86541b9",
+       "label": "B",
+       "content": "left",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "49b8da2e-6901-57ff-8976-db253825c0a5",
+       "label": "C",
+       "content": "right",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eb2debce-b2a9-53a3-941a-31234c558436",
+       "label": "D",
+       "content": "justify",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "8bd40281-91c8-5381-bca9-a8d55334751c",
+     "key": "ict-wp-02",
+     "stem": "Text repeated at the bottom of every page of a document, such as page numbers, is placed in the",
+     "image_url": null,
+     "explanation": "A footer appears at the bottom of every page and a header at the top; both often hold page numbers, the title or the date.\n\n**Why the other options are wrong**\n\n- header: The header is at the top of every page.\n- margin: A margin is the blank space around the edge of the page.\n- title bar: The title bar is part of the program window, not the page.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b3bea355-fb44-501b-a5e5-2cf1430d060c",
+       "label": "A",
+       "content": "footer",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "b1f8a9bf-9e10-583d-8ebb-5b2b534c532b",
+       "label": "B",
+       "content": "header",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "36925821-86bc-5292-a370-9abbc533d0e2",
+       "label": "C",
+       "content": "margin",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f6988806-6087-5d92-8f70-12ab4716b2ab",
+       "label": "D",
+       "content": "title bar",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "233170ae-c882-515b-a8a3-c271e9f3bd1e",
+     "key": "ict-wp-03",
+     "stem": "The automatic movement of a word to the next line when the current line is full is called",
+     "image_url": null,
+     "explanation": "With word wrap, the user keeps typing and the word processor moves words to the next line by itself; Enter is pressed only at the end of a paragraph.\n\n**Why the other options are wrong**\n\n- line spacing: Line spacing is the distance between lines.\n- indentation: Indentation moves a paragraph in from the margin.\n- a page break: A page break starts a new page.",
+     "position": 3,
+     "options": [
+      {
+       "id": "91714af5-e132-58c8-9788-7d0fb7096278",
+       "label": "A",
+       "content": "line spacing",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "28dc81b8-a7fc-5132-bec4-718ff60d3333",
+       "label": "B",
+       "content": "word wrap",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "6bbccf70-48a6-586c-9bf0-860b6d43e85b",
+       "label": "C",
+       "content": "indentation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "cef2aefb-cd58-5082-b718-6d72bf30d1c7",
+       "label": "D",
+       "content": "a page break",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "555b4d65-5dfd-5ae8-8c42-b15881e0f61e",
+     "key": "ict-wp-04",
+     "stem": "Which feature produces a personalised copy of one letter for each person on a list of names and addresses?",
+     "image_url": null,
+     "explanation": "Mail merge combines a main document containing merge fields with a data source (the list), making one copy of the letter for each record.\n\n**Why the other options are wrong**\n\n- find and replace: Find and replace changes words throughout one document.\n- spelling and grammar check: This checks for errors in the text.\n- print preview: Print preview shows how pages will look before printing.",
+     "position": 4,
+     "options": [
+      {
+       "id": "7f45861a-774a-564f-9eb9-c8ea5aec43ef",
+       "label": "A",
+       "content": "find and replace",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5b75b748-d52c-5d0c-afe9-3f66261647af",
+       "label": "B",
+       "content": "spelling and grammar check",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e704c98a-e92f-5d54-a252-db75850be081",
+       "label": "C",
+       "content": "mail merge",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "32d95fbc-7d5d-5ca5-a553-b09e04ab1824",
+       "label": "D",
+       "content": "print preview",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fd198780-5a6a-5e3a-ab8b-e2e853f08d8d",
+     "key": "ict-wp-05",
+     "stem": "A page that is wider than it is tall is in",
+     "image_url": null,
+     "explanation": "Orientation is the direction of the page: portrait (tall, the usual choice) or landscape (wide, useful for wide tables and charts).\n\n**Why the other options are wrong**\n\n- portrait orientation: A portrait page is taller than it is wide.\n- justified alignment: Alignment describes how lines sit between the margins.\n- double line spacing: Line spacing is the space between lines of text.",
+     "position": 5,
+     "options": [
+      {
+       "id": "c2395db6-5c33-51e6-aebf-773de0479568",
+       "label": "A",
+       "content": "portrait orientation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5394bf24-c35a-53e2-bd71-7371cb9386ef",
+       "label": "B",
+       "content": "justified alignment",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7b803e1d-524a-5923-89b1-c3462038bc4b",
+       "label": "C",
+       "content": "double line spacing",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "37bd43d0-438a-5565-9393-e1b04283631d",
+       "label": "D",
+       "content": "landscape orientation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1c71ed1a-c216-5ba1-9330-6f99b36169bf",
+     "key": "ict-wp-06",
+     "stem": "Which keyboard shortcut makes selected text bold?",
+     "image_url": null,
+     "explanation": "Ctrl + B bold, Ctrl + I italic and Ctrl + U underline are the character-formatting shortcuts in most word processors.\n\n**Why the other options are wrong**\n\n- Ctrl + I: Ctrl + I makes text italic.\n- Ctrl + U: Ctrl + U underlines text.\n- Ctrl + P: Ctrl + P opens the Print command.",
+     "position": 6,
+     "options": [
+      {
+       "id": "5a784210-54db-58f6-ba46-d1e72aa0eb77",
+       "label": "A",
+       "content": "Ctrl + B",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2eb6a18a-d47b-585d-9873-e81d7d00574e",
+       "label": "B",
+       "content": "Ctrl + I",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "22802536-9bb7-5cc7-8a32-707bd7aa78d0",
+       "label": "C",
+       "content": "Ctrl + U",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c265b052-8b60-5a81-a2fc-ac849b7b394c",
+       "label": "D",
+       "content": "Ctrl + P",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4fb0d132-659d-5d19-8197-48809eb9855f",
+     "key": "ict-wp-07",
+     "stem": "Which of the following is a word processor?",
+     "image_url": null,
+     "explanation": "Word processors include Microsoft Word, Google Docs, LibreOffice Writer and WPS Writer.\n\n**Why the other options are wrong**\n\n- Microsoft Excel: Excel is a spreadsheet program.\n- Microsoft Access: Access is a database management system.\n- CorelDRAW: CorelDRAW is a graphics program.",
+     "position": 7,
+     "options": [
+      {
+       "id": "028f6531-9a97-5b77-876d-95af5bb4c31c",
+       "label": "A",
+       "content": "Microsoft Excel",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ae56e8ad-18d6-5047-873a-d8d0eac5a425",
+       "label": "B",
+       "content": "Microsoft Word",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c508dca6-86c5-5762-a8a6-2301108ab00c",
+       "label": "C",
+       "content": "Microsoft Access",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "954a4ad7-12f8-5407-b96d-50c50b51d20b",
+       "label": "D",
+       "content": "CorelDRAW",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3a68210a-bf33-55a7-b5cd-5917a1e2e23a",
+   "topic": "Spreadsheets",
+   "title": "Spreadsheets: practice set 1",
+   "paper_type": "Practice",
+   "description": "8 original WASSCE-style objective questions on spreadsheets, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 126,
+   "questions": [
+    {
+     "id": "793e49ee-9b96-5518-8a64-c378a8f69065",
+     "key": "ict-ss-01",
+     "stem": "In a spreadsheet, the box where a row and a column meet is called",
+     "image_url": null,
+     "explanation": "A cell is named by its column letter and row number, such as C4 for column C, row 4.\n\n**Why the other options are wrong**\n\n- a range: A range is a block of several cells.\n- a worksheet: A worksheet is a whole grid of rows and columns.\n- a field: A field is a column in a database table.",
+     "position": 1,
+     "options": [
+      {
+       "id": "9dcfa0ba-a9d0-5d4f-b3c0-d75205a4b332",
+       "label": "A",
+       "content": "a range",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "065b8ad8-c7a7-5854-87e7-03a4d5307275",
+       "label": "B",
+       "content": "a worksheet",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f245d4be-de57-5b2e-a11e-94fa3b7d05de",
+       "label": "C",
+       "content": "a cell",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "93a7e649-c085-5179-b286-f3c65c1bafdf",
+       "label": "D",
+       "content": "a field",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "16851590-7749-5a9e-8f2a-90ae86f66e55",
+     "key": "ict-ss-02",
+     "stem": "How many cells are in the range B2:D5?",
+     "image_url": null,
+     "explanation": "B2:D5 covers columns B, C and D (3 columns) and rows 2 to 5 (4 rows), so it has $3 \\times 4 = 12$ cells.\n\n**Why the other options are wrong**\n\n- 8: This counts only 2 columns; B, C and D are 3 columns.\n- 9: This counts only 3 rows; rows 2, 3, 4 and 5 are 4 rows.\n- 15: This counts 5 rows; rows 2 to 5 are 4 rows.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f6f928d0-5161-5ae8-81a9-0a1f6381db77",
+       "label": "A",
+       "content": "8",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "72af1a70-3bac-5140-ab2a-ec28a1ec6d6f",
+       "label": "B",
+       "content": "9",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e6218873-88c8-51c1-9fc3-f4d79b87df37",
+       "label": "C",
+       "content": "12",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "9e73ff54-074d-5007-be95-c09c3e57bf5d",
+       "label": "D",
+       "content": "15",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f524305c-1c23-5abd-a2c3-f7f49f2445ec",
+     "key": "ict-ss-03",
+     "stem": "Cells A1, A2, A3 and A4 contain 8, 12, 5 and 15. What value does =AVERAGE(A1:A4) give?",
+     "image_url": null,
+     "explanation": "AVERAGE adds the values and divides by how many there are: $(8 + 12 + 5 + 15) \\div 4 = 40 \\div 4 = 10$.\n\n**Why the other options are wrong**\n\n- 40: 40 is the sum, given by =SUM(A1:A4).\n- 15: 15 is the largest value, given by =MAX(A1:A4).\n- 5: 5 is the smallest value, given by =MIN(A1:A4).",
+     "position": 3,
+     "options": [
+      {
+       "id": "e85d5e49-f006-51ad-aec3-e0005852a8c0",
+       "label": "A",
+       "content": "5",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0c62ef31-6428-5c20-b5d3-f44a15782953",
+       "label": "B",
+       "content": "10",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "9a5d8e17-8ac7-514b-b9d9-41153d579e9f",
+       "label": "C",
+       "content": "15",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "aec72c93-f1c5-5e84-911c-6c33177f3182",
+       "label": "D",
+       "content": "40",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "98200084-b1fc-5cb4-b7d2-f1b40992f228",
+     "key": "ict-ss-04",
+     "stem": "The formula =C3+D3 in cell E3 is copied down to cell E6. What does it become?",
+     "image_url": null,
+     "explanation": "The references are relative. Moving the formula 3 rows down (from row 3 to row 6) adds 3 to each row number: =C3+D3 becomes =C6+D6.\n\n**Why the other options are wrong**\n\n- =C3+D3: The references would stay the same only if they were absolute.\n- =F3+G3: Copying down changes the row numbers, not the column letters.\n- =C6+D3: Both references are relative, so both row numbers change.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1bbb7e9c-78ac-52e7-8f53-b5d18c3ee76f",
+       "label": "A",
+       "content": "=C3+D3",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "352659f5-31a2-5502-83fa-a85741f1aea1",
+       "label": "B",
+       "content": "=F3+G3",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f65787e5-9b4f-5aac-866b-cdbf8ae986c0",
+       "label": "C",
+       "content": "=C6+D3",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "86f069c8-3329-562b-ad51-adc9b11099cc",
+       "label": "D",
+       "content": "=C6+D6",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "2fe53123-4ac8-5353-a029-d4f929d140c0",
+     "key": "ict-ss-05",
+     "stem": "Which type of cell reference does NOT change when a formula is copied to another cell?",
+     "image_url": null,
+     "explanation": "An absolute reference has a dollar sign before both the column letter and the row number, so it always points to the same cell, such as a fixed exchange rate.\n\n**Why the other options are wrong**\n\n- a relative reference: A relative reference changes to keep the same position relative to the new cell.\n- a mixed reference: A mixed reference fixes only the column or only the row; the other part changes.\n- a range: A range is a block of cells, not a kind of reference.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f7bb5512-4b4f-5efb-9977-229640563029",
+       "label": "A",
+       "content": "an absolute reference",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1c7ae729-b066-5e4d-8dc6-978675d4afcc",
+       "label": "B",
+       "content": "a relative reference",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4ff9987e-8b86-50ce-9bef-30b1df63ccfc",
+       "label": "C",
+       "content": "a mixed reference",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ce2f7e7b-7942-54f8-ac97-c0ad6a580f58",
+       "label": "D",
+       "content": "a range",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7b54ecff-dabd-543e-943c-2764a4866a12",
+     "key": "ict-ss-06",
+     "stem": "Every formula in a spreadsheet must begin with",
+     "image_url": null,
+     "explanation": "The equals sign tells the spreadsheet that the entry is a formula to be calculated. Without it, B2+C2 is treated as a text label.\n\n**Why the other options are wrong**\n\n- a cell reference: A formula may contain cell references, but = must come first.\n- a bracket: Brackets group parts of a formula; they do not start it.\n- the word SUM: SUM is only one of many functions.",
+     "position": 6,
+     "options": [
+      {
+       "id": "f6d9e3fb-8402-5a52-b194-9637ec283137",
+       "label": "A",
+       "content": "a cell reference",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "48466455-898e-56a3-b458-8432ce082c77",
+       "label": "B",
+       "content": "an equals sign (=)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1dd07a9f-bb31-59a4-ac4a-d7a5037a3b24",
+       "label": "C",
+       "content": "a bracket",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8616f770-3096-54c9-b3ab-ee0c79343bdc",
+       "label": "D",
+       "content": "the word SUM",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "731c077e-abef-5cbc-8c54-bc26e4f71078",
+     "key": "ict-ss-07",
+     "stem": "Which chart is best for showing how a whole budget is shared between different items?",
+     "image_url": null,
+     "explanation": "A pie chart shows each item as a slice of a circle, so the parts of a whole, such as a budget, and their shares are easy to see.\n\n**Why the other options are wrong**\n\n- a line graph: A line graph shows change over time.\n- a scatter chart: A scatter chart shows the relationship between two sets of numbers.\n- a column chart: A column chart compares amounts, but does not show them as parts of one whole.",
+     "position": 7,
+     "options": [
+      {
+       "id": "2c3a833a-de3e-506a-a281-2b8f02421633",
+       "label": "A",
+       "content": "a line graph",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6ee98a2a-b061-5daa-b374-9c5379047a39",
+       "label": "B",
+       "content": "a scatter chart",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fd832843-f304-5d27-8832-a6fedfe36bf5",
+       "label": "C",
+       "content": "a pie chart",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "fb652102-2039-5a92-94ae-8ef94582681b",
+       "label": "D",
+       "content": "a column chart",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c000fc55-80b6-51df-b049-24291e5e6e1d",
+     "key": "ict-ss-08",
+     "stem": "A cell shows ##### instead of a number. This means that",
+     "image_url": null,
+     "explanation": "##### is not a real error: the number is there but cannot fit. Widening the column shows it.\n\n**Why the other options are wrong**\n\n- a formula divides by zero: Dividing by zero shows #DIV/0!.\n- a function name is misspelt: A misspelt function shows #NAME?.\n- a cell used in the formula has been deleted: A deleted reference shows #REF!.",
+     "position": 8,
+     "options": [
+      {
+       "id": "b8e3e383-f481-59de-bc86-4117165efc21",
+       "label": "A",
+       "content": "a formula divides by zero",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "156a6683-11e9-507a-b08e-ef563b2795aa",
+       "label": "B",
+       "content": "a function name is misspelt",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "63a78be6-21e7-5e7a-9cd5-47b9b653a053",
+       "label": "C",
+       "content": "a cell used in the formula has been deleted",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "449ebe1c-e8b1-5757-b521-b0c0fda773a1",
+       "label": "D",
+       "content": "the column is too narrow to display the number",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "1173aaac-fe94-5dd7-8670-26cac0dcaeca",
+   "topic": "Databases",
+   "title": "Databases: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on databases, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 127,
+   "questions": [
+    {
+     "id": "7d30cf33-2f5e-552b-a11d-0d7a10cbf456",
+     "key": "ict-db-01",
+     "stem": "A field whose value is different for every record, so that it identifies each record, is called",
+     "image_url": null,
+     "explanation": "The primary key, such as a student ID or account number, is unique to each record, so no two records can be confused.\n\n**Why the other options are wrong**\n\n- a foreign key: A foreign key links one table to another table's primary key.\n- a query: A query is a request to find records.\n- a field name: A field name is just the heading of a column.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d1d210bc-46f0-57d0-a069-ff360cab9ba4",
+       "label": "A",
+       "content": "the primary key",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d7c094fd-1486-5f8c-8f70-62b7782e6d24",
+       "label": "B",
+       "content": "a foreign key",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8756cc80-224e-5d7b-bc62-5fc8a87af587",
+       "label": "C",
+       "content": "a query",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "89c89ea1-1850-5c77-903c-8aab6abbc45d",
+       "label": "D",
+       "content": "a field name",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "eb61821e-9c5a-5611-bd41-e5f09c7e08fb",
+     "key": "ict-db-02",
+     "stem": "In a database table, a row holding all the data about one person is called",
+     "image_url": null,
+     "explanation": "A table is made of records (rows), one for each person or thing, and fields (columns), one for each item of data.\n\n**Why the other options are wrong**\n\n- a field: A field is a column: one item of data about every person.\n- a file: A file is a collection of related records.\n- a report: A report is a formatted printout of data.",
+     "position": 2,
+     "options": [
+      {
+       "id": "58cb43da-59e7-5e03-abd7-d0dbc53a3d4b",
+       "label": "A",
+       "content": "a field",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3b91a941-5c42-5caa-ad85-1475298dbe63",
+       "label": "B",
+       "content": "a record",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "09e27ab5-e8da-5748-945a-b67fd02bff26",
+       "label": "C",
+       "content": "a file",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ee9e7464-c852-516c-9ca3-eaafd658eabb",
+       "label": "D",
+       "content": "a report",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ce583729-d97d-5dad-a437-c022b50a02a9",
+     "key": "ict-db-03",
+     "stem": "Which database object is used to find the records that meet given conditions?",
+     "image_url": null,
+     "explanation": "A query asks a question of the database using criteria, such as Class = \"SSS3\", and shows only the matching records.\n\n**Why the other options are wrong**\n\n- a form: A form is used to enter and view records.\n- a report: A report presents data neatly for printing.\n- a macro: A macro automates a series of actions.",
+     "position": 3,
+     "options": [
+      {
+       "id": "971c2240-224d-5141-a6ea-2b1ae44fb7aa",
+       "label": "A",
+       "content": "a form",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9140b482-fb49-5f75-832f-b348cb105ad6",
+       "label": "B",
+       "content": "a report",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8298f7fd-91da-5664-a3d4-0009104e37a5",
+       "label": "C",
+       "content": "a query",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "531ad7eb-a331-543a-8dba-65a6ce89f1d3",
+       "label": "D",
+       "content": "a macro",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "18a18fb1-ebba-58f3-9d0e-dad612cbcd66",
+     "key": "ict-db-04",
+     "stem": "Which of the following is a database management system?",
+     "image_url": null,
+     "explanation": "Database management systems include Microsoft Access, MySQL, Oracle, Microsoft SQL Server and PostgreSQL.\n\n**Why the other options are wrong**\n\n- Microsoft PowerPoint: PowerPoint is presentation software.\n- Adobe Photoshop: Photoshop is graphics software.\n- Google Chrome: Chrome is a web browser.",
+     "position": 4,
+     "options": [
+      {
+       "id": "35f86598-da87-552d-ac02-195acb950b71",
+       "label": "A",
+       "content": "Microsoft PowerPoint",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "92a34b92-1920-5b18-9169-695b569c265e",
+       "label": "B",
+       "content": "Adobe Photoshop",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4a040125-8bec-5c2e-9b49-492b48809bae",
+       "label": "C",
+       "content": "Google Chrome",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bce92211-b5ca-5e7f-b178-9f02233bc603",
+       "label": "D",
+       "content": "Microsoft Access",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f1d689bd-ce42-5da6-817c-d71f6cf26f69",
+     "key": "ict-db-05",
+     "stem": "Which field would be the most suitable primary key in a table of students?",
+     "image_url": null,
+     "explanation": "A primary key must never repeat. Each student has a different index number, so it identifies each record uniquely.\n\n**Why the other options are wrong**\n\n- surname: Many students can share a surname.\n- class: Many students are in the same class.\n- date of birth: Two students can be born on the same day.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d50e85c4-b8cb-57a5-9e0c-90903883e61e",
+       "label": "A",
+       "content": "index number",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ab63e6e2-c5bf-534b-9ba4-e8ee147b1cd1",
+       "label": "B",
+       "content": "surname",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7a913d47-bb40-5e81-846d-dbbad95bdee4",
+       "label": "C",
+       "content": "class",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a84c14d3-19ae-5400-8132-d26878cce396",
+       "label": "D",
+       "content": "date of birth",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e135ebb5-7358-5b37-a95d-d33c884db002",
+     "key": "ict-db-06",
+     "stem": "A database that stores data in several tables linked by key fields is",
+     "image_url": null,
+     "explanation": "In a relational database, tables are linked by matching fields, such as StudentID in a Students table and a Fees table. Most databases today are relational.\n\n**Why the other options are wrong**\n\n- a flat-file database: A flat-file database has only one table.\n- a hierarchical database: A hierarchical database arranges records in a tree.\n- a network database: A network database links records in a web of parents, not tables joined by keys.",
+     "position": 6,
+     "options": [
+      {
+       "id": "86229bb7-d688-57d6-ae0e-277fa85678e1",
+       "label": "A",
+       "content": "a flat-file database",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e7df5b97-c20a-58ca-b9b1-12699a52fdbc",
+       "label": "B",
+       "content": "a relational database",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2b7067d3-70e7-574b-a0e1-33a09972f688",
+       "label": "C",
+       "content": "a hierarchical database",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b1810163-a21a-5f95-a63b-a16b7936e5ee",
+       "label": "D",
+       "content": "a network database",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "697df665-d2e0-5462-b655-28655a8a2fac",
+     "key": "ict-db-07",
+     "stem": "The most suitable data type for a field that stores phone numbers such as 076123456 is",
+     "image_url": null,
+     "explanation": "Phone numbers are stored as text because they are not used in calculations and may begin with 0 or a + sign.\n\n**Why the other options are wrong**\n\n- number: A number field would drop the leading 0, and phone numbers are never calculated.\n- currency: Currency is for amounts of money.\n- yes/no: Yes/No holds only two values.",
+     "position": 7,
+     "options": [
+      {
+       "id": "b326302a-032e-5970-8b63-047a3dade398",
+       "label": "A",
+       "content": "number",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1112fd33-a20d-5289-8234-18fa27efefcc",
+       "label": "B",
+       "content": "currency",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "eb7eadc4-6481-582b-98ce-67bcd928b55e",
+       "label": "C",
+       "content": "text",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "07563d30-8747-5c4a-b70c-6d036e86e4f0",
+       "label": "D",
+       "content": "yes/no",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "8e7355eb-6433-5808-8f43-0b40fa992d7c",
+   "topic": "Presentations and Graphics",
+   "title": "Presentations and Graphics: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on presentations and graphics, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 128,
+   "questions": [
+    {
+     "id": "7ee12a9b-f3ea-5717-b343-20e3357ae231",
+     "key": "ict-pg-01",
+     "stem": "In presentation software, the visual effect seen as one slide changes to the next is called",
+     "image_url": null,
+     "explanation": "Transitions, such as fade, push or wipe, happen between slides; animations happen to objects on a slide.\n\n**Why the other options are wrong**\n\n- an animation: An animation moves an object on a slide.\n- a theme: A theme is a set of colours, fonts and backgrounds.\n- a layout: A layout is the arrangement of placeholders on a slide.",
+     "position": 1,
+     "options": [
+      {
+       "id": "eef5e8b8-f779-53fc-b9c2-e5ef416baab9",
+       "label": "A",
+       "content": "an animation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c0ecdf54-aced-50cc-a80d-37fa562866b1",
+       "label": "B",
+       "content": "a theme",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b3a314ad-c6a5-5a3d-b97e-4a106f04a99d",
+       "label": "C",
+       "content": "a layout",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2dd93e6d-0a51-5826-9632-6a10e4a20359",
+       "label": "D",
+       "content": "a transition",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "425369c0-6b3d-52ef-aea0-7c7b647de35d",
+     "key": "ict-pg-02",
+     "stem": "Which view is best for rearranging the order of the slides in a presentation?",
+     "image_url": null,
+     "explanation": "Slide Sorter view shows small copies of all the slides together, so they can be dragged into a new order, copied or deleted.\n\n**Why the other options are wrong**\n\n- Notes Page view: Notes Page view shows one slide with its speaker notes.\n- Slide Show view: Slide Show view displays the slides full-screen to an audience.\n- Reading view: Reading view plays the presentation in the window.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d770ebeb-0a00-56e9-98eb-b4cca958242c",
+       "label": "A",
+       "content": "Slide Sorter view",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "99c46bcb-81f8-50d1-9bdb-398e649029f8",
+       "label": "B",
+       "content": "Notes Page view",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dd743ff7-055f-5167-bc07-94ab519f15a6",
+       "label": "C",
+       "content": "Slide Show view",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bf335762-82ab-5a52-abd1-6781aa11406b",
+       "label": "D",
+       "content": "Reading view",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "37454e49-46b4-5930-9004-a8f493d04ada",
+     "key": "ict-pg-03",
+     "stem": "In Microsoft PowerPoint, which key starts the slide show from the first slide?",
+     "image_url": null,
+     "explanation": "F5 starts the show from the first slide and Shift + F5 from the current slide; Esc ends it.\n\n**Why the other options are wrong**\n\n- F1: F1 opens Help.\n- F7: F7 starts the spelling check.\n- Esc: Esc ends a slide show.",
+     "position": 3,
+     "options": [
+      {
+       "id": "644a6e3f-501e-59b9-9f24-bbd4f4d67c95",
+       "label": "A",
+       "content": "F1",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8006b568-9fe5-5969-951c-934312600b33",
+       "label": "B",
+       "content": "F5",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a716eb3b-63bd-59ef-bf50-92505787050b",
+       "label": "C",
+       "content": "F7",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8a238209-3751-59ec-8831-5887f2484ee6",
+       "label": "D",
+       "content": "Esc",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3c3a89c3-bfa6-51eb-b0ec-bae8c7277dbe",
+     "key": "ict-pg-04",
+     "stem": "An image made of a grid of pixels, which becomes jagged when it is enlarged, is called",
+     "image_url": null,
+     "explanation": "Bitmap images, such as photographs, store the colour of every pixel; enlarging them makes the pixels visible, so edges look jagged.\n\n**Why the other options are wrong**\n\n- a vector image: A vector image is made of shapes and stays sharp when enlarged.\n- a 3D model: A 3D model describes a solid shape in three dimensions.\n- a chart: A chart is a picture of numerical data.",
+     "position": 4,
+     "options": [
+      {
+       "id": "a82211a5-bb4b-5063-97e7-617c12f0c11a",
+       "label": "A",
+       "content": "a vector image",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3649abb7-72d2-5f6f-adcd-6637f8f18db9",
+       "label": "B",
+       "content": "a 3D model",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8baf1b1f-2df4-5423-880d-ad715cf35b66",
+       "label": "C",
+       "content": "a bitmap (raster) image",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "aeb5d964-8fca-5a3d-915f-49c931a06956",
+       "label": "D",
+       "content": "a chart",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b6c9d116-7834-5194-a98f-1ff8f2915e0c",
+     "key": "ict-pg-05",
+     "stem": "Which program is mainly used to create vector graphics such as logos?",
+     "image_url": null,
+     "explanation": "Drawing (vector) programs include CorelDRAW, Adobe Illustrator and Inkscape. Vector logos print sharply at any size.\n\n**Why the other options are wrong**\n\n- Microsoft Paint: Paint edits bitmap (pixel) images.\n- Microsoft Excel: Excel is a spreadsheet program.\n- Microsoft Access: Access is a database management system.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e008647e-171e-5aef-a2dd-d3aaf747fd47",
+       "label": "A",
+       "content": "Microsoft Paint",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "954f724b-9ce3-53dd-ae97-410806ba5a55",
+       "label": "B",
+       "content": "Microsoft Excel",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e6e07082-efb8-5af3-997e-6f0ae8333b9f",
+       "label": "C",
+       "content": "Microsoft Access",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5f6a456f-f6b8-5a22-9e8e-b1ca6815f226",
+       "label": "D",
+       "content": "CorelDRAW",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a4d1b58c-4a39-570f-9f2b-68bc4dba5961",
+     "key": "ict-pg-06",
+     "stem": "The slide that stores the design and layout used by every slide in a presentation is called",
+     "image_url": null,
+     "explanation": "A change made to the slide master, such as a new font or a logo, appears on every slide that uses it.\n\n**Why the other options are wrong**\n\n- the title slide: The title slide is the first slide of a presentation.\n- the notes pane: The notes pane holds the speaker's notes.\n- a placeholder: A placeholder is a box for content on one slide.",
+     "position": 6,
+     "options": [
+      {
+       "id": "07e5fe10-0ff4-57bd-95c7-97acce02c7b2",
+       "label": "A",
+       "content": "the slide master",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "1f66b8b5-44f8-51ea-b138-23a98e94dae2",
+       "label": "B",
+       "content": "the title slide",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "978d762a-c816-546f-b0ed-fa763aae2c9f",
+       "label": "C",
+       "content": "the notes pane",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "46fad6b2-0835-5be3-b032-137bc060af6c",
+       "label": "D",
+       "content": "a placeholder",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3ec4579e-420c-5f15-abda-9685d5ea657a",
+     "key": "ict-pg-07",
+     "stem": "Notes that help the presenter but are not shown to the audience are called",
+     "image_url": null,
+     "explanation": "Speaker notes are typed in the notes pane; the presenter can see or print them, but the audience sees only the slides.\n\n**Why the other options are wrong**\n\n- handouts: Handouts are printed copies of the slides given to the audience.\n- placeholders: Placeholders are boxes for content on a slide.\n- transitions: Transitions are effects between slides.",
+     "position": 7,
+     "options": [
+      {
+       "id": "880272e5-e537-54d1-856e-fe385f8dc0e8",
+       "label": "A",
+       "content": "handouts",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e63fd0df-ea4e-52a4-871a-5fbba659a5c4",
+       "label": "B",
+       "content": "speaker notes",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5ddebf3a-7a17-568f-8699-81ea92d210a9",
+       "label": "C",
+       "content": "placeholders",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7af468e2-5347-5f50-ad49-769900927e8a",
+       "label": "D",
+       "content": "transitions",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "8135f5396063"
+}

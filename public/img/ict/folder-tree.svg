@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Folders and files on a drive</title>
+<desc id="d">A folder tree, as shown in a file manager. The drive Local Disk (C:) is the root. It contains the folders Program Files, Users and Windows. Users contains the folder Aminata, which contains Documents and Pictures. Documents contains School, which contains SSS3, which holds the files ICT notes.docx and Maths results.xlsx. Pictures holds graduation.jpg. The path to the ICT notes file is C:\Users\Aminata\Documents\School\SSS3\ICT notes.docx.</desc>
+<defs><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="820" height="520" rx="20" fill="#f8fafc"/>
+<rect x="48.0" y="41.0" width="26.0" height="18.0" rx="3" fill="#e2e8f0" stroke="#0f172a" stroke-width="2"/>
+<circle cx="68.0" cy="53.0" r="2.5" fill="#15803d" stroke="#15803d" stroke-width="1"/>
+<text x="82.0" y="50.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">Local Disk (C:)</text>
+<line x1="60.0" y1="84.0" x2="82.0" y2="84.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="84.0,75.0 93.0,75.0 96.0,78.0 108.0,78.0 108.0,93.0 84.0,93.0" fill="#fcd34d" stroke="#ea580c" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="116.0" y="84.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Program Files</text>
+<line x1="60.0" y1="118.0" x2="82.0" y2="118.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="84.0,109.0 93.0,109.0 96.0,112.0 108.0,112.0 108.0,127.0 84.0,127.0" fill="#fcd34d" stroke="#ea580c" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="116.0" y="118.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Users</text>
+<line x1="94.0" y1="152.0" x2="116.0" y2="152.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="118.0,143.0 127.0,143.0 130.0,146.0 142.0,146.0 142.0,161.0 118.0,161.0" fill="#fcd34d" stroke="#ea580c" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="150.0" y="152.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Aminata</text>
+<line x1="128.0" y1="186.0" x2="150.0" y2="186.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="152.0,177.0 161.0,177.0 164.0,180.0 176.0,180.0 176.0,195.0 152.0,195.0" fill="#fcd34d" stroke="#ea580c" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="184.0" y="186.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Documents</text>
+<line x1="162.0" y1="220.0" x2="184.0" y2="220.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="186.0,211.0 195.0,211.0 198.0,214.0 210.0,214.0 210.0,229.0 186.0,229.0" fill="#fcd34d" stroke="#ea580c" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="218.0" y="220.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">School</text>
+<line x1="196.0" y1="254.0" x2="218.0" y2="254.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="220.0,245.0 229.0,245.0 232.0,248.0 244.0,248.0 244.0,263.0 220.0,263.0" fill="#fcd34d" stroke="#ea580c" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="252.0" y="254.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">SSS3</text>
+<line x1="230.0" y1="288.0" x2="252.0" y2="288.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="257.0,277.0 269.0,277.0 275.0,283.0 275.0,299.0 257.0,299.0" fill="#ffffff" stroke="#2563eb" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="286.0" y="288.0" font-size="16" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">ICT notes.docx</text>
+<line x1="230.0" y1="322.0" x2="252.0" y2="322.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="257.0,311.0 269.0,311.0 275.0,317.0 275.0,333.0 257.0,333.0" fill="#ffffff" stroke="#2563eb" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="286.0" y="322.0" font-size="16" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">Maths results.xlsx</text>
+<line x1="128.0" y1="356.0" x2="150.0" y2="356.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="152.0,347.0 161.0,347.0 164.0,350.0 176.0,350.0 176.0,365.0 152.0,365.0" fill="#fcd34d" stroke="#ea580c" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="184.0" y="356.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Pictures</text>
+<line x1="162.0" y1="390.0" x2="184.0" y2="390.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="189.0,379.0 201.0,379.0 207.0,385.0 207.0,401.0 189.0,401.0" fill="#ffffff" stroke="#2563eb" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="218.0" y="390.0" font-size="16" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="normal">graduation.jpg</text>
+<line x1="60.0" y1="424.0" x2="82.0" y2="424.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="84.0,415.0 93.0,415.0 96.0,418.0 108.0,418.0 108.0,433.0 84.0,433.0" fill="#fcd34d" stroke="#ea580c" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="116.0" y="424.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Windows</text>
+<line x1="60.0" y1="62.0" x2="60.0" y2="424.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="94.0" y1="130.0" x2="94.0" y2="152.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="128.0" y1="164.0" x2="128.0" y2="356.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="162.0" y1="198.0" x2="162.0" y2="220.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="196.0" y1="232.0" x2="196.0" y2="254.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="230.0" y1="266.0" x2="230.0" y2="322.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="162.0" y1="368.0" x2="162.0" y2="390.0" stroke="#475569" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="560.0" y1="50.0" x2="224.0" y2="50.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="570.0" y="50.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">root directory (the drive)</text>
+<line x1="560.0" y1="220.0" x2="280.8" y2="220.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="570.0" y="220.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">a subfolder: a folder inside a folder</text>
+<line x1="560.0" y1="288.0" x2="419.2" y2="288.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="570.0" y="288.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">a file: name + extension</text>
+<line x1="560.0" y1="322.0" x2="454.4" y2="322.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="570.0" y="322.0" font-size="14" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="normal">.xlsx shows a spreadsheet file</text>
+<rect x="30.0" y="455.0" width="760.0" height="44.0" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="46.0" y="477.0" font-size="15" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">Path:</text>
+<text x="100" y="477" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">C:\Users\Aminata\Documents\School\SSS3\ICT notes.docx</text>
+</svg>

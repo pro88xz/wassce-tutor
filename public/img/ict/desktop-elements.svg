@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 490" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Parts of the desktop</title>
+<desc id="d">A computer desktop. Icons such as This PC, Recycle Bin and Documents sit on the background (wallpaper). An open window has a title bar with minimise, maximise and close buttons. Along the bottom is the taskbar, with the Start button at the left, buttons for open and pinned programs, and the notification area with the clock at the right. A mouse pointer is on the screen.</desc>
+<defs></defs>
+<rect width="1000" height="490" rx="20" fill="#f8fafc"/>
+<g transform="translate(24 0)">
+<rect x="190.0" y="30.0" width="560.0" height="400.0" rx="6" fill="#e0f2fe" stroke="#0f172a" stroke-width="3"/>
+<rect x="222.0" y="60.0" width="44.0" height="36.0" rx="4" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<text x="244.0" y="112.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">This PC</text>
+<rect x="222.0" y="142.0" width="44.0" height="36.0" rx="4" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<text x="244.0" y="194.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Recycle Bin</text>
+<rect x="222.0" y="224.0" width="44.0" height="36.0" rx="4" fill="#fef3c7" stroke="#2563eb" stroke-width="2"/>
+<text x="244.0" y="276.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Documents</text>
+<rect x="350.0" y="80.0" width="360.0" height="240.0" rx="4" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<rect x="350.0" y="80.0" width="360.0" height="30.0" rx="4" fill="#2563eb" stroke="#0f172a" stroke-width="2.5"/>
+<text x="362.0" y="95.0" font-size="13" fill="#ffffff" text-anchor="start" dominant-baseline="middle" font-weight="normal">My Letter – Word processor</text>
+<text x="644.0" y="95.0" font-size="15" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">–</text>
+<text x="666.0" y="95.0" font-size="15" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">□</text>
+<text x="688.0" y="95.0" font-size="15" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">×</text>
+<rect x="374.0" y="136.0" width="260.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="374.0" y="166.0" width="220.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="374.0" y="196.0" width="180.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="374.0" y="226.0" width="260.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="374.0" y="256.0" width="220.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<rect x="374.0" y="286.0" width="180.0" height="8.0" rx="3" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<polygon points="620.0,352.0 620.0,380.0 627.0,373.0 633.0,386.0 638.0,384.0 632.0,371.0 642.0,371.0" fill="#ffffff" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+<rect x="190.0" y="390.0" width="560.0" height="40.0" rx="0" fill="#1e293b" stroke="#0f172a" stroke-width="3"/>
+<rect x="198.0" y="397.0" width="34.0" height="26.0" rx="4" fill="#2563eb" stroke="none" stroke-width="0"/>
+<rect x="250.0" y="398.0" width="30.0" height="24.0" rx="3" fill="#94a3b8" stroke="none" stroke-width="0"/>
+<rect x="290.0" y="398.0" width="30.0" height="24.0" rx="3" fill="#475569" stroke="none" stroke-width="0"/>
+<rect x="330.0" y="398.0" width="30.0" height="24.0" rx="3" fill="#475569" stroke="none" stroke-width="0"/>
+<rect x="370.0" y="398.0" width="30.0" height="24.0" rx="3" fill="#475569" stroke="none" stroke-width="0"/>
+<text x="658.0" y="410.0" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ENG</text>
+<text x="710.0" y="410.0" font-size="13" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="normal">10:45</text>
+<path d="M 222.0 78.0 L 170.0 78.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="222.0" cy="78.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="162.0" y="78.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">Desktop icons</text>
+<path d="M 250.0 330.0 L 170.0 330.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="250.0" cy="330.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="162.0" y="330.0" font-size="15" fill="#0f172a" text-anchor="end" dominant-baseline="middle" font-weight="normal">Wallpaper (background)</text>
+<path d="M 580.0 84.0 L 600.0 64.0 L 770.0 64.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="580.0" cy="84.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="778.0" y="64.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Title bar</text>
+<path d="M 688.0 95.0 L 770.0 110.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="688.0" cy="95.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="778.0" y="110.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Minimise, maximise, close</text>
+<path d="M 710.0 220.0 L 770.0 220.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="710.0" cy="220.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="778.0" y="220.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Window</text>
+<path d="M 642.0 371.0 L 770.0 371.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="642.0" cy="371.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="778.0" y="371.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Mouse pointer</text>
+<path d="M 215.0 422.0 L 215.0 448.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="215.0" cy="422.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="215.0" y="462.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Start button</text>
+<path d="M 385.0 422.0 L 385.0 448.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="385.0" cy="422.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="385.0" y="462.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Taskbar (open programs)</text>
+<path d="M 710.0 422.0 L 710.0 448.0" stroke="#475569" stroke-width="1.8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="710.0" cy="422.0" r="4.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/>
+<text x="710.0" y="462.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Notification area and clock</text>
+</g>
+</svg>

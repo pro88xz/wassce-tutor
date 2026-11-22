@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 450" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Levels of programming languages</title>
+<desc id="d">Three levels. Machine language, the lowest, is written in binary such as 10110000 01100001 and runs directly on the CPU. Assembly language uses short mnemonics such as MOV and ADD and is turned into machine code by an assembler. High-level languages such as Python, Java, C and BASIC use English-like statements such as total = a + b and are turned into machine code by a compiler or an interpreter. Going up, languages are easier for people; going down, they are closer to the machine.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="820" height="450" rx="20" fill="#f8fafc"/>
+<rect x="90.0" y="23.0" width="440.0" height="104.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="310.0" y="43.0" font-size="18" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">High-level language</text>
+<text x="310.0" y="67.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Python, Java, C, BASIC, Pascal</text>
+<rect x="118.0" y="87.0" width="384.0" height="28.0" rx="5" fill="#ffffff" stroke="#15803d" stroke-width="1.5"/>
+<text x="310" y="101" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">total = a + b</text>
+<rect x="90.0" y="173.0" width="440.0" height="104.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="310.0" y="193.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Assembly language (low-level)</text>
+<text x="310.0" y="217.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">mnemonics such as MOV, ADD, JMP</text>
+<rect x="118.0" y="237.0" width="384.0" height="28.0" rx="5" fill="#ffffff" stroke="#ea580c" stroke-width="1.5"/>
+<text x="310" y="251" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">ADD AX, BX</text>
+<rect x="90.0" y="323.0" width="440.0" height="104.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="310.0" y="343.0" font-size="18" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Machine language (low-level)</text>
+<text x="310.0" y="367.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">binary: 0s and 1s</text>
+<rect x="118.0" y="387.0" width="384.0" height="28.0" rx="5" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+<text x="310" y="401" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-family="Consolas, Courier New, monospace">00000001 11011000</text>
+<line x1="310.0" y1="131.0" x2="310.0" y2="169.0" stroke="#475569" stroke-width="3" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="322.0" y="138.0" width="190.3" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="322.0" y="150.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">compiler or interpreter</text>
+<line x1="310.0" y1="281.0" x2="310.0" y2="319.0" stroke="#475569" stroke-width="3" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="322.0" y="288.0" width="80.6" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="322.0" y="300.0" font-size="14" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">assembler</text>
+<line x1="600.0" y1="420.0" x2="600.0" y2="30.0" stroke="#15803d" stroke-width="3" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<text x="616.0" y="60.0" font-size="15" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">easier for people</text>
+<text x="616.0" y="82.0" font-size="15" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">to read and write</text>
+<line x1="780.0" y1="30.0" x2="780.0" y2="420.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="764.0" y="370.0" font-size="15" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">closer to the</text>
+<text x="764.0" y="392.0" font-size="15" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">machine; faster</text>
+</svg>

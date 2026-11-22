@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Compiler, interpreter and assembler</title>
+<desc id="d">Three translators. A compiler translates the whole high-level source program into machine code (object code) in one go, and reports all errors together; the object code can then be run any number of times without the compiler. An interpreter translates and runs a high-level program one line at a time and stops at the first error; it is needed every time the program runs. An assembler translates assembly language into machine code.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="880" height="440" rx="20" fill="#f8fafc"/>
+<rect x="25.0" y="42.0" width="200.0" height="66.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="125.0" y="63.5" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Source program</text>
+<text x="125.0" y="86.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(high-level)</text>
+<rect x="295.0" y="42.0" width="290.0" height="66.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="440.0" y="63.0" font-size="18" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Compiler</text>
+<text x="440.0" y="87.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">translates the whole program at once</text>
+<rect x="645.0" y="42.0" width="220.0" height="66.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="755.0" y="63.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Object code</text>
+<text x="755.0" y="86.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(machine code): run any time</text>
+<line x1="231.0" y1="75.0" x2="289.0" y2="75.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="591.0" y1="75.0" x2="639.0" y2="75.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="172.0" width="200.0" height="66.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="125.0" y="193.5" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Source program</text>
+<text x="125.0" y="216.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(high-level)</text>
+<rect x="295.0" y="172.0" width="290.0" height="66.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="440.0" y="193.0" font-size="18" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Interpreter</text>
+<text x="440.0" y="217.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">translates and runs line by line</text>
+<rect x="645.0" y="172.0" width="220.0" height="66.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="755.0" y="193.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Results, line by line</text>
+<text x="755.0" y="216.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">stops at the first error</text>
+<line x1="231.0" y1="205.0" x2="289.0" y2="205.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="591.0" y1="205.0" x2="639.0" y2="205.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="25.0" y="302.0" width="200.0" height="66.0" rx="12" fill="#e2e8f0" stroke="#0f172a" stroke-width="2.5"/>
+<text x="125.0" y="323.5" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Assembly program</text>
+<text x="125.0" y="346.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(mnemonics)</text>
+<rect x="295.0" y="302.0" width="290.0" height="66.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="440.0" y="323.0" font-size="18" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Assembler</text>
+<text x="440.0" y="347.0" font-size="16" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">translates assembly language</text>
+<rect x="645.0" y="302.0" width="220.0" height="66.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="755.0" y="323.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Machine code</text>
+<text x="755.0" y="346.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">runs on the CPU</text>
+<line x1="231.0" y1="335.0" x2="289.0" y2="335.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="591.0" y1="335.0" x2="639.0" y2="335.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="440.0" y="420.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">All three turn a program into machine code, the only language the CPU understands.</text>
+</svg>
