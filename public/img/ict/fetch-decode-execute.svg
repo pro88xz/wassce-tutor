@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The fetch–decode–execute cycle</title>
+<desc id="d">The CPU repeats three steps for every instruction. Fetch: the address in the program counter is used to copy the next instruction from main memory into the instruction register, and the program counter goes up by one. Decode: the control unit works out what the instruction means. Execute: the instruction is carried out, for example by the ALU, and any result is stored. Then the cycle starts again.</desc>
+<defs><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker></defs>
+<rect width="720" height="470" rx="20" fill="#f8fafc"/>
+<text x="360.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">The machine cycle, repeated for every instruction</text>
+<rect x="195.0" y="65.0" width="330.0" height="110.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="360.0" y="87.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1. Fetch</text>
+<text x="360.0" y="109.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">copy the next instruction from</text>
+<text x="360.0" y="131.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">main memory into the CPU</text>
+<text x="360.0" y="153.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">(using the program counter)</text>
+<rect x="425.0" y="294.0" width="270.0" height="92.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="560.0" y="318.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2. Decode</text>
+<text x="560.0" y="340.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the control unit works out</text>
+<text x="560.0" y="362.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">what the instruction means</text>
+<rect x="25.0" y="294.0" width="270.0" height="92.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="160.0" y="318.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3. Execute</text>
+<text x="160.0" y="340.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">carry it out (the ALU)</text>
+<text x="160.0" y="362.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">and store any result</text>
+<line x1="470.0" y1="182.0" x2="545.0" y2="288.0" stroke="#475569" stroke-width="3" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="418.0" y1="340.0" x2="302.0" y2="340.0" stroke="#475569" stroke-width="3" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="175.0" y1="288.0" x2="250.0" y2="182.0" stroke="#475569" stroke-width="3" stroke-linecap="round" marker-end="url(#a475569)"/>
+<text x="360.0" y="262.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">repeat for the</text>
+<text x="360.0" y="284.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">next instruction</text>
+</svg>

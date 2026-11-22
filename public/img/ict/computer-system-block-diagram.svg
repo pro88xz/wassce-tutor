@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 520" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Block diagram of a computer system</title>
+<desc id="d">Data enters through input devices into the central processing unit. The CPU contains the control unit, the arithmetic and logic unit and registers. The CPU exchanges data and instructions with main memory (RAM and ROM) and with secondary storage. Results go to output devices. The control unit sends control signals to every part, and the parts are joined by the data, address and control buses.</desc>
+<defs><marker id="a0f766e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker><marker id="a0f766es" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f766e"/></marker><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="780" height="520" rx="20" fill="#f8fafc"/>
+<text x="390.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Input → processing → output, with storage</text>
+<rect x="250.0" y="70.0" width="280.0" height="260.0" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<text x="390.0" y="96.0" font-size="17" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Central Processing Unit (CPU)</text>
+<rect x="280.0" y="112.0" width="220.0" height="56.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="390.0" y="129.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Control Unit (CU)</text>
+<text x="390.0" y="150.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">directs and coordinates</text>
+<rect x="280.0" y="187.0" width="220.0" height="56.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="390.0" y="204.5" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Arithmetic &amp; Logic Unit</text>
+<text x="390.0" y="225.5" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">calculates and compares</text>
+<rect x="280.0" y="268.0" width="220.0" height="44.0" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+<text x="390.0" y="290.0" font-size="15" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Registers</text>
+<line x1="390.0" y1="168.0" x2="390.0" y2="186.0" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="20.0" y="162.0" width="170.0" height="76.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="105.0" y="179.0" font-size="15" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Input devices</text>
+<text x="105.0" y="200.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">keyboard, mouse,</text>
+<text x="105.0" y="221.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">scanner</text>
+<rect x="590.0" y="162.0" width="170.0" height="76.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="675.0" y="179.0" font-size="15" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Output devices</text>
+<text x="675.0" y="200.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">monitor, printer,</text>
+<text x="675.0" y="221.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">speakers</text>
+<line x1="192.0" y1="200.0" x2="244.0" y2="200.0" stroke="#ea580c" stroke-width="3" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<line x1="536.0" y1="200.0" x2="588.0" y2="200.0" stroke="#15803d" stroke-width="3" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<rect x="165.0" y="385.0" width="230.0" height="70.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="280.0" y="409.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Main memory</text>
+<text x="280.0" y="431.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">RAM and ROM</text>
+<rect x="425.0" y="385.0" width="230.0" height="70.0" rx="12" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+<text x="540.0" y="409.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Secondary storage</text>
+<text x="540.0" y="431.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">SSD, hard disk, USB</text>
+<line x1="330.0" y1="336.0" x2="330.0" y2="378.0" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" marker-end="url(#a7c3aed)" marker-start="url(#a7c3aeds)"/>
+<path d="M 450.0 360.0 L 450.0 336.0" stroke="#0f766e" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a0f766e)"/>
+<line x1="450.0" y1="360.0" x2="540.0" y2="360.0" stroke="#0f766e" stroke-width="3" stroke-linecap="round"/>
+<line x1="540.0" y1="360.0" x2="540.0" y2="379.0" stroke="#0f766e" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f766e)"/>
+<text x="390.0" y="500.0" font-size="15" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Buses (data, address, control) carry signals between the parts.</text>
+</svg>

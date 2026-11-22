@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Types of printers</title>
+<desc id="d">Printers are impact or non-impact. Impact printers strike an inked ribbon against the paper: dot-matrix, daisy-wheel and line printers; they are noisy but can print carbon copies. Non-impact printers do not touch the paper with a printing head: inkjet, laser and thermal printers, and 3D printers that build solid objects; they are quieter and give better quality.</desc>
+<defs><marker id="a15803d" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#15803d"/></marker><marker id="a15803ds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#15803d"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="760" height="380" rx="20" fill="#f8fafc"/>
+<rect x="275.0" y="20.0" width="210.0" height="50.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="380.0" y="45.0" font-size="20" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Printers</text>
+<rect x="65.0" y="110.0" width="250.0" height="60.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="190.0" y="128.5" font-size="17" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Impact</text>
+<text x="190.0" y="151.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">strike a ribbon on the paper</text>
+<rect x="445.0" y="110.0" width="250.0" height="60.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="570.0" y="128.5" font-size="17" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Non-impact</text>
+<text x="570.0" y="151.5" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">no striking of the paper</text>
+<line x1="380.0" y1="74.0" x2="380.0" y2="92.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="190.0" y1="92.0" x2="570.0" y2="92.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="190.0" y1="92.0" x2="190.0" y2="104.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="570.0" y1="92.0" x2="570.0" y2="104.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="90.0" y="206.0" width="200.0" height="38.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="190.0" y="225.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">dot-matrix</text>
+<line x1="190.0" y1="176.0" x2="190.0" y2="200.0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<rect x="90.0" y="254.0" width="200.0" height="38.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="190.0" y="273.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">daisy-wheel</text>
+<line x1="190.0" y1="244.0" x2="190.0" y2="254.0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="90.0" y="302.0" width="200.0" height="38.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="190.0" y="321.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">line printer</text>
+<line x1="190.0" y1="292.0" x2="190.0" y2="302.0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="437.0" y="206.0" width="126.0" height="38.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="500.0" y="225.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">inkjet</text>
+<rect x="577.0" y="206.0" width="126.0" height="38.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="640.0" y="225.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">laser</text>
+<rect x="437.0" y="254.0" width="126.0" height="38.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="500.0" y="273.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">thermal</text>
+<rect x="577.0" y="254.0" width="126.0" height="38.0" rx="12" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+<text x="640.0" y="273.0" font-size="15" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">3D printer</text>
+<line x1="570.0" y1="176.0" x2="570.0" y2="192.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="500.0" y1="192.0" x2="640.0" y2="192.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="500.0" y1="192.0" x2="500.0" y2="200.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<line x1="640.0" y1="192.0" x2="640.0" y2="200.0" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a15803d)"/>
+<text x="190.0" y="360.0" font-size="14" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="normal">noisy; can print carbon copies</text>
+<text x="570.0" y="360.0" font-size="14" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="normal">quiet; high quality</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The memory hierarchy</title>
+<desc id="d">A pyramid. At the top, registers inside the CPU: the fastest and smallest. Below them, cache memory, then main memory (RAM), then secondary storage such as SSDs and hard disks, and at the bottom offline and cloud storage such as USB drives, optical discs and online storage: the largest and cheapest per gigabyte but the slowest. Going up, memory is faster and dearer; going down, it is larger and cheaper.</desc>
+<defs><marker id="a0f766e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker><marker id="a0f766es" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f766e"/></marker><marker id="adc2626" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker><marker id="adc2626s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#dc2626"/></marker></defs>
+<rect width="800" height="470" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Fast and small at the top, large and cheap at the bottom</text>
+<polygon points="360.0,60.0 440.0,60.0 492.0,134.0 308.0,134.0" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="400.0" y="88.0" font-size="16" fill="#dc2626" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Registers</text>
+<text x="400.0" y="109.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">inside the CPU</text>
+<polygon points="308.0,134.0 492.0,134.0 544.0,208.0 256.0,208.0" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="400.0" y="162.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Cache</text>
+<text x="400.0" y="183.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">between CPU and RAM</text>
+<polygon points="256.0,208.0 544.0,208.0 596.0,282.0 204.0,282.0" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="400.0" y="236.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Main memory (RAM)</text>
+<text x="400.0" y="257.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">programs in use</text>
+<polygon points="204.0,282.0 596.0,282.0 648.0,356.0 152.0,356.0" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="400.0" y="310.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Secondary storage</text>
+<text x="400.0" y="331.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">SSD, hard disk</text>
+<polygon points="152.0,356.0 648.0,356.0 700.0,430.0 100.0,430.0" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="400.0" y="384.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Offline &amp; cloud storage</text>
+<text x="400.0" y="405.0" font-size="13" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">USB drive, DVD, online</text>
+<line x1="770.0" y1="420.0" x2="770.0" y2="70.0" stroke="#dc2626" stroke-width="3" stroke-linecap="round" marker-end="url(#adc2626)"/>
+<text x="756.0" y="100.0" font-size="15" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">faster</text>
+<text x="756.0" y="122.0" font-size="15" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">dearer</text>
+<text x="756.0" y="144.0" font-size="15" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">per GB</text>
+<line x1="30.0" y1="70.0" x2="30.0" y2="420.0" stroke="#0f766e" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f766e)"/>
+<text x="44.0" y="100.0" font-size="15" fill="#0f766e" text-anchor="start" dominant-baseline="middle" font-weight="bold">larger</text>
+<text x="44.0" y="122.0" font-size="15" fill="#0f766e" text-anchor="start" dominant-baseline="middle" font-weight="bold">cheaper</text>
+</svg>

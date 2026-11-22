@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 690" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The generations of computers</title>
+<desc id="d">A timeline. Before the 1940s, mechanical devices: the abacus, Napier&#x27;s bones, Pascal&#x27;s calculator and Babbage&#x27;s Analytical Engine. First generation, 1940s to 1956: vacuum tubes, for example ENIAC and UNIVAC I. Second generation, 1956 to 1963: transistors, for example the IBM 1401. Third generation, 1964 to 1971: integrated circuits, for example the IBM System/360. Fourth generation, 1971 to today: microprocessors, for example the IBM PC, laptops and smartphones. Fifth generation, today and the future: artificial intelligence.</desc>
+<defs><marker id="a0f766e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker><marker id="a0f766es" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f766e"/></marker></defs>
+<rect width="700" height="690" rx="20" fill="#f8fafc"/>
+<text x="350.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">From mechanical calculators to artificial intelligence</text>
+<line x1="150.0" y1="75.0" x2="150.0" y2="595.0" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+<circle cx="150.0" cy="85.0" r="11.0" fill="#475569" stroke="#475569" stroke-width="2"/>
+<text x="128.0" y="85.0" font-size="16" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="bold">Before 1940s</text>
+<rect x="180.0" y="47.0" width="500.0" height="76.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="198.0" y="69.0" font-size="18" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="bold">Mechanical era</text>
+<text x="380.0" y="69.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">gears, levers, punched cards</text>
+<text x="198.0" y="101.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">abacus, Pascaline, Analytical Engine</text>
+<circle cx="150.0" cy="185.0" r="11.0" fill="#dc2626" stroke="#dc2626" stroke-width="2"/>
+<text x="128.0" y="185.0" font-size="16" fill="#dc2626" text-anchor="end" dominant-baseline="middle" font-weight="bold">1940s–1956</text>
+<rect x="180.0" y="147.0" width="500.0" height="76.0" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+<text x="198.0" y="169.0" font-size="18" fill="#dc2626" text-anchor="start" dominant-baseline="middle" font-weight="bold">1st generation</text>
+<text x="380.0" y="169.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">vacuum tubes</text>
+<text x="198.0" y="201.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">ENIAC (1946), UNIVAC I (1951)</text>
+<circle cx="150.0" cy="285.0" r="11.0" fill="#ea580c" stroke="#ea580c" stroke-width="2"/>
+<text x="128.0" y="285.0" font-size="16" fill="#ea580c" text-anchor="end" dominant-baseline="middle" font-weight="bold">1956–1963</text>
+<rect x="180.0" y="247.0" width="500.0" height="76.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="198.0" y="269.0" font-size="18" fill="#ea580c" text-anchor="start" dominant-baseline="middle" font-weight="bold">2nd generation</text>
+<text x="380.0" y="269.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">transistors</text>
+<text x="198.0" y="301.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">IBM 1401</text>
+<circle cx="150.0" cy="385.0" r="11.0" fill="#15803d" stroke="#15803d" stroke-width="2"/>
+<text x="128.0" y="385.0" font-size="16" fill="#15803d" text-anchor="end" dominant-baseline="middle" font-weight="bold">1964–1971</text>
+<rect x="180.0" y="347.0" width="500.0" height="76.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="198.0" y="369.0" font-size="18" fill="#15803d" text-anchor="start" dominant-baseline="middle" font-weight="bold">3rd generation</text>
+<text x="380.0" y="369.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">integrated circuits (ICs)</text>
+<text x="198.0" y="401.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">IBM System/360</text>
+<circle cx="150.0" cy="485.0" r="11.0" fill="#2563eb" stroke="#2563eb" stroke-width="2"/>
+<text x="128.0" y="485.0" font-size="16" fill="#2563eb" text-anchor="end" dominant-baseline="middle" font-weight="bold">1971–today</text>
+<rect x="180.0" y="447.0" width="500.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="198.0" y="469.0" font-size="18" fill="#2563eb" text-anchor="start" dominant-baseline="middle" font-weight="bold">4th generation</text>
+<text x="380.0" y="469.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">microprocessors (VLSI)</text>
+<text x="198.0" y="501.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">IBM PC (1981), laptops, smartphones</text>
+<circle cx="150.0" cy="585.0" r="11.0" fill="#7c3aed" stroke="#7c3aed" stroke-width="2"/>
+<text x="128.0" y="585.0" font-size="16" fill="#7c3aed" text-anchor="end" dominant-baseline="middle" font-weight="bold">Today →</text>
+<rect x="180.0" y="547.0" width="500.0" height="76.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="198.0" y="569.0" font-size="18" fill="#7c3aed" text-anchor="start" dominant-baseline="middle" font-weight="bold">5th generation</text>
+<text x="380.0" y="569.0" font-size="16" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="bold">artificial intelligence (AI)</text>
+<text x="198.0" y="601.0" font-size="15" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">voice assistants, machine learning</text>
+<line x1="60.0" y1="640.0" x2="640.0" y2="640.0" stroke="#0f766e" stroke-width="3" stroke-linecap="round" marker-end="url(#a0f766e)"/>
+<text x="350.0" y="665.0" font-size="16" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">each generation: smaller, faster, cheaper, more reliable, less power</text>
+</svg>

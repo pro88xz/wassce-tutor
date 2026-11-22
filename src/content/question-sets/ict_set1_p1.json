@@ -1,0 +1,2102 @@
+{
+ "name": "ict_set1_p1",
+ "label": "ICT: set 1 (history and classes of computers, data, number systems, the CPU, input, output, memory and storage)",
+ "subject_slug": "ict-computer-studies",
+ "papers": [
+  {
+   "id": "ca23a888-7b35-5646-ad79-9068cdfff9aa",
+   "topic": "History and Evolution of Computers",
+   "title": "History and Evolution of Computers: practice set 1",
+   "paper_type": "Practice",
+   "description": "6 original WASSCE-style objective questions on history and evolution of computers, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "08307813-a2d2-5532-b9e3-6b1fed9e2699",
+     "key": "ict-hi-01",
+     "stem": "Who is known as the father of the computer?",
+     "image_url": null,
+     "explanation": "Charles Babbage designed the Difference Engine and the Analytical Engine. The Analytical Engine had an input, a store (memory), a mill (processor) and an output, the same main parts as a modern computer, so he is called the father of the computer.\n\n**Why the other options are wrong**\n\n- Alan Turing: Turing described the universal machine in 1936 and is often called the father of computer science.\n- John von Neumann: Von Neumann set out the stored-program concept in 1945.\n- Blaise Pascal: Pascal built the Pascaline, a mechanical adding machine, in 1642.",
+     "position": 1,
+     "options": [
+      {
+       "id": "02b90ea1-8d97-5708-9030-ffde45b1d7d5",
+       "label": "A",
+       "content": "Alan Turing",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "727e6013-3e98-56d7-a8da-3dbdf060bd6d",
+       "label": "B",
+       "content": "John von Neumann",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e273fb4f-3581-55a3-b8ea-db449d494b73",
+       "label": "C",
+       "content": "Blaise Pascal",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "57563272-7cba-5970-9310-cd30a1d32ff5",
+       "label": "D",
+       "content": "Charles Babbage",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0f7f5a20-0ee9-5a4d-8861-d4f30ebb7253",
+     "key": "ict-hi-02",
+     "stem": "Which electronic component was the main part of first-generation computers?",
+     "image_url": null,
+     "explanation": "First-generation computers (1940s–1956), such as ENIAC, used thousands of vacuum tubes (valves). They were huge, used a lot of power and gave off much heat.\n\n**Why the other options are wrong**\n\n- transistors: Transistors replaced vacuum tubes in the second generation.\n- integrated circuits: Integrated circuits mark the third generation.\n- microprocessors: Microprocessors mark the fourth generation.",
+     "position": 2,
+     "options": [
+      {
+       "id": "95e1f10b-78bd-5a45-bd87-9a9085c1e77f",
+       "label": "A",
+       "content": "vacuum tubes",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "10586b98-17f0-535d-89c4-48c288639443",
+       "label": "B",
+       "content": "transistors",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5422296f-8c07-5b5d-8c96-e56b77dfb9d7",
+       "label": "C",
+       "content": "integrated circuits",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "05d363ff-90e1-58f5-ac37-aabd41c8a9d0",
+       "label": "D",
+       "content": "microprocessors",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6c7a1cb3-043f-5573-88a8-e852c84e9088",
+     "key": "ict-hi-03",
+     "stem": "The microprocessor is the main feature of which generation of computers?",
+     "image_url": null,
+     "explanation": "The fourth generation (1971 to the present) is built on the microprocessor: a whole CPU on one chip, made possible by very large scale integration (VLSI). The Intel 4004 of 1971 was the first.\n\n**Why the other options are wrong**\n\n- the first generation: The first generation used vacuum tubes.\n- the second generation: The second generation used transistors.\n- the third generation: The third generation used integrated circuits.",
+     "position": 3,
+     "options": [
+      {
+       "id": "b5ab121c-175f-5ca8-bfa7-c962923d0d96",
+       "label": "A",
+       "content": "the first generation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d86eaa83-e38e-52aa-b7d7-ed6ae2e31b4d",
+       "label": "B",
+       "content": "the second generation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a2e4da01-432c-58d1-9224-5dad2bd7ba4e",
+       "label": "C",
+       "content": "the third generation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "afbdf008-7751-5e34-b0d8-3e257c40d1c4",
+       "label": "D",
+       "content": "the fourth generation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c75bee3d-951c-55e1-8e44-080c40f259d5",
+     "key": "ict-hi-04",
+     "stem": "Who is regarded as the first computer programmer?",
+     "image_url": null,
+     "explanation": "In 1843 Ada Lovelace published notes on Babbage's Analytical Engine with a step-by-step method for it to calculate a series of numbers. This is seen as the first computer program.\n\n**Why the other options are wrong**\n\n- Charles Babbage: Babbage designed the Analytical Engine; the first program for it is credited to Lovelace.\n- Herman Hollerith: Hollerith built the punched-card tabulating machine for the 1890 US census.\n- John Napier: Napier invented Napier's bones, numbered rods for multiplication, in 1617.",
+     "position": 4,
+     "options": [
+      {
+       "id": "e4088d79-bd3d-56b4-bd14-c8aacdc5ee37",
+       "label": "A",
+       "content": "Ada Lovelace",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bce75dc1-d5e7-55b0-81ac-44b235faeb80",
+       "label": "B",
+       "content": "Charles Babbage",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b5310808-d902-5620-9032-e5a4b318208a",
+       "label": "C",
+       "content": "Herman Hollerith",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "73c469f4-d221-5750-b234-febea07d588f",
+       "label": "D",
+       "content": "John Napier",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "085c38df-a647-5e3d-b90d-6371d8daa0b1",
+     "key": "ict-hi-05",
+     "stem": "Which early calculating device used beads that slide on rods?",
+     "image_url": null,
+     "explanation": "The abacus, used thousands of years ago in Mesopotamia and China, is a frame of beads on rods used for adding and subtracting. It is the earliest known calculating aid.\n\n**Why the other options are wrong**\n\n- Napier's bones: Napier's bones were numbered rods used for multiplication.\n- the slide rule: A slide rule uses sliding scales, not beads.\n- the Pascaline: The Pascaline was worked by geared wheels.",
+     "position": 5,
+     "options": [
+      {
+       "id": "db0af58b-aec0-5b1e-aeb8-11d8187d9fad",
+       "label": "A",
+       "content": "Napier's bones",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "a2bcd728-6a71-5add-ab9f-9ea7c56d12b5",
+       "label": "B",
+       "content": "the abacus",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "2f9f2aa4-e3b5-540d-8df1-89526600c728",
+       "label": "C",
+       "content": "the slide rule",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "38c1e5bc-0a07-5e2b-97f6-f51c1950a89b",
+       "label": "D",
+       "content": "the Pascaline",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "82926561-c9e7-57fb-902f-dc1e45ac988f",
+     "key": "ict-hi-06",
+     "stem": "Artificial intelligence and natural language processing are features of which generation of computers?",
+     "image_url": null,
+     "explanation": "The fifth generation (today and the future) aims at computers that can learn, reason and understand ordinary language, using artificial intelligence and parallel processing; voice assistants and chatbots are examples.\n\n**Why the other options are wrong**\n\n- the second generation: The second generation is marked by transistors.\n- the third generation: The third generation is marked by integrated circuits.\n- the first generation: The first generation used vacuum tubes and machine language.",
+     "position": 6,
+     "options": [
+      {
+       "id": "bc6b739b-a27a-591c-a0a2-2e2fb5dab37e",
+       "label": "A",
+       "content": "the second generation",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7215de34-c20e-5f83-9ac9-dd84c2370675",
+       "label": "B",
+       "content": "the third generation",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fc262466-9393-5752-9d90-b95f1e6fc8c7",
+       "label": "C",
+       "content": "the first generation",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "bbff1927-56bc-5f16-a5ff-fdf374d8ac4a",
+       "label": "D",
+       "content": "the fifth generation",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c695e70f-916f-587b-9ea3-9b34931e6a21",
+   "topic": "Classification of Computers",
+   "title": "Classification of Computers: practice set 1",
+   "paper_type": "Practice",
+   "description": "6 original WASSCE-style objective questions on classification of computers, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "f056f62f-67ae-58e2-ad9b-39d08dc44159",
+     "key": "ict-cl-01",
+     "stem": "A computer that works with continuous data, such as temperature, speed or pressure, is called",
+     "image_url": null,
+     "explanation": "Analogue computers measure continuously changing physical quantities and usually show the result on a dial or scale, as an analogue speedometer does.\n\n**Why the other options are wrong**\n\n- a digital computer: A digital computer works with discrete data, 0s and 1s.\n- a hybrid computer: A hybrid computer combines analogue and digital features.\n- a microcomputer: Microcomputer is a class by size, not by the kind of data handled.",
+     "position": 1,
+     "options": [
+      {
+       "id": "d4b8c466-87dc-53c2-ae79-f10984e7db0a",
+       "label": "A",
+       "content": "an analogue computer",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "bfad5bb9-d4f4-5c9f-b134-2266db391276",
+       "label": "B",
+       "content": "a digital computer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "fa9e62f9-451a-58f6-abf5-023f8869bee6",
+       "label": "C",
+       "content": "a hybrid computer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "7bf9603b-00df-5c2c-9a72-c7a768848afb",
+       "label": "D",
+       "content": "a microcomputer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7da469e9-e88b-5dd7-bfdf-a0192195feed",
+     "key": "ict-cl-02",
+     "stem": "Which type of computer is best suited to weather forecasting?",
+     "image_url": null,
+     "explanation": "Weather forecasting needs an enormous number of calculations done very quickly, so it is done on supercomputers, the largest and fastest computers.\n\n**Why the other options are wrong**\n\n- a minicomputer: A minicomputer serves a small organisation and is far too slow for forecasting.\n- a microcomputer: A microcomputer is a personal computer for one user.\n- an embedded computer: An embedded computer controls a single machine, such as a washing machine.",
+     "position": 2,
+     "options": [
+      {
+       "id": "5182c497-11cf-53bc-84cf-5e7b5ae36ca7",
+       "label": "A",
+       "content": "a minicomputer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d136f357-5e46-5f95-9077-b56baeaf3147",
+       "label": "B",
+       "content": "a supercomputer",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0ecef70a-88df-5438-b019-3afc01e24d69",
+       "label": "C",
+       "content": "a microcomputer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4a03d48c-19c5-562a-b8f6-212159235ce8",
+       "label": "D",
+       "content": "an embedded computer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5826fdbe-22d7-5c7d-be41-33dcdbf8b1ab",
+     "key": "ict-cl-03",
+     "stem": "A machine in a hospital that measures a patient's heartbeat and shows it as numbers on a screen is an example of",
+     "image_url": null,
+     "explanation": "It takes in continuous measurements (analogue) and processes and displays them as digits (digital), so it is a hybrid computer. A modern petrol pump is another example.\n\n**Why the other options are wrong**\n\n- an analogue computer: It does more than measure: it also processes and shows the readings digitally.\n- a mainframe computer: Mainframe is a size class for large organisations with many users.\n- a supercomputer: A supercomputer is a very large machine for huge calculations.",
+     "position": 3,
+     "options": [
+      {
+       "id": "6e2e8c20-eaaa-5600-bb92-99a926515edb",
+       "label": "A",
+       "content": "an analogue computer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "054bd8e1-7e11-5c3f-bee5-6f0b577d2d55",
+       "label": "B",
+       "content": "a mainframe computer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "ad80ae88-6d70-59d7-846d-9f3d70db3b46",
+       "label": "C",
+       "content": "a supercomputer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "493b7b65-98d1-5091-a37b-00b554e778b1",
+       "label": "D",
+       "content": "a hybrid computer",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4b412845-0e8f-5391-acd4-05fdbd0c206b",
+     "key": "ict-cl-04",
+     "stem": "An automated teller machine (ATM) is an example of",
+     "image_url": null,
+     "explanation": "A special-purpose computer is designed for one particular job with a fixed program. An ATM only handles banking transactions such as giving cash and showing balances.\n\n**Why the other options are wrong**\n\n- a general-purpose computer: A general-purpose computer can run many different programs; an ATM does one job.\n- a supercomputer: An ATM is small and does simple banking transactions.\n- an analogue computer: An ATM works with discrete digital data.",
+     "position": 4,
+     "options": [
+      {
+       "id": "05786f93-bfbc-5a03-8e5d-07db5e8c723c",
+       "label": "A",
+       "content": "a special-purpose computer",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9934d134-ea00-5fcc-ad92-95ff92e6769b",
+       "label": "B",
+       "content": "a general-purpose computer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d95c332b-a67d-5e2a-b978-fffe65c3a155",
+       "label": "C",
+       "content": "a supercomputer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "495a3a72-f146-5eb2-81a1-ceaaff1e6693",
+       "label": "D",
+       "content": "an analogue computer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6277d8ca-8486-511d-9f7e-d69c703db382",
+     "key": "ict-cl-05",
+     "stem": "Which of the following is a microcomputer?",
+     "image_url": null,
+     "explanation": "A microcomputer is a small computer built around one microprocessor and used by one person at a time: desktops, laptops, tablets and smartphones.\n\n**Why the other options are wrong**\n\n- a mainframe used by a bank: A mainframe is a large computer serving thousands of users.\n- a supercomputer used for climate research: A supercomputer is the largest and fastest class.\n- a minicomputer serving a factory: A minicomputer is a medium-sized computer for many users.",
+     "position": 5,
+     "options": [
+      {
+       "id": "db2af606-b95c-51cc-aaa3-51ffc08da3d6",
+       "label": "A",
+       "content": "a mainframe used by a bank",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "96c25dff-c8c1-5644-b123-87fd899244ed",
+       "label": "B",
+       "content": "a laptop computer",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "13fc9add-9228-59f4-8ccd-a2749342c421",
+       "label": "C",
+       "content": "a supercomputer used for climate research",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f37770e5-2ab1-5531-96d8-3d71b7ba3caa",
+       "label": "D",
+       "content": "a minicomputer serving a factory",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6d0cbc5e-b758-5597-8459-492f3824183f",
+     "key": "ict-cl-06",
+     "stem": "Digital computers represent data as",
+     "image_url": null,
+     "explanation": "A digital computer counts rather than measures: all its data, numbers, text, pictures and sound, is held as discrete binary digits, 0 and 1.\n\n**Why the other options are wrong**\n\n- continuously changing physical quantities: That describes analogue computers.\n- pointer positions on a dial: Dial output is typical of analogue devices.\n- decimal digits stored in gears: That describes mechanical calculators such as the Pascaline.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d9260433-8b6c-5182-a3da-fc7a034d0d6f",
+       "label": "A",
+       "content": "continuously changing physical quantities",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0c660f07-0bbc-53ff-b798-9ef726586a1b",
+       "label": "B",
+       "content": "pointer positions on a dial",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8adcfe46-9a67-57b3-abab-f5effb47297e",
+       "label": "C",
+       "content": "discrete values made of the digits 0 and 1",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "f60e8ead-ab51-555a-918a-7af010112bba",
+       "label": "D",
+       "content": "decimal digits stored in gears",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "56040355-1351-5ede-a725-c8ca5bae0e9d",
+   "topic": "Data and Information",
+   "title": "Data and Information: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on data and information, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "0e9f8761-31d4-53df-b23d-dd59061330f8",
+     "key": "ict-di-01",
+     "stem": "Raw, unprocessed facts and figures are called",
+     "image_url": null,
+     "explanation": "Data are raw facts with no meaning on their own, such as a list of marks. When processed (totalled, averaged, ranked) they become information.\n\n**Why the other options are wrong**\n\n- information: Information is data that has been processed and made meaningful.\n- a database: A database is an organised collection of related files or tables.\n- a program: A program is a set of instructions, not facts.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0529842d-3cde-5306-bc54-5d2122e9936a",
+       "label": "A",
+       "content": "information",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "96d11bdd-6bc7-52c3-b1ea-b2a1973e6857",
+       "label": "B",
+       "content": "a database",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8a40fa25-83f6-51e7-b947-f4cbd5685037",
+       "label": "C",
+       "content": "a program",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b8b946c1-e439-5c97-b1e7-0716d883eb63",
+       "label": "D",
+       "content": "data",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "75da510e-9fd3-5fbe-ac77-4eae51a1fb45",
+     "key": "ict-di-02",
+     "stem": "Which of the following shows the stages of the data processing cycle in the correct order?",
+     "image_url": null,
+     "explanation": "Data is collected, entered (input), processed into information, presented (output) and saved (storage). Feedback from the output lets errors be corrected.\n\n**Why the other options are wrong**\n\n- input, collection, output, processing, storage: Data must be collected before it is input, and processed before it is output.\n- collection, processing, input, storage, output: Data must be input before the computer can process it.\n- processing, input, collection, output, storage: Processing cannot come before the data is collected and input.",
+     "position": 2,
+     "options": [
+      {
+       "id": "8a70cf8b-4c0b-5e88-a07c-b126d6fbc76d",
+       "label": "A",
+       "content": "collection, input, processing, output, storage",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "2be1f773-d427-52eb-a4c9-f1aac856e1a7",
+       "label": "B",
+       "content": "input, collection, output, processing, storage",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9e7302d6-173c-5a35-bbae-41710696dda7",
+       "label": "C",
+       "content": "collection, processing, input, storage, output",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0dacfdb1-0422-59de-862a-5014f3cee2a7",
+       "label": "D",
+       "content": "processing, input, collection, output, storage",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "44211f8e-a8ad-52a4-a9b0-dab48968a8a0",
+     "key": "ict-di-03",
+     "stem": "Paying workers' salaries at the end of each month is an example of",
+     "image_url": null,
+     "explanation": "In batch processing, transactions are collected over a period and processed together as one group. Payroll, utility bills and marking exam answer sheets are typical examples.\n\n**Why the other options are wrong**\n\n- real-time processing: Real-time processing handles each transaction at once, as at an ATM.\n- time-sharing: Time-sharing is many users sharing one computer in turns.\n- distributed processing: Distributed processing shares work among networked computers in different places.",
+     "position": 3,
+     "options": [
+      {
+       "id": "57fbc2ba-deea-5096-aa3a-3143e9f09f99",
+       "label": "A",
+       "content": "real-time processing",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "74ee9eef-240b-5c04-9788-b7a82f98ddba",
+       "label": "B",
+       "content": "batch processing",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a1dfdfcd-00f4-5b5d-b911-2384f6083b6d",
+       "label": "C",
+       "content": "time-sharing",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1637b9f2-3529-5f63-870e-e74514c0b1a1",
+       "label": "D",
+       "content": "distributed processing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "0ba0eba7-f11c-5296-866d-9f1e191fd825",
+     "key": "ict-di-04",
+     "stem": "Which validation check makes sure that an examination mark entered is between 0 and 100?",
+     "image_url": null,
+     "explanation": "A range check makes sure a value lies between a lower and an upper limit; any mark below 0 or above 100 is rejected.\n\n**Why the other options are wrong**\n\n- a presence check: A presence check only makes sure a field is not left empty.\n- a length check: A length check counts the number of characters.\n- a type check: A type check makes sure the data is of the right type, such as a number.",
+     "position": 4,
+     "options": [
+      {
+       "id": "8d62f06f-532c-524c-8bea-a3ec29770d0e",
+       "label": "A",
+       "content": "a presence check",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "99bcbec9-8e07-5989-8c9a-52d8ca274ad7",
+       "label": "B",
+       "content": "a length check",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "433be5e6-a2a5-5187-9a45-ff6ffbf218bb",
+       "label": "C",
+       "content": "a range check",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8721f95a-dba8-504f-abc1-1ed912987f47",
+       "label": "D",
+       "content": "a type check",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "23d6a1b6-2ff9-5897-a2dc-9076cc37f5fe",
+     "key": "ict-di-05",
+     "stem": "In the data hierarchy, a collection of related fields about one person or thing is called",
+     "image_url": null,
+     "explanation": "The data hierarchy runs bit → byte → field → record → file → database. All the fields about one student (ID, name, class, date of birth) form one record.\n\n**Why the other options are wrong**\n\n- a file: A file is a collection of related records.\n- a field: A field is a single item of data, such as a surname.\n- a byte: A byte is 8 bits, enough for one character.",
+     "position": 5,
+     "options": [
+      {
+       "id": "634dd344-73d6-52af-982d-ee2f4a3d9deb",
+       "label": "A",
+       "content": "a file",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "13e6d131-489e-539e-82cd-e6d924f6648a",
+       "label": "B",
+       "content": "a field",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "963eaf12-6b94-5f6a-a07c-b45c6c0214d3",
+       "label": "C",
+       "content": "a byte",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8a373c4f-1009-524f-904e-3ff0a9caeb12",
+       "label": "D",
+       "content": "a record",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "42dd3ea8-aae2-591d-9f41-3210d39e1b66",
+     "key": "ict-di-06",
+     "stem": "The idea that a computer given wrong input data will give wrong output is known as",
+     "image_url": null,
+     "explanation": "GIGO means a computer only processes what it is given: if the input data is wrong, the information produced will be wrong too, however powerful the computer is.\n\n**Why the other options are wrong**\n\n- verification: Verification is a check that data was copied correctly.\n- feedback: Feedback is checking the output so that errors can be corrected.\n- batch processing: Batch processing is a mode of processing, not a principle about errors.",
+     "position": 6,
+     "options": [
+      {
+       "id": "5085f016-7911-5c16-b785-f1c30b7015d9",
+       "label": "A",
+       "content": "garbage in, garbage out (GIGO)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "9b39d299-39b8-5cdf-b7c9-f0ade5a3e4a6",
+       "label": "B",
+       "content": "verification",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f0acb24f-4972-5828-9df7-6e21522b5e89",
+       "label": "C",
+       "content": "feedback",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "c86e9c84-9207-57df-bad2-fe7e1857d16f",
+       "label": "D",
+       "content": "batch processing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d51b9e76-38f6-505f-90c5-5f3e633be68e",
+     "key": "ict-di-07",
+     "stem": "Withdrawing cash from an ATM is an example of",
+     "image_url": null,
+     "explanation": "In real-time processing each transaction is processed immediately, so the account balance is updated at once and the next withdrawal is checked against it.\n\n**Why the other options are wrong**\n\n- batch processing: The withdrawal cannot wait to be processed later with other transactions.\n- manual processing: The ATM processes the transaction electronically.\n- mechanical processing: Mechanical processing uses machines with moving parts, such as a cash register.",
+     "position": 7,
+     "options": [
+      {
+       "id": "2ca96d36-100f-5cc2-9ddd-9a17a33aaf4a",
+       "label": "A",
+       "content": "batch processing",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "369a8e17-a084-5bd4-a089-abcdf7e0a34c",
+       "label": "B",
+       "content": "real-time processing",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "c9e97eb8-4985-543f-936d-6021b94bdade",
+       "label": "C",
+       "content": "manual processing",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1ea61703-2b0a-5745-bf6e-c7e565c7d889",
+       "label": "D",
+       "content": "mechanical processing",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a12797e2-a215-5642-9f2b-bbafa568996f",
+   "topic": "Number Systems and Data Representation",
+   "title": "Number Systems and Data Representation: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on number systems and data representation, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "c8129998-b565-541f-8bb9-0230bb678eb8",
+     "key": "ict-ns-01",
+     "stem": "Convert $37_{10}$ to binary.",
+     "image_url": null,
+     "explanation": "Divide by 2 repeatedly: $37 \\div 2 = 18$ r 1, $18 \\div 2 = 9$ r 0, $9 \\div 2 = 4$ r 1, $4 \\div 2 = 2$ r 0, $2 \\div 2 = 1$ r 0, $1 \\div 2 = 0$ r 1. Reading the remainders upwards gives $100101_2$. Check: $32 + 4 + 1 = 37$.\n\n**Why the other options are wrong**\n\n- 101001: This reads the remainders downwards; it is 41, not 37.\n- 100111: This is 39: the 2s place should be 0.\n- 110101: This is 53: the 16s place should be 0.",
+     "position": 1,
+     "options": [
+      {
+       "id": "0e347650-8896-5e95-8c61-58b36b4155ea",
+       "label": "A",
+       "content": "100101",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "37e47cd7-cd3e-5fdf-ba39-6da6ba510a94",
+       "label": "B",
+       "content": "100111",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "5c51be37-59b2-516d-98e7-ca0d07087d75",
+       "label": "C",
+       "content": "101001",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a325e941-081b-5c90-b424-f001934a1f82",
+       "label": "D",
+       "content": "110101",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a6f9eb5c-c785-5247-be1d-524beceb99b6",
+     "key": "ict-ns-02",
+     "stem": "Convert $110010_2$ to decimal.",
+     "image_url": null,
+     "explanation": "Place values from the right are 1, 2, 4, 8, 16, 32. The 1s are in the 32, 16 and 2 places, so $32 + 16 + 2 = 50$.\n\n**Why the other options are wrong**\n\n- 19: This reads the bits in reverse order (010011).\n- 52: This uses 4 instead of 2 for the second bit from the right.\n- 48: This leaves out the 2s place.",
+     "position": 2,
+     "options": [
+      {
+       "id": "f09639e6-2ca9-5b15-84a2-43083a14dd0f",
+       "label": "A",
+       "content": "19",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4ac3defa-a09d-54aa-83ef-cadf5115e15c",
+       "label": "B",
+       "content": "48",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0429f395-95e5-54d5-94e1-60b9a2eb08e1",
+       "label": "C",
+       "content": "50",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d72b0b8b-e9e3-5da5-87c7-a3cce63c234a",
+       "label": "D",
+       "content": "52",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "12c4ae99-f1e9-5b6f-aaf1-7e4271b9715c",
+     "key": "ict-ns-03",
+     "stem": "Convert $3F_{16}$ to decimal.",
+     "image_url": null,
+     "explanation": "F = 15. The places are 16s and units, so $3F_{16} = 3 \\times 16 + 15 = 48 + 15 = 63$.\n\n**Why the other options are wrong**\n\n- 45: This multiplies 3 by 10 instead of 16.\n- 18: This simply adds 3 and 15.\n- 315: This writes 3 and 15 side by side.",
+     "position": 3,
+     "options": [
+      {
+       "id": "1495c17a-810f-51f4-9165-414d893d5b79",
+       "label": "A",
+       "content": "18",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2f5b4eb8-fc0f-5359-a873-696c536f3e46",
+       "label": "B",
+       "content": "45",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "757244b4-058d-5f32-a70b-95be7c173a72",
+       "label": "C",
+       "content": "63",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "b01cd910-fea6-5b85-a844-c624a8b07d13",
+       "label": "D",
+       "content": "315",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "88774165-83fe-5ec9-b57e-f9aff1b8c9e4",
+     "key": "ict-ns-04",
+     "stem": "Add the binary numbers $1011_2 + 101_2$.",
+     "image_url": null,
+     "explanation": "From the right: $1 + 1 = 10$, write 0 carry 1; $1 + 0 + 1 = 10$, write 0 carry 1; $0 + 1 + 1 = 10$, write 0 carry 1; $1 + 0 + 1 = 10$, write 0 carry 1; the last carry gives 1. Answer: $10000_2$. Check: $11 + 5 = 16$.\n\n**Why the other options are wrong**\n\n- 1111: This ignores the carries: 1 + 1 = 10 in binary, so write 0 and carry 1.\n- 10001: This is 17; the sum of 11 and 5 is 16.\n- 1110: This is 14; a carry has been lost.",
+     "position": 4,
+     "options": [
+      {
+       "id": "1e38a8bc-35c0-5b77-a77c-e71150cff738",
+       "label": "A",
+       "content": "1110",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c75e3353-ba58-5ff9-9028-d6cf3965625b",
+       "label": "B",
+       "content": "1111",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dae99388-75fe-5b1b-af78-3389154510cf",
+       "label": "C",
+       "content": "10000",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d0cd4550-483e-5b31-a2be-eac8e52c6096",
+       "label": "D",
+       "content": "10001",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4f0e5c79-d0c6-5e49-9a2f-e007243adb77",
+     "key": "ict-ns-05",
+     "stem": "How many bits make one byte?",
+     "image_url": null,
+     "explanation": "A byte is a group of 8 bits, enough to store one character such as a letter or a digit.\n\n**Why the other options are wrong**\n\n- 4: 4 bits make a nibble, half a byte.\n- 16: 16 bits make two bytes.\n- 1024: 1024 is the number of bytes in a kilobyte.",
+     "position": 5,
+     "options": [
+      {
+       "id": "379e9815-2389-5511-9b7f-2a8d6888b888",
+       "label": "A",
+       "content": "4",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "467d16d6-6c72-54da-bcb2-15f864400eb6",
+       "label": "B",
+       "content": "8",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "1124840f-d5b5-5509-99a6-96f2e43d3f43",
+       "label": "C",
+       "content": "16",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a362dbb7-1a25-5664-ada3-7c3297117004",
+       "label": "D",
+       "content": "1024",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "6f1354ce-d239-56f7-a740-21e27bd444f1",
+     "key": "ict-ns-06",
+     "stem": "In the ASCII code, the capital letter A is represented by the decimal number",
+     "image_url": null,
+     "explanation": "In ASCII, A = 65, B = 66 and so on; small a = 97; the digit 0 = 48. 65 in binary is 1000001, which fits in the 7 bits of standard ASCII.\n\n**Why the other options are wrong**\n\n- 97: 97 is the code for small a.\n- 48: 48 is the code for the digit 0.\n- 1: ASCII codes for letters do not start at 1.",
+     "position": 6,
+     "options": [
+      {
+       "id": "12e8293e-6157-54c6-9b90-dad0da58d4a9",
+       "label": "A",
+       "content": "1",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "72eb5069-fbda-5c93-821c-f7f1aa801361",
+       "label": "B",
+       "content": "48",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "3d88b23d-a49e-5a7c-9caa-fa732c4d8901",
+       "label": "C",
+       "content": "65",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "c2e677d8-4671-5167-a55f-e19830176cf4",
+       "label": "D",
+       "content": "97",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "dd4e5259-bd16-554a-bd1d-2da57a75cdaa",
+     "key": "ict-ns-07",
+     "stem": "Which of the following is NOT a valid octal number?",
+     "image_url": null,
+     "explanation": "The octal (base-8) system uses only the digits 0 to 7. The number 278 contains the digit 8, so it cannot be an octal number.\n\n**Why the other options are wrong**\n\n- 157: 157 uses only the digits 0 to 7, so it is a valid octal number.\n- 720: 720 uses only the digits 0 to 7, so it is a valid octal number.\n- 1046: 1046 uses only the digits 0 to 7, so it is a valid octal number.",
+     "position": 7,
+     "options": [
+      {
+       "id": "a6472a74-59e1-5a0e-b4d9-946fda14802a",
+       "label": "A",
+       "content": "157",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3c0edb95-726b-5119-a03c-81eac580db5a",
+       "label": "B",
+       "content": "278",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "8122a27f-f355-5b6c-b042-84bab54dadc9",
+       "label": "C",
+       "content": "720",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "91a5a9e8-1cc5-50b3-8f83-180a8deaafd8",
+       "label": "D",
+       "content": "1046",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e0219f58-cbda-54d7-b213-2afb8b398699",
+   "topic": "The CPU",
+   "title": "The CPU: practice set 1",
+   "paper_type": "Practice",
+   "description": "6 original WASSCE-style objective questions on the cpu, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "a15fba5c-ac36-5546-a432-dc8d569ebadf",
+     "key": "ict-cp-01",
+     "stem": "Which part of the CPU performs calculations and comparisons?",
+     "image_url": null,
+     "explanation": "The ALU carries out arithmetic (add, subtract, multiply, divide) and logic operations (comparisons and AND, OR, NOT) that let programs make decisions.\n\n**Why the other options are wrong**\n\n- the control unit: The control unit fetches, decodes and directs; it does not calculate.\n- the program counter: The program counter is a register that holds the next instruction's address.\n- the data bus: The data bus carries data between parts; it does no processing.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7b812aad-cbb7-5714-bdde-5b8dae4c8d9c",
+       "label": "A",
+       "content": "the control unit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7ddc85d3-1cb1-55d8-a197-08853b02c45b",
+       "label": "B",
+       "content": "the program counter",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e88d8efe-7700-55ab-bf7c-63d723c6f6f9",
+       "label": "C",
+       "content": "the arithmetic and logic unit (ALU)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8b488d22-d072-5140-9290-8f202076d000",
+       "label": "D",
+       "content": "the data bus",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a4510b2d-dfd7-5c6d-88c0-bb299ffaee1e",
+     "key": "ict-cp-02",
+     "stem": "Which register holds the address of the next instruction to be fetched?",
+     "image_url": null,
+     "explanation": "The program counter holds the address of the next instruction. During the fetch stage its value is copied to the MAR and it then goes up by one.\n\n**Why the other options are wrong**\n\n- the accumulator: The accumulator holds the result of the latest ALU calculation.\n- the memory data register (MDR): The MDR holds the data or instruction being moved to or from memory.\n- the current instruction register (CIR): The CIR holds the instruction being decoded and carried out now.",
+     "position": 2,
+     "options": [
+      {
+       "id": "c83c5d48-77f3-5df2-959d-9e8896f484f0",
+       "label": "A",
+       "content": "the accumulator",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "253444bb-aa92-58be-8602-63acdd55069f",
+       "label": "B",
+       "content": "the memory data register (MDR)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "833ed44d-47f6-5424-a4df-ae8fb1461cb9",
+       "label": "C",
+       "content": "the current instruction register (CIR)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0f6264ed-064a-57e0-8252-d406837d6527",
+       "label": "D",
+       "content": "the program counter (PC)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5bb367bf-0859-562a-a3bd-2edd6ba791ed",
+     "key": "ict-cp-03",
+     "stem": "Which of the following is the correct order of the stages of the machine cycle?",
+     "image_url": null,
+     "explanation": "For every instruction the CPU fetches it from memory, decodes it in the control unit, then executes it, often using the ALU. The cycle repeats billions of times a second.\n\n**Why the other options are wrong**\n\n- decode, fetch, execute: An instruction must be fetched before it can be decoded.\n- execute, fetch, decode: An instruction cannot be carried out before it is fetched and decoded.\n- fetch, execute, decode: The CPU must decode an instruction before it can carry it out.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a1984ae6-73a9-514b-8796-a72b41723206",
+       "label": "A",
+       "content": "fetch, decode, execute",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c89c728f-edd5-5cde-b6ca-af540ecf8e58",
+       "label": "B",
+       "content": "decode, fetch, execute",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4a2f2aff-f575-5899-9307-f92e8c5a5c1c",
+       "label": "C",
+       "content": "execute, fetch, decode",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "81db5e88-8658-521d-b031-add97414c89b",
+       "label": "D",
+       "content": "fetch, execute, decode",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "daa933e0-f383-505a-9baf-530acbdda400",
+     "key": "ict-cp-04",
+     "stem": "Which bus carries the address of a memory location from the CPU to memory?",
+     "image_url": null,
+     "explanation": "The address bus carries addresses one way, from the CPU, to say which memory location or device is to be used. The data then travels on the data bus.\n\n**Why the other options are wrong**\n\n- the data bus: The data bus carries the data itself, in both directions.\n- the control bus: The control bus carries signals such as read, write and clock timing.\n- a USB cable: A USB cable connects external devices; it is not one of the CPU's internal buses.",
+     "position": 4,
+     "options": [
+      {
+       "id": "706fd025-5f7b-5e2c-b190-1e04b658dc7e",
+       "label": "A",
+       "content": "the data bus",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cd5f3459-3203-5f23-ba2f-992accb65151",
+       "label": "B",
+       "content": "the address bus",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "870c23bf-65cf-500d-a462-b1953167c040",
+       "label": "C",
+       "content": "the control bus",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d4283aca-3298-5342-b69f-c723f2ca4a4e",
+       "label": "D",
+       "content": "a USB cable",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "81ffd3ae-7ad6-5898-91ad-8577b71904e2",
+     "key": "ict-cp-05",
+     "stem": "The clock speed of a processor is measured in",
+     "image_url": null,
+     "explanation": "Clock speed is the number of cycles a second, measured in hertz; a 3 GHz processor completes 3 billion cycles a second.\n\n**Why the other options are wrong**\n\n- gigabytes (GB): Gigabytes measure memory and storage capacity.\n- dots per inch (dpi): Dots per inch measure print or scan quality.\n- pages per minute (ppm): Pages per minute measure printer speed.",
+     "position": 5,
+     "options": [
+      {
+       "id": "d5988c83-d093-515d-a68a-521adde53260",
+       "label": "A",
+       "content": "gigabytes (GB)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "568c38e6-ca50-5763-9e96-5b6faee7382c",
+       "label": "B",
+       "content": "dots per inch (dpi)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b8d47dca-d232-51d1-ae50-bd144689b8e7",
+       "label": "C",
+       "content": "gigahertz (GHz)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "657a3167-d552-56bb-b762-729bb34962ca",
+       "label": "D",
+       "content": "pages per minute (ppm)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a06e3ade-c80d-596a-bf29-3594d49a078a",
+     "key": "ict-cp-06",
+     "stem": "Which part of the CPU directs and coordinates the operations of all the other parts of the computer?",
+     "image_url": null,
+     "explanation": "The control unit fetches and decodes instructions and sends control signals that direct the ALU, memory and input and output devices, keeping all operations in step.\n\n**Why the other options are wrong**\n\n- the arithmetic and logic unit: The ALU does calculations and comparisons under the control unit's direction.\n- the accumulator: The accumulator is a register that stores results.\n- cache memory: Cache memory stores frequently used data; it gives no commands.",
+     "position": 6,
+     "options": [
+      {
+       "id": "7517aab0-3294-5987-b7db-9926fa184816",
+       "label": "A",
+       "content": "the arithmetic and logic unit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "27073d66-547b-50d5-a886-be485cfbcb0c",
+       "label": "B",
+       "content": "the accumulator",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2fb8af2d-400e-5716-ae67-287df39e81f0",
+       "label": "C",
+       "content": "cache memory",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5b402e6a-011c-5100-893b-42d7c44ec195",
+       "label": "D",
+       "content": "the control unit",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "0adfef0d-a3a3-593c-b8c3-2447626669c6",
+   "topic": "Input Devices",
+   "title": "Input Devices: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on input devices, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "caba08b7-1ce8-5918-ba92-34025a6ffb70",
+     "key": "ict-in-01",
+     "stem": "Which input device is used to mark the objective answer sheets of an examination?",
+     "image_url": null,
+     "explanation": "An optical mark reader detects marks made in fixed places on a form, so it can tell which box in each row has been shaded.\n\n**Why the other options are wrong**\n\n- an optical character reader (OCR): OCR recognises letters and digits; it does not detect shaded boxes.\n- a magnetic ink character reader (MICR): MICR reads magnetic-ink characters on cheques.\n- a barcode reader: A barcode reader reads bars printed on products.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a0d24e7b-1786-5751-898d-e3cd21b5cb1b",
+       "label": "A",
+       "content": "an optical mark reader (OMR)",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "3f155cb7-6732-5b97-a194-7d820fe830fa",
+       "label": "B",
+       "content": "an optical character reader (OCR)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9c9ebae2-e4f7-5e9a-95e9-c307f189c740",
+       "label": "C",
+       "content": "a magnetic ink character reader (MICR)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4c85fcb7-5c6d-56e0-a9b9-cd798513b0a2",
+       "label": "D",
+       "content": "a barcode reader",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "22720544-4fbb-5a55-8a20-7a4927ac97b6",
+     "key": "ict-in-02",
+     "stem": "Magnetic ink character recognition (MICR) is mainly used to",
+     "image_url": null,
+     "explanation": "Banks print the cheque number, bank code and account number in magnetic ink. MICR reads them quickly and accurately, and the characters are hard to forge.\n\n**Why the other options are wrong**\n\n- read prices on goods in a supermarket: Supermarkets use barcode readers.\n- mark multiple-choice answer sheets: Answer sheets are marked by OMR.\n- identify people by their fingerprints: Fingerprints are read by biometric scanners.",
+     "position": 2,
+     "options": [
+      {
+       "id": "46cfad89-588c-5564-94a9-f448d5c3b1ef",
+       "label": "A",
+       "content": "read prices on goods in a supermarket",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "aade0299-7fea-5f73-a860-4cc5449385ff",
+       "label": "B",
+       "content": "read the numbers printed on bank cheques",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fbcb16d7-af10-506e-aaa6-a3d5ad9c9f33",
+       "label": "C",
+       "content": "mark multiple-choice answer sheets",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9544b060-e065-58af-9068-9bc3171c54ed",
+       "label": "D",
+       "content": "identify people by their fingerprints",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b8dd50e2-c806-5108-af74-d54e38935da0",
+     "key": "ict-in-03",
+     "stem": "Which key deletes the character to the left of the cursor?",
+     "image_url": null,
+     "explanation": "Backspace moves the cursor back one place and deletes the character to its left; Delete removes the character to the right of the cursor or a selected item.\n\n**Why the other options are wrong**\n\n- Delete: Delete removes the character to the right of the cursor.\n- Esc: Esc cancels the current action or closes a menu.\n- Tab: Tab moves the cursor to the next tab stop.",
+     "position": 3,
+     "options": [
+      {
+       "id": "f6e5bd16-e62e-5c5e-9960-8f2e81cc02e4",
+       "label": "A",
+       "content": "Delete",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5ecdbc85-f5c0-5d60-9914-732f53125b37",
+       "label": "B",
+       "content": "Esc",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0bb685c5-bdb9-5236-aea9-4ba0e64751a2",
+       "label": "C",
+       "content": "Backspace",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "080ea65c-f66b-5e49-ba88-f80c51c9804c",
+       "label": "D",
+       "content": "Tab",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f8761c89-079b-5fcc-9b8d-34b63c1ab603",
+     "key": "ict-in-04",
+     "stem": "Which of the following is a pointing device?",
+     "image_url": null,
+     "explanation": "Pointing devices move a pointer on the screen and select items: the mouse, touchpad, trackball, joystick, light pen, stylus and touch screen.\n\n**Why the other options are wrong**\n\n- a scanner: A scanner copies documents as images; it does not move a pointer.\n- a microphone: A microphone inputs sound.\n- a barcode reader: A barcode reader reads codes on products.",
+     "position": 4,
+     "options": [
+      {
+       "id": "01c65104-5215-592e-b244-d999b3328e6f",
+       "label": "A",
+       "content": "a scanner",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6033db66-70e3-5660-af32-ced964059191",
+       "label": "B",
+       "content": "a microphone",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "510b3e26-c4fd-5efd-954d-0f70b836d081",
+       "label": "C",
+       "content": "a barcode reader",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9df33f79-64f8-58e1-bf96-32fb8736be00",
+       "label": "D",
+       "content": "a touchpad",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "48bf4fac-36e3-5f1e-84df-94fbe4a4ed20",
+     "key": "ict-in-05",
+     "stem": "A fingerprint scanner used to record staff attendance is an example of",
+     "image_url": null,
+     "explanation": "Biometric devices identify a person by a body feature such as a fingerprint, the face, the iris or the voice.\n\n**Why the other options are wrong**\n\n- a pointing device: A pointing device moves a pointer on the screen.\n- an output device: The scanner takes in data; it does not present results.\n- a storage device: A storage device keeps data; the scanner inputs it.",
+     "position": 5,
+     "options": [
+      {
+       "id": "370905c6-8451-52fb-b7c1-876f1981d533",
+       "label": "A",
+       "content": "a biometric device",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "0a98dd54-bbc4-5bf8-906c-48a830c9ccef",
+       "label": "B",
+       "content": "a pointing device",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e1d9a981-41c9-5ac6-9db9-ab307e0c05ab",
+       "label": "C",
+       "content": "an output device",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "a830b80f-9bf9-5f47-9995-01fd79f12d32",
+       "label": "D",
+       "content": "a storage device",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b9a9cda6-743b-5a00-89f4-6aed9cfeb8f6",
+     "key": "ict-in-06",
+     "stem": "Which input device does a supermarket use at its tills to identify goods quickly?",
+     "image_url": null,
+     "explanation": "A barcode reader reads the pattern of bars printed on each product, so the till finds the item and its price instantly and without typing errors.\n\n**Why the other options are wrong**\n\n- an optical mark reader: OMR reads shaded marks on forms.\n- a light pen: A light pen draws or selects on a screen.\n- a MICR reader: MICR reads magnetic-ink characters on cheques.",
+     "position": 6,
+     "options": [
+      {
+       "id": "729322b2-bc41-5791-88ab-da986043b795",
+       "label": "A",
+       "content": "an optical mark reader",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "456e912b-71c5-5cb9-86e9-787cc23504d5",
+       "label": "B",
+       "content": "a barcode reader",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "84dc55de-8f28-57da-9b85-f7a9e75b59b6",
+       "label": "C",
+       "content": "a light pen",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "91e66639-8a0d-57f3-b248-891c5d742c8f",
+       "label": "D",
+       "content": "a MICR reader",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a23cdf4c-fa05-5980-a102-9298bbd66909",
+     "key": "ict-in-07",
+     "stem": "Which technology turns a scanned page of printed text into text that can be edited?",
+     "image_url": null,
+     "explanation": "OCR software recognises the letters and digits in an image of a page and turns them into editable text, for example in a word processor.\n\n**Why the other options are wrong**\n\n- optical mark recognition (OMR): OMR detects marks in fixed places; it does not recognise letters.\n- magnetic ink character recognition (MICR): MICR reads only characters printed in magnetic ink.\n- speech recognition: Speech recognition turns spoken words, not printed text, into text.",
+     "position": 7,
+     "options": [
+      {
+       "id": "6dcdfc05-a8f4-5212-b1dd-4a4f6a893f2c",
+       "label": "A",
+       "content": "optical mark recognition (OMR)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "13d9d898-8925-5011-8076-586bcb9a3098",
+       "label": "B",
+       "content": "magnetic ink character recognition (MICR)",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2f9af987-05b4-5db2-95e2-2ad7d417ec49",
+       "label": "C",
+       "content": "optical character recognition (OCR)",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "751cccef-1545-5d20-89a7-c0a81dfc0317",
+       "label": "D",
+       "content": "speech recognition",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b9da1d57-fdc0-5f40-ac6c-aba86d4e140a",
+   "topic": "Output Devices",
+   "title": "Output Devices: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on output devices, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 106,
+   "questions": [
+    {
+     "id": "13add17d-3101-518d-a60d-42b032089155",
+     "key": "ict-ou-01",
+     "stem": "Which of the following is an impact printer?",
+     "image_url": null,
+     "explanation": "Impact printers form characters by striking an inked ribbon against the paper. The dot-matrix printer's pins strike the ribbon, so it is an impact printer, like daisy-wheel and line printers.\n\n**Why the other options are wrong**\n\n- a laser printer: A laser printer fuses toner onto the paper without striking it.\n- an inkjet printer: An inkjet printer sprays ink; nothing strikes the paper.\n- a thermal printer: A thermal printer uses heat on special paper.",
+     "position": 1,
+     "options": [
+      {
+       "id": "2a718157-e670-5ae3-86f5-b9ef74ebfc83",
+       "label": "A",
+       "content": "a laser printer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8d3f0dee-24a5-5baf-82a1-07a10dd2375d",
+       "label": "B",
+       "content": "an inkjet printer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d8866004-d2f1-5f32-9048-b6f2f5cd7f1b",
+       "label": "C",
+       "content": "a thermal printer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2a1d0f88-bf44-5ac6-a96c-6d414e42255c",
+       "label": "D",
+       "content": "a dot-matrix printer",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d3f3eb3e-5c82-5637-a1c9-bcf2433442eb",
+     "key": "ict-ou-02",
+     "stem": "Output printed on paper is called",
+     "image_url": null,
+     "explanation": "Hard copy is permanent output on paper or another material that can be read without a computer; soft copy is temporary output on a screen or as sound.\n\n**Why the other options are wrong**\n\n- soft copy: Soft copy is output shown on a screen or heard through a speaker.\n- a pixel: A pixel is the smallest dot of light on a screen.\n- a backup: A backup is a spare copy of files kept for safety.",
+     "position": 2,
+     "options": [
+      {
+       "id": "29c56528-08e0-5275-a1c7-6ca7ae4bb7e9",
+       "label": "A",
+       "content": "hard copy",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "6a53c193-ffdd-5085-a09d-069bc06e9db7",
+       "label": "B",
+       "content": "soft copy",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0ff2de6f-e848-54c4-abb6-5eec47cb2441",
+       "label": "C",
+       "content": "a pixel",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "1f2a8097-c881-56a0-b48e-f978d99e648e",
+       "label": "D",
+       "content": "a backup",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "204d8b89-843c-5a97-942c-63856a90bad2",
+     "key": "ict-ou-03",
+     "stem": "Which output device is best for producing large building plans and engineering drawings?",
+     "image_url": null,
+     "explanation": "A plotter draws high-quality, large-size drawings such as plans, maps and engineering designs, using pens or ink jets.\n\n**Why the other options are wrong**\n\n- a dot-matrix printer: A dot-matrix printer gives low-quality output on ordinary paper sizes.\n- a projector: A projector gives soft copy on a screen, not a printed plan.\n- a thermal printer: A thermal printer prints small receipts and tickets.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a4f95ad6-9a56-597c-9e3e-0ac3f511fd04",
+       "label": "A",
+       "content": "a dot-matrix printer",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d8ebf2d0-9146-5ff0-bde9-146f25d336d0",
+       "label": "B",
+       "content": "a plotter",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f16dbc75-98da-5250-93b6-eacd829389ed",
+       "label": "C",
+       "content": "a projector",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b1ede7c4-bcdc-5e44-b0a6-b7a3df5a4ac6",
+       "label": "D",
+       "content": "a thermal printer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ced2bb2a-9d2e-50d4-a9dc-eef76ab3a8eb",
+     "key": "ict-ou-04",
+     "stem": "The smallest dot of light that makes up a picture on a screen is called",
+     "image_url": null,
+     "explanation": "Pixel is short for picture element. Every image on a screen is made of pixels; the more pixels (the higher the resolution), the sharper the picture.\n\n**Why the other options are wrong**\n\n- a bit: A bit is a binary digit, 0 or 1.\n- a byte: A byte is a group of 8 bits.\n- a resolution: Resolution is the number of pixels a screen shows, such as 1920 × 1080.",
+     "position": 4,
+     "options": [
+      {
+       "id": "2a10e907-fb2e-50d4-9a7c-04c5a9a528cc",
+       "label": "A",
+       "content": "a bit",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2bbf3b84-2e9b-5bdf-9f57-5273856a87d9",
+       "label": "B",
+       "content": "a byte",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "284058b3-0aa4-5cde-8019-a452797c1abe",
+       "label": "C",
+       "content": "a pixel",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "caf80542-defd-5dd4-9822-3113512512cc",
+       "label": "D",
+       "content": "a resolution",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f7f99d4d-52e0-51aa-b84c-86e99f4681e2",
+     "key": "ict-ou-05",
+     "stem": "Which of the following is both an input device and an output device?",
+     "image_url": null,
+     "explanation": "A touch screen shows output like a monitor and also takes input when you touch it.\n\n**Why the other options are wrong**\n\n- a scanner: A scanner is an input device only.\n- a printer: A printer is an output device only.\n- a keyboard: A keyboard is an input device only.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f2699bf2-ab1f-5a0b-b38a-017a0d3c13d6",
+       "label": "A",
+       "content": "a scanner",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "52feb2fd-7b35-52b8-88a2-771f2f79ba11",
+       "label": "B",
+       "content": "a printer",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "12e23f2c-f90c-5a45-9fe4-0bfffa66560c",
+       "label": "C",
+       "content": "a keyboard",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0e03b3cc-a91f-5294-86d1-9cdd5b335a12",
+       "label": "D",
+       "content": "a touch screen",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f26db25e-15a1-5bd7-8df3-2a7d0d5b2fa0",
+     "key": "ict-ou-06",
+     "stem": "Till receipts in a supermarket are usually printed by",
+     "image_url": null,
+     "explanation": "A thermal printer uses heat on heat-sensitive paper. It is small, quiet and needs no ink, so it is used for receipts, ATM slips and tickets.\n\n**Why the other options are wrong**\n\n- a plotter: A plotter draws large plans and maps.\n- a daisy-wheel printer: Daisy-wheel printers are old, slow letter-quality printers.\n- a 3D printer: A 3D printer builds solid objects, not receipts.",
+     "position": 6,
+     "options": [
+      {
+       "id": "4b586b1b-5a8f-5d8d-89b5-c93659aa6d99",
+       "label": "A",
+       "content": "a thermal printer",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ce10f3fb-d9fc-5594-be3c-513db87fb0ca",
+       "label": "B",
+       "content": "a plotter",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c82575ba-e53b-58dd-828f-4fbe9c07e75f",
+       "label": "C",
+       "content": "a daisy-wheel printer",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "39795668-d82e-5626-afd8-199f9edfd4ab",
+       "label": "D",
+       "content": "a 3D printer",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3c154c45-8458-5e43-949a-e7e92792e281",
+     "key": "ict-ou-07",
+     "stem": "The quality of a printer's output is measured in",
+     "image_url": null,
+     "explanation": "Print quality (resolution) is measured in dots per inch: the more dots in each inch, the finer the print. Speed is measured in pages per minute or characters per second.\n\n**Why the other options are wrong**\n\n- pages per minute (ppm): Pages per minute measure printing speed, not quality.\n- gigahertz (GHz): Gigahertz measure a processor's clock speed.\n- megabytes (MB): Megabytes measure data and storage capacity.",
+     "position": 7,
+     "options": [
+      {
+       "id": "3302d027-b9aa-54e6-9b0c-e2e3e0489f0e",
+       "label": "A",
+       "content": "pages per minute (ppm)",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "65adc9dc-ea9a-5e26-b6d9-4271a96c8b2a",
+       "label": "B",
+       "content": "dots per inch (dpi)",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "88f1845b-93b8-5f18-b59f-933cee9a7d23",
+       "label": "C",
+       "content": "gigahertz (GHz)",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4d52f0ea-083a-5633-a066-ceb1e6206153",
+       "label": "D",
+       "content": "megabytes (MB)",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6b303009-5d8a-5be8-8842-66f89f319159",
+   "topic": "Memory and Storage Devices",
+   "title": "Memory and Storage Devices: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on memory and storage devices, each with an explanation and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 107,
+   "questions": [
+    {
+     "id": "9d82c6ed-cd51-5a0c-b170-82b26482b470",
+     "key": "ict-ms-01",
+     "stem": "Which memory loses its contents when the power is switched off?",
+     "image_url": null,
+     "explanation": "RAM (random access memory) is volatile: it holds the programs and data in use and loses them when the power goes off. That is why work must be saved to storage.\n\n**Why the other options are wrong**\n\n- ROM: ROM is non-volatile; it keeps its contents without power.\n- a hard disk: A hard disk is non-volatile secondary storage.\n- a flash drive: Flash memory is non-volatile.",
+     "position": 1,
+     "options": [
+      {
+       "id": "f14e9e6a-1ad1-5878-8bd6-bde481080c35",
+       "label": "A",
+       "content": "ROM",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "31c6b4df-c9fd-5910-957c-09fa72e74e08",
+       "label": "B",
+       "content": "a hard disk",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2eab35e3-3805-59d0-bb15-749b2d253295",
+       "label": "C",
+       "content": "RAM",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "21b1db61-6656-5e11-9875-8480bd9293d6",
+       "label": "D",
+       "content": "a flash drive",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cf39dace-6eaf-5b65-a9b3-2d5a02a4fc24",
+     "key": "ict-ms-02",
+     "stem": "Which type of ROM can be erased with ultraviolet light and programmed again?",
+     "image_url": null,
+     "explanation": "EPROM (erasable programmable ROM) is erased by shining ultraviolet light through a window on the chip, then rewritten. EEPROM is erased electrically; flash memory is a kind of EEPROM.\n\n**Why the other options are wrong**\n\n- PROM: A PROM can be written only once.\n- EEPROM: EEPROM is erased electrically, not with ultraviolet light.\n- DRAM: DRAM is a type of RAM, not ROM.",
+     "position": 2,
+     "options": [
+      {
+       "id": "ca9d293c-f41a-5f4c-bb93-fcd7e364297a",
+       "label": "A",
+       "content": "PROM",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "2d9158d9-cd74-5863-8431-90c32c3eaf1a",
+       "label": "B",
+       "content": "EEPROM",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "71c65111-cf1e-546b-93d2-68a32e5f3dff",
+       "label": "C",
+       "content": "DRAM",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f083653e-7936-5ca7-a1b0-b584d1f341f6",
+       "label": "D",
+       "content": "EPROM",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "aaf37a92-22fa-5682-98fe-65cad2eefd4b",
+     "key": "ict-ms-03",
+     "stem": "Which of the following is an optical storage medium?",
+     "image_url": null,
+     "explanation": "Optical discs, CD, DVD and Blu-ray, are written and read with a laser. Hard disks and tape are magnetic; flash drives and SSDs are solid-state.\n\n**Why the other options are wrong**\n\n- a hard disk: A hard disk is magnetic storage.\n- a USB flash drive: A flash drive is solid-state storage.\n- magnetic tape: Magnetic tape is magnetic storage.",
+     "position": 3,
+     "options": [
+      {
+       "id": "51d0bdbb-bb02-50ed-ad8d-c08c2a149559",
+       "label": "A",
+       "content": "a DVD",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "150da822-a7c8-50da-8c78-ca568c84c3dd",
+       "label": "B",
+       "content": "a hard disk",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "f12c00f0-f292-549a-b0ae-3eec2efbbf6d",
+       "label": "C",
+       "content": "a USB flash drive",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f19d1648-0d66-5370-8b1c-eba08ebd3b91",
+       "label": "D",
+       "content": "magnetic tape",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bf423bcd-973f-52aa-83c8-e36bd0000142",
+     "key": "ict-ms-04",
+     "stem": "The usual storage capacity of a standard CD is about",
+     "image_url": null,
+     "explanation": "A CD holds about 700 MB, a single-layer DVD 4.7 GB and a single-layer Blu-ray disc 25 GB.\n\n**Why the other options are wrong**\n\n- 4.7 GB: 4.7 GB is the capacity of a single-layer DVD.\n- 25 GB: 25 GB is the capacity of a single-layer Blu-ray disc.\n- 1.44 MB: 1.44 MB was the capacity of a floppy disk.",
+     "position": 4,
+     "options": [
+      {
+       "id": "eea12932-55f9-5d08-97a7-883e42fa1698",
+       "label": "A",
+       "content": "4.7 GB",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "0ba669a7-6b0b-5dee-94ad-6e5d47a6b54e",
+       "label": "B",
+       "content": "700 MB",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "f1aacb49-96e2-5559-9996-1b0ed0ac55a6",
+       "label": "C",
+       "content": "25 GB",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "437eb826-fb9a-57eb-95fe-5cdefde8b01a",
+       "label": "D",
+       "content": "1.44 MB",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d6494941-f77e-504b-a14b-e7157f5e1c95",
+     "key": "ict-ms-05",
+     "stem": "A small amount of very fast memory between the CPU and main memory, holding the most frequently used data, is called",
+     "image_url": null,
+     "explanation": "Cache memory, usually SRAM, sits on or near the CPU and keeps copies of the data and instructions used most often, so the CPU does not wait for slower RAM.\n\n**Why the other options are wrong**\n\n- virtual memory: Virtual memory is part of the disk used as extra RAM, which is slower, not faster.\n- ROM: ROM holds fixed start-up instructions.\n- secondary storage: Secondary storage is much slower than main memory.",
+     "position": 5,
+     "options": [
+      {
+       "id": "fcc4a8cc-29d2-5e8e-a712-8c71770d1700",
+       "label": "A",
+       "content": "virtual memory",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "9529b64b-309f-56ec-98e3-44bf4d068e23",
+       "label": "B",
+       "content": "ROM",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "af7bffe7-9972-5b83-aff4-ecc5f33626cf",
+       "label": "C",
+       "content": "cache memory",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "2cd30f0d-4055-5fe8-ba3d-0710ac6c86ba",
+       "label": "D",
+       "content": "secondary storage",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "24596ad2-20e5-5990-8225-593ad300ea02",
+     "key": "ict-ms-06",
+     "stem": "Which of the following storage devices has no moving parts?",
+     "image_url": null,
+     "explanation": "An SSD stores data in flash memory chips with no moving parts, so it is faster, silent and less easily damaged by knocks than a hard disk.\n\n**Why the other options are wrong**\n\n- a hard disk drive: A hard disk has spinning platters and moving read/write heads.\n- a DVD drive: A DVD drive spins the disc under a laser.\n- a magnetic tape drive: A tape drive winds the tape past the heads.",
+     "position": 6,
+     "options": [
+      {
+       "id": "48a85f98-71b0-5172-9544-9de9eb1bc4e2",
+       "label": "A",
+       "content": "a hard disk drive",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4c55a323-0182-5a42-a026-b9e8e0840534",
+       "label": "B",
+       "content": "a DVD drive",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9dc2c1c5-70c7-54eb-8cee-a45559175c53",
+       "label": "C",
+       "content": "a magnetic tape drive",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b9753e46-3ccf-51b0-a5b8-1e04f41d0d7f",
+       "label": "D",
+       "content": "a solid-state drive (SSD)",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1c2f6cac-56ab-58e1-8803-89bc8a5f7960",
+     "key": "ict-ms-07",
+     "stem": "The start-up instructions (BIOS) of a computer are kept in",
+     "image_url": null,
+     "explanation": "ROM is non-volatile, so the start-up instructions are still there when the computer is switched on and can load the operating system from storage.\n\n**Why the other options are wrong**\n\n- RAM: RAM is volatile, so the instructions would be lost each time the computer is switched off.\n- cache memory: Cache holds copies of frequently used data while the computer runs.\n- the accumulator: The accumulator is a CPU register that holds a calculation result.",
+     "position": 7,
+     "options": [
+      {
+       "id": "ef984236-81c1-558d-ac3a-fff1b44e7f74",
+       "label": "A",
+       "content": "ROM",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "de2c5172-587b-5168-9aca-28f5589d673a",
+       "label": "B",
+       "content": "RAM",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "009df1f9-3134-54b3-9ae2-fe4bf5b6b103",
+       "label": "C",
+       "content": "cache memory",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0ee80c3f-3151-5ff3-8a25-47200c8cd48a",
+       "label": "D",
+       "content": "the accumulator",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "e6084940854e"
+}

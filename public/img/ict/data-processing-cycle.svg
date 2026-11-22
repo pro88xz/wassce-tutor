@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">The data processing cycle</title>
+<desc id="d">Raw data is collected, then input into the computer, processed and output as information. Processing reads data from storage and saves results to it. Feedback from the output goes back to the input so that mistakes can be corrected and the cycle repeated.</desc>
+<defs><marker id="a0f766e" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker><marker id="a0f766es" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f766e"/></marker><marker id="a475569" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#475569"/></marker><marker id="a475569s" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#475569"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7c3aed"/></marker><marker id="a7c3aeds" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#7c3aed"/></marker></defs>
+<rect width="760" height="470" rx="20" fill="#f8fafc"/>
+<text x="380.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Data in, information out</text>
+<rect x="20.0" y="122.0" width="150.0" height="76.0" rx="12" fill="#e2e8f0" stroke="#475569" stroke-width="2.5"/>
+<text x="95.0" y="138.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Collection</text>
+<text x="95.0" y="160.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gather the</text>
+<text x="95.0" y="182.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">raw data</text>
+<rect x="210.0" y="122.0" width="150.0" height="76.0" rx="12" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="285.0" y="138.0" font-size="16" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Input</text>
+<text x="285.0" y="160.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">enter it into</text>
+<text x="285.0" y="182.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">the computer</text>
+<rect x="400.0" y="122.0" width="150.0" height="76.0" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="475.0" y="138.0" font-size="16" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Processing</text>
+<text x="475.0" y="160.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">calculate, sort,</text>
+<text x="475.0" y="182.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">compare</text>
+<rect x="590.0" y="122.0" width="150.0" height="76.0" rx="12" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="665.0" y="138.0" font-size="16" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Output</text>
+<text x="665.0" y="160.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">information:</text>
+<text x="665.0" y="182.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">screen, print</text>
+<line x1="176.0" y1="160.0" x2="204.0" y2="160.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="366.0" y1="160.0" x2="394.0" y2="160.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<line x1="556.0" y1="160.0" x2="584.0" y2="160.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round" marker-end="url(#a475569)"/>
+<rect x="380.0" y="278.0" width="190.0" height="64.0" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="475.0" y="299.0" font-size="16" fill="#7c3aed" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Storage</text>
+<text x="475.0" y="321.0" font-size="14" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">save data and results</text>
+<line x1="475.0" y1="204.0" x2="475.0" y2="272.0" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" marker-end="url(#a7c3aed)" marker-start="url(#a7c3aeds)"/>
+<path d="M 665.0 204.0 L 665.0 420.0 L 285.0 420.0 L 285.0 206.0" stroke="#0f766e" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a0f766e)"/>
+<rect x="181.8" y="407.5" width="396.4" height="25.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="380.0" y="420.0" font-size="15" fill="#0f766e" text-anchor="middle" dominant-baseline="middle" font-weight="normal">feedback: check the output, correct and repeat</text>
+</svg>

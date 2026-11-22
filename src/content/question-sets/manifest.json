@@ -999,6 +999,23 @@
   "questions": 42
  },
  {
+  "name": "ict_set1_p1",
+  "label": "ICT: set 1 (history and classes of computers, data, number systems, the CPU, input, output, memory and storage)",
+  "subject_slug": "ict-computer-studies",
+  "version": "e6084940854e",
+  "papers": [
+   "ca23a888-7b35-5646-ad79-9068cdfff9aa",
+   "c695e70f-916f-587b-9ea3-9b34931e6a21",
+   "56040355-1351-5ede-a725-c8ca5bae0e9d",
+   "a12797e2-a215-5642-9f2b-bbafa568996f",
+   "e0219f58-cbda-54d7-b213-2afb8b398699",
+   "0adfef0d-a3a3-593c-b8c3-2447626669c6",
+   "b9da1d57-fdc0-5f40-ac6c-aba86d4e140a",
+   "6b303009-5d8a-5be8-8842-66f89f319159"
+  ],
+  "questions": 53
+ },
+ {
   "name": "maths_mock_p1",
   "label": "Mathematics: timed mock exam, Paper 1",
   "subject_slug": "mathematics",

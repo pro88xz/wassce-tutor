@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Converting the binary number 10011101 to decimal</title>
+<desc id="d">Write the place values 128, 64, 32, 16, 8, 4, 2 and 1 above the eight bits 1 0 0 1 1 1 0 1. Add the place values where the bit is 1: 128 + 16 + 8 + 4 + 1 = 157. So 10011101 in binary is 157 in decimal.</desc>
+<defs></defs>
+<rect width="700" height="330" rx="20" fill="#f8fafc"/>
+<text x="350.0" y="30.0" font-size="18" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Binary place values double from right to left</text>
+<rect x="60.0" y="60.0" width="64.0" height="46.0" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="92.0" y="83.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">128</text>
+<rect x="60.0" y="116.0" width="64.0" height="56.0" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="92.0" y="144.0" font-size="28" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<rect x="132.0" y="60.0" width="64.0" height="46.0" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="164.0" y="83.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">64</text>
+<rect x="132.0" y="116.0" width="64.0" height="56.0" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+<text x="164.0" y="144.0" font-size="28" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">0</text>
+<rect x="204.0" y="60.0" width="64.0" height="46.0" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="236.0" y="83.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">32</text>
+<rect x="204.0" y="116.0" width="64.0" height="56.0" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+<text x="236.0" y="144.0" font-size="28" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">0</text>
+<rect x="276.0" y="60.0" width="64.0" height="46.0" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="308.0" y="83.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">16</text>
+<rect x="276.0" y="116.0" width="64.0" height="56.0" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="308.0" y="144.0" font-size="28" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<rect x="348.0" y="60.0" width="64.0" height="46.0" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="380.0" y="83.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">8</text>
+<rect x="348.0" y="116.0" width="64.0" height="56.0" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="380.0" y="144.0" font-size="28" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<rect x="420.0" y="60.0" width="64.0" height="46.0" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="452.0" y="83.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<rect x="420.0" y="116.0" width="64.0" height="56.0" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="452.0" y="144.0" font-size="28" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<rect x="492.0" y="60.0" width="64.0" height="46.0" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="524.0" y="83.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+<rect x="492.0" y="116.0" width="64.0" height="56.0" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+<text x="524.0" y="144.0" font-size="28" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">0</text>
+<rect x="564.0" y="60.0" width="64.0" height="46.0" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="596.0" y="83.0" font-size="20" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<rect x="564.0" y="116.0" width="64.0" height="56.0" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="596.0" y="144.0" font-size="28" fill="#15803d" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="48.0" y="83.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">value</text>
+<text x="48.0" y="144.0" font-size="14" fill="#475569" text-anchor="end" dominant-baseline="middle" font-weight="normal">bit</text>
+<text x="350.0" y="215.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">add the values where the bit is 1:</text>
+<rect x="110.0" y="245.0" width="480.0" height="54.0" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+<text x="350.0" y="272.0" font-size="24" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">128 + 16 + 8 + 4 + 1 = 157</text>
+</svg>

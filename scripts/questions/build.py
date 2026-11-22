@@ -442,6 +442,22 @@ SETS += [
     )
 ]
 
+SETS += [
+    {
+        "module": ROOT / f"content/questions/ict-computer-studies/set{n}_p1.py",
+        "subject_slug": "ict-computer-studies",
+        "name": f"ict_set{n}_p1",
+        "label": label,
+        "review": ROOT / f"content/questions/ict-computer-studies/set{n}_p1.review.md",
+        "sort_from": 80 + 20 * n,
+        # Facts and terms checked by an editor against the ICT notes; every conversion is worked in full.
+        "checked": "facts",
+    }
+    for n, label in (
+        (1, "ICT: set 1 (history and classes of computers, data, number systems, the CPU, input, output, memory and storage)"),
+    )
+]
+
 # Timed mock exams: a full Paper 1 drawn from a subject's practice sets, with the
 # number of questions and the time the WAEC syllabus gives for that paper.
 # Each mock question is a copy of a practice question (new ids, its own topic),
