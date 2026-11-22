@@ -435,6 +435,47 @@ html.promo-hidden [data-app-promo] { display: none; }
 @media (prefers-reduced-motion: reduce) {
   .audio-chip.is-playing .audio-chip__icon { animation: none; }
 }
+/* Dashboard cards (src/components/dashboard/Dashboard.tsx). Depth without
+   decoration: a hairline highlight on the top edge, a tight contact shadow and
+   a long soft one tinted with the brand; a card you can open lifts a little. */
+.dash-card {
+  position: relative;
+  border: 1px solid color-mix(in oklab, var(--border) 85%, transparent);
+  border-radius: 1.375rem;
+  background: var(--card);
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, white 75%, transparent),
+    0 1px 2px rgb(23 28 43 / 0.05),
+    0 10px 28px -14px rgb(45 27 120 / 0.2),
+    0 30px 60px -40px rgb(45 27 120 / 0.28);
+}
+.dark .dash-card {
+  border-color: color-mix(in oklab, white 9%, transparent);
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, white 7%, transparent),
+    0 1px 2px rgb(0 0 0 / 0.35),
+    0 18px 44px -26px rgb(0 0 0 / 0.7);
+}
+.dash-lift { transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
+.dash-lift:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in oklab, var(--primary) 30%, var(--border));
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, white 75%, transparent),
+    0 2px 4px rgb(23 28 43 / 0.06),
+    0 18px 40px -16px rgb(45 27 120 / 0.32),
+    0 40px 70px -44px rgb(45 27 120 / 0.36);
+}
+.dark .dash-lift:hover { box-shadow: inset 0 1px 0 color-mix(in oklab, white 9%, transparent), 0 24px 50px -24px rgb(0 0 0 / 0.8); }
+.dash-eyebrow { font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted-foreground); }
+/* A bar in the week chart grows from its foot when the dashboard opens. */
+@keyframes dash-bar-in { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+.dash-bar { transform-origin: bottom; animation: dash-bar-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@media (prefers-reduced-motion: reduce) {
+  .dash-lift:hover { transform: none; }
+  .dash-bar { animation: none; }
+}
+
 /* Answer feedback (the practice screen and the public question cards): motion
    that says right or wrong, with no sound. .answer-live is set on a question
    once its result is on screen, so the movement is seen, not spent off-screen. */

@@ -45,7 +45,6 @@ import { checkAccess } from '@/lib/access'
 import { useAccess } from '@/lib/useAccess'
 import { FROM_PRICE, PAID_FEATURES, planById } from '@/lib/plans'
 import { subjectTheme } from '@/lib/subject-theme'
-import { ProgressBar } from '@/components/ds/Progress'
 import { EmptyState, Pill, ScorePill, SectionHeader, Skeleton } from '@/components/ds/Primitives'
 import { Button } from '@/components/ui/button'
 import { UpdateBanner } from '@/components/UpdateBanner'
@@ -115,27 +114,31 @@ export function Dashboard({ user, profile }: { user: User; profile: Profile | nu
   const started = summary.done > 0 || summary.papersTaken > 0
 
   return (
-    <div className="app-page space-y-6">
+    <div className="app-page relative isolate space-y-7">
+      {/* A soft brand light behind the greeting and the first card. */}
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 -top-6 -z-10 h-[30rem] bg-[radial-gradient(55%_60%_at_12%_0%,rgba(100,56,216,.16),transparent_70%),radial-gradient(40%_50%_at_95%_10%,rgba(255,209,102,.12),transparent_70%)] dark:bg-[radial-gradient(55%_60%_at_12%_0%,rgba(140,110,255,.18),transparent_70%)]" />
       <UpdateBanner />
 
-      <header className="flex items-end justify-between gap-4">
-        <div className="min-w-0 space-y-1">
-          <p className="text-[13px] font-semibold uppercase tracking-[.12em] text-muted-foreground">
-            {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}
-          </p>
-          <h1 className="text-[1.75rem] font-bold leading-tight tracking-tight sm:text-3xl">
-            {started ? `${greeting()}, ${firstName}` : `Welcome, ${firstName}`}
-          </h1>
+      <header className="space-y-1.5">
+        <div className="flex items-center justify-between gap-3">
+          <p className="dash-eyebrow">{new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</p>
+          {summary.streak >= 2 && (
+            <p className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gradient-to-br from-[#ffb547] to-[#f0782f] px-3 py-1.5 text-sm font-bold text-white shadow-[0_10px_22px_-10px_rgba(240,120,47,.85)]">
+              <Flame className="h-4 w-4" aria-hidden />
+              <span className="tabular-nums">{summary.streak}-day streak</span>
+            </p>
+          )}
         </div>
-        {summary.streak >= 2 && (
-          <p className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-warning/10 px-3 py-1.5 text-sm font-bold text-warning ring-1 ring-warning/25">
-            <Flame className="h-4 w-4" aria-hidden />
-            <span>
-              {summary.streak}
-              <span className="sr-only sm:not-sr-only">-day streak</span>
-            </span>
-          </p>
-        )}
+        <h1 className="text-[1.875rem] font-bold leading-[1.1] tracking-tight text-balance sm:text-[2.5rem]">
+          {started ? `${greeting()}, ${firstName}` : `Welcome, ${firstName}`}
+        </h1>
+        <p className="max-w-xl text-[15px] text-muted-foreground">
+          {!summary.next
+            ? 'Every lesson and practice set in your subjects is free.'
+            : started
+              ? `${summary.done} ${summary.done === 1 ? 'lesson' : 'lessons'} done so far. Pick up where you left off in ${summary.next.subject.name}.`
+              : `Your first lesson takes about ${summary.next.lesson.est_minutes ?? 10} minutes. Start whenever you are ready.`}
+        </p>
       </header>
 
       <AccessNotice profile={profile} />
@@ -193,7 +196,7 @@ export function Dashboard({ user, profile }: { user: User; profile: Profile | nu
         </div>
 
         <div className={COLUMN}>
-          {started && <div className={`order-3 ${SLOT}`}><Snapshot summary={summary} /></div>}
+          {started && <div className={`order-3 ${SLOT}`}><Snapshot summary={summary} completed={completed} /></div>}
           <div className={`order-5 ${SLOT}`}><UpgradeCard /></div>
           {started && <div className={`order-7 ${SLOT}`}><RecentActivity summary={summary} completed={completed} where={where} /></div>}
           <div className={`order-9 ${SLOT}`}><QuickAccess topic={summary.next?.topic.name ?? null} /></div>
@@ -253,43 +256,73 @@ function ContinueCard({ summary, started }: { summary: ProgressSummary; started:
   const index = next.topic.lessons.findIndex((l) => l.id === next.lesson.id) + 1
   const total = next.topic.lessons.length
   const doneInTopic = tp?.done ?? 0
+  const pct = total ? Math.round((doneInTopic / total) * 100) : 0
 
   return (
-    <section aria-labelledby="continue-title" className="relative isolate overflow-hidden rounded-3xl bg-[#1b1240] text-white shadow-[0_30px_60px_-30px_rgba(27,18,64,.8)]">
-      <div className="grid sm:grid-cols-[minmax(0,1fr)_15rem] lg:grid-cols-[minmax(0,1fr)_19rem]">
-        <div className="relative h-36 sm:order-2 sm:h-full sm:min-h-[15rem]">
-          <SubjectCover slug={next.subject.slug} shape="wide" rounded="rounded-none" sizes="(min-width: 640px) 304px, 100vw" priority className="absolute inset-0 h-full w-full" />
-          <span aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#1b1240] via-[#1b1240]/30 to-transparent sm:bg-gradient-to-r sm:via-[#1b1240]/10" />
-        </div>
-        <div className="relative -mt-10 p-5 sm:mt-0 sm:p-7">
-          <p className="text-xs font-bold uppercase tracking-[.14em] text-violet-200">{started ? 'Continue learning' : 'Start your first lesson'}</p>
-          <h2 id="continue-title" className="mt-2 text-2xl font-bold leading-tight tracking-tight text-balance sm:text-[1.75rem]">
-            {started ? next.lesson.title : next.topic.name}
-          </h2>
-          <p className="mt-1 text-sm text-white/70">
-            {started && next.lesson.title !== next.topic.name ? `${next.subject.name} · ${next.topic.name}` : `${next.subject.name} · ${next.lesson.title}`}
-          </p>
+    <section
+      aria-labelledby="continue-title"
+      className="relative isolate overflow-hidden rounded-[1.75rem] bg-[#140d33] text-white ring-1 ring-white/10 shadow-[0_44px_80px_-42px_rgba(20,13,51,.95),0_20px_40px_-28px_rgba(91,52,214,.6)]"
+    >
+      {/* The subject's photo fills the card on a phone and the right side from 640 px, fading into the card. */}
+      <div aria-hidden className="absolute inset-0 sm:left-auto sm:w-[60%]">
+        <SubjectCover slug={next.subject.slug} shape="wide" rounded="rounded-none" sizes="(min-width: 640px) 60vw, 100vw" priority className="absolute inset-0 h-full w-full" />
+        <span className="absolute inset-0 bg-gradient-to-t from-[#140d33] via-[#140d33]/75 to-[#140d33]/15 sm:bg-gradient-to-r sm:from-[#140d33] sm:via-[#140d33]/55 sm:to-[#140d33]/0" />
+      </div>
+      <span aria-hidden className="pointer-events-none absolute -left-28 -top-28 h-80 w-80 rounded-full bg-[#7c4dff]/40 blur-3xl" />
 
-          <div className="mt-5 max-w-md">
-            <div className="flex items-baseline justify-between text-[13px] font-medium text-white/75">
-              <span>Lesson {index} of {total}</span>
-              {next.lesson.est_minutes ? <span>about {next.lesson.est_minutes} min</span> : null}
+      <div className="relative flex min-h-[22rem] flex-col justify-end p-6 sm:min-h-[18rem] sm:max-w-[62%] sm:justify-center sm:p-8">
+        <p className="inline-flex w-fit items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[.14em] text-violet-100 ring-1 ring-inset ring-white/15 backdrop-blur-sm">
+          <PlayCircle className="h-3.5 w-3.5" aria-hidden /> {started ? 'Continue learning' : 'Start here'}
+        </p>
+        <h2 id="continue-title" className="mt-3 text-[1.75rem] font-bold leading-[1.15] tracking-tight text-balance sm:text-[2rem]">
+          {started ? next.lesson.title : next.topic.name}
+        </h2>
+        <p className="mt-1.5 text-sm text-white/70">
+          {started && next.lesson.title !== next.topic.name ? `${next.subject.name} · ${next.topic.name}` : `${next.subject.name} · ${next.lesson.title}`}
+        </p>
+
+        <div className="mt-6 flex items-center gap-4">
+          <MiniRing pct={pct} label={`${doneInTopic} of ${total} lessons done in ${next.topic.name}`} />
+          <div className="min-w-0 flex-1">
+            <div className="flex items-baseline justify-between gap-3 text-[13px] font-medium text-white/75">
+              <span>Lesson {index} of {total} in this topic</span>
+              {next.lesson.est_minutes ? <span className="shrink-0">{next.lesson.est_minutes} min</span> : null}
             </div>
-            <div className="mt-2 flex gap-1" role="img" aria-label={`${doneInTopic} of ${total} lessons done in ${next.topic.name}`}>
+            <div className="mt-2 flex gap-1" aria-hidden>
               {next.topic.lessons.map((l, i) => (
                 <span key={l.id} className={`h-1.5 flex-1 rounded-full ${i < index - 1 ? 'bg-[#ffd166]' : i === index - 1 ? 'bg-white' : 'bg-white/20'}`} />
               ))}
             </div>
           </div>
+        </div>
 
-          <Button asChild size="lg" className="mt-6 w-full bg-white text-[#1b1240] hover:bg-white/90 sm:w-auto">
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <Button asChild size="lg" className="w-full bg-white text-[#140d33] shadow-[0_12px_28px_-12px_rgba(255,255,255,.6)] hover:bg-white/90 sm:w-auto">
             <Link to="/lesson/$lessonId" params={{ lessonId: next.lesson.id }}>
               {started ? 'Continue lesson' : 'Start lesson'} <ArrowRight className="h-4 w-4" aria-hidden />
             </Link>
           </Button>
+          <Link to="/topic/$topicId" params={{ topicId: next.topic.id }} className="inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-white/80 hover:text-white">
+            <BookOpen className="h-4 w-4" aria-hidden /> All lessons in {next.topic.name}
+          </Link>
         </div>
       </div>
     </section>
+  )
+}
+
+/** A small ring for the topic's progress on the dark card. */
+function MiniRing({ pct, label }: { pct: number; label: string }) {
+  const r = 21
+  const c = 2 * Math.PI * r
+  return (
+    <span className="relative block h-14 w-14 shrink-0" role="img" aria-label={label}>
+      <svg viewBox="0 0 52 52" className="h-14 w-14 -rotate-90" aria-hidden>
+        <circle cx="26" cy="26" r={r} fill="none" strokeWidth="5" className="stroke-white/15" />
+        <circle cx="26" cy="26" r={r} fill="none" strokeWidth="5" stroke="#ffd166" strokeLinecap="round" strokeDasharray={`${(c * pct) / 100} ${c}`} />
+      </svg>
+      <span className="absolute inset-0 flex items-center justify-center text-xs font-bold tabular-nums">{pct}%</span>
+    </span>
   )
 }
 
@@ -318,28 +351,31 @@ function TodayPlan({ summary, completed, where }: { summary: ProgressSummary; co
   const all = doneToday.length + planned.length
 
   return (
-    <section className="space-y-3" aria-labelledby="today-title">
-      <div className="flex items-end justify-between gap-4">
+    <section className="dash-card p-5 sm:p-6" aria-labelledby="today-title">
+      <div className="flex items-start justify-between gap-4">
         <div>
-          <h2 id="today-title" className="text-lg font-bold tracking-tight">Today's plan</h2>
-          <p className="text-sm text-muted-foreground">
+          <p className="dash-eyebrow">Today</p>
+          <h2 id="today-title" className="mt-1 text-xl font-bold tracking-tight">Your plan for today</h2>
+          <p className="mt-0.5 text-sm text-muted-foreground">
             {doneToday.length > 0 && `${doneToday.length} of ${all} done`}
             {doneToday.length > 0 && left > 0 && ' · '}
             {left > 0 && `about ${left} min to go`}
             {doneToday.length === 0 && left === 0 && 'Your next lessons, in order'}
           </p>
         </div>
-        <span aria-hidden className="mb-1.5 flex w-24 gap-1">
-          {Array.from({ length: all }, (_, i) => (
-            <span key={i} className={`h-1.5 flex-1 rounded-full ${i < doneToday.length ? 'bg-success' : 'bg-muted'}`} />
-          ))}
+        <span className="shrink-0 rounded-full bg-muted px-3 py-1 text-sm font-bold tabular-nums" aria-hidden>
+          {doneToday.length}/{all}
         </span>
       </div>
-      <ol className="divide-y rounded-2xl border bg-card">
+
+      {/* A timeline: done lessons, the next one, then the ones after it. */}
+      <ol className="relative mt-5 space-y-1.5 before:absolute before:bottom-6 before:left-[1.1rem] before:top-6 before:w-px before:bg-border">
         {doneToday.map((x) => (
-          <li key={x.lesson.id} className="flex min-h-14 items-center gap-3 px-4 py-3">
-            <CircleCheck className="h-5 w-5 shrink-0 text-success" aria-hidden />
-            <span className="min-w-0 flex-1">
+          <li key={x.lesson.id} className="relative flex min-h-14 items-center gap-3.5 rounded-2xl px-2 py-2">
+            <span className="relative z-10 flex h-5 w-5 shrink-0 translate-x-[0.6rem] items-center justify-center rounded-full bg-success text-white ring-4 ring-card" aria-hidden>
+              <Check className="h-3 w-3" strokeWidth={3} />
+            </span>
+            <span className="ml-3 min-w-0 flex-1">
               <span className="block truncate text-sm font-medium text-muted-foreground line-through decoration-muted-foreground/40">{x.lesson.title}</span>
               <span className="sr-only">Completed. </span>
               <span className="block truncate text-xs text-muted-foreground">{x.topic.name}</span>
@@ -347,17 +383,32 @@ function TodayPlan({ summary, completed, where }: { summary: ProgressSummary; co
           </li>
         ))}
         {planned.map((x, i) => (
-          <li key={x.lesson.id}>
-            <Link to="/lesson/$lessonId" params={{ lessonId: x.lesson.id }} className="flex min-h-14 items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/50">
-              <span className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 ${i === 0 ? 'border-primary' : 'border-input'}`} aria-hidden />
-              <span className="min-w-0 flex-1">
+          <li key={x.lesson.id} className="relative">
+            <Link
+              to="/lesson/$lessonId"
+              params={{ lessonId: x.lesson.id }}
+              className={`group flex min-h-14 items-center gap-3.5 rounded-2xl px-2 py-2.5 transition-colors ${i === 0 ? 'bg-brand-soft/60 ring-1 ring-primary/15 hover:bg-brand-soft dark:bg-primary/10' : 'hover:bg-muted/60'}`}
+            >
+              <span
+                className={`relative z-10 flex h-5 w-5 shrink-0 translate-x-[0.6rem] items-center justify-center rounded-full ring-4 ${i === 0 ? 'bg-primary ring-primary/20 shadow-[0_0_0_6px_rgba(100,56,216,.12)]' : 'border-2 border-input bg-card ring-card'}`}
+                aria-hidden
+              >
+                {i === 0 && <span className="h-1.5 w-1.5 rounded-full bg-white" />}
+              </span>
+              <span className="ml-3 min-w-0 flex-1">
                 <span className="block truncate text-sm font-semibold">{x.lesson.title}</span>
                 <span className="block truncate text-xs text-muted-foreground">
                   {x.topic.name}
                   {x.lesson.est_minutes ? ` · ${x.lesson.est_minutes} min` : ''}
                 </span>
               </span>
-              {i === 0 && <Pill className="bg-brand-soft text-primary">Next</Pill>}
+              {i === 0 ? (
+                <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm">
+                  Start <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+                </span>
+              ) : (
+                <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" aria-hidden />
+              )}
             </Link>
           </li>
         ))}
@@ -366,84 +417,101 @@ function TodayPlan({ summary, completed, where }: { summary: ProgressSummary; co
   )
 }
 
-/* ── 3. Progress snapshot: each metric says what it measures ── */
+/* ── 3. Progress snapshot: the week as a chart, then three numbers that say what they measure ── */
 
-function Snapshot({ summary }: { summary: ProgressSummary }) {
+function Snapshot({ summary, completed }: { summary: ProgressSummary; completed: Completed }) {
   const week = useMemo(() => {
-    const days: { key: string; label: string; active: boolean; today: boolean }[] = []
+    // Lessons finished and practice sets taken on each of the last seven days, today last.
+    const count = new Map<string, number>()
+    for (const at of completed.values()) count.set(localDay(at), (count.get(localDay(at)) ?? 0) + 1)
+    for (const a of summary.subjects.flatMap((s) => s.attempts)) count.set(localDay(a.created_at), (count.get(localDay(a.created_at)) ?? 0) + 1)
+    const days: { key: string; label: string; n: number; active: boolean; today: boolean }[] = []
     for (let i = 6; i >= 0; i--) {
       const d = new Date()
       d.setDate(d.getDate() - i)
       const key = localDay(d.toISOString())
-      days.push({ key, label: d.toLocaleDateString('en-GB', { weekday: 'narrow' }), active: summary.activeDays.has(key), today: i === 0 })
+      days.push({ key, label: d.toLocaleDateString('en-GB', { weekday: 'short' }).slice(0, 2), n: count.get(key) ?? 0, active: summary.activeDays.has(key), today: i === 0 })
     }
     return days
-  }, [summary.activeDays])
+  }, [summary, completed])
   const activeThisWeek = week.filter((d) => d.active).length
+  const most = Math.max(1, ...week.map((d) => d.n))
+  const things = week.reduce((n, d) => n + d.n, 0)
 
   return (
-    <section className="space-y-3" aria-labelledby="snapshot-title">
-      <SectionHeader title={<span id="snapshot-title">Your progress</span>} action={{ to: '/progress', label: 'Details' }} />
-      <div className="overflow-hidden rounded-2xl border bg-card">
-        {/* The last seven days, today last. */}
-        <div className="flex items-center justify-between gap-4 border-b px-4 py-3.5">
+    <section className="dash-card overflow-hidden" aria-labelledby="snapshot-title">
+      <div className="p-5 pb-4">
+        <div className="flex items-start justify-between gap-3">
           <div>
-            <p className="text-xs font-medium text-muted-foreground">This week</p>
-            <p className="whitespace-nowrap text-lg font-bold tabular-nums">{activeThisWeek} of 7 days</p>
+            <p className="dash-eyebrow" id="snapshot-title">This week</p>
+            <p className="mt-1 text-3xl font-bold tabular-nums tracking-tight">
+              {activeThisWeek}<span className="text-lg font-semibold text-muted-foreground"> of 7 days</span>
+            </p>
+            <p className="text-sm text-muted-foreground">{things} {things === 1 ? 'lesson or set' : 'lessons and sets'} done</p>
           </div>
-          <ol className="flex gap-1" aria-label={`Studied on ${activeThisWeek} of the last 7 days`}>
-            {week.map((d) => (
-              <li key={d.key} className="flex flex-col items-center gap-1">
-                <span
-                  className={`flex h-6 w-6 items-center justify-center rounded-full text-[10px] font-bold ${d.active ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'} ${d.today ? 'ring-2 ring-primary/35 ring-offset-2 ring-offset-card' : ''}`}
-                  aria-hidden
-                >
-                  {d.active ? <Check className="h-3 w-3" strokeWidth={3} /> : d.label}
-                </span>
-              </li>
-            ))}
-          </ol>
+          <Link to="/progress" className="inline-flex min-h-9 items-center gap-1 rounded-full bg-muted px-3 text-xs font-semibold text-foreground hover:bg-muted/70">
+            Details <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+          </Link>
         </div>
-        <dl className="grid grid-cols-3 divide-x">
-          <div className="px-4 py-3.5">
-            <dt className="text-xs font-medium text-muted-foreground">Lessons done</dt>
-            <dd className="mt-0.5 text-2xl font-bold tabular-nums">{summary.done}</dd>
-            <dd className="text-[11px] text-muted-foreground">of {summary.total.toLocaleString('en')}</dd>
-          </div>
-          <div className="px-4 py-3.5">
-            <dt className="text-xs font-medium text-muted-foreground">Topics done</dt>
-            <dd className="mt-0.5 text-2xl font-bold tabular-nums">{summary.topicsDone}</dd>
-            <dd className="text-[11px] text-muted-foreground">all lessons read</dd>
-          </div>
-          <div className="px-4 py-3.5">
-            <dt className="text-xs font-medium text-muted-foreground">Practice</dt>
-            {summary.avgScore === null ? (
-              <dd className="mt-1.5"><Link to="/practice" className="text-sm font-semibold text-primary hover:underline">Take a set</Link></dd>
-            ) : (
-              <dd className="mt-1 flex items-center gap-2">
-                <ScoreRing pct={summary.avgScore} />
-                <span className="text-[11px] leading-tight text-muted-foreground">{summary.papersTaken} {summary.papersTaken === 1 ? 'set' : 'sets'}</span>
-              </dd>
-            )}
-          </div>
-        </dl>
+
+        {/* Bars: how much was done each day. */}
+        <ol className="mt-5 grid h-28 grid-cols-7 items-end gap-2" aria-label={`Studied on ${activeThisWeek} of the last 7 days`}>
+          {week.map((d, i) => (
+            <li key={d.key} className="flex h-full flex-col items-center justify-end gap-1.5">
+              <span className="sr-only">{d.label}: {d.n} done</span>
+              <span
+                aria-hidden
+                className={`dash-bar w-full max-w-7 rounded-lg ${d.n > 0 ? (d.today ? 'bg-gradient-to-t from-[#5b34d6] to-[#9b7bff]' : 'bg-gradient-to-t from-[#6438d8]/80 to-[#8f6bff]/80') : 'bg-muted'}`}
+                style={{ height: d.n > 0 ? `${Math.max(18, (d.n / most) * 100)}%` : '8%', animationDelay: `${i * 0.05}s` }}
+              />
+              <span aria-hidden className={`text-[11px] font-semibold ${d.today ? 'text-primary' : 'text-muted-foreground'}`}>{d.label}</span>
+            </li>
+          ))}
+        </ol>
       </div>
+
+      <dl className="grid grid-cols-3 border-t bg-muted/30">
+        <div className="px-4 py-3.5">
+          <dt className="text-[11px] font-semibold text-muted-foreground">Lessons</dt>
+          <dd className="mt-0.5 text-xl font-bold tabular-nums">{summary.done}<span className="text-xs font-medium text-muted-foreground">/{summary.total}</span></dd>
+          <dd className="mt-1.5 h-1 overflow-hidden rounded-full bg-muted" aria-hidden>
+            <span className="block h-full rounded-full bg-primary" style={{ width: `${summary.total ? (summary.done / summary.total) * 100 : 0}%` }} />
+          </dd>
+        </div>
+        <div className="border-x px-4 py-3.5">
+          <dt className="text-[11px] font-semibold text-muted-foreground">Topics done</dt>
+          <dd className="mt-0.5 text-xl font-bold tabular-nums">{summary.topicsDone}</dd>
+          <dd className="text-[11px] text-muted-foreground">every lesson read</dd>
+        </div>
+        <div className="px-4 py-3.5">
+          <dt className="text-[11px] font-semibold text-muted-foreground">Practice</dt>
+          {summary.avgScore === null ? (
+            <dd className="mt-1"><Link to="/practice" className="text-sm font-semibold text-primary hover:underline">Take a set</Link></dd>
+          ) : (
+            <dd className="mt-0.5 flex items-center gap-2">
+              <ScoreRing pct={summary.avgScore} />
+              <span className="text-[11px] leading-tight text-muted-foreground">{summary.papersTaken} {summary.papersTaken === 1 ? 'set' : 'sets'}</span>
+            </dd>
+          )}
+        </div>
+      </dl>
     </section>
   )
 }
 
 /** A practice average as a ring: green from 70%, amber from 50%, red below. */
-function ScoreRing({ pct }: { pct: number }) {
+function ScoreRing({ pct, size = 'sm' }: { pct: number; size?: 'sm' | 'md' }) {
   const r = 19
   const c = 2 * Math.PI * r
   const tone = pct >= 70 ? 'text-success' : pct >= 50 ? 'text-warning' : 'text-destructive'
+  const box = size === 'md' ? 'h-14 w-14' : 'h-11 w-11'
   return (
-    <span className={`relative block h-11 w-11 shrink-0 ${tone}`}>
-      <svg viewBox="0 0 48 48" className="h-11 w-11 -rotate-90" aria-hidden>
+    <span className={`relative block shrink-0 ${box} ${tone}`}>
+      <svg viewBox="0 0 48 48" className={`${box} -rotate-90`} aria-hidden>
         <circle cx="24" cy="24" r={r} fill="none" strokeWidth="5" className="stroke-muted" />
         <circle cx="24" cy="24" r={r} fill="none" strokeWidth="5" stroke="currentColor" strokeLinecap="round" strokeDasharray={`${(c * pct) / 100} ${c}`} />
       </svg>
-      <span className="absolute inset-0 flex items-center justify-center text-[11px] font-bold tabular-nums text-foreground">{pct}%</span>
+      <span className={`absolute inset-0 flex items-center justify-center font-bold tabular-nums text-foreground ${size === 'md' ? 'text-xs' : 'text-[11px]'}`}>{pct}%</span>
     </span>
   )
 }
@@ -454,23 +522,39 @@ function Recommended({ summary, papers }: { summary: ProgressSummary; papers: Pa
   const rec = useMemo(() => recommend(summary, papers), [summary, papers])
   if (!rec) return null
   return (
-    <section aria-labelledby="rec-title" className="flex gap-4 rounded-2xl border border-warning/30 bg-warning/5 p-5">
-      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-warning/15 text-warning" aria-hidden>
-        <Lightbulb className="h-5 w-5" />
-      </span>
-      <div className="min-w-0">
-        <p className="text-xs font-bold uppercase tracking-[.12em] text-warning">Recommended next step</p>
-        <h2 id="rec-title" className="mt-1 text-lg font-bold leading-snug">{rec.title}</h2>
-        <p className="mt-1 text-sm text-muted-foreground">{rec.why}</p>
-        <Button asChild className="mt-4">
-          <Link to="/paper/$paperId" params={{ paperId: rec.paperId }}>{rec.action} <ArrowRight className="h-4 w-4" aria-hidden /></Link>
-        </Button>
+    <section aria-labelledby="rec-title" className="dash-card overflow-hidden p-5 sm:p-6">
+      <span aria-hidden className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-[#ffb547]/20 blur-3xl" />
+      <div className="relative flex gap-4">
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#ffb547] to-[#f0782f] text-white shadow-[0_10px_20px_-10px_rgba(240,120,47,.8)]" aria-hidden>
+          <Lightbulb className="h-5 w-5" />
+        </span>
+        <div className="min-w-0 flex-1">
+          <p className="dash-eyebrow text-warning">Recommended next step</p>
+          <h2 id="rec-title" className="mt-1 text-xl font-bold leading-snug tracking-tight">{rec.title}</h2>
+          <p className="mt-1 text-sm text-muted-foreground">{rec.why}</p>
+          {rec.last && (
+            <div className="mt-4 max-w-sm" aria-hidden>
+              <div className="flex justify-between text-xs font-semibold text-muted-foreground">
+                <span>Last score</span>
+                <span className="tabular-nums text-foreground">{rec.last.score}/{rec.last.total}</span>
+              </div>
+              <div className="mt-1.5 flex gap-1">
+                {Array.from({ length: rec.last.total }, (_, i) => (
+                  <span key={i} className={`h-2 flex-1 rounded-full ${i < rec.last!.score ? 'bg-warning' : 'bg-muted'}`} />
+                ))}
+              </div>
+            </div>
+          )}
+          <Button asChild className="mt-5">
+            <Link to="/paper/$paperId" params={{ paperId: rec.paperId }}>{rec.action} <ArrowRight className="h-4 w-4" aria-hidden /></Link>
+          </Button>
+        </div>
       </div>
     </section>
   )
 }
 
-function recommend(summary: ProgressSummary, papers: PaperRow[]): { title: string; why: string; action: string; paperId: string } | null {
+function recommend(summary: ProgressSummary, papers: PaperRow[]): { title: string; why: string; action: string; paperId: string; last?: { score: number; total: number } } | null {
   const attempts = summary.subjects.flatMap((s) => s.attempts).sort((a, b) => b.created_at.localeCompare(a.created_at))
   // latest attempt per paper
   const latestByPaper = new Map<string, ScoredAttempt>()
@@ -484,6 +568,7 @@ function recommend(summary: ProgressSummary, papers: PaperRow[]): { title: strin
       why: `Your last score was ${weak.score}/${weak.total} (${/^(Today|Yesterday)$/.test(shortDate(weak.created_at)) ? shortDate(weak.created_at).toLowerCase() : shortDate(weak.created_at)}). Read the worked solutions, then try the set again to check it has stuck.`,
       action: 'Try again',
       paperId: weak.paper.id,
+      last: weak.total <= 20 ? { score: weak.score, total: weak.total } : undefined,
     }
   }
 
@@ -506,48 +591,79 @@ function recommend(summary: ProgressSummary, papers: PaperRow[]): { title: strin
   return null
 }
 
-/* ── 5. Your subjects: compact, available first, unavailable quieter ── */
+/* ── 5. Your subjects: photo cards with progress, available first, unavailable quieter ── */
 
 function YourSubjects({ subjects }: { subjects: SubjectProgress[] }) {
   const available = subjects.filter((s) => s.total > 0).sort((a, b) => (b.lastActivity ?? '').localeCompare(a.lastActivity ?? ''))
   const soon = subjects.filter((s) => s.total === 0)
   return (
-    <section className="space-y-3" aria-labelledby="subjects-title">
+    <section className="space-y-3.5" aria-labelledby="subjects-title">
       <SectionHeader title={<span id="subjects-title">Your subjects</span>} action={{ to: '/subjects', label: 'All subjects' }} />
-      <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+      <ul className="grid gap-4 sm:grid-cols-2">
         {available.map((s) => {
           const { palette } = subjectTheme(s.subject.slug)
+          const pct = s.total ? Math.round((s.done / s.total) * 100) : 0
           return (
             <li key={s.subject.id}>
-              <Link to="/subject/$subjectId" params={{ subjectId: s.subject.id }} className="group flex h-full flex-col overflow-hidden rounded-2xl border bg-card transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md">
-                <SubjectCover slug={s.subject.slug} shape="wide" rounded="rounded-none" sizes="(min-width: 1280px) 220px, (min-width: 640px) 30vw, 50vw" className="h-20 sm:h-24" />
-                <span className="flex flex-1 flex-col gap-1.5 p-3">
-                  <span className="truncate text-[15px] font-semibold leading-tight">{s.subject.name}</span>
-                  {s.done > 0 ? (
-                    <>
-                      <ProgressBar value={s.done} max={s.total} fill={palette.bar} size="sm" label={`${s.subject.name}: ${s.done} of ${s.total} lessons done`} />
-                      <span className="text-xs tabular-nums text-muted-foreground">{s.done} of {s.total} lessons</span>
-                    </>
-                  ) : (
-                    <span className="text-xs text-muted-foreground">{s.total} lessons</span>
-                  )}
-                  {s.next && <span className="mt-auto truncate text-xs font-medium text-primary">{s.done > 0 ? 'Next' : 'Start'}: {s.next.topic.name}</span>}
+              <Link to="/subject/$subjectId" params={{ subjectId: s.subject.id }} className="dash-card dash-lift group flex h-full flex-col overflow-hidden">
+                <span className="relative block h-32 overflow-hidden">
+                  <SubjectCover slug={s.subject.slug} shape="wide" rounded="rounded-none" sizes="(min-width: 640px) 40vw, 100vw" className="absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-[1.04]" />
+                  <span aria-hidden className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+                  <span className="absolute inset-x-4 bottom-3 flex items-end justify-between gap-3">
+                    <span className="truncate text-lg font-bold leading-tight text-white drop-shadow">{s.subject.name}</span>
+                    {s.avgScore !== null && (
+                      <span className="shrink-0 rounded-full bg-white/15 px-2.5 py-1 text-[11px] font-semibold text-white ring-1 ring-inset ring-white/25 backdrop-blur-sm">
+                        Practice {s.avgScore}%
+                      </span>
+                    )}
+                  </span>
+                </span>
+                <span className="flex flex-1 items-center gap-3.5 p-4">
+                  <span className={palette.text}>
+                    <SubjectRing pct={pct} />
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-sm font-semibold tabular-nums">{s.done > 0 ? `${s.done} of ${s.total} lessons` : `${s.total} lessons to start`}</span>
+                    {s.next && (
+                      <span className="mt-0.5 flex items-center gap-1 truncate text-xs font-medium text-primary">
+                        {s.done > 0 ? 'Next' : 'Start'}: {s.next.topic.name}
+                        <ArrowRight className="h-3 w-3 shrink-0 transition-transform group-hover:translate-x-0.5" aria-hidden />
+                      </span>
+                    )}
+                  </span>
                 </span>
               </Link>
             </li>
           )
         })}
         {soon.map((s) => (
-          <li key={s.subject.id} className="flex flex-col overflow-hidden rounded-2xl border bg-card opacity-75">
-            <SubjectCover slug={s.subject.slug} shape="wide" rounded="rounded-none" sizes="(min-width: 640px) 30vw, 50vw" className="h-20 opacity-60 grayscale sm:h-24" />
-            <span className="flex flex-1 flex-col gap-1.5 p-3">
-              <span className="truncate text-[15px] font-semibold leading-tight text-muted-foreground">{s.subject.name}</span>
-              <Pill className="self-start">Lessons coming</Pill>
+          <li key={s.subject.id} className="dash-card flex flex-col overflow-hidden opacity-80">
+            <span className="relative block h-24 overflow-hidden">
+              <SubjectCover slug={s.subject.slug} shape="wide" rounded="rounded-none" sizes="(min-width: 640px) 40vw, 100vw" className="absolute inset-0 h-full w-full opacity-60 grayscale" />
+            </span>
+            <span className="flex flex-1 items-center justify-between gap-2 p-4">
+              <span className="truncate text-[15px] font-semibold text-muted-foreground">{s.subject.name}</span>
+              <Pill>Lessons coming</Pill>
             </span>
           </li>
         ))}
       </ul>
     </section>
+  )
+}
+
+/** A subject's share of lessons done, in the subject's colour (currentColor). */
+function SubjectRing({ pct }: { pct: number }) {
+  const r = 19
+  const c = 2 * Math.PI * r
+  return (
+    <span className="relative block h-12 w-12 shrink-0" aria-hidden>
+      <svg viewBox="0 0 48 48" className="h-12 w-12 -rotate-90">
+        <circle cx="24" cy="24" r={r} fill="none" strokeWidth="5" className="stroke-muted" />
+        <circle cx="24" cy="24" r={r} fill="none" strokeWidth="5" stroke="currentColor" strokeLinecap="round" strokeDasharray={`${(c * pct) / 100} ${c}`} />
+      </svg>
+      <span className="absolute inset-0 flex items-center justify-center text-[11px] font-bold tabular-nums text-foreground">{pct}%</span>
+    </span>
   )
 }
 
@@ -565,7 +681,7 @@ function RecentActivity({ summary, completed, where }: { summary: ProgressSummar
       key: `l-${x.lesson.id}`,
       node: (
         <Link to="/lesson/$lessonId" params={{ lessonId: x.lesson.id }} className="flex min-h-14 items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/50">
-          <CircleCheck className="h-5 w-5 shrink-0 text-success" aria-hidden />
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-success/10 text-success" aria-hidden><CircleCheck className="h-[18px] w-[18px]" /></span>
           <span className="min-w-0 flex-1">
             <span className="block truncate text-sm font-semibold">{x.lesson.title}</span>
             <span className="block truncate text-xs text-muted-foreground">Lesson · {x.subject.name} · {shortDate(at)}</span>
@@ -584,7 +700,7 @@ function RecentActivity({ summary, completed, where }: { summary: ProgressSummar
       key: `a-${a.id}`,
       node: (
         <Link to="/paper/$paperId" params={{ paperId: a.paper!.id }} className="flex min-h-14 items-center gap-3 px-4 py-3 transition-colors hover:bg-muted/50">
-          <ClipboardList className="h-5 w-5 shrink-0 text-muted-foreground" aria-hidden />
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary" aria-hidden><ClipboardList className="h-[18px] w-[18px]" /></span>
           <span className="min-w-0 flex-1">
             <span className="block truncate text-sm font-semibold">{a.paper!.title}</span>
             <span className="block truncate text-xs text-muted-foreground">Practice · {names.get(a.paper!.subject_id) ?? ''} · {shortDate(a.created_at)}</span>
@@ -597,9 +713,9 @@ function RecentActivity({ summary, completed, where }: { summary: ProgressSummar
   const items = [...lessons, ...results].sort((a, b) => b.at.localeCompare(a.at)).slice(0, 5)
   if (items.length === 0) return null
   return (
-    <section className="space-y-3" aria-labelledby="recent-title">
+    <section className="space-y-3.5" aria-labelledby="recent-title">
       <SectionHeader title={<span id="recent-title">Recent activity</span>} />
-      <ul className="divide-y rounded-2xl border bg-card">
+      <ul className="dash-card divide-y overflow-hidden">
         {items.map((i) => <li key={i.key}>{i.node}</li>)}
       </ul>
     </section>
@@ -609,35 +725,35 @@ function RecentActivity({ summary, completed, where }: { summary: ProgressSummar
 /* ── 7. Quick access: secondary shortcuts, tutor in context ── */
 
 function QuickAccess({ topic }: { topic: string | null }) {
-  const tile = 'flex h-full flex-col gap-2.5 rounded-2xl border bg-card p-4 transition-colors hover:border-primary/40 hover:bg-brand-soft/30'
-  const icon = 'flex h-10 w-10 items-center justify-center rounded-xl text-white'
+  const tile = 'dash-card dash-lift flex h-full flex-col gap-3 p-4'
+  const icon = 'flex h-11 w-11 items-center justify-center rounded-2xl text-white shadow-[0_10px_18px_-10px_rgba(23,28,43,.6)]'
   return (
     <section className="space-y-3" aria-labelledby="quick-title">
-      <h2 id="quick-title" className="text-lg font-bold tracking-tight">Quick access</h2>
+      <h2 id="quick-title" className="text-xl font-bold tracking-tight">Quick access</h2>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 xl:grid-cols-2">
         <Link to="/tutor" search={topic ? { ask: `Explain ${topic} simply, with one worked example.`, about: topic } : {}} className={tile}>
-          <span className={`${icon} bg-[#2864c5]`}><MessageCircleQuestion className="h-5 w-5" aria-hidden /></span>
+          <span className={`${icon} bg-gradient-to-br from-[#4a86ea] to-[#2353a8]`}><MessageCircleQuestion className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">
             <span className="block text-sm font-semibold">AI tutor</span>
             <span className="block text-xs text-muted-foreground">{topic ? `Ask about ${topic}` : 'Step-by-step help'}</span>
           </span>
         </Link>
         <Link to="/practice" className={tile}>
-          <span className={`${icon} bg-[#17865b]`}><PlayCircle className="h-5 w-5" aria-hidden /></span>
+          <span className={`${icon} bg-gradient-to-br from-[#2fb47c] to-[#136f4b]`}><PlayCircle className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">
             <span className="block text-sm font-semibold">Practice</span>
             <span className="block text-xs text-muted-foreground">Sets with full working</span>
           </span>
         </Link>
         <a href="/tutors" className={tile}>
-          <span className={`${icon} bg-[#5b34d6]`}><UserRound className="h-5 w-5" aria-hidden /></span>
+          <span className={`${icon} bg-gradient-to-br from-[#8a63ff] to-[#4524b4]`}><UserRound className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">
             <span className="block text-sm font-semibold">Book a private tutor</span>
             <span className="block text-xs text-muted-foreground">Real teachers near you</span>
           </span>
         </a>
         <Link to="/progress" className={tile}>
-          <span className={`${icon} bg-[#b66a12]`}><ChartLine className="h-5 w-5" aria-hidden /></span>
+          <span className={`${icon} bg-gradient-to-br from-[#ffb547] to-[#c2620f]`}><ChartLine className="h-5 w-5" aria-hidden /></span>
           <span className="min-w-0">
             <span className="block text-sm font-semibold">Progress</span>
             <span className="block text-xs text-muted-foreground">Scores and weak topics</span>
