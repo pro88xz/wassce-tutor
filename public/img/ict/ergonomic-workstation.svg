@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 690" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A healthy computer workstation</title>
+<desc id="d">Side view of a person sitting correctly at a computer: the top of the screen is at or slightly below eye level, about an arm&#x27;s length (50 to 70 centimetres) away; the back is upright and supported by the chair; the shoulders are relaxed; the elbows are bent at about 90 degrees with the forearms level; the wrists are straight; the thighs are level with the knees at about 90 degrees; and the feet are flat on the floor or a footrest. Rest the eyes every 20 minutes and take regular breaks.</desc>
+<defs><marker id="a2563eb" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker><marker id="a2563ebs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#2563eb"/></marker></defs>
+<rect width="880" height="690" rx="20" fill="#f8fafc"/>
+<line x1="40.0" y1="500.0" x2="840.0" y2="500.0" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+<rect x="360.0" y="300.0" width="300.0" height="14.0" rx="0" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+<line x1="640.0" y1="314.0" x2="640.0" y2="500.0" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+<rect x="600.0" y="140.0" width="18.0" height="120.0" rx="3" fill="#1e293b" stroke="#0f172a" stroke-width="2"/>
+<line x1="609.0" y1="260.0" x2="609.0" y2="300.0" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+<line x1="585.0" y1="300.0" x2="635.0" y2="300.0" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+<rect x="430.0" y="290.0" width="90.0" height="10.0" rx="2" fill="#94a3b8" stroke="#0f172a" stroke-width="1.5"/>
+<line x1="170.0" y1="380.0" x2="300.0" y2="380.0" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+<line x1="175.0" y1="380.0" x2="160.0" y2="220.0" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+<line x1="235.0" y1="380.0" x2="235.0" y2="470.0" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+<line x1="185.0" y1="485.0" x2="285.0" y2="485.0" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+<circle cx="190.0" cy="492.0" r="7.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="280.0" cy="492.0" r="7.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<circle cx="225.0" cy="150.0" r="30.0" fill="#fef3c7" stroke="#0f172a" stroke-width="2.5"/>
+<circle cx="243.0" cy="146.0" r="3.0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<line x1="221.0" y1="180.0" x2="215.0" y2="205.0" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+<line x1="215.0" y1="205.0" x2="205.0" y2="365.0" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>
+<line x1="215.0" y1="205.0" x2="245.0" y2="290.0" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+<line x1="245.0" y1="290.0" x2="420.0" y2="288.0" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+<line x1="205.0" y1="365.0" x2="345.0" y2="368.0" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>
+<line x1="345.0" y1="368.0" x2="350.0" y2="494.0" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>
+<line x1="342.0" y1="494.0" x2="384.0" y2="494.0" stroke="#0f172a" stroke-width="7" stroke-linecap="round"/>
+<line x1="247.0" y1="146.0" x2="600.0" y2="160.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5"/>
+<line x1="330.0" y1="112.0" x2="596.0" y2="112.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<line x1="596.0" y1="112.0" x2="262.0" y2="112.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round" marker-end="url(#a2563eb)"/>
+<rect x="393.6" y="100.0" width="72.7" height="24.0" rx="4" fill="#f8fafc" stroke="none" stroke-width="0" opacity="0.92"/>
+<text x="430.0" y="112.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">50–70 cm</text>
+<circle cx="636.0" cy="140.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="636.0" y="140.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<circle cx="430.0" cy="84.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="430.0" y="84.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+<circle cx="176.0" cy="300.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="176.0" y="300.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<circle cx="236.0" cy="318.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="236.0" y="318.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<circle cx="420.0" cy="266.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="420.0" y="266.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<circle cx="366.0" cy="346.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="366.0" y="346.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<circle cx="400.0" cy="474.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="400.0" y="474.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<rect x="30.0" y="520.0" width="820.0" height="124.0" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<circle cx="54.0" cy="544.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="54.0" y="544.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="74.0" y="544.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Top of the screen at or just below eye level</text>
+<circle cx="54.0" cy="570.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="54.0" y="570.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+<text x="74.0" y="570.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Screen about an arm&#x27;s length away (50–70 cm)</text>
+<circle cx="54.0" cy="596.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="54.0" y="596.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<text x="74.0" y="596.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Back upright and supported by the chair</text>
+<circle cx="54.0" cy="622.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="54.0" y="622.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<text x="74.0" y="622.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Elbows at about 90°, forearms level</text>
+<circle cx="474.0" cy="544.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="474.0" y="544.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<text x="494.0" y="544.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Wrists straight; keyboard and mouse close</text>
+<circle cx="474.0" cy="570.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="474.0" y="570.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<text x="494.0" y="570.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Thighs level, knees at about 90°</text>
+<circle cx="474.0" cy="596.0" r="13.0" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="474.0" y="596.0" font-size="14" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">7</text>
+<text x="494.0" y="596.0" font-size="14" fill="#0f172a" text-anchor="start" dominant-baseline="middle" font-weight="normal">Feet flat on the floor or on a footrest</text>
+<text x="440.0" y="670.0" font-size="14" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Every 20 minutes, look at something 6 m (20 feet) away for 20 seconds, and take regular breaks.</text>
+</svg>

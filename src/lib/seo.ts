@@ -442,6 +442,110 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
     description:
       'Presentation software: slides, layouts, themes, transitions, animations and views, rules for good slides, graphics packages, and bitmap vs vector graphics.',
   },
+  // Nov 2026: ICT / Computer Studies, batch 3a: "types of network", "network topology", "internet vs www",
+  // "parts of a url", "mobile money", "sim card and imei", "computer ethics", "software piracy", "computer virus".
+  '/wassce/ict-computer-studies/networks-and-networking': {
+    title: 'Computer Networks: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on computer networks: LAN, MAN and WAN, bus, star and ring topologies, network devices and transmission media.',
+  },
+  '/wassce/ict-computer-studies/networks-and-networking/types-of-networks-topologies-and-network-devices': {
+    title: 'Types of Networks, Topologies and Devices | WASSCE ICT',
+    description:
+      'Types of computer network (PAN, LAN, MAN, WAN), bus, star, ring and mesh topologies, the router, switch and modem, cables, and simplex vs duplex transmission.',
+  },
+  '/wassce/ict-computer-studies/the-internet-and-email': {
+    title: 'The Internet and Email: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on the Internet and email: WWW, URLs, IP addresses and DNS, browsers, search engines, ISPs, CC, BCC and attachments.',
+  },
+  '/wassce/ict-computer-studies/the-internet-and-email/internet-www-url-and-email': {
+    title: 'Internet vs WWW, Parts of a URL and Email | WASSCE ICT',
+    description:
+      'How the Internet works: IP addresses, DNS and ISPs, the Internet vs the World Wide Web, parts of a URL, browsers and search engines, and how to send an email.',
+  },
+  '/wassce/ict-computer-studies/mobile-technology-and-ict-gadgets': {
+    title: 'Mobile Technology: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on mobile technology: 1G to 5G, smartphones, SIM and IMEI, Bluetooth, GPS, mobile money and ICT gadgets.',
+  },
+  '/wassce/ict-computer-studies/mobile-technology-and-ict-gadgets/mobile-technology-smartphones-and-mobile-money': {
+    title: 'Mobile Technology, Smartphones and Mobile Money | WASSCE',
+    description:
+      'Mobile networks from 1G to 5G, parts of a smartphone, SIM card vs IMEI, Bluetooth, GPS, NFC and hotspots, mobile money and USSD, and everyday ICT gadgets.',
+  },
+  '/wassce/ict-computer-studies/computer-ethics': {
+    title: 'Computer Ethics: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on computer ethics: privacy, intellectual property, copyright, software piracy, plagiarism and netiquette.',
+  },
+  '/wassce/ict-computer-studies/computer-ethics/computer-ethics-privacy-copyright-and-piracy': {
+    title: 'Computer Ethics: Copyright, Piracy, Netiquette | WASSCE ICT',
+    description:
+      'What computer ethics means: privacy and data protection, copyright, patents and trademarks, software piracy, plagiarism, cyberbullying and netiquette.',
+  },
+  '/wassce/ict-computer-studies/computer-viruses-and-cybersecurity': {
+    title: 'Computer Viruses: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on computer viruses and cybersecurity: malware, symptoms, hacking, phishing, firewalls, encryption and passwords.',
+  },
+  '/wassce/ict-computer-studies/computer-viruses-and-cybersecurity/computer-viruses-malware-and-how-to-stay-safe': {
+    title: 'Computer Viruses, Malware and Cybersecurity | WASSCE ICT',
+    description:
+      'Types of malware, how computer viruses spread and their symptoms, hacking, phishing and SIM swap fraud, and protection: antivirus, firewall, encryption and 2FA.',
+  },
+  // Nov 2026: ICT / Computer Studies, batch 3b: "flowchart symbols", "algorithm and pseudocode",
+  // "data types in programming", "program development life cycle", "uses of ICT", "computer lab rules".
+  '/wassce/ict-computer-studies/algorithms-flowcharts-and-pseudocode': {
+    title: 'Algorithms and Flowcharts: Notes and Questions | WASSCE',
+    description:
+      'WASSCE ICT notes and practice questions on algorithms, flowcharts and pseudocode: flowchart symbols, sequence, selection, loops and trace tables.',
+  },
+  '/wassce/ict-computer-studies/algorithms-flowcharts-and-pseudocode/algorithms-flowchart-symbols-and-pseudocode': {
+    title: 'Flowchart Symbols, Algorithms and Pseudocode | WASSCE ICT',
+    description:
+      'What an algorithm is, flowchart symbols and their meaning, writing pseudocode, sequence, selection and iteration with worked flowcharts, and trace tables.',
+  },
+  '/wassce/ict-computer-studies/programming-concepts': {
+    title: 'Programming Concepts: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on programming concepts: variables, data types, operators, truth tables, arrays, subprograms and errors.',
+  },
+  '/wassce/ict-computer-studies/programming-concepts/variables-data-types-operators-and-errors': {
+    title: 'Variables, Data Types and Operators | WASSCE ICT',
+    description:
+      'Programming concepts explained: variables and constants, data types, arithmetic, relational and logical operators, arrays, functions, and types of errors.',
+  },
+  '/wassce/ict-computer-studies/introduction-to-programming': {
+    title: 'Introduction to Programming: Notes and Questions | WASSCE',
+    description:
+      'WASSCE ICT notes and practice questions on programming: the program development life cycle, IPO charts, QBASIC and Python, and good program qualities.',
+  },
+  '/wassce/ict-computer-studies/introduction-to-programming/program-development-life-cycle-and-first-programs': {
+    title: 'Program Development Life Cycle, First Programs | WASSCE ICT',
+    description:
+      'The stages of the program development life cycle, IPO charts, keywords and comments, and simple QBASIC and Python programs for area, temperature and interest.',
+  },
+  '/wassce/ict-computer-studies/ict-and-society': {
+    title: 'ICT and Society: Notes and Questions | WASSCE ICT',
+    description:
+      'WASSCE ICT notes and practice questions on ICT and society: uses of ICT in each sector, e-commerce, telemedicine, the digital divide and ICT careers.',
+  },
+  '/wassce/ict-computer-studies/ict-and-society/uses-and-effects-of-ict-in-society': {
+    title: 'Uses and Effects of ICT in Society | WASSCE ICT',
+    description:
+      'Uses of ICT in education, health, banking, agriculture and government, e-learning and e-commerce, positive and negative effects, the digital divide, careers.',
+  },
+  '/wassce/ict-computer-studies/practical-computer-skills': {
+    title: 'Practical Computer Skills: Notes and Questions | WASSCE',
+    description:
+      'WASSCE ICT notes and practice questions on practical skills: lab rules, ergonomics, RSI and eye strain, touch typing, computer ports and troubleshooting.',
+  },
+  '/wassce/ict-computer-studies/practical-computer-skills/computer-lab-safety-ergonomics-ports-and-troubleshooting': {
+    title: 'Computer Lab Rules, Ergonomics and Ports | WASSCE ICT',
+    description:
+      'Computer laboratory safety rules, ergonomics and health problems, touch typing and home row keys, ports such as USB and HDMI, and basic troubleshooting.',
+  },
 }
 
 /**

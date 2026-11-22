@@ -11,6 +11,7 @@ https://wasscetutor.com/img/ict/<name>.svg. All drawn by WASSCE Tutor.
 
 from __future__ import annotations
 
+import itertools
 import math
 import sys
 from pathlib import Path
@@ -932,6 +933,758 @@ def bitmap_vs_vector():
     s.text(vx, oy + n * p + 30, "enlarged: edges stay smooth", size=15, color=INK)
     s.text(vx, oy + n * p + 54, "best for logos and drawings (.svg, .ai)", size=15, color=MUTED)
     s.text(vx, oy + n * p + 78, "red squares: points that define the curve", size=13, color=RED)
+    return s
+
+
+# ═══ Networks, the Internet, mobile, ethics and security ════════════════════
+
+def node(s: Svg, x, y, label="", col=BLUE, fill=F_BLUE, w=56, h=38, size=13):
+    """A small computer: a screen on a stand, with a label underneath."""
+    s.rect(x - w / 2, y - h / 2, w, h - 8, fill=fill, stroke=col, width=2, rx=4)
+    s.line(x, y + h / 2 - 8, x, y + h / 2 - 2, color=col, width=2)
+    s.line(x - 10, y + h / 2 - 2, x + 10, y + h / 2 - 2, color=col, width=2)
+    if label:
+        s.text(x, y + h / 2 + 12, label, size=size, color=INK)
+
+
+@fig
+def network_topologies():
+    s = Svg(880, 560, "Network topologies",
+            "Four network topologies. Bus: every computer joins one main cable, the backbone, with a terminator at "
+            "each end; a break in the backbone stops the network. Star: every computer has its own cable to a "
+            "central switch; if one cable fails only that computer is cut off, but if the switch fails all are. "
+            "Ring: each computer joins the next to form a closed loop, and data passes round in one direction. "
+            "Mesh: every computer is linked to every other, so there are many routes and the network keeps working "
+            "if a link fails.")
+    panels = [(220, 40, "Bus", BLUE, "one backbone cable; a break stops all"),
+              (660, 40, "Star", GREEN, "a central switch; most common in LANs"),
+              (220, 300, "Ring", ORANGE, "a closed loop; data goes one way round"),
+              (660, 300, "Mesh", PURPLE, "many links; works if one fails")]
+    for cx, top, name, col, note in panels:
+        s.rect(cx - 205, top, 410, 240, fill="#ffffff", stroke=GRID_C, width=1.5, rx=12)
+        s.text(cx, top + 24, name, size=19, color=col, weight="bold")
+        s.text(cx, top + 222, note, size=14, color=MUTED)
+    # bus
+    by = 160
+    s.line(50, by, 390, by, color=BLUE, width=4)
+    for x in (50, 390):
+        s.rect(x - 5, by - 12, 10, 24, fill=BLUE, stroke=BLUE, width=1)
+    for i, x in enumerate((95, 175, 255, 335)):
+        y = by - 62 if i % 2 == 0 else by + 52
+        node(s, x, y, "", BLUE, F_BLUE)
+        s.line(x, by, x, y + (19 if i % 2 == 0 else -19), color=BLUE, width=2.5)
+    s.text(60, by + 26, "terminator", size=12, color=MUTED, anchor="start")
+    # star
+    hx, hy = 660, 152
+    s.rect(hx - 34, hy - 16, 68, 32, fill=F_GREEN, stroke=GREEN, width=2.5, rx=6)
+    s.text(hx, hy, "switch", size=13, color=GREEN, weight="bold")
+    for ang in (200, 250, 290, 340, 20, 160):
+        x = hx + 150 * math.cos(math.radians(ang)) * 1.15
+        y = hy + 62 * math.sin(math.radians(ang)) + (8 if math.sin(math.radians(ang)) > 0 else -4)
+        s.line(hx + (34 if x > hx + 30 else -34 if x < hx - 30 else 0), hy, x, y, color=GREEN, width=2.5)
+        node(s, x, y, "", GREEN, F_GREEN, w=48, h=34)
+    # ring
+    rx_, ry_ = 220, 430
+    pts = [(rx_ + 120 * math.cos(math.radians(a)), ry_ + 60 * math.sin(math.radians(a))) for a in range(-90, 270, 60)]
+    for (x1, y1), (x2, y2) in zip(pts, pts[1:] + pts[:1]):
+        s.mid_arrow(x1, y1, x2, y2, color=ORANGE, width=2.5, at=0.55, size=11)
+    for x, y in pts:
+        node(s, x, y, "", ORANGE, F_AMBER, w=46, h=32)
+    # mesh
+    mx, my = 660, 430
+    mp = [(mx + 130 * math.cos(math.radians(a)), my + 62 * math.sin(math.radians(a))) for a in (-90, -18, 54, 126, 198)]
+    for (x1, y1), (x2, y2) in itertools.combinations(mp, 2):
+        s.line(x1, y1, x2, y2, color=PURPLE, width=2)
+    for x, y in mp:
+        node(s, x, y, "", PURPLE, F_PURPLE, w=46, h=32)
+    return s
+
+
+@fig
+def types_of_networks():
+    s = Svg(840, 420, "Types of networks by area",
+            "Four types of network drawn as nested areas from smallest to largest. A personal area network (PAN) "
+            "covers a few metres around one person, such as a phone linked to wireless earphones by Bluetooth. A "
+            "local area network (LAN) covers one building or site, such as a school computer laboratory. A "
+            "metropolitan area network (MAN) covers a town or city, such as a university's campuses across Freetown. "
+            "A wide area network (WAN) covers countries and continents; the Internet is the largest WAN.")
+    levels = [("WAN", "wide area network", "countries and continents: the Internet, a bank's branches", PURPLE, F_PURPLE),
+              ("MAN", "metropolitan area network", "a town or city: campuses across Freetown", TEAL, F_TEAL),
+              ("LAN", "local area network", "one building or site: a school computer lab", GREEN, F_GREEN),
+              ("PAN", "personal area network", "a few metres: phone and Bluetooth earphones", ORANGE, F_AMBER)]
+    cx = 420
+    for i, (ab, name, ex, col, fill) in enumerate(levels):
+        w, top, bot = 800 - i * 160, 20 + i * 80, 400 - i * 20
+        s.rect(cx - w / 2, top, w, bot - top, fill=fill, stroke=col, width=2.5, rx=28)
+        s.text(cx, top + 28, f"{ab}: {name}", size=18 if i < 3 else 16, color=col, weight="bold")
+        s.text(cx, top + 52, ex, size=14, color=INK)
+    return s
+
+
+def join(s: Svg, a, b, color=MUTED, width=2.5, gap=6):
+    """A plain line (a cable) between the edges of two boxes."""
+    ax, ay, aw, ah = a
+    bx, by, bw, bh = b
+    if abs(bx - ax) * ah > abs(by - ay) * aw:
+        s.line(ax + math.copysign(aw / 2 + gap, bx - ax), ay, bx - math.copysign(bw / 2 + gap, bx - ax), by, color=color, width=width)
+    else:
+        s.line(ax, ay + math.copysign(ah / 2 + gap, by - ay), bx, by - math.copysign(bh / 2 + gap, by - ay), color=color, width=width)
+
+
+@fig
+def small_office_network():
+    s = Svg(900, 480, "Devices in a small network",
+            "A small office or school network. Three desktop computers and a shared printer are joined by cables "
+            "to a switch. A wireless access point, also cabled to the switch, lets a laptop and a phone join by "
+            "Wi-Fi. The switch connects to a router with a firewall, which links the local network to the outside; "
+            "a modem connects the router to the Internet service provider (ISP), which connects to the Internet.")
+    s.rect(24, 14, 478, 452, fill="none", stroke=GREEN, width=2, rx=16, dash="8 6")
+    s.text(40, 450, "local area network (LAN)", size=14, color=GREEN, anchor="start", weight="bold")
+    sw = box(s, 330, 285, 140, 54, ["Switch", "joins LAN devices"], GREEN, F_GREEN, size=16)
+    for i in range(3):
+        y = 190 + i * 95
+        node(s, 90, y, f"PC {i + 1}", BLUE, F_BLUE)
+        s.line(120, y - 4, sw[0] - 76, sw[1] + (i - 1) * 16, color=MUTED, width=2.5)
+    pr = box(s, 330, 400, 130, 48, ["Printer", "shared by all"], INK, F_GREY, size=15)
+    join(s, sw, pr)
+    ap = box(s, 330, 135, 150, 50, ["Access point", "gives Wi-Fi"], ORANGE, F_AMBER, size=15)
+    join(s, ap, sw)
+    lx, ly = 160, 66
+    s.rect(lx - 24, ly - 16, 48, 28, fill="#ffffff", stroke=ORANGE, width=2, rx=3)
+    s.polygon([(lx - 30, ly + 12), (lx + 30, ly + 12), (lx + 35, ly + 19), (lx - 35, ly + 19)], fill="#ffffff", stroke=ORANGE, width=2)
+    s.text(lx, ly + 34, "laptop", size=12, color=MUTED)
+    px, py = 470, 60
+    s.rect(px - 12, py - 22, 24, 42, fill="#ffffff", stroke=ORANGE, width=2, rx=5)
+    s.text(px, py + 36, "phone", size=12, color=MUTED)
+    s.line(255, 122, lx + 38, ly + 14, color=ORANGE, width=2, dash="5 5")
+    s.line(405, 122, px - 16, py + 10, color=ORANGE, width=2, dash="5 5")
+    s.label(226, 84, "Wi-Fi", size=12, color=ORANGE)
+    s.label(428, 82, "Wi-Fi", size=12, color=ORANGE)
+    rt = box(s, 590, 285, 140, 56, ["Router", "+ firewall"], RED, F_RED, size=17)
+    join(s, sw, rt)
+    md = box(s, 590, 400, 140, 50, ["Modem", "or fibre box"], PURPLE, F_PURPLE, size=16)
+    join(s, rt, md)
+    isp = box(s, 790, 400, 150, 50, ["ISP", "e.g. a mobile network"], TEAL, F_TEAL, size=16)
+    join(s, md, isp)
+    net = box(s, 790, 285, 150, 56, ["The Internet", "networks worldwide"], BLUE, F_BLUE, size=17)
+    join(s, isp, net)
+    return s
+
+
+@fig
+def client_server_vs_peer_to_peer():
+    s = Svg(880, 380, "Client-server and peer-to-peer networks",
+            "Two ways of organising a network. In a client-server network, one powerful central computer, the "
+            "server, stores the shared files, programs and security, and the other computers, the clients, ask it "
+            "for services. In a peer-to-peer network there is no server: every computer is equal and shares its "
+            "own files and printer directly with the others.")
+    s.text(220, 30, "Client-server", size=19, color=BLUE, weight="bold")
+    srv = box(s, 220, 110, 150, 64, ["Server", "files, security, backups"], BLUE, F_BLUE, size=16)
+    for i, x in enumerate((90, 220, 350)):
+        node(s, x, 265, f"client {i + 1}", BLUE, "#ffffff")
+        s.line(x, 246, srv[0] + (x - 220) * 0.35, srv[1] + 32, color=BLUE, width=2.5)
+    s.text(220, 345, "clients ask; the server provides", size=14, color=MUTED)
+    s.line(440, 20, 440, 360, color=GRID_C, width=2)
+    s.text(660, 30, "Peer-to-peer", size=19, color=GREEN, weight="bold")
+    pts = [(560, 120), (760, 120), (560, 260), (760, 260)]
+    for (x1, y1), (x2, y2) in itertools.combinations(pts, 2):
+        s.line(x1, y1, x2, y2, color=GREEN, width=2)
+    for i, (x, y) in enumerate(pts):
+        s.rect(x - 34, y - 22, 68, 44, fill=F_GREEN, stroke=GREEN, width=2, rx=6)
+        s.text(x, y, f"peer {i + 1}", size=13, color=GREEN, weight="bold")
+    s.text(660, 345, "every computer is equal and shares", size=14, color=MUTED)
+    return s
+
+
+@fig
+def how_the_internet_works():
+    s = Svg(900, 430, "How a web page reaches you",
+            "Five steps when you open a website on a phone. 1, you type the address, such as www.example.com, in "
+            "the browser. 2, a DNS server looks up the domain name and returns the server's IP address. 3, the "
+            "request travels through your Wi-Fi router or mobile network to your Internet service provider and on "
+            "across the Internet. 4, the web server sends back the page's files. 5, the browser displays the page.")
+    you = box(s, 110, 130, 170, 70, ["1. Your browser", "www.example.com"], PURPLE, F_PURPLE, size=16)
+    dns = box(s, 110, 320, 170, 70, ["2. DNS server", "name → 203.0.113.10"], ORANGE, F_AMBER, size=15)
+    isp = box(s, 360, 130, 170, 70, ["3. Router and ISP", "your way in"], TEAL, F_TEAL, size=16)
+    net = box(s, 590, 130, 150, 70, ["The Internet", "linked networks"], BLUE, F_BLUE, size=16)
+    web = box(s, 800, 130, 150, 70, ["4. Web server", "sends the page"], GREEN, F_GREEN, size=16)
+    s.arrow(80, 167, 80, 283, color=ORANGE, width=2.5)
+    s.arrow(140, 283, 140, 167, color=ORANGE, width=2.5)
+    s.text(162, 225, "IP address", size=13, color=ORANGE, anchor="start")
+    s.text(58, 225, "name", size=13, color=ORANGE, anchor="end")
+    link(s, you, isp)
+    link(s, isp, net)
+    link(s, net, web)
+    s.path("M 800 167 C 800 300, 360 300, 200 168", color=GREEN, width=2.5, arrow="end", dash="7 5")
+    s.label(520, 262, "5. the page comes back and is shown", size=14, color=GREEN)
+    s.text(450, 400, "Every device on the Internet has an IP address; DNS turns names people remember into these numbers.", size=13, color=MUTED)
+    return s
+
+
+@fig
+def url_and_email_address():
+    s = Svg(900, 400, "Parts of a web address and an email address",
+            "Top: the web address https://www.example.com/results/sss3.html divided into its parts: https is the "
+            "protocol, www the host, example the domain name, .com the top-level domain, and /results/sss3.html the "
+            "path to the page. Bottom: the email address aminata.kamara@example.com divided into the user name "
+            "aminata.kamara, the at sign, and the domain example.com.")
+
+    def parts(y, segs, title_text):
+        s.text(30, y - 52, title_text, size=16, color=MUTED, anchor="start", weight="bold")
+        widths = [len(t) * 15.7 + 18 for t, _, _ in segs]
+        x = (900 - sum(widths)) / 2
+        for k, ((t, lab, col), w) in enumerate(zip(segs, widths)):
+            s.rect(x + 1, y - 22, w - 2, 44, fill={BLUE: F_BLUE, GREEN: F_GREEN, ORANGE: F_AMBER, PURPLE: F_PURPLE, RED: F_RED, TEAL: F_TEAL}[col], stroke=col, width=2, rx=5)
+            s.raw(f'<text x="{x + w / 2:.1f}" y="{y}" font-size="26" fill="{INK}" text-anchor="middle" dominant-baseline="middle" '
+                  f'font-family="Consolas, Courier New, monospace">{t}</text>')
+            drop = 26 if k % 2 else 0
+            s.line(x + w / 2, y + 24, x + w / 2, y + 40 + drop, color=col, width=2)
+            s.text(x + w / 2, y + 54 + drop, lab, size=14, color=col, weight="bold")
+            x += w
+
+    parts(110, [("https://", "protocol", PURPLE), ("www.", "host", TEAL), ("example", "domain name", BLUE),
+                (".com", "top-level domain", ORANGE), ("/results/sss3.html", "path to the page", GREEN)], "Web address (URL)")
+    parts(296, [("aminata.kamara", "user name", BLUE), ("@", "at", RED), ("example.com", "domain (mail provider)", GREEN)], "Email address")
+    return s
+
+
+@fig
+def mobile_generations():
+    s = Svg(900, 330, "Generations of mobile networks",
+            "A timeline of mobile network generations. 1G, 1980s: analogue voice calls only. 2G, 1990s: digital "
+            "calls and SMS text messages. 3G, 2000s: mobile Internet and video calls. 4G, 2010s: fast mobile "
+            "broadband for streaming video and apps. 5G, 2020s: very fast speeds and very low delay, for many "
+            "connected devices.")
+    gens = [("1G", "1980s", ["analogue", "voice calls only"], MUTED, F_GREY),
+            ("2G", "1990s", ["digital calls,", "SMS texts"], ORANGE, F_AMBER),
+            ("3G", "2000s", ["mobile Internet,", "video calls"], TEAL, F_TEAL),
+            ("4G", "2010s", ["fast broadband,", "HD video, apps"], BLUE, F_BLUE),
+            ("5G", "2020s", ["very fast, tiny delay,", "many devices (IoT)"], PURPLE, F_PURPLE)]
+    s.arrow(40, 120, 870, 120, color=INK, width=3)
+    for i, (g, yr, lines, col, fill) in enumerate(gens):
+        x = 110 + i * 170
+        s.circle(x, 120, 30, fill=fill, stroke=col, width=3)
+        s.text(x, 120, g, size=20, color=col, weight="bold")
+        s.text(x, 72, yr, size=15, color=MUTED, weight="bold")
+        box(s, x, 215, 156, 64, lines, col, "#ffffff", size=14, bold_first=False)
+        s.line(x, 150, x, 183, color=col, width=2)
+    s.text(450, 300, "Each generation is faster and carries more data than the one before.", size=14, color=MUTED)
+    return s
+
+
+@fig
+def smartphone_parts():
+    s = Svg(860, 560, "Parts of a smartphone",
+            "Front and back of a smartphone with labelled parts. Front: the touch screen, the front camera, the "
+            "earpiece speaker, the microphone and the charging port (USB-C). Back: the rear cameras with flash, and "
+            "the fingerprint sensor. Inside: the battery, the SIM card tray, the processor and memory, and sensors "
+            "such as GPS, the accelerometer and the gyroscope.")
+    # front
+    fx, fy, fw, fh = 210, 50, 200, 420
+    s.rect(fx, fy, fw, fh, fill="#1e293b", stroke=INK, width=3, rx=28)
+    s.rect(fx + 10, fy + 34, fw - 20, fh - 64, fill="#e0f2fe", stroke="none", width=0, rx=6)
+    for r in range(4):
+        for c in range(4):
+            s.rect(fx + 26 + c * 42, fy + 56 + r * 52, 30, 30, fill=[F_BLUE, F_GREEN, F_AMBER, F_PURPLE][(r + c) % 4], stroke="none", width=0, rx=8)
+    s.circle(fx + fw / 2, fy + 18, 6, fill="#475569", stroke="#94a3b8", width=1.5)
+    s.rect(fx + fw / 2 - 24, fy + 8, 14, 4, fill="#94a3b8", stroke="none", width=0, rx=2)
+    s.rect(fx + fw / 2 - 16, fy + fh - 6, 32, 8, fill="#94a3b8", stroke=INK, width=1.5, rx=3)
+    s.dot(fx + fw / 2 + 40, fy + fh - 14, r=2.5, color="#94a3b8")
+    s.text(fx + fw / 2, fy + fh + 30, "front", size=15, color=MUTED, weight="bold")
+    # back
+    bx = 470
+    s.rect(bx, fy, fw, fh, fill="#334155", stroke=INK, width=3, rx=28)
+    s.rect(bx + 18, fy + 20, 74, 104, fill="#1e293b", stroke="#64748b", width=2, rx=16)
+    for k in range(2):
+        s.circle(bx + 55, fy + 48 + k * 48, 17, fill="#0f172a", stroke="#94a3b8", width=2)
+    s.dot(bx + 110, fy + 40, r=6, color="#fde68a")
+    s.circle(bx + fw / 2, fy + 200, 22, fill="#475569", stroke="#94a3b8", width=2)
+    s.rect(bx + fw - 4, fy + 120, 8, 40, fill="#94a3b8", stroke=INK, width=1, rx=2)
+    s.text(bx + fw / 2, fy + fh + 30, "back", size=15, color=MUTED, weight="bold")
+
+    def lab(px, py, lx, ly, t, anchor):
+        s.polyline([(px, py), (lx + (8 if anchor == "end" else -8), ly), (lx, ly)], color=MUTED, width=1.8)
+        s.dot(px, py, r=4, color=RED)
+        s.text(lx + (-6 if anchor == "end" else 6), ly, t, size=15, color=INK, anchor=anchor)
+
+    lab(fx + fw / 2, fy + 18, 178, 60, "Front camera", "end")
+    lab(fx + fw / 2 - 17, fy + 10, 178, 30, "Earpiece speaker", "end")
+    lab(fx + 60, fy + 250, 178, 250, "Touch screen", "end")
+    lab(fx + fw / 2 + 40, fy + fh - 14, 178, 430, "Microphone", "end")
+    lab(fx + fw / 2, fy + fh - 2, 178, 470, "USB-C charging port", "end")
+    lab(bx + 55, fy + 20, 700, 30, "Rear cameras", "start")
+    lab(bx + 110, fy + 40, 700, 100, "Flash", "start")
+    lab(bx + fw / 2 + 22, fy + 200, 700, 250, "Fingerprint sensor", "start")
+    lab(bx + fw, fy + 140, 700, 160, "SIM card tray", "start")
+    s.rect(700, 330, 150, 140, fill="#ffffff", stroke=GRID_C, width=1.5, rx=10)
+    s.text(775, 350, "Inside", size=15, color=BLUE, weight="bold")
+    for k, t in enumerate(["battery", "processor (SoC)", "RAM and storage", "GPS receiver", "accelerometer"]):
+        s.text(712, 376 + k * 21, "• " + t, size=13, color=INK, anchor="start")
+    return s
+
+
+@fig
+def intellectual_property():
+    s = Svg(880, 340, "Types of intellectual property",
+            "Intellectual property is protected in four main ways. Copyright protects original creative works such "
+            "as books, music, films, photographs and software. A patent protects a new invention. A trademark "
+            "protects a brand name, logo or slogan. A trade secret protects private business knowledge such as a "
+            "recipe or a method.")
+    root = box(s, 440, 50, 300, 52, ["Intellectual property", "creations of the mind"], PURPLE, F_PURPLE, size=18)
+    kids = [("Copyright", ["books, music, films,", "photos, software"], BLUE, F_BLUE),
+            ("Patent", ["new inventions", "and processes"], GREEN, F_GREEN),
+            ("Trademark", ["brand names, logos,", "slogans"], ORANGE, F_AMBER),
+            ("Trade secret", ["recipes, formulas,", "private methods"], TEAL, F_TEAL)]
+    bs = []
+    for i, (t, lines, col, fill) in enumerate(kids):
+        x = 115 + i * 217
+        bs.append(box(s, x, 175, 190, 46, t, col, fill, size=17))
+        s.text(x, 225, lines[0], size=14, color=INK)
+        s.text(x, 245, lines[1], size=14, color=INK)
+    tree(s, root, bs)
+    s.text(440, 305, "Copying software, music or films without permission breaks copyright: it is piracy.", size=14, color=MUTED)
+    return s
+
+
+@fig
+def types_of_malware():
+    s = Svg(900, 400, "Types of malware",
+            "Malware, short for malicious software, includes: a virus, which attaches itself to a file and spreads "
+            "when the file is opened; a worm, which copies itself across networks on its own; a Trojan horse, which "
+            "pretends to be a useful program; ransomware, which locks or encrypts files and demands payment; "
+            "spyware, which secretly records what you do, including keyloggers that record what you type; and "
+            "adware, which shows unwanted advertisements.")
+    root = box(s, 450, 50, 340, 52, ["Malware", "malicious software"], RED, F_RED, size=19)
+    kids = [("Virus", "joins a file; spreads when it is run"),
+            ("Worm", "spreads across networks by itself"),
+            ("Trojan horse", "pretends to be a useful program"),
+            ("Ransomware", "locks files and demands payment"),
+            ("Spyware", "secretly records what you do"),
+            ("Adware", "floods the screen with adverts")]
+    bs = []
+    for i, (t, d) in enumerate(kids):
+        x = 160 + (i % 3) * 290
+        y = 170 + (i // 3) * 120
+        bs.append(box(s, x, y, 272, 64, [t, d], RED if i < 4 else ORANGE, "#ffffff", size=17))
+    tree(s, root, bs[:3])
+    for b, a in zip(bs[3:], bs[:3]):
+        s.line(a[0], a[1] + 32, b[0], b[1] - 32, color=MUTED, width=2)
+    s.text(450, 385, "All of them run without the owner's permission; up-to-date antivirus software finds and removes them.", size=14, color=MUTED)
+    return s
+
+
+@fig
+def two_factor_authentication():
+    s = Svg(900, 300, "Two-factor authentication",
+            "Two-factor authentication in four steps: 1, enter your user name and password, something you know; "
+            "2, the service sends a one-time code to your phone, something you have; 3, type the code; 4, you are "
+            "let in. A thief who has stolen only your password cannot get past step 3.")
+    steps = [("1. Password", ["something you", "know"], BLUE, F_BLUE),
+             ("2. Code sent", ["to your phone:", "something you have"], ORANGE, F_AMBER),
+             ("3. Enter code", ["e.g. 482 913,", "valid for minutes"], PURPLE, F_PURPLE),
+             ("4. Access", ["only with", "both factors"], GREEN, F_GREEN)]
+    prev = None
+    for i, (t, lines, col, fill) in enumerate(steps):
+        b = box(s, 115 + i * 223, 120, 190, 100, [t] + lines, col, fill, size=17)
+        if prev:
+            link(s, prev, b)
+        prev = b
+    s.text(450, 230, "A stolen password alone is not enough: the thief does not have your phone.", size=15, color=RED, weight="bold")
+    s.text(450, 262, "Never share a one-time code with anyone, even someone who says they work for the bank.", size=14, color=MUTED)
+    return s
+
+
+# ═══ Algorithms, programming, society and practical skills ══════════════════
+
+def fc(s: Svg, kind, cx, cy, w, h, text_lines, col=BLUE, fill=F_BLUE, size=15):
+    """A flowchart shape centred on (cx, cy); returns its box (cx, cy, w, h)."""
+    if isinstance(text_lines, str):
+        text_lines = [text_lines]
+    if kind == "terminal":
+        s.rect(cx - w / 2, cy - h / 2, w, h, fill=fill, stroke=col, width=2.5, rx=h / 2)
+    elif kind == "io":
+        k = 16
+        s.polygon([(cx - w / 2 + k, cy - h / 2), (cx + w / 2, cy - h / 2), (cx + w / 2 - k, cy + h / 2), (cx - w / 2, cy + h / 2)], fill=fill, stroke=col, width=2.5)
+    elif kind == "process":
+        s.rect(cx - w / 2, cy - h / 2, w, h, fill=fill, stroke=col, width=2.5)
+    elif kind == "decision":
+        s.polygon([(cx, cy - h / 2), (cx + w / 2, cy), (cx, cy + h / 2), (cx - w / 2, cy)], fill=fill, stroke=col, width=2.5)
+    elif kind == "subroutine":
+        s.rect(cx - w / 2, cy - h / 2, w, h, fill=fill, stroke=col, width=2.5)
+        s.line(cx - w / 2 + 10, cy - h / 2, cx - w / 2 + 10, cy + h / 2, color=col, width=2)
+        s.line(cx + w / 2 - 10, cy - h / 2, cx + w / 2 - 10, cy + h / 2, color=col, width=2)
+    elif kind == "connector":
+        s.circle(cx, cy, h / 2, fill=fill, stroke=col, width=2.5)
+    n = len(text_lines)
+    for i, t in enumerate(text_lines):
+        s.text(cx, cy + (i - (n - 1) / 2) * (size + 4), t, size=size, color=INK)
+    return (cx, cy, w, h)
+
+
+def down(s: Svg, a, b, color=INK):
+    s.arrow(a[0], a[1] + a[3] / 2 + 2, b[0], b[1] - b[3] / 2 - 4, color=color, width=2.5)
+
+
+@fig
+def flowchart_symbols():
+    s = Svg(880, 430, "Flowchart symbols",
+            "The standard flowchart symbols: the terminal, an oval, marks Start and Stop; the parallelogram is for "
+            "input and output, such as reading a number or printing a result; the rectangle is a process, such as a "
+            "calculation; the diamond is a decision with Yes and No exits; the small circle is a connector that joins "
+            "parts of a flowchart; the arrow, a flow line, shows the order of steps; and a rectangle with double "
+            "sides is a predefined process, a subroutine described elsewhere.")
+    items = [("terminal", "Terminal", "Start / Stop", ["Start"]),
+             ("io", "Input / output", "read data, print results", ["Input mark"]),
+             ("process", "Process", "a calculation or action", ["total = a + b"]),
+             ("decision", "Decision", "a question: Yes or No", ["mark ≥ 50?"]),
+             ("connector", "Connector", "joins parts of a chart", ["A"]),
+             ("flow", "Flow line", "shows the order of steps", []),
+             ("subroutine", "Predefined process", "a subroutine", ["Sort list"]),
+             ]
+    for i, (kind, name, use, txt) in enumerate(items):
+        col_i, row = i % 4, i // 4
+        cx, cy = 115 + col_i * 216, 95 + row * 200
+        s.rect(cx - 100, cy - 70, 200, 180, fill="#ffffff", stroke=GRID_C, width=1.5, rx=12)
+        if kind == "flow":
+            s.arrow(cx - 50, cy, cx + 50, cy, color=INK, width=3)
+        else:
+            w, h = (130, 50) if kind != "decision" else (130, 70)
+            if kind == "connector":
+                w, h = 46, 46
+            fc(s, kind, cx, cy, w, h, txt, size=15)
+        s.text(cx, cy + 62, name, size=16, color=BLUE, weight="bold")
+        s.text(cx, cy + 84, use, size=13, color=MUTED)
+    return s
+
+
+@fig
+def flowchart_pass_fail():
+    s = Svg(640, 600, "Flowchart: pass or fail",
+            "A flowchart with a decision. Start; input the mark; decision: is the mark greater than or equal to 50? "
+            "If yes, print Pass; if no, print Fail; both paths join and go to Stop.")
+    st = fc(s, "terminal", 320, 45, 140, 46, "Start", GREEN, F_GREEN)
+    inp = fc(s, "io", 320, 135, 200, 50, "Input mark", BLUE, F_BLUE)
+    dec = fc(s, "decision", 320, 260, 220, 110, ["mark ≥ 50?"], ORANGE, F_AMBER)
+    yes = fc(s, "io", 140, 390, 180, 50, 'Print "Pass"', BLUE, F_BLUE)
+    no = fc(s, "io", 500, 390, 180, 50, 'Print "Fail"', BLUE, F_BLUE)
+    end = fc(s, "terminal", 320, 540, 140, 46, "Stop", RED, F_RED)
+    down(s, st, inp)
+    down(s, inp, dec)
+    s.polyline([(210, 260), (140, 260), (140, 361)], color=INK, width=2.5, arrow="end")
+    s.polyline([(430, 260), (500, 260), (500, 361)], color=INK, width=2.5, arrow="end")
+    s.label(170, 242, "Yes", size=15, color=GREEN, weight="bold")
+    s.label(470, 242, "No", size=15, color=RED, weight="bold")
+    s.polyline([(140, 415), (140, 470), (320, 470)], color=INK, width=2.5)
+    s.polyline([(500, 415), (500, 470), (320, 470)], color=INK, width=2.5)
+    s.arrow(320, 470, 320, 513, color=INK, width=2.5)
+    return s
+
+
+@fig
+def flowchart_average_loop():
+    s = Svg(760, 760, "Flowchart: a loop to average five marks",
+            "A flowchart with a loop. Start; set total to 0 and count to 1; decision: is count less than or equal "
+            "to 5? If yes: input a mark, add it to the total, add 1 to count, and go back to the decision. If no: "
+            "work out average = total divided by 5, print the average, and stop.")
+    st = fc(s, "terminal", 300, 40, 140, 44, "Start", GREEN, F_GREEN)
+    init = fc(s, "process", 300, 118, 220, 50, ["total = 0", "count = 1"], PURPLE, F_PURPLE, size=14)
+    dec = fc(s, "decision", 300, 238, 220, 104, ["count ≤ 5?"], ORANGE, F_AMBER)
+    inp = fc(s, "io", 300, 360, 190, 48, "Input mark", BLUE, F_BLUE)
+    add = fc(s, "process", 300, 440, 230, 48, "total = total + mark", PURPLE, F_PURPLE, size=14)
+    inc = fc(s, "process", 300, 518, 230, 48, "count = count + 1", PURPLE, F_PURPLE, size=14)
+    avg = fc(s, "process", 600, 360, 220, 48, "average = total ÷ 5", PURPLE, F_PURPLE, size=14)
+    out = fc(s, "io", 600, 450, 200, 48, "Print average", BLUE, F_BLUE)
+    end = fc(s, "terminal", 600, 540, 140, 44, "Stop", RED, F_RED)
+    down(s, st, init)
+    down(s, init, dec)
+    down(s, dec, inp)
+    down(s, inp, add)
+    down(s, add, inc)
+    s.polyline([(300, 542), (300, 580), (80, 580), (80, 238), (182, 238)], color=INK, width=2.5, arrow="end")
+    s.label(80, 410, "loop back", size=13, color=MUTED)
+    s.label(322, 300, "Yes", size=15, color=GREEN, weight="bold")
+    s.polyline([(410, 238), (600, 238), (600, 330)], color=INK, width=2.5, arrow="end")
+    s.label(470, 222, "No", size=15, color=RED, weight="bold")
+    down(s, avg, out)
+    down(s, out, end)
+    s.rect(40, 620, 680, 120, fill="#ffffff", stroke=GRID_C, width=1.5, rx=10)
+    s.text(380, 645, "The loop body runs 5 times (count = 1, 2, 3, 4, 5); when count becomes 6 the test is No.", size=14, color=INK)
+    s.text(380, 675, "Marks 12, 15, 9, 18, 16 give total = 70, so average = 70 ÷ 5 = 14.", size=14, color=INK)
+    s.text(380, 712, "Sequence: steps in order.  Selection: the decision.  Iteration: the loop.", size=14, color=BLUE, weight="bold")
+    return s
+
+
+@fig
+def variables_and_arrays():
+    s = Svg(880, 470, "Variables and an array in memory",
+            "Variables drawn as labelled boxes in memory: age holds the integer 17; price holds the real number "
+            "2.5; name holds the string Fatmata; passed holds the Boolean value True. Below, an array called marks "
+            "holds five values, 67, 82, 45, 90 and 73, in boxes numbered by their index from 0 to 4, so marks[3] "
+            "is 90.")
+    s.text(440, 30, "Each variable is a named box in memory that holds one value of one data type", size=15, color=MUTED, weight="bold")
+    vars_ = [("age", "17", "integer", BLUE, F_BLUE), ("price", "2.5", "real (float)", GREEN, F_GREEN),
+             ('name', '"Fatmata"', "string", ORANGE, F_AMBER), ("passed", "True", "Boolean", PURPLE, F_PURPLE)]
+    for i, (n, v, t, col, fill) in enumerate(vars_):
+        x = 120 + i * 213
+        s.text(x, 72, n, size=17, color=col, weight="bold")
+        s.rect(x - 85, 88, 170, 66, fill=fill, stroke=col, width=2.5, rx=6)
+        s.raw(f'<text x="{x}" y="121" font-size="22" fill="{INK}" text-anchor="middle" dominant-baseline="middle" '
+              f'font-family="Consolas, Courier New, monospace">{escape_xml(v)}</text>')
+        s.text(x, 176, t, size=14, color=MUTED)
+    s.line(40, 210, 840, 210, color=GRID_C, width=1.5)
+    s.text(440, 240, "An array holds many values of the same type under one name, each found by its index", size=15, color=MUTED, weight="bold")
+    s.text(110, 300, "marks", size=19, color=TEAL, weight="bold", anchor="end")
+    vals = ["67", "82", "45", "90", "73"]
+    for i, v in enumerate(vals):
+        x = 130 + i * 140
+        hl = i == 3
+        s.rect(x, 270, 140, 62, fill=F_TEAL if not hl else F_AMBER, stroke=TEAL if not hl else ORANGE, width=2.5)
+        s.raw(f'<text x="{x + 70}" y="302" font-size="24" fill="{INK}" text-anchor="middle" dominant-baseline="middle" '
+              f'font-family="Consolas, Courier New, monospace">{v}</text>')
+        s.text(x + 70, 352, f"index {i}", size=14, color=ORANGE if hl else MUTED, weight="bold" if hl else "normal")
+    s.raw(f'<text x="440" y="405" font-size="19" fill="{INK}" text-anchor="middle" dominant-baseline="middle" '
+          'font-family="Consolas, Courier New, monospace">marks[3] is 90</text>')
+    s.text(440, 440, "Most languages, including Python, number array positions from 0.", size=14, color=MUTED)
+    return s
+
+
+def escape_xml(t: str) -> str:
+    return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+
+@fig
+def program_development_life_cycle():
+    s = Svg(900, 600, "The program development life cycle",
+            "The program development life cycle as a circle of seven stages: problem definition, problem analysis, "
+            "program design (algorithms, flowcharts, pseudocode), coding, testing and debugging, implementation, and "
+            "maintenance, which leads back to problem definition when changes are needed. Documentation, in the "
+            "centre, is written at every stage.")
+    stages = [("1. Problem definition", "what must be solved?", PURPLE, F_PURPLE),
+              ("2. Analysis", "inputs, processes, outputs", BLUE, F_BLUE),
+              ("3. Design", "algorithm, flowchart", TEAL, F_TEAL),
+              ("4. Coding", "write the program", GREEN, F_GREEN),
+              ("5. Testing and debugging", "find and fix errors", ORANGE, F_AMBER),
+              ("6. Implementation", "install and start using", RED, F_RED),
+              ("7. Maintenance", "update and improve", MUTED, F_GREY)]
+    cx, cy, rx_, ry_ = 450, 300, 345, 240
+    pos = []
+    for i in range(len(stages)):
+        a = math.radians(-90 + i * 360 / len(stages))
+        pos.append((cx + rx_ * math.cos(a), cy + ry_ * math.sin(a)))
+    for i in range(len(stages)):
+        (x1, y1), (x2, y2) = pos[i], pos[(i + 1) % len(stages)]
+        mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+        ox, oy = (mx - cx) * 0.12, (my - cy) * 0.12
+        s.path(f"M {x1 + (x2 - x1) * 0.34:.1f} {y1 + (y2 - y1) * 0.34:.1f} Q {mx + ox:.1f} {my + oy:.1f} {x1 + (x2 - x1) * 0.66:.1f} {y1 + (y2 - y1) * 0.66:.1f}",
+               color=MUTED, width=2.5, arrow="end")
+    for (t, d, col, fill), (x, y) in zip(stages, pos):
+        box(s, x, y, 196, 56, [t, d], col, fill, size=15)
+    box(s, cx, cy, 200, 70, ["Documentation", "written at every stage"], INK, "#ffffff", size=16)
+    return s
+
+
+@fig
+def ipo_chart():
+    s = Svg(860, 300, "An input-process-output chart",
+            "An input-process-output (IPO) chart for a program that finds the area and perimeter of a rectangle. "
+            "Input: the length and the width. Process: area = length × width and perimeter = 2 × (length + width). "
+            "Output: the area and the perimeter.")
+    cols = [("INPUT", ["length", "width"], BLUE, F_BLUE),
+            ("PROCESS", ["area = length × width", "perimeter = 2 × (length + width)"], ORANGE, F_AMBER),
+            ("OUTPUT", ["area", "perimeter"], GREEN, F_GREEN)]
+    xs = [125, 430, 735]
+    ws = [180, 320, 180]
+    bs = []
+    for (t, lines, col, fill), x, w in zip(cols, xs, ws):
+        s.rect(x - w / 2, 40, w, 44, fill=col, stroke=col, width=2.5, rx=8)
+        s.text(x, 62, t, size=18, color="#ffffff", weight="bold")
+        s.rect(x - w / 2, 84, w, 150, fill=fill, stroke=col, width=2.5)
+        for k, ln in enumerate(lines):
+            s.text(x, 130 + k * 44, ln, size=16, color=INK)
+        bs.append((x, 160, w, 150))
+    s.arrow(222, 160, 264, 160, color=INK, width=3)
+    s.arrow(596, 160, 638, 160, color=INK, width=3)
+    s.text(430, 272, "Program: find the area and perimeter of a rectangle", size=15, color=MUTED, weight="bold")
+    return s
+
+
+@fig
+def ict_in_society():
+    s = Svg(900, 560, "Uses of ICT in society",
+            "ICT at the centre, linked to ten areas of life: education (e-learning, online results), health "
+            "(telemedicine, patient records), banking (mobile money, online banking, ATMs), agriculture (weather "
+            "and market prices by phone), commerce (e-commerce, point-of-sale), government (e-government, digital "
+            "ID, elections), communication (calls, messaging, social media), transport (GPS, online tickets), "
+            "entertainment (streaming, games) and security (CCTV, biometrics).")
+    cx, cy = 450, 285
+    box(s, cx, cy, 236, 96, ["ICT", "information and", "communication technology"], INK, "#ffffff", size=18)
+    areas = [("Education", "e-learning, online results", BLUE, F_BLUE),
+             ("Health", "telemedicine, records", RED, F_RED),
+             ("Banking", "mobile money, ATMs", GREEN, F_GREEN),
+             ("Agriculture", "weather, prices by SMS", TEAL, F_TEAL),
+             ("Commerce", "e-commerce, POS", ORANGE, F_AMBER),
+             ("Government", "e-government, digital ID", PURPLE, F_PURPLE),
+             ("Communication", "calls, chat, social media", BLUE, F_BLUE),
+             ("Transport", "GPS, online tickets", TEAL, F_TEAL),
+             ("Entertainment", "streaming, games", ORANGE, F_AMBER),
+             ("Security", "CCTV, biometrics", RED, F_RED)]
+    for i, (t, d, col, fill) in enumerate(areas):
+        a = math.radians(-90 + i * 36)
+        x, y = cx + 340 * math.cos(a), cy + 215 * math.sin(a)
+        s.line(cx + 120 * math.cos(a), cy + 50 * math.sin(a), x - 88 * math.cos(a), y - 30 * math.sin(a), color=GRID_C, width=2.5)
+        box(s, x, y, 186, 56, [t, d], col, fill, size=15)
+    return s
+
+
+@fig
+def ergonomic_workstation():
+    s = Svg(880, 690, "A healthy computer workstation",
+            "Side view of a person sitting correctly at a computer: the top of the screen is at or slightly below "
+            "eye level, about an arm's length (50 to 70 centimetres) away; the back is upright and supported by the "
+            "chair; the shoulders are relaxed; the elbows are bent at about 90 degrees with the forearms level; the "
+            "wrists are straight; the thighs are level with the knees at about 90 degrees; and the feet are flat on "
+            "the floor or a footrest. Rest the eyes every 20 minutes and take regular breaks.")
+    floor = 500
+    s.line(40, floor, 840, floor, color=MUTED, width=2)
+    # desk
+    s.rect(360, 300, 300, 14, fill=METAL_C, stroke=INK, width=2)
+    s.line(640, 314, 640, floor, color=INK, width=4)
+    # monitor
+    s.rect(600, 140, 18, 120, fill="#1e293b", stroke=INK, width=2, rx=3)
+    s.line(609, 260, 609, 300, color=INK, width=4)
+    s.line(585, 300, 635, 300, color=INK, width=5)
+    # keyboard
+    s.rect(430, 290, 90, 10, fill="#94a3b8", stroke=INK, width=1.5, rx=2)
+    # chair
+    s.line(170, 380, 300, 380, color=INK, width=6)
+    s.line(175, 380, 160, 220, color=INK, width=6)
+    s.line(235, 380, 235, 470, color=INK, width=5)
+    s.line(185, 485, 285, 485, color=INK, width=5)
+    for x in (190, 280):
+        s.circle(x, 492, 7, fill=INK, stroke=INK, width=1)
+    # person (side view)
+    hx, hy = 225, 150
+    s.circle(hx, hy, 30, fill=F_AMBER, stroke=INK, width=2.5)
+    s.dot(hx + 18, hy - 4, r=3, color=INK)
+    sx, sy = 215, 205   # shoulder
+    hipx, hipy = 205, 365
+    s.line(hx - 4, hy + 30, sx, sy, color=INK, width=6)
+    s.line(sx, sy, hipx, hipy, color=INK, width=8)
+    ex, ey = 245, 290    # elbow
+    s.line(sx, sy, ex, ey, color=INK, width=6)
+    wx, wy = 420, 288    # wrist
+    s.line(ex, ey, wx, wy, color=INK, width=6)
+    kx, ky = 345, 368    # knee
+    s.line(hipx, hipy, kx, ky, color=INK, width=8)
+    fx, fy = 350, floor - 6
+    s.line(kx, ky, fx, fy, color=INK, width=7)
+    s.line(fx - 8, fy, fx + 34, fy, color=INK, width=7)
+    # sight line and viewing distance
+    s.line(hx + 22, hy - 4, 600, 160, color=BLUE, width=2, dash="6 5")
+    s.arrow(330, 112, 596, 112, color=BLUE, width=2)
+    s.arrow(596, 112, 262, 112, color=BLUE, width=2)
+    s.label(430, 112, "50–70 cm", size=14, color=BLUE, weight="bold")
+
+    def num(x, y, n):
+        s.circle(x, y, 13, fill=RED, stroke="#ffffff", width=2)
+        s.text(x, y, str(n), size=14, color="#ffffff", weight="bold")
+
+    for (x, y), n in zip([(636, 140), (430, 84), (176, 300), (236, 318), (420, 266), (366, 346), (400, 474)], range(1, 8)):
+        num(x, y, n)
+    legend = ["Top of the screen at or just below eye level", "Screen about an arm's length away (50–70 cm)",
+              "Back upright and supported by the chair", "Elbows at about 90°, forearms level",
+              "Wrists straight; keyboard and mouse close", "Thighs level, knees at about 90°",
+              "Feet flat on the floor or on a footrest"]
+    s.rect(30, 520, 820, 124, fill="#ffffff", stroke=GRID_C, width=1.5, rx=10)
+    for i, t in enumerate(legend):
+        x, y = (54 if i < 4 else 474), 544 + (i % 4) * 26
+        num(x, y, i + 1)
+        s.text(x + 20, y, t, size=14, color=INK, anchor="start")
+    s.text(440, 670, "Every 20 minutes, look at something 6 m (20 feet) away for 20 seconds, and take regular breaks.", size=14, color=BLUE, weight="bold")
+    return s
+
+
+METAL_C = "#cbd5e1"
+
+
+@fig
+def computer_ports():
+    s = Svg(900, 420, "Common computer ports",
+            "Eight common ports with what they connect: USB-A for flash drives, mice, keyboards and printers; "
+            "USB-C for charging, data and displays on newer devices; HDMI for sending video and sound to a monitor, "
+            "TV or projector; VGA, an older analogue video port for monitors and projectors; Ethernet (RJ-45) for a "
+            "wired network cable; the 3.5 mm audio jack for headphones and speakers; the SD card slot for camera "
+            "memory cards; and the power socket for the charger.")
+    items = [("USB-A", "flash drives, mouse,", "keyboard, printer"),
+             ("USB-C", "charging, data and", "video on new devices"),
+             ("HDMI", "digital video and", "sound to a TV or projector"),
+             ("VGA", "older analogue video", "to monitors, projectors"),
+             ("Ethernet (RJ-45)", "wired network", "cable"),
+             ("Audio jack (3.5 mm)", "headphones,", "speakers, microphone"),
+             ("SD card slot", "camera and phone", "memory cards"),
+             ("Power (DC in)", "the charger or", "power adapter")]
+    for i, (name, a, b) in enumerate(items):
+        col_i, row = i % 4, i // 4
+        cx, cy = 115 + col_i * 223, 105 + row * 200
+        s.rect(cx - 100, cy - 72, 200, 180, fill="#ffffff", stroke=GRID_C, width=1.5, rx=12)
+        s.rect(cx - 70, cy - 52, 140, 74, fill="#334155", stroke=INK, width=2, rx=8)
+        if name == "USB-A":
+            s.rect(cx - 30, cy - 26, 60, 22, fill="#0f172a", stroke="#94a3b8", width=2, rx=2)
+            s.rect(cx - 22, cy - 26, 44, 8, fill="#94a3b8", stroke="none", width=0)
+        elif name == "USB-C":
+            s.rect(cx - 26, cy - 24, 52, 18, fill="#0f172a", stroke="#94a3b8", width=2, rx=9)
+            s.rect(cx - 15, cy - 17, 30, 4, fill="#94a3b8", stroke="none", width=0, rx=2)
+        elif name == "HDMI":
+            s.polygon([(cx - 32, cy - 28), (cx + 32, cy - 28), (cx + 32, cy - 16), (cx + 24, cy - 6), (cx - 24, cy - 6), (cx - 32, cy - 16)], fill="#0f172a", stroke="#94a3b8", width=2)
+        elif name == "VGA":
+            s.polygon([(cx - 40, cy - 32), (cx + 40, cy - 32), (cx + 32, cy - 2), (cx - 32, cy - 2)], fill="#1d4ed8", stroke="#93c5fd", width=2)
+            for r, (n, off) in enumerate(((5, 0), (5, 4), (5, 0))):
+                for k in range(n):
+                    s.dot(cx - 20 + off + k * 10, cy - 24 + r * 9, r=2.2, color="#e0f2fe")
+        elif name.startswith("Ethernet"):
+            s.polygon([(cx - 24, cy - 34), (cx + 24, cy - 34), (cx + 24, cy - 4), (cx + 10, cy - 4), (cx + 10, cy + 4), (cx - 10, cy + 4), (cx - 10, cy - 4), (cx - 24, cy - 4)], fill="#0f172a", stroke="#94a3b8", width=2)
+            for k in range(8):
+                s.line(cx - 17 + k * 4.8, cy - 32, cx - 17 + k * 4.8, cy - 24, color="#fbbf24", width=1.5)
+        elif name.startswith("Audio"):
+            s.circle(cx, cy - 15, 15, fill="#0f172a", stroke="#94a3b8", width=2)
+            s.circle(cx, cy - 15, 6, fill="#475569", stroke="none", width=0)
+        elif name.startswith("SD"):
+            s.rect(cx - 36, cy - 20, 72, 10, fill="#0f172a", stroke="#94a3b8", width=2, rx=2)
+        else:
+            s.circle(cx, cy - 15, 14, fill="#0f172a", stroke="#94a3b8", width=2)
+            s.dot(cx, cy - 15, r=4, color="#94a3b8")
+        s.text(cx, cy + 46, name, size=16, color=BLUE, weight="bold")
+        s.text(cx, cy + 70, a, size=13, color=INK)
+        s.text(cx, cy + 88, b, size=13, color=INK)
+    return s
+
+
+@fig
+def home_row_keys():
+    s = Svg(900, 330, "Home row keys for touch typing",
+            "The home row of a keyboard for touch typing. The left hand's little, ring, middle and index fingers "
+            "rest on A, S, D and F; the right hand's index, middle, ring and little fingers rest on J, K, L and the "
+            "semicolon. The F and J keys have small raised bumps so the index fingers can find them without "
+            "looking. The thumbs rest on the space bar.")
+    keys = ["A", "S", "D", "F", "G", "H", "J", "K", "L", ";"]
+    fingers = {"A": ("little", PURPLE), "S": ("ring", BLUE), "D": ("middle", GREEN), "F": ("index", ORANGE),
+               "J": ("index", ORANGE), "K": ("middle", GREEN), "L": ("ring", BLUE), ";": ("little", PURPLE)}
+    x0, y0, kw = 95, 100, 70
+    s.text(250, 50, "Left hand", size=17, color=MUTED, weight="bold")
+    s.text(660, 50, "Right hand", size=17, color=MUTED, weight="bold")
+    for i, k in enumerate(keys):
+        x = x0 + i * (kw + 2)
+        f = fingers.get(k)
+        fill = {PURPLE: F_PURPLE, BLUE: F_BLUE, GREEN: F_GREEN, ORANGE: F_AMBER}[f[1]] if f else "#ffffff"
+        s.rect(x, y0, kw, kw, fill=fill, stroke=f[1] if f else GRID_C, width=2.5 if f else 1.5, rx=8)
+        s.text(x + kw / 2, y0 + kw / 2 - 4, k, size=24, color=INK, weight="bold")
+        if k in ("F", "J"):
+            s.line(x + kw / 2 - 9, y0 + kw - 14, x + kw / 2 + 9, y0 + kw - 14, color=INK, width=3)
+        if f:
+            s.text(x + kw / 2, y0 + kw + 22, f[0], size=13, color=f[1], weight="bold")
+    s.rect(x0 + 2 * (kw + 2), 230, 6 * (kw + 2) - 2, 44, fill="#ffffff", stroke=GRID_C, width=1.5, rx=8)
+    s.text(x0 + 5 * (kw + 2) - 1, 252, "space bar: thumbs", size=15, color=MUTED)
+    s.text(450, 312, "The bumps on F and J let the index fingers find the home row without looking.", size=14, color=INK)
     return s
 
 

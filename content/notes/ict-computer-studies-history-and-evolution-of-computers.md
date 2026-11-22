@@ -165,8 +165,8 @@ First: **vacuum tubes**. Second: **transistors**. Third: **integrated circuits**
 Any three: very large and heavy; very expensive; produced much heat and needed air conditioning; used a lot of electricity; broke down often; could only be programmed in machine language.
 :::
 
-:::reveal{title="4. Who is regarded as the first computer programmer, and why?"}
-**Ada Lovelace**, because in 1843 she published a step-by-step method (an algorithm) for Babbage's Analytical Engine to calculate a series of numbers.
+:::reveal{title="4. Who set out the stored-program concept, and what does it mean?"}
+**John von Neumann**, in 1945. The **program and the data are both kept in the computer's memory**, so the computer can be given a new task by loading a new program instead of being rewired. Almost every computer today follows this design.
 :::
 
 :::reveal{title="5. State the feature that marks the fifth generation of computers."}
