@@ -296,7 +296,7 @@ jobs:
           test "$RESULT" = "0,1" || { echo "Checks did not match 0,1"; exit 1; }
           psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(full_name || ' /tutors/' || slug, ', ' order by verified_at) from public.tutors where status = 'active' and listed;"
 
-      - name: Verify (30) the lesson reviews given on WhatsApp are recorded
+      - name: Verify (30) the first lesson reviews are recorded
         shell: bash
         env:
           SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
@@ -329,3 +329,15 @@ jobs:
             (select count(*) from public.lessons where id = 'aa39949a-d814-4b12-862a-7d7ff1da5ef9' and content like '%nearest cedi%'));" | tr -d '[:space:]')"
           echo "rewritten lessons with an old approval, literal <br>, weight rounded to a currency: $RESULT"
           test "$RESULT" = "0,0,0" || { echo "Checks did not match 0,0,0"; exit 1; }
+
+      - name: Verify (33) Chemistry topics 11-48 and English topics 11-31 are reviewed
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select count(*) from public.lessons l join public.topics tp on tp.id = l.topic_id join public.subjects s on s.id = tp.subject_id where l.is_published and l.reviewed_at is null and ((s.slug = 'chemistry' and tp.slug in ('empirical-and-molecular-formulas','acids-bases-and-ph','salts-and-their-preparation','acid-base-titration','water-and-its-properties','solutions-and-solubility','oxidation-and-reduction-reactions','electrolysis','electrochemical-cells','energy-changes-in-reactions','rate-of-reaction','chemical-equilibrium','hydrogen','oxygen-and-air','the-halogens','nitrogen-and-its-compounds','sulphur-and-its-compounds','carbon-and-its-inorganic-compounds','reactivity-series-and-extraction-of-metals','alkali-metals','alkaline-earth-metals','aluminium-and-group-iii-metals','iron-and-other-transition-metals','industrial-chemical-processes','introduction-to-organic-chemistry','alkanes','alkenes','alkynes','petroleum-and-petrochemicals','alkanols','alkanoic-acids','alkanoates-and-esters','soaps-detergents-and-oils','carbohydrates','proteins-and-amino-acids','polymers-and-plastics','chemistry-and-the-environment','practical-chemistry-skills')) or (s.slug = 'english-language' and tp.slug in ('conjunctions','articles','subject-verb-agreement','direct-and-reported-speech','question-tags','modal-verbs','conditionals','phrases-and-clauses','sentence-types','punctuation','common-confusable-words','synonyms-and-antonyms','homonyms-and-homophones','idioms-and-idiomatic-expressions','figures-of-speech','word-formation','vocabulary-in-context','literal-and-inferential-comprehension','approaching-a-comprehension-passage','tone-and-attitude-in-comprehension','summary-writing')));" | tr -d '[:space:]')"
+          echo "published lessons in those topics still without a review: $RESULT"
+          test "$RESULT" = "0" || { echo "Expected every lesson in those topics to be reviewed"; exit 1; }
+          # For the record: lessons per reviewer and subject.
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select string_agg(line, '; ') from (select t.full_name || ', ' || s.name || ': ' || count(*) as line from public.lessons l join public.tutors t on t.user_id = l.reviewed_by join public.topics tp on tp.id = l.topic_id join public.subjects s on s.id = tp.subject_id where l.is_published group by t.full_name, s.name order by t.full_name, s.name) r;"

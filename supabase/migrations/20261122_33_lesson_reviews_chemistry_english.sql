@@ -60,11 +60,11 @@ begin
       raise exception '%: not an active reviewer', v_batch->>'tutor';
     end if;
 
-    select array_agg(name) into v_missing
-      from jsonb_array_elements_text(v_batch->'topics') as name
+    select array_agg(wanted.topic_slug) into v_missing
+      from jsonb_array_elements_text(v_batch->'topics') as wanted(topic_slug)
      where not exists (
              select 1 from public.topics tp join public.subjects s on s.id = tp.subject_id
-              where s.slug = v_batch->>'subject' and tp.slug = name);
+              where s.slug = v_batch->>'subject' and tp.slug = wanted.topic_slug);
     if v_missing is not null then
       raise exception '%: no such topics: %', v_batch->>'subject', v_missing;
     end if;
@@ -75,7 +75,7 @@ begin
       join public.subjects s on s.id = tp.subject_id
      where l.topic_id = tp.id
        and s.slug = v_batch->>'subject'
-       and tp.slug in (select jsonb_array_elements_text(v_batch->'topics'))
+       and tp.slug in (select listed.topic_slug from jsonb_array_elements_text(v_batch->'topics') as listed(topic_slug))
        and l.is_published
        and l.reviewed_at is null;
     get diagnostics v_count = row_count;
