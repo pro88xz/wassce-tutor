@@ -15,6 +15,8 @@ DESCRIPTION = ("Photosynthesis explained on the chalkboard: the word and balance
                "and light reach the leaf, uses of glucose, nitrate and magnesium, limiting factors, and testing a leaf "
                "for starch.")
 LABEL = "WASSCE Tutor  ·  Biology  ·  Photosynthesis"
+# The lesson page this video is on: /wassce/biology/photosynthesis-and-plant-nutrition/what-photosynthesis-is-and-why-it-matters
+LESSON = "biology/photosynthesis-and-plant-nutrition/what-photosynthesis-is-and-why-it-matters"
 
 
 def equation(left, right, y, size, x=70, above="", below=""):

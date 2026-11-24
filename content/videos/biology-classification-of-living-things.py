@@ -14,6 +14,8 @@ DESCRIPTION = ("Why living things are classified, the seven taxonomic ranks from
                "scientific names (binomial nomenclature), the five kingdoms and their features, and how to use a "
                "dichotomous key.")
 LABEL = "WASSCE Tutor  ·  Biology  ·  Classification"
+# The lesson page this video is on: /wassce/biology/classification-of-living-things/why-we-classify-living-things
+LESSON = "biology/classification-of-living-things/why-we-classify-living-things"
 
 RANKS = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"]
 HUMAN = ["Animalia", "Chordata", "Mammalia", "Primates", "Hominidae", "Homo", "sapiens"]

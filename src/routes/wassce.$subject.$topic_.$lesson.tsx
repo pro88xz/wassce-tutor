@@ -14,7 +14,7 @@ import { SubjectIcon } from '@/components/SubjectIcon'
 import { subjectTheme } from '@/lib/subject-theme'
 import { displayName, tutorPagePath } from '@/lib/tutor-profile'
 import { useSyncExternalStore } from 'react'
-import { fetchLessonVideo, startParam, videoJsonLd } from '@/lib/lesson-video'
+import { fetchLessonVideo, startParam, useLessonVideo, videoJsonLd } from '@/lib/lesson-video'
 import { LessonVideoPlayer } from '@/components/video/LessonVideoPlayer'
 import { VideoTranscript } from '@/components/video/VideoTranscript'
 
@@ -91,7 +91,11 @@ const noChange = () => () => {}
 
 function PublicLessonPage() {
   const data = Route.useLoaderData()
-  const { subject, topic, lesson, questionCount, keyTermCount, video } = data
+  const { subject, topic, lesson, questionCount, keyTermCount } = data
+  // Published after this page was built: shown at once, read in the browser
+  // (its search markup arrives with the next build).
+  const { data: lateVideo } = useLessonVideo(data.video ? null : lesson.id)
+  const video = data.video ?? lateVideo ?? null
   // A key moment in search links here with ?t=<seconds>: the player starts there.
   // (Read after hydration: the prerendered page has no address bar.)
   const startAt = startParam(useSyncExternalStore(noChange, () => window.location.search, () => ''))

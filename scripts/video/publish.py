@@ -17,6 +17,11 @@ in .video-build/<id>/<revision>/, which is never committed:
   /api/video?op=file, so Google can index the video and show its key moments.
 - thumb.jpg, captions.vtt, timing.json: public; the lesson page shows them.
 
+Each video belongs to one lesson page: LESSON = "subject/topic/lesson" in the
+script (the page's address after /wassce/), or else its note's entry in
+content/notes/manifest.json. Every video's lesson is found before anything is
+rendered, and a video whose lesson is missing does not stop the others.
+
 `publish` builds every video whose revision (its script, the renderer's
 VERSION and the voice) differs from the one in the database, uploads it and
 records it. Segments and the preview go to the private bucket lesson-video;
@@ -112,7 +117,6 @@ def build(script: Path) -> tuple[Path, dict]:
     meta = {
         "id": vid,
         "revision": rev,
-        "note": getattr(lesson, "NOTE", f"{vid}.md"),
         "title": lesson.TITLE,
         "description": lesson.DESCRIPTION,
         **timing,
@@ -183,29 +187,45 @@ def slug_of(title: str) -> str:
     return re.sub(r"-+", "-", s).strip("-")
 
 
-def lesson_id(db: Supabase, note: str) -> str:
-    """The lesson a video belongs to: its note's entry in content/notes/manifest.json."""
+class NoLesson(Exception):
+    pass
+
+
+def lesson_path(script: Path) -> str:
+    """The lesson page a video belongs to, as "subject/topic/lesson" (its address
+    after /wassce/): LESSON in the script, or else its note's entry in
+    content/notes/manifest.json."""
+    m = re.search(r'^LESSON\s*=\s*"([a-z0-9-]+/[a-z0-9-]+/[a-z0-9-]+)"', script.read_text(), re.M)
+    if m:
+        return m.group(1)
+    note = re.search(r'^NOTE\s*=\s*"([^"]+)"', script.read_text(), re.M)
+    note = note.group(1) if note else f"{script.stem}.md"
     manifest = json.loads((NOTES / "manifest.json").read_text())
     entry = next((e for e in manifest["lessons"] if e["file"] == note), None)
     if not entry:
-        raise SystemExit(f"{note} is not in content/notes/manifest.json: set NOTE in the video script")
+        raise NoLesson(f"{note} is not in content/notes/manifest.json: set LESSON in the video script")
+    subject = entry["subject"].lower().replace(" ", "-")
+    return f"{subject}/{entry['topic']}/{entry.get('slug') or slug_of(entry['title'])}"
+
+
+def lesson_id(db: Supabase, path: str) -> str:
+    """The published lesson at /wassce/<path>."""
     q = urllib.parse.quote
-    subject = db.rows("subjects", f"select=id&name=eq.{q(entry['subject'])}")
+    subject_slug, topic_slug, lesson_slug = path.split("/")
+    subject = db.rows("subjects", f"select=id&slug=eq.{q(subject_slug)}")
     if not subject:
-        raise SystemExit(f"{note}: subject {entry['subject']!r} not found")
-    topic = db.rows("topics", f"select=id&subject_id=eq.{subject[0]['id']}&slug=eq.{q(entry['topic'])}")
+        raise NoLesson(f"{path}: no subject {subject_slug!r}")
+    topic = db.rows("topics", f"select=id&subject_id=eq.{subject[0]['id']}&slug=eq.{q(topic_slug)}")
     if not topic:
-        raise SystemExit(f"{note}: topic {entry['topic']!r} not found")
-    slug = entry.get("slug") or slug_of(entry["title"])
-    lesson = db.rows("lessons", f"select=id&topic_id=eq.{topic[0]['id']}&slug=eq.{q(slug)}&is_published=eq.true")
+        raise NoLesson(f"{path}: no topic {topic_slug!r}")
+    lesson = db.rows("lessons", f"select=id&topic_id=eq.{topic[0]['id']}&slug=eq.{q(lesson_slug)}&is_published=eq.true")
     if not lesson:
-        raise SystemExit(f"{note}: no published lesson {slug!r} in {entry['topic']}")
+        raise NoLesson(f"{path}: no published lesson {lesson_slug!r} (set LESSON to the lesson page's address)")
     return lesson[0]["id"]
 
 
-def publish(db: Supabase, out: Path, meta: dict):
+def publish(db: Supabase, out: Path, meta: dict, lid: str):
     vid, rev = meta["id"], meta["revision"]
-    lid = lesson_id(db, meta["note"])
     prefix = f"{vid}/{rev}/"
     segments = sorted(out.glob("s*.ts"))
     for seg in segments:
@@ -282,9 +302,19 @@ def main():
     live = {r["id"]: r["revision"] for r in db.rows("lesson_videos", "select=id,revision")}
     todo = [s for s in scripts(args.ids) if args.force or live.get(s.stem) != bv.revision(s)]
     print(f"{len(todo)} video(s) to publish" + (f": {', '.join(s.stem for s in todo)}" if todo else ""))
+    # Find every video's lesson first: a wrong address fails in seconds, not after a render.
+    lessons, failed = {}, []
     for s in todo:
+        try:
+            lessons[s] = lesson_id(db, lesson_path(s))
+        except NoLesson as e:
+            failed.append(s.stem)
+            print(f"NOT PUBLISHED {s.stem}: {e}")
+    for s in [s for s in todo if s in lessons]:
         out, meta = build(s)
-        publish(db, out, meta)
+        publish(db, out, meta, lessons[s])
+    if failed:
+        raise SystemExit(f"{len(failed)} video(s) not published: {', '.join(failed)}")
 
 
 if __name__ == "__main__":

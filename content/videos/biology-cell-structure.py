@@ -15,6 +15,8 @@ DESCRIPTION = ("Watch the animal cell and plant cell drawn and labelled on the c
                "organelle, cell theory, the differences WASSCE asks for, and specialised cells: root hair, red blood "
                "cell and sperm.")
 LABEL = "WASSCE Tutor  ·  Biology  ·  Cell structure"
+# The lesson page this video is on: /wassce/biology/cell-structure/animal-cells-and-plant-cells-under-the-microscope
+LESSON = "biology/cell-structure/animal-cells-and-plant-cells-under-the-microscope"
 
 WRONG_X = 70 + text_width("Wrong:   ", 28)
 

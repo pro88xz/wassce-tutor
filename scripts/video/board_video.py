@@ -372,6 +372,8 @@ PRONOUNCE = {
     "Hominidae": "hɒmˈɪnɪdiː",
     "Zea": "zˈiːə",
     "mays": "mˈAz",
+    "organisation": "ˌɔːɡənIzˈAʃən",
+    "organised": "ˈɔːɡənIzd",
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)

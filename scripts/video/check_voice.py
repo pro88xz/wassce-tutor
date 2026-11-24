@@ -32,7 +32,8 @@ SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "am
         "centre": "center", "colour": "color", "fibre": "fiber", "favour": "favor", "programme": "program",
         "organisation": "organization",
         # homophones and rare names the recogniser spells its own way
-        "maize": "maze", "mays": "maze", "zea": "zia", "protoctista": "protoctyster"}
+        "maize": "maze", "mays": "maze", "zea": "zia", "protoctista": "protoctyster",
+        "mesophyll": "messiful"}
 
 
 def norm(words: list[str]) -> list[str]:
