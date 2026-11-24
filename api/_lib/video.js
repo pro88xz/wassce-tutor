@@ -39,6 +39,8 @@ import crypto from 'node:crypto'
 import dns from 'node:dns'
 
 export const TOKEN_TTL_S = 5 * 60
+export const DOWNLOAD_URL_S = 10 * 60 // a subscriber's download address lasts ten minutes
+export const DOWNLOADS_PER_DAY = 40 // per subscriber, per server instance: a brake on account sharing
 export const SEGMENT_URL_EXTRA_S = 3 * 60 * 60 // segment addresses last the video's length plus this
 export const PRIVATE_BUCKET = 'lesson-video'
 const ID = /^[a-z0-9][a-z0-9-]{2,79}$/
@@ -161,6 +163,49 @@ export async function isGooglebot(ip, resolver = dns.promises) {
   return false
 }
 
+// ── People, not programs: Cloudflare Turnstile ───────────────────────────────
+//
+// With TURNSTILE_SECRET_KEY set, a video starts only for a browser that has
+// passed Cloudflare's invisible check: the player sends the check's one-time
+// token with op=start, and it is confirmed here with Cloudflare. A download
+// tool or script cannot get a viewing token at all. Without the key nothing
+// changes (the check is off).
+
+const SITEVERIFY = 'https://challenges.cloudflare.com/turnstile/v0/siteverify'
+
+/** A function (token, ip) -> whether Cloudflare confirms a person, or null when the check is off. */
+export function turnstileVerifier(secretKey, fetchFn = fetch, log = console.error) {
+  if (!secretKey) return null
+  return async (token, ip) => {
+    if (typeof token !== 'string' || !token || token.length > 2048) return false
+    try {
+      const res = await fetchFn(SITEVERIFY, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ secret: secretKey, response: token, ...(ip ? { remoteip: ip } : {}) }),
+        signal: AbortSignal.timeout(5000),
+      })
+      if (res.status >= 500) throw new Error(`siteverify ${res.status}`)
+      const out = await res.json()
+      return out?.success === true
+    } catch (e) {
+      // Cloudflare unreachable: let viewers through rather than stop every video.
+      log(`[video] Turnstile check skipped: ${e}`)
+      return true
+    }
+  }
+}
+
+// Downloads per subscriber, per server instance.
+const downloads = new Map()
+function tooManyDownloads(userId, now = Date.now()) {
+  const recent = (downloads.get(userId) || []).filter((t) => now - t < 86_400_000)
+  recent.push(now)
+  downloads.set(userId, recent)
+  if (downloads.size > 20000) downloads.clear()
+  return recent.length > DOWNLOADS_PER_DAY
+}
+
 // ── Requests ─────────────────────────────────────────────────────────────────
 
 const SITE = () => (process.env.SITE_URL || 'https://wasscetutor.com').replace(/\/$/, '')
@@ -176,7 +221,7 @@ export function allowedOrigin(origin, site = SITE()) {
 function cors(request) {
   const origin = allowedOrigin(request.headers.get('origin'))
   return origin
-    ? { 'Access-Control-Allow-Origin': origin, 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', 'Access-Control-Allow-Headers': 'content-type, x-video-token', 'Access-Control-Max-Age': '600', Vary: 'Origin' }
+    ? { 'Access-Control-Allow-Origin': origin, 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', 'Access-Control-Allow-Headers': 'content-type, x-video-token, authorization', 'Access-Control-Max-Age': '600', Vary: 'Origin' }
     : { Vary: 'Origin' }
 }
 
@@ -220,8 +265,11 @@ function tooMany(ip, now = Date.now()) {
  *   store.video(id)            -> { id, revision, playlist, storage_prefix, duration_s } | null (published only)
  *   store.key(id, revision)    -> key hex | null
  *   store.sign(paths, seconds) -> Map(path -> absolute signed URL)
+ *   store.account(accessToken) -> { id, subscribed } | null (a signed-in user, from their Supabase token)
+ *   store.download(path, seconds, filename) -> signed URL that downloads the file | null (no such file)
+ * human: turnstileVerifier(...) or null (the people check is off).
  */
-export function videoHandler({ store, secret, resolver = dns.promises, log = console.log }) {
+export function videoHandler({ store, secret, resolver = dns.promises, log = console.log, human = null }) {
   async function handle(request) {
     if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors(request) })
     const url = new URL(request.url)
@@ -236,12 +284,34 @@ export function videoHandler({ store, secret, resolver = dns.promises, log = con
       const body = await request.json().catch(() => ({}))
       const id = typeof body?.video === 'string' ? body.video : ''
       if (!ID.test(id)) return refuse(request, 400, 'bad_request')
+      // A person in a browser, confirmed by Cloudflare, before anything else is looked up.
+      if (human && !(await human(body.human, ip))) return refuse(request, 403, 'not_a_person')
       const video = await store.video(id)
       if (!video) return refuse(request, 404, 'not_found')
       const { token, payload } = issueToken(secret, { video: id, revision: video.revision, ip })
       const code = viewerCode(payload.n)
       log(`[video] start ${id}@${video.revision} viewer=${code} net=${networkOf(ip)}`)
       return reply(request, { token, mask: keyMask(secret, payload.n).toString('hex'), viewer: code, expires: payload.e }, 200)
+    }
+
+    if (op === 'download' && request.method === 'POST') {
+      // Downloading is for subscribers: checked here, on the server, for every
+      // request, whatever sends it. The file comes from a ten-minute address.
+      if (!fromOurPlayer(request) || !allowedOrigin(request.headers.get('origin'))) return refuse(request)
+      const auth = request.headers.get('authorization') || ''
+      const account = auth.startsWith('Bearer ') ? await store.account(auth.slice(7).trim()) : null
+      if (!account) return refuse(request, 401, 'sign_in')
+      if (!account.subscribed) return refuse(request, 402, 'subscribe')
+      if (tooManyDownloads(account.id)) return refuse(request, 429, 'slow_down')
+      const body = await request.json().catch(() => ({}))
+      const id = typeof body?.video === 'string' ? body.video : ''
+      if (!ID.test(id)) return refuse(request, 400, 'bad_request')
+      const video = await store.video(id)
+      if (!video) return refuse(request, 404, 'not_found')
+      const link = await store.download(`${video.storage_prefix}download.mp4`, DOWNLOAD_URL_S, `wasscetutor-${id}.mp4`)
+      if (!link) return refuse(request, 409, 'not_ready')
+      log(`[video] download ${id}@${video.revision} user=${account.id} net=${networkOf(ip)}`)
+      return reply(request, { url: link }, 200)
     }
 
     const id = url.searchParams.get('v') || ''
@@ -299,6 +369,19 @@ export function supabaseStore(client, now = () => Date.now()) {
       const { data, error } = await client.storage.from(PRIVATE_BUCKET).createSignedUrls(paths, seconds)
       if (error) throw new Error(`signing failed: ${error.message}`)
       return new Map(data.filter((d) => d.signedUrl).map((d) => [d.path, d.signedUrl]))
+    },
+    // A subscriber: an admin, or a plan that is active and has not ended (as src/lib/access.ts).
+    async account(accessToken) {
+      if (!accessToken) return null
+      const { data, error } = await client.auth.getUser(accessToken)
+      if (error || !data?.user) return null
+      const { data: p } = await client.from('profiles').select('is_admin, subscription_active, subscription_expires_at').eq('id', data.user.id).maybeSingle()
+      const ends = p?.subscription_expires_at ? Date.parse(p.subscription_expires_at) : 0
+      return { id: data.user.id, subscribed: Boolean(p && (p.is_admin || (p.subscription_active && ends > now()))) }
+    },
+    async download(path, seconds, filename) {
+      const { data, error } = await client.storage.from(PRIVATE_BUCKET).createSignedUrl(path, seconds, { download: filename })
+      return error || !data?.signedUrl ? null : data.signedUrl
     },
   }
 }

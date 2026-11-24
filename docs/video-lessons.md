@@ -25,6 +25,16 @@ another one. How to write, check and publish a video: `scripts/video/README.md`.
 - **Physics**: the physics session, topic by topic in syllabus order (physical
   quantities and units first), plus `physics-waves-1`.
 
+## Downloads and the people check
+
+- **Downloads are for subscribers only**, checked on the server for every request
+  (`/api/video?op=download`). The player shows a Download button marked
+  "Subscribers"; anyone else is offered a subscription. Every video has a
+  private `download.mp4`, made by the publisher (see `scripts/video/README.md`).
+- **Cloudflare Turnstile** stops download tools and scripts from starting a video.
+  It is off until `VITE_TURNSTILE_SITE_KEY` and `TURNSTILE_SECRET_KEY` are set in
+  Vercel.
+
 ## One teacher's voice per subject
 
 As in a school, every subject has its own teacher, so a student moving between

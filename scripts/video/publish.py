@@ -15,6 +15,8 @@ in .video-build/<id>/<revision>/, which is never committed:
   (lesson_video_keys, readable by the server only) and nowhere else.
 - preview.mp4: a small plain copy that only Google's crawler is given, through
   /api/video?op=file, so Google can index the video and show its key moments.
+- download.mp4: the full video, for subscribers to keep. /api/video?op=download
+  gives a ten-minute address to it, and only to a signed-in subscriber.
 - thumb.jpg, captions.vtt, timing.json: public; the lesson page shows them.
 
 Each video belongs to one lesson page: LESSON = "subject/topic/lesson" in the
@@ -24,7 +26,9 @@ rendered, and a video whose lesson is missing does not stop the others.
 
 `publish` builds every video whose revision (its script, the renderer's
 VERSION and the voice) differs from the one in the database, uploads it and
-records it. Segments and the preview go to the private bucket lesson-video;
+records it, then gives every live video that lacks one its download.mp4 (made
+from its own encrypted segments, without rendering again). Segments, the
+preview and the download go to the private bucket lesson-video;
 the thumbnail and captions to the public bucket lesson-video-public. Old
 revisions are removed once the new one is recorded. Needs SUPABASE_URL and
 SUPABASE_SECRET_KEY (the service role key): the workflow
@@ -38,6 +42,7 @@ import json
 import os
 import re
 import subprocess
+import tempfile
 import sys
 import urllib.error
 import urllib.parse
@@ -93,6 +98,25 @@ def package(mp4: Path, out: Path):
         "-c:a", "aac", "-b:a", "48k", "-ac", "1", "-movflags", "+faststart", str(out / "preview.mp4"))
 
 
+def mp4_from_hls(playlist: str, segments: Path, key_hex: str, dest: Path):
+    """The plain MP4 of an encrypted HLS video: decrypted and joined, not re-encoded."""
+    with tempfile.TemporaryDirectory() as tmp:
+        keyfile = Path(tmp) / "key.bin"
+        keyfile.write_bytes(bytes.fromhex(key_hex))
+        lines = [ln.replace('URI="KEY"', f'URI="{keyfile}"') if ln.startswith("#EXT-X-KEY") else
+                 (str(segments / ln) if ln and not ln.startswith("#") else ln) for ln in playlist.splitlines()]
+        local = Path(tmp) / "local.m3u8"
+        local.write_text("\n".join(lines) + "\n")
+        run("ffmpeg", "-v", "error", "-y", "-allowed_extensions", "ALL", "-i", str(local),
+            "-c", "copy", "-movflags", "+faststart", str(dest))
+
+
+def duration_of(path: Path) -> float:
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                         capture_output=True, text=True, check=True).stdout
+    return float(out.strip())
+
+
 def build(script: Path) -> tuple[Path, dict]:
     import board_video as bv
     lesson = bv.load(script)
@@ -113,7 +137,7 @@ def build(script: Path) -> tuple[Path, dict]:
     mp4.with_suffix(".jpg").rename(out / "thumb.jpg")
     mp4.with_suffix(".vtt").rename(out / "captions.vtt")
     mp4.with_suffix(".json").rename(out / "timing.json")
-    mp4.unlink()
+    mp4.rename(out / "download.mp4")   # the subscribers' copy
     meta = {
         "id": vid,
         "revision": rev,
@@ -164,6 +188,17 @@ class Supabase:
     def upload(self, bucket: str, path: str, file: Path, content_type: str, cache: str):
         self.call("POST", f"/storage/v1/object/{bucket}/{urllib.parse.quote(path)}", raw=file.read_bytes(),
                   headers={"Content-Type": content_type, "x-upsert": "true", "cache-control": cache})
+
+    def fetch(self, bucket: str, path: str) -> bytes:
+        req = urllib.request.Request(f"{self.url}/storage/v1/object/{bucket}/{urllib.parse.quote(path)}",
+                                     headers={"apikey": self.key, "Authorization": f"Bearer {self.key}"})
+        for attempt in range(4):
+            try:
+                with urllib.request.urlopen(req, timeout=120) as r:
+                    return r.read()
+            except (urllib.error.HTTPError, urllib.error.URLError) as e:
+                if attempt == 3 or (isinstance(e, urllib.error.HTTPError) and e.code < 500):
+                    raise SystemExit(f"GET {bucket}/{path}: {e}")
 
     def listing(self, bucket: str, prefix: str) -> list[str]:
         names, offset = [], 0
@@ -239,9 +274,12 @@ def publish(db: Supabase, out: Path, meta: dict, lid: str):
     vid, rev = meta["id"], meta["revision"]
     prefix = f"{vid}/{rev}/"
     segments = sorted(out.glob("s*.ts"))
+    if not (out / "download.mp4").exists():   # built before downloads existed
+        mp4_from_hls((out / "index.m3u8").read_text(), out, (out / "key.hex").read_text().strip(), out / "download.mp4")
     for seg in segments:
         db.upload(PRIVATE, prefix + seg.name, seg, "video/mp2t", "max-age=31536000, immutable")
     db.upload(PRIVATE, prefix + "preview.mp4", out / "preview.mp4", "video/mp4", "max-age=86400")
+    db.upload(PRIVATE, prefix + "download.mp4", out / "download.mp4", "video/mp4", "max-age=86400")
     db.upload(PUBLIC, f"thumbs/{vid}-{rev}.jpg", out / "thumb.jpg", "image/jpeg", "max-age=31536000, immutable")
     db.upload(PUBLIC, f"captions/{vid}-{rev}.vtt", out / "captions.vtt", "text/vtt", "max-age=31536000, immutable")
     public = f"{db.url}/storage/v1/object/public/{PUBLIC}"
@@ -268,12 +306,40 @@ def publish(db: Supabase, out: Path, meta: dict, lid: str):
     if stale:
         db.remove(PRIVATE, stale)
     db.call("DELETE", f"/rest/v1/lesson_video_keys?video_id=eq.{vid}&revision=neq.{rev}")
-    # The live revision must be whole: every segment and the preview, still there.
+    # The live revision must be whole: every segment, the preview and the download, still there.
     have = {p.rsplit("/", 1)[-1] for p in db.listing(PRIVATE, prefix)}
-    missing = [n for n in [s.name for s in segments] + ["preview.mp4"] if n not in have]
+    missing = [n for n in [s.name for s in segments] + ["preview.mp4", "download.mp4"] if n not in have]
     if missing:
         raise SystemExit(f"{vid}: {len(missing)} published files are missing from storage ({', '.join(missing[:3])}...)")
     print(f"published {vid} ({rev}): {len(segments)} encrypted segments, checked in storage; removed {len(stale)} old files")
+
+
+def backfill_downloads(db: Supabase) -> int:
+    """Every live video gets its download.mp4: one published before downloads
+    existed has it made from its own encrypted segments and key (decrypted and
+    joined, the same frames, nothing rendered again), checked and uploaded."""
+    made = 0
+    for row in db.rows("lesson_videos", "select=id,revision,playlist,storage_prefix,duration_s&is_published=eq.true"):
+        vid, rev, prefix = row["id"], row["revision"], row["storage_prefix"]
+        have = {p.rsplit("/", 1)[-1] for p in db.listing(PRIVATE, prefix)}
+        if "download.mp4" in have:
+            continue
+        keys = db.rows("lesson_video_keys", f"select=key_hex&video_id=eq.{vid}&revision=eq.{rev}")
+        if not keys:
+            print(f"no download for {vid}: its key is missing")
+            continue
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            for name in [ln for ln in row["playlist"].splitlines() if ln and not ln.startswith("#")]:
+                (folder / name).write_bytes(db.fetch(PRIVATE, prefix + name))
+            dest = folder / "download.mp4"
+            mp4_from_hls(row["playlist"], folder, keys[0]["key_hex"], dest)
+            if abs(duration_of(dest) - float(row["duration_s"])) > 1.5:
+                raise SystemExit(f"{vid}: the download made from its segments is {duration_of(dest):.1f} s, not {row['duration_s']} s")
+            db.upload(PRIVATE, prefix + "download.mp4", dest, "video/mp4", "max-age=86400")
+        made += 1
+        print(f"download made for {vid} ({rev})")
+    return made
 
 
 def ready(script: Path) -> bool:
@@ -303,6 +369,7 @@ def main():
     p = sub.add_parser("publish", help="build and publish the videos whose scripts changed")
     p.add_argument("ids", nargs="*")
     p.add_argument("--force", action="store_true", help="rebuild and republish even if unchanged")
+    sub.add_parser("downloads", help="give every live video its subscriber download (no rendering)")
     args = ap.parse_args()
 
     if args.cmd == "build":
@@ -312,6 +379,9 @@ def main():
 
     import board_video as bv
     db = Supabase()
+    if args.cmd == "downloads":
+        print(f"{backfill_downloads(db)} download(s) made")
+        return
     live = {r["id"]: r["revision"] for r in db.rows("lesson_videos", "select=id,revision")}
     todo = [s for s in scripts(args.ids) if args.force or live.get(s.stem) != bv.revision(s)]
     print(f"{len(todo)} video(s) to publish" + (f": {', '.join(s.stem for s in todo)}" if todo else ""))
@@ -326,6 +396,7 @@ def main():
     for s in [s for s in todo if s in lessons]:
         out, meta = build(s)
         publish(db, out, meta, lessons[s])
+    print(f"{backfill_downloads(db)} download(s) made for videos published before downloads")
     if failed:
         raise SystemExit(f"{len(failed)} video(s) not published: {', '.join(failed)}")
 

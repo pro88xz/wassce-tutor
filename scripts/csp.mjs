@@ -31,6 +31,12 @@ const GA_CONNECT = ['https://*.google-analytics.com', 'https://*.analytics.googl
 const ADS = ['https://*.googlesyndication.com', 'https://*.doubleclick.net', 'https://*.adtrafficquality.google', 'https://fundingchoicesmessages.google.com']
 const ADS_SCRIPT = [...ADS, 'https://*.googletagservices.com', 'https://adservice.google.com']
 const ADS_FRAME = [...ADS, 'https://www.google.com']
+/**
+ * Cloudflare Turnstile (src/lib/turnstile.ts): the check that a person, not a
+ * download tool, pressed play on a lesson video. Its script and its frame come
+ * from here (developers.cloudflare.com/turnstile/reference/content-security-policy).
+ */
+const TURNSTILE = 'https://challenges.cloudflare.com'
 
 const BASE = {
   'default-src': ["'self'"],
@@ -41,7 +47,7 @@ const BASE = {
   'font-src': ["'self'", 'data:'],
   // KaTeX positions maths with inline styles.
   'style-src': ["'self'", "'unsafe-inline'", GOOGLE],
-  'frame-src': [GOOGLE, ...ADS_FRAME],
+  'frame-src': [GOOGLE, ...ADS_FRAME, TURNSTILE],
   'worker-src': ["'self'", 'blob:'],
   'manifest-src': ["'self'"],
   // Pronunciation and listening clips (public/audio), which the Android app loads from the site.
@@ -61,7 +67,7 @@ const serialise = (directives) =>
 export function headerPolicy() {
   return serialise({
     ...BASE,
-    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT, ...ADS_SCRIPT],
+    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT, ...ADS_SCRIPT, TURNSTILE],
     // Header-only directives: a <meta> policy cannot carry these.
     'frame-ancestors': ["'none'"],
     'upgrade-insecure-requests': [],
@@ -81,7 +87,7 @@ export function pagePolicy(html) {
   for (const [, attrs, body] of html.matchAll(INLINE_SCRIPT)) {
     if (isExecutable(attrs) && body.length > 0) hashes.add(`'sha256-${crypto.createHash('sha256').update(body, 'utf8').digest('base64')}'`)
   }
-  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT, ...ADS_SCRIPT] })
+  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT, ...ADS_SCRIPT, TURNSTILE] })
 }
 
 const META = /<meta http-equiv="Content-Security-Policy"[^>]*>/i

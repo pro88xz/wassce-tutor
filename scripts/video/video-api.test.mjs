@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import {
-  issueToken, keyMask, maskKey, networkOf, readToken, segmentNames, tokenSecret, videoHandler, viewerCode, viewerPlaylist,
+  issueToken, keyMask, maskKey, networkOf, readToken, segmentNames, tokenSecret, turnstileVerifier, videoHandler, viewerCode, viewerPlaylist,
 } from '../../api/_lib/video.js'
 
 const secret = tokenSecret({ SUPABASE_SECRET_KEY: 'sb_secret_test' })
@@ -114,4 +114,77 @@ test('the plain copy is for Google\'s verified crawler only', async () => {
   assert.match(g.headers.get('location'), /preview\.mp4/)
   assert.equal((await handle(req(`/api/video?op=file&v=${VIDEO.id}`, { ip: '6.6.6.6', headers: { 'user-agent': 'Googlebot/2.1' } }))).status, 403, 'pretends to be Google')
   assert.equal((await handle(req(`/api/video?op=file&v=${VIDEO.id}`))).status, 403)
+})
+
+// ── Subscribers' downloads ───────────────────────────────────────────────────
+
+const ACCOUNTS = { 'token-subscriber': { id: 'u-sub', subscribed: true }, 'token-free': { id: 'u-free', subscribed: false } }
+const FILES = new Set([`${VIDEO.storage_prefix}download.mp4`])
+const shop = {
+  ...store,
+  account: async (t) => ACCOUNTS[t] ?? null,
+  download: async (path, seconds, name) => (FILES.has(path) ? `https://store.example/sign/${path}?exp=${seconds}&download=${name}` : null),
+}
+const handleShop = videoHandler({ store: shop, secret, resolver: google, log: () => {} })
+const download = (auth, { video = VIDEO.id, origin = SITE, extra = {} } = {}) =>
+  handleShop(req('/api/video?op=download', {
+    method: 'POST',
+    headers: { origin, 'content-type': 'application/json', 'sec-fetch-site': 'same-origin', 'sec-fetch-dest': 'empty', ...(auth ? { authorization: `Bearer ${auth}` } : {}), ...extra },
+    body: { video },
+  }))
+
+test('downloads: only a subscriber gets a file, from a ten-minute address', async () => {
+  assert.equal((await download(null)).status, 401, 'signed out')
+  assert.equal((await download('token-forged')).status, 401, 'a made-up token')
+  const free = await download('token-free')
+  assert.equal(free.status, 402)
+  assert.equal((await free.json()).code, 'subscribe')
+  const ok = await download('token-subscriber')
+  assert.equal(ok.status, 200)
+  const { url } = await ok.json()
+  assert.match(url, /download\.mp4\?exp=600&download=wasscetutor-biology-cell-structure\.mp4$/)
+  assert.equal(ok.headers.get('cache-control'), 'no-store')
+})
+
+test('downloads: a file not yet made, another site, or an address typed in', async () => {
+  const other = { ...VIDEO, id: 'physics-waves-1', storage_prefix: 'physics-waves-1/aaaaaaaaaaaa/' }
+  const handleOther = videoHandler({ store: { ...shop, video: async (id) => (id === other.id ? other : null) }, secret, log: () => {} })
+  const res = await handleOther(req('/api/video?op=download', { method: 'POST', headers: { origin: SITE, 'content-type': 'application/json', authorization: 'Bearer token-subscriber' }, body: { video: other.id } }))
+  assert.equal(res.status, 409, 'its download.mp4 is not in storage yet')
+  assert.equal((await download('token-subscriber', { origin: 'https://savefrom.example' })).status, 403, 'another site')
+  assert.equal((await download('token-subscriber', { extra: { 'sec-fetch-dest': 'document' } })).status, 403, 'opened as a page')
+  assert.equal((await download('token-subscriber', { video: '../../etc' })).status, 400)
+})
+
+// ── People, not programs ─────────────────────────────────────────────────────
+
+test('with the people check on, a video starts only with a token Cloudflare confirms', async () => {
+  const checked = []
+  const human = async (token, ip) => { checked.push([token, ip]); return token === 'cf-ok' }
+  const h = videoHandler({ store, secret, human, log: () => {} })
+  const begin = (body) => h(req('/api/video?op=start', { method: 'POST', ip: '102.68.5.5', headers: { origin: SITE, 'content-type': 'application/json', 'sec-fetch-site': 'same-origin', 'sec-fetch-dest': 'empty' }, body }))
+  const bot = await begin({ video: VIDEO.id })
+  assert.equal(bot.status, 403)
+  assert.equal((await bot.json()).code, 'not_a_person')
+  assert.equal((await begin({ video: VIDEO.id, human: 'cf-forged' })).status, 403)
+  assert.equal((await begin({ video: VIDEO.id, human: 'cf-ok' })).status, 200)
+  assert.deepEqual(checked.at(-1), ['cf-ok', '102.68.5.5'], 'checked with the viewer address')
+  assert.equal((await start('102.68.9.9')).status, 200, 'with the check off, nothing changes')
+})
+
+test('turnstileVerifier: off without a key; confirms with Cloudflare; lets viewers through if Cloudflare is down', async () => {
+  assert.equal(turnstileVerifier(''), null)
+  const sent = []
+  const cf = (answer) => async (url, init) => { sent.push([url, JSON.parse(init.body)]); return answer }
+  const yes = turnstileVerifier('secret-1', cf({ status: 200, json: async () => ({ success: true }) }))
+  assert.equal(await yes('tok', '1.2.3.4'), true)
+  assert.deepEqual(sent.at(-1), ['https://challenges.cloudflare.com/turnstile/v0/siteverify', { secret: 'secret-1', response: 'tok', remoteip: '1.2.3.4' }])
+  const no = turnstileVerifier('secret-1', cf({ status: 200, json: async () => ({ success: false, 'error-codes': ['timeout-or-duplicate'] }) }))
+  assert.equal(await no('tok', '1.2.3.4'), false)
+  assert.equal(await no('', '1.2.3.4'), false, 'no token')
+  assert.equal(await no('x'.repeat(3000), '1.2.3.4'), false, 'not a token')
+  const down = turnstileVerifier('secret-1', async () => { throw new Error('ECONNRESET') }, () => {})
+  assert.equal(await down('tok', '1.2.3.4'), true)
+  const busy = turnstileVerifier('secret-1', cf({ status: 503, json: async () => ({}) }), () => {})
+  assert.equal(await busy('tok', '1.2.3.4'), true)
 })
