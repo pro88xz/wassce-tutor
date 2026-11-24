@@ -1,29 +1,37 @@
 // The protected lesson video player. Nothing here is a video address: the
-// player asks /api/video for a short-lived viewer token, loads the encrypted
-// stream with it, and unmasks the key in memory (api/_lib/video.js explains
-// the server side). The video itself carries the WASSCE Tutor caption in every
-// frame and ends on the brand card.
+// player asks /api/video for a short-lived viewer token (after Cloudflare's
+// check that a person pressed play, when it is switched on), loads the
+// encrypted stream with it, and unmasks the key in memory (api/_lib/video.js
+// explains the server side). The video itself carries the WASSCE Tutor
+// caption in every frame and ends on the brand card.
+//
+// Downloading is for subscribers: the Download button asks the server, which
+// checks the signed-in student's plan and only then gives a ten-minute address
+// to the file. Everyone else is offered a subscription.
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { KeyboardEvent, ReactNode } from 'react'
 import { Capacitor } from '@capacitor/core'
-import { Captions, Gauge, Maximize, Minimize, Pause, Play, RotateCcw } from 'lucide-react'
+import { Captions, Download, Gauge, Lock, Maximize, Minimize, Pause, Play, RotateCcw } from 'lucide-react'
 import type Hls from 'hls.js'
 import type { HlsConfig, LoaderCallbacks, LoaderConfiguration, LoaderContext } from 'hls.js'
 import { track } from '@/lib/analytics'
 import { clock } from '@/lib/lesson-video'
 import type { LessonVideo } from '@/lib/lesson-video'
+import { supabase } from '@/lib/supabase'
+import { personToken } from '@/lib/turnstile'
 import { cn } from '@/lib/utils'
 
 const API = typeof window !== 'undefined' && Capacitor.isNativePlatform() ? 'https://wasscetutor.com' : ''
 const SPEEDS = [1, 1.25, 1.5, 0.75]
 type Phase = 'idle' | 'loading' | 'ready' | 'error' | 'unsupported'
 type Session = { token: string; mask: Uint8Array }
+type Offer = 'subscribe' | 'preparing' | 'busy' | 'failed'
 
-async function startSession(video: string): Promise<Session> {
+async function startSession(video: string, human: string | undefined): Promise<Session> {
   const res = await fetch(`${API}/api/video?op=start`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ video }),
+    body: JSON.stringify({ video, human }),
     credentials: 'omit',
   })
   if (!res.ok) throw new Error(`start ${res.status}`)
@@ -34,9 +42,39 @@ async function startSession(video: string): Promise<Session> {
 
 const isOurs = (url: string) => url.includes('/api/video?')
 
+/** Asks the server for the subscriber's download; returns what to tell the student, or null once it has started. */
+async function requestDownload(video: string): Promise<Offer | null> {
+  const { data } = await supabase.auth.getSession()
+  const token = data.session?.access_token
+  if (!token) return 'subscribe'
+  const res = await fetch(`${API}/api/video?op=download`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+    body: JSON.stringify({ video }),
+    credentials: 'omit',
+  })
+  if (res.status === 401 || res.status === 402) return 'subscribe'
+  if (res.status === 409) return 'preparing'
+  if (res.status === 429) return 'busy'
+  if (!res.ok) return 'failed'
+  const { url } = (await res.json()) as { url: string }
+  const a = document.createElement('a')
+  a.href = url
+  a.rel = 'noopener'
+  document.body.appendChild(a)
+  a.click()
+  a.remove()
+  return null
+}
+
+type Fullscreenable = HTMLVideoElement & { webkitEnterFullscreen?: () => void }
+type Lockable = ScreenOrientation & { lock?: (o: string) => Promise<void>; unlock?: () => void }
+
 export function LessonVideoPlayer({ video, startAt, className, children }: { video: LessonVideo; startAt?: number | null; className?: string; children?: ReactNode }) {
   const frame = useRef<HTMLDivElement>(null)
   const media = useRef<HTMLVideoElement>(null)
+  const humanBox = useRef<HTMLDivElement>(null)
+  const tapShowsControls = useRef(false)
   const hls = useRef<Hls | null>(null)
   const session = useRef<Session | null>(null)
   const restarts = useRef(0)
@@ -49,12 +87,18 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
   const [speed, setSpeed] = useState(1)
   const [full, setFull] = useState(false)
   const [chrome, setChrome] = useState(true)
+  const [offer, setOffer] = useState<Offer | null>(null)
+  const [fetching, setFetching] = useState(false)
   const duration = video.duration_s
 
   useEffect(() => () => hls.current?.destroy(), [])
 
   useEffect(() => {
-    const onFull = () => setFull(document.fullscreenElement === frame.current)
+    const onFull = () => {
+      const on = document.fullscreenElement === frame.current
+      setFull(on)
+      if (!on) (screen.orientation as Lockable | undefined)?.unlock?.()
+    }
     document.addEventListener('fullscreenchange', onFull)
     return () => document.removeEventListener('fullscreenchange', onFull)
   }, [])
@@ -74,7 +118,7 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
         setPhase('unsupported')
         return
       }
-      session.current = await startSession(video.id)
+      session.current = await startSession(video.id, await personToken(humanBox.current!))
       hls.current?.destroy()
 
       // Key responses are masked for this viewer: unmask them before hls.js decrypts.
@@ -164,9 +208,42 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
     if (el && phase === 'ready') el.currentTime = Math.min(Math.max(0, to), duration - 0.2)
   }
   const toggleFull = () => {
-    if (!frame.current) return
-    if (document.fullscreenElement) void document.exitFullscreen()
-    else void frame.current.requestFullscreen?.().catch(() => {})
+    const box = frame.current
+    if (!box) return
+    if (document.fullscreenElement) {
+      void document.exitFullscreen()
+    } else if (box.requestFullscreen) {
+      void box.requestFullscreen().then(() => {
+        // A phone turns the lesson sideways, so the board fills the screen.
+        if (window.matchMedia('(pointer: coarse)').matches) void (screen.orientation as Lockable | undefined)?.lock?.('landscape').catch(() => {})
+      }).catch(() => {})
+    } else {
+      // iPhone Safari can put only the video itself in full screen.
+      ;(media.current as Fullscreenable | null)?.webkitEnterFullscreen?.()
+    }
+  }
+  const download = async () => {
+    if (fetching) return
+    media.current?.pause()
+    setFetching(true)
+    track('video_download_tap', { video_id: video.id })
+    try {
+      const next = await requestDownload(video.id)
+      setOffer(next)
+      if (!next) track('video_download', { video_id: video.id })
+    } catch {
+      setOffer('failed')
+    } finally {
+      setFetching(false)
+    }
+  }
+  // On a phone, a tap while the controls are hidden only brings them back; it does not pause the lesson.
+  const onVideoClick = () => {
+    if (tapShowsControls.current) {
+      tapShowsControls.current = false
+      return
+    }
+    toggle()
   }
   const toggleCaptions = () => {
     const track = media.current?.textTracks[0]
@@ -212,7 +289,11 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
         aria-label={`Video lesson: ${video.title}`}
         onKeyDown={onKey}
         onMouseMove={() => setChrome(true)}
-        onTouchStart={() => setChrome(true)}
+        onTouchStart={() => {
+          tapShowsControls.current = playing && !chrome
+          window.setTimeout(() => (tapShowsControls.current = false), 700)
+          setChrome(true)
+        }}
         onContextMenu={(e) => e.preventDefault()}
         className={cn(
           'group relative aspect-video w-full select-none overflow-hidden bg-[#1f3229] outline-none ring-primary/60 focus-visible:ring-2',
@@ -236,7 +317,7 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
             track('video_complete', { video_id: video.id })
           }}
           onTimeUpdate={onTime}
-          onClick={toggle}
+          onClick={onVideoClick}
           onDragStart={(e) => e.preventDefault()}
         >
           {video.captions_url && <track kind="captions" srcLang="en" label="English" src={video.captions_url} />}
@@ -256,6 +337,50 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
           </button>
         )}
 
+        {phase !== 'ready' && (
+          <button
+            type="button"
+            onClick={download}
+            className="absolute right-3 top-3 z-10 inline-flex items-center gap-1.5 rounded-full bg-black/70 py-1.5 pl-2.5 pr-1.5 text-xs font-semibold text-white shadow hover:bg-black/85"
+            aria-label="Download this video (for subscribers)"
+          >
+            <Download className="h-4 w-4" aria-hidden /> Download
+            <span className="inline-flex items-center gap-0.5 rounded-full bg-[#fddd6b] px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-black">
+              <Lock className="h-2.5 w-2.5" aria-hidden /> Subscribers
+            </span>
+          </button>
+        )}
+
+        {/* Cloudflare's check appears here only in the rare case it must ask. */}
+        <div ref={humanBox} className="absolute left-1/2 top-1/2 z-40 -translate-x-1/2 -translate-y-1/2" />
+
+        {offer && (
+          <div role="dialog" aria-modal="true" aria-label="Download this video" className="absolute inset-0 z-30 flex items-center justify-center bg-black/85 p-5 text-center text-white">
+            <div className="max-w-sm space-y-3">
+              <Download className="mx-auto h-8 w-8 text-[#fddd6b]" aria-hidden />
+              {offer === 'subscribe' && (
+                <>
+                  <p className="text-lg font-bold">Subscribe to download</p>
+                  <p className="text-sm text-white/80">Subscribers can download every video lesson and watch it any time, with no data.</p>
+                </>
+              )}
+              {offer === 'preparing' && <p className="text-sm font-semibold">This video's download is being prepared. Please try again later today.</p>}
+              {offer === 'busy' && <p className="text-sm font-semibold">You have downloaded a lot of videos today. Please try again tomorrow.</p>}
+              {offer === 'failed' && <p className="text-sm font-semibold">The download could not start. Check your connection and try again.</p>}
+              <div className="flex flex-wrap justify-center gap-2 pt-1">
+                {offer === 'subscribe' && (
+                  <a href="/subscribe" className="rounded-full bg-[#fddd6b] px-5 py-2 text-sm font-bold text-black" onClick={() => track('video_download_subscribe', { video_id: video.id })}>
+                    Subscribe
+                  </a>
+                )}
+                <button type="button" onClick={() => setOffer(null)} className="rounded-full border border-white/40 px-5 py-2 text-sm font-semibold">
+                  {offer === 'subscribe' ? 'Not now' : 'Close'}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
         {phase === 'error' && (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/75 p-6 text-center text-white">
             <p className="font-semibold">The video could not load. Check your connection and try again.</p>
@@ -271,7 +396,7 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
         )}
 
         {phase === 'ready' && (
-          <div className={cn('absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/80 to-transparent px-3 pb-2 pt-8 text-white transition-opacity', chrome || !playing ? 'opacity-100' : 'opacity-0')}>
+          <div className={cn('absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/80 to-transparent px-3 pb-2 pt-8 text-white transition-opacity', chrome || !playing ? 'opacity-100' : 'pointer-events-none opacity-0')}>
             <div className="relative h-5">
               <div className="absolute inset-x-0 top-1/2 h-1 -translate-y-1/2 rounded-full bg-white/25">
                 <div className="h-full rounded-full bg-white/35" style={{ width: `${(buffered / duration) * 100}%` }} />
@@ -289,6 +414,9 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
                 onChange={(e) => seek(Number(e.target.value))}
                 aria-label="Seek"
                 aria-valuetext={`${clock(time)} of ${clock(duration)}`}
+                // inline: the site's rule that every input on a page is 2.9rem tall (for tapping)
+                // made this invisible bar cover the buttons below it
+                style={{ minHeight: 0 }}
                 className="absolute inset-0 h-5 w-full cursor-pointer opacity-0"
               />
             </div>
@@ -303,6 +431,12 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
                   <Captions className="h-5 w-5" />
                 </Control>
               )}
+              <Control label="Download (subscribers)" onClick={download}>
+                <span className="relative inline-flex">
+                  <Download className="h-5 w-5" />
+                  <Lock className="absolute -bottom-1 -right-1.5 h-3 w-3 rounded-full bg-[#fddd6b] p-[1px] text-black" />
+                </span>
+              </Control>
               <Control label={`Speed ${speed}×`} onClick={nextSpeed}>
                 <span className="flex items-center gap-0.5 text-xs font-semibold"><Gauge className="h-4 w-4" />{speed}×</span>
               </Control>

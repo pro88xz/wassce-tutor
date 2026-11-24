@@ -142,9 +142,30 @@ masked for that viewer and is unmasked in memory. The board's faint caption
 brand card. (A moving viewer code over the picture, and the site's address at
 the top of the board, were tried and removed to keep the board clean.)
 
+**People, not programs.** With Cloudflare Turnstile switched on, a video starts only
+after Cloudflare's invisible check that a person in a real browser pressed play
+(`src/lib/turnstile.ts`); the server confirms the check's one-time token with
+Cloudflare before it issues a viewing token, so a download tool or script cannot
+get one at all. Switch it on with two keys from a free Cloudflare account
+(Turnstile → add a widget for wasscetutor.com and www.wasscetutor.com, mode
+Invisible): `VITE_TURNSTILE_SITE_KEY` (the site key; a build variable) and
+`TURNSTILE_SECRET_KEY` (the secret; a server variable), both in Vercel's
+environment variables, then redeploy. Until both are set the check is off. If
+Cloudflare cannot be reached, videos still play.
+
+**Downloads are for subscribers.** The player's Download button asks
+`/api/video?op=download`, which checks the signed-in student's plan on the server
+(an admin, or a plan that is active and has not ended) and only then gives a
+ten-minute address to the full video (`download.mp4`, private). Everyone else,
+whatever tool they use, is refused, and the player offers a subscription. Each
+download is logged with the account, and a subscriber can download 40 videos a
+day. Every published video has its `download.mp4`: the publisher uploads it with
+each build, and makes it for older videos from their own encrypted segments
+(`publish.py downloads`).
+
 What this cannot do: stop someone filming or screen-recording a video they are
-allowed to watch. The caption in every frame and the end card make any such copy
-advertise WASSCE Tutor.
+allowed to watch, or a subscriber sharing a file they downloaded. The caption in
+every frame and the end card make any such copy advertise WASSCE Tutor.
 Studio-grade DRM (Widevine, FairPlay) through a paid video host is the next
 step if it is ever needed.
 

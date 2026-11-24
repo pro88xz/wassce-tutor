@@ -505,6 +505,7 @@ PRONOUNCE = {
     "keke": "kˈɛkɛ",             # the three-wheeled taxi
     "equilibrant": "ɪkwˈɪlɪbɹᵊnt",
     "Tagrin": "tˈaɡɹɪn",         # across the Sierra Leone River estuary from Freetown
+    "Makeni": "makˈɛni",
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
