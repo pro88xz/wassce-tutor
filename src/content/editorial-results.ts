@@ -15,9 +15,9 @@ const OURS = { imageCredit: 'WASSCE Tutor', imageSourceLabel: 'WASSCE Tutor' }
 export const RESULTS_POSTS: BlogPost[] = [
   {
     slug: '2026-wassce-results-sierra-leone',
-    seoTitle: '2026 WASSCE Results Sierra Leone: Pass Rate, Withheld, Top School',
+    seoTitle: '2026 WASSCE Results in Sierra Leone: Pass Rate, Top School',
     title: '2026 WASSCE Results in Sierra Leone: The Figures, the Withheld Results and What Happens Next',
-    description: 'Sierra Leone’s 2026 WASSCE results: 64.3% got five credits, 47,454 were withheld and 9.77% got an English credit. The top candidate, top school and what comes next.',
+    description: 'Sierra Leone’s 2026 WASSCE results: 64.3% got five credits, 47,454 were withheld and 9.77% got an English credit. The top candidate, top school and next steps.',
     category: 'WASSCE results',
     publishedAt: '2026-11-19',
     updatedAt: '2026-11-19',
@@ -352,9 +352,9 @@ export const RESULTS_POSTS: BlogPost[] = [
   },
   {
     slug: 'best-wassce-schools-sierra-leone',
-    seoTitle: 'Best WASSCE Schools in Sierra Leone 2026, and Every Year Since 2021',
+    seoTitle: 'Best WASSCE Schools in Sierra Leone: 2026 and Since 2021',
     title: 'The Best WASSCE Schools and Candidates in Sierra Leone, 2021 to 2026',
-    description: 'Every year’s best WASSCE school and top candidate in Sierra Leone since 2021, from the Ministry’s announcements: Awada, Kamboi, Providence, Dele-Peddle and more.',
+    description: 'The best WASSCE school and top candidate in Sierra Leone each year since 2021, from the Ministry’s announcements: Awada, Kamboi, Providence and more.',
     category: 'WASSCE results',
     publishedAt: '2026-11-19',
     updatedAt: '2026-11-19',
@@ -512,7 +512,7 @@ export const RESULTS_POSTS: BlogPost[] = [
   },
   {
     slug: 'wassce-2026-english-results-sierra-leone',
-    seoTitle: '2026 WASSCE English Results: 9.77% Credit, New University Rules',
+    seoTitle: 'WASSCE English 2026: 9.77% Credit and New University Rules',
     title: '2026 WASSCE English Results: Why Fewer Than One in Ten Got a Credit, and What Universities Are Changing',
     description: 'Only 9.77% of 2026 WASSCE candidates in Sierra Leone got an English credit. The figures, USL’s new entry rule, why results keep falling and what to do next.',
     category: 'WASSCE results',

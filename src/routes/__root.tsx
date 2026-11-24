@@ -125,6 +125,8 @@ function RootDocument({ children }: { children: ReactNode }) {
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9121922395304175"
             crossOrigin="anonymous"
+            // Auto ads' anchor banner always at the bottom of the screen, never above the page's heading.
+            data-overlays="bottom"
           />
         )}
       </head>

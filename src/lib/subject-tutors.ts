@@ -54,8 +54,8 @@ export type SubjectTutorsPage = {
   related: { slug: string; name: string; topicCount: number; tutors: number; shared: number }[]
 }
 
-/** Every active, listed tutor, newest first (what the marketplace shows). */
-async function fetchListedTutors(): Promise<Tutor[]> {
+/** Every active, listed tutor, newest first (what the marketplace shows; /tutors is built with it). */
+export async function fetchListedTutors(): Promise<Tutor[]> {
   const { data, error } = await supabase
     .from('tutors')
     .select(TUTOR_COLUMNS)

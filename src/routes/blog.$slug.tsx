@@ -6,7 +6,7 @@ import { ArticleSection, Faq, KeyFacts, Rich, Updates, longDate } from '@/compon
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
-import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, privatePageTags, SITE } from '@/lib/seo'
+import { absoluteUrl, BLOG_ID, breadcrumbJsonLd, indexablePageTags, orgRef, privatePageTags, SITE } from '@/lib/seo'
 
 export const Route = createFileRoute('/blog/$slug')({
   ssr: true,
@@ -34,10 +34,10 @@ export const Route = createFileRoute('/blog/$slug')({
         datePublished: loaderData.publishedAt,
         dateModified: loaderData.updatedAt,
         author: { '@type': 'Organization', name: 'WASSCE Tutor Editorial Desk', url: absoluteUrl('/about') },
-        publisher: { '@type': 'Organization', name: SITE.name, url: SITE.origin, logo: { '@type': 'ImageObject', url: absoluteUrl('/favicon-512.png') } },
-        mainEntityOfPage: absoluteUrl(`/blog/${loaderData.slug}`),
+        publisher: orgRef({ logo: true }),
+        mainEntityOfPage: { '@type': 'WebPage', '@id': absoluteUrl(`/blog/${loaderData.slug}`) },
         inLanguage: 'en',
-        isPartOf: { '@type': 'Blog', name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog') },
+        isPartOf: { '@type': 'Blog', '@id': BLOG_ID, name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog') },
         ...(loaderData.news ? { dateline: 'Freetown, Sierra Leone', contentLocation: { '@type': 'Country', name: 'Sierra Leone' } } : {}),
       },
       breadcrumbJsonLd([['Home','/'],['Blog','/blog'],[loaderData.title,`/blog/${loaderData.slug}`]]),
@@ -61,7 +61,7 @@ export const Route = createFileRoute('/blog/$slug')({
 function articleImagesJsonLd(post: BlogPost): Record<string, unknown>[] {
   const year = post.publishedAt.slice(0, 4)
   const ours = {
-    creator: { '@type': 'Organization', name: SITE.name, url: SITE.origin },
+    creator: orgRef(),
     creditText: SITE.name,
     copyrightNotice: `© ${year} ${SITE.name}`,
     license: absoluteUrl('/terms#content'),
