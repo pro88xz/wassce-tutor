@@ -57,6 +57,23 @@ def spoken(heard: str) -> str:
     return re.sub(r"(\d+)\.(\d+)", lambda m: f"{m.group(1)} point {' '.join(DIGITS[int(d)] for d in m.group(2))}", heard)
 
 
+def joined(words: list[str]) -> list[str]:
+    """Runs of short words joined into one: letters said one by one ("M L T",
+    "D N A", "k x") come back from the recogniser written together ("MLT").
+    Applied to both sides, it changes only spacing: a wrong or missing word in
+    a run still makes the run differ."""
+    out, run = [], ""
+    for w in words:
+        if len(w) <= 3:
+            run += w
+            continue
+        if run:
+            out.append(run)
+            run = ""
+        out.append(w)
+    return out + ([run] if run else [])
+
+
 def norm(words: list[str]) -> list[str]:
     # compounds the recogniser writes as one word ("by-product" as "byproduct")
     text = " ".join(SAME.get(w, w) for w in words)
@@ -93,7 +110,8 @@ def main():
         s.accept_waveform(16000, x16)
         rec.decode_stream(s)
         heard = s.result.text.strip()
-        score = wer(norm(reference(say)), norm(words_of(spoken(heard))))
+        said, got = norm(reference(say)), norm(words_of(spoken(heard)))
+        score = min(wer(said, got), wer(joined(said), joined(got)))
         ok = score <= MAX_WER
         failed += not ok
         print(f"{'ok ' if ok else 'BAD'} {i:2d}/{len(lines)}  {score:4.0%}  {say[:70]}")

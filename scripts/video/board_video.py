@@ -150,7 +150,7 @@ def _hand(p0, p1, wobble=1.0) -> np.ndarray:
 # ── Letters ───────────────────────────────────────────────────────────────
 _fonts: dict[str, object] = {}
 # Characters drawn from another Hershey font, and those drawn here.
-FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m")}
+FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m"), "π": ("greek", "p")}
 CAP, BASE = -12, 9            # Hershey cap line and base line
 TRACK = 0.88                  # chalk letters sit closer than Hershey spaces them
 
@@ -207,6 +207,8 @@ def text_strokes(text: str, x: float, y: float, size: float, color: str) -> tupl
     for chars, level in _runs(text):
         scale = scale0 * (0.62 if level else 1)
         lift = {1: -0.62 * size, -1: 0.28 * size, 0: 0}[level]
+        if level and chars[:1] == "-":
+            cx += 0.1 * size   # a raised minus sits at cap height: keep it off a T's bar (T^{-2})
         for ch in chars:
             glyph, adv = _glyph(ch)
             tilt = _rng.normal(0, 0.012)
