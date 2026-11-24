@@ -150,7 +150,7 @@ def _hand(p0, p1, wobble=1.0) -> np.ndarray:
 # ── Letters ───────────────────────────────────────────────────────────────
 _fonts: dict[str, object] = {}
 # Characters drawn from another Hershey font, and those drawn here.
-FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m"), "π": ("greek", "p")}
+FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m"), "π": ("greek", "p"), "Σ": ("greek", "S"), "α": ("greek", "a"), "φ": ("greek", "f")}
 CAP, BASE = -12, 9            # Hershey cap line and base line
 TRACK = 0.88                  # chalk letters sit closer than Hershey spaces them
 
@@ -173,6 +173,12 @@ def _glyph(ch: str) -> tuple[list[np.ndarray], float]:
                 np.array([[9, 7], [9.5, 7.5]], float)], 18
     if ch == "·":
         return [np.array([[5, -2], [5.5, -1.5]], float)], 11
+    if ch == "°":   # a small ring at the top of the line
+        t = np.linspace(0, 2 * np.pi, 16)
+        return [np.column_stack([4.5 + 3 * np.cos(t), -9 + 3 * np.sin(t)])], 10
+    if ch == "θ":   # an upright oval with a bar: the Greek font's own is a script theta
+        t = np.linspace(-np.pi / 2, 1.5 * np.pi, 40)
+        return [np.column_stack([7 + 5.5 * np.cos(t), -1.5 + 10.5 * np.sin(t)]), np.array([[1.5, -1.5], [12.5, -1.5]], float)], 15
     name, key = FROM_FONT.get(ch, ("futural", ch))
     glyphs = list(_font(name).glyphs_for_text(key))
     if not glyphs or (not glyphs[0].strokes and ch != " "):
@@ -385,14 +391,39 @@ def frac(num: str, den: str, x: float, y: float, size: float = 30, color: str = 
     return Action(a.strokes + b.strokes + c.strokes)
 
 
+def root_width(part, size: float = 30) -> float:
+    """How wide root(part) is."""
+    inner = max(text_width(part[0], size), text_width(part[1], size)) + 16 if isinstance(part, tuple) else text_width(part, size)
+    return 44 + inner + 6
+
+
+def root(part, x: float, y: float, size: float = 30, color: str = "white") -> Action:
+    """A square root over text ("P^2 + Q^2") or over a stacked fraction (("l", "g")),
+    on the base line y from x: a chalk tick, then the bar over the top."""
+    frac_ = isinstance(part, tuple)
+    # above a fraction's numerator; above a raised power (P^2) when the text has one
+    top, bottom = (y - size * 1.95, y + size * 1.1) if frac_ else (y - size * (1.45 if "^" in part else 1.22), y + size * 0.3)
+    mid = y - size * (0.3 if frac_ else 0.35)
+    end = x + root_width(part, size) - 2
+    strokes = []
+    for a, b in (((x, mid), (x + 9, mid - 5)), ((x + 9, mid - 5), (x + 20, bottom)), ((x + 20, bottom), (x + 34, top)), ((x + 34, top), (end, top))):
+        strokes += line(*a, *b, color, max(2.8, size * 0.1)).strokes
+    inner = frac(part[0], part[1], x + 40, y, size, color) if frac_ else write(part, x + 40, y, size, color)
+    return Action(strokes + inner.strokes)
+
+
 def equation(parts, x: float, y: float, size: float = 30, color: str = "white", gap: float | None = None) -> Action:
     """A line of working with fractions in it, each part spaced from the next:
     equation(["f =", ("15", "10"), "= 1.5 Hz"], 110, 340) writes f = 15/10 = 1.5 Hz
-    with the fraction stacked. A part is text, or (numerator, denominator)."""
+    with the fraction stacked. A part is text, (numerator, denominator), or
+    {"root": text or (numerator, denominator)} for a square root."""
     gap = size * 0.5 if gap is None else gap   # wide enough that "=" never runs into a fraction bar
     strokes, cx = [], x
     for part in parts:
-        if isinstance(part, tuple):
+        if isinstance(part, dict):
+            strokes += root(part["root"], cx, y, size, color).strokes
+            cx += root_width(part["root"], size) + gap
+        elif isinstance(part, tuple):
             num, den = part
             strokes += frac(num, den, cx, y, size, color).strokes
             cx += max(text_width(num, size), text_width(den, size)) + 16 + gap
@@ -471,6 +502,9 @@ PRONOUNCE = {
     "Bumbuna": "bʊmbˈuːnə",      # the hydroelectric station in Sierra Leone
     "milli": "mˈɪli",            # the prefixes the dictionary lacks on their own
     "pico": "pˈiːkQ",
+    "keke": "kˈɛkɛ",             # the three-wheeled taxi
+    "equilibrant": "ɪkwˈɪlɪbɹᵊnt",
+    "Tagrin": "tˈaɡɹɪn",         # across the Sierra Leone River estuary from Freetown
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
