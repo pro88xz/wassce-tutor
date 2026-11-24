@@ -17,6 +17,8 @@ DESCRIPTION = ("How plants absorb water and mineral ions, on the chalkboard: roo
                "transport compared with osmosis, the path across the root to the xylem, and how xylem vessels are "
                "adapted.")
 LABEL = "WASSCE Tutor  ·  Biology  ·  Transport in plants"
+# The lesson page this video is on: /wassce/biology/transport-in-plants/transport-in-plants-absorption-of-water-and-mineral-ions
+LESSON = "biology/transport-in-plants/transport-in-plants-absorption-of-water-and-mineral-ions"
 
 
 def root_hair(dx=0, dy=0, s=1.0, width=3.6):

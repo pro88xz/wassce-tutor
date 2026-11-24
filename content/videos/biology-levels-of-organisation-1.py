@@ -15,6 +15,8 @@ DESCRIPTION = ("The levels of organisation from cell to organism, drawn on the c
                "their functions, the leaf as an organ in cross-section, organ systems working together, and why Amoeba "
                "is the exception.")
 LABEL = "WASSCE Tutor  ·  Biology  ·  Levels of organisation"
+# The lesson page this video is on: /wassce/biology/levels-of-organisation/levels-of-organisation-from-cells-to-whole-organisms
+LESSON = "biology/levels-of-organisation/levels-of-organisation-from-cells-to-whole-organisms"
 
 X = [140, 390, 640, 890, 1130]   # where each level is drawn
 Y = 300
