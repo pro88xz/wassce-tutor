@@ -41,6 +41,9 @@ def norm(words: list[str]) -> list[str]:
     text = " ".join(SAME.get(w, w) for w in words)
     for joined in ("byproduct", "bloodstream", "wellbeing"):
         text = text.replace(f"{joined[:2]} {joined[2:]}", joined)
+    # scientific words the recogniser spells by their sound (said correctly)
+    for heard, word in (("flow m", "phloem"), ("floem", "phloem"), ("flowem", "phloem")):
+        text = f" {text} ".replace(f" {heard} ", f" {word} ").strip()
     return text.split()
 
 
