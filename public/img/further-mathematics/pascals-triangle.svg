@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">Pascal&#x27;s triangle, rows 0 to 6</title>
+<desc id="d">Pascal&#x27;s triangle: each row starts and ends with 1, and every other number is the sum of the two numbers above it. Row 0 is 1; row 1 is 1 1; row 2 is 1 2 1; row 3 is 1 3 3 1; row 4 is 1 4 6 4 1; row 5 is 1 5 10 10 5 1; row 6 is 1 6 15 20 15 6 1. Row n gives the coefficients of (a + b) to the power n; for example 4 + 6 = 10 gives the 10 in row 5.</desc>
+<defs><marker id="aea580c" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ea580c"/></marker><marker id="aea580cs" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#ea580c"/></marker></defs>
+<rect width="800" height="540" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Pascal&#x27;s triangle: the coefficients of (a + b)ⁿ</text>
+<text x="70.0" y="92.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">n = 0</text>
+<circle cx="400.0" cy="92.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="400.0" y="93.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="70.0" y="154.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">n = 1</text>
+<circle cx="359.0" cy="154.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="359.0" y="155.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<circle cx="441.0" cy="154.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="441.0" y="155.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="70.0" y="216.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">n = 2</text>
+<circle cx="318.0" cy="216.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="318.0" y="217.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<circle cx="400.0" cy="216.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="400.0" y="217.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+<circle cx="482.0" cy="216.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="482.0" y="217.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="70.0" y="278.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">n = 3</text>
+<circle cx="277.0" cy="278.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="277.0" y="279.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<circle cx="359.0" cy="278.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="359.0" y="279.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<circle cx="441.0" cy="278.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="441.0" y="279.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+<circle cx="523.0" cy="278.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="523.0" y="279.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="70.0" y="340.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">n = 4</text>
+<circle cx="236.0" cy="340.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="236.0" y="341.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<circle cx="318.0" cy="340.0" r="25.0" fill="#dbeafe" stroke="#ea580c" stroke-width="2.5"/>
+<text x="318.0" y="341.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<circle cx="400.0" cy="340.0" r="25.0" fill="#dbeafe" stroke="#ea580c" stroke-width="2.5"/>
+<text x="400.0" y="341.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<circle cx="482.0" cy="340.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="482.0" y="341.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+<circle cx="564.0" cy="340.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="564.0" y="341.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="70.0" y="402.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">n = 5</text>
+<circle cx="195.0" cy="402.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="195.0" y="403.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<circle cx="277.0" cy="402.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="277.0" y="403.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<circle cx="359.0" cy="402.0" r="25.0" fill="#fef3c7" stroke="#ea580c" stroke-width="2.5"/>
+<text x="359.0" y="403.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">10</text>
+<circle cx="441.0" cy="402.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="441.0" y="403.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">10</text>
+<circle cx="523.0" cy="402.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="523.0" y="403.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">5</text>
+<circle cx="605.0" cy="402.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="605.0" y="403.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<text x="70.0" y="464.0" font-size="15" fill="#475569" text-anchor="start" dominant-baseline="middle" font-weight="normal">n = 6</text>
+<circle cx="154.0" cy="464.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="154.0" y="465.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<circle cx="236.0" cy="464.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="236.0" y="465.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<circle cx="318.0" cy="464.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="318.0" y="465.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">15</text>
+<circle cx="400.0" cy="464.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="400.0" y="465.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">20</text>
+<circle cx="482.0" cy="464.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="482.0" y="465.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">15</text>
+<circle cx="564.0" cy="464.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="564.0" y="465.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">6</text>
+<circle cx="646.0" cy="464.0" r="25.0" fill="#ffffff" stroke="#475569" stroke-width="1.5"/>
+<text x="646.0" y="465.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+<line x1="318.0" y1="366.0" x2="359.0" y2="375.0" stroke="#ea580c" stroke-width="2.2" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<line x1="400.0" y1="366.0" x2="359.0" y2="375.0" stroke="#ea580c" stroke-width="2.2" stroke-linecap="round" marker-end="url(#aea580c)"/>
+<text x="400.0" y="512.0" font-size="17" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Each number is the sum of the two above it: 4 + 6 = 10</text>
+</svg>

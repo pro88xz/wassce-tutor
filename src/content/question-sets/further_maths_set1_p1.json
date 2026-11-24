@@ -1,0 +1,1664 @@
+{
+ "name": "further_maths_set1_p1",
+ "label": "Further Mathematics: set 1 (polynomials, partial fractions, binomial theorem, logarithms, sets and functions)",
+ "subject_slug": "further-mathematics",
+ "papers": [
+  {
+   "id": "6ff97f84-1686-516c-8047-de2566e634ea",
+   "topic": "Polynomials, Theory of Equations, and Roots",
+   "title": "Polynomials, Theory of Equations, and Roots: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on polynomials, theory of equations, and roots, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 100,
+   "questions": [
+    {
+     "id": "ba8fbecb-8899-5395-bdd9-d0bff230b034",
+     "key": "fm-poly-01",
+     "stem": "Find the remainder when $2x^{3} - x^{2} + 3x - 4$ is divided by $x - 2$.",
+     "image_url": null,
+     "explanation": "Remainder theorem: the remainder on dividing by $x - 2$ is $P(2)$.\n\n$P(2) = 2(8) - 4 + 3(2) - 4 = 16 - 4 + 6 - 4 = 14$\n\n**Why the other options are wrong**\n\n- $-30$: You substituted $x = -2$. For a divisor $x - 2$, put $x = 2$, the value that makes the divisor zero.\n- $-4$: The constant term is not the remainder. The remainder theorem gives $P(2)$.\n- $62$: You evaluated $(2x)^{3}$ instead of $2x^{3}$: $2(2)^{3} = 16$, not $4^{3} = 64$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fbe53831-a642-5970-9378-7ab0d8c78f2b",
+       "label": "A",
+       "content": "$-30$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "20132db7-7a00-58b1-843a-6acb54ce7422",
+       "label": "B",
+       "content": "$-4$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "dc1bcbc6-0e71-544e-867b-768815fd4e5d",
+       "label": "C",
+       "content": "$14$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1255fedd-4caa-510a-8264-0bc492a74e21",
+       "label": "D",
+       "content": "$62$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "4bb94e35-95e9-55bb-89e0-64eb80112e8b",
+     "key": "fm-poly-02",
+     "stem": "Find the remainder when $4x^{3} + 2x^{2} - 3x + 1$ is divided by $2x - 1$.",
+     "image_url": null,
+     "explanation": "Dividing by $2x - 1$: the remainder is $P\\!\\left(\\tfrac12\\right)$.\n\n$P\\!\\left(\\tfrac12\\right) = 4\\left(\\tfrac18\\right) + 2\\left(\\tfrac14\\right) - \\tfrac32 + 1 = \\tfrac12 + \\tfrac12 - \\tfrac32 + 1 = \\tfrac12$\n\n**Why the other options are wrong**\n\n- $4$: You substituted $x = 1$. The divisor $2x - 1$ is zero when $x = \\tfrac12$.\n- $\\dfrac{5}{2}$: You substituted $x = -\\tfrac12$. $2x - 1 = 0$ gives $x = +\\tfrac12$.\n- $35$: You substituted $x = 2$, the coefficient of $x$ in the divisor, instead of solving $2x - 1 = 0$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "aa680805-e3f9-535d-b95e-a6df294e7cff",
+       "label": "A",
+       "content": "$\\dfrac{1}{2}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "d10f0860-b1ae-51d3-af6b-ec881aeaff27",
+       "label": "B",
+       "content": "$\\dfrac{5}{2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "580e1b97-11b5-51b7-9e2f-1ca5315074f0",
+       "label": "C",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "4b62163e-f60b-5a16-b214-3722f6853f7c",
+       "label": "D",
+       "content": "$35$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "cfa5c8f3-6289-531d-a648-046d9e370859",
+     "key": "fm-poly-03",
+     "stem": "If $x + 2$ is a factor of $x^{3} + kx^{2} - x - 2$, find the value of $k$.",
+     "image_url": null,
+     "explanation": "Factor theorem: $x + 2$ is a factor, so $P(-2) = 0$.\n\n$(-2)^{3} + k(-2)^{2} - (-2) - 2 = -8 + 4k + 2 - 2 = 4k - 8 = 0$, so $k = 2$.\n\n**Why the other options are wrong**\n\n- $-1$: You used $P(2) = 0$. For the factor $x + 2$, use $P(-2) = 0$.\n- $3$: You wrote $-x$ as $-2$ at $x = -2$ instead of $+2$: $-8 + 4k - 2 - 2 = 0$.\n- $-2$: You solved $4k = 8$ correctly but changed the sign at the end.",
+     "position": 3,
+     "options": [
+      {
+       "id": "4c4a8726-f4bd-510e-8ba9-c3f846ccbaf3",
+       "label": "A",
+       "content": "$-2$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d4e53b01-ca79-5ca7-b826-95813340dcef",
+       "label": "B",
+       "content": "$-1$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0019d862-89a2-5f84-8870-bb8528557efc",
+       "label": "C",
+       "content": "$2$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7b2084da-25d0-50f9-b8b6-f63b754b02a1",
+       "label": "D",
+       "content": "$3$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b1d5c501-8a25-564f-8a2d-a5ce45e69ace",
+     "key": "fm-poly-04",
+     "stem": "Find the roots of the equation $x^{3} - 6x^{2} + 11x - 6 = 0$.",
+     "image_url": null,
+     "explanation": "$P(1) = 1 - 6 + 11 - 6 = 0$, so $x - 1$ is a factor.\n\n$x^{3} - 6x^{2} + 11x - 6 = (x - 1)(x^{2} - 5x + 6) = (x - 1)(x - 2)(x - 3)$\n\nThe roots are $1$, $2$ and $3$.\n\n**Why the other options are wrong**\n\n- $-1, -2, -3$: You found the factors $(x - 1)(x - 2)(x - 3)$ but gave the roots with the wrong sign. $x - 1 = 0$ gives $x = 1$.\n- $1, 6$: You found the root 1 and then took the constant term 6 as another root, without finding the quadratic factor $x^{2} - 5x + 6$.\n- $-1, 2, 3$: $P(-1) = -1 - 6 - 11 - 6 = -24 \\ne 0$, so $-1$ is not a root. Test each candidate by substituting.",
+     "position": 4,
+     "options": [
+      {
+       "id": "d0e1a674-932f-55a0-93f0-713c7bc191f4",
+       "label": "A",
+       "content": "$1, 2, 3$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "ed9de8e9-827c-54de-b851-f75ac11426bc",
+       "label": "B",
+       "content": "$-1, -2, -3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2465e68e-f426-5f7c-96b3-b333293fe193",
+       "label": "C",
+       "content": "$1, 6$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "e6e61604-d4bc-57d3-8219-11ea484f131e",
+       "label": "D",
+       "content": "$-1, 2, 3$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c5e34cff-327e-5cb9-8431-ede525da81a8",
+     "key": "fm-poly-05",
+     "stem": "$\\alpha$ and $\\beta$ are the roots of $3x^{2} - 6x + 2 = 0$. Find the value of $\\alpha^{2} + \\beta^{2}$.",
+     "image_url": null,
+     "explanation": "$\\alpha + \\beta = -\\dfrac{b}{a} = \\dfrac{6}{3} = 2$ and $\\alpha\\beta = \\dfrac{c}{a} = \\dfrac{2}{3}$.\n\n$\\alpha^{2} + \\beta^{2} = (\\alpha + \\beta)^{2} - 2\\alpha\\beta = 4 - \\dfrac{4}{3} = \\dfrac{8}{3}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{16}{3}$: $\\alpha^{2} + \\beta^{2} = (\\alpha + \\beta)^{2} - 2\\alpha\\beta$: you added $2\\alpha\\beta$ instead of subtracting it.\n- $32$: You took $\\alpha + \\beta = 6$ and $\\alpha\\beta = 2$, forgetting to divide by $a = 3$.\n- $\\dfrac{10}{3}$: You subtracted $\\alpha\\beta$ only once: $(\\alpha + \\beta)^{2} - 2\\alpha\\beta$ needs $2\\alpha\\beta$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "b5fa92d8-9596-5616-84f2-df5daaaaa6b0",
+       "label": "A",
+       "content": "$\\dfrac{8}{3}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4077c100-4807-52c9-bed2-6871269f6730",
+       "label": "B",
+       "content": "$\\dfrac{10}{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "25e34825-a4d6-5adc-9226-e92d7ad7c45a",
+       "label": "C",
+       "content": "$\\dfrac{16}{3}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72dcb478-2b9d-5a3c-a312-569f8b2c699c",
+       "label": "D",
+       "content": "$32$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "5f34aa43-d139-5209-9adc-f3a521637c6a",
+     "key": "fm-poly-06",
+     "stem": "$\\alpha$ and $\\beta$ are the roots of $2x^{2} + 3x - 5 = 0$. Which equation has roots $\\dfrac{1}{\\alpha}$ and $\\dfrac{1}{\\beta}$?",
+     "image_url": null,
+     "explanation": "$\\alpha + \\beta = -\\dfrac{3}{2}$, $\\alpha\\beta = -\\dfrac{5}{2}$.\n\nNew sum: $\\dfrac{\\alpha + \\beta}{\\alpha\\beta} = \\dfrac{-3/2}{-5/2} = \\dfrac{3}{5}$. New product: $\\dfrac{1}{\\alpha\\beta} = -\\dfrac{2}{5}$.\n\n$x^{2} - \\dfrac35x - \\dfrac25 = 0$, that is $5x^{2} - 3x - 2 = 0$.\n\n**Why the other options are wrong**\n\n- $5x^2+3x-2=0$: The sum of the new roots is $\\dfrac{\\alpha + \\beta}{\\alpha\\beta} = \\dfrac{-3/2}{-5/2} = +\\dfrac35$, so the $x$ term is $-\\dfrac35x$: you lost a minus sign.\n- $5x^2-3x+2=0$: The product of the new roots is $\\dfrac{1}{\\alpha\\beta} = -\\dfrac25$, which is negative: you dropped its sign.\n- $2x^2-3x-5=0$: Changing the sign of the middle term gives the roots $-\\alpha$ and $-\\beta$, not their reciprocals.",
+     "position": 6,
+     "options": [
+      {
+       "id": "466c5025-506a-5275-a6f0-299e100888d7",
+       "label": "A",
+       "content": "$5x^2+3x-2=0$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1e86ec87-631d-51fe-a2ab-e6a0ad5db995",
+       "label": "B",
+       "content": "$5x^2-3x-2=0$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "a68e77cc-2859-5b49-a363-70346b9d56c4",
+       "label": "C",
+       "content": "$5x^2-3x+2=0$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "0978b70e-aca7-52eb-be7c-703a72a1ec64",
+       "label": "D",
+       "content": "$2x^2-3x-5=0$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7aa3deb3-040b-5154-b631-f2b38b9dc331",
+     "key": "fm-poly-07",
+     "stem": "$\\alpha$, $\\beta$ and $\\gamma$ are the roots of $2x^{3} - 4x^{2} + 3x - 6 = 0$. Find $\\alpha\\beta\\gamma$.",
+     "image_url": null,
+     "explanation": "For $ax^{3} + bx^{2} + cx + d = 0$: $\\alpha\\beta\\gamma = -\\dfrac{d}{a}$.\n\n$\\alpha\\beta\\gamma = -\\dfrac{-6}{2} = 3$\n\n**Why the other options are wrong**\n\n- $-3$: The product of the roots of $ax^{3} + bx^{2} + cx + d = 0$ is $-\\dfrac{d}{a} = -\\dfrac{-6}{2} = 3$: you missed the minus sign in the formula.\n- $6$: You did not divide by the leading coefficient $a = 2$.\n- $\\dfrac{3}{2}$: $\\dfrac{c}{a} = \\dfrac32$ is the sum of the products in pairs, $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha$, not the product.",
+     "position": 7,
+     "options": [
+      {
+       "id": "f67de564-fce5-5b71-a8f0-db0062aab637",
+       "label": "A",
+       "content": "$-3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "53e412a5-bedb-5e6e-8f4e-fb5cfaa8b848",
+       "label": "B",
+       "content": "$\\dfrac{3}{2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "cbe90074-28f1-5672-ad55-fbb0ada29459",
+       "label": "C",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "a9a41e5f-be53-5ef6-972c-3e25f0eb5b0c",
+       "label": "D",
+       "content": "$6$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "33e4549b-f888-562f-945a-4e0bd4e9ccb3",
+   "topic": "Rational Functions and Partial Fractions",
+   "title": "Rational Functions and Partial Fractions: practice set 1",
+   "paper_type": "Practice",
+   "description": "6 original WASSCE-style objective questions on rational functions and partial fractions, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 101,
+   "questions": [
+    {
+     "id": "ed767c9e-816c-5685-a1d6-2cf14c4b34a9",
+     "key": "fm-pf-01",
+     "stem": "Given that $\\dfrac{5x + 4}{(x - 1)(x + 2)} \\equiv \\dfrac{A}{x - 1} + \\dfrac{B}{x + 2}$, find $A$.",
+     "image_url": null,
+     "explanation": "$5x + 4 \\equiv A(x + 2) + B(x - 1)$.\n\nPut $x = 1$: $9 = 3A$, so $A = 3$. (Put $x = -2$: $-6 = -3B$, so $B = 2$.)\n\n**Why the other options are wrong**\n\n- $2$: $2$ is $B$, the numerator over $x + 2$. For $A$, put $x = 1$: $9 = 3A$.\n- $-3$: At $x = 1$, $x + 2 = 3$, not $-3$: $5(1) + 4 = A(1 + 2)$.\n- $9$: You found $5(1) + 4 = 9$ but did not divide by $x + 2 = 3$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "a7e62236-6637-5a61-b21d-74d2d1601590",
+       "label": "A",
+       "content": "$-3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "944cf2e7-7c31-575e-832d-9e7c186eb90e",
+       "label": "B",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "c989a4a7-e2f2-5270-862c-0de6460a727d",
+       "label": "C",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "7442df96-913a-5db4-ae02-2af8b8104d29",
+       "label": "D",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9f649515-203c-5be1-abf1-50793695990a",
+     "key": "fm-pf-02",
+     "stem": "$\\dfrac{7x - 1}{(x - 1)(2x + 1)} \\equiv \\dfrac{A}{x - 1} + \\dfrac{B}{2x + 1}$. Find $B$.",
+     "image_url": null,
+     "explanation": "$7x - 1 \\equiv A(2x + 1) + B(x - 1)$.\n\nPut $x = -\\tfrac12$: $-\\tfrac92 = B\\left(-\\tfrac32\\right)$, so $B = 3$. (And $x = 1$ gives $6 = 3A$, $A = 2$.)\n\n**Why the other options are wrong**\n\n- $-5$: You substituted $x = \\tfrac12$. $2x + 1 = 0$ gives $x = -\\tfrac12$.\n- $-\\dfrac{9}{2}$: You found $7\\left(-\\tfrac12\\right) - 1 = -\\tfrac92$ but did not divide by $x - 1 = -\\tfrac32$.\n- $2$: $2$ is $A$, the numerator over $x - 1$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "2aa2f4ea-22f9-5c0f-b4ac-4d16aa52f9c0",
+       "label": "A",
+       "content": "$-5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "3c2131ad-bab3-5baf-be46-ac014fcecf5b",
+       "label": "B",
+       "content": "$-\\dfrac{9}{2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b8ee37d7-eb6f-5fda-9d07-55107b73d3d8",
+       "label": "C",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "72dde625-e545-5648-9f41-6d14bbd50602",
+       "label": "D",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1848de3e-7c95-54f1-8b18-0e5e3ab9157d",
+     "key": "fm-pf-03",
+     "stem": "Which is the correct form of the partial fractions of $\\dfrac{3x + 1}{(x + 2)^{2}(x - 1)}$?",
+     "image_url": null,
+     "explanation": "Each distinct linear factor gives one fraction; a repeated factor $(x + 2)^{2}$ gives two:\n\n$\\dfrac{3x + 1}{(x + 2)^{2}(x - 1)} \\equiv \\dfrac{A}{x + 2} + \\dfrac{B}{(x + 2)^{2}} + \\dfrac{C}{x - 1}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{A}{(x + 2)^{2}} + \\dfrac{B}{x - 1}$: A repeated factor $(x + 2)^{2}$ needs two fractions, over $x + 2$ and over $(x + 2)^{2}$; with only two unknowns the identity cannot be satisfied.\n- $\\dfrac{A}{x + 2} + \\dfrac{B}{x + 2} + \\dfrac{C}{x - 1}$: The two fractions over $x + 2$ are really one fraction, $\\dfrac{A + B}{x + 2}$; the second must be over $(x + 2)^{2}$.\n- $\\dfrac{A}{x + 2} + \\dfrac{B}{x - 1}$: This ignores that $x + 2$ is repeated: with only two unknowns the identity $3x + 1 \\equiv \\dots$ cannot hold for every $x$. Add a fraction over $(x + 2)^{2}$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "a056f60b-46c9-5eab-b7ed-815e09c09ce5",
+       "label": "A",
+       "content": "$\\dfrac{A}{(x + 2)^{2}} + \\dfrac{B}{x - 1}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6871cb56-f20f-5241-9c5e-e1a62b876a0c",
+       "label": "B",
+       "content": "$\\dfrac{A}{x + 2} + \\dfrac{B}{x + 2} + \\dfrac{C}{x - 1}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0e2fbb06-f883-57e2-96f5-5c24c228348f",
+       "label": "C",
+       "content": "$\\dfrac{A}{x + 2} + \\dfrac{B}{x - 1}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b3a3be46-3f6d-5e8a-8d86-480bd6f3efd6",
+       "label": "D",
+       "content": "$\\dfrac{A}{x + 2} + \\dfrac{B}{(x + 2)^{2}} + \\dfrac{C}{x - 1}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "407a6d71-71f8-5e0a-a337-b5082a255ccc",
+     "key": "fm-pf-04",
+     "stem": "$\\dfrac{3x - 5}{(x - 1)^{2}(x + 1)} \\equiv \\dfrac{A}{x - 1} + \\dfrac{B}{(x - 1)^{2}} + \\dfrac{C}{x + 1}$. Find $B$.",
+     "image_url": null,
+     "explanation": "$3x - 5 \\equiv A(x - 1)(x + 1) + B(x + 1) + C(x - 1)^{2}$.\n\nPut $x = 1$: $-2 = 2B$, so $B = -1$. (Then $x = -1$ gives $C = -2$, and the $x^{2}$ terms give $A = 2$.)\n\n**Why the other options are wrong**\n\n- $1$: At $x = 1$: $3 - 5 = -2 = 2B$, so $B = -1$; you lost the sign of $-2$.\n- $2$: $2$ is $A$, found by comparing the coefficients of $x^{2}$.\n- $-2$: $-2$ is $C$, found by putting $x = -1$: $-8 = 4C$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "c5a49ce2-d90c-5bc5-945c-4aa897bbb988",
+       "label": "A",
+       "content": "$-2$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1ce32c6c-8714-54a8-a80f-faf231be170e",
+       "label": "B",
+       "content": "$-1$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "fb34a73b-6343-5aa3-aea3-5f67881fa52f",
+       "label": "C",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5c23c8ae-ad7a-5a02-9d6d-46c900d7b2f0",
+       "label": "D",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "20a293d1-021b-598c-b545-967462fefb73",
+     "key": "fm-pf-05",
+     "stem": "$\\dfrac{3x^{2} + 1}{(x + 1)(x^{2} + 1)} \\equiv \\dfrac{2}{x + 1} + \\dfrac{Bx + C}{x^{2} + 1}$. Find $Bx + C$.",
+     "image_url": null,
+     "explanation": "$3x^{2} + 1 \\equiv 2(x^{2} + 1) + (Bx + C)(x + 1)$.\n\n$x^{2}$: $3 = 2 + B$, so $B = 1$. Constants: $1 = 2 + C$, so $C = -1$. So $Bx + C = x - 1$.\n\n**Why the other options are wrong**\n\n- $x + 1$: Constants: $1 = 2 + C$, so $C = -1$, not $+1$.\n- $3x + 1$: You copied the numerator's coefficients. Compare coefficients after writing $3x^{2} + 1 \\equiv 2(x^{2} + 1) + (Bx + C)(x + 1)$.\n- $1 - x$: $x^{2}$: $3 = 2 + B$ gives $B = +1$, and constants give $C = -1$; you swapped both signs.",
+     "position": 5,
+     "options": [
+      {
+       "id": "e4d6e667-7c42-5fc7-9309-3b4708e32b5e",
+       "label": "A",
+       "content": "$x - 1$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "8a0bddcc-7253-5298-98e6-bdb4894f2bc6",
+       "label": "B",
+       "content": "$x + 1$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "642175c0-ab10-5999-b6d2-be484b2827e6",
+       "label": "C",
+       "content": "$3x + 1$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "93d500bf-91ca-5a15-b39e-a18b726dba92",
+       "label": "D",
+       "content": "$1 - x$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "430ddc80-7378-53c9-bfe0-5e58961c1e62",
+     "key": "fm-pf-06",
+     "stem": "Express $\\dfrac{x^{2} + 2}{(x + 1)(x - 2)}$ in partial fractions.",
+     "image_url": null,
+     "explanation": "Improper, so divide: $x^{2} + 2 = (x^{2} - x - 2) + (x + 4)$, giving $1 + \\dfrac{x + 4}{(x + 1)(x - 2)}$.\n\nCover-up: $x = 2$: $\\dfrac{6}{3} = 2$; $x = -1$: $\\dfrac{3}{-3} = -1$.\n\n$\\dfrac{x^{2} + 2}{(x + 1)(x - 2)} = 1 + \\dfrac{2}{x - 2} - \\dfrac{1}{x + 1}$\n\n**Why the other options are wrong**\n\n- $\\dfrac{2}{x - 2} - \\dfrac{1}{x + 1}$: The fraction is improper (degree 2 over degree 2), so divide first: $\\dfrac{x^{2} + 2}{x^{2} - x - 2} = 1 + \\dfrac{x + 4}{x^{2} - x - 2}$. You lost the 1.\n- $1 - \\dfrac{2}{x - 2} + \\dfrac{1}{x + 1}$: By cover-up, $x = 2$ gives $\\dfrac{6}{3} = +2$ and $x = -1$ gives $\\dfrac{3}{-3} = -1$; you reversed both signs.\n- $1 + \\dfrac{6}{x - 2} + \\dfrac{3}{x + 1}$: You put $x = 2$ and $x = -1$ into $x + 4$ but did not divide by the other factor.",
+     "position": 6,
+     "options": [
+      {
+       "id": "6f80ea63-92b0-5f05-821e-11dac7c1b516",
+       "label": "A",
+       "content": "$\\dfrac{2}{x - 2} - \\dfrac{1}{x + 1}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "5bfbfe24-4f86-50de-9c24-c04b084aa6b8",
+       "label": "B",
+       "content": "$1 + \\dfrac{2}{x - 2} - \\dfrac{1}{x + 1}$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "eec5d3c4-df9d-56a7-aa1b-e1001adb78b7",
+       "label": "C",
+       "content": "$1 - \\dfrac{2}{x - 2} + \\dfrac{1}{x + 1}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "868be975-3a41-5c95-9772-57c2566fadcd",
+       "label": "D",
+       "content": "$1 + \\dfrac{6}{x - 2} + \\dfrac{3}{x + 1}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cf36f214-25d1-5314-8698-1a7103d12f57",
+   "topic": "Binomial Theorem",
+   "title": "Binomial Theorem: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on binomial theorem, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 102,
+   "questions": [
+    {
+     "id": "79e15706-9764-5202-8d6e-bc9a56788750",
+     "key": "fm-bin-01",
+     "stem": "Find the coefficient of $x^{3}$ in the expansion of $(1 - 2x)^{6}$.",
+     "image_url": null,
+     "explanation": "$T_{r+1} = \\binom{6}{r}(-2x)^{r}$. For $x^{3}$, $r = 3$:\n\n$\\binom{6}{3}(-2)^{3} = 20 \\times (-8) = -160$\n\n**Why the other options are wrong**\n\n- $160$: $(-2x)^{3} = -8x^{3}$: an odd power of a negative term is negative.\n- $-40$: You used $-2x^{3}$ instead of $(-2x)^{3}$: the 2 must be cubed too.\n- $-120$: $\\binom{6}{2}(-2)^{3}$ mixes two terms: the $x^{3}$ term has $r = 3$, so the coefficient is $\\binom{6}{3}$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "abf90664-5377-56af-bd0e-48aa1db2563a",
+       "label": "A",
+       "content": "$-160$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "4c32161f-89b8-5194-a024-219816bde5d2",
+       "label": "B",
+       "content": "$-120$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "943e5a6a-235d-5264-a703-44b0db912fe4",
+       "label": "C",
+       "content": "$-40$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "feba216e-6bfe-5558-ac7c-6394b64e9bea",
+       "label": "D",
+       "content": "$160$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d014abfb-0259-5455-915a-01d1ba534fa8",
+     "key": "fm-bin-02",
+     "stem": "Find the term independent of $x$ in the expansion of $\\left(x^{2} - \\dfrac{1}{x}\\right)^{6}$.",
+     "image_url": null,
+     "explanation": "$T_{r+1} = \\binom{6}{r}(x^{2})^{6-r}\\left(-\\dfrac1x\\right)^{r} = \\binom{6}{r}(-1)^{r}x^{12 - 3r}$.\n\n$12 - 3r = 0$ gives $r = 4$: $\\binom{6}{4}(-1)^{4} = 15$.\n\n**Why the other options are wrong**\n\n- $-15$: The term has $r = 4$ and $(-1)^{4} = +1$: an even power of $-1$ is positive.\n- $-20$: You solved $6 - 2r = 0$, treating $x^{2}$ as $x$. The power of $x$ is $2(6 - r) - r = 12 - 3r$.\n- $20$: You took $r = 3$ (from $6 - 2r = 0$) and also dropped the sign.",
+     "position": 2,
+     "options": [
+      {
+       "id": "d69032e5-1860-5708-998b-3c8f79d717db",
+       "label": "A",
+       "content": "$-20$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4f83b090-f090-5841-9d7c-b6d7db522a90",
+       "label": "B",
+       "content": "$-15$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "148e4103-cb73-53a0-8fb5-94f24b6549b3",
+       "label": "C",
+       "content": "$15$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "d0c8e0ad-364c-5325-b0b0-afe18d47f173",
+       "label": "D",
+       "content": "$20$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "fa40772e-325d-5aa8-9a26-79f0317a5b6d",
+     "key": "fm-bin-03",
+     "stem": "Find the 4th term in the expansion of $(1 + 2x)^{9}$ in ascending powers of $x$.",
+     "image_url": null,
+     "explanation": "The 4th term has $r = 3$: $T_4 = \\binom{9}{3}(2x)^{3} = 84 \\times 8x^{3} = 672x^{3}$.\n\n**Why the other options are wrong**\n\n- $2016x^{4}$: That is the 5th term. The $k$th term has $r = k - 1$, so the 4th term has $r = 3$.\n- $168x^{3}$: You used $2x^{3}$ instead of $(2x)^{3} = 8x^{3}$.\n- $84x^{3}$: You left out the 2 altogether: the term is $\\binom{9}{3}(2x)^{3}$.",
+     "position": 3,
+     "options": [
+      {
+       "id": "881374cf-6ad4-5888-b71b-bb9e7a958e3d",
+       "label": "A",
+       "content": "$2016x^{4}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "cb4f4be8-e189-5417-8fc4-956e5251859c",
+       "label": "B",
+       "content": "$168x^{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "46f47482-12c8-514d-b43c-ef3d948d170b",
+       "label": "C",
+       "content": "$84x^{3}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f6bfc58b-6539-5d5b-9760-47bf5a854e1a",
+       "label": "D",
+       "content": "$672x^{3}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "29797f7f-dff3-5dd3-9da8-38651729ada8",
+     "key": "fm-bin-04",
+     "stem": "Use the first three terms of the expansion of $(1 + x)^{5}$ to evaluate $(1.02)^{5}$, correct to 4 decimal places.",
+     "image_url": null,
+     "explanation": "$(1 + x)^{5} = 1 + 5x + 10x^{2} + \\dots$ With $x = 0.02$:\n\n$1 + 5(0.02) + 10(0.0004) = 1 + 0.1 + 0.004 = 1.1040$\n\n**Why the other options are wrong**\n\n- $1.1000$: That uses only two terms, $1 + 5x$. The question asks for three: add $10x^{2} = 0.004$.\n- $1.1004$: $0.02^{2} = 0.0004$, so $10x^{2} = 0.004$; you used $0.00004$.\n- $1.1400$: $0.02^{2} = 0.0004$, not $0.004$, so $10x^{2} = 0.004$, not $0.04$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "4121342d-0586-52ad-85bd-731ed9b6b23b",
+       "label": "A",
+       "content": "$1.1000$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c633395a-dfd6-5f40-b748-bcd32aafce72",
+       "label": "B",
+       "content": "$1.1004$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "4ca7c341-d6a1-5355-a5d0-c6d4a00dce2b",
+       "label": "C",
+       "content": "$1.1040$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "209f0976-abcd-54bb-88fd-81e1ca9f02f6",
+       "label": "D",
+       "content": "$1.1400$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "e6336b4c-f7e0-5280-990a-f71f8759c7d3",
+     "key": "fm-bin-05",
+     "stem": "Find the coefficient of $x^{2}$ in the expansion of $(2 + x)^{5}$.",
+     "image_url": null,
+     "explanation": "$T_{r+1} = \\binom{5}{r}2^{5-r}x^{r}$. For $x^{2}$, $r = 2$: $\\binom52 \\times 2^{3} = 10 \\times 8 = 80$.\n\n**Why the other options are wrong**\n\n- $10$: $\\binom52 = 10$ is only the binomial coefficient; it must be multiplied by $2^{3}$.\n- $40$: The power of 2 is $5 - 2 = 3$, so use $2^{3} = 8$, not $2^{2}$.\n- $160$: The power of 2 is $n - r = 3$, not $4$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "1d973fa5-377e-5f31-ace3-7cd0c87aca55",
+       "label": "A",
+       "content": "$10$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "e47a6925-399c-5c4e-a7a1-bed8fcb0bea8",
+       "label": "B",
+       "content": "$40$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "d6cad019-0e6a-5e07-8da5-3752e9acb37b",
+       "label": "C",
+       "content": "$80$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "5fd5636f-c99c-5113-bcae-5965b7b2c7f0",
+       "label": "D",
+       "content": "$160$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "9a9dfda9-be45-52e6-be5c-f7cdc471ad83",
+     "key": "fm-bin-06",
+     "stem": "Find the coefficient of $x^{2}$ in the expansion of $(1 + x)^{-\\frac12}$ in ascending powers of $x$.",
+     "image_url": null,
+     "explanation": "$\\dfrac{n(n - 1)}{2!}$ with $n = -\\tfrac12$: $\\dfrac{\\left(-\\tfrac12\\right)\\left(-\\tfrac32\\right)}{2} = \\dfrac{3/4}{2} = \\dfrac38$.\n\n**Why the other options are wrong**\n\n- $-\\dfrac{3}{8}$: $n(n - 1) = \\left(-\\tfrac12\\right)\\left(-\\tfrac32\\right) = +\\tfrac34$: two negatives make a positive.\n- $\\dfrac{3}{4}$: You forgot to divide by $2! = 2$.\n- $-\\dfrac{1}{8}$: $-\\tfrac18$ is the coefficient of $x^{2}$ in $(1 + x)^{\\frac12}$, with $n = +\\tfrac12$.",
+     "position": 6,
+     "options": [
+      {
+       "id": "d86837dd-ffc8-548c-9051-176e52438242",
+       "label": "A",
+       "content": "$-\\dfrac{3}{8}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "921710ff-7f53-5913-a953-85fd42b41fde",
+       "label": "B",
+       "content": "$-\\dfrac{1}{8}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b5a47db7-bbe6-5667-be5a-1ad2cf6914c2",
+       "label": "C",
+       "content": "$\\dfrac{3}{8}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "8581c785-0cc8-524f-a93c-7375d88f5d3d",
+       "label": "D",
+       "content": "$\\dfrac{3}{4}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d028875d-7d98-543f-b6ff-2eee7e46cc59",
+     "key": "fm-bin-07",
+     "stem": "For what values of $x$ is the expansion of $(1 - 3x)^{-2}$ in ascending powers of $x$ valid?",
+     "image_url": null,
+     "explanation": "$(1 + y)^{n}$ with $n = -2$ is valid for $|y| < 1$. Here $y = -3x$:\n\n$|-3x| < 1 \\Rightarrow |x| < \\dfrac13$\n\n**Why the other options are wrong**\n\n- $|x| < 3$: The expansion of $(1 + y)^{n}$ is valid for $|y| < 1$; here $y = -3x$, so $|3x| < 1$, giving $|x| < \\tfrac13$, not $|x| < 3$.\n- $|x| < 1$: That is the condition on the whole term $-3x$, not on $x$: $|3x| < 1$.\n- all real values of $x$: Only a positive whole-number power gives a finite expansion valid for all $x$. A negative power gives an infinite series, valid only for $|3x| < 1$.",
+     "position": 7,
+     "options": [
+      {
+       "id": "e201c33f-a521-54f5-bd18-40fdf3f3dfbb",
+       "label": "A",
+       "content": "$|x| < \\dfrac{1}{3}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "e3eddd72-9d0d-5ca9-961b-f6b5d609f4f2",
+       "label": "B",
+       "content": "$|x| < 3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8787bd7d-da8b-5b56-b51c-b0f4107435a9",
+       "label": "C",
+       "content": "$|x| < 1$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "559d02c9-eebe-55e2-bc32-b450a192acc6",
+       "label": "D",
+       "content": "all real values of $x$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "16a2a780-87f7-5250-89dc-89c5d216a05b",
+   "topic": "Surds, Indices, and Logarithms",
+   "title": "Surds, Indices, and Logarithms: practice set 1",
+   "paper_type": "Practice",
+   "description": "7 original WASSCE-style objective questions on surds, indices, and logarithms, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 103,
+   "questions": [
+    {
+     "id": "50c2062c-bdb4-5e29-9194-227ede299bd9",
+     "key": "fm-log-01",
+     "stem": "Rationalise $\\dfrac{6}{3 - \\sqrt{3}}$.",
+     "image_url": null,
+     "explanation": "$\\dfrac{6}{3 - \\sqrt3} \\times \\dfrac{3 + \\sqrt3}{3 + \\sqrt3} = \\dfrac{6(3 + \\sqrt3)}{9 - 3} = 3 + \\sqrt3$\n\n**Why the other options are wrong**\n\n- $3 - \\sqrt{3}$: Multiply by the conjugate $3 + \\sqrt3$, which keeps the $+$ sign in the numerator.\n- $\\dfrac{3 + \\sqrt{3}}{2}$: $(3 - \\sqrt3)(3 + \\sqrt3) = 9 - 3 = 6$; you used $9 + 3 = 12$.\n- $6 + 2\\sqrt{3}$: You multiplied the top by $3 + \\sqrt3$ and divided by 3 instead of by $9 - 3 = 6$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "61c547ee-3f55-52c5-8473-e4d4f73d903b",
+       "label": "A",
+       "content": "$3 - \\sqrt{3}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "74dff815-1457-5197-aec0-3df275a5439c",
+       "label": "B",
+       "content": "$\\dfrac{3 + \\sqrt{3}}{2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "42227a22-6b74-5728-97b8-d59d970dadfa",
+       "label": "C",
+       "content": "$3 + \\sqrt{3}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ad16d914-4db7-5d90-b24b-7e6b81f24aa2",
+       "label": "D",
+       "content": "$6 + 2\\sqrt{3}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "729041d5-f76a-5848-955f-1fb09548fb06",
+     "key": "fm-log-02",
+     "stem": "Find $\\sqrt{7 + 4\\sqrt{3}}$.",
+     "image_url": null,
+     "explanation": "Let $\\sqrt{7 + 4\\sqrt3} = \\sqrt a + \\sqrt b$. Then $a + b = 7$ and $2\\sqrt{ab} = 4\\sqrt3$, so $ab = 12$: $a = 4$, $b = 3$.\n\n$\\sqrt{7 + 4\\sqrt3} = 2 + \\sqrt3$. Check: $(2 + \\sqrt3)^{2} = 4 + 4\\sqrt3 + 3 = 7 + 4\\sqrt3$ ✓\n\n**Why the other options are wrong**\n\n- $4 + \\sqrt{3}$: With $\\sqrt a + \\sqrt b$, $a = 4$ and $b = 3$, so the answer is $\\sqrt4 + \\sqrt3 = 2 + \\sqrt3$: you forgot to take the root of 4.\n- $\\sqrt{7} + 2$: A square root does not split over a sum: $\\sqrt{7 + 4\\sqrt3} \\ne \\sqrt7 + \\sqrt{4\\sqrt3}$.\n- $1 + 2\\sqrt{3}$: $(1 + 2\\sqrt3)^{2} = 13 + 4\\sqrt3$, not $7 + 4\\sqrt3$. Always check by squaring.",
+     "position": 2,
+     "options": [
+      {
+       "id": "261d3327-b208-55fe-9557-7a7354e7e226",
+       "label": "A",
+       "content": "$2 + \\sqrt{3}$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "87b09a99-09cd-53bb-9fe2-684731b9a7a1",
+       "label": "B",
+       "content": "$1 + 2\\sqrt{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "8a28ce68-eeb8-5439-8349-567bd3e61b06",
+       "label": "C",
+       "content": "$\\sqrt{7} + 2$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "55fb54b3-c978-5cc1-9760-9b1ec0c1622e",
+       "label": "D",
+       "content": "$4 + \\sqrt{3}$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "bf0114c5-51af-5144-be77-7585be814ebf",
+     "key": "fm-log-03",
+     "stem": "Solve $2^{2x + 1} - 5(2^{x}) + 2 = 0$.",
+     "image_url": null,
+     "explanation": "$2^{2x + 1} = 2(2^{x})^{2}$. Let $y = 2^{x}$: $2y^{2} - 5y + 2 = 0$, $(2y - 1)(y - 2) = 0$.\n\n$y = \\tfrac12 \\Rightarrow 2^{x} = 2^{-1} \\Rightarrow x = -1$; $y = 2 \\Rightarrow x = 1$.\n\n**Why the other options are wrong**\n\n- $x = \\dfrac12$ or $x = 2$: These are the values of $y = 2^{x}$. Solve $2^{x} = \\tfrac12$ and $2^{x} = 2$ to get $x$.\n- $x = 1$ only: $2^{x} = \\tfrac12 = 2^{-1}$ is valid and gives $x = -1$. Only $2^{x} \\le 0$ would be rejected.\n- $x = -2$ or $x = 0$: $2^{2x + 1} = 2(2^{x})^{2}$; you treated it as $(2^{x})^{2}$ and then misread the roots.",
+     "position": 3,
+     "options": [
+      {
+       "id": "0be085da-fd8e-57ce-b197-41310be08cfa",
+       "label": "A",
+       "content": "$x = \\dfrac12$ or $x = 2$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "8390c33f-f66f-5ad5-a706-1915c8ed0e67",
+       "label": "B",
+       "content": "$x = -1$ or $x = 1$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "7b8fefa2-edae-5430-9386-8634508e7972",
+       "label": "C",
+       "content": "$x = 1$ only",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "63e579f8-6992-5bcf-96b2-b9ceac6bcd21",
+       "label": "D",
+       "content": "$x = -2$ or $x = 0$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "956a7094-815e-55bb-babb-ee0144980785",
+     "key": "fm-log-04",
+     "stem": "Evaluate $\\log_{8} 32$.",
+     "image_url": null,
+     "explanation": "Change to base 2: $\\log_{8} 32 = \\dfrac{\\log_{2} 32}{\\log_{2} 8} = \\dfrac{5}{3}$. Check: $8^{5/3} = 2^{5} = 32$ ✓\n\n**Why the other options are wrong**\n\n- $\\dfrac{3}{5}$: $\\log_{8} 32 = \\dfrac{\\log_{2} 32}{\\log_{2} 8} = \\dfrac53$: you inverted the fraction.\n- $4$: $\\log_{8} 32$ is the power of 8 that gives 32, not $32 \\div 8$.\n- $\\dfrac{2}{3}$: $\\log 32 - \\log 8 = \\log 4$ is $\\log\\tfrac{32}{8}$; the change-of-base formula divides the logs.",
+     "position": 4,
+     "options": [
+      {
+       "id": "bc943f60-3615-5018-a8ab-21fa7e5048d1",
+       "label": "A",
+       "content": "$\\dfrac{3}{5}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "12fc8a6c-26fa-5bdd-8d6d-a5e5c5891516",
+       "label": "B",
+       "content": "$\\dfrac{2}{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "a7d3115f-53be-58f3-8158-462c1bb8625d",
+       "label": "C",
+       "content": "$\\dfrac{5}{3}$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "ad849bd6-a9af-55a3-8c9c-b98030269166",
+       "label": "D",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "3478037d-7307-59e8-8936-7a79d8cdd9fd",
+     "key": "fm-log-05",
+     "stem": "Solve $\\log_{2}(x + 3) + \\log_{2}(x - 3) = 4$.",
+     "image_url": null,
+     "explanation": "$\\log_{2}[(x + 3)(x - 3)] = 4 \\Rightarrow x^{2} - 9 = 16 \\Rightarrow x = \\pm5$.\n\n$x = -5$ gives $\\log_{2}(-8)$, which is undefined. So $x = 5$.\n\n**Why the other options are wrong**\n\n- $x = -5$ or $x = 5$: $x = -5$ makes $x - 3 = -8$, and $\\log_{2}(-8)$ is undefined, so it must be rejected.\n- $x = 8$: $\\log a + \\log b = \\log(ab)$, not $\\log(a + b)$: you solved $(x + 3) + (x - 3) = 16$.\n- $x = \\sqrt{17}$: $\\log_{2} N = 4$ means $N = 2^{4} = 16$, not $2 \\times 4 = 8$.",
+     "position": 5,
+     "options": [
+      {
+       "id": "f89b9fb2-6a6f-5a83-a90d-37ab92ceac39",
+       "label": "A",
+       "content": "$x = -5$ or $x = 5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ee631710-f15c-50af-b0d1-690c932ab05c",
+       "label": "B",
+       "content": "$x = 8$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "e0092c42-3602-5a2e-ba6f-3e261a16d019",
+       "label": "C",
+       "content": "$x = \\sqrt{17}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d5f2afa8-6507-56e7-825f-609b804951cf",
+       "label": "D",
+       "content": "$x = 5$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "18fb308d-0994-5f3a-8235-1e0bbd906478",
+     "key": "fm-log-06",
+     "stem": "Given that $\\log 2 = 0.3010$ and $\\log 3 = 0.4771$, find $\\log 48$.",
+     "image_url": null,
+     "explanation": "$48 = 16 \\times 3 = 2^{4} \\times 3$.\n\n$\\log 48 = 4\\log 2 + \\log 3 = 4(0.3010) + 0.4771 = 1.2040 + 0.4771 = 1.6811$\n\n**Why the other options are wrong**\n\n- $1.3801$: $48 = 2^{4} \\times 3$, not $2^{3} \\times 3 = 24$.\n- $1.9821$: $2^{5} \\times 3 = 96$; $48 = 2^{4} \\times 3$.\n- $0.5744$: $\\log(MN) = \\log M + \\log N$: you multiplied the logarithms instead of adding them.",
+     "position": 6,
+     "options": [
+      {
+       "id": "6c46127a-575f-5332-bf00-0c50fa7fe69a",
+       "label": "A",
+       "content": "$0.5744$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "4b62f7ec-3182-541f-90d2-7bc4fe7f1f8e",
+       "label": "B",
+       "content": "$1.3801$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6206113c-2052-5711-8224-f42eeb08b156",
+       "label": "C",
+       "content": "$1.6811$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "1ab466d5-07c6-5287-8356-ce0a083c9044",
+       "label": "D",
+       "content": "$1.9821$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b0aece86-4fb2-5fac-872c-b809f36aa758",
+     "key": "fm-log-07",
+     "stem": "Solve $3^{x + 1} = 5$, giving your answer correct to 3 decimal places.",
+     "image_url": null,
+     "explanation": "Take logs: $(x + 1)\\log 3 = \\log 5$, so $x + 1 = \\dfrac{\\log 5}{\\log 3} = \\dfrac{0.69897}{0.47712} = 1.46497$.\n\n$x = 0.465$ (3 d.p.)\n\n**Why the other options are wrong**\n\n- $1.465$: $\\dfrac{\\log 5}{\\log 3} = 1.465$ is $x + 1$; subtract 1 to get $x$.\n- $0.667$: You divided 5 by 3 and subtracted 1. Take logarithms: $(x + 1)\\log 3 = \\log 5$.\n- $-0.778$: $\\dfrac{\\log 5}{\\log 3}$ is not $\\log 5 - \\log 3$: you subtracted the logarithms instead of dividing.",
+     "position": 7,
+     "options": [
+      {
+       "id": "455d1ad1-bbef-5bf3-a159-c4a9fb43ca00",
+       "label": "A",
+       "content": "$-0.778$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1e03339e-17bf-5efe-9a12-3086cde9432b",
+       "label": "B",
+       "content": "$0.465$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "aeecfdec-e917-54c2-9fdf-3bc1b97052b9",
+       "label": "C",
+       "content": "$0.667$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "de447e13-054f-57e6-b33d-3dbd03516b16",
+       "label": "D",
+       "content": "$1.465$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "6f80ba3c-af80-5ac8-8b4a-24e22cd8bc7b",
+   "topic": "Sets",
+   "title": "Sets: practice set 1",
+   "paper_type": "Practice",
+   "description": "9 original WASSCE-style objective questions on sets, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 104,
+   "questions": [
+    {
+     "id": "d6ac4694-c936-5beb-be12-180fb41b8e45",
+     "key": "fm-sets-01",
+     "stem": "How many subsets has the set $\\{a, b, c, d, e\\}$?",
+     "image_url": null,
+     "explanation": "Each of the 5 elements is either in a subset or not: $2^{5} = 32$ subsets.\n\n**Why the other options are wrong**\n\n- $31$: 31 is the number of proper subsets, $2^{5} - 1$. The question asks for all subsets, including the set itself.\n- $25$: The number of subsets is $2^{n}$, not $n^{2}$.\n- $10$: The number of subsets is $2^{n} = 2^{5}$, not $2 \\times 5$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "7c0c42de-20c1-5949-9fbb-44cb46ac4c20",
+       "label": "A",
+       "content": "$10$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "d6427950-0161-5034-a911-99fbc0cb45ed",
+       "label": "B",
+       "content": "$25$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "9ae1074e-a4ca-58a8-881b-ab229f65c49e",
+       "label": "C",
+       "content": "$31$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d8d0227d-4749-5540-bd7e-ef9b554452c1",
+       "label": "D",
+       "content": "$32$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "b42a98be-5057-55d2-b2ce-3f5c5d84b562",
+     "key": "fm-sets-02",
+     "stem": "Which of the following is equal to $(A \\cup B)'$?",
+     "image_url": null,
+     "explanation": "De Morgan's law: the complement of a union is the intersection of the complements.\n\n$(A \\cup B)' = A' \\cap B'$\n\n**Why the other options are wrong**\n\n- $A' \\cup B'$: That is $(A \\cap B)'$. De Morgan's laws swap union and intersection when you take the complement.\n- $A \\cap B$: Taking a complement does not turn a union into the intersection of the original sets; complement each set as well.\n- $A' \\cap B$: Both sets must be complemented: $(A \\cup B)' = A' \\cap B'$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "b3a47e37-8442-5efa-a4b2-1e4f026cd8a7",
+       "label": "A",
+       "content": "$A' \\cap B'$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "80651076-e7ac-5b56-978b-5df40ea688b4",
+       "label": "B",
+       "content": "$A' \\cup B'$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "99586d09-f465-5fa0-842a-1091b53fbc89",
+       "label": "C",
+       "content": "$A \\cap B$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "8932f910-82f7-5af7-a994-570e23bc02d2",
+       "label": "D",
+       "content": "$A' \\cap B$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d7e51ecd-1999-5e4d-9330-4a47c8ffdf8d",
+     "key": "fm-sets-03",
+     "stem": "In a class of 50 students, 24 study Economics, 20 study Geography and 18 study Government. 8 study Economics and Geography, 7 Economics and Government, 6 Geography and Government, and 3 study all three. How many study none of the three subjects?",
+     "image_url": null,
+     "explanation": "$n(E \\cup G \\cup V) = 24 + 20 + 18 - 8 - 7 - 6 + 3 = 44$.\n\nNone: $50 - 44 = 6$.\n\n**Why the other options are wrong**\n\n- $9$: You subtracted the pairs but did not add back the 3 who study all three: $n(A \\cup B \\cup C)$ adds $n(A \\cap B \\cap C)$ at the end.\n- $12$: You subtracted the 3 in all three subjects instead of adding them back.\n- $3$: 3 is the number who study all three subjects, not the number who study none.",
+     "position": 3,
+     "options": [
+      {
+       "id": "3b4bed00-5a74-5940-b5d3-d75bc64b55f4",
+       "label": "A",
+       "content": "$3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "b97c58e7-8968-5d88-8a8b-59d75e67c7f8",
+       "label": "B",
+       "content": "$6$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "d679b06e-38f9-50ce-939d-6fc3a4d2250f",
+       "label": "C",
+       "content": "$9$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f1324988-b8a2-5796-bdf4-4de83401b1de",
+       "label": "D",
+       "content": "$12$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "a968d675-ae1a-5637-9f57-9893c439d59c",
+     "key": "fm-sets-04",
+     "stem": "Simplify $(A \\cap B) \\cup (A \\cap B')$.",
+     "image_url": null,
+     "explanation": "Distributive law: $(A \\cap B) \\cup (A \\cap B') = A \\cap (B \\cup B') = A \\cap U = A$.\n\n**Why the other options are wrong**\n\n- $B$: Both brackets contain $A$, not $B$: by the distributive law the expression is $A \\cap (B \\cup B')$.\n- $U$: $B \\cup B' = U$, but the expression is $A \\cap U = A$, not $U$ itself.\n- $\\varnothing$: $B \\cap B' = \\varnothing$, but the expression combines $B$ and $B'$ with a union, giving $U$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "568d5488-d05a-598d-bbf8-cb78af76d34b",
+       "label": "A",
+       "content": "$B$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16fbefba-82cf-5bca-b2c5-b58c55ecff0c",
+       "label": "B",
+       "content": "$A$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "5f25c516-e4c5-5a32-82ff-4f2a89512aa4",
+       "label": "C",
+       "content": "$U$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "afb24760-d484-5d79-a096-08b7b643e729",
+       "label": "D",
+       "content": "$\\varnothing$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "591dc2a4-9c75-5855-9569-999a0685fd41",
+     "key": "fm-sets-05",
+     "stem": "$n(U) = 50$, $n(A) = 28$, $n(B) = 25$ and $n(A \\cap B) = 10$. Find $n(A' \\cap B')$.",
+     "image_url": null,
+     "explanation": "$n(A \\cup B) = 28 + 25 - 10 = 43$. By De Morgan, $A' \\cap B' = (A \\cup B)'$:\n\n$n(A' \\cap B') = 50 - 43 = 7$\n\n**Why the other options are wrong**\n\n- $-3$: You did not subtract the overlap: $n(A \\cup B) = 28 + 25 - 10 = 43$.\n- $10$: 10 is $n(A \\cap B)$. By De Morgan, $A' \\cap B' = (A \\cup B)'$.\n- $17$: $n(A \\cup B) = 28 + 25 - 10$, with the overlap subtracted once: you subtracted 20.",
+     "position": 5,
+     "options": [
+      {
+       "id": "93769652-5141-55a8-87a7-1167e1177017",
+       "label": "A",
+       "content": "$-3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "bf5b254a-1eaf-5da4-bacc-98cdda09c3a1",
+       "label": "B",
+       "content": "$7$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "213af0ca-9545-54de-948d-49527e1535dc",
+       "label": "C",
+       "content": "$10$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d96537f1-068c-5a45-8613-f4d6b887caf4",
+       "label": "D",
+       "content": "$17$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "d22d82eb-8745-533a-a7b3-c072b35eee9f",
+     "key": "fm-bin-op-01",
+     "stem": "A binary operation $*$ is defined on the real numbers by $a * b = a + b - 2ab$. Find $3 * 4$.",
+     "image_url": null,
+     "explanation": "$3 * 4 = 3 + 4 - 2(3)(4) = 7 - 24 = -17$\n\n**Why the other options are wrong**\n\n- $31$: The rule subtracts $2ab$: $7 - 24$, not $7 + 24$.\n- $-5$: You subtracted $ab = 12$ instead of $2ab = 24$.\n- $17$: $7 - 24 = -17$: the sign of the answer was dropped.",
+     "position": 6,
+     "options": [
+      {
+       "id": "fd9bb466-1450-53d0-b924-e904f6767376",
+       "label": "A",
+       "content": "$-17$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "c2e9a006-7b07-5d09-b5a6-f75206165f72",
+       "label": "B",
+       "content": "$-5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "6967f9d8-1683-5e3d-97fe-f759d94f65d2",
+       "label": "C",
+       "content": "$17$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "f9754642-19e6-5d14-aec6-4cb7178c458e",
+       "label": "D",
+       "content": "$31$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "7b56d33d-7c48-511e-b8f0-e9df26b665aa",
+     "key": "fm-bin-op-02",
+     "stem": "A binary operation $\\oplus$ is defined on the real numbers by $a \\oplus b = a + b - 4$. Find the identity element.",
+     "image_url": null,
+     "explanation": "Identity $e$: $a \\oplus e = a$, so $a + e - 4 = a$ and $e = 4$.\n\n**Why the other options are wrong**\n\n- $-4$: Solve $a + e - 4 = a$: $e = +4$.\n- $0$: 0 is the identity for ordinary addition, but here $a \\oplus 0 = a - 4 \\ne a$.\n- $1$: 1 is the identity for multiplication. Solve $a \\oplus e = a$ for this rule.",
+     "position": 7,
+     "options": [
+      {
+       "id": "1da313f9-fb95-5084-9d49-19600383ed55",
+       "label": "A",
+       "content": "$-4$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ad132f63-47d1-5613-abd9-1db1fadccd9d",
+       "label": "B",
+       "content": "$0$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b567c724-4187-5c56-9f7d-62712b63d64b",
+       "label": "C",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "2ed230f3-3f2d-57ff-9ced-ae9aba6c0f56",
+       "label": "D",
+       "content": "$4$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "ea06de83-a070-5cbe-b011-c9d4b5fb5532",
+     "key": "fm-bin-op-03",
+     "stem": "For the operation $a \\oplus b = a + b - 4$ on the real numbers, the identity element is 4. Find the inverse of 3.",
+     "image_url": null,
+     "explanation": "Inverse $y$ of 3: $3 \\oplus y = e = 4$, so $3 + y - 4 = 4$ and $y = 5$.\n\n**Why the other options are wrong**\n\n- $1$: The inverse gives the identity, 4, not 0: solve $3 + y - 4 = 4$.\n- $\\dfrac{1}{3}$: The reciprocal is the inverse for multiplication only; use this operation's rule.\n- $-3$: The negative is the inverse for ordinary addition only; use this operation's rule.",
+     "position": 8,
+     "options": [
+      {
+       "id": "04695943-9545-50f3-a0ff-db09fcab4ade",
+       "label": "A",
+       "content": "$-3$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "16f0dcf7-9ff6-5bfa-ae06-84ead196b057",
+       "label": "B",
+       "content": "$\\dfrac{1}{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "2e6ea46b-3d57-54f3-bf7f-af4680990fbe",
+       "label": "C",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "eef81314-ca74-53b8-bd3e-55f20007fa6f",
+       "label": "D",
+       "content": "$5$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "f01c3093-964d-5853-b506-c96856c70baf",
+     "key": "fm-bin-op-04",
+     "stem": "The set $\\{1, 3, 5, 7\\}$ is combined under multiplication modulo 8. Find $5 \\times 7$ in this operation.",
+     "image_url": null,
+     "explanation": "$5 \\times 7 = 35 = 4 \\times 8 + 3$, so $5 \\times 7 \\equiv 3 \\pmod 8$.\n\n**Why the other options are wrong**\n\n- $35$: Reduce modulo 8: $35 = 4 \\times 8 + 3$, so $35 \\equiv 3$.\n- $11$: $35 - 24 = 11$ is still larger than 8; subtract $4 \\times 8 = 32$.\n- $1$: Only the products on the diagonal ($a \\times a$) give 1 in this table; $5 \\times 7 \\equiv 3$.",
+     "position": 9,
+     "options": [
+      {
+       "id": "0e0e1bd0-93ea-5aaa-87ca-ab79b4a8795f",
+       "label": "A",
+       "content": "$1$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "c0ec4930-2822-5a0a-bcd9-4c9de91c4e2a",
+       "label": "B",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "762d94c2-b507-5e29-9abb-50ab78d9625c",
+       "label": "C",
+       "content": "$11$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "12a5e5b2-6359-5163-a630-97811db6fa20",
+       "label": "D",
+       "content": "$35$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "7c72d45e-bfc7-5a82-9843-739b1595d53c",
+   "topic": "Functions",
+   "title": "Functions: practice set 1",
+   "paper_type": "Practice",
+   "description": "6 original WASSCE-style objective questions on functions, each with a worked solution and the reason behind every wrong option. Written by WASSCE Tutor, not taken from WAEC papers.",
+   "sort_order": 105,
+   "questions": [
+    {
+     "id": "0a9b92db-ff49-5901-8d6c-b68a7b6693a8",
+     "key": "fm-fn-01",
+     "stem": "$f(x) = 2x - 5$ and $g(x) = x^{2} + 1$. Find $fg(2)$.",
+     "image_url": null,
+     "explanation": "$g(2) = 4 + 1 = 5$, then $f(5) = 2(5) - 5 = 5$. So $fg(2) = 5$.\n\n**Why the other options are wrong**\n\n- $2$: That is $gf(2) = g(-1) = 2$. In $fg(2)$, $g$ acts first: $g(2) = 5$, then $f(5) = 5$.\n- $-5$: $fg(2)$ is $f(g(2))$, not the product $f(2) \\times g(2) = (-1)(5)$.\n- $4$: $fg(2)$ is not $f(2) + g(2)$; put $g(2)$ into $f$.",
+     "position": 1,
+     "options": [
+      {
+       "id": "fbddf345-dc4f-5547-ae6b-29b0e66a76a1",
+       "label": "A",
+       "content": "$-5$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "1020ef31-e94c-55a7-9694-ecb5e5af35c6",
+       "label": "B",
+       "content": "$2$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "181c3edc-9368-5562-b4e6-ce74d114f20a",
+       "label": "C",
+       "content": "$4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "b132f5ca-e43d-5f5e-8ecc-74808c84e957",
+       "label": "D",
+       "content": "$5$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "57b1513e-c044-5269-8558-e43789cd5dcc",
+     "key": "fm-fn-02",
+     "stem": "$f(x) = 2x - 5$ and $g(x) = x^{2} + 1$. Find $fg(x)$.",
+     "image_url": null,
+     "explanation": "$fg(x) = f(x^{2} + 1) = 2(x^{2} + 1) - 5 = 2x^{2} - 3$\n\n**Why the other options are wrong**\n\n- $4x^{2} - 20x + 26$: That is $gf(x) = (2x - 5)^{2} + 1$. In $fg(x)$, $g$ goes inside $f$.\n- $2x^{3} - 5x^{2} + 2x - 5$: $fg(x)$ is a composite, not the product $(2x - 5)(x^{2} + 1)$.\n- $2x^{2} - 4$: Multiply the whole of $x^{2} + 1$ by 2: $2(x^{2} + 1) - 5 = 2x^{2} - 3$.",
+     "position": 2,
+     "options": [
+      {
+       "id": "070491f7-c8a2-55d0-9dcf-86fa2ed4044f",
+       "label": "A",
+       "content": "$4x^{2} - 20x + 26$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "7a584d66-ca3c-53b1-8ae6-738456061de9",
+       "label": "B",
+       "content": "$2x^{3} - 5x^{2} + 2x - 5$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "b7e1e0d1-30e6-5dc9-8fc0-8de4c2586849",
+       "label": "C",
+       "content": "$2x^{2} - 4$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "ea746f63-dbb0-5761-af45-ea14f39d689d",
+       "label": "D",
+       "content": "$2x^{2} - 3$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1c048ee2-bd78-5303-b7d1-c896d37b3379",
+     "key": "fm-fn-03",
+     "stem": "State the largest domain of $f(x) = \\dfrac{1}{x^{2} - 9}$.",
+     "image_url": null,
+     "explanation": "The denominator is zero when $x^{2} = 9$, that is $x = \\pm3$. The domain is all real $x$ except $-3$ and $3$.\n\n**Why the other options are wrong**\n\n- all real $x$ except $x = 3$: $x^{2} = 9$ has two solutions: $x = -3$ makes the denominator zero too.\n- all real $x$ except $x = 9$: Exclude the values of $x$ that make $x^{2} - 9 = 0$, that is $x = \\pm3$, not $x = 9$.\n- $x > 3$: Only zero in the denominator is forbidden; values such as $x = 0$ or $x = -5$ are allowed.",
+     "position": 3,
+     "options": [
+      {
+       "id": "664963d9-2d29-5f91-8c98-cbb8743bc3e5",
+       "label": "A",
+       "content": "all real $x$ except $x = -3$ and $x = 3$",
+       "is_correct": true,
+       "position": 0
+      },
+      {
+       "id": "84320ba8-113e-5bc5-a9cb-ed0f10d647fa",
+       "label": "B",
+       "content": "all real $x$ except $x = 3$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "76f9e8e5-6967-57e3-8a6e-cf31f86ec620",
+       "label": "C",
+       "content": "all real $x$ except $x = 9$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "5eea77bd-4314-5716-af87-91d00d40a084",
+       "label": "D",
+       "content": "$x > 3$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "1056f447-f21b-5b3c-9c89-e20b62d35b5d",
+     "key": "fm-fn-04",
+     "stem": "State the largest domain of $g(x) = \\sqrt{5 - 2x}$.",
+     "image_url": null,
+     "explanation": "The expression under the root must not be negative: $5 - 2x \\ge 0$, so $x \\le \\dfrac52$.\n\n**Why the other options are wrong**\n\n- $x \\ge \\dfrac{5}{2}$: $5 - 2x \\ge 0$ gives $2x \\le 5$: dividing does not reverse the inequality here, and the values below $\\tfrac52$ are the allowed ones.\n- $x < \\dfrac{5}{2}$: $\\sqrt{0} = 0$ is defined, so $x = \\tfrac52$ belongs to the domain: use $\\le$.\n- $x \\le 5$: Divide by 2 as well: $2x \\le 5$ gives $x \\le \\tfrac52$.",
+     "position": 4,
+     "options": [
+      {
+       "id": "5b14a05c-d9bf-5f22-8163-6fd9abcec5cd",
+       "label": "A",
+       "content": "$x \\ge \\dfrac{5}{2}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "be571464-ddf7-546f-be2a-702b95ae8e00",
+       "label": "B",
+       "content": "$x \\le \\dfrac{5}{2}$",
+       "is_correct": true,
+       "position": 1
+      },
+      {
+       "id": "0c366739-feba-532d-bf01-ec8ec414dd03",
+       "label": "C",
+       "content": "$x < \\dfrac{5}{2}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "d8d859d6-7190-59cb-a2f6-403aa5386580",
+       "label": "D",
+       "content": "$x \\le 5$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "c3d5b2ed-8b1f-59f3-9688-6d30c4e9fd0a",
+     "key": "fm-fn-05",
+     "stem": "$f(x) = \\dfrac{2x + 1}{x - 3}$, $x \\ne 3$. Find $f^{-1}(x)$.",
+     "image_url": null,
+     "explanation": "$y = \\dfrac{2x + 1}{x - 3} \\Rightarrow xy - 3y = 2x + 1 \\Rightarrow x(y - 2) = 3y + 1 \\Rightarrow x = \\dfrac{3y + 1}{y - 2}$.\n\n$f^{-1}(x) = \\dfrac{3x + 1}{x - 2}$, $x \\ne 2$.\n\n**Why the other options are wrong**\n\n- $\\dfrac{x - 3}{2x + 1}$: The inverse function is not the reciprocal $\\dfrac{1}{f(x)}$. Make $x$ the subject of $y = f(x)$.\n- $\\dfrac{3x - 1}{x + 2}$: From $xy - 3y = 2x + 1$, collect: $x(y - 2) = 3y + 1$. You changed the signs.\n- $\\dfrac{x + 1}{x - 3}$: Solving for $x$ needs every $x$ term on one side; the coefficient 2 cannot be dropped.",
+     "position": 5,
+     "options": [
+      {
+       "id": "757c08dd-8338-5e0d-9464-93c5a77ad4dc",
+       "label": "A",
+       "content": "$\\dfrac{x - 3}{2x + 1}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "ff5dcb3a-77cd-51d0-8a20-70f25abcaa9e",
+       "label": "B",
+       "content": "$\\dfrac{3x - 1}{x + 2}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "7e86a99f-0e8e-5045-84e2-c3b051283936",
+       "label": "C",
+       "content": "$\\dfrac{x + 1}{x - 3}$",
+       "is_correct": false,
+       "position": 2
+      },
+      {
+       "id": "9a4e4851-4cf9-514b-8a4d-ad12ffb6f461",
+       "label": "D",
+       "content": "$\\dfrac{3x + 1}{x - 2}$",
+       "is_correct": true,
+       "position": 3
+      }
+     ]
+    },
+    {
+     "id": "39706fd8-f345-598e-9efc-39f9bcf0d98b",
+     "key": "fm-fn-06",
+     "stem": "$f(x) = 3x - 2$. Find $f^{-1}(7)$.",
+     "image_url": null,
+     "explanation": "$f^{-1}(x) = \\dfrac{x + 2}{3}$, so $f^{-1}(7) = \\dfrac{9}{3} = 3$. Check: $f(3) = 9 - 2 = 7$ ✓\n\n**Why the other options are wrong**\n\n- $19$: $19 = f(7)$. The inverse undoes $f$: solve $3x - 2 = 7$.\n- $\\dfrac{1}{19}$: $f^{-1}(7)$ is not $\\dfrac{1}{f(7)}$.\n- $\\dfrac{5}{3}$: The inverse is $f^{-1}(x) = \\dfrac{x + 2}{3}$: add 2 (undo the $-2$), do not subtract it.",
+     "position": 6,
+     "options": [
+      {
+       "id": "e3ae2e63-c256-59b8-a166-248e079ccff2",
+       "label": "A",
+       "content": "$\\dfrac{1}{19}$",
+       "is_correct": false,
+       "position": 0
+      },
+      {
+       "id": "6390cd26-1b6b-58d9-9bb5-ce173642f246",
+       "label": "B",
+       "content": "$\\dfrac{5}{3}$",
+       "is_correct": false,
+       "position": 1
+      },
+      {
+       "id": "0d1a77c9-9681-5691-aa3d-a4e44278901a",
+       "label": "C",
+       "content": "$3$",
+       "is_correct": true,
+       "position": 2
+      },
+      {
+       "id": "072dfbe4-97d2-5f90-9f94-4012d1b2496d",
+       "label": "D",
+       "content": "$19$",
+       "is_correct": false,
+       "position": 3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "version": "91b95f93c941"
+}
