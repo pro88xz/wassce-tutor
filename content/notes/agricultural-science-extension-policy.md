@@ -111,6 +111,16 @@ Any five: knowledge and skill; good communication in the local language; patienc
 Any five: research; extension; agricultural education; input supply; credit; mechanization services; feeder roads and irrigation; land policy; marketing and price policy; laws and regulations; food security.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Extension worker**: an officer who teaches farmers improved practices, passes on research results and carries farmers' problems back to researchers.
+- **Individual extension methods**: methods that reach one farmer at a time, such as farm and home visits, office calls and phone calls.
+- **Mass extension methods**: methods that reach many farmers at once, such as radio, television, posters, leaflets, text messages and social media.
+- **Method demonstration**: a group extension method that shows farmers how to do something, such as budding.
+- **Result demonstration**: a group extension method that shows farmers the results of a practice, for example a plot of an improved variety beside a local one.
+:::
+
 ## Key points
 
 - **Extension** is education for farmers: teaching, transferring research, advising, organising, feedback.

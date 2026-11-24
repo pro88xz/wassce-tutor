@@ -136,6 +136,17 @@ The first **4–6 weeks** after planting, when weeds cause most yield loss; keep
 Any three: correct spacing; cover crops; mulching; crop rotation; timely planting and fertiliser use; flooding (rice).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Annual weed**: a weed that completes its life cycle in one season.
+- **Perennial weed**: a weed that lives for many years, often spreading from rhizomes.
+- **Sedges**: grass-like weeds with triangular stems.
+- **Parasitic weed**: a weed, such as witchweed (Striga), that attacks the roots of crops and takes their food and water.
+- **Herbicide**: a chemical used to kill weeds.
+- **Mulching**: covering the soil with materials such as dry grass or plastic to smother weeds and keep in moisture.
+:::
+
 ## Key points
 
 - A **weed** is a plant growing where it is not wanted; weeds grow fast, seed heavily and spread vegetatively.

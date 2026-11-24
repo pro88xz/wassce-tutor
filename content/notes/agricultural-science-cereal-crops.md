@@ -104,6 +104,18 @@ Pests: stem borers, fall armyworm, grasshoppers, weevils (any two). Disease: mai
 Soaking, steaming and drying paddy before milling. Advantages: fewer broken grains; more nutrients kept in the grain; better storage and resistance to insects (any two).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Cereal**: a grass grown for its grain, such as rice, maize, sorghum and millet.
+- **Upland rice**: rice grown on rain-fed slopes, usually under bush fallow; the most common traditional system in Sierra Leone.
+- **Inland valley swamp** (IVS): a valley bottom that stays wet most of the year and can be developed for rice with bunds and channels.
+- **Boliland**: seasonally flooded grassland in the north with heavy soils, used for rice.
+- **Mangrove swamp rice**: rice grown in tidal swamps, such as those of the Scarcies, where the rains wash out the salt.
+- **Stem borer**: an insect larva that tunnels inside the stems of rice and maize, causing dead hearts and white heads.
+- **Fall armyworm**: a caterpillar pest of maize that leaves ragged leaves and droppings in the whorl.
+:::
+
 ## Key points
 
 - Cereals: **rice, maize, sorghum, millet, fonio**: mainly energy foods.

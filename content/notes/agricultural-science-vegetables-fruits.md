@@ -116,6 +116,18 @@ The swamp still has moisture and water close by, and vegetables are **scarce** i
 Any three: harvest in the cool morning; handle gently; pack in crates; keep in the shade; transport quickly; process (dry, juice) surplus.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Leafy vegetables**: vegetables grown for their leaves, such as krain-krain, amaranth, cabbage and lettuce.
+- **Fruit vegetables**: vegetables grown for their fruits, such as tomato, pepper, okra and garden egg.
+- **Raised bed**: a bed of soil about 1 m wide, raised above the ground so that it drains well and is easy to water and weed.
+- **Transplanting**: moving seedlings raised in a nursery to the field, usually at 4–6 weeks.
+- **Grafting**: joining a shoot of a good variety onto a rootstock, used for mango and avocado.
+- **Budding**: inserting a bud of a good variety into a vigorous rootstock, used for citrus.
+- **Sucker**: a shoot growing from the base of a plant, used to propagate plantain, banana and pineapple.
+:::
+
 ## Key points
 
 - Vegetables: **leafy** (potato leaves, krain-krain), **fruit** (pepper, tomato, okra, garden egg), **bulb** (onion); rich in vitamins and minerals.

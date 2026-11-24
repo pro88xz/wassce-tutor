@@ -151,6 +151,18 @@ $\dfrac{21}{100} \times 25 = 5.25$ kg N.
 Any three: improves soil structure and water holding; releases nutrients slowly; cheap or free; feeds soil organisms; does not acidify or pollute when used properly.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Leaching**: rain washing soluble nutrients below the root zone.
+- **Macronutrients**: nutrients plants need in large amounts, such as nitrogen, phosphorus and potassium.
+- **Micronutrients** (trace elements): nutrients plants need in small amounts, such as iron.
+- **Organic manure**: decayed plant and animal matter, such as farmyard manure, compost and green manure, added to improve the soil.
+- **Inorganic fertiliser**: a manufactured chemical that supplies plant nutrients, such as urea or NPK.
+- **Liming**: adding lime to the soil to reduce acidity.
+- **Denitrification**: the loss of nitrogen as gas from waterlogged soil.
+:::
+
 ## Key points
 
 - **Fertility** = nutrient supply; **productivity** = yield, which needs fertility plus good conditions.

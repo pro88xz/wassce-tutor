@@ -135,6 +135,16 @@ Colostrum contains **antibodies** that protect against disease, and the young ca
 Temperature about 37.5 °C; humidity about 55–60%; regular turning of eggs; good ventilation (and candling to remove infertile eggs).
 :::
 
+## Key terms to revise
+
+:::callout{type=definition title="Key terms"}
+- **Artificial insemination** (AI): placing semen collected from a high-quality male into the female's reproductive tract.
+- **Inbreeding**: mating closely related animals, such as brother and sister or parent and offspring.
+- **Line breeding**: mild inbreeding that keeps animals related to one outstanding ancestor.
+- **Crossbreeding**: mating animals of different breeds, which combines traits and gives hybrid vigour.
+- **Upgrading** (grading up): repeatedly mating local females and their female offspring to males of an improved breed.
+:::
+
 ## Key points
 
 - **Puberty, oestrous cycle, heat, gestation, parturition**: know the definitions.

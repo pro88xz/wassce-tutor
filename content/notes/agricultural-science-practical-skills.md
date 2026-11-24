@@ -121,6 +121,17 @@ Area per plant $= 0.1875$ m². Seeds $= 1500 \div 0.1875 = 8000$.
 Any three: read the label; wear gloves and a mask; mix outdoors; do not eat, drink or smoke; wash hands afterwards; store safely.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Plant population**: the number of plants on an area: area divided by the area per plant, times the plants per stand.
+- **Seed rate**: the quantity of seed needed to plant a given area.
+- **Germination percentage**: the number of seeds that germinate as a percentage of the seeds sown.
+- **Specimen**: a sample, such as a soil, seed, pest, weed or animal product, to be identified and described in a practical examination.
+- **Feed conversion ratio** (FCR): the amount of feed eaten divided by the weight gained; the lower it is, the better the animal uses its feed.
+- **Laying percentage**: the number of eggs laid in a day as a percentage of the number of hens.
+:::
+
 ## Key points
 
 - **1 ha = 10 000 m²**; areas of rectangles, triangles and trapeziums; divide irregular plots.

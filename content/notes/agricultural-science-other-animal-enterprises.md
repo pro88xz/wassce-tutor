@@ -112,6 +112,17 @@ Smoke **calms the bees** (they gorge on honey and are less likely to sting), mak
 Provides valued meat and income; reduces hunting of wild animals; lowers the risk of diseases from wild bushmeat; needs little land (any two).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Fingerlings**: young fish used to stock a pond.
+- **Plankton**: tiny plants and animals in water, the natural food of young fish.
+- **Dyke**: a bank around a fish pond.
+- **Apiculture** (bee-keeping): keeping bees for honey and wax.
+- **Drones**: male honey bees; a colony has a few hundred.
+- **Heliciculture** (snail farming): the rearing of snails for food.
+:::
+
 ## Key points
 
 - **Aquaculture**: tilapia and catfish; ponds need **water, clay soil, gentle slope**; screen the inlet; fertilise for plankton; avoid overstocking; harvest at 5–6 months.

@@ -102,6 +102,17 @@ It can carry the **African swine fever** virus (and other diseases), for which t
 $10 \times 2 \times 3 = 60$ piglets.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Slatted floor**: a raised floor of strips with gaps, through which droppings fall, keeping goats and sheep dry and reducing worms and foot rot.
+- **Browsing**: feeding on shrubs and tree leaves, as goats prefer.
+- **Kraal**: a simple night enclosure that protects cattle against theft and predators.
+- **Colostrum**: the first milk after birth, rich in antibodies that protect the young.
+- **Weaning**: stopping the young from suckling and moving them to solid feed.
+- **Castration**: removing or destroying the testes of male animals, for example for fattening.
+:::
+
 ## Key points
 
 - **Cattle**: mostly N'Dama, extensive and transhumant; kraal, grazing plus dry-season supplements, tick and disease control; hygienic milking for dairy.

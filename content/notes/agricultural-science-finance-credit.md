@@ -129,6 +129,16 @@ $\dfrac{10\,000 \times 15 \times 2}{100} = $ NLe 3000.
 Any four: no collateral; high interest; small scattered farms; risk of crop failure; no records; illiteracy; few rural banks; poor repayment history.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Osusu**: a savings group in which members contribute a fixed amount regularly and each in turn receives the whole pot.
+- **Village savings and loan association**: a group whose members save weekly and lend to each other at interest set by the group.
+- **Microfinance institution**: a lender that gives small loans to individuals and groups, often without collateral, using a group guarantee.
+- **Group guarantee**: members of a group being jointly responsible for each member's loan, in place of collateral.
+- **Moneylender**: a private lender who lends quickly without paperwork but at high interest.
+:::
+
 ## Key points
 
 - **Credit** buys inputs, equipment and time; it must be repaid with **interest**.

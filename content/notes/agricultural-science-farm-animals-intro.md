@@ -109,6 +109,17 @@ Advantages: cheap; little labour. Disadvantages: slow growth; theft and losses; 
 Any three: ear tags, ear notching, tattooing, branding, leg bands.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **N'Dama**: a small, hardy West African cattle breed that tolerates trypanosomiasis.
+- **West African Dwarf goat**: a hardy, prolific local goat that tolerates trypanosomiasis.
+- **Extensive system**: a management system in which animals roam to find their own food, with little housing or care.
+- **Semi-intensive system**: a system in which animals graze or forage by day and are housed at night, with some supplementary feed.
+- **Intensive system**: a system in which animals are kept confined all the time and given all their feed and care.
+- **Draught power**: the use of animals such as oxen and donkeys to pull ploughs and carts.
+:::
+
 ## Key points
 
 - Classes: **ruminants** (cattle, sheep, goats), **non-ruminants** (pigs, rabbits), **poultry**.

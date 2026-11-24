@@ -120,6 +120,17 @@ Cassava: $44 - 16 = 28$ parts; soya: $16 - 2 = 14$ parts; total 42. Cassava $= \
 **Hay** is forage dried to about 15% moisture and stored dry. **Silage** is green forage packed airtight and preserved by fermentation (acid).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Hay**: grass or legumes cut at a young, leafy stage, dried to about 15% moisture and stored under cover.
+- **Silage**: green forage packed tightly in an airtight pit, trench or bag, where bacteria ferment it so it keeps.
+- **Roughages**: bulky feeds high in fibre and low in energy per kilogram, mainly for ruminants.
+- **Concentrates**: feeds low in fibre and high in energy or protein.
+- **Rotational grazing**: dividing pasture into paddocks grazed in turn, so that each can recover.
+- **Pearson square**: a method of working out the proportions of two feeds to mix to give a ration with the required protein content.
+:::
+
 ## Key points
 
 - Nutrients: **carbohydrates, fats, proteins, minerals, vitamins, water**; water must always be available.

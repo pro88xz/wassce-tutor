@@ -129,6 +129,18 @@ Cause: the fungus *Phytophthora*. Control: frequent harvesting; removing and des
 Any four: read the label; wear protective clothing; do not eat, drink or smoke; spray with the wind behind you on calm days; keep children and animals away; observe the waiting period; wash equipment and yourself; store chemicals safely.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Pest**: any organism that damages crops, stored produce or animals.
+- **Biting and chewing insects**: insects such as grasshoppers, caterpillars, fall armyworm and beetles that eat plant tissue.
+- **Piercing and sucking insects**: insects such as aphids, whiteflies, mealybugs and cocoa mirids that suck plant sap.
+- **Boring insects**: insects such as the stem borers of rice and maize that tunnel inside plants.
+- **Fumigant**: a pesticide gas that penetrates stored produce.
+- **Cultural control**: controlling pests and diseases through farm practices such as resistant varieties, clean planting material, crop rotation, timely planting and field sanitation.
+- **Integrated pest management** (IPM): combining cultural, biological and chemical methods so that pesticides are used only when needed.
+:::
+
 ## Key points
 
 - Pests: **chewing, sucking and boring insects, mites, nematodes, birds, rodents, storage pests**.

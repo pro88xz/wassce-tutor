@@ -103,6 +103,17 @@ Spread by **whiteflies** and by **infected cuttings**. Control: resistant variet
 Fresh roots spoil within two or three days; processing removes poisonous cyanide compounds; it gives products that store and travel well (gari, chips, flour) and adds value.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Legume**: a plant of the bean family, such as groundnut, cowpea or soya bean, whose root nodules hold bacteria that fix nitrogen.
+- **Pegs**: the flower stalks of groundnut that grow down into the soil, where the pods form.
+- **Earthing up**: drawing soil up around the base of plants, as for groundnut when the pegs begin to grow down.
+- **Sett**: a piece of yam tuber used for planting; a small piece is a miniset.
+- **Cormel**: a small corm that grows from the main corm of cocoyam, used for planting.
+- **Groundnut rosette**: a virus disease of groundnut spread by aphids.
+:::
+
 ## Key points
 
 - Legumes (**groundnut, cowpea, soya bean, pigeon pea**) give **protein** and **fix nitrogen**.
