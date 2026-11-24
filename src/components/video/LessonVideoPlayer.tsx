@@ -1,10 +1,8 @@
 // The protected lesson video player. Nothing here is a video address: the
 // player asks /api/video for a short-lived viewer token, loads the encrypted
 // stream with it, and unmasks the key in memory (api/_lib/video.js explains
-// the server side). The site's address is burned into every frame; over the
-// picture, the viewer's code drifts along the foot of the board, in fullscreen too
-// (the frame, not the bare <video>, goes fullscreen), so a screen recording
-// says where, and for whom, it was played.
+// the server side). The site's address is burned into every frame of the
+// video itself, so any copy says where it came from.
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { KeyboardEvent, ReactNode } from 'react'
 import { Capacitor } from '@capacitor/core'
@@ -18,13 +16,8 @@ import { cn } from '@/lib/utils'
 
 const API = typeof window !== 'undefined' && Capacitor.isNativePlatform() ? 'https://wasscetutor.com' : ''
 const SPEEDS = [1, 1.25, 1.5, 0.75]
-// Where the viewer's mark sits in turn: along the strip at the foot of the
-// board, which the lesson never writes on (left of the board's own caption),
-// so it never covers the teacher's writing.
-const MARK_SPOTS = ['left-[4%] bottom-[5.5%]', 'left-[20%] bottom-[5.5%]', 'left-[36%] bottom-[5.5%]', 'left-[12%] bottom-[5.5%]', 'left-[28%] bottom-[5.5%]']
-
 type Phase = 'idle' | 'loading' | 'ready' | 'error' | 'unsupported'
-type Session = { token: string; mask: Uint8Array; viewer: string }
+type Session = { token: string; mask: Uint8Array }
 
 async function startSession(video: string): Promise<Session> {
   const res = await fetch(`${API}/api/video?op=start`, {
@@ -34,9 +27,9 @@ async function startSession(video: string): Promise<Session> {
     credentials: 'omit',
   })
   if (!res.ok) throw new Error(`start ${res.status}`)
-  const body = (await res.json()) as { token: string; mask: string; viewer: string }
+  const body = (await res.json()) as { token: string; mask: string }
   const mask = new Uint8Array(body.mask.match(/../g)!.map((h) => parseInt(h, 16)))
-  return { token: body.token, mask, viewer: body.viewer }
+  return { token: body.token, mask }
 }
 
 const isOurs = (url: string) => url.includes('/api/video?')
@@ -55,19 +48,10 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
   const [captions, setCaptions] = useState(false)
   const [speed, setSpeed] = useState(1)
   const [full, setFull] = useState(false)
-  const [viewer, setViewer] = useState('')
-  const [spot, setSpot] = useState(0)
   const [chrome, setChrome] = useState(true)
   const duration = video.duration_s
 
   useEffect(() => () => hls.current?.destroy(), [])
-
-  // The viewer's mark moves every 12 seconds while the video is loaded.
-  useEffect(() => {
-    if (phase !== 'ready') return
-    const id = window.setInterval(() => setSpot((s) => (s + 1) % MARK_SPOTS.length), 12_000)
-    return () => window.clearInterval(id)
-  }, [phase])
 
   useEffect(() => {
     const onFull = () => setFull(document.fullscreenElement === frame.current)
@@ -91,7 +75,6 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
         return
       }
       session.current = await startSession(video.id)
-      setViewer(session.current.viewer)
       hls.current?.destroy()
 
       // Key responses are masked for this viewer: unmask them before hls.js decrypts.
@@ -285,13 +268,6 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
           <div className="absolute inset-0 flex items-center justify-center bg-black/75 p-6 text-center text-sm font-semibold text-white">
             This browser cannot play protected video. Update it, or watch in Chrome or the WASSCE Tutor app.
           </div>
-        )}
-
-        {/* The viewer's mark: the site and their code, moving, in fullscreen too. */}
-        {phase === 'ready' && (
-          <span aria-hidden className={cn('pointer-events-none absolute z-10 whitespace-nowrap text-[8px] font-medium tracking-wide text-white/25 transition-all duration-[1500ms] sm:text-[10px]', MARK_SPOTS[spot])}>
-            wasscetutor.com · {viewer}
-          </span>
         )}
 
         {phase === 'ready' && (
