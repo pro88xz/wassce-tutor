@@ -173,11 +173,20 @@ export async function isGooglebot(ip, resolver = dns.promises) {
 
 const SITEVERIFY = 'https://challenges.cloudflare.com/turnstile/v0/siteverify'
 
-/** A function (token, ip) -> whether Cloudflare confirms a person, or null when the check is off. */
+// Cloudflare's answers that mean our own secret key is wrong, not the visitor.
+const KEY_ERRORS = ['missing-input-secret', 'invalid-input-secret']
+
+/**
+ * A function (token, ip, why?) -> whether Cloudflare confirms a person, or null
+ * when the check is off. Cloudflare's reasons for a refusal go in why.codes.
+ */
 export function turnstileVerifier(secretKey, fetchFn = fetch, log = console.error) {
   if (!secretKey) return null
-  return async (token, ip) => {
-    if (typeof token !== 'string' || !token || token.length > 2048) return false
+  return async (token, ip, why = {}) => {
+    if (typeof token !== 'string' || !token || token.length > 2048) {
+      why.codes = ['no-token']
+      return false
+    }
     try {
       const res = await fetchFn(SITEVERIFY, {
         method: 'POST',
@@ -187,7 +196,15 @@ export function turnstileVerifier(secretKey, fetchFn = fetch, log = console.erro
       })
       if (res.status >= 500) throw new Error(`siteverify ${res.status}`)
       const out = await res.json()
-      return out?.success === true
+      if (out?.success === true) return true
+      const codes = (Array.isArray(out?.['error-codes']) ? out['error-codes'] : []).map(String).slice(0, 4)
+      why.codes = codes
+      if (codes.some((c) => KEY_ERRORS.includes(c))) {
+        // Our key is wrong, so every visitor would be refused: say so, and let them through.
+        log(`[turnstile] Cloudflare rejected TURNSTILE_SECRET_KEY (${codes.join(', ')}): it must be the secret of the widget whose site key is VITE_TURNSTILE_SITE_KEY`)
+        return true
+      }
+      return false
     } catch (e) {
       // Cloudflare unreachable: let viewers through rather than stop every video.
       log(`[video] Turnstile check skipped: ${e}`)
@@ -230,7 +247,7 @@ const PRIVATE_HEADERS = { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex,
 const reply = (request, body, status, type = 'application/json') =>
   new Response(type === 'application/json' ? JSON.stringify(body) : body, { status, headers: { 'Content-Type': type, ...PRIVATE_HEADERS, ...cors(request) } })
 
-const refuse = (request, status = 403, code = 'forbidden') => reply(request, { code }, status)
+const refuse = (request, status = 403, code = 'forbidden', why) => reply(request, why ? { code, why } : { code }, status)
 
 /**
  * Is this a request the site's own player made? Browsers send Sec-Fetch-*
@@ -285,7 +302,8 @@ export function videoHandler({ store, secret, resolver = dns.promises, log = con
       const id = typeof body?.video === 'string' ? body.video : ''
       if (!ID.test(id)) return refuse(request, 400, 'bad_request')
       // A person in a browser, confirmed by Cloudflare, before anything else is looked up.
-      if (human && !(await human(body.human, ip))) return refuse(request, 403, 'not_a_person')
+      const why = {}
+      if (human && !(await human(body.human, ip, why))) return refuse(request, 403, 'not_a_person', why.codes)
       const video = await store.video(id)
       if (!video) return refuse(request, 404, 'not_found')
       const { token, payload } = issueToken(secret, { video: id, revision: video.revision, ip })
