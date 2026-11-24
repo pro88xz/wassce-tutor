@@ -23,9 +23,39 @@ another one. How to write, check and publish a video: `scripts/video/README.md`.
 - **Biology**: the "Premium video content with security" session, in manifest
   order: cell structure, classification, photosynthesis, then onwards.
 - **Physics**: the physics session, topic by topic in syllabus order (physical
-  quantities and units first), plus `physics-waves-1`. Physics speaks in the male
-  voice (`VOICE = "bm_george"` in each script); every other subject keeps the
-  default female voice.
+  quantities and units first), plus `physics-waves-1`.
+
+## One teacher's voice per subject
+
+As in a school, every subject has its own teacher, so a student moving between
+subjects hears a different voice. A video speaks in its subject's voice
+automatically (`TEACHERS` in `scripts/video/board_video.py`):
+
+| Subject | Voice | Kokoro grade |
+|---|---|---|
+| Biology | bf_emma (British female) | B- |
+| Physics | bm_george (British male) | C |
+| Mathematics | af_heart | A, the best voice |
+| Chemistry | af_bella | A- |
+| Financial Accounting | af_nicole | B- |
+| English Language | bf_isabella (British: oral English is RP) | C |
+| Literature in English | bm_fable (British male) | C |
+| Further Mathematics | am_michael | C+ |
+| History | am_fenrir | C+ |
+| Government | am_puck | C+ |
+| Economics | af_sarah | C+ |
+| Geography | af_kore | C+ |
+| Commerce | blend of af_bella and bf_isabella | — |
+| Agricultural Science | blend of am_fenrir and bm_lewis | — |
+| ICT / Computer Studies | blend of am_puck and bm_fable | — |
+| Business Management | blend of af_kore and bf_isabella | — |
+
+Grades are Kokoro's own (VOICES.md: the quality and amount of each voice's training
+audio); nothing below C is used. Every voice speaks British pronunciation, since the
+phonemes come from misaki's British dictionary. Each teacher read a line of their
+subject and was heard back word for word. Some American-trained voices can blur the
+British "o" (*commerce*, *transport*), which is why af_aoede was not used.
+`check_voice.py` catches any such line, so reword it.
 
 ## The rules every video follows
 

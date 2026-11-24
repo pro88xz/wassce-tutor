@@ -43,10 +43,60 @@ from oral_audio import MODELS, RATE, Lexicon, tidy  # noqa: E402
 
 W, H, FPS = 1280, 720, 25
 VOICE, SPEED = "bf_emma", 0.92   # the default voice
-# The voices a script may choose with VOICE = "..." (Physics uses the male voice).
-# Both are checked by scripts/video/check_voice.py like every other line.
-VOICES = {"bf_emma": "British English, female", "bm_george": "British English, male"}
+# Each subject has its own teacher, as in a school, so a student moving between
+# subjects hears a different voice. All speak British pronunciation (the phonemes
+# come from misaki's British dictionary, whatever the voice). Chosen by Kokoro's
+# published grades (VOICES.md: the quality and amount of each voice's training
+# audio): the two best (A, A-) for Mathematics and Chemistry, British voices for
+# English and Literature, and nothing graded below C. "a*0.5+b*0.5" blends two
+# voices into a new one, for the subjects beyond the graded voices. Every
+# teacher read a line of their subject and was heard back word for word.
+TEACHERS = {
+    "biology": "bf_emma",                                   # B-
+    "physics": "bm_george",                                 # C, British male
+    "mathematics": "af_heart",                              # A
+    "chemistry": "af_bella",                                # A-
+    "financial-accounting": "af_nicole",                    # B-
+    "english-language": "bf_isabella",                      # C, British: oral English is RP
+    "literature-in-english": "bm_fable",                    # C, British male
+    "further-mathematics": "am_michael",                    # C+
+    "history": "am_fenrir",                                 # C+
+    "government": "am_puck",                                # C+
+    "economics": "af_sarah",                                # C+
+    "geography": "af_kore",                                 # C+
+    "commerce": "af_bella*0.5+bf_isabella*0.5",             # blend
+    "agricultural-science": "am_fenrir*0.5+bm_lewis*0.5",   # blend
+    "ict-computer-studies": "am_puck*0.5+bm_fable*0.5",     # blend
+    "business-management": "af_kore*0.5+bf_isabella*0.5",  # blend
+}
 _voice = VOICE   # the voice of the script loaded last: load() sets it
+
+
+def _subject_of(text: str, stem: str) -> str | None:
+    """A script's subject: from LESSON ("physics/topic/lesson"), else from its note's manifest entry."""
+    m = re.search(r'^LESSON\s*=\s*"([a-z0-9-]+)/', text, re.M)
+    if m:
+        return m.group(1)
+    note = re.search(r'^NOTE\s*=\s*"([^"]+)"', text, re.M)
+    file = note.group(1) if note else f"{stem}.md"
+    for entry in json.loads((ROOT / "content/notes/manifest.json").read_text())["lessons"]:
+        if entry["file"] == file:
+            return re.sub(r"[^a-z0-9]+", "-", entry["subject"].lower()).strip("-")
+    return None
+
+
+def voice_for(path: Path) -> tuple[str, bool]:
+    """The voice a script speaks in (its subject's teacher), and whether the
+    script names it itself with VOICE = "...", which must be that teacher."""
+    text = path.read_text()
+    subject = _subject_of(text, path.stem)
+    teacher = TEACHERS.get(subject or "")
+    named = re.search(r'^VOICE\s*=\s*"([^"]+)"', text, re.M)
+    if named:
+        if teacher and named.group(1) != teacher:
+            raise SystemExit(f"{path}: {subject} is taught in the voice {teacher}, not {named.group(1)}")
+        return named.group(1), True
+    return teacher or VOICE, False
 CACHE = Path.home() / ".cache/wassce-video"
 VERSION = 2   # 2: no site address on the board; sharper encode
 
@@ -100,7 +150,7 @@ def _hand(p0, p1, wobble=1.0) -> np.ndarray:
 # ── Letters ───────────────────────────────────────────────────────────────
 _fonts: dict[str, object] = {}
 # Characters drawn from another Hershey font, and those drawn here.
-FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m")}
+FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m"), "π": ("greek", "p")}
 CAP, BASE = -12, 9            # Hershey cap line and base line
 TRACK = 0.88                  # chalk letters sit closer than Hershey spaces them
 
@@ -157,6 +207,8 @@ def text_strokes(text: str, x: float, y: float, size: float, color: str) -> tupl
     for chars, level in _runs(text):
         scale = scale0 * (0.62 if level else 1)
         lift = {1: -0.62 * size, -1: 0.28 * size, 0: 0}[level]
+        if level and chars[:1] == "-":
+            cx += 0.1 * size   # a raised minus sits at cap height: keep it off a T's bar (T^{-2})
         for ch in chars:
             glyph, adv = _glyph(ch)
             tilt = _rng.normal(0, 0.012)
@@ -436,6 +488,12 @@ class Voice:
         self.lex = Lexicon()
         CACHE.mkdir(parents=True, exist_ok=True)
 
+    def style(self):
+        """The voice's name, or for a blend ("a*0.5+b*0.5") the weighted mix of the voices' styles."""
+        if "+" not in _voice:
+            return _voice
+        return sum(float(w) * self.tts.get_voice_style(n) for n, w in (part.split("*") for part in _voice.split("+")))
+
     def __call__(self, text: str) -> np.ndarray:
         if not text:
             return np.zeros(0, np.float32)
@@ -443,11 +501,11 @@ class Voice:
             phonemes = self.lex.sentence(_with_sounds(text))
         except (ValueError, TypeError) as e:  # misaki raises TypeError on some unknown words
             raise SystemExit(f"Cannot say {text!r}: {e}. Reword the line.")
-        key = hashlib.sha256(f"{VERSION}|{_voice}|{SPEED}|{phonemes}".encode()).hexdigest()[:16]
+        key = hashlib.sha256(f"{VERSION}|{_voice}|{SPEED}|{phonemes}".encode()).hexdigest()[:16]   # blends by recipe
         path = CACHE / f"{key}.npy"
         if path.exists():
             return np.load(path)
-        audio, rate = self.tts.create(phonemes, voice=_voice, speed=SPEED, lang="en-gb", is_phonemes=True, trim=False)
+        audio, rate = self.tts.create(phonemes, voice=self.style(), speed=SPEED, lang="en-gb", is_phonemes=True, trim=False)
         assert rate == RATE, rate
         audio = tidy(audio, lead_s=0.05, tail_s=0.1)
         np.save(path, audio)
@@ -797,9 +855,7 @@ def load(path: Path):
     if len(mod.DESCRIPTION) > 300:
         raise SystemExit(f"{path}: DESCRIPTION is {len(mod.DESCRIPTION)} characters; keep it under 300")
     global _voice
-    _voice = getattr(mod, "VOICE", VOICE)
-    if _voice not in VOICES:
-        raise SystemExit(f"{path}: VOICE must be one of {', '.join(VOICES)}")
+    _voice, _ = voice_for(path)
     return mod
 
 
@@ -810,7 +866,12 @@ def lesson_steps(mod) -> list[Step]:
 def revision(path: Path) -> str:
     """What a video is made from: its script, the renderer's VERSION and the
     voice. A video is rebuilt and republished when this changes."""
-    h = hashlib.sha256(f"{VERSION}|{VOICE}|{SPEED}|".encode() + path.read_bytes())
+    voice, named = voice_for(path)
+    # a subject's teacher is part of what its videos are made from (a script that
+    # names its voice has it in its own text; the default voice adds nothing, so
+    # videos made before teachers keep their revision)
+    extra = b"" if named or voice == VOICE else f"|{voice}".encode()
+    h = hashlib.sha256(f"{VERSION}|{VOICE}|{SPEED}|".encode() + path.read_bytes() + extra)
     return h.hexdigest()[:12]
 
 
