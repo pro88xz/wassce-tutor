@@ -5,7 +5,7 @@ import type { UniversityGuide } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
-import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, privatePageTags, SITE } from '@/lib/seo'
+import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, orgRef, privatePageTags } from '@/lib/seo'
 
 export const Route = createFileRoute('/universities/$slug')({
   ssr: true,
@@ -39,7 +39,7 @@ export const Route = createFileRoute('/universities/$slug')({
         name: `${loaderData.name} — admissions and programme guide`,
         url: absoluteUrl(`/universities/${loaderData.slug}`),
         mainEntity: { '@id': absoluteUrl(`/universities/${loaderData.slug}#institution`) },
-        publisher: { '@type': 'Organization', name: SITE.name, url: SITE.origin },
+        publisher: orgRef(),
       },
       breadcrumbJsonLd([['Home','/'],['Universities','/universities'],[loaderData.name,`/universities/${loaderData.slug}`]])
     ]

@@ -4,7 +4,7 @@ import { BLOG_POSTS, UNIVERSITY_GUIDES } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
-import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, SITE } from '@/lib/seo'
+import { absoluteUrl, BLOG_ID, breadcrumbJsonLd, indexablePageTags, orgRef } from '@/lib/seo'
 
 export const Route = createFileRoute('/blog/')({
   ssr: true,
@@ -14,7 +14,7 @@ export const Route = createFileRoute('/blog/')({
     description: 'Research-backed WASSCE study advice, Sierra Leone university admissions guides, subject planning and practical resources for students and families.',
     image: editorialImage(BLOG_POSTS[0].image).og,
     jsonLd: [
-      { '@context': 'https://schema.org', '@type': 'Blog', name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog'), inLanguage: 'en', publisher: { '@type': 'Organization', name: SITE.name, url: SITE.origin } },
+      { '@context': 'https://schema.org', '@type': 'Blog', '@id': BLOG_ID, name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog'), inLanguage: 'en', publisher: orgRef() },
       { '@context': 'https://schema.org', '@type': 'ItemList', name: 'WASSCE Tutor editorial articles', itemListElement: BLOG_POSTS.map((post,i) => ({ '@type': 'ListItem', position: i+1, url: absoluteUrl(`/blog/${post.slug}`), name: post.title })) },
       breadcrumbJsonLd([['Home','/'],['Blog','/blog']])
     ]

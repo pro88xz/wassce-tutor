@@ -10,6 +10,7 @@ import { BookingForm } from '@/components/tutors/BookingForm'
 import { TutorMarketplace } from '@/components/tutors/Marketplace'
 import { PrivateLessonsGuide, TutorFaq, TutorHowItWorks, TutorJoinBand, TutorSubjectGrid } from '@/components/tutors/TutorSections'
 import { TUTOR_FAQ } from '@/lib/tutor-seo'
+import { fetchListedTutors } from '@/lib/subject-tutors'
 
 const TRAIL: [string, string][] = [
   ['Home', '/'],
@@ -22,7 +23,12 @@ const DESCRIPTION =
 
 export const Route = createFileRoute('/tutors/')({
   ssr: true,
-  loader: async () => (await fetchSubjectSummaries()).filter((s) => hasSubjectPage(s.topicCount)),
+  // Built with the tutors, so the cards are in the page's HTML from the start (search engines
+  // index them); the marketplace still refreshes the list in the browser.
+  loader: async () => {
+    const [summaries, tutors] = await Promise.all([fetchSubjectSummaries(), fetchListedTutors()])
+    return { subjects: summaries.filter((s) => hasSubjectPage(s.topicCount)), tutors }
+  },
   staleTime: Infinity,
   head: () =>
     indexablePageTags({
@@ -40,12 +46,12 @@ export const Route = createFileRoute('/tutors/')({
 })
 
 function TutorsPage() {
-  const subjects = Route.useLoaderData()
+  const { subjects, tutors } = Route.useLoaderData()
   return (
     <>
       <TutorsHero />
       <article className="tutor-booking-page site-page space-y-16 pb-12 pt-14 sm:space-y-20 sm:pt-20">
-      <TutorMarketplace />
+      <TutorMarketplace initialTutors={tutors} />
 
       <TutorHowItWorks />
 
