@@ -58,13 +58,18 @@ duster). Chalk colours: white, yellow, blue, pink, green, grey.
   subject · topic"), and every video ends on a branded card with wasscetutor.com.
   The board itself stays clean. Writing that would run off the board stops the
   build.
-- **The voice**: the oral English voice (`scripts/audio`): Kokoro `bf_emma` by default, or the male
-  `bm_george` with `VOICE = "bm_george"` in the script (Physics uses it),
-  speaking from the phonemes of misaki's British dictionary. A word that is not in
+- **The voice**: each subject has its own teacher, as in a school: `TEACHERS` in
+  `board_video.py` (Biology `bf_emma`, Physics `bm_george`, Mathematics `af_heart`, and so
+  on, chosen by Kokoro's published quality grades; a few are blends of two voices). A
+  script speaks in its subject's voice with no setting (a script may write
+  `VOICE = "..."`, but it must be its subject's teacher). Every voice speaks from the
+  phonemes of misaki's British dictionary. A word that is not in
   the dictionary stops the build, so the voice never guesses a word from its
   spelling. Scientific names the dictionary lacks (*sapiens*, *Linnaeus*) are
   given their sounds in `PRONOUNCE` in `board_video.py`. Write numbers as words ("ninety-eight"), and the symbol *a* as a
-  capital ("The amplitude, A, is…"): a small "a" is read as the article.
+  capital ("The amplitude, A, is…"): a small "a" is read as the article. Known gaps:
+  the dictionary lacks *factorise* and *program* (add their sounds to `PRONOUNCE`
+  when a video first needs them, and check them with `check_voice.py`).
 - **The chalk**: single-stroke Hershey letters, so writing appears stroke by
   stroke. Each step's drawing is paced to end with its speech; if it cannot (at up
   to twice the usual pace), the voice waits for it.
