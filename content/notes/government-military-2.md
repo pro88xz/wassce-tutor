@@ -74,6 +74,16 @@ The **Truth and Reconciliation Commission** found that the war's root causes lay
 The **Lomé Peace Agreement (1999)** did **not** end the war. Fighting continued, and in **May 2000** the RUF took UN peacekeepers hostage. The war ended after the **Abuja agreements**, disarmament and the declaration of **18 January 2002**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Revolutionary United Front (RUF)**: the rebel movement, led by Foday Sankoh, that began the civil war by attacking Bomaru in Kailahun District on 23 March 1991.
+- **ECOMOG**: the Nigerian-led ECOWAS force that drove the AFRC junta out of Freetown in February 1998.
+- **Abidjan Peace Accord** (November 1996): the peace agreement between the Kabbah government and the RUF, which failed to hold.
+- **Lomé Peace Agreement** (7 July 1999): the agreement that offered power-sharing, an amnesty and a role for Foday Sankoh.
+- **Truth and Reconciliation Commission (TRC)**: the commission that heard victims and perpetrators; its 2004 report explained the causes of the war and recommended reforms.
+:::
+
 ## Key points
 
 - Causes: **bad governance, economic collapse, youth marginalisation, diamonds, Liberian (Charles Taylor) support, weak army**.

@@ -77,6 +77,15 @@ The **Special Court for Sierra Leone** was created in **2002** by agreement betw
 The **Court of Appeal** is not the highest court in Sierra Leone. The **Supreme Court** is the final court of appeal. Also, **Local Courts** apply customary law, not English common law; the superior courts apply the Constitution, statutes, common law and customary law.
 :::
 
+## Key terms to revise
+
+:::callout{type=definition title="Key terms"}
+- **Appellate jurisdiction**: the power of a court to hear appeals from a lower court.
+- **Juvenile court**: a court that hears cases involving children, in private and with an emphasis on rehabilitation.
+- **Court martial**: a court that tries members of the armed forces under military law.
+- **Local Courts**: courts that apply customary law in the chiefdoms, under the Local Courts Act 2011.
+:::
+
 ## Key points
 
 - Superior courts: **Supreme Court → Court of Appeal → High Court**; lower courts: **Magistrate Courts → Local Courts**.

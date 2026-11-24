@@ -76,6 +76,16 @@ The three elected seats in **1924** were all won by candidates of the **National
 The 1924 constitution introduced **elections** but **not** an African majority or African control. Officials still held the majority. The first constitution to give Africans a **majority** in the Legislative Council was the **1951** constitution.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Executive Council**: the Governor and senior colonial officials, who advised him on government.
+- **Legislative Council** (LegCo): the colonial law-making body of the Governor, official members and a few nominated unofficial members.
+- **Official majority**: the arrangement in which colonial officials outnumbered unofficial members in the Legislative Council.
+- **Limited franchise**: a right to vote held only by a small, wealthy, educated minority.
+- **Slater Constitution** (1924): the constitution that brought the first three elected members, chosen on a limited franchise in the Colony, and three nominated Paramount Chiefs.
+:::
+
 ## Key points
 
 - **Crown Colony government**: a Governor ruling with councils of officials, under London.

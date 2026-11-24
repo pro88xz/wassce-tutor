@@ -77,6 +77,13 @@ Electricity in Sierra Leone was once supplied by a single body, the **National P
 A public corporation is not a **government ministry**. Its staff are **not civil servants**, it has a **board**, it earns its own revenue, and it can **sue and be sued** in its own name. Its link to government is through the **minister**, who appoints the board and gives general policy directions.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Public corporation**: a body created by an Act of Parliament and owned by the state, which runs a service or business for the public.
+- **Government department**: a part of a ministry, set up by administrative decision, managed by civil servants under a minister and paid for from the national budget.
+:::
+
 ## Key points
 
 - A **public corporation** is created by **statute**, **owned by the state** and run by a **board** to provide a service, not mainly for profit.

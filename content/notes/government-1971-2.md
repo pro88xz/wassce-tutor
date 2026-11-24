@@ -66,6 +66,15 @@ Under the 1971 Constitution, **Sorie Ibrahim (S. I.) Koroma** served as Vice-Pre
 The 1971 Constitution did **not** abolish multi-party politics. Opposition parties remained legal until the **1978** Constitution. What changed in 1971 was the **head of state** and the concentration of executive power in the **President**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Executive President**: a president who is head of state, head of government and commander-in-chief, as Siaka Stevens became in 1971.
+- **Constitutional monarchy**: the form of state before 1971, in which the British monarch was head of state through a Governor-General.
+- **Vote of no confidence**: a vote by Parliament that removes the head of government, as under the 1961 Constitution.
+- **Supreme Court**: the court that became Sierra Leone's final court of appeal in 1971, when appeals to the Privy Council ended.
+:::
+
 ## Key points
 
 - The **1971 Constitution** created an **executive President** (head of state and government), with a **Vice-President** and a **Prime Minister**.

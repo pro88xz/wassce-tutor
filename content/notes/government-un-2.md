@@ -79,6 +79,15 @@ After the **AFRC coup** of **May 1997**, the Commonwealth **suspended Sierra Leo
 The Commonwealth is **not** a government over its members, and the British monarch has **no political power** over member states. Members are fully sovereign and can leave at any time; The Gambia, for example, left in 2013 and rejoined in 2018.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **UNAMSIL** (1999–2005): the UN peacekeeping mission in Sierra Leone.
+- **Special Court for Sierra Leone** (2002–2013): the court set up with the UN to try those who bore the greatest responsibility for crimes in the civil war.
+- **Commonwealth Heads of Government Meeting (CHOGM)**: the meeting of Commonwealth leaders, about every two years, that sets Commonwealth policy.
+- **Commonwealth Ministerial Action Group (CMAG)**: the group that deals with serious violations of Commonwealth values and can recommend suspension.
+:::
+
 ## Key points
 
 - UN in Sierra Leone: **UNOMSIL (1998–99), UNAMSIL (1999–2005), UNIOSIL (2006–08), UNIPSIL (2008–14)**, the **Special Court**, and agencies such as **WHO, UNICEF, WFP, UNDP**.

@@ -102,6 +102,15 @@ Sierra Leone has had several constitutions: the **Independence Constitution of 1
 "Unwritten constitution" does **not** mean that nothing is written down. Britain's constitution includes many written statutes and court judgments; it is called unwritten because it is **not collected in a single document**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Convention**: an unwritten custom or practice that is followed as if it were binding.
+- **Judicial precedent**: a court decision interpreting the constitution, which guides later cases.
+- **Written constitution**: a constitution contained mainly in one document.
+- **Unwritten constitution**: a constitution not contained in one document but found in statutes, conventions and judicial decisions, as in Britain.
+:::
+
 ## Key points
 
 - A **constitution** is the body of fundamental rules by which a state is governed; it is the **supreme law**.

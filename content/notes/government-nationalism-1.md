@@ -67,6 +67,14 @@ Nationalism in Sierra Leone developed in two broad stages:
 Sierra Leone did not win independence through armed struggle. Its nationalism was **constitutional and peaceful**: leaders negotiated step-by-step reforms with Britain, and independence was agreed at a conference in London in **1960**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Atlantic Charter** (1941): the declaration by Britain and the United States of the right of peoples to choose their government, which inspired nationalists.
+- **Racial discrimination**: in colonial Sierra Leone, the exclusion of Africans, even highly qualified Krio doctors and administrators, from senior posts, which went to Europeans.
+- **Pan-Africanism**: ideas of African unity and dignity from leaders such as Marcus Garvey and W. E. B. Du Bois.
+:::
+
 ## Key points
 
 - **Nationalism** is the desire of a people to free their nation from foreign rule and govern themselves.

@@ -91,6 +91,14 @@ In the **2018** presidential election no candidate reached **55%** in the first 
 Do not confuse the **ECSL** with the **PPRC**. The **Electoral Commission for Sierra Leone** runs elections; the **Political Parties Regulation Commission** registers and regulates political parties.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **First-past-the-post**: the system in which the candidate with the most votes in a constituency wins, even without a majority.
+- **Proportional representation**: a system in which parties win seats in proportion to their share of the votes.
+- **Two-round system**: the system for electing Sierra Leone's President: 55% of valid votes to win in the first round, otherwise a run-off between the top two.
+:::
+
 ## Key points
 
 - An **electoral system** turns votes into seats.

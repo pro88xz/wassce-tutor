@@ -81,6 +81,16 @@ Sierra Leone has repeatedly used **payroll verification**, matching every name o
 "Red tape" is not always bad. Rules and procedures protect **fairness and accountability**, for example by requiring tenders for contracts. The problem is **excessive** red tape that causes needless delay.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Ghost workers**: fake or departed names kept on the payroll.
+- **Red tape** (bureaucracy): rigid rules and long procedures that delay decisions.
+- **Politicisation**: appointments and promotions based on party loyalty, which undermine the neutrality of the civil service.
+- **Nepotism**: giving jobs to relatives or people of the same ethnic group.
+- **Public Accounts Committee**: the committee of Parliament that examines how public money has been spent.
+:::
+
 ## Key points
 
 - Problems: **corruption, ghost workers, politicisation, nepotism, low pay, red tape, overstaffing, brain drain**.

@@ -92,6 +92,15 @@ Sierra Leone's elections are run by the **Electoral Commission for Sierra Leone 
 A **by-election** and a **run-off** are different. A by-election fills a **vacant seat** between general elections; a run-off is a **second round** held because no candidate won enough votes in the first round.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **By-election**: an election to fill a vacancy caused by the death, resignation or removal of a member.
+- **Primary election**: an election within a party to choose its candidates.
+- **Delimitation**: drawing the boundaries of constituencies and wards.
+- **Indirect election**: an election in which voters choose people who then elect the officeholder.
+:::
+
 ## Key points
 
 - An **election** is the choosing of representatives by vote; it gives **legitimacy, accountability and peaceful change**.

@@ -67,6 +67,14 @@ Sierra Leone has had **two peaceful changes of ruling party through elections** 
 Do not describe either party as purely ethnic. Both have **national** support, and both have won votes and seats outside their traditional strongholds. However, voting patterns have often followed **regional** lines, which is a major challenge for national unity.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Sierra Leone People's Party (SLPP)**: the party formed in 1951 and led by Milton Margai; its symbol is the palm tree and its colour green.
+- **All People's Congress (APC)**: the party founded by Siaka Stevens in 1960; its symbol is the rising sun and its colour red.
+- **Sierra Leone Organisation Society**: one of the groups that merged to form the SLPP in 1951.
+:::
+
 ## Key points
 
 - **SLPP**: founded **1951**, **Milton Margai**, **palm tree, green**; strongest in the **south and east**; led the country to **independence** and **ended the war**.

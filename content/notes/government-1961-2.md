@@ -69,6 +69,14 @@ Albert Margai's plan for a **one-party state** in **1966** provoked strong oppos
 The **National Reformation Council** did not take power from Albert Margai directly. **Brigadier Lansana** intervened first, declaring martial law; other officers then removed Lansana and formed the **NRC**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Martial law**: rule by the army with ordinary law suspended, declared by Brigadier David Lansana in March 1967.
+- **National Reformation Council (NRC)**: the military government formed in 1967 under Lt-Col Andrew Juxon-Smith.
+- **Sergeants' revolt** (April 1968): the revolt by junior ranks that overthrew the NRC and restored civilian rule under Siaka Stevens.
+:::
+
 ## Key points
 
 - **1964**: Albert Margai succeeds Milton Margai; **1966**: one-party proposal; **1967**: APC wins, **Lansana** intervenes, **NRC** rules; **1968**: **Sergeants' revolt** restores civilian rule under **Stevens**.

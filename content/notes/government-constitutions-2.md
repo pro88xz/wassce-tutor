@@ -83,6 +83,14 @@ Sierra Leone's constitutional history shows both breakdown and recovery. The **1
 Having a written constitution does **not** guarantee constitutionalism. Many dictatorships have had detailed written constitutions that their rulers ignored. Constitutionalism is about **behaviour**: whether rulers actually respect the limits the constitution sets.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Rigid constitution**: a constitution that needs a special, difficult procedure to amend.
+- **Flexible constitution**: a constitution that can be amended by the ordinary law-making process.
+- **Limited government**: the principle that rulers have only the powers the constitution gives them.
+:::
+
 ## Key points
 
 - A **rigid** constitution needs a **special procedure** to amend; a **flexible** one is amended like an **ordinary law**.

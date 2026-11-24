@@ -76,6 +76,12 @@ No. Ghana's regions and their officers are created and controlled by the central
 Having local councils does not make a state federal. Every unitary state decentralises some work to local bodies; the test is whether the **constitution guarantees** separate powers to the regions.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Supremacy of the central government**: the feature of unitary government by which local authorities are subordinate to the centre and act as its agents.
+:::
+
 ## Key points
 
 - **Unitary:** all power at the centre, **delegated** to local bodies; **federal:** power **divided** by the constitution; **confederal:** sovereign members lend power to a **weak centre**.

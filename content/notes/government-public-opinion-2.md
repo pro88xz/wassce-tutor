@@ -84,6 +84,15 @@ For decades, journalists in Sierra Leone could be prosecuted and jailed under th
 Press freedom is not unlimited. Journalists can still be held responsible for **defamation** (in civil courts), **incitement to violence** and breaches of **professional standards**. A free press is one that is not **censored or controlled** by government, not one that is free from all law.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Watchdog role**: the media's role of exposing corruption, abuse of power and wrongdoing.
+- **Agenda-setting**: the media's power to decide which issues receive public attention.
+- **Censorship**: control or suppression by the authorities of what the media may publish or broadcast.
+- **Brown envelope**: a bribe paid to a journalist for favourable coverage.
+:::
+
 ## Key points
 
 - The **mass media** are **print, broadcast and online** channels that reach many people at once.

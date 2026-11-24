@@ -77,6 +77,16 @@ Sierra Leone hosted the **OAU summit in Freetown in 1980**, and President **Siak
 The **OAU** was founded in **1963** and the **AU** in **2002**. Do not mix up the dates, and remember that the AU, unlike the OAU, can **intervene** in grave cases and **suspends** coup governments.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Organisation of African Unity (OAU)**: the body founded on 25 May 1963 in Addis Ababa by 32 independent states, Sierra Leone among them.
+- **Africa Day**: 25 May, the anniversary of the founding of the OAU.
+- **AU Commission**: the secretariat of the African Union, headed by a Chairperson.
+- **Pan-African Parliament**: the consultative parliament of the African Union, in Midrand, South Africa.
+- **Peace and Security Council**: the African Union organ that responds to conflicts and crises.
+:::
+
 ## Key points
 
 - **OAU**: founded **25 May 1963**, Addis Ababa, **32** states; aims: **unity, sovereignty, end colonialism**; principle of **non-interference**.

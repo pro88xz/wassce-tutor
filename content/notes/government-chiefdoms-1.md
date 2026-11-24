@@ -71,6 +71,17 @@ During the **Ebola** epidemic of **2014–2016**, Paramount Chiefs played a key 
 A Paramount Chief is **not elected by all adult citizens** of the chiefdom. Under the Chieftaincy Act, the voters are the **chiefdom councillors**, and candidates must come from **recognised ruling houses**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Paramount Chief**: the head of a chiefdom, custodian of its land and custom, who keeps law and order.
+- **Chiefdom Speaker**: the deputy to the Paramount Chief, who acts for the chief when absent.
+- **Chiefdom Council**: the chiefdom councillors who advise the chief, help make chiefdom bye-laws and elect a new Paramount Chief.
+- **Section chief**: a chief who governs a section, a group of towns and villages, within a chiefdom.
+- **Regent chief**: the person who acts as head of the chiefdom while the office of Paramount Chief is vacant.
+- **Ruling house**: a family recognised by custom, from which a Paramount Chief must come.
+:::
+
 ## Key points
 
 - **190 chiefdoms** (since 2017); chieftaincy **guaranteed by the 1991 Constitution**; governed by the **Chieftaincy Act 2009**.

@@ -83,6 +83,15 @@ When the **SLPP** took over from the **APC** in **2018**, ministers changed but 
 The **minister**, not the civil servant, answers publicly for a ministry's decisions. That is the principle of **anonymity** and **ministerial responsibility**. Civil servants advise privately, then carry out the minister's decision even if they disagreed.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Permanent Secretary**: the administrative head and accounting officer of a ministry, and chief adviser to the minister.
+- **Political neutrality**: the rule that civil servants serve whichever government is in power and stay out of party politics.
+- **Anonymity**: the rule that civil servants work out of public view, while the minister answers publicly for the ministry.
+- **Public Service Commission**: the body that appoints, promotes and disciplines public officers on merit.
+:::
+
 ## Key points
 
 - The **civil service** is the permanent, professional body of officials who **advise ministers and implement policy**.

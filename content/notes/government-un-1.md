@@ -85,6 +85,16 @@ Sierra Leone has played an active role in the UN. It served as a **non-permanent
 Only the **five permanent members** of the Security Council have a **veto**. The ten non-permanent members, and all members of the General Assembly, do not.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **General Assembly**: the UN organ in which all 193 members sit, with one vote each.
+- **Security Council**: the UN organ of 15 members: 5 permanent members with a veto and 10 non-permanent members elected for two years.
+- **Veto**: the power of each permanent member of the Security Council to block a decision.
+- **International Court of Justice**: the UN court of 15 judges, elected for nine years, which sits at The Hague.
+- **Secretary-General**: the head of the UN Secretariat, the organisation's international civil service.
+:::
+
 ## Key points
 
 - The UN replaced the **League of Nations**; Charter signed **26 June 1945**; founded **24 October 1945**; HQ **New York**; **193** members; Sierra Leone joined **27 September 1961**.

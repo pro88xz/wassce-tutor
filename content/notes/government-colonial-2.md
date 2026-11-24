@@ -74,6 +74,14 @@ After the **1955–1956 tax riots** in northern Sierra Leone, a commission of in
 Indirect rule did not mean the British left chiefs alone. The **District Commissioner** supervised the chiefs closely, and the **Governor** could recognise, suspend or depose them. Real power lay with the colonial government; the chiefs were its agents.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **District Commissioner**: the British officer who supervised the chiefs of a district and could advise, warn or depose them.
+- **Tribal Authority**: the Paramount Chief and councillors who ran a chiefdom under indirect rule.
+- **Native treasury**: a chiefdom treasury funded by local taxes.
+:::
+
 ## Key points
 
 - **Indirect rule** governed through **traditional rulers** under British supervision (**Lord Lugard**, *The Dual Mandate*, 1922).

@@ -73,6 +73,14 @@ The first local council elections under the **2004 Act** were held in **May 2004
 Local councils were not created for the first time in 2004. Freetown had a council from **1893**, and District Councils existed from the **1940s**. What happened in **2004** was the **revival** of local councils that had been **abolished in 1972**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Local council**: an elected district or city council; Sierra Leone's local councils were abolished in 1972 and revived in 2004.
+- **Native Administration**: the reforms of 1937 that created chiefdom treasuries in the Protectorate.
+- **Over-centralisation**: the concentration of power and decisions in Freetown, which the Truth and Reconciliation Commission linked to rural neglect and the war.
+:::
+
 ## Key points
 
 - **1893** Freetown municipality; **1940s** District Councils; **1972** councils abolished; **2004** councils revived; **2022** new Act.

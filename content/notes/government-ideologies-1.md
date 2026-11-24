@@ -90,6 +90,13 @@ Sierra Leone returned to multi-party democracy under the **1991 Constitution**. 
 Democracy is not simply majority rule. A government that wins elections but ignores the rule of law, silences the press and persecutes opponents is not democratic: **minority rights** and **limits on power** are part of democracy.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Majority rule with minority rights**: the democratic principle that the majority decides while minorities are protected.
+- **Universal adult suffrage**: the right of every adult citizen to vote, regardless of sex, wealth or education.
+:::
+
 ## Key points
 
 - Democracy is **"government of the people, by the people, for the people"** (Abraham Lincoln).

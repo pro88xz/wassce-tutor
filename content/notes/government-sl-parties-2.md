@@ -67,6 +67,15 @@ In the **2007** presidential run-off, the **PMDC**, a breakaway from the SLPP le
 The **RUF** was a rebel movement during the war, but the **RUFP** that contested the **2002** elections was a registered political party. Turning armed movements into parties was part of the peace process, though the RUFP won no seats.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Party system**: the number of parties that compete for power and how they relate: one-party, two-party or multi-party.
+- **Winner-takes-all politics**: politics in which jobs and contracts go to supporters of the ruling party.
+- **Defection**: a politician leaving one party to join another, often before elections.
+- **Regional voting**: voting along regional and ethnic lines, which deepens divisions.
+:::
+
 ## Key points
 
 - Other parties: **NCSL (1950), UPP (1954), PNP (1958), SLIM, UNPP, RUFP (2002), PMDC (2006), NGC and C4C (2017)**.

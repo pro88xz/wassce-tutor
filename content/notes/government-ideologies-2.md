@@ -84,6 +84,15 @@ Sierra Leone runs a **mixed economy**. Private firms run most shops, farms, mine
 Socialism and communism are not identical. In Marx's theory, **socialism** is a stage on the way to **communism**. Many democratic countries have socialist or social-democratic parties that win elections and keep multi-party politics and private property.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Mixed economy**: an economy in which both the public and private sectors own and run businesses, and the government regulates the market and provides essential services.
+- **Feudalism**: a system in medieval Europe in which kings granted land to lords for military service, and peasants (serfs) worked the land for protection.
+- **Fascism**: an ideology founded in Italy by Benito Mussolini, marked by extreme nationalism, glorification of the state and war, one-party rule and a single all-powerful leader.
+- **Totalitarianism**: a system in which the state seeks to control every part of public and private life.
+:::
+
 ## Key points
 
 - An **ideology** is a set of ideas about how society, power and the economy should be organised.
