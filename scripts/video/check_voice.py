@@ -51,6 +51,11 @@ UNITS = {"cm": "centimetre", "mm": "millimetre", "km": "kilometre", "kg": "kilog
          "N": "newton", "s": "second", "J": "joule", "W": "watt"}
 
 
+def _ordinal(n: int, plural: bool) -> str:
+    from num2words import num2words
+    return num2words(n, to="ordinal") + ("s" if plural else "")
+
+
 def spoken(heard: str) -> str:
     """What the recogniser wrote, back in the words that were said: "3.06" is
     "three point zero six", "1.5 Hz" is "one point five hertz", "λ" is "lambda"."""
@@ -58,6 +63,8 @@ def spoken(heard: str) -> str:
         heard = heard.replace(sym, words)
     heard = re.sub(r"(?<=\d)\s*[xX]\s*(?=\d)", " times ", heard)
     heard = re.sub(r"(?<=\d),(?=\d{3}\b)", "", heard)   # 72,000 is seventy-two thousand
+    # 1/50th is one fiftieth, 3/4ths three fourths
+    heard = re.sub(r"\b(\d+)/(\d+)(?:st|nd|rd|th)s?\b", lambda m: f"{m.group(1)} {_ordinal(int(m.group(2)), m.group(1) != '1')}", heard)
     heard = re.sub(r"(?<=\d)\s*/\s*(?=\d)", " over ", heard)   # 1/50 is one over fifty
     # cm3 is cubic centimetres ("per cm3" is per cubic centimetre)
     heard = re.sub(r"\bper\s+cm(?:3|³)", "per cubic centimetre", heard)
