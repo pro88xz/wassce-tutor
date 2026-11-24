@@ -378,6 +378,7 @@ PRONOUNCE = {
     "fertilisation": "fˌɜːtɪlIzˈAʃən",
     "fertilised": "fˈɜːtɪlIzd",
     "faster": "fˈɑːstə",
+    "Benedict": "bˈɛnɪdɪkt",
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
