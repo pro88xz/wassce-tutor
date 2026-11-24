@@ -25,8 +25,8 @@
 // anyone else it answers 403.
 //
 // Limits, honestly: this stops plain links, download sites and download tools.
-// Anyone who can play a video can screen-record it; the site's address burned
-// into every frame is what answers that: any copy advertises where it came from.
+// Anyone who can play a video can screen-record it; the WASSCE Tutor caption in
+// every frame and the brand card at the end are what answer that.
 // (op=start still returns a short viewer code, logged with the start; the
 // player no longer shows it over the picture.)
 // Only DRM (Widevine/FairPlay, from a paid video host) goes further.
