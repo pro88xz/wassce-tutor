@@ -30,7 +30,7 @@ MAX_WER = 0.05
 # Words a recogniser writes differently from the narration but which were said
 # right: compared after this spelling is applied to both sides.
 SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "ameba", "metres": "meters",
-        "metre": "meter", "kilometre": "kilometer", "kilometres": "kilometers", "centimetre": "centimeter",
+        "metre": "meter", "sin": "sine", "kilometre": "kilometer", "kilometres": "kilometers", "centimetre": "centimeter",
         "centimetres": "centimeters", "millimetre": "millimeter", "millimetres": "millimeters",
         "centre": "center", "colour": "color", "fibre": "fiber", "favour": "favor", "programme": "program",
         "organisation": "organization",
@@ -47,6 +47,10 @@ SYMBOLS = [("km/h", " kilometres per hour "), ("m/s", " metres per second "), ("
            ("MHz", " megahertz "), ("kHz", " kilohertz "), ("Hz", " hertz "), ("°C", " degrees celsius ")]
 
 
+UNITS = {"cm": "centimetre", "mm": "millimetre", "km": "kilometre", "kg": "kilogram", "m": "metre", "g": "gram",
+         "N": "newton", "s": "second", "J": "joule", "W": "watt"}
+
+
 def spoken(heard: str) -> str:
     """What the recogniser wrote, back in the words that were said: "3.06" is
     "three point zero six", "1.5 Hz" is "one point five hertz", "λ" is "lambda"."""
@@ -54,6 +58,14 @@ def spoken(heard: str) -> str:
         heard = heard.replace(sym, words)
     heard = re.sub(r"(?<=\d)\s*[xX]\s*(?=\d)", " times ", heard)
     heard = re.sub(r"(?<=\d),(?=\d{3}\b)", "", heard)   # 72,000 is seventy-two thousand
+    # signs: "+10" is "plus ten", "-5.2" is "minus five point two", "12 - 5" is "twelve minus five"
+    heard = re.sub(r"(?<![\w.])\+(?=\d)", " plus ", heard)
+    heard = re.sub(r"(?<![\w.])-(?=\d)", " minus ", heard)
+    heard = re.sub(r"(?<=\d)\s+\+\s+(?=\d)", " plus ", heard)
+    heard = re.sub(r"(?<=\d)\s+-\s+(?=\d)", " minus ", heard)
+    # a number with a unit's symbol ("10N", "4.5 cm") is the unit's name, singular after 1
+    heard = re.sub(r"(\d+(?:\.\d+)?)\s*(cm|mm|km|kg|m|g|N|s|J|W)\b",
+                   lambda m: f"{m.group(1)} {UNITS[m.group(2)]}{'' if m.group(1) == '1' else 's'}", heard)
     return re.sub(r"(\d+)\.(\d+)", lambda m: f"{m.group(1)} point {' '.join(DIGITS[int(d)] for d in m.group(2))}", heard)
 
 
@@ -82,7 +94,7 @@ def norm(words: list[str]) -> list[str]:
         text = f" {text} ".replace(f" {split} ", f" {joined} ").strip()
     # scientific words the recogniser spells by their sound (said correctly)
     for heard, word in (("flow m", "phloem"), ("floem", "phloem"), ("flowem", "phloem"), ("micro pill", "micropyle"),
-                       ("a glutenation", "agglutination"), ("rarer factions", "rarefactions"), ("rare factions", "rarefactions"), ("resa", "rhesus"), ("resa's", "rhesus"), ("abo", "a b o"), ("ab", "a b")):
+                       ("a glutenation", "agglutination"), ("rarer factions", "rarefactions"), ("rare factions", "rarefactions"), ("atagrin", "at tagrin"), ("resa", "rhesus"), ("resa's", "rhesus"), ("abo", "a b o"), ("ab", "a b")):
         text = f" {text} ".replace(f" {heard} ", f" {word} ").strip()
     return text.split()
 
