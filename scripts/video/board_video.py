@@ -389,6 +389,7 @@ PRONOUNCE = {
     "egestion": "iːʤˈɛsʧən",
     "neutralise": "njˈuːtɹəlIz",
     "neutralises": "njˈuːtɹəlIzɪz",
+    "Rhesus": "ɹˈiːsəs",
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
