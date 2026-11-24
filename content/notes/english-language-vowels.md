@@ -134,6 +134,17 @@ In Krio and in much West African English, several English vowel pairs are pronou
 **B. about**: its first, unstressed syllable is /ə/: /əˈbaʊt/.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Vowel sound**: a speech sound made with the air flowing freely through the mouth; English has 20.
+- **Pure vowel**: a vowel sound that stays the same from start to finish, as in "sit" or "car"; English has 12.
+- **Diphthong**: a vowel sound that glides from one vowel to another, as in "day", "boy" or "go".
+- **Long vowel**: a vowel sound held longer, marked ː in phonetic symbols, as in /iː/ in "seat".
+- **Schwa**: the short, weak vowel /ə/, the most common sound in English, heard in unstressed syllables, as in the first sound of "about".
+- **Phonetic symbol**: a symbol that stands for one speech sound, written between slashes, such as /iː/.
+:::
+
 ## Key points
 
 - English has **20 vowel sounds**: **12 pure vowels** and **8 diphthongs**, written in phonetic symbols.

@@ -140,6 +140,13 @@ What earns the marks:
 *Social media is a tool, and like a cutlass it can clear a farm or injure the hand that holds it. Used with discipline, it can connect us and teach us; used without control, it can quietly empty our time. The choice, every evening, is ours.*
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Brainstorm**: to write every idea that comes, in a few words, without judging, before choosing the strongest.
+- **Essay plan**: a short outline of the points in order, with a detail for each, made before writing.
+:::
+
 ## Key points
 
 - **Choose** the question you understand, whose format you know, and for which you already have ideas.

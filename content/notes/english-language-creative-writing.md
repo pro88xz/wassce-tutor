@@ -131,6 +131,17 @@ At eight o'clock that night, the protocol officer took back the folder. I had no
 It **cancels** the whole story: nothing that happened mattered, so the reader feels cheated. It also signals to the examiner that the writer could not think of a real ending.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Conflict**: what stands in the way of what the main character wants; it drives the story.
+- **Twist**: an ending that reveals something which changes how we see the whole story.
+- **Resolution**: the ending, in which the character has learnt or lost something.
+- **First person**: telling a story as "I", which brings the reader inside one mind.
+- **Third person**: telling a story about "he", "she" or "they", from outside the characters.
+- **Character sketch**: a piece of writing that brings one person to life through their appearance, actions and words.
+:::
+
 ## Key points
 
 - Build every piece on **one idea**: a character, a conflict and a change.

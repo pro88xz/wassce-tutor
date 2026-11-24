@@ -152,6 +152,15 @@ Count **sounds**, not letters: *ph* in *photo* is one sound (/f/), and *ck* in *
 **B. machine**: /ʃ/. *Chair* and *choose* have /tʃ/; *school* has /k/.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Voiced sound**: a sound made with the vocal cords vibrating, such as /b/, /d/ and /z/.
+- **Voiceless sound**: a sound made without the vocal cords vibrating, such as /p/, /t/ and /s/.
+- **Silent letter**: a letter written but not pronounced, such as the k in "knife".
+- **-ed ending**: the past ending, pronounced /ɪd/ after /t/ or /d/, /t/ after voiceless sounds and /d/ after voiced sounds.
+:::
+
 ## Key points
 
 - English has **24 consonant sounds**; many come in **voiceless–voiced pairs**.

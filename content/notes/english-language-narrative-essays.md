@@ -131,6 +131,17 @@ It is about 520 words: a story needs a little more room than an argument, and ev
 - **Reflection**: had they fixed the small leak at once, they would have saved money and fear: a stitch in time saves nine.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Rising action**: the events that build tension towards the climax of a story.
+- **Climax**: the turning point of a story, its most intense moment.
+- **Resolution**: the part of a story after the climax, where the outcome is settled.
+- **Show, don't tell**: letting actions, speech and details reveal feelings instead of stating them.
+- **Dialogue**: the words characters speak, written in speech marks.
+- **Reflection**: the closing thoughts of a narrative about what the experience meant or taught.
+:::
+
 ## Key points
 
 - Shape every story: **opening, rising action, climax, resolution**, and **reflection** where the question needs it.

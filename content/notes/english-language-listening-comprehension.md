@@ -130,6 +130,17 @@ At **seven o'clock**, so they can finish **before it gets too hot**. (*Eight* is
 To **inform** residents of the new date and time, and to **encourage** more people to take part (the football prize, the hope for twice as many people).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Main idea**: what a talk or passage is mainly about.
+- **Inference**: working out what is not said directly, such as where a conversation takes place.
+- **Attitude**: how a speaker feels about something, shown by what is said and by pace, pitch and emphasis.
+- **Pitch**: how high or low the voice is; high can mean surprise or excitement, low can mean seriousness.
+- **Key word**: the word in a question, such as when, who, why or how many, that shows what to listen for.
+- **Specific details**: exact facts in a passage, such as times, numbers and names.
+:::
+
 ## Key points
 
 - **Before**: read the questions, underline the key words, predict what to listen for.

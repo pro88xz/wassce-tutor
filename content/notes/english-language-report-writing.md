@@ -127,6 +127,17 @@ Secretary, Health Club\
 *The school bus **should** leave Kissy at 7:00 so that students arrive before the morning assembly.*
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Report**: a factual, organised account of an investigation, with findings and recommendations.
+- **Findings**: the facts discovered, set out under sub-headings without emotional language.
+- **Recommendations**: numbered, practical suggestions, each linked to a finding.
+- **Objective**: stating what happened or what was found, without feelings, as in "four of the six toilets were out of use".
+- **Passive voice**: a verb form that puts the action before the doer, such as "the toilets were inspected", common in reports.
+- **Signature block**: the name, position and date at the end of a report.
+:::
+
 ## Key points
 
 - A report is **factual and objective**, written for someone who needs the information.

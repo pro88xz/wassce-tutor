@@ -159,6 +159,16 @@ uni**VER**sity: the syllable just before **-ity**.
 **a GREENhouse** (a glass building for growing plants). *A green HOUSE* is simply a house that is green.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Syllable**: a unit of sound in a word, with one vowel sound.
+- **Stressed syllable**: a syllable said louder, longer and more clearly than the others.
+- **Noun–verb pair**: a word whose stress changes with its use, such as PREsent (noun) and preSENT (verb).
+- **Compound noun**: a noun made of two words, usually stressed on the first part, such as BLACKboard.
+- **Phrasal verb**: a verb with a particle, such as "give up", usually stressed on the particle.
+:::
+
 ## Key points
 
 - **Stress** makes a syllable louder, longer and clearer; unstressed vowels often weaken to /ə/.

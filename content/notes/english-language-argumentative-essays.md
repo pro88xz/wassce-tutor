@@ -126,6 +126,17 @@ It is about 500 words, with no invented statistics: every claim is reasoned or w
 *Mining, when it is poorly regulated, can destroy farmland and pollute rivers, leaving communities poorer than before.* (It attacks the **problem**, not people, and explains **why**.)
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Thesis**: the writer's clear position, stated at the end of the introduction.
+- **PEEL paragraph**: a paragraph that makes a Point, gives Evidence, Explains it and Links back to the argument.
+- **Rebuttal**: admitting a point on the other side, then showing why the writer's side still wins.
+- **Persuasive language**: words that win the reader over, such as "firmly believe", "furthermore" and "admittedly… however".
+- **Counter-argument**: the strongest point on the other side, fairly stated.
+- **Reasoning**: supporting a point with logic, such as "if… then…" and cause and effect.
+:::
+
 ## Key points
 
 - Take a **clear side** and state it in the introduction.

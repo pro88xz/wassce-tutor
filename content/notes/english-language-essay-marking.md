@@ -125,6 +125,16 @@ The question paper states the minimum length (it has been **450 words** in recen
 
 Because the essay is half the paper, give it about **half your writing time**, including five minutes to plan and five minutes to check.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Content**: the WAEC marking area for relevant, complete and developed ideas that answer the question as set.
+- **Organisation**: the marking area for format, introduction, paragraphing, linking and conclusion.
+- **Expression**: the marking area for vocabulary, varied sentences and suitable register.
+- **Mechanical accuracy**: the marking area for grammar, spelling and punctuation.
+- **Topic sentence**: the sentence, usually first in a paragraph, that states its main idea.
+:::
+
 ## Key points
 
 - **Content 10, Organisation 10, Expression 20, Mechanical accuracy 10**: 50 marks in all.
