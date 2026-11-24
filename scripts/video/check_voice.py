@@ -64,7 +64,7 @@ def spoken(heard: str) -> str:
     heard = re.sub(r"(\d+(?:\.\d+)?)\s*cm(?:3|³)",
                    lambda m: f"{m.group(1)} cubic centimetre{'' if m.group(1) == '1' else 's'}", heard)
     # signs: "+10" is "plus ten", "-5.2" is "minus five point two", "12 - 5" is "twelve minus five"
-    heard = re.sub(r"(?<![\w.])\+(?=\d)", " plus ", heard)
+    heard = re.sub(r"(?<![\w.])\+\s*(?=\d)", " plus ", heard)
     heard = re.sub(r"(?<![\w.])-(?=\d)", " minus ", heard)
     heard = re.sub(r"(?<=\d)\s+\+\s+(?=\d)", " plus ", heard)
     heard = re.sub(r"(?<=\d)\s+-\s+(?=\d)", " minus ", heard)
@@ -86,21 +86,24 @@ def _values(run: list[str]) -> list[str]:
     one by one) is 347, "fifteen hundred" is 1500, "two thousand and five" is 2005."""
     if len(run) > 1 and all(NUMBER.get(w, (0, ""))[1] == "unit" for w in run):
         return ["#" + "".join(str(NUMBER[w][0]) for w in run)]
-    out, total, cur, last = [], 0, 0, None
+    out, total, hund, small, last = [], 0, 0, 0, None
     for w in run:
         if w in SCALE:
             if SCALE[w] == 100:
-                cur = (cur or 1) * 100
+                if hund:                      # "one hundred, four hundred" is two numbers
+                    out.append(total + hund)
+                    total = 0
+                hund, small = (small or 1) * 100, 0
             else:
-                total, cur = total + (cur or 1) * SCALE[w], 0
+                total, hund, small = total + ((hund + small) or 1) * SCALE[w], 0, 0
             last = "scale"
             continue
         v, kind = NUMBER[w]
         if last in ("unit", "teen") or (last == "tens" and kind != "unit"):   # a new number starts
-            out.append(total + cur)
-            total, cur = 0, 0
-        cur, last = cur + v, kind
-    return [f"#{n}" for n in out + [total + cur]]
+            out.append(total + hund + small)
+            total, hund, small = 0, 0, 0
+        small, last = small + v, kind
+    return [f"#{n}" for n in out + [total + hund + small]]
 
 
 def numbers(words: list[str]) -> list[str]:
