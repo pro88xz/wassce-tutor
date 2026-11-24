@@ -5,11 +5,19 @@
 // any other caller is refused. A second run in a day only sends what is still
 // due. What it does is decided by the mode set in Admin → Emails
 // (off, dry-run, pilot, live). See docs/email-engine.md.
+//
+// /api/email/run?admin: the admin page's requests (Admin -> Emails: the
+// configuration, and test emails), answered by api/_lib/email/admin.js. One
+// function serves both because the Hobby plan allows 12 functions per
+// deployment (scripts/check-functions.mjs).
+import { adminGet, adminPost } from '../_lib/email/admin.js'
 import { loadEmailConfig } from '../_lib/email/config.js'
 import { runEngine } from '../_lib/email/engine.js'
 import { sendViaResend } from '../_lib/email/resend.js'
-import { db } from '../_lib/server.js'
+import { db, json, preflight } from '../_lib/server.js'
 import crypto from 'node:crypto'
+
+const forAdmin = (request) => new URL(request.url).searchParams.has('admin')
 
 const reply = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' } })
@@ -29,7 +37,15 @@ function refusal(config) {
   return 'schedule_secret_mismatch'
 }
 
+export const OPTIONS = preflight
+
+export async function POST(request) {
+  if (!forAdmin(request)) return json(request, { error: 'GET only' }, 405)
+  return adminPost(request)
+}
+
 export async function GET(request) {
+  if (forAdmin(request)) return adminGet(request)
   const client = db()
   const config = await loadEmailConfig(client, { fresh: true })
   if (!authorised(request, config.cronSecrets)) return reply({ error: 'unauthorised', why: refusal(config) }, 401)
