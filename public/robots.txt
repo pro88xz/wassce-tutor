@@ -22,3 +22,4 @@ Disallow: /subscribe
 Disallow: /admin
 
 Sitemap: https://wasscetutor.com/sitemap.xml
+Sitemap: https://wasscetutor.com/video-sitemap.xml

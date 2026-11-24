@@ -45,15 +45,23 @@ duster). Chalk colours: white, yellow, blue, pink, green, grey.
 - **Chapters**: `chapter="..."` on a step starts a key moment. They become the
   chapter buttons under the player and the video's key moments in Google search
   (each links to the lesson page with `?t=<seconds>`). Give every video 3 to 6.
-- **Thumbnail**: the board just before it is first wiped (its fullest). Set
-  `THUMBNAIL_STEP = <index>` to choose another step's finished board.
+- **Thumbnail**: it decides whether a student clicks in search results, so design
+  one: `THUMBNAIL = [write(...), ...]` is drawn whole on a clean board (a big
+  title in yellow, a short promise underneath, and the topic's key diagram in
+  thick chalk; see the biology scripts). Without it, the board just before the
+  first wipe is used (`THUMBNAIL_STEP = <index>` picks another).
+- **Titles for search**: `TITLE` is what students type ("Plant and Animal Cells:
+  Structure, Functions and Differences | WASSCE Biology"), not the lesson's
+  heading. Chapter names are shown by Google as key moments, so word them as
+  questions and topics students search for.
 - **Watermark**: `wasscetutor.com` is written into the board, top right, in every
   frame, and the video ends on a branded card. Writing that would cover the mark,
   or run off the board, stops the build.
 - **The voice**: the oral English voice (`scripts/audio`): Kokoro `bf_emma`,
   speaking from the phonemes of misaki's British dictionary. A word that is not in
   the dictionary stops the build, so the voice never guesses a word from its
-  spelling. Write numbers as words ("ninety-eight"), and the symbol *a* as a
+  spelling. Scientific names the dictionary lacks (*sapiens*, *Linnaeus*) are
+  given their sounds in `PRONOUNCE` in `board_video.py`. Write numbers as words ("ninety-eight"), and the symbol *a* as a
   capital ("The amplitude, A, is…"): a small "a" is read as the article.
 - **The chalk**: single-stroke Hershey letters, so writing appears stroke by
   stroke. Each step's drawing is paced to end with its speech; if it cannot (at up
@@ -61,20 +69,38 @@ duster). Chalk colours: white, yellow, blue, pink, green, grey.
 
 ## Checking a video
 
-The voice models and packages in `scripts/audio/README.md`, then:
+Every video is checked three ways before it is merged. The voice models and
+packages in `scripts/audio/README.md` (the Whisper model too), then:
 
 ```bash
-pip install Hershey-Fonts pycairo
+pip install Hershey-Fonts pycairo sherpa-onnx
 ```
 
-```bash
-python3 scripts/video/board_video.py content/videos/biology-cell-structure.py
-```
+1. **Layout**, in seconds, with no voice: each finished board and the thumbnail as
+   images. Nothing may overlap, touch a label line or run off the board.
 
-This writes `.video-build/<id>/preview-render.mp4` (never committed) with its
-captions, thumbnail and timing beside it. `--until 20` renders the first 20 seconds
-only. Spoken lines are cached in `~/.cache/wassce-video`, so a rebuild after a
-layout change is quick. Look at the frames before publishing.
+   ```bash
+   python3 scripts/video/board_video.py content/videos/biology-cell-structure.py --boards .video-build/boards/cell
+   ```
+
+2. **Voice**: every spoken line is transcribed back by a speech recogniser and
+   must match what was written (homophones such as maize and maze are allowed in
+   `check_voice.py`). Reword any line it flags.
+
+   ```bash
+   python3 scripts/video/check_voice.py content/videos/biology-cell-structure.py
+   ```
+
+3. **The video**: build it exactly as it will be published, and look at
+   `qa-sheet.jpg` (a frame every 8 s) and `thumb.jpg` in its folder.
+
+   ```bash
+   python3 scripts/video/publish.py build content/videos/biology-cell-structure.py
+   ```
+
+Spoken lines are cached in `~/.cache/wassce-video`, so a rebuild after a layout
+change is quick. `board_video.py` alone writes `.video-build/<id>/preview-render.mp4`
+(`--until 20` for the first 20 seconds only).
 
 ## Publishing
 
@@ -119,4 +145,7 @@ title, and the page carries a `VideoObject` with the thumbnail, length, transcri
 and one `Clip` per chapter (`src/lib/lesson-video.ts`). Its `contentUrl` is
 `/api/video?op=file&v=<id>`, which answers only requests from Google's crawler,
 checked by reverse and forward DNS, as Google's video guidelines allow. The
-transcript is on the page under the player.
+transcript is on the page under the player. Every published video is also
+listed in `/video-sitemap.xml` (written at build time by `scripts/video/sitemap.mjs`,
+named in `robots.txt`), and a video's publication moves its lesson page's
+`lastmod` in the main sitemap, so Google comes back for it.

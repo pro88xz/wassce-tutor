@@ -17,6 +17,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { headerPolicy, withPagePolicy } from './csp.mjs'
 import { redirectProblems, sitemapPaths } from './notes/redirects.mjs'
+import { writeVideoSitemap } from './video/sitemap.mjs'
 
 const root = path.resolve(import.meta.dirname, '..')
 const client = path.join(root, 'dist/client')
@@ -193,3 +194,6 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
   fs.writeFileSync(sitemapPath, out)
   console.log(`[postbuild] sitemap.xml: ${images} question diagrams and ${editorialImages} blog and university images listed for image search`)
 }
+
+// The video sitemap (scripts/video/sitemap.mjs), listed in robots.txt.
+await writeVideoSitemap(client)

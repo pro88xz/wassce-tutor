@@ -98,8 +98,13 @@ def build(script: Path) -> tuple[Path, dict]:
         return out, json.loads(done.read_text())
     out.mkdir(parents=True, exist_ok=True)
     mp4 = out / "render.mp4"
-    timing = bv.render(bv.lesson_steps(lesson), lesson.LABEL, mp4, None, getattr(lesson, "THUMBNAIL_STEP", None))
+    timing = bv.render(bv.lesson_steps(lesson), lesson.LABEL, mp4, None, getattr(lesson, "THUMBNAIL_STEP", None),
+                       getattr(lesson, "THUMBNAIL", None))
     package(mp4, out)
+    # A contact sheet, one frame every 8 s, for checking the video by eye.
+    rows = max(1, -(-int(timing["duration"] / 8 + 1) // 5))
+    run("ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-vf", f"fps=1/8,scale=384:-1,tile=5x{rows}",
+        "-frames:v", "1", "-q:v", "4", str(out / "qa-sheet.jpg"))
     mp4.with_suffix(".jpg").rename(out / "thumb.jpg")
     mp4.with_suffix(".vtt").rename(out / "captions.vtt")
     mp4.with_suffix(".json").rename(out / "timing.json")

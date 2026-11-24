@@ -234,11 +234,82 @@ def underline(x1, x2, y, color="yellow", width=3.4) -> Action:
     return line(x1, y, x2, y, color, width)
 
 
+def heading(text: str, x: float = 70, y: float = 95, size: float = 44, color: str = "yellow") -> Action:
+    """A board's heading, underlined to its own length."""
+    w = text_width(text, size)
+    return Action(write(text, x, y, size, color).strokes + underline(x - 6, x + w + 6, y + 19, color).strokes)
+
+
 def ring(cx, cy, rx, ry, color="pink", width=3.4) -> Action:
     """A loop round something, a little more than once, as chalk circles are drawn."""
     t = np.linspace(-0.4, 2 * np.pi + 0.15, 90)
     wob = 1 + 0.03 * np.sin(3 * t + 1)
     return Action([Stroke(np.column_stack([cx + rx * wob * np.cos(t), cy + ry * wob * np.sin(t)]), color, width)])
+
+
+def _smooth(points, closed: bool, per_seg: int = 14) -> np.ndarray:
+    """A Catmull-Rom curve through the points: how a steady hand joins them."""
+    p = np.asarray(points, float)
+    if closed:
+        p = np.vstack([p[-1:], p, p[:2]])
+    else:
+        p = np.vstack([p[:1], p, p[-1:]])
+    out = []
+    for i in range(1, len(p) - 2):
+        p0, p1, p2, p3 = p[i - 1], p[i], p[i + 1], p[i + 2]
+        for t in np.linspace(0, 1, per_seg, endpoint=False):
+            t2, t3 = t * t, t * t * t
+            out.append(0.5 * ((2 * p1) + (-p0 + p2) * t + (2 * p0 - 5 * p1 + 4 * p2 - p3) * t2 + (-p0 + 3 * p1 - 3 * p2 + p3) * t3))
+    out.append(p[-2])
+    return np.array(out)
+
+
+def curve(points, color="white", width=3.6, closed=False) -> Action:
+    """A smooth chalk line through the points (closed: back to the first)."""
+    return Action([Stroke(_smooth(points, closed), color, width)])
+
+
+def ellipse(cx, cy, rx, ry, color="white", width=3.4, start=-0.3) -> Action:
+    """A closed oval, drawn once round with a small overlap where the chalk meets."""
+    t = np.linspace(start, start + 2 * np.pi + 0.08, 100)
+    return Action([Stroke(np.column_stack([cx + rx * np.cos(t), cy + ry * np.sin(t)]), color, width)])
+
+
+def blob(cx, cy, rx, ry, color="white", width=3.8, wobble=0.07, seed=1) -> Action:
+    """An irregular rounded outline, like an animal cell."""
+    rng = np.random.default_rng(seed)
+    k = 9
+    a = np.linspace(0, 2 * np.pi, k, endpoint=False) + rng.uniform(-0.12, 0.12, k)
+    r = 1 + rng.uniform(-wobble, wobble, k)
+    pts = np.column_stack([cx + rx * r * np.cos(a), cy + ry * r * np.sin(a)])
+    return Action([Stroke(_smooth(pts, True), color, width)])
+
+
+def dots(points, color="white", size=3.2) -> Action:
+    """Small dots (ribosomes, granules, stomata): one tiny stroke each."""
+    return Action([Stroke(np.array([[x - size / 2, y], [x + size / 2, y + 0.5]]), color, size * 1.4) for x, y in points])
+
+
+def zigzag(x1, y1, x2, y2, n=6, amp=10, color="white", width=2.6) -> Action:
+    """A folded line between two points (the cristae of a mitochondrion)."""
+    p0, p1 = np.array([x1, y1], float), np.array([x2, y2], float)
+    d = p1 - p0
+    nrm = np.array([-d[1], d[0]]) / (np.hypot(*d) + 1e-9)
+    pts = [p0 + d * i / n + nrm * (amp if i % 2 else -amp) * (0 < i < n) for i in range(n + 1)]
+    return Action([Stroke(np.array(pts), color, width)])
+
+
+def label(text: str, x: float, y: float, tx: float, ty: float, size: float = 24, color: str = "white",
+          line_color: str = "grey", align: str = "left") -> Action:
+    """A biological label: the word, then a straight label line (no arrow head)
+    from beside the word to the point (tx, ty) on the drawing."""
+    w = text_width(text, size)
+    x0 = x - {"left": 0, "center": w / 2, "right": w}[align]
+    words = write(text, x, y, size, color, align)
+    # the line leaves from the side of the word that faces the drawing
+    sx = x0 - 8 if tx < x0 else x0 + w + 8
+    sy = y - size * 0.4
+    return Action(words.strokes + line(sx, sy, tx, ty, line_color, 2.6).strokes)
 
 
 def frac(num: str, den: str, x: float, y: float, size: float = 30, color: str = "white") -> Action:
@@ -283,6 +354,34 @@ def outro() -> list[Step]:
 
 
 # ── Voice ─────────────────────────────────────────────────────────────────
+# Words the British dictionary does not have, with the sounds to say them in
+# misaki's phoneme letters (A = FACE, I = PRICE, Q = GOAT, ʤ = j). Every one
+# must pass scripts/video/check_voice.py, which listens back to the lines.
+PRONOUNCE = {
+    "sapiens": "sˈapiənz",
+    "Linnaeus": "lɪnˈAəs",
+    "Protoctista": "pɹQtɒktˈɪstə",
+    "protoctists": "pɹQtˈɒktɪsts",
+    "Monera": "mɒnˈɪəɹə",
+    "italicised": "ɪtˈalɪsIzd",
+    "specialised": "spˈɛʃəlIzd",
+    "Golgi": "ɡˈɒlʤi",
+    "endoplasmic": "ˌɛndQplˈazmɪk",
+    "Animalia": "ˌanɪmˈAliə",
+    "Mammalia": "məmˈAliə",
+    "Hominidae": "hɒmˈɪnɪdiː",
+    "Zea": "zˈiːə",
+    "mays": "mˈAz",
+}
+_SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
+_PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
+
+
+def _with_sounds(text: str) -> str:
+    """The line with each PRONOUNCE word (in any case) marked up with its sounds, for misaki."""
+    return _PRONOUNCE.sub(lambda m: f"[{m.group(1)}](/{_SOUNDS[m.group(1).lower()]}/)", text)
+
+
 class Voice:
     def __init__(self):
         from kokoro_onnx import Kokoro
@@ -294,8 +393,8 @@ class Voice:
         if not text:
             return np.zeros(0, np.float32)
         try:
-            phonemes = self.lex.sentence(text)
-        except ValueError as e:
+            phonemes = self.lex.sentence(_with_sounds(text))
+        except (ValueError, TypeError) as e:  # misaki raises TypeError on some unknown words
             raise SystemExit(f"Cannot say {text!r}: {e}. Reword the line.")
         key = hashlib.sha256(f"{VERSION}|{VOICE}|{SPEED}|{phonemes}".encode()).hexdigest()[:16]
         path = CACHE / f"{key}.npy"
@@ -472,7 +571,8 @@ def _eraser_at(f: float) -> tuple[float, float]:
     return x, ERASE_ROWS[i]
 
 
-def render(steps: list[Step], label: str, out: Path, until: float | None, thumbnail_step: int | None = None) -> dict:
+def render(steps: list[Step], label: str, out: Path, until: float | None, thumbnail_step: int | None = None,
+           thumbnail: list[Action] | None = None) -> dict:
     """Render the video to `out` (.mp4), with its captions (.vtt), a thumbnail
     (.jpg) and its timing (.json) beside it. Returns the timing."""
     voice = Voice()
@@ -582,7 +682,7 @@ def render(steps: list[Step], label: str, out: Path, until: float | None, thumbn
             _draw_pen(fctx, pen)
             frame.flush()
         enc.stdin.write(fbuf.tobytes())
-        if fi == thumb_frame:
+        if fi == thumb_frame and not thumbnail:
             _save_jpeg(fbuf, out.with_suffix(".jpg"))
         if fi % (FPS * 10) == 0:
             print(f"  {t:5.1f}s / {total:.1f}s", flush=True)
@@ -590,6 +690,9 @@ def render(steps: list[Step], label: str, out: Path, until: float | None, thumbn
     if enc.wait():
         raise SystemExit("ffmpeg failed")
     wav.unlink()
+    if thumbnail:
+        # A designed thumbnail: what a student sees in search results, before anything else.
+        still([st for a in thumbnail for st in a.strokes], label, out.with_suffix(".jpg"), bg, grain)
     cues = _write_vtt(captions, out.with_suffix(".vtt"), total)
     timing = {
         "duration": round(total, 2),
@@ -674,17 +777,58 @@ def revision(path: Path) -> str:
     return h.hexdigest()[:12]
 
 
+def still(strokes: list[Stroke], label: str, path: Path, bg: np.ndarray | None = None, grain: np.ndarray | None = None):
+    """Strokes drawn whole on the board, saved as a JPEG: a board preview or a designed thumbnail."""
+    bg = board_background(label).astype(np.float32) if bg is None else bg
+    grain = chalk_grain()[..., None] if grain is None else grain
+    chalk = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
+    ctx = cairo.Context(chalk)
+    ctx.set_line_cap(cairo.LINE_CAP_ROUND); ctx.set_line_join(cairo.LINE_JOIN_ROUND)
+    for st in strokes:
+        _path(ctx, st.points)
+        ctx.set_source_rgb(*CHALK[st.color]); ctx.set_line_width(st.width); ctx.stroke()
+    chalk.flush()
+    c = np.ndarray((H, W, 4), np.uint8, chalk.get_data()).astype(np.float32) / 255.0
+    rgb = bg * (1 - c[..., 3:4] * grain) + c[..., 2::-1] * grain
+    img = (np.clip(rgb, 0, 1) * 255).astype(np.uint8)
+    _save_jpeg(np.ascontiguousarray(np.dstack([img[..., ::-1], np.zeros((H, W), np.uint8)])), path)
+
+
+def boards(steps: list[Step], label: str, out_dir: Path, thumbnail: list[Action] | None = None):
+    """Each finished board (everything written before each wipe) as a PNG: a
+    layout check in seconds, with no voice and no video."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    bg = board_background(label).astype(np.float32)
+    grain = chalk_grain()[..., None]
+    groups, cur = [], []
+    for st in steps:
+        if any(a.erase for a in st.actions) and cur:
+            groups.append(cur); cur = []
+        cur += [s for a in st.actions for s in a.strokes]
+    if cur:
+        groups.append(cur)
+    for n, strokes in enumerate(groups, 1):
+        still(strokes, label, out_dir / f"board-{n}.jpg", bg, grain)
+    if thumbnail:
+        still([st for a in thumbnail for st in a.strokes], label, out_dir / "thumbnail.jpg", bg, grain)
+    print(f"{len(groups)} boards in {out_dir}" + (", and the thumbnail" if thumbnail else ""))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("lesson", type=Path)
     ap.add_argument("--out", type=Path)
     ap.add_argument("--until", type=float, help="render only the first N seconds")
+    ap.add_argument("--boards", type=Path, help="only draw each finished board into this folder (no voice, no video)")
     args = ap.parse_args()
     lesson = load(args.lesson)
+    if args.boards:
+        return boards(lesson_steps(lesson), lesson.LABEL, args.boards, getattr(lesson, "THUMBNAIL", None))
     # Never into public/: a plain video file must not be served or committed.
     out = args.out or ROOT / ".video-build" / args.lesson.stem / "preview-render.mp4"
     out.parent.mkdir(parents=True, exist_ok=True)
-    render(lesson_steps(lesson), lesson.LABEL, out, args.until, getattr(lesson, "THUMBNAIL_STEP", None))
+    render(lesson_steps(lesson), lesson.LABEL, out, args.until, getattr(lesson, "THUMBNAIL_STEP", None),
+           getattr(lesson, "THUMBNAIL", None))
 
 
 if __name__ == "__main__":
