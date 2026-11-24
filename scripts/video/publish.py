@@ -224,6 +224,17 @@ def lesson_id(db: Supabase, path: str) -> str:
     return lesson[0]["id"]
 
 
+def old_files(db: Supabase, vid: str, rev: str) -> list[str]:
+    """Files of this video's earlier revisions. The listing of <id>/ names each
+    revision's folder without a trailing slash ("<id>/<rev>"); the current
+    revision is never among them."""
+    folders = {p.rstrip("/") for p in db.listing(PRIVATE, f"{vid}/")}
+    files = []
+    for folder in sorted(folders - {f"{vid}/{rev}"}):
+        files += db.listing(PRIVATE, folder + "/")
+    return files
+
+
 def publish(db: Supabase, out: Path, meta: dict, lid: str):
     vid, rev = meta["id"], meta["revision"]
     prefix = f"{vid}/{rev}/"
@@ -253,14 +264,16 @@ def publish(db: Supabase, out: Path, meta: dict, lid: str):
         "is_published": True,
     }, "id")
     # Earlier revisions: their files and keys go once the new one is live.
-    old = [p for p in db.listing(PRIVATE, f"{vid}/") if not p.startswith(prefix)]
-    stale = []
-    for folder in {p.rstrip("/") + "/" for p in old}:
-        stale += db.listing(PRIVATE, folder)
+    stale = [p for p in old_files(db, vid, rev) if not p.startswith(prefix)]
     if stale:
         db.remove(PRIVATE, stale)
     db.call("DELETE", f"/rest/v1/lesson_video_keys?video_id=eq.{vid}&revision=neq.{rev}")
-    print(f"published {vid} ({rev}): {len(segments)} encrypted segments; removed {len(stale)} old files")
+    # The live revision must be whole: every segment and the preview, still there.
+    have = {p.rsplit("/", 1)[-1] for p in db.listing(PRIVATE, prefix)}
+    missing = [n for n in [s.name for s in segments] + ["preview.mp4"] if n not in have]
+    if missing:
+        raise SystemExit(f"{vid}: {len(missing)} published files are missing from storage ({', '.join(missing[:3])}...)")
+    print(f"published {vid} ({rev}): {len(segments)} encrypted segments, checked in storage; removed {len(stale)} old files")
 
 
 def ready(script: Path) -> bool:

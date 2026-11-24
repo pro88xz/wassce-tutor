@@ -374,6 +374,10 @@ PRONOUNCE = {
     "mays": "mˈAz",
     "organisation": "ˌɔːɡənIzˈAʃən",
     "organised": "ˈɔːɡənIzd",
+    "potometer": "pQtˈɒmɪtə",
+    "fertilisation": "fˌɜːtɪlIzˈAʃən",
+    "fertilised": "fˈɜːtɪlIzd",
+    "faster": "fˈɑːstə",
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
