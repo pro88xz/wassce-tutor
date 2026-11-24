@@ -23,7 +23,7 @@ export const Route = createFileRoute('/universities/')({
 
 function UniversityDirectoryPage() {
   return (
-    <main className="site-page space-y-10 pb-16 sm:space-y-14">
+    <div className="site-page space-y-10 pb-16 sm:space-y-14">
       <Breadcrumbs trail={[['Home','/'],['Universities','/universities']]}/>
       <header className="relative overflow-hidden rounded-[2rem] bg-[#171d3d] px-6 py-10 text-white sm:px-10 sm:py-14">
         <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-blue-500/20 blur-3xl"/>
@@ -41,7 +41,7 @@ function UniversityDirectoryPage() {
       </section>
       <section className="overflow-hidden rounded-2xl border bg-card">
         <div className="border-b px-5 py-4 sm:px-6"><p className="text-xs font-bold uppercase tracking-wider text-primary">Quick comparison</p><h2 className="mt-1 text-lg font-bold">Published WASSCE degree-entry starting points</h2><p className="mt-1 text-xs text-muted-foreground">A summary only. Programme-specific requirements and current deadlines can differ.</p></div>
-        <div className="overflow-x-auto"><table className="w-full min-w-[760px] border-collapse text-left text-sm"><thead className="bg-muted/50 text-xs uppercase tracking-wide text-muted-foreground"><tr><th className="px-5 py-3 font-bold">Institution</th><th className="px-5 py-3 font-bold">Entry snapshot</th><th className="px-5 py-3 font-bold">Admissions status</th><th className="px-5 py-3 font-bold">Guide</th></tr></thead><tbody>{UNIVERSITY_GUIDES.map((u)=><tr key={u.slug} className="border-t align-top"><td className="px-5 py-4 font-semibold">{u.shortName}</td><td className="max-w-sm px-5 py-4 leading-relaxed text-muted-foreground">{u.entrySummary}</td><td className="px-5 py-4 text-xs leading-relaxed text-muted-foreground">{u.status}</td><td className="px-5 py-4"><a href={`/universities/${u.slug}`} className="font-semibold text-primary underline underline-offset-4">Details</a></td></tr>)}</tbody></table></div>
+        <div className="overflow-x-auto"><table className="w-full min-w-[760px] border-collapse text-left text-sm"><thead className="bg-muted/50 text-xs uppercase tracking-wide text-muted-foreground"><tr><th className="px-5 py-3 font-bold">Institution</th><th className="px-5 py-3 font-bold">Entry snapshot</th><th className="px-5 py-3 font-bold">Admissions status</th><th className="px-5 py-3 font-bold">Guide</th></tr></thead><tbody>{UNIVERSITY_GUIDES.map((u)=><tr key={u.slug} className="border-t align-top"><td className="px-5 py-4 font-semibold">{u.shortName}</td><td className="max-w-sm px-5 py-4 leading-relaxed text-muted-foreground">{u.entrySummary}</td><td className="px-5 py-4 text-xs leading-relaxed text-muted-foreground">{u.status}</td><td className="px-5 py-4"><a href={`/universities/${u.slug}`} className="font-semibold text-primary underline underline-offset-4">{u.shortName} guide</a></td></tr>)}</tbody></table></div>
       </section>
       <section id="directory" className="scroll-mt-24 space-y-6">
         <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs font-bold uppercase tracking-wider text-primary">Institution directory</p><h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">Universities and higher education</h2></div><p className="max-w-md text-sm leading-relaxed text-muted-foreground">Each profile identifies what is confirmed, what is programme-specific and what still needs confirmation from the institution.</p></div>
@@ -55,6 +55,6 @@ function UniversityDirectoryPage() {
         </div>
       </section>
       <section className="rounded-3xl border bg-[#f7f5ff] p-6 sm:p-8"><p className="text-xs font-bold uppercase tracking-wider text-violet-700">Important before applying</p><h2 className="mt-2 text-2xl font-bold text-slate-950">The university-wide minimum is only the starting point.</h2><p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600">A programme may require particular WASSCE subjects, stronger grades, professional qualifications or an interview. Deadlines and fees can change. Open the official admissions source linked in each profile and confirm the current cycle before making a payment.</p><a href="/blog/sierra-leone-university-admission-requirements-2026-2027" className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-violet-800">Read the 2026/2027 comparison <ArrowRight className="h-4 w-4"/></a></section>
-    </main>
+    </div>
   )
 }
