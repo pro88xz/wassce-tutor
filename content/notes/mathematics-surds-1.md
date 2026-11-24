@@ -221,6 +221,13 @@ Surds arise wherever irrational lengths appear — in nature (the golden ratio),
 - $1.414^2 = 1.999396$, not $2$. The decimal approximation is just that — an approximation.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Irrational number**: a number that cannot be written as a fraction of two integers, such as $\sqrt{2}$ or $\pi$.
+- **Rational number**: a number that can be written as a fraction of two integers, such as $\sqrt{0.25} = 0.5$.
+:::
+
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}

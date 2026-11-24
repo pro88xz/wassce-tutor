@@ -126,6 +126,19 @@ $\tfrac13 \times \tfrac{22}{7} \times 12.25 \times h = 154 \Rightarrow \tfrac{38
 $\tfrac{10}{2} \times \tfrac82 \times \tfrac62 = 5 \times 4 \times 3 = 60$ cubes.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Prism**: a solid with the same cross-section all along its length; its volume is the cross-section times the length.
+- **Cross-section**: the shape of the cut face when a solid is sliced at right angles to its length.
+- **Pyramid**: a solid with a flat base and sloping faces that meet at a point; its volume is one third of base times height.
+- **Slant height**: the distance from the tip of a cone to the edge of its base along the sloping side: $l = \sqrt{r^2 + h^2}$.
+- **Surface area**: the total area of all the faces of a solid.
+- **Volume**: the amount of space a solid takes up.
+- **Cylinder**: a prism with a circular cross-section; its volume is $\pi r^2 h$.
+- **Melting and recasting**: reshaping a solid into another shape; the volume stays the same.
+:::
+
 ## Key points
 
 - **Prism**: cross-section × length; **pyramid/cone**: $\tfrac13 \times$ base $\times$ height; **sphere**: $\tfrac43\pi r^3$.

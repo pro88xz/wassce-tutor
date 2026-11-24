@@ -138,6 +138,17 @@ Let T be Tombo, N the nets, F the fishing ground. $\angle NTF = \tan^{-1}\dfrac{
 The angle between their paths is $110° - 30° = 80°$. Cosine rule: $d^2 = 100 + 196 - 280\cos 80° = 296 - 48.6 = 247.4$, so $d = 15.7$ km.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Bearing**: a direction given as an angle measured clockwise from north.
+- **Three-figure bearing**: a bearing written with three figures, such as $045°$ or $270°$.
+- **Back bearing**: the bearing of the return journey: the bearing plus or minus $180°$.
+- **Compass bearing**: a direction given from north or south towards east or west, such as N $40°$ E.
+- **North line**: the line pointing north, drawn at every point of a journey, from which bearings are measured.
+- **Bearing of B from A**: the direction of B measured clockwise from the north line at A.
+:::
+
 ## Key points
 
 - **From north, clockwise, three figures.**

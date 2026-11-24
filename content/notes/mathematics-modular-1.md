@@ -301,6 +301,13 @@ Her records of *9 bundles + 3 loose* correspond to $66 \bmod 7 = 3$ — exactly 
 - $0$ is a perfectly valid remainder. $20 \bmod 5 = 0$ means $20$ is a multiple of $5$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Congruence**: $a \equiv b \pmod{n}$: $a$ and $b$ leave the same remainder when divided by $n$.
+- **Modulus**: the number $n$ by which numbers are divided in modular arithmetic.
+:::
+
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}

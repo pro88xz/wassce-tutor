@@ -134,6 +134,16 @@ Hypotenuse $= \sqrt{81 + 144} = \sqrt{225} = 15$. Perimeter $= 9 + 12 + 15 = 36$
 Curved edge $= \tfrac12 \times \pi d = \tfrac12 \times 44 = 22$ m. Perimeter $= 22 + 14 = 36$ m.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Circumference**: the perimeter of a circle: $C = \pi d = 2\pi r$.
+- **Arc length**: the length of part of a circle's circumference: $\dfrac{\theta}{360} \times 2\pi r$.
+- **Sector perimeter**: the arc length plus two radii.
+- **Pythagoras' theorem**: in a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the other two sides.
+- **Pythagorean triple**: three whole numbers that fit Pythagoras' theorem, such as 3, 4, 5.
+:::
+
 ## Key points
 
 - **Perimeter** is the distance round the outside; convert to **one unit** first.

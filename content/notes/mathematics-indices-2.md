@@ -85,6 +85,15 @@ $$y^2 - 3y - 4 = 0 \quad\Rightarrow\quad (y - 4)(y + 1) = 0 \quad\Rightarrow\qua
 $2^x = 4$ gives $x = 2$. $2^x = -1$ has no solution, because a power of 2 is always positive. So $x = 2$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Zero index**: any non-zero number raised to the power 0 equals 1.
+- **Negative index**: a negative power means the reciprocal: $a^{-n} = \dfrac{1}{a^n}$.
+- **Fractional index**: a fractional power means a root: $a^{1/n}$ is the $n$th root of $a$.
+- **Indicial equation**: an equation in which the unknown is in the index, solved by writing both sides as powers of the same base.
+:::
+
 ## Key points
 
 - **Same base:** multiply → add indices; divide → subtract; power of a power → multiply.

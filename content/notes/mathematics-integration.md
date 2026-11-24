@@ -149,6 +149,17 @@ $\Big[x^3 - x^2\Big]_1^2 = (8 - 4) - (1 - 1) = 4$.
 Roots $x = 0$ and $x = 6$. $\Big[3x^2 - \dfrac{x^3}{3}\Big]_0^6 = 108 - 72 = 36$ square units.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Integration**: the reverse of differentiation: finding a function from its gradient function.
+- **Indefinite integral**: an integral without limits; its answer includes a constant of integration, $+\,c$.
+- **Constant of integration**: the constant $c$ added to an indefinite integral, because the derivative of any constant is zero.
+- **Definite integral**: an integral between two limits, worked out as the value at the upper limit minus the value at the lower limit.
+- **Limits of integration**: the two values of $x$ between which a definite integral is taken.
+- **Area under a curve**: the area between a curve and the $x$-axis, found by a definite integral; a negative result means the region is below the axis.
+:::
+
 ## Key points
 
 - Integration **reverses** differentiation; always add **$+ c$** for an indefinite integral.

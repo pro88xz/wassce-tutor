@@ -163,6 +163,16 @@ $\sum fx = 40 + 120 + 210 + 120 = 490$; $\sum f = 20$; mean $= 24.5$.
 The mode is NLe 1600 (it appears twice). It describes a typical worker reasonably well, but it is based on only two values; the median is more reliable.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Mean**: the sum of the values divided by the number of values.
+- **Median**: the middle value when the data is arranged in order.
+- **Mode**: the value that occurs most often.
+- **Modal class**: the class with the highest frequency in grouped data.
+- **Assumed mean**: a convenient value chosen near the middle of the data, used to make the mean easier to calculate.
+:::
+
 ## Key points
 
 - **Mean** $= \dfrac{\sum x}{n}$ or $\dfrac{\sum fx}{\sum f}$; **median** = middle value in order; **mode** = most frequent.

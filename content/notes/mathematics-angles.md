@@ -124,6 +124,20 @@ $x + 4x = 180 \Rightarrow x = 36$. **$36°$ and $144°$.**
 Complement $= 90 - 37 = 53°$; supplement $= 180 - 37 = 143°$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Acute angle**: an angle less than $90°$.
+- **Obtuse angle**: an angle between $90°$ and $180°$.
+- **Reflex angle**: an angle between $180°$ and $360°$.
+- **Vertically opposite angles**: the equal angles opposite each other where two straight lines cross.
+- **Corresponding angles**: angles in matching positions where a line crosses parallel lines (an F shape); they are equal.
+- **Alternate angles**: angles on opposite sides of a line crossing parallel lines (a Z shape); they are equal.
+- **Co-interior angles**: angles between parallel lines on the same side of a crossing line (a C or U shape); they add up to $180°$.
+- **Supplementary angles**: two angles that add up to $180°$.
+- **Complementary angles**: two angles that add up to $90°$.
+:::
+
 ## Key points
 
 - **Straight line**: $180°$. **At a point**: $360°$. **Vertically opposite**: equal.

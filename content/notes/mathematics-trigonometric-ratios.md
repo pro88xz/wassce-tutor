@@ -197,6 +197,17 @@ $\cos^{-1}(0.5) = 60°$. Cosine is negative in the 2nd and 3rd quadrants: $x = 1
 The largest angle is opposite the longest side (8 cm). $\cos A = \dfrac{6^2 + 5^2 - 8^2}{2(6)(5)} = \dfrac{-3}{60} = -0.05$, so $A = 92.9°$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Hypotenuse**: the longest side of a right-angled triangle, opposite the right angle.
+- **Sine**: in a right-angled triangle, the opposite side divided by the hypotenuse.
+- **Cosine**: in a right-angled triangle, the adjacent side divided by the hypotenuse.
+- **Tangent**: in a right-angled triangle, the opposite side divided by the adjacent side.
+- **Sine rule**: the rule $\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}$, used when a side and its opposite angle are known.
+- **Cosine rule**: the rule $a^2 = b^2 + c^2 - 2bc\cos A$, used with two sides and the included angle, or with three sides.
+:::
+
 ## Key points
 
 - **SOH CAH TOA**; label the sides **from the angle** you are using.

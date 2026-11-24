@@ -158,6 +158,18 @@ Perpendicular gradient $= -2$: $y - 5 = -2(x - 2) \Rightarrow y = -2x + 9$.
 $m_{AB} = \dfrac42 = 2$; $m_{BC} = \dfrac63 = 2$. Equal gradients through the shared point B, so **yes, collinear**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Gradient**: the steepness of a line: the change in $y$ divided by the change in $x$.
+- **Midpoint**: the point halfway between two points, found by averaging their coordinates.
+- **Parallel lines**: lines with equal gradients.
+- **Perpendicular lines**: lines at right angles; the product of their gradients is $-1$.
+- **Equation of a straight line**: $y = mx + c$, where $m$ is the gradient and $c$ is the $y$-intercept.
+- **Distance between two points**: the length of the line joining them, found by Pythagoras: $\sqrt{(\Delta x)^2 + (\Delta y)^2}$.
+- **Collinear points**: points on one straight line; any two pairs of them give equal gradients.
+:::
+
 ## Key points
 
 - **Distance** $= \sqrt{(\Delta x)^2 + (\Delta y)^2}$ (Pythagoras). **Midpoint** = average of the coordinates.

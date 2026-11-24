@@ -147,6 +147,17 @@ $x = -\dfrac{b}{2a} = -\dfrac{4}{2} = -2$. $y = 4 - 8 + 1 = -3$.
 Rewrite: $x^2 - x - 6 = x - 3$. **Draw $y = x - 3$.**
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Roots**: the $x$-values where a graph crosses the $x$-axis, where $y = 0$.
+- **y-intercept**: the point where a graph crosses the $y$-axis, where $x = 0$.
+- **Line of symmetry**: the vertical line halfway between the roots of a quadratic graph, $x = -\dfrac{b}{2a}$.
+- **Turning point**: the minimum or maximum point of a quadratic graph, on its line of symmetry.
+- **Parabola**: the U-shaped (or upside-down U) graph of a quadratic function.
+- **Table of values**: a table of $x$-values and the matching $y$-values, worked out term by term, used to plot a graph.
+:::
+
 ## Key points
 
 - $y = mx + c$: **gradient** $m = \dfrac{\text{rise}}{\text{run}}$, **intercept** $(0, c)$.

@@ -98,6 +98,14 @@ The 24-hour clock works modulo 24. $21 + 9 = 30 \equiv 6 \pmod{24}$. The bus arr
 Many Sierra Leonean communities hold a weekly market (*luma*) on the same day each week. If the Daru luma falls on a Thursday, the luma 30 days later is $30 \equiv 2 \pmod 7$ days on from a Thursday: a **Saturday**, so it is not a market day, and you can work that out in seconds.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Identity element**: the element that leaves every other element unchanged under an operation, such as 0 for addition.
+- **Inverse**: the element that combines with a given element to give the identity element.
+- **Operation table**: a table showing the result of an operation on every pair of elements.
+:::
+
 ## Key points
 
 - In modulo $n$, **reduce first** to keep numbers small; answers must lie from $0$ to $n - 1$.

@@ -114,6 +114,12 @@ $$3n + 8 = 4n + 1 \quad\Rightarrow\quad n = 7$$
 A Bo market trader who packs groundnuts in bags of 5, crates of 5 bags and boxes of 5 crates is counting in **base five**. Two boxes, one crate, four bags and three loose cups is $2143_5 = 298$ cups.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Unknown base**: a base found by expanding a number in that base, equating it to its base-ten value and solving; it must be greater than every digit.
+:::
+
 ## Key points
 
 - **Add:** carry 1 every time a column reaches the base.

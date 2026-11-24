@@ -113,6 +113,17 @@ Draw $AB = 7$ cm. With centre A and radius 6 cm, draw an arc; with centre B and 
 Construct $60°$, bisect it to get $30°$, then bisect $30°$ to get $15°$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Perpendicular bisector**: the line that cuts a line segment in half at right angles.
+- **Angle bisector**: the line that cuts an angle into two equal angles.
+- **Perpendicular**: a line at right angles to another line.
+- **Compasses**: an instrument for drawing circles and arcs and for marking off equal lengths.
+- **Construction lines**: the arcs and lines drawn while constructing, which must be left visible.
+- **Included angle**: the angle between two given sides of a triangle.
+:::
+
 ## Key points
 
 - Use only a **ruler and compasses**; keep all **construction arcs visible**.

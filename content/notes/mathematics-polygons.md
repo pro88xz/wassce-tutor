@@ -137,6 +137,17 @@ Sum $= 720°$. $100 + 120 + 130 + 140 + 2y = 720 \Rightarrow 2y = 230 \Rightarro
 Exterior $= 50°$, and $360 \div 50 = 7.2$, not a whole number. **No.**
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Polygon**: a closed plane shape with straight sides.
+- **Regular polygon**: a polygon with all sides equal and all angles equal.
+- **Interior angle**: an angle inside a polygon at a vertex; the interior angles add up to $(n - 2) \times 180°$.
+- **Exterior angle**: the angle between one side of a polygon and the next side extended; the exterior angles of any polygon add up to $360°$.
+- **Sum of interior angles**: the total of the interior angles of a polygon with $n$ sides: $(n - 2) \times 180°$.
+- **Decagon**: a polygon with ten sides.
+:::
+
 ## Key points
 
 - Interior sum: $(n - 2) \times 180°$.

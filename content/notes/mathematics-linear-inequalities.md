@@ -129,6 +129,17 @@ Multiply by 12: $4(2x - 1) - 3(x + 2) > 12 \Rightarrow 8x - 4 - 3x - 6 > 12 \Rig
 Test $(0, 0)$: $0 > -3$ ✓, so the region **containing the origin** (above the line). The line is **dashed** (strict inequality).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Inequality**: a statement that one quantity is greater than, less than, or not equal to another, using $<$, $>$, $\le$ or $\ge$.
+- **Open circle**: the circle on a number line for $<$ or $>$, showing the number is not included.
+- **Filled circle**: the circle on a number line for $\le$ or $\ge$, showing the number is included.
+- **Required region**: the region of a graph whose points satisfy all the inequalities.
+- **Boundary line**: the line that separates a region: solid for $\le$ or $\ge$, dashed for $<$ or $>$.
+- **Reversing the sign**: the rule that the inequality sign turns round when both sides are multiplied or divided by a negative number.
+:::
+
 ## Key points
 
 - $<, >$: open circle / dashed line. $\le, \ge$: filled circle / solid line.

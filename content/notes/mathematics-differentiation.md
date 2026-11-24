@@ -158,6 +158,18 @@ $2x - 6 = 0 \Rightarrow x = 3$, $y = 1$. $\dfrac{d^2y}{dx^2} = 2 > 0$: a **minim
 $v = 3t^2 - 12t + 9 = 3(t - 1)(t - 3) = 0$, so $t = 1$ s and $t = 3$ s.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Derivative**: the gradient function $\dfrac{dy}{dx}$, which gives the gradient of a curve at any point.
+- **Tangent to a curve**: the straight line that touches a curve at a point and has the same gradient there.
+- **Stationary point**: a point where the gradient of a curve is zero, $\dfrac{dy}{dx} = 0$.
+- **Maximum point**: a stationary point where the second derivative is negative.
+- **Minimum point**: a stationary point where the second derivative is positive.
+- **Velocity**: the rate of change of displacement with time, $\dfrac{ds}{dt}$.
+- **Acceleration**: the rate of change of velocity with time, $\dfrac{dv}{dt}$.
+:::
+
 ## Key points
 
 - The derivative $\dfrac{dy}{dx}$ is the **gradient** of the curve (the gradient of the tangent).
