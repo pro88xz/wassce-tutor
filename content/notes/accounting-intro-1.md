@@ -86,6 +86,14 @@ An accountant keeps or supervises the records, prepares the final accounts, advi
 Do not say that the only purpose of accounting is "to calculate profit". Examiners expect several objectives: recording, profit measurement, financial position, control of assets, decision-making and legal or tax requirements.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Users of accounting information**: the people who rely on a business's accounts, such as owners, managers, lenders, suppliers, employees, customers, the government and investors.
+- **Classifying**: grouping similar items in ledger accounts.
+- **Summarising**: totalling and listing the accounts.
+:::
+
 ## Key points
 
 - **Accounting** records, classifies, summarises, analyses and communicates financial information.

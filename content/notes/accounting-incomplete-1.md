@@ -89,6 +89,12 @@ Many traders in Sierra Leone's markets keep only a notebook of debts and a rough
 Remember to **add drawings** and **deduct capital introduced**. Simply subtracting opening capital from closing capital gives the **increase in capital**, not the profit.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Statement of affairs**: a statement of a business's estimated assets and liabilities at a date, used to find its capital when full records are not kept.
+:::
+
 ## Key points
 
 - **Incomplete records:** no full double entry; no trial balance.

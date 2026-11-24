@@ -100,6 +100,14 @@ In each ledger entry, the **details** column names the **other account** in the 
 Do not debit the bank account when a business **pays** by cheque. Money leaving the bank **reduces an asset**, so the **bank is credited**; the account receiving the value (the supplier, or the expense) is debited.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Debit**: the left side of an account; it records an increase in assets, expenses and drawings.
+- **Credit**: the right side of an account; it records an increase in liabilities, capital and income.
+- **DEAD CLIC**: a memory aid: Debit for Expenses, Assets and Drawings; Credit for Liabilities, Income and Capital.
+:::
+
 ## Key points
 
 - Every transaction is recorded **twice**: a **debit** in one account and an equal **credit** in another.

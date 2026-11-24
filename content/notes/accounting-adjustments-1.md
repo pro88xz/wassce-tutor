@@ -69,6 +69,15 @@ Many Sierra Leonean landlords ask for **rent a year or two in advance**. A shop 
 An **accrued expense** is a **liability**, not an asset: the business **owes** it. A **prepaid expense** is an **asset**: the business has paid for a benefit it has **not yet received**. Mixing these up puts both the profit and the statement of financial position wrong.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Accrued expense**: an expense owing at the end of the period, added to the expense and shown as a current liability.
+- **Prepaid expense**: an expense paid in advance for the next period, deducted from the expense and shown as a current asset.
+- **Accrued income**: income earned but not yet received, a current asset.
+- **Income received in advance**: income received for a later period, a current liability.
+:::
+
 ## Key points
 
 - Accruals and prepayments apply the **accruals (matching) concept**.

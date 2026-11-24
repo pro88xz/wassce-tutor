@@ -101,6 +101,12 @@ Some manufacturers transfer goods to the trading account at **market value** (wh
 Do not deduct **closing finished goods** in the manufacturing account. **Raw materials** and **WIP** are adjusted in the manufacturing account; **finished goods** are adjusted in the **trading account**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Cost per unit**: production cost divided by the number of units completed.
+:::
+
 ## Key points
 
 - Order: **materials consumed → prime cost → factory overheads → WIP adjustment → production cost**.

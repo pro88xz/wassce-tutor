@@ -81,6 +81,15 @@ The **credit balance** means the business **owes** Sesay NLe 3,000: a **trade pa
 The balance is carried down on the **smaller** side but brought down on the **larger** side. Kamara's account has a larger debit side, so its balance is **c/d on the credit side** and **b/d on the debit side**, showing a debit balance.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Balance carried down** (balance c/d): the figure entered on the smaller side of an account so that both totals agree.
+- **Balance brought down** (balance b/d): the balance entered on the opposite side at the start of the next period.
+- **Debit balance**: a balance showing an asset, an expense, drawings or someone who owes the business.
+- **Credit balance**: a balance showing a liability, capital, income or someone the business owes.
+:::
+
 ## Key points
 
 - **Balance c/d** goes on the **smaller** side so both totals agree; **balance b/d** goes on the **opposite** side in the next period.

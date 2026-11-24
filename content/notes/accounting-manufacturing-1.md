@@ -83,6 +83,17 @@ A furniture workshop in Kissy, Freetown, buys timber (direct material), pays car
 **Office salaries** and **office rent** do not go in the manufacturing account. Only **factory** costs belong there. Put administration, selling and distribution expenses in the profit and loss section.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Direct materials**: materials that become part of the product.
+- **Direct labour**: wages of the workers who make the product.
+- **Prime cost**: raw materials consumed plus direct labour plus direct expenses.
+- **Factory overheads** (indirect manufacturing costs): factory costs that cannot be traced to a single product.
+- **Production cost of goods completed**: factory cost plus opening work in progress minus closing work in progress.
+- **Raw materials consumed**: opening raw materials plus purchases and carriage inwards, less returns and closing raw materials.
+:::
+
 ## Key points
 
 - The **manufacturing account** finds the **production cost** of goods made.

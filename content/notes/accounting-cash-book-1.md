@@ -98,6 +98,14 @@ The **cash** column can never have a credit balance: you cannot pay out more cas
 When a cheque is received and **paid into the bank** on the same day, enter it in the **bank** column, not the cash column. Only notes and coins kept in the office go in the cash column.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Two-column cash book**: a cash book with cash and bank columns on each side.
+- **Three-column cash book**: a cash book with discount, cash and bank columns on each side.
+- **Contra entry**: an entry for cash paid into the bank or withdrawn from it, which appears on both sides of the cash book, is marked "c" and is not posted.
+:::
+
 ## Key points
 
 - The cash book records **all cash and bank** transactions: **receipts debit, payments credit**.

@@ -85,6 +85,13 @@ Bah collected the NLe 30,000, keeps $1\,000 + 3\,500 = 4\,500$, and pays Sesay *
 The **memorandum joint venture account** is **not** part of either party's double entry: it is prepared only to work out the total profit. Each party's own books contain only the **joint venture with the other party** account.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Memorandum joint venture account**: an account, outside the double entry, that brings together all the venturers' records to find the profit of a joint venture.
+- **Co-venturers**: the two or more persons who join together to carry out a joint venture.
+:::
+
 ## Key points
 
 - A **joint venture** is a **temporary** arrangement for one project, with profit shared in an agreed ratio.

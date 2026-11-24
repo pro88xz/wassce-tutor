@@ -102,6 +102,12 @@ A clue for examiners and candidates: when a trial balance difference is **even**
 A **bank overdraft** is a **credit** balance, even though it appears in the bank column of the cash book. Many candidates put it with "bank" on the debit side. An overdraft is money **owed to** the bank: a liability.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Errors not revealed by the trial balance**: errors of omission, commission, principle, original entry, complete reversal and compensating errors, which leave the totals equal.
+:::
+
 ## Key points
 
 - A balance on the **wrong side** changes the difference between the totals by **twice** its amount.

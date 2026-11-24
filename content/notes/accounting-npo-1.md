@@ -81,6 +81,16 @@ Football clubs, youth associations, church and mosque societies, and school old-
 Do not put **purchase of equipment** in the income and expenditure account. It is a **capital** payment: it appears in the receipts and payments account, but in the income and expenditure account only its **depreciation** is charged; the equipment itself goes in the statement of financial position.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Receipts and payments account**: a summary of a club's cash received and paid; its balance is cash in hand.
+- **Income and expenditure account**: a club's statement of revenue income and expenses for the period only; its balance is a surplus or deficit.
+- **Subscriptions**: members' fees, adjusted for amounts in arrears and in advance.
+- **Bar trading account**: a separate account for a club's bar or canteen; only the bar profit goes to the income and expenditure account.
+- **Legacy**: money or property left to a club in a will.
+:::
+
 ## Key points
 
 - Non-profit organisations report a **surplus or deficit**, not a profit or loss; capital is the **accumulated fund**.

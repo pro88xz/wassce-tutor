@@ -94,6 +94,16 @@ Sesay is still owed $8\,000 - 500 = 7\,500$; Kamara's account is cleared.
 In the **details** column, write the name of the **other** account in the double entry, not the name of the account you are writing in. In Kamara's account, the sale is shown as "Sales", not "Kamara".
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Sales ledger** (debtors' ledger): the ledger of personal accounts of credit customers.
+- **Purchases ledger** (creditors' ledger): the ledger of personal accounts of credit suppliers.
+- **General ledger** (nominal ledger): the ledger of nominal accounts, such as sales and wages, and real accounts, such as premises and inventory.
+- **Private ledger**: a ledger of confidential accounts the owner wants kept private.
+- **Posting**: transferring entries from the books of original entry to the ledger accounts.
+:::
+
 ## Key points
 
 - The **ledger** holds all the accounts and **classifies** transactions.

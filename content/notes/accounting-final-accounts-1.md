@@ -88,6 +88,18 @@ For Kargbo Stores:
 Do not put **carriage outwards** in the cost of sales, and do not leave **returns inwards** and **returns outwards** as separate expenses or income. Returns are deducted from sales and purchases; carriage inwards is part of cost of sales; carriage outwards is a selling expense.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Income statement** (trading, profit and loss account): the statement that works out gross profit and net profit for the period.
+- **Net sales** (revenue): sales minus returns inwards.
+- **Cost of sales**: opening inventory plus net purchases plus carriage inwards minus closing inventory.
+- **Gross profit**: net sales minus cost of sales.
+- **Net profit**: gross profit plus other income minus expenses.
+- **Carriage inwards**: the cost of delivery on goods bought, added to cost of sales.
+- **Carriage outwards**: the cost of delivery on goods sold, an expense.
+:::
+
 ## Key points
 
 - **Net sales − cost of sales = gross profit**; **gross profit + other income − expenses = net profit**.

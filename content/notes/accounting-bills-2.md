@@ -90,6 +90,13 @@ The bank takes back the face value and the noting charges from Sesay's account, 
 When a **discounted** bill is dishonoured, the drawer **credits the bank**, not bills receivable: the bills receivable account was already cleared when the bill was discounted, and it is the bank that reclaims its money.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Bills receivable**: bills held by the drawer, which are an asset.
+- **Bills payable**: bills accepted by the business, which are a liability.
+:::
+
 ## Key points
 
 - **Bills receivable** (drawer): an asset; **bills payable** (acceptor): a liability.

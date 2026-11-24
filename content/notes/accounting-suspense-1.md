@@ -71,6 +71,15 @@ This is a temporary measure; the account should be cleared as soon as the errors
 Do not pass errors of omission, commission, principle, original entry, complete reversal or compensating errors through the suspense account. They did not cause the trial balance difference, so their corrections do not touch suspense.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Trial balance difference**: the amount by which the debit and credit totals of a trial balance disagree, held in a suspense account until the errors are found.
+- **Overcast**: an addition that gives a total that is too high.
+- **Undercast**: an addition that gives a total that is too low.
+- **Errors revealed by the trial balance**: errors that make the trial balance disagree, such as single entries, unequal amounts, two debits or two credits, and casting errors.
+:::
+
 ## Key points
 
 - A **suspense account** temporarily holds a **trial balance difference**.

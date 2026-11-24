@@ -106,6 +106,16 @@ Capital $= (100\,000 + 15\,000 + 20\,000 + 9\,000) - 4\,000 = 140\,000$
 A **van bought on credit** is **not** entered in the purchases day book: the day books are for **goods for resale** only. Non-current assets bought on credit are recorded in the **general journal**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Sales day book**: the book of original entry for credit sales; each customer is debited in the sales ledger.
+- **Purchases day book**: the book of original entry for credit purchases; each supplier is credited in the purchases ledger.
+- **Returns inwards book**: the book of original entry for goods returned by customers.
+- **Returns outwards book**: the book of original entry for goods returned to suppliers.
+- **General journal**: the book of original entry for opening entries, credit purchases and sales of non-current assets, correction of errors, transfers and other items not in the day books.
+:::
+
 ## Key points
 
 - Books of original entry: **sales, purchases, returns inwards, returns outwards day books; cash book; petty cash book; general journal**.

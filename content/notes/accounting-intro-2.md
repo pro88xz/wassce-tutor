@@ -82,6 +82,16 @@ Many market traders in Freetown and Kenema keep no written records, or mix busin
 Bookkeeping and accounting are not two names for the same job. Bookkeeping is the **recording** stage; accounting includes bookkeeping **and** the summarising, interpreting and reporting that follow.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Cost accounting**: the branch of accounting that finds the cost of making each product or providing each service.
+- **Management accounting**: the branch of accounting that provides information for planning, budgeting and decisions inside the business.
+- **Auditing**: independent examination of the records to give an opinion that the accounts are true and fair.
+- **Forensic accounting**: the branch of accounting that investigates fraud and financial crime.
+- **Accounting cycle**: the sequence from source documents to books of original entry, ledger, trial balance and final accounts.
+:::
+
 ## Key points
 
 - **Bookkeeping** records transactions; **accounting** summarises, interprets and reports them.

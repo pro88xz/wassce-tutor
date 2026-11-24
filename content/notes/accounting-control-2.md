@@ -80,6 +80,13 @@ The control account is built from **totals** in the books of original entry; the
 Do not correct the control account for an error made only in an individual customer's account, or the list for an error in a day book total. Decide first **where** the error was made, then correct only that side.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **List of balances**: the total of the individual customer or supplier balances, which should agree with the control account balance.
+- **Set-off** (contra entry): cancelling an amount owed to a person who is both a customer and a supplier against the amount they owe.
+:::
+
 ## Key points
 
 - A **set-off**: debit purchases ledger control, credit sales ledger control, with the smaller balance.

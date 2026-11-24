@@ -96,6 +96,14 @@ These are explained in the topic on errors.
 Do not put **returns inwards** on the credit side because it "sounds like" income coming in. Returns inwards are **sales returns**: they **reduce sales**, so they are a **debit** balance. Returns outwards (purchases returns) are a **credit** balance.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Opening inventory**: the inventory at the start of the period; it is the inventory figure in the trial balance.
+- **Debit column**: the trial balance column for assets, expenses, purchases, returns inwards, discount allowed, opening inventory and drawings.
+- **Credit column**: the trial balance column for capital, liabilities, sales, returns outwards, discount received and other income.
+:::
+
 ## Key points
 
 - A **trial balance** lists all ledger balances in **debit** and **credit** columns on a given date.

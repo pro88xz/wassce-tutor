@@ -80,6 +80,13 @@ Shops selling perishable goods, such as fresh fish or bread in Freetown's market
 When converting sales after the year end to cost, use the **mark-up correctly**. With a mark-up of 25% on cost, cost is $\frac{100}{125}$ of selling price, **not** 75% of selling price.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Net realisable value** (NRV): selling price minus the costs to complete and sell.
+- **Lower of cost and net realisable value**: the rule that inventory is valued at its cost or its NRV, whichever is lower.
+:::
+
 ## Key points
 
 - Inventory is valued at the **lower of cost and net realisable value**, item by item.

@@ -73,6 +73,16 @@ Many transactions now happen electronically: **bank transfers**, **debit and cre
 A backup kept **on the same computer** is not a real backup. If the computer is stolen, damaged or infected, the backup is lost too. Keep copies **off site** or in secure cloud storage.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Audit trail**: a record of who entered or changed what and when, so that every transaction can be traced.
+- **Backup**: a copy of the data kept regularly, off site or in the cloud, so that data can be restored.
+- **User access levels**: controls that let each user see or change only what their job needs.
+- **Segregation of duties**: different people record, approve and pay, so that no one person controls a whole transaction.
+- **Input controls**: checks such as required fields, valid account codes, date checks and batch totals.
+:::
+
 ## Key points
 
 - Risks: **hardware failure, theft, viruses, unauthorised access, input errors, disasters**.

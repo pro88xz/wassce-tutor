@@ -66,6 +66,16 @@ Each year the **Audit Service Sierra Leone** publishes the Auditor-General's rep
 A **warrant** is not a cheque. It is the **authority** to spend from the funds Parliament has approved; the actual payment is then made through the government's accounts.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Appropriation Act**: the law that sets the maximum each ministry, department and agency may spend on each vote.
+- **Warrant**: written authority from the Ministry of Finance releasing funds to be spent.
+- **Vote book**: the record each MDA keeps of commitments and payments against each vote, so that spending never exceeds the amount approved.
+- **Consolidated Revenue Fund**: the fund into which all public revenue is paid; money can be withdrawn from it only as authorised by law.
+- **Auditor-General**: the official who audits the accounts of all ministries, departments and agencies.
+:::
+
 ## Key points
 
 - The **budget** is the government's annual plan; Parliament passes it as the **Appropriation Act**.

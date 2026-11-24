@@ -89,6 +89,16 @@ Unsold goods on consignment are valued at **cost plus a proportion of the expens
 Do not include the **commission** or **selling expenses** in the value of unsold goods, and do not treat goods sent on consignment as a **sale**. The consignor's sales are only the goods the consignee has actually sold.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Consignor**: the owner who sends goods to an agent to sell (the principal).
+- **Consignee**: the agent who receives and sells goods on behalf of the consignor.
+- **Pro-forma invoice**: a document sent with consigned goods showing their details and price; not a demand for payment.
+- **Account sales**: the consignee's statement of sales, expenses, commission and balance due.
+- **Del credere commission**: extra commission paid to a consignee for bearing the risk of bad debts on credit sales.
+:::
+
 ## Key points
 
 - In a **consignment**, the consignee sells the consignor's goods as an **agent** for **commission**.

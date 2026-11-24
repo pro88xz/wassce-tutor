@@ -86,6 +86,15 @@ When **prices are rising**, **FIFO** gives the **highest** closing inventory and
 Under **FIFO**, the closing inventory is valued at the **latest** prices, because the oldest goods have already been sold. Students often value it at the oldest prices by mistake.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **FIFO** (first in, first out): the method in which the oldest goods are treated as sold first, so closing stock is at the latest prices.
+- **LIFO** (last in, first out): the method in which the newest goods are treated as sold first, so closing stock is at the oldest prices; not allowed by IAS 2.
+- **AVCO** (weighted average cost): the method in which each issue is valued at the average cost of the goods in stock.
+- **IAS 2**: the international accounting standard on inventories, which allows FIFO and AVCO but not LIFO.
+:::
+
 ## Key points
 
 - Closing inventory affects **cost of sales, gross profit** and **current assets**.

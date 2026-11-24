@@ -82,6 +82,16 @@ The bank statement should show a **credit** balance of NLe 12,700.
 WAEC examiners have reported candidates who **start the bank reconciliation statement from the bank statement balance but use the signs for the cash book**, or who reconcile from the **original** cash book balance instead of the **adjusted** one. Decide your starting point first, then apply the matching signs.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Unpresented cheques**: cheques paid out and entered in the cash book but not yet presented to the bank for payment.
+- **Uncredited lodgements**: money paid in and entered in the cash book but not yet credited by the bank.
+- **Standing order**: a regular payment made by the bank on the customer's instructions, such as rent or insurance.
+- **Direct credit** (credit transfer): money paid directly into the account by customers, or interest and dividends received.
+- **Dishonoured cheque**: a customer's cheque that the paying bank refused to pay, so the bank takes the amount back.
+:::
+
 ## Key points
 
 - The **bank statement** is the customer's account in the bank's books: the mirror image of the cash book.

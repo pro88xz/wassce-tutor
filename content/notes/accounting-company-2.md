@@ -95,6 +95,15 @@ For Kamara Holdings: $\frac{67\,500 - 4\,000}{200\,000} = 0.3175$, about **NLe 0
 Do not put **dividends** in the income statement as an expense. Dividends are a **distribution of profit** to shareholders and are deducted in the **statement of changes in retained earnings** (equity). Debenture interest, by contrast, **is** an expense.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Retained earnings**: profits kept in the company after tax, dividends and transfers to reserves.
+- **General reserve**: a revenue reserve built up by transferring profit from retained earnings.
+- **Dividend**: the share of profit paid to shareholders, deducted from retained earnings, not an expense.
+- **Profit after tax**: the profit left after tax is deducted from profit before tax.
+:::
+
 ## Key points
 
 - **Debenture interest** and **directors' fees** are expenses; **tax** is deducted to give **profit after tax**.
