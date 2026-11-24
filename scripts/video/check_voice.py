@@ -58,6 +58,11 @@ def spoken(heard: str) -> str:
         heard = heard.replace(sym, words)
     heard = re.sub(r"(?<=\d)\s*[xX]\s*(?=\d)", " times ", heard)
     heard = re.sub(r"(?<=\d),(?=\d{3}\b)", "", heard)   # 72,000 is seventy-two thousand
+    heard = re.sub(r"(?<=\d)\s*/\s*(?=\d)", " over ", heard)   # 1/50 is one over fifty
+    # cm3 is cubic centimetres ("per cm3" is per cubic centimetre)
+    heard = re.sub(r"\bper\s+cm(?:3|³)", "per cubic centimetre", heard)
+    heard = re.sub(r"(\d+(?:\.\d+)?)\s*cm(?:3|³)",
+                   lambda m: f"{m.group(1)} cubic centimetre{'' if m.group(1) == '1' else 's'}", heard)
     # signs: "+10" is "plus ten", "-5.2" is "minus five point two", "12 - 5" is "twelve minus five"
     heard = re.sub(r"(?<![\w.])\+(?=\d)", " plus ", heard)
     heard = re.sub(r"(?<![\w.])-(?=\d)", " minus ", heard)
@@ -67,6 +72,56 @@ def spoken(heard: str) -> str:
     heard = re.sub(r"(\d+(?:\.\d+)?)\s*(cm|mm|km|kg|m|g|N|s|J|W)\b",
                    lambda m: f"{m.group(1)} {UNITS[m.group(2)]}{'' if m.group(1) == '1' else 's'}", heard)
     return re.sub(r"(\d+)\.(\d+)", lambda m: f"{m.group(1)} point {' '.join(DIGITS[int(d)] for d in m.group(2))}", heard)
+
+
+NUMBER = {w: (i, "unit") for i, w in enumerate(DIGITS)}
+NUMBER |= {w: (i + 10, "teen") for i, w in enumerate(
+    "ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split())}
+NUMBER |= {w: ((i + 2) * 10, "tens") for i, w in enumerate("twenty thirty forty fifty sixty seventy eighty ninety".split())}
+SCALE = {"hundred": 100, "thousand": 1000, "million": 10**6}
+
+
+def _values(run: list[str]) -> list[str]:
+    """One run of number words as the numbers it says: "three four seven" (digits
+    one by one) is 347, "fifteen hundred" is 1500, "two thousand and five" is 2005."""
+    if len(run) > 1 and all(NUMBER.get(w, (0, ""))[1] == "unit" for w in run):
+        return ["#" + "".join(str(NUMBER[w][0]) for w in run)]
+    out, total, cur, last = [], 0, 0, None
+    for w in run:
+        if w in SCALE:
+            if SCALE[w] == 100:
+                cur = (cur or 1) * 100
+            else:
+                total, cur = total + (cur or 1) * SCALE[w], 0
+            last = "scale"
+            continue
+        v, kind = NUMBER[w]
+        if last in ("unit", "teen") or (last == "tens" and kind != "unit"):   # a new number starts
+            out.append(total + cur)
+            total, cur = 0, 0
+        cur, last = cur + v, kind
+    return [f"#{n}" for n in out + [total + cur]]
+
+
+def numbers(words: list[str]) -> list[str]:
+    """Number words as values, so "347" heard for "three four seven", or "1500" for
+    "fifteen hundred", is the same number said another way. A wrong number still differs."""
+    out, i = [], 0
+    while i < len(words):
+        if words[i] not in NUMBER and words[i] not in SCALE:
+            out.append(words[i])
+            i += 1
+            continue
+        run = []
+        while i < len(words):
+            w = words[i]
+            if w in NUMBER or w in SCALE:
+                run.append(w)
+            elif not (w == "and" and run and run[-1] in SCALE and i + 1 < len(words) and words[i + 1] in NUMBER):
+                break
+            i += 1
+        out += _values(run)
+    return out
 
 
 def joined(words: list[str]) -> list[str]:
@@ -90,13 +145,13 @@ def norm(words: list[str]) -> list[str]:
     # compounds the recogniser writes as one word ("by-product" as "byproduct")
     text = " ".join(SAME.get(w, w) for w in words)
     for split, joined in (("by product", "byproduct"), ("s i", "si"), ("blood stream", "bloodstream"), ("well being", "wellbeing"),
-                          ("ground nuts", "groundnuts")):
+                          ("ground nuts", "groundnuts"), ("under water", "underwater")):
         text = f" {text} ".replace(f" {split} ", f" {joined} ").strip()
     # scientific words the recogniser spells by their sound (said correctly)
     for heard, word in (("flow m", "phloem"), ("floem", "phloem"), ("flowem", "phloem"), ("micro pill", "micropyle"),
                        ("a glutenation", "agglutination"), ("rarer factions", "rarefactions"), ("rare factions", "rarefactions"), ("atagrin", "at tagrin"), ("resa", "rhesus"), ("resa's", "rhesus"), ("abo", "a b o"), ("ab", "a b")):
         text = f" {text} ".replace(f" {heard} ", f" {word} ").strip()
-    return text.split()
+    return numbers(text.split())
 
 
 def main():
