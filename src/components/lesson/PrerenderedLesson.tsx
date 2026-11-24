@@ -10,12 +10,21 @@
 // tapping a word to hear it (AudioChip marks each play button with data-src).
 // "Try it" answers are <details> and work without JavaScript.
 //
-// Reached any other way (no HTML for it on the page), it renders LessonView.
-import { useEffect, useRef, useState } from 'react'
-import { LessonView } from '@/components/LessonView'
+// Reached any other way (no HTML for it on the page), it renders LessonView,
+// which the browser then loads: a page loaded from the build never needs it,
+// and it carries the Markdown and maths renderer (about 150 KB compressed).
+import { lazy, Suspense, useEffect, useRef, useState, type ComponentType } from 'react'
+// The kept HTML needs KaTeX's styles as much as LessonView does.
+import 'katex/dist/katex.min.css'
 import { ZoomDialog } from '@/components/lesson/Zoomable'
 import { fitLongMath } from '@/lib/math-split'
 import { onClipChange, playingClip, toggleClip } from '@/lib/audio-player'
+
+// The server renders every lesson, so it has LessonView from the start; in the
+// browser it is loaded the first time a lesson has no HTML to keep.
+const LessonView: ComponentType<{ content: string }> = import.meta.env.SSR
+  ? (await import('@/components/LessonView')).LessonView
+  : lazy(() => import('@/components/LessonView').then((m) => ({ default: m.LessonView })))
 
 export function PrerenderedLesson({ id, content, className }: { id: string; content: string; className?: string }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -73,7 +82,9 @@ export function PrerenderedLesson({ id, content, className }: { id: string; cont
   if (html === null) {
     return (
       <div id={id} ref={ref} className={className}>
-        <LessonView content={content} />
+        <Suspense fallback={<p className="text-muted-foreground">Loading the lesson…</p>}>
+          <LessonView content={content} />
+        </Suspense>
       </div>
     )
   }
