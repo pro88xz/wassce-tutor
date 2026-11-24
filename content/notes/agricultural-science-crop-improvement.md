@@ -115,6 +115,17 @@ Breeder seed → foundation seed → certified seed.
 Any three: true to type; high germination; free of weed seeds and seed-borne diseases; higher, more uniform yields.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Mass selection**: choosing many plants with the desired features and bulking their seed together.
+- **Pure-line selection**: growing the seed of single outstanding plants of a self-pollinated crop separately and keeping the best line.
+- **Hybrid vigour** (heterosis): the greater strength and yield of the offspring of two unrelated parents compared with either parent.
+- **Mutation breeding**: treating seeds with radiation or chemicals to cause mutations, then selecting useful ones.
+- **Polyploidy**: doubling the chromosome number, which often gives larger plants and fruits.
+- **Lodging**: the falling over of a crop, which improved varieties are bred to resist.
+:::
+
 ## Key points
 
 - Aims: **yield, resistance, tolerance, early maturity, quality, nutrition, mechanization**.

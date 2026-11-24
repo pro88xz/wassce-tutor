@@ -127,6 +127,17 @@ $900 \div 500 = 1.8$.
 $\dfrac{1260}{200 \times 7} \times 100 = \dfrac{1260}{1400} \times 100 = 90\%$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Broiler**: a chicken bred for meat, which grows very fast.
+- **Layer**: a chicken bred to lay many eggs.
+- **Deep litter system**: an intensive system in which birds are kept in a house on a deep layer of litter.
+- **Battery cage system**: an intensive system in which layers are kept in wire cages in rows.
+- **Litter**: a layer of wood shavings, rice husk or similar material, 5–10 cm deep, on the floor of a poultry house.
+- **Debeaking**: trimming the beaks of birds to reduce pecking and cannibalism.
+:::
+
 ## Key points
 
 - **Broilers** for meat (6–8 weeks); **layers** for eggs (from 18–20 weeks); local chickens are hardy.

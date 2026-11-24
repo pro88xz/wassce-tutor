@@ -134,6 +134,17 @@ Any four: grain dry and clean; store dry, cool and well ventilated; protection f
 They keep out air, so the oxygen inside is used up by the insects and grain; the insects **die from lack of oxygen** and new ones cannot enter, without any chemicals.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Threshing**: separating grain from straw or pods.
+- **Winnowing**: removing chaff, stones and broken grain, for example by tossing grain in the wind.
+- **Parboiling**: soaking and steaming paddy rice before drying and milling, which strengthens the grain.
+- **Crib**: a raised, airy store for maize cobs.
+- **Hermetic bag**: an airtight bag for grain and beans, in which insects die from lack of oxygen.
+- **Silo**: a large store for grain.
+:::
+
 ## Key points
 
 - **Post-harvest losses** reduce quantity and quality between harvest and use.

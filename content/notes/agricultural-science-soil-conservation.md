@@ -117,6 +117,17 @@ It covers the soil, so raindrops hit the leaves instead of bare soil (preventing
 Mechanical: any two of contour ridging, terracing, bunds, drainage channels, check dams. Biological: any two of afforestation, windbreaks, grass strips, agroforestry, controlled grazing.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Splash erosion**: raindrops hitting bare soil and splashing particles out of place, breaking crumbs and sealing the surface.
+- **Sheet erosion**: the washing away of a thin, even layer of topsoil from a wide area.
+- **Rill erosion**: erosion by water collecting into many small channels a few centimetres deep.
+- **Gully erosion**: erosion in which rills join into deep, wide channels that cut farmland apart.
+- **Contour ploughing**: ploughing across the slope, along the contours, so that the ridges slow run-off.
+- **Terracing**: cutting a slope into a series of level steps to reduce run-off and erosion.
+:::
+
 ## Key points
 
 - **Erosion** removes topsoil; **conservation** protects it.

@@ -110,6 +110,15 @@ Any four: clean after use; dry and oil metal parts; sharpen blades; repair or re
 Any three: carry with the blade pointing down; keep a safe distance from others; keep it sharp; wear boots; use it only for cutting; store it safely away from children.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Machine**: farm equipment driven by an engine, such as a tractor.
+- **Ranging poles**: poles used with a measuring tape to mark out plots.
+- **Rain gauge**: an instrument for measuring rainfall on the farm.
+- **Knapsack sprayer**: a sprayer carried on the back for applying pesticides and herbicides.
+:::
+
 ## Key points
 
 - **Tools** are hand-worked; **implements** are pulled by animals or tractors; **machines** have engines.

@@ -143,6 +143,17 @@ $25\,000 - 17\,500 = $ NLe 7500.
 $3000 \div 5 = $ NLe 600 per year.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Farm records**: written accounts of what happens on the farm, such as inventory, production, input, labour, livestock and sales records.
+- **Inventory record**: a list of all farm assets at a date: land, buildings, machines, tools, animals and stores.
+- **Farm diary**: a daily record of activities and events on the farm, such as rain, pests and visitors.
+- **Variable costs**: costs that change with the size of the enterprise, such as seed, fertiliser, feed and casual labour.
+- **Fixed costs**: costs that do not change with output, such as rent and depreciation of buildings and machines.
+- **Gross margin**: the value of output minus the variable costs of an enterprise.
+:::
+
 ## Key points
 
 - **Farm management**: planning, organising, directing, controlling, deciding, recording, marketing.

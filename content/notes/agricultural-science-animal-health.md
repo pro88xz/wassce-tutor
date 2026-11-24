@@ -136,6 +136,18 @@ Signs: bloody diarrhoea; ruffled feathers; droopiness; deaths. Control: keep lit
 Any five: vaccination; good housing; balanced feeding and clean water; hygiene and footbaths; quarantine of new animals; parasite and vector control; buying healthy stock.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Notifiable disease**: a disease, such as anthrax or foot-and-mouth disease, that must be reported to the veterinary authorities.
+- **Endoparasites**: parasites that live inside the animal, such as roundworms, tapeworms and liver flukes.
+- **Ectoparasites**: parasites that live on the outside of the animal, such as ticks, mites, lice and fleas.
+- **Trypanosomiasis**: a protozoan disease of cattle, goats, sheep and pigs spread by tsetse flies.
+- **Newcastle disease**: a virus disease of poultry, prevented by vaccination.
+- **Quarantine**: keeping new or sick animals apart so they do not spread disease.
+- **Vaccination**: giving a vaccine to protect animals against a disease.
+:::
+
 ## Key points
 
 - Know the signs of **health** and **ill health**.

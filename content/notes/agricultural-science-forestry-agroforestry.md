@@ -130,6 +130,15 @@ Farmers grow food crops between young timber trees in a new plantation, weeding 
 Benefits: any three of soil fertility, erosion control, varied products, shorter fallows, shade and windbreaks, income spread through the year. Problems: any two of competition with crops, long wait for returns, pests in trees, labour for pruning, land tenure problems.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Afforestation**: planting trees where there was no forest.
+- **Reforestation**: replanting trees where a forest has been cut.
+- **Thinning**: removing weaker trees so that the best have room to grow.
+- **Firebreak**: a cleared strip of land that stops a fire spreading into a plantation or forest.
+:::
+
 ## Key points
 
 - **Forests** give timber, fuel, food, medicine, water protection, soil protection, climate benefits, wildlife and jobs.

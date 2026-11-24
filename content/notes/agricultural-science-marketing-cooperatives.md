@@ -127,6 +127,16 @@ Each member has **one vote** in decisions, regardless of how many shares they ow
 Any four: bulk selling and better prices; bargaining power; shared storage and transport; grading and better quality; access to credit; less exploitation by middlemen; training.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Assembling**: collecting small amounts of produce from many farmers into larger lots.
+- **Grading**: sorting produce by size, quality and cleanliness, so that buyers know what they get and good quality earns more.
+- **Middleman**: a trader between the farmer and the consumer, such as a wholesaler or retailer.
+- **Producer cooperative**: a cooperative whose members produce together or share machines and inputs.
+- **Marketing cooperative**: a cooperative whose members bulk, grade, store and sell their produce together.
+:::
+
 ## Key points
 
 - **Marketing** moves produce from producer to consumer at the right **time, place, form and price**.

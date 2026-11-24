@@ -131,6 +131,16 @@ Any three: high cost of machines and fuel; small, scattered farms; stumps and sl
 Any four: engine oil, coolant, fuel, tyre pressure, battery, loose nuts and bolts.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Power take-off** (PTO): a rotating shaft at the back of a tractor that drives implements such as rotavators, sprayers and threshers.
+- **Hydraulic system**: the tractor system that raises and lowers mounted implements.
+- **Three-point linkage**: the arrangement that attaches implements to the back of a tractor.
+- **Drawbar**: a bar on a tractor for pulling trailed implements and trailers.
+- **Tractor hire service**: a service from which farmers hire a tractor and operator by the hectare instead of buying one.
+:::
+
 ## Key points
 
 - **Mechanization** = using powered machines for farm operations.

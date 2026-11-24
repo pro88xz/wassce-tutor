@@ -129,6 +129,17 @@ A fresh egg **sinks** and lies flat; a stale egg stands upright or **floats**, b
 **Hides** come from large animals (cattle), **skins** from small animals (goats, sheep). Steps: flaying, curing (salting or drying), tanning.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Ante-mortem inspection**: inspection of the live animal before slaughter, so that only healthy animals are killed.
+- **Offal**: the edible internal organs of a slaughtered animal, such as liver, kidneys and tripe.
+- **Blood meal**: dried blood used as a protein feed and as fertiliser.
+- **Bone meal**: ground bones used to supply calcium and phosphorus in feed and fertiliser.
+- **Smoking**: preserving meat or fish by drying it over smoke, which also adds chemicals that kill microbes.
+- **Curing**: preserving hides and skins, for example by salting or drying, so they do not rot before tanning.
+:::
+
 ## Key points
 
 - Slaughter: **rest, inspect, bleed well, flay, eviscerate cleanly, inspect carcass**.

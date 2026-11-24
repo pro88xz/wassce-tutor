@@ -125,6 +125,17 @@ Crop: stores and softens food. Gizzard: grinds food with the help of grit.
 Testes: produce sperm and testosterone. Ovaries: produce eggs (ova) and the hormones oestrogen and progesterone.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Ruminant**: an animal, such as a cow, goat or sheep, with a four-chambered stomach that chews the cud.
+- **Rumen**: the largest stomach chamber of a ruminant, where microbes ferment cellulose into fatty acids the animal absorbs for energy.
+- **Reticulum**: the stomach chamber that forms food into balls of cud, which are returned to the mouth.
+- **Omasum**: the stomach chamber that absorbs water from the food.
+- **Abomasum**: the true stomach of a ruminant, which secretes hydrochloric acid and enzymes.
+- **Oviduct**: the tube from the ovary to the uterus, where fertilisation takes place.
+:::
+
 ## Key points
 
 - Ruminant stomach: **rumen, reticulum, omasum, abomasum**; microbes digest cellulose; **rumination** rechews the cud.

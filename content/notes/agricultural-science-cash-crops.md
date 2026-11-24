@@ -124,6 +124,17 @@ It has a **thin shell and thick oily mesocarp**, so it gives much more oil than 
 $143 \times 3.5 \approx 500$ palms.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Cash crop**: a crop grown mainly for sale, such as cocoa, coffee, oil palm and cashew.
+- **Plantation**: a large estate growing one perennial cash crop, often with hired labour and modern methods.
+- **Temporary shade**: fast-growing plants, such as plantain or banana, planted to shade young cocoa and give food and income while it grows.
+- **Polybag**: a plastic bag of soil in which seedlings are raised in a nursery.
+- **Tenera**: the hybrid oil palm with a thin shell and a thick, oil-rich fruit pulp.
+- **Fermentation**: piling or boxing fresh cocoa beans for 5–7 days, which develops the chocolate flavour before drying.
+:::
+
 ## Key points
 
 - Main cash crops: **cocoa, coffee, oil palm, cashew, ginger, kola, sugarcane, rubber, coconut**.
