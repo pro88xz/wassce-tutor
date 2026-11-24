@@ -88,6 +88,14 @@ This is how the Sun's heat reaches the Earth. All bodies emit radiation; hotter 
 | Mechanism | particle-to-particle collisions (and free electrons) | movement of the fluid itself | electromagnetic (infrared) waves |
 | Speed | slow | fairly slow | very fast (speed of light) |
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Good conductor**: a material that lets heat pass through it easily; metals are the best.
+- **Bad conductor** (insulator): a material that conducts heat poorly, such as wood, plastic or still air.
+- **Convection current**: the flow of a fluid in which hot fluid rises and cold fluid sinks.
+:::
+
 ## Key points
 
 - **Conduction**: particle to particle, mainly in solids; metals are the best conductors.

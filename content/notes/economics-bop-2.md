@@ -92,6 +92,17 @@ Other institutions include the **African Development Bank (AfDB)** and the **ECO
 **Devaluation** is an official decision under a fixed rate; **depreciation** happens through the market under a floating rate. Using them as if they mean the same thing loses marks in definition questions.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Fixed exchange rate**: an exchange rate set and defended by the government or central bank.
+- **Floating exchange rate** (flexible exchange rate): an exchange rate set freely by demand and supply in the foreign exchange market.
+- **Devaluation**: a deliberate official reduction in the value of a currency under a fixed exchange rate.
+- **Depreciation**: a fall in the value of a currency caused by market forces under a floating rate.
+- **Appreciation**: a rise in the value of a currency through market forces.
+- **Imported inflation**: rising prices at home caused by dearer imports, such as fuel, food and machinery.
+:::
+
 ## Key points
 
 - The **exchange rate** is the price of one currency in another.

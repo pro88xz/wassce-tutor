@@ -122,6 +122,15 @@ Animals invest different amounts of energy in each offspring. Many fish release 
 
 Parental care can increase the chance that offspring survive, but it requires time and energy. Reproductive strategies reflect trade-offs between offspring number, offspring size, protection and parental investment.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Albumen**: the egg white, which supplies water and protein and cushions the embryo.
+- **Yolk**: the nutrient store for the developing embryo.
+- **Internal fertilisation**: fertilisation inside the female's body, as in birds and mammals.
+- **External fertilisation**: fertilisation outside the body, usually in water, as in most fish and frogs.
+:::
+
 ## WASSCE examination focus
 
 - Fertilisation is the fusion of gamete nuclei; it is not the same as mating or egg-laying.

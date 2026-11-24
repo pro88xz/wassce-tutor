@@ -95,6 +95,16 @@ Check it with the examples:
 - Sugar (inelastic): revenue rises from $20 \times 100 = \text{NLe } 2{,}000$ to $25 \times 90 = \text{NLe } 2{,}250$ when the price rises.
 - Soft drink (elastic): revenue rises from $10 \times 50 = \text{NLe } 500$ to $8 \times 70 = \text{NLe } 560$ when the price falls.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Price elasticity of demand**: the responsiveness of quantity demanded to a change in price: the percentage change in quantity demanded divided by the percentage change in price.
+- **Elastic demand**: demand that changes by a greater proportion than price, so a price rise lowers total revenue.
+- **Inelastic demand**: demand that changes by a smaller proportion than price, so a price rise raises total revenue.
+- **Unitary elasticity**: demand that changes by the same proportion as price, leaving total revenue unchanged.
+- **Total revenue**: price times the quantity sold.
+:::
+
 ## Key points
 
 - PED = % change in quantity demanded ÷ % change in price; ignore the minus sign.

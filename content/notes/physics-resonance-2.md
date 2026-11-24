@@ -86,6 +86,16 @@ End correction: $\dfrac{\lambda}{4} = L_1 + c \Rightarrow c = 16.75 - 16.0 = 0.7
 - Your voice: the throat and mouth are resonating air spaces.
 - Tuning a radio: the circuit resonates at the station's frequency.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Resonance**: the large vibration that occurs when a body is made to vibrate at its own natural frequency.
+- **Node**: a point on a stationary wave where there is no vibration, as at the closed end of a pipe.
+- **Antinode**: a point on a stationary wave where the vibration is greatest, as at the open end of a pipe.
+- **End correction**: the small distance beyond the open end of a pipe where the antinode actually forms.
+- **Resonance tube**: a tube whose air column length is adjusted until it resonates with a tuning fork, used to measure the speed of sound.
+:::
+
 ## Key points
 
 - Closed end: node; open end: antinode.

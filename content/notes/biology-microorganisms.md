@@ -119,6 +119,18 @@ Salt draws water out of microorganisms by **osmosis**, so they are dehydrated an
 To kill **all** the bacteria, including the more resistant ones. Stopping early leaves resistant bacteria alive to multiply and spread.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Microorganism**: a living thing too small to see without a microscope, such as a bacterium, virus, fungus or protozoan.
+- **Decomposition**: the breakdown of dead matter by bacteria and fungi, which returns nutrients to the soil.
+- **Nitrogen fixation**: turning nitrogen gas into compounds plants can use, as by Rhizobium in legume root nodules.
+- **Antibiotic**: a substance made by a microorganism that kills or stops the growth of bacteria, such as penicillin.
+- **Pathogen**: a microorganism that causes disease.
+- **Aerobic**: needing oxygen to live and grow.
+- **Anaerobic**: able to live and grow without oxygen.
+:::
+
 ## Key points
 
 - Microbes: **bacteria** (no nucleus; binary fission), **viruses** (not cells; reproduce only in hosts), **fungi** (hyphae, spores; yeast buds), **protozoa** (single cells with a nucleus), **algae**.

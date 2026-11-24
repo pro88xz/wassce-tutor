@@ -146,6 +146,18 @@ Advantages: fast; effective on large outbreaks. Disadvantages: poisons people an
 Dry the grain well, clean the store, sort out damaged grain, and store in airtight (hermetic) bags or containers.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Biting and chewing pests**: pests whose jaws bite off and chew plant tissue, such as grasshoppers and caterpillars.
+- **Piercing and sucking pests**: pests whose mouthparts pierce plant tissue and suck sap, such as aphids.
+- **Boring pests**: pests whose larvae tunnel inside stems, pods or grains, such as stem borers.
+- **Storage pests**: pests of stored food, such as weevils, grain moths, bean bruchids and rats.
+- **Nematodes** (eelworms): tiny worms in the soil that attack roots, causing galls and stunting.
+- **Cassava mosaic**: a virus disease of cassava that causes mottled, twisted leaves and low yields.
+- **Damping off**: a fungal disease that makes seedlings collapse at soil level.
+:::
+
 ## Key points
 
 - **Pests**: insects, nematodes, birds, rodents, weeds; **diseases**: caused by fungi, bacteria, viruses.

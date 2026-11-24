@@ -93,6 +93,16 @@ $$\Delta V = 5.1 \times 10^{-5} \times 500 \times 50 = 1.275\ \text{cm}^3 \appro
 On a hot afternoon in the dry season, the electricity cables along the roads in Bo visibly sag more than at dawn. Engineers string them with enough slack for the coldest harmattan night, when they contract the most.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Linear expansivity**: the increase in length per unit length per kelvin rise in temperature.
+- **Area expansivity** (superficial expansivity): the increase in area per unit area per kelvin rise in temperature, about twice the linear expansivity.
+- **Volume expansivity** (cubic expansivity): the increase in volume per unit volume per kelvin rise in temperature, about three times the linear expansivity.
+- **Bimetallic strip**: two metals with different expansivities joined together, which bends when heated; used in thermostats.
+- **Thermostat**: a device that keeps a temperature steady by making or breaking a circuit at a set temperature.
+:::
+
 ## Key points
 
 - Heating makes particles vibrate more and move apart, so solids expand.

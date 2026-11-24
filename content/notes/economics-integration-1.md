@@ -72,6 +72,17 @@ Improve regional roads, railways and power links; harmonise customs procedures a
 A trader from Kambia crossing to Guinea can, under ECOWAS rules, move goods duty-free and travel without a visa. In practice, many traders still report delays, unofficial payments and roadblocks at border crossings: a non-tariff barrier that integration agreements are meant to remove.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Preferential trade area**: a group of countries that charge each other lower tariffs than non-members.
+- **Free trade area**: a group of countries with no tariffs between members, each keeping its own tariffs on outsiders.
+- **Customs union**: a free trade area with a common external tariff on imports from outside.
+- **Common market**: a customs union with free movement of labour and capital.
+- **Economic union**: a common market with coordinated economic policies, often a single currency and central bank.
+- **Common external tariff** (CET): the same tariff charged by all members of a customs union on imports from outside.
+:::
+
 ## Key points
 
 - **Economic integration** removes barriers to trade and movement between member countries.

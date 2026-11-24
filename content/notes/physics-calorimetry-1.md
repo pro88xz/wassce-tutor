@@ -88,6 +88,13 @@ Water has one of the **highest** specific heat capacities of any common substanc
 At midday on Lumley Beach, the sand burns your feet while the sea is pleasantly cool. Sand has a much lower specific heat capacity than water, so the same sunshine raises its temperature far more.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Heat capacity**: the heat needed to raise the temperature of a body by 1 K.
+- **Specific heat capacity**: the heat needed to raise the temperature of 1 kg of a substance by 1 K.
+:::
+
 ## Key points
 
 - Heat capacity $C = Q/\Delta\theta$ (J K⁻¹) belongs to an object; specific heat capacity $c = Q/(m\Delta\theta)$ (J kg⁻¹ K⁻¹) belongs to a substance.

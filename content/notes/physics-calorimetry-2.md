@@ -84,6 +84,14 @@ $$c = \dfrac{12 \times 4.0 \times 300}{1.0 \times 16} = \dfrac{14\,400}{16} = 90
 
 A cup of tea cools fastest when it is hottest and more slowly as it approaches room temperature. The **cooling curve** (temperature against time) is steep at first and gradually flattens.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Calorimetry**: the measurement of quantities of heat.
+- **Lagging**: insulating a calorimeter with cotton wool, felt or a jacket to reduce heat loss.
+- **Electrical method**: finding specific heat capacity by heating with an electric heater and using the energy $VIt$ supplied.
+:::
+
 ## Key points
 
 - Method of mixtures: heat lost by hot bodies = heat gained by cold bodies.

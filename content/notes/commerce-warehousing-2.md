@@ -111,6 +111,17 @@ Importers of drinks and cigarettes in Freetown use bonded warehouses supervised 
 5. **Few public warehouses** in rural areas, so farmers sell at low harvest prices.
 6. **Poor record keeping** and stock control.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Private warehouse**: a warehouse owned by a manufacturer, wholesaler or retailer for its own goods.
+- **Public warehouse**: a warehouse rented to anyone for a fee.
+- **Maximum stock level**: the most stock that should be held, limited by space, cost and spoilage.
+- **Buffer stock** (minimum stock): a safety stock kept for unexpected demand or delays.
+- **Reorder level**: the stock level at which a new order should be placed.
+- **Dock warrant**: a document issued by a port warehouse as a receipt and title to goods stored there.
+:::
+
 ## Key points
 
 - Types: **private, public, bonded, cold storage, produce, bulk tanks, dock, cooperative and government** warehouses.

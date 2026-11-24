@@ -59,6 +59,15 @@ A car parked in the sun in Freetown with its windows shut becomes much hotter in
 | Clay pots keep water cool | evaporation through the pores absorbs latent heat |
 | Igloos (in cold countries) keep people warm | snow traps air, a poor conductor |
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Sea breeze**: a cool wind blowing from the sea to the land by day, when the land is warmer than the sea.
+- **Land breeze**: a wind blowing from the land to the sea at night, when the sea is warmer than the land.
+- **Vacuum flask**: a double-walled flask that reduces heat transfer: the vacuum stops conduction and convection, the silvered walls cut radiation.
+- **Greenhouse effect**: the trapping of heat by glass or the atmosphere, which lets short-wavelength radiation in but stops long-wavelength radiation getting out.
+:::
+
 ## Key points
 
 - Sea breeze by day (land warms faster); land breeze by night (land cools faster).

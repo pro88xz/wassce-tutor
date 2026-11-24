@@ -80,6 +80,14 @@ The free movement protocol matters to Sierra Leone's traders: market women trave
 ECOWAS is **not** a single-currency union. Most members still have their own currencies (the leone, the naira, the cedi), and the planned common currency has not yet been introduced. WAEMU members share the CFA franc, but they are only part of ECOWAS.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Free movement protocol**: the ECOWAS agreement of 1979 that lets citizens travel and stay in other member states without a visa for up to 90 days.
+- **ECOWAS Trade Liberalisation Scheme** (ETLS): the scheme under which goods originating in member states trade free of import duty.
+- **Community Court of Justice**: the ECOWAS court that settles disputes and interprets ECOWAS laws.
+:::
+
 ## Key points
 
 - **ECOWAS** (1975, Treaty of Lagos, Abuja headquarters) aims at a common market, free movement and regional peace; it has **12 members** since 2025.

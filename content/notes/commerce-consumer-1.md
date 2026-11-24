@@ -86,6 +86,16 @@ Market buyers in Sierra Leone often buy rice, gari and palm oil by the **cup, pa
 "Consumer protection" is not only about the **government**. It also includes **consumer associations, producers' self-regulation, the media and consumers themselves**, all covered in the next lesson.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Adulteration**: mixing goods with cheaper or harmful substances, such as dye in palm oil or sand in grain.
+- **Counterfeit goods** (fake goods): goods that copy famous brands, such as fake drugs, spare parts and phones.
+- **Short weights and measures**: giving less than the stated quantity, such as selling 900 g as 1 kg.
+- **Hoarding**: holding goods back to create scarcity, then raising prices.
+- **After-sales service**: services a seller gives after a sale, such as honouring guarantees and repairs.
+:::
+
 ## Key points
 
 - **Consumer protection** safeguards buyers from unfair practices and harmful goods; **consumerism** is the movement for consumer rights.

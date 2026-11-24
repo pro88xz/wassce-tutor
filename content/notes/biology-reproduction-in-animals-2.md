@@ -156,6 +156,17 @@ Examples include:
 
 When answering a question about an adaptation, state the feature and explain how it improves reproductive success. Do not merely list the feature.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Complete metamorphosis**: development through egg, larva, pupa and adult, as in butterflies and houseflies.
+- **Incomplete metamorphosis**: development through egg, nymph and adult, with no pupa, as in cockroaches and grasshoppers.
+- **Larva**: the young stage of an insect that looks very different from the adult, such as a caterpillar or maggot.
+- **Pupa**: the resting stage between larva and adult in complete metamorphosis.
+- **Nymph**: the young stage of an insect with incomplete metamorphosis, which looks like a small adult without wings.
+- **Parental care**: the protection and feeding of the young by their parents.
+:::
+
 ## WASSCE examination focus
 
 - Complete metamorphosis: egg, larva, pupa, adult. Incomplete metamorphosis: egg, nymph, adult.
