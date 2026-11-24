@@ -36,7 +36,11 @@ SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "am
 
 
 def norm(words: list[str]) -> list[str]:
-    return [SAME.get(w, w) for w in words]
+    # compounds the recogniser writes as one word ("by-product" as "byproduct")
+    text = " ".join(SAME.get(w, w) for w in words)
+    for joined in ("byproduct", "bloodstream", "wellbeing"):
+        text = text.replace(f"{joined[:2]} {joined[2:]}", joined)
+    return text.split()
 
 
 def main():
