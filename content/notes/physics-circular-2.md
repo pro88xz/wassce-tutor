@@ -97,6 +97,14 @@ $$v_e = \sqrt{\dfrac{2GM}{R}} = \sqrt{2gR}$$
 
 For the Earth, $v_e = \sqrt{2 \times 9.8 \times 6.4 \times 10^{6}} \approx 11.2$ km s⁻¹. It does not depend on the mass of the body launched.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Orbital speed**: the speed a satellite needs to stay in orbit; near the Earth's surface about 7.9 km s⁻¹.
+- **Geostationary satellite**: a satellite above the equator with a period of 24 hours, so it stays over the same place.
+- **Gravitational constant**: the constant $G$ in Newton's law of universal gravitation.
+:::
+
 ## Key points
 
 - Vertical circle: tension is least at the top; minimum speed at the top is $\sqrt{gr}$.

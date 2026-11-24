@@ -61,6 +61,16 @@ Vision may be affected by refractive errors, cataract, infection, injury or dise
 
 Loss of smell or taste can occur with infections, injury or other medical conditions. Persistent or sudden sensory changes should be assessed by a qualified health professional.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Semicircular canals**: three fluid-filled canals of the inner ear, in three planes, that detect rotation of the head.
+- **Cochlea**: the coiled part of the inner ear that turns sound vibrations into nerve impulses.
+- **Eardrum** (tympanic membrane): the thin membrane that vibrates when sound waves reach it.
+- **Ossicles**: the three tiny bones of the middle ear that pass vibrations from the eardrum to the inner ear.
+- **Eustachian tube**: the tube from the middle ear to the throat that keeps the air pressure equal on both sides of the eardrum.
+:::
+
 ## WASSCE examination focus
 
 For hearing, learn the sequence from the pinna to the auditory nerve. The ossicles transmit vibrations; the cochlear hair cells convert mechanical stimulation into nerve signals. For balance, distinguish the semicircular canals (rotational movement) from the utricle and saccule (linear acceleration and head position). Do not state that the pinna itself converts sound into nerve impulses.

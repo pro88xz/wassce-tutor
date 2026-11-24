@@ -95,6 +95,16 @@ Sierra Leone usually has a **trade deficit**: imports of fuel, rice and machiner
 Do not use "balance of trade" and "balance of payments" as if they mean the same thing. The balance of trade covers **goods only**; the balance of payments covers **all** transactions, including services, income, transfers and capital flows.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Current account**: the part of the balance of payments for trade in goods and services, income and transfers.
+- **Capital and financial account**: the part of the balance of payments for flows of investment and loans.
+- **Invisible trade**: trade in services, such as transport, insurance, banking and tourism.
+- **Balance of payments deficit**: a position in which payments to other countries exceed receipts from them.
+- **Import substitution**: producing at home goods that were formerly imported.
+:::
+
 ## Key points
 
 - The **balance of trade** is exports minus imports of **goods**.

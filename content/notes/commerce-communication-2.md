@@ -95,6 +95,16 @@ Sierra Leone's main mobile networks include **Orange, Africell and Qcell**, and 
 **Registered post** gives **compensation** if the item is lost; **recorded delivery** gives only **proof** of posting and delivery. Do not mix them up.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Registered post**: mail recorded at posting and signed for on delivery, with compensation if lost.
+- **Recorded delivery**: mail with proof of posting and delivery, but little or no compensation.
+- **Poste restante**: mail kept at a post office for travellers to collect.
+- **Business reply service**: a postal service in which a firm pays the postage on its customers' replies.
+- **Franking machine**: a machine that prints postage on a firm's mail instead of stamps.
+:::
+
 ## Key points
 
 - The **post office (SALPOST)** offers ordinary, registered and express mail, parcels, PO boxes, COD and money orders.

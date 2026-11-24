@@ -121,6 +121,16 @@ In Sierra Leone, mobile money, POS terminals in Freetown supermarkets and bankin
 "Modern trends" answers should be **explained**, not just listed. Say what the trend is **and** how it affects business, for example: "POS terminals let shops accept card payments, so they hold less cash and reduce theft."
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Mobile money**: sending, receiving, saving and paying through a mobile phone wallet.
+- **Agency banking**: shops acting as agents for banks, taking deposits and paying withdrawals.
+- **POS terminal** (point-of-sale terminal): a card payment machine in a shop, hotel or filling station.
+- **Self-service**: shopping in which customers pick goods themselves and pay at a checkout.
+- **Cashless policy**: government encouragement of electronic payments to reduce cash handling.
+:::
+
 ## Key points
 
 - Banking and payment trends: **mobile money, mobile and internet banking, ATMs, POS, cards, agency banking**.

@@ -84,6 +84,13 @@ In Sierra Leone, cocoa and coffee are stored and graded before export, and rice 
 Warehousing removes the hindrance of **time**, not of place. Transport removes the hindrance of **place**. WASSCE answers often confuse the two.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Seasonal production**: goods produced at one time of year but demanded all year, such as rice and cocoa, which must be stored.
+- **Production in anticipation of demand**: making goods before they are ordered and storing them until they are wanted.
+:::
+
 ## Key points
 
 - **Warehousing** stores goods from production until use; it removes the hindrance of **time** and creates time utility.

@@ -101,6 +101,16 @@ The message should be:
 Communication is not complete when the message is **sent**. It is complete when the receiver **understands** it and gives **feedback**. Answers that leave out feedback lose marks.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Encoding**: putting an idea into words, figures, pictures or signals.
+- **Decoding**: the receiver interpreting a message.
+- **Channel** (medium): the means used to send a message, such as a letter, telephone call, email or meeting.
+- **Feedback**: the receiver's response, showing whether a message was understood.
+- **Noise**: anything that distorts a message, such as a poor network, jargon or distraction.
+:::
+
 ## Key points
 
 - **Communication** removes the hindrance of **knowledge**; it links buyers and sellers.

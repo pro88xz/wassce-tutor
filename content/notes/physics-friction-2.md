@@ -85,6 +85,15 @@ Fluids (liquids and gases) also resist motion through them. This fluid friction 
 Motorbike riders in Bo and Kenema oil their chains regularly: a dry chain wears quickly, wastes fuel and can snap. On a wet laterite road after rain, tyres have far less grip, so stopping distances become much longer.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Lubrication**: reducing friction with oil or grease, which separates the surfaces.
+- **Ball bearings**: small steel balls that replace sliding with rolling, which has much less friction.
+- **Streamlining**: shaping vehicles and aircraft to reduce air resistance.
+- **Viscosity**: the friction in a fluid, which resists its flow.
+:::
+
 ## Key points
 
 - At the angle of friction, $\mu_s = \tan\theta$; measure it with a tilted plank.

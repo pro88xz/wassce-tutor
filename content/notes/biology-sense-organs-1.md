@@ -69,6 +69,18 @@ The pupil also changes size to regulate the amount of light entering the eye. In
 
 Cataract is clouding of the lens, which reduces the amount and quality of light reaching the retina. It is not corrected simply by changing lens power; treatment may involve surgery to replace the cloudy lens.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Cornea**: the transparent curved front of the eye, which refracts most of the light entering it.
+- **Iris**: the coloured muscular part of the eye that controls the size of the pupil.
+- **Retina**: the light-sensitive layer at the back of the eye, containing rods and cones.
+- **Fovea** (yellow spot): the part of the retina with many cones, giving the sharpest colour vision.
+- **Blind spot**: the point where the optic nerve leaves the eye, which has no rods or cones.
+- **Accommodation**: the change in the shape of the lens that focuses near and distant objects.
+- **Optic nerve**: the nerve that carries impulses from the retina to the brain.
+:::
+
 ## WASSCE examination focus
 
 Learn the path of light and the functions of the cornea, iris, pupil, lens and retina. In accommodation questions, state what happens to the ciliary muscles, suspensory ligaments and lens. Do not reverse the lens corrections: a concave lens corrects myopia, while a convex lens is commonly used for hyperopia.

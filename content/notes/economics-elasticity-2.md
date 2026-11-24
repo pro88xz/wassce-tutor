@@ -101,6 +101,15 @@ Suppose a tax of NLe 2 is placed on each bottle of a soft drink. If demand is in
 In income and cross elasticity, **do not drop the sign**. The sign tells you the answer: normal or inferior, substitute or complement.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Income elasticity of demand**: the responsiveness of quantity demanded to a change in income.
+- **Cross elasticity of demand**: the responsiveness of the quantity demanded of one good to a change in the price of another: positive for substitutes, negative for complements.
+- **Price elasticity of supply**: the responsiveness of quantity supplied to a change in price.
+- **Incidence of a tax**: who finally bears an indirect tax; consumers bear more of it when demand is inelastic.
+:::
+
 ## Key points
 
 - **YED** positive: normal good; negative: inferior good; above 1: luxury.

@@ -90,6 +90,15 @@ A spin dryer or the spinning drum of a washing machine uses this idea: the drum 
 - **Cyclists lean inwards** when turning.
 - **"Wall of death"** riders and fairground rides.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Centripetal force**: the force towards the centre that keeps a body moving in a circle.
+- **Centripetal acceleration**: the acceleration of a body moving in a circle, directed towards the centre.
+- **Angular velocity**: the rate of change of angle as a body moves round a circle, measured in radians per second.
+- **Banking**: tilting a road at a bend so that part of the reaction helps to provide the centripetal force.
+:::
+
 ## Key points
 
 - Uniform circular motion: constant speed, changing velocity, so it is **accelerated**.

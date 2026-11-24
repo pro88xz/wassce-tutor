@@ -81,6 +81,16 @@ The tension is set by hanging masses from one end of the wire (over a pulley). T
 Players of the kondi (thumb piano) and the guitar in Sierra Leonean music tune by exactly these laws: tightening a string or shortening a metal key raises its note.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Fundamental frequency**: the lowest frequency at which a string or pipe vibrates, with one loop on a string.
+- **Harmonics**: frequencies that are whole-number multiples of the fundamental frequency.
+- **Length law**: for a stretched string, frequency is inversely proportional to length, with tension and mass per unit length constant.
+- **Tension law**: for a stretched string, frequency is proportional to the square root of the tension, with length and mass per unit length constant.
+- **Mass law**: for a stretched string, frequency is inversely proportional to the square root of the mass per unit length, with length and tension constant.
+:::
+
 ## Key points
 
 - A string fixed at both ends has nodes at the ends; fundamental $L = \lambda/2$, $f_0 = v/2L$.

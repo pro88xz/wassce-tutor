@@ -123,6 +123,15 @@ Literally the statement is impossible: words are not blades. Figuratively, her w
 Any four: folktale, myth, legend, proverb, riddle, song, chant, dirge, praise poetry, epic.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Figurative language**: words used to mean more than their literal sense.
+- **Universal theme**: an idea that matters to readers anywhere, in any age.
+- **Genre**: a type of literature: prose, drama or poetry.
+- **Aesthetic appeal**: the pleasure a work gives through its beauty or skill.
+:::
+
 ## Key points
 
 - **Literature** is imaginative writing or spoken composition that uses language artistically to express human experience.

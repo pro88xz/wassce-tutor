@@ -121,6 +121,16 @@ Any three: insecticide-treated nets; draining stagnant water and clearing contai
 They breed in refuse and faeces, then land on food, carrying pathogens of cholera, typhoid and dysentery on their legs and mouthparts.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Public health**: the protection and improvement of the health of a whole community.
+- **Vector**: an organism that carries a disease from one host to another, such as the mosquito for malaria.
+- **Composting**: turning food and plant waste into manure.
+- **Pit latrine**: a simple, cheap toilet over a deep pit, with a slab, built away from wells.
+- **Vaccination**: giving a vaccine to make the body immune to a disease.
+:::
+
 ## Key points
 
 - **Public health** protects the whole community through prevention.

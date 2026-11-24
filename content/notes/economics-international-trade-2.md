@@ -90,6 +90,16 @@ By the end of this lesson you should be able to:
 A tariff is a **tax** on imports; a quota is a **limit on quantity**. A tariff raises government revenue; a quota does not (unless licences are sold).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Tariff** (customs duty): a tax on imports that raises their price.
+- **Quota**: a limit on the quantity of a good that may be imported.
+- **Embargo**: a complete ban on imports of a good or from a country.
+- **Infant industry**: a new local industry that needs temporary protection until it is big and efficient enough to compete.
+- **Dumping**: selling goods abroad below their cost or home price.
+:::
+
 ## Key points
 
 - Trade brings **variety, specialisation, larger markets and foreign exchange**, but also **dependence and competition** for local firms.

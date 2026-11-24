@@ -88,6 +88,13 @@ Views per second $= 12 \times 2 = 24$, so $f = 24$ Hz.
 
 Stationary waves are formed when **two identical waves travel in opposite directions** and superpose — for example a wave and its reflection on a guitar string (see wave phenomena and resonance).
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Progressive wave**: a wave that travels and carries energy from one place to another.
+- **Phase**: the stage of vibration of a point on a wave; points one wavelength apart are in phase.
+:::
+
 ## Key points
 
 - $y = a\sin 2\pi\left(\dfrac{t}{T} - \dfrac{x}{\lambda}\right)$: compare terms to read $a$, $f$ and λ.

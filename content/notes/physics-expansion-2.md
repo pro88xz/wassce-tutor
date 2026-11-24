@@ -70,6 +70,13 @@ Sierra Leone never freezes, but the effect is visible every day: put a full, sea
 
 Gases expand far more than liquids — roughly $\tfrac{1}{273}$ of their volume at 0 °C for every kelvin at constant pressure — and all gases expand by the same amount. This leads to Charles's law and the Kelvin scale, covered in the gas laws.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Real expansivity** (absolute expansivity): the true increase in volume per unit volume per kelvin of a liquid, allowing for the expansion of its container.
+- **Apparent expansivity**: the increase in volume per unit volume per kelvin of a liquid as it appears in its container, without allowing for the container's expansion.
+:::
+
 ## Key points
 
 - Real expansivity of a liquid = apparent expansivity + cubic expansivity of the container ($\gamma_r = \gamma_a + 3\alpha$).

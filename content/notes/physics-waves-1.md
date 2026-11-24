@@ -89,6 +89,18 @@ There are two kinds of graph, and they look alike — read the horizontal axis c
 Okada riders and market traders across Sierra Leone keep radios tuned to stations on FM frequencies near 100 MHz, whose waves are about 3 m long. Mobile phones use microwaves of about 900 MHz to 2 GHz, with wavelengths of only 15–33 cm.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Mechanical wave**: a wave that needs a medium to travel through, such as sound or water waves.
+- **Electromagnetic wave**: a wave that can travel through a vacuum, such as light.
+- **Transverse wave**: a wave in which the vibration is at right angles to the direction of travel, such as light and ripples.
+- **Longitudinal wave**: a wave in which the vibration is along the direction of travel, such as sound.
+- **Wavelength**: the distance between two successive crests, or two successive points in phase.
+- **Frequency**: the number of complete waves produced per second, measured in hertz.
+- **Amplitude**: the maximum displacement of a vibrating particle from its rest position.
+:::
+
 ## Key points
 
 - A wave transfers energy, not matter.

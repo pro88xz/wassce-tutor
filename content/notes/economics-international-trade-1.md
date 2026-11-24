@@ -115,6 +115,15 @@ The terms of trade have **worsened (deteriorated)** by 20%: each unit of exports
 "Favourable terms of trade" does not always mean the country is better off. If export prices rise but buyers then purchase much less, export **earnings** may fall. Look at volumes as well as prices.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Comparative advantage**: the advantage a country has in producing a good at a lower opportunity cost than another country.
+- **Absolute advantage**: the advantage a country has when it can produce more of a good with the same resources than another country.
+- **Terms of trade**: the index of export prices divided by the index of import prices, times 100.
+- **Over-specialisation**: dependence on one or two exports whose prices may collapse.
+:::
+
 ## Key points
 
 - International trade differs from internal trade in **currencies, mobility of factors, laws and distance**.

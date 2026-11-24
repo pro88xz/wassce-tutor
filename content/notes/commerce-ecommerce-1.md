@@ -115,6 +115,16 @@ Many Freetown businesses now take orders through **WhatsApp catalogues**, accept
 E-commerce is not only "buying on websites". Selling through **social media**, paying with **mobile money**, **online banking** and **electronic ordering between businesses** are all e-commerce.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **B2C** (business-to-consumer): e-commerce in which a business sells to individual buyers.
+- **B2B** (business-to-business): e-commerce in which businesses trade with each other.
+- **C2C** (consumer-to-consumer): e-commerce in which individuals sell to each other through a platform.
+- **Payment gateway**: a service that lets websites accept mobile money and card payments.
+- **Cash on delivery**: paying for goods when they are delivered.
+:::
+
 ## Key points
 
 - **E-commerce** is buying and selling through **electronic networks** (internet and mobile phones).

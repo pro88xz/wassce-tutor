@@ -115,6 +115,16 @@ $$0.866P = 50 - 0.25P \Rightarrow 1.116P = 50 \Rightarrow P = 44.8\ \text{N}$$
 Pushing **down** at 30° instead would increase $R$ and need more force.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Static friction**: friction that acts when a body is at rest and a force tries to move it.
+- **Limiting friction**: the greatest friction, which acts when a body is just about to move.
+- **Kinetic friction** (dynamic or sliding friction): friction that acts while a body is sliding.
+- **Coefficient of friction**: the ratio of the friction force to the normal reaction.
+- **Normal reaction**: the force a surface exerts on a body at right angles to the surface.
+:::
+
 ## Key points
 
 - Friction opposes relative motion and acts along the surfaces.

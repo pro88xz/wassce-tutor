@@ -103,6 +103,17 @@ Folktales, proverbs, songs and praise poetry carry a community's history, belief
 The therapeutic function, to comfort and heal: it helps mourners express their grief. It may also preserve culture, since it records the community's way of honouring the dead.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Literature as a mirror**: the way literature reflects society, so that readers see themselves and their society more clearly.
+- **Literature as a weapon**: the use of literature to criticise wrongdoing and push for reform.
+- **Store of memory**: literature's role in preserving a people's history, values and traditions.
+- **Therapeutic function**: the comfort and consolation literature gives readers in grief or difficulty.
+- **Empathy**: understanding others' feelings; literature builds it by letting readers see through other people's eyes.
+- **Educational function**: literature's role in teaching moral lessons and knowledge of other cultures, times and ideas.
+:::
+
 ## Key points
 
 - Literature **entertains**, **educates**, **preserves culture**, **reflects** society, **criticises** and **reforms** it, **develops language**, **builds empathy**, **unites** a people and **comforts**.

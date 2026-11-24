@@ -136,6 +136,15 @@ The **Pharmacy Board of Sierra Leone** regularly seizes and destroys fake and ex
 Do not list only consumer **rights** when asked about consumer **responsibilities**. Responsibilities are what consumers must **do**: check goods, keep receipts, complain, read labels and buy from licensed sellers.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Sierra Leone Standards Bureau**: the body that sets standards for goods, tests products and certifies quality.
+- **Pharmacy Board of Sierra Leone**: the body that registers medicines, licenses pharmacies and seizes fake or expired drugs.
+- **Consumer association**: a voluntary body of consumers that educates the public and presses for their protection.
+- **Price control**: setting maximum prices for essential goods.
+:::
+
 ## Key points
 
 - **Government** protects consumers through **laws** (weights and measures, sale of goods, food and drugs, price control) and **agencies** (Standards Bureau, Pharmacy Board, Ministry of Trade, local councils, courts).
