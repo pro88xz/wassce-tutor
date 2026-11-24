@@ -44,6 +44,7 @@ function Contact() {
           href={whatsappChatLink('Hello WASSCE Tutor, ')}
           target="_blank"
           rel="noopener"
+          aria-label={`WhatsApp ${CONTACT.phoneDisplay}: chat with us`}
           className="group flex flex-col gap-3 rounded-2xl bg-[#1a8d4a] p-6 text-white shadow-sm transition-shadow hover:shadow-lg"
         >
           <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 ring-1 ring-white/25">
@@ -57,7 +58,7 @@ function Contact() {
           </span>
         </a>
 
-        <a href={`mailto:${CONTACT.email}`} className="group flex flex-col gap-3 rounded-2xl border bg-card p-6 shadow-sm transition-shadow hover:shadow-lg">
+        <a href={`mailto:${CONTACT.email}`} aria-label={`Email ${CONTACT.email}`} className="group flex flex-col gap-3 rounded-2xl border bg-card p-6 shadow-sm transition-shadow hover:shadow-lg">
           <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft text-primary">
             <Mail className="h-6 w-6" aria-hidden />
           </span>
@@ -69,7 +70,7 @@ function Contact() {
           </span>
         </a>
 
-        <a href={CONTACT.whatsappGroup} target="_blank" rel="noopener" className="group flex flex-col gap-3 rounded-2xl border bg-card p-6 shadow-sm transition-shadow hover:shadow-lg">
+        <a href={CONTACT.whatsappGroup} target="_blank" rel="noopener" aria-label="WhatsApp group: join the WASSCE Tutor community" className="group flex flex-col gap-3 rounded-2xl border bg-card p-6 shadow-sm transition-shadow hover:shadow-lg">
           <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#1a8d4a]/10 text-[#1a8d4a]">
             <Users className="h-6 w-6" aria-hidden />
           </span>

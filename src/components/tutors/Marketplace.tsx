@@ -268,9 +268,9 @@ export function TutorMarketplace({
         </div>
       ) : (
         <ul className="mt-8 grid grid-cols-[minmax(0,1fr)] gap-5 sm:grid-cols-2 xl:grid-cols-3">
-          {visible.map((tutor) => (
+          {visible.map((tutor, i) => (
             <li key={tutor.id}>
-              <TutorCard tutor={tutor} subjectId={preferredSubject} onBook={() => book(tutor)} />
+              <TutorCard tutor={tutor} subjectId={preferredSubject} onBook={() => book(tutor)} priority={i === 0} />
             </li>
           ))}
         </ul>
@@ -369,7 +369,7 @@ function OfferChips({ tutor }: { tutor: Tutor }) {
 }
 
 /** A tutor's card. With `preview`, it is the tutor's own preview (application, dashboard): same look, nothing to tap. */
-export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc }: { tutor: Tutor; subjectId?: string; onBook?: () => void; preview?: boolean; photoSrc?: string | null }) {
+export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc, priority = false }: { tutor: Tutor; subjectId?: string; onBook?: () => void; preview?: boolean; photoSrc?: string | null; /** The first card: on screen at once, so its photo loads immediately. */ priority?: boolean }) {
   const photo = photoSrc ?? (tutor.avatar_path ? photoUrl(tutor.avatar_path) : null)
   const reviews = tutor.tutor_booking_reviews
   const rating = reviews.length ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length : null
@@ -390,7 +390,7 @@ export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc 
             src={photo}
             alt={`${displayName(tutor.full_name)}, WASSCE tutor`}
             className={`h-full w-full object-cover object-top ${preview ? '' : 'transition duration-700 ease-out group-hover:scale-[1.04]'}`}
-            loading="lazy"
+            loading={priority ? 'eager' : 'lazy'}
             decoding="async"
           />
         ) : (
@@ -473,7 +473,7 @@ export function TutorCard({ tutor, subjectId, onBook, preview = false, photoSrc 
                 Book this tutor <ArrowRight className="h-4 w-4" aria-hidden />
               </button>
               {page && (
-                <a href={page} className="site-btn site-btn-secondary px-4" aria-label={`See ${displayName(tutor.full_name)}’s page`}>
+                <a href={page} className="site-btn site-btn-secondary px-4" aria-label={`Profile of ${displayName(tutor.full_name)}`}>
                   Profile
                 </a>
               )}

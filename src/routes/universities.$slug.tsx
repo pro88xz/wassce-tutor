@@ -51,7 +51,7 @@ function UniversityProfilePage() {
   const guide = Route.useLoaderData()
   const related = UNIVERSITY_GUIDES.filter((u) => u.slug !== guide.slug).slice(0,3)
   return (
-    <main className="mx-auto w-full max-w-5xl space-y-9 pb-16">
+    <div className="mx-auto w-full max-w-5xl space-y-9 pb-16">
       <Breadcrumbs trail={[['Home','/'],['Universities','/universities'],[guide.name,`/universities/${guide.slug}`]]}/>
       <header className="space-y-5">
         <a href="/universities" className="inline-flex items-center gap-2 text-sm font-semibold text-primary"><ArrowLeft className="h-4 w-4"/> All institutions</a>
@@ -73,6 +73,6 @@ function UniversityProfilePage() {
         </aside>
       </div>
       <section className="space-y-4"><h2 className="text-2xl font-bold">Compare other institutions</h2><div className="grid gap-3 sm:grid-cols-3">{related.map((u)=><a key={u.slug} href={`/universities/${u.slug}`} className="rounded-xl border bg-card p-4 transition hover:shadow-md"><p className="text-xs font-bold text-primary">{u.shortName}</p><h3 className="mt-2 font-bold leading-snug">{u.name}</h3><p className="mt-2 text-xs text-muted-foreground">{u.location}</p><span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary">Compare <ArrowRight className="h-4 w-4"/></span></a>)}</div></section>
-    </main>
+    </div>
   )
 }

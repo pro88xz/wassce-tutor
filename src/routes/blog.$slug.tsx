@@ -133,7 +133,7 @@ function BlogArticlePage() {
   const post = Route.useLoaderData()
   const related = getRelatedCards(post.related)
   return (
-    <main className="mx-auto w-full max-w-5xl space-y-8 pb-16">
+    <div className="mx-auto w-full max-w-5xl space-y-8 pb-16">
       <Breadcrumbs trail={[['Home','/'],['Blog','/blog'],[post.title,`/blog/${post.slug}`]]}/>
       <header className="space-y-5">
         <a href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-primary"><ArrowLeft className="h-4 w-4"/> All articles</a>
@@ -158,7 +158,7 @@ function BlogArticlePage() {
         </aside>
       </div>
       <section className="space-y-4"><h2 className="text-2xl font-bold">Continue exploring</h2><div className="grid gap-4 sm:grid-cols-2">{related.map((item) => <a key={item.slug} href={item.href} className="rounded-2xl border bg-card p-5 transition hover:shadow-md"><p className="text-xs font-bold uppercase tracking-wider text-primary">{item.label}</p><h3 className="mt-2 font-bold leading-snug">{item.title}</h3><p className="mt-2 text-sm text-muted-foreground">{item.description}</p><span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Read more <ArrowRight className="h-4 w-4"/></span></a>)}</div></section>
-    </main>
+    </div>
   )
 }
 
