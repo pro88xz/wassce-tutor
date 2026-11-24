@@ -669,6 +669,24 @@ export function absoluteUrl(path: string): string {
 
 const ORG_ID = `${SITE.origin}/#organization`
 
+/**
+ * WASSCE Tutor as publisher, author, creator or provider on any page: the same
+ * @id and main type as ORGANIZATION below, so search engines read one entity
+ * everywhere instead of a new "Organization" on each page.
+ */
+export function orgRef({ logo = false }: { logo?: boolean } = {}): Record<string, unknown> {
+  return {
+    '@type': 'EducationalOrganization',
+    '@id': ORG_ID,
+    name: SITE.name,
+    url: `${SITE.origin}/`,
+    ...(logo ? { logo: { '@type': 'ImageObject', url: `${SITE.origin}/logo.png` } } : {}),
+  }
+}
+
+/** The blog as one entity, shared by /blog and every post's isPartOf. */
+export const BLOG_ID = `${SITE.origin}/blog#blog`
+
 // The business itself: an education service based in Freetown that serves
 // the whole country online. Typed as both EducationalOrganization and
 // LocalBusiness so search engines can show it for local searches. sameAs is
@@ -720,7 +738,7 @@ const HOME_JSON_LD = {
       alternateName: ['WASSCETutor', 'wasscetutor.com'],
       url: `${SITE.origin}/`,
       inLanguage: 'en',
-      publisher: { '@id': `${SITE.origin}/#organization` },
+      publisher: orgRef(),
     },
     {
       '@type': 'SoftwareApplication',
@@ -891,7 +909,7 @@ export function tutoringServiceJsonLd({ name, description, path, subject }: { na
     url: absoluteUrl(path),
     serviceType: subject ? `Private ${subject} tutoring` : 'Private tutoring',
     category: 'Education',
-    provider: { '@type': 'Organization', '@id': ORG_ID, name: SITE.name, url: `${SITE.origin}/`, telephone: CONTACT.phoneE164 },
+    provider: { ...orgRef(), telephone: CONTACT.phoneE164 },
     areaServed: [
       { '@type': 'Country', name: 'Sierra Leone' },
       ...['Freetown', 'Bo', 'Kenema', 'Makeni'].map((city) => ({ '@type': 'City', name: city, containedInPlace: { '@type': 'Country', name: 'Sierra Leone' } })),

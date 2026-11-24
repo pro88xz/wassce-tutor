@@ -97,7 +97,7 @@ export function SubjectCover({
   if (photo && shape === 'thumb') {
     return (
       <span className={`relative block overflow-hidden ${art.tone} ${rounded} ${className}`} aria-hidden>
-        <img src={photo.src.replace(/\.webp$/, '-400.webp')} alt={photoAlt(photo)} loading="lazy" decoding="async" className={`absolute inset-0 h-full w-full object-cover ${photo.position ?? ''}`} />
+        <img src={photo.src.replace(/\.webp$/, '-400.webp')} alt={photoAlt(photo)} loading={priority ? 'eager' : 'lazy'} decoding="async" className={`absolute inset-0 h-full w-full object-cover ${photo.position ?? ''}`} />
       </span>
     )
   }

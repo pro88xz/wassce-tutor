@@ -6,7 +6,7 @@ import { ArticleSection, Faq, KeyFacts, Rich, Updates, longDate } from '@/compon
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
-import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, privatePageTags, SITE } from '@/lib/seo'
+import { absoluteUrl, BLOG_ID, breadcrumbJsonLd, indexablePageTags, orgRef, privatePageTags, SITE } from '@/lib/seo'
 
 export const Route = createFileRoute('/blog/$slug')({
   ssr: true,
@@ -34,10 +34,10 @@ export const Route = createFileRoute('/blog/$slug')({
         datePublished: loaderData.publishedAt,
         dateModified: loaderData.updatedAt,
         author: { '@type': 'Organization', name: 'WASSCE Tutor Editorial Desk', url: absoluteUrl('/about') },
-        publisher: { '@type': 'Organization', name: SITE.name, url: SITE.origin, logo: { '@type': 'ImageObject', url: absoluteUrl('/favicon-512.png') } },
-        mainEntityOfPage: absoluteUrl(`/blog/${loaderData.slug}`),
+        publisher: orgRef({ logo: true }),
+        mainEntityOfPage: { '@type': 'WebPage', '@id': absoluteUrl(`/blog/${loaderData.slug}`) },
         inLanguage: 'en',
-        isPartOf: { '@type': 'Blog', name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog') },
+        isPartOf: { '@type': 'Blog', '@id': BLOG_ID, name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog') },
         ...(loaderData.news ? { dateline: 'Freetown, Sierra Leone', contentLocation: { '@type': 'Country', name: 'Sierra Leone' } } : {}),
       },
       breadcrumbJsonLd([['Home','/'],['Blog','/blog'],[loaderData.title,`/blog/${loaderData.slug}`]]),
@@ -61,7 +61,7 @@ export const Route = createFileRoute('/blog/$slug')({
 function articleImagesJsonLd(post: BlogPost): Record<string, unknown>[] {
   const year = post.publishedAt.slice(0, 4)
   const ours = {
-    creator: { '@type': 'Organization', name: SITE.name, url: SITE.origin },
+    creator: orgRef(),
     creditText: SITE.name,
     copyrightNotice: `© ${year} ${SITE.name}`,
     license: absoluteUrl('/terms#content'),
@@ -133,7 +133,7 @@ function BlogArticlePage() {
   const post = Route.useLoaderData()
   const related = getRelatedCards(post.related)
   return (
-    <main className="mx-auto w-full max-w-5xl space-y-8 pb-16">
+    <div className="mx-auto w-full max-w-5xl space-y-8 pb-16">
       <Breadcrumbs trail={[['Home','/'],['Blog','/blog'],[post.title,`/blog/${post.slug}`]]}/>
       <header className="space-y-5">
         <a href="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-primary"><ArrowLeft className="h-4 w-4"/> All articles</a>
@@ -158,7 +158,7 @@ function BlogArticlePage() {
         </aside>
       </div>
       <section className="space-y-4"><h2 className="text-2xl font-bold">Continue exploring</h2><div className="grid gap-4 sm:grid-cols-2">{related.map((item) => <a key={item.slug} href={item.href} className="rounded-2xl border bg-card p-5 transition hover:shadow-md"><p className="text-xs font-bold uppercase tracking-wider text-primary">{item.label}</p><h3 className="mt-2 font-bold leading-snug">{item.title}</h3><p className="mt-2 text-sm text-muted-foreground">{item.description}</p><span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Read more <ArrowRight className="h-4 w-4"/></span></a>)}</div></section>
-    </main>
+    </div>
   )
 }
 

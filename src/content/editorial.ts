@@ -352,7 +352,7 @@ export const UNIVERSITY_GUIDES: UniversityGuide[] = [
     slug: 'university-of-makeni',
     name: 'University of Makeni',
     shortName: 'UNIMAK',
-    seoTitle: 'University of Makeni Admissions & Requirements | WASSCE Tutor',
+    seoTitle: 'University of Makeni Admissions & WASSCE Requirements',
     location: 'Makeni, Northern Province',
     summary: 'A university in Makeni with academic programmes across several disciplines. Applicants should confirm the current programme catalogue and admissions requirements directly with the Registry.',
     entrySummary: 'Older published reference: 5 credits including English for degree; 2026/27 rules unverified.',
@@ -461,7 +461,7 @@ export type BlogPost = {
 const UNIVERSITY_POSTS: BlogPost[] = [
   {
     slug: 'sierra-leone-university-admission-requirements-2026-2027',
-    seoTitle: 'Sierra Leone University Entry Requirements 2026/27 | WASSCE Tutor',
+    seoTitle: 'Sierra Leone University Entry Requirements 2026/27',
     title: 'Sierra Leone University Admission Requirements for 2026/2027: A WASSCE Guide',
     description: 'Compare 2026/2027 WASSCE entry requirements at USL, COMAHS, Njala, ETU-SL, MMTU and EBKUST, with programme-specific subject rules and official links.',
     category: 'University admissions',

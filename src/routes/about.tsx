@@ -143,10 +143,10 @@ function About() {
           <div className="about-origin-note"><span /> Designed and maintained in Sierra Leone</div>
         </div>
         <div className="about-hero-art" aria-label="WASSCE subject areas">
-          <div className="about-cover about-cover-one"><SubjectCover slug="biology" shape="thumb" className="h-full w-full" rounded="rounded-2xl" /></div>
-          <div className="about-cover about-cover-two"><SubjectCover slug="mathematics" shape="thumb" className="h-full w-full" rounded="rounded-2xl" /></div>
-          <div className="about-cover about-cover-three"><SubjectCover slug="chemistry" shape="thumb" className="h-full w-full" rounded="rounded-2xl" /></div>
-          <div className="about-cover about-cover-four"><SubjectCover slug="english-language" shape="thumb" className="h-full w-full" rounded="rounded-2xl" /></div>
+          <div className="about-cover about-cover-one"><SubjectCover slug="biology" shape="thumb" className="h-full w-full" rounded="rounded-2xl" priority /></div>
+          <div className="about-cover about-cover-two"><SubjectCover slug="mathematics" shape="thumb" className="h-full w-full" rounded="rounded-2xl" priority /></div>
+          <div className="about-cover about-cover-three"><SubjectCover slug="chemistry" shape="thumb" className="h-full w-full" rounded="rounded-2xl" priority /></div>
+          <div className="about-cover about-cover-four"><SubjectCover slug="english-language" shape="thumb" className="h-full w-full" rounded="rounded-2xl" priority /></div>
           <div className="about-art-label"><span>LOCAL CONTEXT</span><strong>Learning built around the WASSCE syllabus.</strong></div>
         </div>
         <div className="about-stats" aria-label="WASSCE Tutor in numbers">

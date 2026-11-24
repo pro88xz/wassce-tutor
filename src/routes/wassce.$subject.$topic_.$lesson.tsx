@@ -9,7 +9,7 @@ import { KeyTermsLink } from '@/components/lesson/key-terms-link'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchPublicLessonPage, keyTermsPath, lessonPath, lessonSummary, questionsPath, subjectPath, topicKeyTermCount, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { PublicLessonPageData } from '@/lib/public-content'
-import { SEARCH_COPY, SITE, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { SEARCH_COPY, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexablePageTags, orgRef, privatePageTags } from '@/lib/seo'
 import { SubjectIcon } from '@/components/SubjectIcon'
 import { subjectTheme } from '@/lib/subject-theme'
 import { displayName, tutorPagePath } from '@/lib/tutor-profile'
@@ -53,8 +53,8 @@ function lessonJsonLd(data: PublicLessonPageData): Record<string, unknown> {
       isAccessibleForFree: true,
       datePublished: lesson.reviewed_at ?? lesson.updated_at,
       dateModified: lesson.updated_at,
-      author: { '@type': 'Organization', name: SITE.name, url: `${SITE.origin}/` },
-      publisher: { '@id': `${SITE.origin}/#organization` },
+      author: orgRef(),
+      publisher: orgRef(),
     },
   }
 }

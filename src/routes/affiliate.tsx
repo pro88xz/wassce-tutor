@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { BadgePercent, Link2, Wallet } from 'lucide-react'
-import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, PUBLIC_PAGES, SITE } from '@/lib/seo'
+import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, orgRef, PUBLIC_PAGES } from '@/lib/seo'
 
 export const Route = createFileRoute('/affiliate')({
   ssr: true, // prerendered, like every public page: its HTML had no heading or text until the app loaded
   head: () => indexablePageTags({ path: '/affiliate', title: PUBLIC_PAGES['/affiliate'].title, description: PUBLIC_PAGES['/affiliate'].description, jsonLd: [
-    { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Affiliate programme', url: absoluteUrl('/affiliate'), description: 'An approved referral partner programme for WASSCE Tutor.', mainEntity: { '@type': 'Service', name: 'WASSCE Tutor Partner Programme', serviceType: 'Affiliate referral programme', provider: { '@type': 'Organization', name: SITE.name, url: SITE.origin }, description: 'Approved partners receive 50% of a referred student’s first successfully verified subscription payment.' } },
+    { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Affiliate programme', url: absoluteUrl('/affiliate'), description: 'An approved referral partner programme for WASSCE Tutor.', mainEntity: { '@type': 'Service', name: 'WASSCE Tutor Partner Programme', serviceType: 'Affiliate referral programme', provider: orgRef(), description: 'Approved partners receive 50% of a referred student’s first successfully verified subscription payment.' } },
     breadcrumbJsonLd([['Home','/'],['Affiliate programme','/affiliate']])
   ] }),
   component: AffiliateLanding,
@@ -13,7 +13,7 @@ export const Route = createFileRoute('/affiliate')({
 
 function AffiliateLanding() {
   return (
-    <main className="site-page space-y-10 pb-16">
+    <div className="site-page space-y-10 pb-16">
       <section className="relative site-brand-panel overflow-hidden rounded-[2rem] px-6 py-12 text-white sm:px-10 sm:py-16">
         <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full bg-violet-500/20 blur-3xl" />
         <div className="relative max-w-3xl">
@@ -37,6 +37,6 @@ function AffiliateLanding() {
         <Link to="/auth" search={{ intent: 'affiliate' } as never} className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-xl bg-primary px-5 text-sm font-bold text-white">Create affiliate account</Link>
       </section>
       <p className="text-center text-sm text-muted-foreground">Looking to teach instead? <Link to="/become-a-tutor" className="font-semibold text-primary hover:underline">Apply as a tutor</Link>.</p>
-    </main>
+    </div>
   )
 }

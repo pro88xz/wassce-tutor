@@ -4,7 +4,7 @@
 // plain video address anywhere on the site.
 import { useQuery } from '@tanstack/react-query'
 import { supabase } from '@/lib/supabase'
-import { SITE, absoluteUrl } from '@/lib/seo'
+import { SITE, absoluteUrl, orgRef } from '@/lib/seo'
 
 export type VideoChapter = { name: string; start: number }
 export type VideoCue = { start: number; end: number; text: string }
@@ -93,8 +93,8 @@ export function videoJsonLd(video: LessonVideo, pagePath: string): Record<string
     isAccessibleForFree: true,
     learningResourceType: 'Video lesson',
     educationalLevel: 'Senior secondary (WASSCE)',
-    creator: { '@type': 'Organization', name: SITE.name, url: `${SITE.origin}/` },
-    publisher: { '@id': `${SITE.origin}/#organization` },
+    creator: orgRef(),
+    publisher: orgRef(),
     transcript: video.transcript.map((c) => c.text).join(' '),
     ...(chapters.length >= 2 && video.duration_s >= 30
       ? {

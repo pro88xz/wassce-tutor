@@ -1,14 +1,16 @@
-// /api/email/admin (admins only: "Authorization: Bearer <Supabase access token>")
+// The admin page's side of the email engine (Admin -> Emails), served by
+// api/email/run.js as /api/email/run?admin. Admins only: "Authorization: Bearer
+// <Supabase access token>".
 //   GET   the engine's configuration: mode, what is set up, the daily limit
 //   POST  { action: "test" } sends one example of every email to the admin's
 //         own address, marked [Test], so the templates can be checked in a real inbox
-import { canSend, loadEmailConfig } from '../_lib/email/config.js'
-import { composeMessage } from '../_lib/email/engine.js'
-import { sendViaResend } from '../_lib/email/resend.js'
-import { SAMPLES, TEMPLATES } from '../_lib/email/templates.js'
-import { db, json, preflight, requestUser } from '../_lib/server.js'
-
-export const OPTIONS = preflight
+// It was a function of its own (/api/email/admin) until the site reached the
+// Hobby plan's 12 functions per deployment (scripts/check-functions.mjs).
+import { canSend, loadEmailConfig } from './config.js'
+import { composeMessage } from './engine.js'
+import { sendViaResend } from './resend.js'
+import { SAMPLES, TEMPLATES } from './templates.js'
+import { db, json, requestUser } from '../server.js'
 
 async function admin(request) {
   const client = db()
@@ -19,7 +21,7 @@ async function admin(request) {
   return { client, user }
 }
 
-export async function GET(request) {
+export async function adminGet(request) {
   const who = await admin(request)
   if (who.error) return json(request, { error: 'Admins only' }, who.error)
   const env = await loadEmailConfig(who.client, { fresh: true })
@@ -38,7 +40,7 @@ export async function GET(request) {
   })
 }
 
-export async function POST(request) {
+export async function adminPost(request) {
   const who = await admin(request)
   if (who.error) return json(request, { error: 'Admins only' }, who.error)
   const body = await request.json().catch(() => ({}))

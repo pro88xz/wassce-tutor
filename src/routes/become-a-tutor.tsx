@@ -71,7 +71,7 @@ function SignedOut({ auto }: { auto: boolean }) {
                 Become a tutor <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
               <Link to="/tutors" className="site-btn site-btn-lg border border-white/20 bg-white/5 px-6 text-white hover:bg-white/10">
-                See the marketplace
+                Browse private tutors
               </Link>
             </div>
             <ul className="mt-7 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-white/70">
@@ -293,7 +293,7 @@ function AlreadyTutor({ tutor }: { tutor: TutorState }) {
       title="You are already a tutor"
       body="Your card is in the marketplace. Edit it, change your fees or add offers from your tutor dashboard."
       action={{ to: '/tutor-dashboard', label: 'Open your tutor dashboard' }}
-      secondary={{ to: '/tutors', label: 'See the marketplace' }}
+      secondary={{ to: '/tutors', label: 'Browse private tutors' }}
     />
   )
 }

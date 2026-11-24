@@ -4,7 +4,7 @@ import { BLOG_POSTS, UNIVERSITY_GUIDES } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
-import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, SITE } from '@/lib/seo'
+import { absoluteUrl, BLOG_ID, breadcrumbJsonLd, indexablePageTags, orgRef } from '@/lib/seo'
 
 export const Route = createFileRoute('/blog/')({
   ssr: true,
@@ -14,7 +14,7 @@ export const Route = createFileRoute('/blog/')({
     description: 'Research-backed WASSCE study advice, Sierra Leone university admissions guides, subject planning and practical resources for students and families.',
     image: editorialImage(BLOG_POSTS[0].image).og,
     jsonLd: [
-      { '@context': 'https://schema.org', '@type': 'Blog', name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog'), inLanguage: 'en', publisher: { '@type': 'Organization', name: SITE.name, url: SITE.origin } },
+      { '@context': 'https://schema.org', '@type': 'Blog', '@id': BLOG_ID, name: 'WASSCE Tutor Blog', url: absoluteUrl('/blog'), inLanguage: 'en', publisher: orgRef() },
       { '@context': 'https://schema.org', '@type': 'ItemList', name: 'WASSCE Tutor editorial articles', itemListElement: BLOG_POSTS.map((post,i) => ({ '@type': 'ListItem', position: i+1, url: absoluteUrl(`/blog/${post.slug}`), name: post.title })) },
       breadcrumbJsonLd([['Home','/'],['Blog','/blog']])
     ]
@@ -26,7 +26,7 @@ function BlogIndexPage() {
   const featured = BLOG_POSTS[0]
   const remaining = BLOG_POSTS.slice(1)
   return (
-    <main className="site-page space-y-10 pb-16 sm:space-y-14">
+    <div className="site-page space-y-10 pb-16 sm:space-y-14">
       <Breadcrumbs trail={[['Home', '/'], ['Blog', '/blog']]} />
       <header className="site-brand-panel relative overflow-hidden rounded-[2rem] px-6 py-10 text-white sm:px-10 sm:py-14">
         <div className="absolute -right-16 -top-20 h-72 w-72 rounded-full border-[32px] border-white/10" /><div className="absolute -bottom-12 right-24 h-28 w-28 rounded-full bg-[#ffd166]/85" />
@@ -62,6 +62,6 @@ function BlogIndexPage() {
         </div>
       </section>
       <section className="rounded-3xl border bg-card p-6 sm:p-8"><div className="max-w-3xl"><p className="text-xs font-bold uppercase tracking-wider text-primary">Keep learning</p><h2 className="mt-2 text-2xl font-bold">Turn guidance into preparation.</h2><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Use the WASSCE subject directory to explore syllabus topics, study lessons and practise exam-style questions.</p><div className="mt-5 flex flex-wrap gap-3"><a href="/wassce/subjects" className="inline-flex min-h-11 items-center rounded-xl bg-primary px-4 text-sm font-semibold text-white">Explore WASSCE subjects</a><a href="/universities" className="inline-flex min-h-11 items-center rounded-xl border px-4 text-sm font-semibold">University guides</a></div></div></section>
-    </main>
+    </div>
   )
 }

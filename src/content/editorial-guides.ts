@@ -11,9 +11,9 @@ const PEXELS = { imageSourceLabel: 'Pexels' }
 export const GUIDE_POSTS: BlogPost[] = [
   {
     slug: 'wassce-exam-day-guide-sierra-leone',
-    seoTitle: 'WASSCE Exam Day Checklist: What to Bring and What Is Banned | WASSCE Tutor',
+    seoTitle: 'WASSCE Exam Day Checklist: What to Bring, What Is Banned',
     title: 'WASSCE Exam Day in Sierra Leone: What to Bring, What Is Banned, and How to Use Your Time',
-    description: 'A checklist for every WASSCE paper: the equipment and calculators WAEC allows, the items that can cost you your results, how to fill in your answer sheets, and what to do if something goes wrong.',
+    description: 'A checklist for every WASSCE paper: what WAEC lets you bring, the items that can cost you your results, your answer sheets, and what to do if things go wrong.',
     category: 'WASSCE exams',
     publishedAt: '2026-11-16',
     updatedAt: '2026-11-16',
@@ -115,7 +115,7 @@ export const GUIDE_POSTS: BlogPost[] = [
   },
   {
     slug: 'how-to-check-wassce-result-sierra-leone',
-    seoTitle: 'How to Check Your WASSCE Result Online in Sierra Leone | WASSCE Tutor',
+    seoTitle: 'How to Check Your WASSCE Result Online in Sierra Leone',
     title: 'How to Check Your WASSCE Result Online in Sierra Leone, Step by Step',
     description: 'What you need, the seven steps on WAEC’s official Sierra Leone result checker, how many times one e-PIN works, and how to avoid result scams.',
     category: 'WASSCE results',
@@ -202,7 +202,7 @@ export const GUIDE_POSTS: BlogPost[] = [
   },
   {
     slug: 'how-to-pass-wassce-mathematics',
-    seoTitle: 'How to Pass WASSCE Mathematics: Papers, Marks and a Study Plan | WASSCE Tutor',
+    seoTitle: 'How to Pass WASSCE Mathematics: Papers, Marks, Study Plan',
     title: 'How to Pass WASSCE Mathematics: The Two Papers, Where the Marks Are, and a Six-Week Plan',
     description: 'How WASSCE Mathematics is examined, how to pace Paper 1 and Paper 2, the order to study topics in, and a six-week revision plan you can start today.',
     category: 'Study guides',
@@ -309,9 +309,9 @@ export const GUIDE_POSTS: BlogPost[] = [
   },
   {
     slug: 'how-to-pass-wassce-english-language',
-    seoTitle: 'How to Pass WASSCE English Language: All Three Papers | WASSCE Tutor',
+    seoTitle: 'How to Pass WASSCE English Language: All Three Papers',
     title: 'How to Pass WASSCE English Language: What Each of the Three Papers Wants',
-    description: 'The three WASSCE English papers for Sierra Leone candidates, how the essay is marked, a minute-by-minute plan for Paper 2, and how to prepare for listening comprehension.',
+    description: 'The three WASSCE English papers for Sierra Leone candidates, how the essay is marked, a minute-by-minute plan for Paper 2, and the listening test.',
     category: 'Study guides',
     publishedAt: '2026-11-16',
     updatedAt: '2026-11-16',
@@ -421,7 +421,7 @@ export const GUIDE_POSTS: BlogPost[] = [
   },
   {
     slug: 'how-to-pass-wassce-biology',
-    seoTitle: 'How to Pass WASSCE Biology: Papers, Practical and Study Plan | WASSCE Tutor',
+    seoTitle: 'How to Pass WASSCE Biology: Papers, Practical, Study Plan',
     title: 'How to Pass WASSCE Biology: The Three Papers, the Practical, and How to Revise',
     description: 'How WASSCE Biology is examined for Sierra Leone candidates, why the practical carries 40% of the marks, how to answer essay questions, and a revision plan.',
     category: 'Study guides',
@@ -501,7 +501,7 @@ export const GUIDE_POSTS: BlogPost[] = [
   },
   {
     slug: 'how-to-pass-wassce-chemistry',
-    seoTitle: 'How to Pass WASSCE Chemistry: Papers, Practical and Study Plan | WASSCE Tutor',
+    seoTitle: 'How to Pass WASSCE Chemistry: Papers, Practical, Study Plan',
     title: 'How to Pass WASSCE Chemistry: The Three Papers, Titrations, Salt Analysis and a Plan',
     description: 'How WASSCE Chemistry is examined, what the practical tests (titration and qualitative analysis), the rules on units and significant figures, and how to revise.',
     category: 'Study guides',
@@ -576,9 +576,9 @@ export const GUIDE_POSTS: BlogPost[] = [
   },
   {
     slug: 'how-to-pass-wassce-physics',
-    seoTitle: 'How to Pass WASSCE Physics: Papers, Practical and Study Plan | WASSCE Tutor',
+    seoTitle: 'How to Pass WASSCE Physics: Papers, Practical, Study Plan',
     title: 'How to Pass WASSCE Physics: The Three Papers, Calculations and the Practical',
-    description: 'How WASSCE Physics is examined, how to pace each paper, how to set out calculations and practical reports, and a revision plan through the five parts of the syllabus.',
+    description: 'How WASSCE Physics is examined, how to pace each paper, how to set out calculations and practical reports, and a revision plan for the whole syllabus.',
     category: 'Study guides',
     publishedAt: '2026-11-16',
     updatedAt: '2026-11-16',

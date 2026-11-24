@@ -1,7 +1,9 @@
 // Book a tutor: in-person lessons with a verified teacher, arranged on WhatsApp.
 // Students normally pick a tutor in the marketplace (components/tutors/Marketplace).
 // The request form here is the fallback: "find me a tutor". Requests are saved
-// to tutor_requests (migration 06) and handed to the business WhatsApp.
+// to tutor_requests (migration 06) through api/tutor-request.js, which checks
+// for spam first, and handed to the business WhatsApp.
+import { Capacitor } from '@capacitor/core'
 import { supabase } from '@/lib/supabase'
 import type { SubjectPhoto } from '@/lib/subject-photos'
 import { CONTACT } from '@/lib/contact'
@@ -65,24 +67,31 @@ export function whatsappMessage(r: TutorRequest): string {
 
 export const whatsappLink = (r: TutorRequest) => `https://wa.me/${TUTOR_WHATSAPP}?text=${encodeURIComponent(whatsappMessage(r))}`
 
+// The Android app runs from local files, so it calls the website's API.
+const API = typeof window !== 'undefined' && Capacitor.isNativePlatform() ? 'https://wasscetutor.com' : ''
+
 /**
- * Saves the request. Returns true when it was stored; false if the table is
- * not set up yet or the network failed, in which case WhatsApp still carries it.
+ * Saves the request through api/tutor-request.js, with the form's hidden trap
+ * field and, when the people check is on, its Turnstile token. Returns true
+ * when it was stored; false when the server refused it or the network failed,
+ * in which case WhatsApp still carries it.
  */
-export async function saveTutorRequest(r: TutorRequest, userId: string | null): Promise<boolean> {
-  const { error } = await supabase.from('tutor_requests').insert({
-    user_id: userId,
-    name: r.name.trim(),
-    phone: r.phone.trim(),
-    subject: r.subject,
-    level: r.level,
-    mode: r.mode,
-    town: r.town.trim() || null,
-    availability: r.availability.trim() || null,
-    message: r.message.trim() || null,
-  })
-  if (error) console.warn('Tutor request not saved:', error.message)
-  return !error
+export async function saveTutorRequest(r: TutorRequest, { trap = '', humanToken }: { trap?: string; humanToken?: string } = {}): Promise<boolean> {
+  try {
+    const { data: auth } = await supabase.auth.getSession()
+    const token = auth.session?.access_token
+    const res = await fetch(`${API}/api/tutor-request`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}) },
+      body: JSON.stringify({ ...r, website: trap, token: humanToken }),
+    })
+    const data = (await res.json().catch(() => null)) as { saved?: boolean; reason?: string } | null
+    if (!data?.saved) console.warn('Tutor request not saved:', data?.reason ?? res.status)
+    return data?.saved === true
+  } catch (e) {
+    console.warn('Tutor request not saved:', e)
+    return false
+  }
 }
 
 /** Tutors set their own monthly fee per subject (migration 14). */
