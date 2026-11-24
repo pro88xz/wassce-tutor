@@ -139,6 +139,17 @@ It is a **formal** close. An informal letter ends with *Yours sincerely,* or *Yo
 *The highlight of the holiday was the Christmas masquerade parade in Freetown. On Boxing Day the whole of our street came out to watch the masked dancers, with drummers behind them so loud that the windows shook. My little brother hid behind Mama the first time a masquerade came near, but by the evening he was dancing with them. I have never seen our neighbourhood so happy and so full of colour.*
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Informal letter**: a personal letter to a friend or relative, warm in tone, with only the writer's address and date, "Dear" with a first name, and a friendly close.
+- **Semi-formal letter**: a letter to someone such as an uncle or a teacher, warmer than a formal letter but more respectful than an informal one.
+- **Tone**: the attitude a piece of writing shows towards its reader, such as warm, respectful or formal.
+- **Friendly close**: the ending of an informal letter, such as "Your loving friend," followed by the writer's first name.
+- **Developed point**: an idea explained with detail, feeling and a result, not just stated.
+- **Standard English**: correct, generally accepted English, still needed in an informal letter despite its warm tone.
+:::
+
 ## Key points
 
 - Five parts: **address and date** (top right), **Dear + name**, **body**, **close**, **first name**. No recipient's address, no heading.

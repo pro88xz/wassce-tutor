@@ -115,6 +115,17 @@ Reading for pleasure is not a waste of study time. It is the easiest, cheapest a
 That is the close of a **formal letter**. An article ends with the writer's **name** alone (or has a by-line under the title), with no complimentary close.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Headline**: the title of an article, which tells the reader what it is about and makes them want to read on.
+- **By-line**: the writer's name, written below the title of an article.
+- **Hook**: an opening, such as a direct question to the reader, that catches attention.
+- **Call to action**: a closing request that tells readers what to do next.
+- **Article format**: a title and the writer's name, with no addresses, salutation or close.
+- **Body**: the main part of an article: an introduction, developed points and a conclusion.
+:::
+
 ## Key points
 
 - Format: **title**, **body**, **writer's name** (by-line or at the end). **No** addresses, salutation or *Yours faithfully*.

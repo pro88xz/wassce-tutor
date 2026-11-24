@@ -165,6 +165,14 @@ An application letter follows the same format. Its body has a fixed order:
 *We therefore humbly request that the pitch be levelled before the inter-house sports competition in March. The sports prefects are willing to organise students to clear stones and grass to reduce the cost. Thank you for your kind consideration of this request.*
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Letter of complaint**: a formal letter to the official or organisation responsible for a problem.
+- **Letter of application**: a formal letter asking for a job, a place at a school or a scholarship.
+- **Letter to the editor**: a formal letter written to the editor of a newspaper for publication.
+:::
+
 ## Key points
 
 - Know the four kinds: **complaint, request, application, letter to the editor**, and what each must contain.

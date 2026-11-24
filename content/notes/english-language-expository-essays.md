@@ -110,6 +110,17 @@ In short, young people leave the villages mainly in search of work, education an
 *Deforestation removes the trees that hold soil in place and provide habitats for wildlife, leading to erosion, flooding and the loss of species.*
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Expository essay**: an essay that explains a subject clearly, such as causes and effects, a process or types.
+- **Cause and effect essay**: an expository essay that explains why something happens and what results.
+- **Process essay**: an expository essay that explains the steps of how something is made or done.
+- **Linking words**: words that show how ideas relate, such as "therefore" for effect, "however" for contrast and "first… next… finally" for sequence.
+- **Classification essay**: an expository essay that explains the types or kinds of something.
+- **Problem and solution essay**: an expository essay that explains problems and how they can be solved.
+:::
+
 ## Key points
 
 - Expository writing **explains**; it does not argue or tell a story.

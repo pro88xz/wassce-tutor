@@ -121,6 +121,16 @@ As the afternoon fades, the market begins to empty. Sacks are tied, cloths folde
 *The old man **shuffled** to his chair and **muttered** something to his grandson.*
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Sensory details**: details of sight, sound, smell, taste and touch that help the reader experience a place.
+- **Organisation in time and space**: arranging a description along a route in time (morning to evening) and in space (from the entrance inwards).
+- **Figurative language**: words used imaginatively, such as similes and metaphors, to create a picture.
+- **Simile**: a comparison using "like" or "as", such as "calmly as queens".
+- **Metaphor**: a comparison that says one thing is another, such as calling a market "the heartbeat of Bo".
+:::
+
 ## Key points
 
 - Choose a **dominant impression** and let every detail support it.

@@ -221,6 +221,15 @@ Dear Sir,
 **REQUEST FOR SPORTS EQUIPMENT FOR THE LUNSAR YOUTH CLUB**
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Salutation**: the greeting of a letter, such as "Dear Sir," or "Dear Madam,".
+- **Heading**: the line in a formal letter, below the salutation, that states its subject.
+- **Complimentary close**: the closing words of a letter; "Yours faithfully," in a formal letter that begins "Dear Sir/Madam,".
+- **Recipient's address**: the title and address of the person written to, on the left of a formal letter.
+:::
+
 ## Key points
 
 - A letter is **formal** when you write to someone **because of the office they hold**.

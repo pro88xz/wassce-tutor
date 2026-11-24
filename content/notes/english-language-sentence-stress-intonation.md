@@ -124,6 +124,18 @@ The speaker is **sure** the homework is finished and expects the listener to **a
 *rice ↗, oil ↗, onions ↗ and pepper ↘*: rising on each item, falling on the last to show the list is complete.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Content words**: words that carry meaning, such as nouns, main verbs, adjectives and adverbs, which are stressed.
+- **Function words**: grammar words, such as articles, prepositions and pronouns, which are usually weak.
+- **Emphatic stress**: extra stress on a word to mark new or contrasting information.
+- **Intonation**: the rise and fall of the voice in speech.
+- **Falling tune**: the intonation of statements, commands, wh- questions, exclamations and the last item in a list.
+- **Rising tune**: the intonation of yes/no questions, unfinished statements, polite requests and list items before the last.
+- **Question tag**: a short question added to a statement, such as "isn't it?"; falling when the speaker is sure, rising when really asking.
+:::
+
 ## Key points
 
 - **Content words** are stressed; **function words** are weak.

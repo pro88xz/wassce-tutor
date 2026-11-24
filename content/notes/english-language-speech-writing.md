@@ -129,6 +129,17 @@ A debate speech has the same format, with three differences:
 *My opponent will tell you that students need phones for research. But how much research happens on WhatsApp at break time? Our school library and our teachers can give us everything a phone can, without the distractions.*
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Vocative**: the opening of a speech that greets the audience in order of importance, such as "The Principal, staff and fellow students".
+- **Rhetorical question**: a question asked for effect, not for an answer.
+- **Rule of three**: grouping ideas in threes for rhythm and force, as in "our time, our sleep and our grades".
+- **Direct address**: speaking straight to the audience as "you".
+- **Signposts**: words that show the listener where a speech is going, such as "My first point…", "Secondly…", "Finally…".
+- **Inclusive "we"**: using "we" to make the audience feel part of the speaker's side.
+:::
+
 ## Key points
 
 - Format: **title**, **vocative** (most important first), **self-introduction**, body, **Thank you for listening**.
