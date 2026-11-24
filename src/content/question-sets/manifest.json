@@ -482,6 +482,21 @@
   "questions": 56
  },
  {
+  "name": "further_maths_set1_p1",
+  "label": "Further Mathematics: set 1 (polynomials, partial fractions, binomial theorem, logarithms, sets and functions)",
+  "subject_slug": "further-mathematics",
+  "version": "91b95f93c941",
+  "papers": [
+   "6ff97f84-1686-516c-8047-de2566e634ea",
+   "33e4549b-f888-562f-945a-4e0bd4e9ccb3",
+   "cf36f214-25d1-5314-8698-1a7103d12f57",
+   "16a2a780-87f7-5250-89dc-89c5d216a05b",
+   "6f80ba3c-af80-5ac8-8b4a-24e22cd8bc7b",
+   "7c72d45e-bfc7-5a82-9843-739b1595d53c"
+  ],
+  "questions": 42
+ },
+ {
   "name": "chemistry_set1_p1",
   "label": "Chemistry: set 1 (foundations, atoms, bonding and chemical calculations)",
   "subject_slug": "chemistry",
