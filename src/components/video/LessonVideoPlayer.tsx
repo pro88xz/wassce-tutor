@@ -1,8 +1,8 @@
 // The protected lesson video player. Nothing here is a video address: the
 // player asks /api/video for a short-lived viewer token, loads the encrypted
 // stream with it, and unmasks the key in memory (api/_lib/video.js explains
-// the server side). The site's address is burned into every frame of the
-// video itself, so any copy says where it came from.
+// the server side). The video itself carries the WASSCE Tutor caption in every
+// frame and ends on the brand card.
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { KeyboardEvent, ReactNode } from 'react'
 import { Capacitor } from '@capacitor/core'
@@ -216,7 +216,7 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
         onContextMenu={(e) => e.preventDefault()}
         className={cn(
           'group relative aspect-video w-full select-none overflow-hidden bg-[#1f3229] outline-none ring-primary/60 focus-visible:ring-2',
-          full ? 'rounded-none' : 'rounded-2xl shadow-lg',
+          full ? 'rounded-none' : 'rounded-[3px] shadow-lg',
           playing && !chrome && 'cursor-none',
         )}
       >

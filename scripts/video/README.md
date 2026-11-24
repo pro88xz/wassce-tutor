@@ -54,9 +54,10 @@ duster). Chalk colours: white, yellow, blue, pink, green, grey.
   Structure, Functions and Differences | WASSCE Biology"), not the lesson's
   heading. Chapter names are shown by Google as key moments, so word them as
   questions and topics students search for.
-- **Watermark**: `wasscetutor.com` is written into the board, top right, in every
-  frame, and the video ends on a branded card. Writing that would cover the mark,
-  or run off the board, stops the build.
+- **Branding**: the board carries only a faint caption at its foot ("WASSCE Tutor ·
+  subject · topic"), and every video ends on a branded card with wasscetutor.com.
+  The board itself stays clean. Writing that would run off the board stops the
+  build.
 - **The voice**: the oral English voice (`scripts/audio`): Kokoro `bf_emma`,
   speaking from the phonemes of misaki's British dictionary. A word that is not in
   the dictionary stops the build, so the voice never guesses a word from its
@@ -130,13 +131,14 @@ What is published, for each revision:
 sent only to requests that carry it in a header (so their addresses do nothing
 when pasted into a browser, a download site or a download tool); every segment
 address is signed and the segments are encrypted; the key crosses the network
-masked for that viewer and is unmasked in memory. The site's address is burned
-into every frame, and the board's faint caption names the subject and topic.
-(A moving viewer code over the picture was tried and removed: it covered the
-writing.)
+masked for that viewer and is unmasked in memory. The board's faint caption
+("WASSCE Tutor · subject · topic") is in every frame, and every video ends on the
+brand card. (A moving viewer code over the picture, and the site's address at
+the top of the board, were tried and removed to keep the board clean.)
 
 What this cannot do: stop someone filming or screen-recording a video they are
-allowed to watch. The burned-in mark makes any such copy advertise the site.
+allowed to watch. The caption in every frame and the end card make any such copy
+advertise WASSCE Tutor.
 Studio-grade DRM (Widevine, FairPlay) through a paid video host is the next
 step if it is ever needed.
 

@@ -44,7 +44,7 @@ from oral_audio import MODELS, RATE, Lexicon, tidy  # noqa: E402
 W, H, FPS = 1280, 720, 25
 VOICE, SPEED = "bf_emma", 0.92
 CACHE = Path.home() / ".cache/wassce-video"
-VERSION = 1
+VERSION = 2   # 2: no site address on the board; sharper encode
 
 CHALK = {
     "white": (0.96, 0.96, 0.93),
@@ -181,8 +181,6 @@ def write(text: str, x: float, y: float, size: float = 30, color: str = "white",
     x0 = x - {"left": 0, "center": w / 2, "right": w}[align]
     if x0 < 30 or x0 + w > W - 30:
         raise ValueError(f"{text!r} runs off the board ({x0:.0f} to {x0 + w:.0f} px)")
-    if x0 + w > 1015 and y - size < 78:
-        raise ValueError(f"{text!r} is written over the wasscetutor.com mark (top right): move it down or left")
     return Action(text_strokes(text, x0, y, size, color)[0])
 
 
@@ -486,7 +484,6 @@ def _smooth_noise(rng, cells_y, cells_x) -> np.ndarray:
 
 
 FRAME, TRAY = 18, 30
-WATERMARK_SIZE = 17
 
 
 def board_background(label: str) -> np.ndarray:
@@ -520,20 +517,7 @@ def board_background(label: str) -> np.ndarray:
         _path(ctx, st.points)
         ctx.set_source_rgba(1, 1, 1, 1); ctx.set_line_width(2.2); ctx.stroke()
     a = np.ndarray((H, W, 4), np.uint8, surf.get_data())[..., 3] / 255.0 * 0.32
-    img = img * (1 - a[..., None]) + a[..., None] * 0.95
-    # The watermark: the site's address, written into the board itself, top
-    # right, where it never meets the lesson's writing and cannot be cropped
-    # off without cutting into the board. Every frame of every copy carries it.
-    surf = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
-    ctx = cairo.Context(surf)
-    ctx.set_line_cap(cairo.LINE_CAP_ROUND)
-    mark = "wasscetutor.com"
-    mw = text_width(mark, WATERMARK_SIZE)
-    for st in text_strokes(mark, W - FRAME - 26 - mw, FRAME + 40, WATERMARK_SIZE, "white")[0]:
-        _path(ctx, st.points)
-        ctx.set_source_rgba(1, 1, 1, 1); ctx.set_line_width(2.6); ctx.stroke()
-    a = np.ndarray((H, W, 4), np.uint8, surf.get_data())[..., 3] / 255.0 * 0.40
-    return img * (1 - a[..., None]) + a[..., None] * np.array([0.99, 0.87, 0.42])
+    return img * (1 - a[..., None]) + a[..., None] * 0.95
 
 
 def chalk_grain() -> np.ndarray:
@@ -622,7 +606,7 @@ def render(steps: list[Step], label: str, out: Path, until: float | None, thumbn
         "-f", "rawvideo", "-pix_fmt", "bgr0", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
         "-i", str(wav),
         # A keyframe every 6 s, so the stream can be cut into 6 s segments.
-        "-c:v", "libx264", "-preset", "slow", "-tune", "animation", "-crf", "24", "-pix_fmt", "yuv420p",
+        "-c:v", "libx264", "-preset", "slow", "-tune", "animation", "-crf", "20", "-pix_fmt", "yuv420p",
         "-g", str(FPS * 6), "-keyint_min", str(FPS * 6), "-sc_threshold", "0",
         "-c:a", "aac", "-b:a", "64k", "-ac", "1", "-shortest", "-movflags", "+faststart", str(out),
     ], stdin=subprocess.PIPE)
