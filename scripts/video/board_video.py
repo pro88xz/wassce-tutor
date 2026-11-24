@@ -392,6 +392,8 @@ PRONOUNCE = {
     "Rhesus": "ɹˈiːsəs",
     "ABO": "ˌA bˌiː ˈQ",
     "AB": "ˌA bˈiː",
+    "vena": "vˈiːnə",
+    "venae": "vˈiːniː",
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
