@@ -34,7 +34,10 @@ async function startSession(video: string, human: string | undefined): Promise<S
     body: JSON.stringify({ video, human }),
     credentials: 'omit',
   })
-  if (!res.ok) throw new Error(`start ${res.status}`)
+  if (!res.ok) {
+    const why = (await res.json().catch(() => null)) as { code?: string; why?: string[] } | null
+    throw new Error(`start ${res.status} ${why?.code ?? ''} ${(why?.why ?? []).join(' ')}`.trim())
+  }
   const body = (await res.json()) as { token: string; mask: string }
   const mask = new Uint8Array(body.mask.match(/../g)!.map((h) => parseInt(h, 16)))
   return { token: body.token, mask }
@@ -80,6 +83,12 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
   const restarts = useRef(0)
   const quartiles = useRef(new Set<number>())
   const [phase, setPhase] = useState<Phase>('idle')
+  // What went wrong, shown small under the message, so a report can name it.
+  const [problem, setProblem] = useState('')
+  const fail = useCallback((e: unknown) => {
+    setProblem(e instanceof Error ? e.message.slice(0, 80) : '')
+    setPhase('error')
+  }, [])
   const [playing, setPlaying] = useState(false)
   const [time, setTime] = useState(0)
   const [buffered, setBuffered] = useState(0)
@@ -158,12 +167,12 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
         if (data.type === HlsClass.ErrorTypes.NETWORK_ERROR && restarts.current < 3 && [0, 400, 403, 409].includes(code)) {
           restarts.current++
           const here = el.currentTime || at
-          void attach(here).catch(() => setPhase('error'))
+          void attach(here).catch(fail)
         } else if (data.type === HlsClass.ErrorTypes.MEDIA_ERROR && restarts.current < 3) {
           restarts.current++
           h.recoverMediaError()
         } else {
-          setPhase('error')
+          fail(new Error(`stream ${data.details} ${code || ''}`.trim()))
         }
       })
       h.on(HlsClass.Events.MANIFEST_PARSED, () => {
@@ -192,9 +201,9 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
       // Called inside the tap, so phones allow the sound once the stream is ready.
       void media.current?.play().catch(() => {})
       track('video_start', { video_id: video.id })
-      attach(at).catch(() => setPhase('error'))
+      attach(at).catch(fail)
     },
-    [attach, phase, startAt, video.id],
+    [attach, fail, phase, startAt, video.id],
   )
 
   const toggle = () => {
@@ -383,7 +392,12 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
 
         {phase === 'error' && (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/75 p-6 text-center text-white">
-            <p className="font-semibold">The video could not load. Check your connection and try again.</p>
+            <p className="font-semibold">
+              {problem.startsWith('check') || problem.includes('not_a_person')
+                ? 'We could not confirm a person is watching. Try again.'
+                : 'The video could not load. Check your connection and try again.'}
+            </p>
+            {problem && <p className="text-xs text-white/60">Code: {problem}</p>}
             <button type="button" onClick={() => { restarts.current = 0; setPhase('idle') }} className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-black">
               <RotateCcw className="h-4 w-4" aria-hidden /> Try again
             </button>

@@ -160,13 +160,19 @@ test('downloads: a file not yet made, another site, or an address typed in', asy
 
 test('with the people check on, a video starts only with a token Cloudflare confirms', async () => {
   const checked = []
-  const human = async (token, ip) => { checked.push([token, ip]); return token === 'cf-ok' }
+  const human = async (token, ip, why) => {
+    checked.push([token, ip])
+    if (token !== 'cf-ok') why.codes = ['invalid-input-response']
+    return token === 'cf-ok'
+  }
   const h = videoHandler({ store, secret, human, log: () => {} })
   const begin = (body) => h(req('/api/video?op=start', { method: 'POST', ip: '102.68.5.5', headers: { origin: SITE, 'content-type': 'application/json', 'sec-fetch-site': 'same-origin', 'sec-fetch-dest': 'empty' }, body }))
   const bot = await begin({ video: VIDEO.id })
   assert.equal(bot.status, 403)
   assert.equal((await bot.json()).code, 'not_a_person')
-  assert.equal((await begin({ video: VIDEO.id, human: 'cf-forged' })).status, 403)
+  const forged = await begin({ video: VIDEO.id, human: 'cf-forged' })
+  assert.equal(forged.status, 403)
+  assert.deepEqual(await forged.json(), { code: 'not_a_person', why: ['invalid-input-response'] }, "Cloudflare's reason is shown")
   assert.equal((await begin({ video: VIDEO.id, human: 'cf-ok' })).status, 200)
   assert.deepEqual(checked.at(-1), ['cf-ok', '102.68.5.5'], 'checked with the viewer address')
   assert.equal((await start('102.68.9.9')).status, 200, 'with the check off, nothing changes')
@@ -183,8 +189,16 @@ test('turnstileVerifier: off without a key; confirms with Cloudflare; lets viewe
   assert.equal(await no('tok', '1.2.3.4'), false)
   assert.equal(await no('', '1.2.3.4'), false, 'no token')
   assert.equal(await no('x'.repeat(3000), '1.2.3.4'), false, 'not a token')
+  const why = {}
+  assert.equal(await no('tok', '1.2.3.4', why), false)
+  assert.deepEqual(why.codes, ['timeout-or-duplicate'], 'the reason is passed back')
   const down = turnstileVerifier('secret-1', async () => { throw new Error('ECONNRESET') }, () => {})
   assert.equal(await down('tok', '1.2.3.4'), true)
+  // Our own secret key wrong: every visitor would be refused, so they are let through, and it is logged.
+  const logged = []
+  const badKey = turnstileVerifier('wrong', cf({ status: 200, json: async () => ({ success: false, 'error-codes': ['invalid-input-secret'] }) }), (m) => logged.push(m))
+  assert.equal(await badKey('tok', '1.2.3.4'), true)
+  assert.match(logged[0], /TURNSTILE_SECRET_KEY/)
   const busy = turnstileVerifier('secret-1', cf({ status: 503, json: async () => ({}) }), () => {})
   assert.equal(await busy('tok', '1.2.3.4'), true)
 })
