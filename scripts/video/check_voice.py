@@ -13,6 +13,7 @@ before the video is published. Exit status 1 if any line fails.
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -29,6 +30,8 @@ MAX_WER = 0.05
 # Words a recogniser writes differently from the narration but which were said
 # right: compared after this spelling is applied to both sides.
 SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "ameba", "metres": "meters",
+        "metre": "meter", "kilometre": "kilometer", "kilometres": "kilometers", "centimetre": "centimeter",
+        "centimetres": "centimeters", "millimetre": "millimeter", "millimetres": "millimeters",
         "centre": "center", "colour": "color", "fibre": "fiber", "favour": "favor", "programme": "program",
         "organisation": "organization",
         # homophones and rare names the recogniser spells its own way
@@ -38,15 +41,31 @@ SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "am
         "goitre": "goiter", "oedema": "edema", "faeces": "feces", "oesophagus": "esophagus", "route": "root"}
 
 
+DIGITS = "zero one two three four five six seven eight nine".split()
+# Symbols and units the recogniser writes for words the narration says.
+SYMBOLS = [("km/h", " kilometres per hour "), ("m/s", " metres per second "), ("λ", " lambda "), ("×", " times "), ("÷", " divided by "), ("=", " equals "), ("%", " percent "),
+           ("MHz", " megahertz "), ("kHz", " kilohertz "), ("Hz", " hertz "), ("°C", " degrees celsius ")]
+
+
+def spoken(heard: str) -> str:
+    """What the recogniser wrote, back in the words that were said: "3.06" is
+    "three point zero six", "1.5 Hz" is "one point five hertz", "λ" is "lambda"."""
+    for sym, words in SYMBOLS:
+        heard = heard.replace(sym, words)
+    heard = re.sub(r"(?<=\d)\s*[xX]\s*(?=\d)", " times ", heard)
+    heard = re.sub(r"(?<=\d),(?=\d{3}\b)", "", heard)   # 72,000 is seventy-two thousand
+    return re.sub(r"(\d+)\.(\d+)", lambda m: f"{m.group(1)} point {' '.join(DIGITS[int(d)] for d in m.group(2))}", heard)
+
+
 def norm(words: list[str]) -> list[str]:
     # compounds the recogniser writes as one word ("by-product" as "byproduct")
     text = " ".join(SAME.get(w, w) for w in words)
-    for split, joined in (("by product", "byproduct"), ("blood stream", "bloodstream"), ("well being", "wellbeing"),
+    for split, joined in (("by product", "byproduct"), ("s i", "si"), ("blood stream", "bloodstream"), ("well being", "wellbeing"),
                           ("ground nuts", "groundnuts")):
         text = f" {text} ".replace(f" {split} ", f" {joined} ").strip()
     # scientific words the recogniser spells by their sound (said correctly)
     for heard, word in (("flow m", "phloem"), ("floem", "phloem"), ("flowem", "phloem"), ("micro pill", "micropyle"),
-                       ("a glutenation", "agglutination"), ("resa", "rhesus"), ("resa's", "rhesus"), ("abo", "a b o"), ("ab", "a b")):
+                       ("a glutenation", "agglutination"), ("rarer factions", "rarefactions"), ("rare factions", "rarefactions"), ("resa", "rhesus"), ("resa's", "rhesus"), ("abo", "a b o"), ("ab", "a b")):
         text = f" {text} ".replace(f" {heard} ", f" {word} ").strip()
     return text.split()
 
@@ -74,7 +93,7 @@ def main():
         s.accept_waveform(16000, x16)
         rec.decode_stream(s)
         heard = s.result.text.strip()
-        score = wer(norm(reference(say)), norm(words_of(heard)))
+        score = wer(norm(reference(say)), norm(words_of(spoken(heard))))
         ok = score <= MAX_WER
         failed += not ok
         print(f"{'ok ' if ok else 'BAD'} {i:2d}/{len(lines)}  {score:4.0%}  {say[:70]}")
