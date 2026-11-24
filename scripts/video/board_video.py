@@ -150,7 +150,7 @@ def _hand(p0, p1, wobble=1.0) -> np.ndarray:
 # ── Letters ───────────────────────────────────────────────────────────────
 _fonts: dict[str, object] = {}
 # Characters drawn from another Hershey font, and those drawn here.
-FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m"), "π": ("greek", "p"), "Σ": ("greek", "S"), "α": ("greek", "a"), "φ": ("greek", "f")}
+FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m"), "π": ("greek", "p"), "Σ": ("greek", "S"), "α": ("greek", "a"), "φ": ("greek", "f"), "ρ": ("greek", "r")}
 CAP, BASE = -12, 9            # Hershey cap line and base line
 TRACK = 0.88                  # chalk letters sit closer than Hershey spaces them
 
@@ -173,6 +173,8 @@ def _glyph(ch: str) -> tuple[list[np.ndarray], float]:
                 np.array([[9, 7], [9.5, 7.5]], float)], 18
     if ch == "·":
         return [np.array([[5, -2], [5.5, -1.5]], float)], 11
+    if ch == "±":
+        return [np.array([[9, -9], [9, 3]], float), np.array([[3, -3], [15, -3]], float), np.array([[3, 8], [15, 8]], float)], 18
     if ch == "°":   # a small ring at the top of the line
         t = np.linspace(0, 2 * np.pi, 16)
         return [np.column_stack([4.5 + 3 * np.cos(t), -9 + 3 * np.sin(t)])], 10
