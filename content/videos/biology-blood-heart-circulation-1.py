@@ -130,10 +130,10 @@ STEPS = [
          line(70, 188, 1200, 188, "grey", 2.2),
          chapter="ABO and Rhesus blood groups, and safe transfusion"),
 
-    step("Group A has antigen A, and anti-B antibodies. Group B has antigen B, and anti-A antibodies.",
+    step("Group A has antigen A on its red cells, and antibodies against B in its plasma. Group B has antigen B, and antibodies against A.",
          write("A", 110, 236, 28, "yellow"), write("A", 280, 236, 26), write("anti-B", 720, 236, 26),
          write("B", 110, 286, 28, "yellow"), write("B", 280, 286, 26), write("anti-A", 720, 286, 26)),
-    step("Group AB has both antigens, and no antibodies. Group O has no antigens, but both antibodies.",
+    step("Group AB has both antigens, and no antibodies. Group O has no antigens, but antibodies against both A and B.",
          write("AB", 104, 336, 28, "yellow"), write("A and B", 280, 336, 26), write("none", 720, 336, 26),
          write("O", 110, 386, 28, "yellow"), write("none", 280, 386, 26), write("anti-A and anti-B", 720, 386, 26)),
 
