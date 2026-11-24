@@ -35,8 +35,8 @@ function load(): Promise<Turnstile> {
   return loading
 }
 
-/** A one-time token that a person is playing, or undefined when the check is off. */
-export async function personToken(container: HTMLElement): Promise<string | undefined> {
+/** A one-time token that a person is here (playing a video, sending a form), or undefined when the check is off. */
+export async function personToken(container: HTMLElement, action = 'video-start'): Promise<string | undefined> {
   if (!SITE_KEY) return undefined
   const t = await load()
   return new Promise<string>((resolve, reject) => {
@@ -51,7 +51,7 @@ export async function personToken(container: HTMLElement): Promise<string | unde
       sitekey: SITE_KEY,
       execution: 'execute',
       appearance: 'interaction-only',
-      action: 'video-start',
+      action,
       callback: (token: string) => done(() => resolve(token)),
       'error-callback': () => done(() => reject(new Error('turnstile failed'))),
     })
