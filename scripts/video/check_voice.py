@@ -45,7 +45,8 @@ def norm(words: list[str]) -> list[str]:
                           ("ground nuts", "groundnuts")):
         text = f" {text} ".replace(f" {split} ", f" {joined} ").strip()
     # scientific words the recogniser spells by their sound (said correctly)
-    for heard, word in (("flow m", "phloem"), ("floem", "phloem"), ("flowem", "phloem"), ("micro pill", "micropyle")):
+    for heard, word in (("flow m", "phloem"), ("floem", "phloem"), ("flowem", "phloem"), ("micro pill", "micropyle"),
+                       ("a glutenation", "agglutination"), ("resa", "rhesus"), ("resa's", "rhesus"), ("abo", "a b o"), ("ab", "a b")):
         text = f" {text} ".replace(f" {heard} ", f" {word} ").strip()
     return text.split()
 
