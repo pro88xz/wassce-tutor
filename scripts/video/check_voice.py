@@ -33,7 +33,8 @@ SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "am
         "organisation": "organization",
         # homophones and rare names the recogniser spells its own way
         "maize": "maze", "mays": "maze", "zea": "zia", "protoctista": "protoctyster",
-        "mesophyll": "messiful"}
+        "mesophyll": "messiful", "coloured": "colored", "fertilisation": "fertilization",
+        "fertilised": "fertilized", "radicle": "radical", "plumule": "plumeule"}
 
 
 def norm(words: list[str]) -> list[str]:
@@ -42,7 +43,7 @@ def norm(words: list[str]) -> list[str]:
     for joined in ("byproduct", "bloodstream", "wellbeing"):
         text = text.replace(f"{joined[:2]} {joined[2:]}", joined)
     # scientific words the recogniser spells by their sound (said correctly)
-    for heard, word in (("flow m", "phloem"), ("floem", "phloem"), ("flowem", "phloem")):
+    for heard, word in (("flow m", "phloem"), ("floem", "phloem"), ("flowem", "phloem"), ("micro pill", "micropyle")):
         text = f" {text} ".replace(f" {heard} ", f" {word} ").strip()
     return text.split()
 
