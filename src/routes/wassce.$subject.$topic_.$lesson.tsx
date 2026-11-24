@@ -13,6 +13,10 @@ import { SEARCH_COPY, SITE, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexab
 import { SubjectIcon } from '@/components/SubjectIcon'
 import { subjectTheme } from '@/lib/subject-theme'
 import { displayName, tutorPagePath } from '@/lib/tutor-profile'
+import { useSyncExternalStore } from 'react'
+import { fetchLessonVideo, startParam, videoJsonLd } from '@/lib/lesson-video'
+import { LessonVideoPlayer } from '@/components/video/LessonVideoPlayer'
+import { VideoTranscript } from '@/components/video/VideoTranscript'
 
 const trail = ({ subject, topic, lesson }: PublicLessonPageData): [string, string][] => [
   ['Home', '/'],
@@ -60,7 +64,9 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/$lesson')({
   loader: async ({ params }) => {
     const data = await fetchPublicLessonPage(params.subject, params.topic, params.lesson)
     if (!data) throw notFound()
-    return { ...data, questionCount: await topicQuestionCount(data.topic.id), keyTermCount: await topicKeyTermCount(data.topic) }
+    // A missing video never stops the page: it is built without one.
+    const video = await fetchLessonVideo(data.lesson.id).catch(() => null)
+    return { ...data, video, questionCount: await topicQuestionCount(data.topic.id), keyTermCount: await topicKeyTermCount(data.topic) }
   },
   head: ({ loaderData: data }) => {
     if (!data) return privatePageTags('Page not found')
@@ -73,15 +79,22 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/$lesson')({
       title: brandedTitle(copy?.title ?? `WASSCE ${data.subject.name}: ${data.lesson.title}`),
       ogTitle: `${data.lesson.title} (WASSCE ${data.subject.name})`,
       description: copy?.description ?? lessonSummary(data.lesson.content),
-      jsonLd: [lessonJsonLd(data), breadcrumbJsonLd(trail(data))],
+      // With a video, this page is its watch page: the video is the first thing on it.
+      jsonLd: [lessonJsonLd(data), breadcrumbJsonLd(trail(data)), ...(data.video ? [videoJsonLd(data.video, path)] : [])],
+      ...(data.video ? { image: data.video.thumbnail_url } : {}),
     })
   },
   component: PublicLessonPage,
 })
 
+const noChange = () => () => {}
+
 function PublicLessonPage() {
   const data = Route.useLoaderData()
-  const { subject, topic, lesson, questionCount, keyTermCount } = data
+  const { subject, topic, lesson, questionCount, keyTermCount, video } = data
+  // A key moment in search links here with ?t=<seconds>: the player starts there.
+  // (Read after hydration: the prerendered page has no address bar.)
+  const startAt = startParam(useSyncExternalStore(noChange, () => window.location.search, () => ''))
   const others = topic.lessons.filter((l) => l.id !== lesson.id)
   // The lessons either side, in syllabus order: every lesson has a public page (migration 22).
   const at = topic.lessons.findIndex((l) => l.id === lesson.id)
@@ -131,6 +144,14 @@ function PublicLessonPage() {
           )}
         </div>
       </header>
+
+      {video && (
+        <section aria-label="Video lesson">
+          <LessonVideoPlayer video={video} startAt={startAt}>
+            <VideoTranscript video={video} />
+          </LessonVideoPlayer>
+        </section>
+      )}
 
       {/* Definition boxes link to the topic's key terms (made from them), when it has a page. */}
       <KeyTermsLink.Provider value={keyTermCount > 0 ? { href: keyTermsPath(subject.slug, topic.slug) } : null}>

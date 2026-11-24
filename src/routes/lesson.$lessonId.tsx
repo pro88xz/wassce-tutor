@@ -14,6 +14,8 @@ import { useTopicKeyTerms } from '@/lib/key-term-progress'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { ProgressBar } from '@/components/ds/Progress'
 import { EmptyState, Skeleton } from '@/components/ds/Primitives'
+import { useLessonVideo } from '@/lib/lesson-video'
+import { LessonVideoPlayer } from '@/components/video/LessonVideoPlayer'
 
 const SUPPORT_EMAIL = CONTACT.email
 
@@ -37,6 +39,7 @@ function LessonPage() {
   // Definition boxes link to revising the topic's key terms (made from them), when it has enough.
   const { data: keyTerms } = useTopicKeyTerms(lesson?.topic_id ?? null)
   const navigate = useNavigate()
+  const { data: video } = useLessonVideo(lesson?.id ?? null)
 
   if (isLoading) {
     return (
@@ -95,6 +98,8 @@ function LessonPage() {
             </span>
           </p>
         </header>
+
+        {video && <LessonVideoPlayer video={video} />}
 
         <article className="prose prose-slate max-w-none text-base leading-[1.6] dark:prose-invert prose-headings:font-bold prose-headings:tracking-tight prose-h2:mb-3 prose-h2:mt-8 prose-h2:text-xl prose-p:leading-[1.6] prose-li:my-1 prose-strong:text-foreground prose-code:text-foreground">
           <KeyTermsLink.Provider
