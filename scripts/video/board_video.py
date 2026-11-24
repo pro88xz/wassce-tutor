@@ -26,6 +26,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import importlib.util
+import json
 import math
 import re
 import subprocess
@@ -180,6 +181,8 @@ def write(text: str, x: float, y: float, size: float = 30, color: str = "white",
     x0 = x - {"left": 0, "center": w / 2, "right": w}[align]
     if x0 < 30 or x0 + w > W - 30:
         raise ValueError(f"{text!r} runs off the board ({x0:.0f} to {x0 + w:.0f} px)")
+    if x0 + w > 1015 and y - size < 78:
+        raise ValueError(f"{text!r} is written over the wasscetutor.com mark (top right): move it down or left")
     return Action(text_strokes(text, x0, y, size, color)[0])
 
 
@@ -260,10 +263,23 @@ class Step:
     say: str
     actions: list[Action]
     pause: float = 0.45
+    chapter: str | None = None   # starts a key moment: a named, linkable point in the video
 
 
-def step(say: str, *actions: Action, pause: float = 0.45) -> Step:
-    return Step(say, list(actions), pause)
+def step(say: str, *actions: Action, pause: float = 0.45, chapter: str | None = None) -> Step:
+    return Step(say, list(actions), pause, chapter)
+
+
+def outro() -> list[Step]:
+    """The end card: the board is wiped and the brand written, with no voice.
+    Every copy of a video ends by saying where it came from."""
+    return [
+        Step("", [clear(1.6)], 0.2),
+        Step("", [write("WASSCE Tutor", W / 2, 330, 64, "yellow", "center"),
+                  underline(W / 2 - 250, W / 2 + 250, 352),
+                  write("wasscetutor.com", W / 2, 432, 40, "white", "center"),
+                  write("Free lessons  ·  Past questions  ·  Practice", W / 2, 500, 26, "blue", "center")], 2.4),
+    ]
 
 
 # ── Voice ─────────────────────────────────────────────────────────────────
@@ -275,6 +291,8 @@ class Voice:
         CACHE.mkdir(parents=True, exist_ok=True)
 
     def __call__(self, text: str) -> np.ndarray:
+        if not text:
+            return np.zeros(0, np.float32)
         try:
             phonemes = self.lex.sentence(text)
         except ValueError as e:
@@ -299,12 +317,27 @@ class Timed:
     erase: bool = False              # or the board wiped from t0 to t1
 
 
-def schedule(steps: list[Step], voice: Voice):
+@dataclass
+class Timeline:
+    timed: list[Timed]
+    clips: list[tuple[float, np.ndarray]]
+    captions: list[tuple[float, float, str]]
+    total: float
+    chapters: list[tuple[float, str]]
+    step_ends: list[float]          # when each step's drawing and speech are done
+    step_starts: list[float]
+
+
+def schedule(steps: list[Step], voice: Voice) -> Timeline:
     """Place each step's speech and drawing in time. Writing is sped up (to at
     most twice the usual pace) to end with the speech; if it still runs on,
     the voice waits for it."""
     t, timed, clips, captions = 0.6, [], [], []
+    chapters, ends, starts = [], [], []
     for s in steps:
+        starts.append(t)
+        if s.chapter:
+            chapters.append((0.0 if not chapters and t < 1.0 else round(t, 1), s.chapter))
         audio = voice(s.say)
         speech = len(audio) / RATE
         strokes = [st for a in s.actions for st in a.strokes]
@@ -312,7 +345,8 @@ def schedule(steps: list[Step], voice: Voice):
         ink = sum(st.length for st in strokes) / WRITE_SPEED + LIFT * len(strokes)
         pace = min(2.0, max(1.0, ink / max(0.5, speech - DRAW_DELAY - erase - 0.2))) if ink else 1.0
         clips.append((t, audio))
-        captions.append((t, t + speech, s.say))
+        if s.say:
+            captions.append((t, t + speech, s.say))
         d = t + DRAW_DELAY
         if erase:
             timed.append(Timed(d, d + erase, erase=True)); d += erase + 0.2
@@ -320,8 +354,9 @@ def schedule(steps: list[Step], voice: Voice):
             dur = st.length / (WRITE_SPEED * pace)
             timed.append(Timed(d, d + dur, st))
             d += dur + LIFT / pace
+        ends.append(max(t + speech, d))
         t = max(t + speech, d) + s.pause
-    return timed, clips, captions, t + 1.2
+    return Timeline(timed, clips, captions, t + 1.2, chapters, ends, starts)
 
 
 # ── Board ─────────────────────────────────────────────────────────────────
@@ -345,6 +380,7 @@ def _smooth_noise(rng, cells_y, cells_x) -> np.ndarray:
 
 
 FRAME, TRAY = 18, 30
+WATERMARK_SIZE = 17
 
 
 def board_background(label: str) -> np.ndarray:
@@ -378,7 +414,20 @@ def board_background(label: str) -> np.ndarray:
         _path(ctx, st.points)
         ctx.set_source_rgba(1, 1, 1, 1); ctx.set_line_width(2.2); ctx.stroke()
     a = np.ndarray((H, W, 4), np.uint8, surf.get_data())[..., 3] / 255.0 * 0.32
-    return img * (1 - a[..., None]) + a[..., None] * 0.95
+    img = img * (1 - a[..., None]) + a[..., None] * 0.95
+    # The watermark: the site's address, written into the board itself, top
+    # right, where it never meets the lesson's writing and cannot be cropped
+    # off without cutting into the board. Every frame of every copy carries it.
+    surf = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
+    ctx = cairo.Context(surf)
+    ctx.set_line_cap(cairo.LINE_CAP_ROUND)
+    mark = "wasscetutor.com"
+    mw = text_width(mark, WATERMARK_SIZE)
+    for st in text_strokes(mark, W - FRAME - 26 - mw, FRAME + 40, WATERMARK_SIZE, "white")[0]:
+        _path(ctx, st.points)
+        ctx.set_source_rgba(1, 1, 1, 1); ctx.set_line_width(2.6); ctx.stroke()
+    a = np.ndarray((H, W, 4), np.uint8, surf.get_data())[..., 3] / 255.0 * 0.40
+    return img * (1 - a[..., None]) + a[..., None] * np.array([0.99, 0.87, 0.42])
 
 
 def chalk_grain() -> np.ndarray:
@@ -423,11 +472,21 @@ def _eraser_at(f: float) -> tuple[float, float]:
     return x, ERASE_ROWS[i]
 
 
-def render(steps: list[Step], label: str, out: Path, until: float | None):
+def render(steps: list[Step], label: str, out: Path, until: float | None, thumbnail_step: int | None = None) -> dict:
+    """Render the video to `out` (.mp4), with its captions (.vtt), a thumbnail
+    (.jpg) and its timing (.json) beside it. Returns the timing."""
     voice = Voice()
-    timed, clips, captions, total = schedule(steps, voice)
+    tl = schedule(steps, voice)
+    timed, clips, captions, total = tl.timed, tl.clips, tl.captions, tl.total
     if until:
         total = min(total, until)
+    # The thumbnail: the board at its fullest, just before it is first wiped
+    # (or at the end of the step the lesson names).
+    if thumbnail_step is None:
+        wipes = [i for i, s in enumerate(steps) if any(a.erase for a in s.actions)]
+        thumbnail_step = (wipes[0] - 1) if wipes and wipes[0] > 0 else len(steps) - 1
+    thumb_t = min(total - 0.1, tl.step_ends[thumbnail_step] + 0.3)
+    thumb_frame = int(thumb_t * FPS)
 
     # sound
     audio = np.zeros(int(total * RATE) + RATE, np.float32)
@@ -455,7 +514,9 @@ def render(steps: list[Step], label: str, out: Path, until: float | None):
         "ffmpeg", "-v", "error", "-y",
         "-f", "rawvideo", "-pix_fmt", "bgr0", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
         "-i", str(wav),
+        # A keyframe every 6 s, so the stream can be cut into 6 s segments.
         "-c:v", "libx264", "-preset", "slow", "-tune", "animation", "-crf", "24", "-pix_fmt", "yuv420p",
+        "-g", str(FPS * 6), "-keyint_min", str(FPS * 6), "-sc_threshold", "0",
         "-c:a", "aac", "-b:a", "64k", "-ac", "1", "-shortest", "-movflags", "+faststart", str(out),
     ], stdin=subprocess.PIPE)
 
@@ -521,14 +582,30 @@ def render(steps: list[Step], label: str, out: Path, until: float | None):
             _draw_pen(fctx, pen)
             frame.flush()
         enc.stdin.write(fbuf.tobytes())
+        if fi == thumb_frame:
+            _save_jpeg(fbuf, out.with_suffix(".jpg"))
         if fi % (FPS * 10) == 0:
             print(f"  {t:5.1f}s / {total:.1f}s", flush=True)
     enc.stdin.close()
     if enc.wait():
         raise SystemExit("ffmpeg failed")
     wav.unlink()
-    _write_vtt(captions, out.with_suffix(".vtt"), total)
+    cues = _write_vtt(captions, out.with_suffix(".vtt"), total)
+    timing = {
+        "duration": round(total, 2),
+        "chapters": [{"name": name, "start": start} for start, name in tl.chapters if start < total],
+        "transcript": [{"start": round(a, 2), "end": round(b, 2), "text": text} for a, b, text in cues],
+        "thumbnail_at": round(thumb_t, 2),
+    }
+    out.with_suffix(".json").write_text(json.dumps(timing, indent=1, ensure_ascii=False) + "\n")
     print(f"{out}: {total:.1f} s, {out.stat().st_size / 1e6:.2f} MB")
+    return timing
+
+
+def _save_jpeg(bgr0: np.ndarray, path: Path):
+    """One frame (cairo's BGRx bytes) as a JPEG, for the video's thumbnail."""
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "bgr0", "-s", f"{W}x{H}", "-i", "-",
+                    "-frames:v", "1", "-q:v", "3", str(path)], input=bgr0.tobytes(), check=True)
 
 
 def _draw_pen(ctx, pen):
@@ -557,7 +634,7 @@ def _draw_pen(ctx, pen):
 def _write_vtt(captions, path: Path, total: float):
     def ts(s):
         return f"{int(s // 3600):02d}:{int(s % 3600 // 60):02d}:{s % 60:06.3f}"
-    lines = ["WEBVTT", ""]
+    lines, cues = ["WEBVTT", ""], []
     for t0, t1, text in captions:
         if t0 >= total:
             break
@@ -567,8 +644,10 @@ def _write_vtt(captions, path: Path, total: float):
         for p in parts:
             b = a + (t1 - t0) * len(p) / n
             lines += [f"{ts(a)} --> {ts(min(b, total))}", p, ""]
+            cues.append((a, min(b, total), p))
             a = b
     path.write_text("\n".join(lines))
+    return cues
 
 
 def load(path: Path):
@@ -576,7 +655,23 @@ def load(path: Path):
     mod = importlib.util.module_from_spec(spec)
     sys.modules["board_video"] = sys.modules[__name__]
     spec.loader.exec_module(mod)
+    for name in ("TITLE", "DESCRIPTION", "LABEL", "STEPS"):
+        if not getattr(mod, name, None):
+            raise SystemExit(f"{path}: {name} is missing")
+    if len(mod.DESCRIPTION) > 300:
+        raise SystemExit(f"{path}: DESCRIPTION is {len(mod.DESCRIPTION)} characters; keep it under 300")
     return mod
+
+
+def lesson_steps(mod) -> list[Step]:
+    return list(mod.STEPS) + (outro() if getattr(mod, "OUTRO", True) else [])
+
+
+def revision(path: Path) -> str:
+    """What a video is made from: its script, the renderer's VERSION and the
+    voice. A video is rebuilt and republished when this changes."""
+    h = hashlib.sha256(f"{VERSION}|{VOICE}|{SPEED}|".encode() + path.read_bytes())
+    return h.hexdigest()[:12]
 
 
 def main():
@@ -586,9 +681,10 @@ def main():
     ap.add_argument("--until", type=float, help="render only the first N seconds")
     args = ap.parse_args()
     lesson = load(args.lesson)
-    out = args.out or ROOT / "public/video" / (args.lesson.stem + ".mp4")
+    # Never into public/: a plain video file must not be served or committed.
+    out = args.out or ROOT / ".video-build" / args.lesson.stem / "preview-render.mp4"
     out.parent.mkdir(parents=True, exist_ok=True)
-    render(lesson.STEPS, lesson.LABEL, out, args.until)
+    render(lesson_steps(lesson), lesson.LABEL, out, args.until, getattr(lesson, "THUMBNAIL_STEP", None))
 
 
 if __name__ == "__main__":

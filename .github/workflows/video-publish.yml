@@ -1,0 +1,138 @@
+name: Publish lesson videos
+
+# Renders every lesson video whose script changed (content/videos/<id>.py),
+# encrypts it and publishes it for the protected player: scripts/video/publish.py
+# and scripts/video/README.md. Runs on main when a video script or the renderer
+# changes, and by hand from the Actions tab (some videos, or all with "force").
+# Needs migration 35 ("Apply database migrations"). No new secret: the server
+# key is read from the Supabase management API with the existing access token.
+# If a VERCEL_DEPLOY_HOOK secret is set, the site is rebuilt afterwards, so the
+# new videos' lesson pages carry them for search engines straight away;
+# otherwise they appear with the next deploy.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'content/videos/**'
+      - 'scripts/video/board_video.py'
+      - 'scripts/video/publish.py'
+      - '.github/workflows/video-publish.yml'
+  workflow_dispatch:
+    inputs:
+      videos:
+        description: 'Video ids, separated by spaces (empty: every video whose script changed)'
+        required: false
+        default: ''
+      force:
+        description: 'Rebuild and republish even if unchanged'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wassce-tutor-video-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Render, encrypt and publish lesson videos
+    runs-on: ubuntu-24.04
+    timeout-minutes: 340
+    environment: production
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install ffmpeg and cairo
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes ffmpeg libcairo2-dev pkg-config
+
+      - name: Install the voice and chalk packages
+        run: |
+          pip install kokoro-onnx misaki soundfile spacy Hershey-Fonts pycairo
+          pip install --no-deps num2words
+          python -m spacy download en_core_web_sm
+
+      - name: Cache the voice model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/wassce-audio/kokoro
+          key: kokoro-model-files-v1.0
+
+      - name: Download the voice model if it is not cached
+        run: |
+          mkdir -p ~/.cache/wassce-audio/kokoro
+          for f in kokoro-v1.0.onnx voices-v1.0.bin; do
+            test -s ~/.cache/wassce-audio/kokoro/$f || curl -fsSL --retry 4 -o ~/.cache/wassce-audio/kokoro/$f https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f
+          done
+
+      - name: Cache spoken lines
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/wassce-video
+          key: video-voice-${{ hashFiles('content/videos/**') }}
+          restore-keys: video-voice-
+
+      - name: Read the server key from Supabase
+        shell: bash
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+        run: |
+          set -euo pipefail
+          test -n "$SUPABASE_ACCESS_TOKEN" || { echo "Missing SUPABASE_ACCESS_TOKEN"; exit 1; }
+          test -n "$SUPABASE_PROJECT_REF" || { echo "Missing SUPABASE_PROJECT_REF"; exit 1; }
+          KEY="$(curl -fsS --retry 3 -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
+            "https://api.supabase.com/v1/projects/$SUPABASE_PROJECT_REF/api-keys?reveal=true" | python3 -c '
+          import json, sys
+          keys = json.load(sys.stdin)
+          pick = [k for k in keys if k.get("name") == "service_role" and k.get("api_key", "").startswith("ey")] \
+              or [k for k in keys if k.get("type") == "secret" and k.get("api_key", "").startswith("sb_secret_")]
+          print(pick[0]["api_key"] if pick else "")')"
+          test -n "$KEY" || { echo "No service role or secret key found for the project"; exit 1; }
+          echo "::add-mask::$KEY"
+          echo "SUPABASE_SECRET_KEY=$KEY" >> "$GITHUB_ENV"
+          echo "SUPABASE_URL=https://$SUPABASE_PROJECT_REF.supabase.co" >> "$GITHUB_ENV"
+
+      - name: Check migration 35 is applied
+        shell: bash
+        run: |
+          set -euo pipefail
+          STATUS="$(curl -s -o /dev/null -w '%{http_code}' -H "apikey: $SUPABASE_SECRET_KEY" -H "Authorization: Bearer $SUPABASE_SECRET_KEY" "$SUPABASE_URL/rest/v1/lesson_videos?select=id&limit=1")"
+          test "$STATUS" = "200" || { echo "lesson_videos answered $STATUS: run the 'Apply database migrations' workflow first (migration 35)"; exit 1; }
+
+      - name: Publish
+        shell: bash
+        env:
+          VIDEOS: ${{ inputs.videos }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          set -euo pipefail
+          ARGS=()
+          for id in $VIDEOS; do
+            [[ "$id" =~ ^[a-z0-9][a-z0-9-]{2,79}$ ]] || { echo "Not a video id: $id"; exit 1; }
+            ARGS+=("$id")
+          done
+          [[ "$FORCE" == "true" ]] && ARGS+=(--force)
+          python3 scripts/video/publish.py publish "${ARGS[@]}"
+
+      - name: Rebuild the site so the lesson pages carry the new videos
+        shell: bash
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [[ -n "$VERCEL_DEPLOY_HOOK" ]]; then
+            curl -fsS -X POST "$VERCEL_DEPLOY_HOOK" > /dev/null && echo "Site rebuild started"
+          else
+            echo "No VERCEL_DEPLOY_HOOK secret: the videos appear on the lesson pages with the next deploy."
+          fi

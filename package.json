@@ -23,7 +23,8 @@
     "notes:catalog": "node scripts/validate-topic-catalog.mjs",
     "email:test": "node --test scripts/email/engine.test.mjs && node --experimental-strip-types --test scripts/email/notification.test.mjs",
     "email:preview": "node scripts/email/preview.mjs",
-    "tutors:test": "node --experimental-strip-types --test scripts/tutors/pricing.test.mjs"
+    "tutors:test": "node --experimental-strip-types --test scripts/tutors/pricing.test.mjs",
+    "video:test": "node --test scripts/video/video-api.test.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.3.4",
@@ -43,6 +44,7 @@
     "@tanstack/react-start": "^1.169.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "hls.js": "^1.7.4",
     "katex": "^0.17.0",
     "lucide-react": "^1.17.0",
     "radix-ui": "^1.4.3",
