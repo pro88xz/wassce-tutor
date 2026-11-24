@@ -130,13 +130,15 @@ What is published, for each revision:
 sent only to requests that carry it in a header (so their addresses do nothing
 when pasted into a browser, a download site or a download tool); every segment
 address is signed and the segments are encrypted; the key crosses the network
-masked for that viewer and is unmasked in memory. The viewer's code drifts over
-the picture, in fullscreen too, and the site's address is burned into every frame.
+masked for that viewer and is unmasked in memory. The site's address is burned
+into every frame, and the board's faint caption names the subject and topic.
+(A moving viewer code over the picture was tried and removed: it covered the
+writing.)
 
 What this cannot do: stop someone filming or screen-recording a video they are
-allowed to watch. The burned-in mark and viewer code make any such copy
-advertise the site and trace back to a session. Studio-grade DRM (Widevine,
-FairPlay) through a paid video host is the next step if it is ever needed.
+allowed to watch. The burned-in mark makes any such copy advertise the site.
+Studio-grade DRM (Widevine, FairPlay) through a paid video host is the next
+step if it is ever needed.
 
 ## Search
 
