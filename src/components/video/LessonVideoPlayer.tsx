@@ -336,23 +336,6 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
         )}
       </div>
 
-      {video.chapters.length > 1 && (
-        <nav aria-label="In this video" className="flex gap-2 overflow-x-auto pb-1">
-          {video.chapters.map((c) => (
-            <button
-              key={c.start}
-              type="button"
-              onClick={() => begin(c.start)}
-              className={cn(
-                'shrink-0 rounded-full border px-3 py-1.5 text-left text-xs font-medium transition-colors hover:border-primary/60 hover:bg-muted',
-                phase === 'ready' && time >= c.start && time < (video.chapters.find((d) => d.start > c.start)?.start ?? Infinity) && 'border-primary/60 bg-primary/5 text-primary',
-              )}
-            >
-              <span className="tabular-nums text-muted-foreground">{clock(c.start)}</span> {c.name}
-            </button>
-          ))}
-        </nav>
-      )}
       {children}
     </div>
   )
