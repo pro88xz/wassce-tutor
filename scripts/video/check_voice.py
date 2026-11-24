@@ -35,7 +35,7 @@ SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "am
         "maize": "maze", "mays": "maze", "zea": "zia", "protoctista": "protoctyster",
         "mesophyll": "messiful", "coloured": "colored", "fertilisation": "fertilization",
         "fertilised": "fertilized", "radicle": "radical", "plumule": "plumeule", "anaemia": "anemia",
-        "goitre": "goiter", "oedema": "edema", "faeces": "feces", "oesophagus": "esophagus"}
+        "goitre": "goiter", "oedema": "edema", "faeces": "feces", "oesophagus": "esophagus", "route": "root"}
 
 
 def norm(words: list[str]) -> list[str]:
