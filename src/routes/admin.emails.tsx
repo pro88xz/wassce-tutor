@@ -50,7 +50,7 @@ const MODES: { id: Mode; label: string; help: string }[] = [
 
 async function api(method: 'GET' | 'POST', body?: unknown) {
   const { data } = await supabase.auth.getSession()
-  const res = await fetch(`${API}/api/email/admin`, {
+  const res = await fetch(`${API}/api/email/run?admin`, {
     method,
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${data.session?.access_token ?? ''}` },
     body: body ? JSON.stringify(body) : undefined,
