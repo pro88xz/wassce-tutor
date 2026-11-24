@@ -1,6 +1,6 @@
-import { useState, type FormEvent } from 'react'
+import { useRef, useState, type FormEvent } from 'react'
 import { CircleCheck, MessageCircle } from 'lucide-react'
-import { useAuth } from '@/lib/auth'
+import { personToken } from '@/lib/turnstile'
 import { LEVELS, MODES, saveTutorRequest, whatsappLink, type Level, type Mode, type TutorRequest } from '@/lib/tutors'
 import { Button } from '@/components/ui/button'
 
@@ -13,7 +13,8 @@ const label = 'block text-sm font-semibold'
  * shown instead of chosen, with a link to ask about another subject.
  */
 export function BookingForm({ subjects = [], defaultSubject, fixedSubject }: { subjects?: string[]; defaultSubject?: string; fixedSubject?: { name: string; otherHref: string } }) {
-  const { user } = useAuth()
+  // Where Cloudflare's invisible check runs (shown only if it cannot tell; off until its key is set).
+  const humanBox = useRef<HTMLDivElement>(null)
   const [r, setR] = useState<TutorRequest>({
     subject: fixedSubject?.name ?? defaultSubject ?? '',
     level: 'SSS3',
@@ -40,7 +41,8 @@ export function BookingForm({ subjects = [], defaultSubject, fixedSubject }: { s
     setErrors(next)
     if (Object.keys(next).length > 0 || trap) return
     setBusy(true)
-    const saved = await saveTutorRequest(r, user?.id ?? null)
+    const humanToken = humanBox.current ? await personToken(humanBox.current, 'tutor-request').catch(() => undefined) : undefined
+    const saved = await saveTutorRequest(r, { trap, humanToken })
     setBusy(false)
     setDone({ saved })
   }
@@ -151,6 +153,8 @@ export function BookingForm({ subjects = [], defaultSubject, fixedSubject }: { s
         <label htmlFor="bt-website">Website</label>
         <input id="bt-website" tabIndex={-1} autoComplete="off" value={trap} onChange={(e) => setTrap(e.target.value)} />
       </div>
+
+      <div ref={humanBox} className="flex justify-center empty:hidden" />
 
       <Button type="submit" size="lg" className="w-full" disabled={busy}>
         {busy ? 'Sending…' : 'Request a tutor'}
