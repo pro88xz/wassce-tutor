@@ -97,6 +97,14 @@ For **Sierra Leone**, a small country with a small market, regional cooperation 
 The **Mano River Union** headquarters is in **Freetown**, not Monrovia. And the MRU began with **two** members (Sierra Leone and Liberia), not four.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Mano River Union**: the organisation founded in 1973 by Liberia and Sierra Leone, later joined by Guinea (1980) and Côte d'Ivoire (2008), with its headquarters in Freetown.
+- **African Continental Free Trade Area** (AfCFTA): the Africa-wide free trade area, trading since 2021.
+- **Lake Chad Basin Commission**: the body set up in 1964 by the countries around Lake Chad to manage its water and resources.
+:::
+
 ## Key points
 
 - Regional cooperation brings **larger markets, shared resources and infrastructure, peace and a stronger voice**.

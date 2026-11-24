@@ -79,6 +79,14 @@ Although rice is Sierra Leone's staple food and the country has huge areas of sw
 Do not list only physical problems. Examiners expect both **physical** (soil, rainfall, pests) and **human** (capital, tenure, roads, markets, labour) factors and problems.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Physical factors**: the natural conditions that affect farming: climate, soil, relief, water, pests and diseases, and vegetation.
+- **Human factors**: the human conditions that affect farming: labour, capital, land tenure, markets, transport and government policy.
+- **Tsetse fly**: a fly that spreads sleeping sickness to cattle, limiting livestock in humid areas.
+:::
+
 ## Key points
 
 - Physical factors: **climate, soil, relief, water, pests and diseases, vegetation**.

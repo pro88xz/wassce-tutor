@@ -79,6 +79,14 @@ Sierra Leone's manufacturing sector is **small** and concentrated in **Freetown*
 Do not confuse **import substitution** with exporting. Import substitution means making at home goods that used to be **imported**, to save foreign exchange.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Import substitution**: making goods at home that were formerly imported.
+- **Industrial estate**: an area set aside and served with roads, power and water for factories.
+- **Assembly industry**: industry that puts together imported parts, such as vehicles and electrical goods.
+:::
+
 ## Key points
 
 - West African manufacturing is mostly **light industry**: food and drink, textiles, cement, soap, plastics, oil refining.

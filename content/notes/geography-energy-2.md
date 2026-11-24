@@ -84,6 +84,15 @@ By the end of this lesson you should be able to:
 The **reservoir** is the lake behind the dam; the **penstock** is the pipe that carries water to the turbine. Label them correctly on diagrams.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Reservoir**: the lake formed behind a dam.
+- **Bumbuna Dam**: the hydroelectric dam on the Seli River in Sierra Leone that supplies electricity to Freetown and other towns.
+- **Akosombo Dam**: the dam on the Volta River in Ghana that formed Lake Volta and supplies power to the aluminium smelter at Tema.
+- **Bilharzia**: a disease spread by water snails, which increases around reservoirs and irrigation schemes.
+:::
+
 ## Key points
 
 - HEP: **reservoir → penstock → turbine → generator → power lines**.

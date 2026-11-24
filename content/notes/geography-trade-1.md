@@ -98,6 +98,14 @@ The **terms of trade** compare the prices a country receives for its exports wit
 The **balance of trade** covers **goods only**. The **balance of payments** is wider and includes services, investment, loans and remittances. Do not use the two terms as if they mean the same thing.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Exports**: goods and services sold to other countries.
+- **Imports**: goods and services bought from other countries.
+- **Foreign exchange**: foreign currency earned from exports and used to pay for imports.
+:::
+
 ## Key points
 
 - International trade arises from **uneven resources, climate, specialisation and technology**.

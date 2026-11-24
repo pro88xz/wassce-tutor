@@ -80,6 +80,14 @@ Sierra Leone is a good example of the **"resource paradox"**: a country rich in 
 Do not say "mining employs most people". **Agriculture** employs the most people; **mining** earns the most **export revenue**. Keep the two ideas separate.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Economic development**: the growth of a country's economy that raises people's incomes and standard of living.
+- **Infrastructure**: the basic services a country needs, such as roads, electricity, water and telecommunications.
+- **Dependence on mineral exports**: reliance on a few minerals for export earnings, which rise and fall with world prices.
+:::
+
 ## Key points
 
 - **Agriculture** employs most people; **mining** earns most exports; manufacturing is small and centred on **Freetown**.

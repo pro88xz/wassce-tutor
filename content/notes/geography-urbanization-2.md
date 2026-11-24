@@ -72,6 +72,15 @@ The city council and government have responded with tree-planting campaigns, imp
 "Slum" is not the same as "rural area". Slums are **urban**: overcrowded, poorly built areas inside or on the edge of cities, often lacking water, sanitation and secure land rights.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Slum**: an overcrowded area of poor housing built on unplanned land, often on steep slopes, swamps or the shore.
+- **Informal sector**: small-scale work outside official employment, such as petty trading and okada riding.
+- **Traffic congestion**: roads blocked by too many vehicles, narrow streets and street trading.
+- **Loss of farmland**: the spread of a city over the surrounding farms and forests.
+:::
+
 ## Key points
 
 - Cities have zones: **CBD, transition, residential, industrial, rural–urban fringe**.

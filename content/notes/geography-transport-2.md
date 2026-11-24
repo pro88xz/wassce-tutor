@@ -80,6 +80,15 @@ The **Sierra Leone Government Railway** was a narrow-gauge line built from **Fre
 West Africa's railways mostly run **inland to the coast**, not between countries. They were built to export minerals and cash crops, which is one reason trade between neighbouring West African countries is so small.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Trunk road**: a main road linking major towns, such as Freetown – Waterloo – Masiaka.
+- **Feeder road**: a minor road linking villages and farms to main roads and markets.
+- **West African Gas Pipeline**: the pipeline carrying natural gas from Nigeria to Ghana.
+- **Inland waterway**: a navigable river or lake, such as the Niger, Benue or Lake Volta.
+:::
+
 ## Key points
 
 - Sierra Leone: **roads** carry most traffic; **Freetown–Masiaka–Bo–Kenema** and **Masiaka–Makeni–Kabala** are key routes.

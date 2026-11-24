@@ -77,6 +77,17 @@ Most of Sierra Leone's factories are in and around **Freetown**, especially the 
 Do not just list factors. Explain **why** each one attracts industry, and name an **example**. "Power: aluminium smelting needs huge amounts of electricity, so VALCO at Tema uses hydroelectric power from Akosombo" scores far more than "power".
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Primary industry**: industry that extracts raw materials from nature, such as farming, fishing and mining.
+- **Secondary industry**: industry that processes raw materials into goods.
+- **Tertiary industry**: industry that provides services.
+- **Heavy industry**: industry using large amounts of bulky raw materials, such as iron and steel, oil refining and cement.
+- **Light industry**: industry making small, light goods, such as textiles, food processing and electronics assembly.
+- **Cottage industry** (craft industry): small-scale work done at home with simple tools, such as gara tie-dye, weaving and blacksmithing.
+:::
+
 ## Key points
 
 - Industries are **primary, secondary, tertiary, quaternary**; **heavy, light, cottage**.

@@ -77,6 +77,14 @@ Sierra Leone has a **tropical monsoon climate**, hot and humid all year:
 The rainy season is not caused by "the rain wind" alone. It is the **movement of the ITD** with the overhead Sun that lets moist monsoon air spread inland. Explain the cause, not just the wind's name.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **South-west monsoon**: the warm, moist, unstable wind from the South Atlantic Ocean that brings clouds and rain to West Africa.
+- **Inter-Tropical Discontinuity** (ITD): the meeting line of the moist monsoon air and the dry Harmattan air, which moves north and south with the overhead Sun.
+- **Rainy season**: the months when monsoon air covers the country; in Sierra Leone, May to October.
+:::
+
 ## Key points
 
 - Two air masses: **tropical maritime** (moist, south-west monsoon) and **tropical continental** (dry, Harmattan).

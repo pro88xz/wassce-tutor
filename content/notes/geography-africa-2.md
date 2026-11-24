@@ -72,6 +72,14 @@ The largest cities include **Lagos**, **Cairo** and **Kinshasa**, each with well
 The deserts of Africa are not on the Equator. They lie near the **tropics** (about 20–30° north and south), where dry, sinking air gives little rain. The **Equator** has the **wettest** climate.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Population distribution**: the way people are spread over an area; in Africa it is very uneven.
+- **Highland climate** (tropical montane): the cooler climate of the Ethiopian and East African highlands.
+- **Nile valley**: the valley and delta of the Nile, whose water and fertile silt allow farming in the desert.
+:::
+
 ## Key points
 
 - Climate belts are roughly **symmetrical about the Equator**: **equatorial → savanna → semi-arid → desert → Mediterranean**.

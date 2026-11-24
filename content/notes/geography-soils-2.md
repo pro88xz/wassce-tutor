@@ -75,6 +75,15 @@ By the end of this lesson you should be able to:
 **Loam** is not a separate kind of particle: it is a **mixture** of sand, silt and clay in balanced proportions, with humus. That balance is what makes it the best general farming soil.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Zonal soils**: mature, well-developed soils whose character is set mainly by climate and vegetation, covering large zones.
+- **Intrazonal soils**: soils shaped mainly by local factors such as poor drainage, salt or parent rock.
+- **Azonal soils**: young, immature soils without clear horizons, because material is still being added or removed.
+- **Loam**: a soil with a balanced mixture of sand, silt and clay, the best soil for most crops.
+:::
+
 ## Key points
 
 - Texture: **sandy** (drains fast, poor), **clay** (holds water, heavy), **loam** (balanced, best for most crops).

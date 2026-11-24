@@ -94,6 +94,17 @@ $\dfrac{r_B}{r_A} = \sqrt{\dfrac{10\,000}{40\,000}} = \sqrt{\dfrac{1}{4}} = \dfr
 Do not make proportional circles with radii proportional to the values. A town with four times the population needs a circle with **twice** the radius, not four times, because area grows with the **square** of the radius.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Simple bar graph**: a graph comparing amounts in separate categories or years.
+- **Multiple bar graph** (group bar graph): a graph comparing two or more sets side by side.
+- **Compound bar graph** (divided bar graph): a graph showing totals and their parts.
+- **Line graph**: a graph showing change over time.
+- **Climate graph**: a graph of temperature (line) and rainfall (bars) for one place.
+- **Proportional circles**: circles drawn at places with areas in proportion to the totals they show.
+:::
+
 ## Key points
 
 - Every graph needs a **title, labelled axes and units, a scale, a key and the source**.

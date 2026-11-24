@@ -117,6 +117,17 @@ Never give the northing first. **224477** and **477224** are completely differen
 
 Topographical maps use **conventional signs** (symbols) explained in a **key**: for example, roads in red or brown, rivers in blue, contours in brown, forests in green, settlements as black squares or shaded areas, churches and mosques, schools, post offices, railways and boundaries. Always read the key before answering questions.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Representative fraction** (RF): a scale written as a ratio, such as 1:50,000.
+- **Linear scale**: a line on a map divided into kilometres, for measuring distances.
+- **Four-figure grid reference**: a reference that identifies a whole grid square from the easting and northing of its bottom left corner.
+- **Six-figure grid reference**: a reference that pinpoints a place to the nearest tenth of a grid square.
+- **Easting**: a grid line running north–south, numbered along the bottom of the map.
+- **Northing**: a grid line running east–west, numbered up the side of the map.
+:::
+
 ## Key points
 
 - Scale: **statement**, **representative fraction**, **linear scale**; on **1:50,000**, **2 cm represent 1 km**.

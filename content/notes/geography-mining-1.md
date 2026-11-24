@@ -83,6 +83,16 @@ Mining provides most of Sierra Leone's **export earnings**. The country produces
 **Alluvial** mining recovers minerals that rivers have **already eroded and deposited** in gravels; it does not involve digging into the original rock. Diamonds mined from **kimberlite pipes** need open-pit or underground mining instead.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Open-cast mining** (open-pit mining): removing the overburden above a deposit near the surface and digging the mineral from a large pit.
+- **Overburden**: the soil and rock lying above a mineral deposit.
+- **Underground mining** (shaft mining): reaching deep deposits through a vertical shaft and horizontal tunnels.
+- **Alluvial mining** (placer mining): digging, washing and sieving sand and gravel from river beds and floodplains.
+- **Dredging**: scooping up sand and gravel from under water with a floating machine.
+:::
+
 ## Key points
 
 - Minerals: **metallic, non-metallic, fuel**. An **ore** is rock rich enough to mine.

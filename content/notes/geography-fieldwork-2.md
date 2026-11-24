@@ -102,6 +102,17 @@ The map is **drawn directly in the field** by sighting features and drawing rays
 Offsets must be measured at **right angles** to the chain line. A slanting offset puts the feature in the wrong position on the plan.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Chain survey**: a survey of a small, flat, open area by measuring distances along chain lines and offsets from them.
+- **Offset**: a short measurement at right angles from the chain line to a feature.
+- **Chainage**: the distance along the chain line from the starting station.
+- **Station**: a fixed point marked at the end of a survey line.
+- **Field book**: the book in which survey measurements are recorded.
+- **Prismatic compass**: a compass with a prism for reading bearings accurately in a survey.
+:::
+
 ## Key points
 
 - **Surveying** measures and records positions to make **plans and maps**.

@@ -80,6 +80,14 @@ ECOWAS matters greatly to **Sierra Leone**: ECOMOG troops helped to end the civi
 ECOWAS is not the same as **West Africa**. Mauritania is in West Africa but left ECOWAS in 2000, and Mali, Burkina Faso and Niger left in 2025. Check the date of any membership list you learn.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Treaty of Lagos**: the treaty signed on 28 May 1975 by 15 West African states that founded ECOWAS.
+- **Alliance of Sahel States** (AES): the alliance formed by Mali, Burkina Faso and Niger, which left ECOWAS in January 2025.
+- **ECOWAS Commission**: the secretariat that runs the daily affairs of ECOWAS, headed by a President.
+:::
+
 ## Key points
 
 - **ECOWAS** founded on **28 May 1975** (**Treaty of Lagos**); revised treaty **1993**; headquarters in **Abuja**.

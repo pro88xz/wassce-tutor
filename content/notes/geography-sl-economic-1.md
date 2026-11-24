@@ -85,6 +85,14 @@ The government's **Feed Salone** programme, launched in **2023**, aims to raise 
 Although Sierra Leone grows rice almost everywhere, it is **not self-sufficient** in rice and imports large amounts. Explain this with low upland yields, under-used swamps, labour shortages, poor roads and storage losses.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Upland rice farming**: rice grown on rain-fed slopes under bush fallowing, giving low yields.
+- **Post-harvest losses**: losses of produce after harvest from poor storage and processing.
+- **Illegal trawling**: fishing by trawlers without permission in a country's waters.
+:::
+
 ## Key points
 
 - Agriculture employs **more than half** of the workforce; most farmers are **smallholders**.

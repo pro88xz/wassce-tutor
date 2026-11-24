@@ -70,6 +70,16 @@ Settlements can also **decline** when mines close, railways shut (Sierra Leone's
 **Range** and **threshold** are different. Range is about **distance** (how far people will travel); threshold is about **numbers** (how many customers a service needs to survive).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Settlement hierarchy**: the ranking of settlements by size and number of services, from isolated dwelling, hamlet and village to town, city and conurbation.
+- **Conurbation**: towns and cities that have grown together.
+- **Sphere of influence** (hinterland): the area served by a settlement, from which people come to use its services.
+- **Range**: the maximum distance people will travel to use a service or buy a good.
+- **Threshold population**: the minimum number of people needed to support a service.
+:::
+
 ## Key points
 
 - Hierarchy: **isolated dwelling → hamlet → village → town → city → conurbation**.

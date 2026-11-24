@@ -77,6 +77,17 @@ Most upland soils in Sierra Leone are **red or yellow lateritic soils**, formed 
 A deep tropical soil is not necessarily a fertile one. Heavy leaching removes nutrients, so most of the fertility in a rainforest soil lies in the **thin humus layer** at the top. Once the forest is cleared, that fertility is quickly lost.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Soil profile**: a vertical section through the soil from the surface to the bedrock, showing its layers.
+- **Horizon**: a layer of the soil profile.
+- **Humus**: the dark organic matter in the soil, formed from decayed plants and animals.
+- **Parent material**: the rock from which a soil forms, which decides its texture and minerals.
+- **Soil texture**: the proportions of sand, silt and clay in a soil.
+- **Soil structure**: the way soil particles cling together in crumbs, blocks or plates.
+:::
+
 ## Key points
 
 - Soil: **minerals (45%), water (25%), air (25%), humus (~5%)** and living organisms.

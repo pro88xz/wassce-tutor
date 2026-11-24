@@ -75,6 +75,14 @@ Freetown's population grew rapidly during and after the **civil war (1991–2002
 Urbanization is a **percentage** change, not just more people in towns. If both towns and villages grow at the same rate, towns grow but the country does **not** urbanize.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Rural-urban migration**: the movement of people from the countryside to towns and cities.
+- **Push factors**: conditions that drive people away from rural areas, such as poverty, unemployment and lack of amenities.
+- **Pull factors**: attractions that draw people to towns, such as jobs, higher wages and better amenities.
+:::
+
 ## Key points
 
 - **Urbanization:** rising **percentage** of people in towns; **urban growth:** rising **numbers**.
