@@ -58,7 +58,8 @@ duster). Chalk colours: white, yellow, blue, pink, green, grey.
   subject · topic"), and every video ends on a branded card with wasscetutor.com.
   The board itself stays clean. Writing that would run off the board stops the
   build.
-- **The voice**: the oral English voice (`scripts/audio`): Kokoro `bf_emma`,
+- **The voice**: the oral English voice (`scripts/audio`): Kokoro `bf_emma` by default, or the male
+  `bm_george` with `VOICE = "bm_george"` in the script (Physics uses it),
   speaking from the phonemes of misaki's British dictionary. A word that is not in
   the dictionary stops the build, so the voice never guesses a word from its
   spelling. Scientific names the dictionary lacks (*sapiens*, *Linnaeus*) are

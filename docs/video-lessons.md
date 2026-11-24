@@ -22,9 +22,10 @@ another one. How to write, check and publish a video: `scripts/video/README.md`.
 
 - **Biology**: the "Premium video content with security" session, in manifest
   order: cell structure, classification, photosynthesis, then onwards.
-- **Physics**: the physics session. `content/videos/physics-waves-1.py` is skipped
-  by the publisher until it has `TITLE` and `DESCRIPTION`. Add those and a
-  designed `THUMBNAIL`, run the three checks, and merge.
+- **Physics**: the physics session, topic by topic in syllabus order (physical
+  quantities and units first), plus `physics-waves-1`. Physics speaks in the male
+  voice (`VOICE = "bm_george"` in each script); every other subject keeps the
+  default female voice.
 
 ## The rules every video follows
 
@@ -35,5 +36,6 @@ another one. How to write, check and publish a video: `scripts/video/README.md`.
    (every line heard as written), `publish.py build` (look at `qa-sheet.jpg`).
 4. **Never** put a rendered video in `public/` or in git. Merging the script to
    main publishes it, encrypted.
-5. Shared renderer changes (new drawing helpers, `PRONOUNCE` entries) are fine;
+5. Shared renderer changes (new drawing helpers, `PRONOUNCE` entries) are fine
+   (`equation()` lays out a line of working with stacked fractions);
    bump `VERSION` only when every video should be rebuilt.

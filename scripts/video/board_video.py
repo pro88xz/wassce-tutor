@@ -42,7 +42,11 @@ sys.path.insert(0, str(ROOT / "scripts/audio"))
 from oral_audio import MODELS, RATE, Lexicon, tidy  # noqa: E402
 
 W, H, FPS = 1280, 720, 25
-VOICE, SPEED = "bf_emma", 0.92
+VOICE, SPEED = "bf_emma", 0.92   # the default voice
+# The voices a script may choose with VOICE = "..." (Physics uses the male voice).
+# Both are checked by scripts/video/check_voice.py like every other line.
+VOICES = {"bf_emma": "British English, female", "bm_george": "British English, male"}
+_voice = VOICE   # the voice of the script loaded last: load() sets it
 CACHE = Path.home() / ".cache/wassce-video"
 VERSION = 2   # 2: no site address on the board; sharper encode
 
@@ -96,7 +100,7 @@ def _hand(p0, p1, wobble=1.0) -> np.ndarray:
 # ── Letters ───────────────────────────────────────────────────────────────
 _fonts: dict[str, object] = {}
 # Characters drawn from another Hershey font, and those drawn here.
-FROM_FONT = {"λ": ("greek", "l")}
+FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m")}
 CAP, BASE = -12, 9            # Hershey cap line and base line
 TRACK = 0.88                  # chalk letters sit closer than Hershey spaces them
 
@@ -329,6 +333,23 @@ def frac(num: str, den: str, x: float, y: float, size: float = 30, color: str = 
     return Action(a.strokes + b.strokes + c.strokes)
 
 
+def equation(parts, x: float, y: float, size: float = 30, color: str = "white", gap: float | None = None) -> Action:
+    """A line of working with fractions in it, each part spaced from the next:
+    equation(["f =", ("15", "10"), "= 1.5 Hz"], 110, 340) writes f = 15/10 = 1.5 Hz
+    with the fraction stacked. A part is text, or (numerator, denominator)."""
+    gap = size * 0.5 if gap is None else gap   # wide enough that "=" never runs into a fraction bar
+    strokes, cx = [], x
+    for part in parts:
+        if isinstance(part, tuple):
+            num, den = part
+            strokes += frac(num, den, cx, y, size, color).strokes
+            cx += max(text_width(num, size), text_width(den, size)) + 16 + gap
+        else:
+            strokes += write(part, cx, y, size, color).strokes
+            cx += text_width(part, size) + gap
+    return Action(strokes)
+
+
 def clear(seconds: float = 2.4) -> Action:
     """Wipe the board with the duster."""
     return Action(erase=seconds)
@@ -395,6 +416,9 @@ PRONOUNCE = {
     "vena": "vˈiːnə",
     "venae": "vˈiːniː",
     "aorta": "eɪˈɔːtə",          # the dictionary's sound ran into "the" ("jorta")
+    "Bumbuna": "bʊmbˈuːnə",      # the hydroelectric station in Sierra Leone
+    "milli": "mˈɪli",            # the prefixes the dictionary lacks on their own
+    "pico": "pˈiːkQ",
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
@@ -419,11 +443,11 @@ class Voice:
             phonemes = self.lex.sentence(_with_sounds(text))
         except (ValueError, TypeError) as e:  # misaki raises TypeError on some unknown words
             raise SystemExit(f"Cannot say {text!r}: {e}. Reword the line.")
-        key = hashlib.sha256(f"{VERSION}|{VOICE}|{SPEED}|{phonemes}".encode()).hexdigest()[:16]
+        key = hashlib.sha256(f"{VERSION}|{_voice}|{SPEED}|{phonemes}".encode()).hexdigest()[:16]
         path = CACHE / f"{key}.npy"
         if path.exists():
             return np.load(path)
-        audio, rate = self.tts.create(phonemes, voice=VOICE, speed=SPEED, lang="en-gb", is_phonemes=True, trim=False)
+        audio, rate = self.tts.create(phonemes, voice=_voice, speed=SPEED, lang="en-gb", is_phonemes=True, trim=False)
         assert rate == RATE, rate
         audio = tidy(audio, lead_s=0.05, tail_s=0.1)
         np.save(path, audio)
@@ -772,6 +796,10 @@ def load(path: Path):
             raise SystemExit(f"{path}: {name} is missing")
     if len(mod.DESCRIPTION) > 300:
         raise SystemExit(f"{path}: DESCRIPTION is {len(mod.DESCRIPTION)} characters; keep it under 300")
+    global _voice
+    _voice = getattr(mod, "VOICE", VOICE)
+    if _voice not in VOICES:
+        raise SystemExit(f"{path}: VOICE must be one of {', '.join(VOICES)}")
     return mod
 
 
