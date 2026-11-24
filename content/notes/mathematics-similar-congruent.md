@@ -137,6 +137,18 @@ $k = 1.5$, $k^3 = 3.375$. Smaller $= 2.7 \div 3.375 = 0.8$ litres.
 $\dfrac{PS}{PQ} = \dfrac{PT}{PR}$: $\dfrac38 = \dfrac{4.5}{PR} \Rightarrow PR = 12$. $TR = 12 - 4.5 = 7.5$ cm.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Congruent figures**: figures with the same shape and size.
+- **Similar figures**: figures with the same shape, with equal angles and sides in the same ratio.
+- **Corresponding sides**: sides in matching positions in two figures, opposite equal angles.
+- **Area factor**: the ratio of the areas of similar figures: the square of the length ratio, $k^2$.
+- **Scale factor**: the ratio $k$ of corresponding lengths in similar figures.
+- **Volume factor**: the ratio of the volumes of similar solids: the cube of the length ratio, $k^3$.
+- **RHS**: the congruence condition for right-angled triangles: the right angle, the hypotenuse and one other side are equal.
+:::
+
 ## Key points
 
 - **Congruent** (same shape and size): SSS, SAS, ASA/AAS, RHS. Not AAA, not SSA.

@@ -331,6 +331,13 @@ Indices capture this exponential growth precisely. Each day's population is the 
 - $2^3 + 2^3 = 8 + 8 = 16$, NOT $2^6 = 64$. The rule for adding *same powers of the same base* is different from multiplying them (see the laws in the next lesson).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Index** (power, exponent): the small raised number that tells how many times the base is multiplied by itself.
+- **Base**: the number that is raised to a power, such as 3 in $3^4$.
+:::
+
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}

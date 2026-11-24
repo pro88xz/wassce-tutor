@@ -163,6 +163,18 @@ $\dfrac26 \times \dfrac15 = \dfrac{2}{30} = \dfrac{1}{15}$.
 $0.3 \times 0.9 = 0.27$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Probability**: a number from 0 to 1 that measures how likely an event is.
+- **Sample space**: the set of all possible outcomes of an experiment.
+- **Event**: an outcome or set of outcomes of an experiment.
+- **Mutually exclusive events**: events that cannot happen together; for "or", their probabilities are added.
+- **Independent events**: events where one does not affect the other; for "and", their probabilities are multiplied.
+- **Expected frequency**: the number of times an event is expected to happen: probability times the number of trials.
+- **Tree diagram**: a diagram of branches showing the outcomes of each stage, with probabilities multiplied along the branches.
+:::
+
 ## Key points
 
 - $P = \dfrac{\text{favourable}}{\text{total}}$; $0 \le P \le 1$; $P(\text{not } A) = 1 - P(A)$.

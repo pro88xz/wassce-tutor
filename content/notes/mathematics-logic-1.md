@@ -218,6 +218,15 @@ The school's criteria are now in formal notation. Truth tables (next lesson) let
 - $\neg p \wedge q$ means $(\neg p) \wedge q$, not $\neg(p \wedge q)$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Negation**: "not $p$" ($\sim p$): true when $p$ is false, and false when $p$ is true.
+- **Conjunction**: "$p$ and $q$" ($p \wedge q$): true only when both are true.
+- **Disjunction**: "$p$ or $q$" ($p \vee q$): true when at least one is true.
+- **Compound statement**: a statement made by joining simple statements with connectives such as and, or, not and if…then.
+:::
+
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}

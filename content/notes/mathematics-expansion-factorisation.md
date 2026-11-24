@@ -162,6 +162,17 @@ $$(7.5 + 2.5)(7.5 - 2.5) = 10 \times 5 = 50$$
 $$x(y - 3) + 2(y - 3) = (y - 3)(x + 2)$$
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Expanding**: removing brackets by multiplying every term inside by every term outside.
+- **Factorising**: writing an expression as a product of factors; the reverse of expanding.
+- **Common factor**: a factor shared by every term, which should always be taken out first.
+- **Difference of two squares**: an expression of the form $a^2 - b^2$, which factorises as $(a + b)(a - b)$.
+- **Quadratic trinomial**: a three-term expression of the form $ax^2 + bx + c$.
+- **Factorising by grouping**: factorising four terms by pairing them so that each pair has a common factor.
+:::
+
 ## Key points
 
 - **Expand** two brackets by multiplying every term by every term (FOIL).

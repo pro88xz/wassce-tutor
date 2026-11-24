@@ -139,6 +139,17 @@ $$s(t - 1) = t + 1 \;\Rightarrow\; st - s = t + 1 \;\Rightarrow\; st - t = s + 1
 When $s = 3$: $t = \dfrac{4}{2} = 2$. (Check: $\dfrac{2 + 1}{2 - 1} = 3$ ✓)
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Subject of a formula**: the single letter on its own on one side of a formula, such as $v$ in $v = u + at$.
+- **Changing the subject**: rearranging a formula so that a different letter stands alone, by doing the same inverse operations to both sides.
+- **Inverse operation**: the operation that undoes another, such as subtraction for addition or squaring for a square root.
+- **Algebraic formula**: a rule written in letters that connects quantities, such as $A = \pi r^2$.
+- **Collecting terms**: bringing every term that contains the new subject to one side, then factorising it out, when the subject appears in two places.
+- **Square root of both sides**: taking the square root of both sides to undo a square; the answer may need both the positive and the negative root.
+:::
+
 ## Key points
 
 - Undo operations in **reverse order**, doing the same to **both sides**.

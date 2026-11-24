@@ -148,6 +148,18 @@ $\dfrac{140}{360} \times 3600 = $ NLe 1400.
 $3 + 7 = 10$ students; $\dfrac{10}{40} \times 100 = 25\%$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Qualitative data**: data described in words, such as colours or names.
+- **Discrete data**: data that is counted, in whole numbers.
+- **Continuous data**: data that is measured and can take any value in a range.
+- **Pie chart**: a circle divided into sectors whose angles are each frequency as a fraction of the total, times $360°$.
+- **Histogram**: a chart of bars with no gaps, drawn between the class boundaries.
+- **Frequency polygon**: the graph made by joining the midpoints of the tops of histogram bars.
+- **Class boundaries**: the values that separate one class from the next, halfway between the classes.
+:::
+
 ## Key points
 
 - Data can be **qualitative**, **discrete** or **continuous**.

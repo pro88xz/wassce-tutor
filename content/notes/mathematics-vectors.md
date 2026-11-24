@@ -150,6 +150,17 @@ $\overrightarrow{AB} = \mathbf{b} - \mathbf{a}$. $\overrightarrow{ON} = \mathbf{
 $\begin{pmatrix} 3 \\ 6 \end{pmatrix} = \tfrac32\begin{pmatrix} 2 \\ 4 \end{pmatrix}$, so $m = 2$. (Or $\dfrac{m}{3} = \dfrac46$.)
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Vector**: a quantity with both size and direction.
+- **Scalar**: a quantity with size only.
+- **Column vector**: a vector written as two numbers in a column: the movement across, then up.
+- **Magnitude**: the size of a vector: $\sqrt{x^2 + y^2}$.
+- **Position vector**: the vector from the origin to a point.
+- **Collinear points**: points that lie on one straight line, shown by parallel vectors that share a point.
+:::
+
 ## Key points
 
 - **Vector** = size + direction; **column vector** $\begin{pmatrix} x \\ y \end{pmatrix}$ = across, up.

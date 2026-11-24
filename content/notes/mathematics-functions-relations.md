@@ -162,6 +162,18 @@ $y = 4x - 7 \Rightarrow x = \dfrac{y + 7}{4}$, so **$h^{-1}(x) = \dfrac{x + 7}{4
 $2x + 6 = 0 \Rightarrow$ **$x = -3$**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Relation**: any rule that links members of one set to members of another.
+- **Domain**: the set of inputs of a relation or function.
+- **Range**: the set of outputs of a function.
+- **One-to-one relation**: a relation in which each input has one output and each output comes from one input.
+- **Many-to-one relation**: a relation in which several inputs share one output.
+- **Composite function**: a function made by applying one function and then another, such as $f(g(x))$.
+- **Inverse function**: the function $f^{-1}$ that reverses $f$, taking each output back to its input.
+:::
+
 ## Key points
 
 - A **function** gives **exactly one output** for each input: one-to-one or many-to-one.

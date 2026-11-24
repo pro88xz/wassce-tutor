@@ -183,6 +183,16 @@ Let the younger get $x$: $x + (x + 300) = 1200 \Rightarrow 2x = 900 \Rightarrow 
 **Younger: NLe 450; elder: NLe 750.**
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Simultaneous equations**: two or more equations with the same unknowns, solved together.
+- **Elimination method**: solving simultaneous equations by adding or subtracting them so that one unknown disappears.
+- **Substitution method**: solving simultaneous equations by making one unknown the subject of one equation and putting it into the other.
+- **Clearing fractions**: multiplying every term of an equation by the LCM of the denominators so that no fractions remain.
+- **Forming an equation**: writing the information in a word problem as an equation in the unknown.
+:::
+
 ## Key points
 
 - Do the **same** to both sides; **undo** operations in reverse order.

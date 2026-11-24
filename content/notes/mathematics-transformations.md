@@ -158,6 +158,18 @@ A rotation of $180°$ about the origin. (Equivalently, an enlargement with scale
 The point is 2 units right of $x = 3$, so its image is 2 units left: $(1, 2)$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Object**: the shape before a transformation.
+- **Image**: the shape after a transformation.
+- **Reflection**: a transformation that flips a shape in a mirror line.
+- **Rotation**: a transformation that turns a shape about a centre through an angle, in a stated direction.
+- **Translation**: a transformation that slides a shape without turning it, described by a vector.
+- **Enlargement**: a transformation that changes the size of a shape from a centre by a scale factor.
+- **Scale factor**: the number by which an enlargement multiplies every length.
+:::
+
 ## Key points
 
 - **Reflection**: mirror line. **Rotation**: centre, angle, direction. **Translation**: vector. **Enlargement**: centre, scale factor.

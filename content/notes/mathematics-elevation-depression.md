@@ -134,6 +134,15 @@ $\dfrac{15}{\tan 35°} + \dfrac{15}{\tan 50°} = 21.42 + 12.59 = 34.0$ m.
 Let the nearer distance be $x$: $h = x\sqrt3$ and $h = \dfrac{x + 30}{\sqrt3}$. So $3x = x + 30$, giving $x = 15$, and $h = 15\sqrt3 = 26.0$ m.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Line of sight**: the straight line from the observer's eye to the object.
+- **Horizontal**: the level line from the observer, from which angles of elevation and depression are measured.
+- **Clinometer**: an instrument for measuring angles of elevation and depression.
+- **Eye level**: the height of the observer's eye above the ground, added to the calculated height when it is given.
+:::
+
 ## Key points
 
 - **Elevation**: up from the horizontal. **Depression**: down from the horizontal.

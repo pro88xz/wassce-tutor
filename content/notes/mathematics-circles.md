@@ -133,6 +133,18 @@ $3y = y + 40$ (angles in the same segment) $\Rightarrow y = 20°$.
 $OA = OB$ (radii), so $\angle OBA = 28°$. $\angle AOB = 180 - 56 = 124°$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Radius**: a line from the centre to the circle.
+- **Diameter**: a chord through the centre; twice the radius.
+- **Chord**: a straight line joining two points on the circle.
+- **Arc**: part of the circumference.
+- **Sector**: the region between two radii and an arc.
+- **Tangent**: a straight line that touches the circle at exactly one point.
+- **Cyclic quadrilateral**: a quadrilateral whose four vertices lie on a circle; its opposite angles add up to $180°$.
+:::
+
 ## Key points
 
 - Know the parts: **radius, diameter, chord, arc, sector, segment, tangent**.

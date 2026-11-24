@@ -97,6 +97,17 @@ An argument is **valid** if the conclusion must be true whenever all the premise
 "If a student passes WASSCE Mathematics with a credit, the student can apply to Fourah Bay College for engineering. Aminata cannot apply for engineering. Therefore Aminata did not get a credit in Mathematics." This uses **modus tollens**, so it is valid (given the premises). But "Aminata can apply for engineering, so she got a credit in Mathematics" would be **affirming the consequent**: invalid, since the premise does not say a credit is the only route.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Implication**: "if $p$ then $q$" ($p \to q$): false only when $p$ is true and $q$ is false.
+- **Truth table**: a table that lists the truth value of a statement for every combination of truth values of its parts.
+- **Tautology**: a statement that is always true.
+- **Contradiction**: a statement that is always false.
+- **Converse**: the statement $q \to p$ formed from $p \to q$; it is not equivalent to it.
+- **Contrapositive**: the statement $\sim q \to \sim p$, which is equivalent to $p \to q$.
+:::
+
 ## Key points
 
 - $\wedge$ true only if both true; $\vee$ false only if both false; $\to$ false only for **T → F**.

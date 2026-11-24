@@ -119,6 +119,16 @@ Three-quarters of a circle of radius 5 m round the corner (the shed blocks the o
 **Two** points (the two circles cross twice, once on each side of AB). Both lie on the perpendicular bisector of AB. The midpoint of AB is 5 cm from A, so each point is $\sqrt{6^2 - 5^2} = \sqrt{11} \approx 3.3$ cm from AB.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Equidistant**: at equal distances from two points or two lines.
+- **Intersecting loci**: the points that satisfy two or more loci at the same time, where the loci cross.
+- **Region**: an area of points that satisfy a condition, such as inside a circle or on one side of a bisector.
+- **Locus of points a fixed distance from a point**: a circle with that point as its centre.
+- **Locus of points a fixed distance from a line**: two lines parallel to it, one on each side.
+:::
+
 ## Key points
 
 - A **locus** is the set of points that obey a rule.

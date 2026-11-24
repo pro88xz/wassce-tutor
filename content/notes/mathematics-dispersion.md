@@ -163,6 +163,16 @@ The mean **increases by 5**; the standard deviation is **unchanged** (every valu
 $n = 7$: $Q_1$ is the 2nd value (7), $Q_3$ the 6th (15). IQR $= 8$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Dispersion**: the spread of data about its average.
+- **Range**: the largest value minus the smallest.
+- **Variance**: the mean of the squared deviations from the mean; the square of the standard deviation.
+- **Standard deviation**: a measure of spread: the square root of the mean of the squared deviations from the mean.
+- **Consistent data**: data with a small spread, shown by a small standard deviation.
+:::
+
 ## Key points
 
 - An average alone does not describe data; you also need its **spread**.

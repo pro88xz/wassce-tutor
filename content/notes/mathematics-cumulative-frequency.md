@@ -135,6 +135,16 @@ About 38 scored 50 or less (cumulative frequency at 50.5 is 38), so about $40 - 
 IQR $= 28$; semi-IQR $= 14$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Ogive**: the cumulative frequency curve, plotted against the upper class boundaries.
+- **Quartiles**: the values a quarter ($Q_1$) and three quarters ($Q_3$) of the way through the ordered data.
+- **Interquartile range**: the upper quartile minus the lower quartile, $Q_3 - Q_1$.
+- **Semi-interquartile range**: half of the interquartile range.
+- **Percentile**: the value below which a given percentage of the data lies.
+:::
+
 ## Key points
 
 - **Cumulative frequency** = running total of frequencies; the last value equals the total.

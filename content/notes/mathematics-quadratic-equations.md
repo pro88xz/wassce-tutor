@@ -188,6 +188,18 @@ Sum $= 3$, product $= -10$: **$x^2 - 3x - 10 = 0$.**
 $b^2 - 4ac = 9 - 32 = -23 < 0$: **no real roots.**
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Quadratic equation**: an equation of the form $ax^2 + bx + c = 0$, where $a \ne 0$.
+- **Completing the square**: rewriting a quadratic so that it contains a perfect square, by adding $\left(\tfrac{b}{2}\right)^2$ to both sides.
+- **Quadratic formula**: the formula $x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, which solves any quadratic equation.
+- **Discriminant**: the expression $b^2 - 4ac$, which shows how many real roots a quadratic has.
+- **Roots of an equation**: the values of the unknown that make the equation true.
+- **Factorisation method**: solving a quadratic by writing it as two brackets whose product is zero, so that one bracket must be zero.
+- **No real roots**: the case when the discriminant is negative and the graph does not cross the $x$-axis.
+:::
+
 ## Key points
 
 - Rearrange to $ax^2 + bx + c = 0$ first.

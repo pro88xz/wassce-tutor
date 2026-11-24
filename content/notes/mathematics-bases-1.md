@@ -114,6 +114,14 @@ $$0.101_2 = \tfrac{1}{2} + 0 + \tfrac{1}{8} = 0.625$$
 Mobile money, ATMs and the phones Sierra Leoneans use every day store every number, picture and message in **binary**. A phone number such as 76 is stored as $1001100_2$, because $64 + 8 + 4 = 76$.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Number base**: the number of different digits a counting system uses, and the value of each place compared with the one to its right.
+- **Place value**: the value of a digit's position: units, then the base, then the base squared, and so on.
+- **Binary** (base two): the number system that uses only the digits 0 and 1.
+:::
+
 ## Key points
 
 - In base $b$, place values are powers of $b$, and digits run from $0$ to $b - 1$.

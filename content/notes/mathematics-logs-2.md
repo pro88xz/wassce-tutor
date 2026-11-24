@@ -108,6 +108,17 @@ The mantissa 0.2466 is the log of 1.765, and the characteristic $\bar{1}$ places
 **Check:** $3.42 \times 0.0516 = 0.176\,472$. ✓
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Characteristic**: the whole-number part of a common logarithm, set by the position of the decimal point.
+- **Mantissa**: the decimal part of a common logarithm, read from four-figure tables.
+- **Bar notation**: a bar over a negative characteristic, as in $\bar{2}.7126$, which means $-2 + 0.7126$.
+- **Product law**: the logarithm of a product is the sum of the logarithms: $\log ab = \log a + \log b$.
+- **Quotient law**: the logarithm of a quotient is the difference of the logarithms: $\log \dfrac{a}{b} = \log a - \log b$.
+- **Power law**: the logarithm of a power is the index times the logarithm: $\log a^n = n \log a$.
+:::
+
 ## Key points
 
 - **Product:** add logs. **Quotient:** subtract logs. **Power:** bring the index to the front.

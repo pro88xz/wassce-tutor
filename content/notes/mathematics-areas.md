@@ -140,6 +140,16 @@ Mat $= 4$ m²; table $= \tfrac{22}{7} \times 0.49 = 1.54$ m². Uncovered $= 4 - 
 $3.5 \times 10\,000 = 35\,000$ m².
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Area of a sector**: the area of a slice of a circle: $\dfrac{\theta}{360} \times \pi r^2$.
+- **Composite shape**: a shape made of simpler shapes, whose area is found by adding the parts or subtracting the holes.
+- **Trapezium**: a four-sided shape with one pair of parallel sides; its area is half the sum of the parallel sides times the height.
+- **Area**: the amount of space inside a flat shape.
+- **Parallelogram**: a four-sided shape with two pairs of parallel sides; its area is base times perpendicular height.
+:::
+
 ## Key points
 
 - Know the formulas: rectangle, triangle ($\tfrac12 bh$ and $\tfrac12 ab\sin C$), parallelogram, trapezium, circle, sector.

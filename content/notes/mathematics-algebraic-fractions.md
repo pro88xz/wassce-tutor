@@ -126,6 +126,17 @@ $x = 3(x - 2) \Rightarrow x = 3x - 6 \Rightarrow 2x = 6 \Rightarrow$ **$x = 3$**
 $$\frac{(x + 1) - (x - 1)}{(x - 1)(x + 1)} = \frac{2}{x^2 - 1}$$
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Algebraic fraction**: a fraction with letters in its numerator, its denominator or both.
+- **Lowest common denominator**: the simplest expression that every denominator divides into, used to add or subtract algebraic fractions.
+- **Undefined**: having no value: an algebraic fraction is undefined when its denominator is zero.
+- **Cancelling**: dividing the numerator and denominator by a common factor; terms that are added must never be cancelled.
+- **Dividing by a fraction**: multiplying by the fraction turned upside down.
+- **Rejected solution**: a solution that makes a denominator zero, which must be rejected.
+:::
+
 ## Key points
 
 - **Factorise** first; cancel only **common factors**, never added terms.

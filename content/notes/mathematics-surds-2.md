@@ -92,6 +92,15 @@ Rationalise first: $\dfrac{1}{\sqrt{2}} = \dfrac{\sqrt{2}}{2} = \dfrac{1.414}{2}
 Rationalising turns a hard division by $1.414$ into an easy division by 2.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Like surds**: surds with the same number under the root sign, such as $2\sqrt{3}$ and $5\sqrt{3}$; only like surds can be added or subtracted.
+- **Simplest form of a surd**: a surd with the largest perfect-square factor taken out, such as $\sqrt{12} = 2\sqrt{3}$.
+- **Rationalising the denominator**: rewriting a fraction so that there is no surd in the denominator.
+- **Conjugate**: the same two-term surd expression with the middle sign changed, such as $a - \sqrt{b}$ for $a + \sqrt{b}$; multiplying by it removes the surd.
+:::
+
 ## Key points
 
 - **Simplify:** take out the largest perfect-square factor.

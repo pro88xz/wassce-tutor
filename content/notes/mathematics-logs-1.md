@@ -327,6 +327,14 @@ So her money doubles in about $14$ years. This kind of growth calculation — us
 - $\log 0.01 = -2$ (because $0.01 = 10^{-2}$). The log of a number less than $1$ is negative.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Logarithm**: the power to which a base must be raised to give a number: $\log_a N = x$ means $a^x = N$.
+- **Common logarithm**: a logarithm to base 10, written $\log N$.
+- **Argument**: the number whose logarithm is taken, such as 32 in $\log_2 32$; it must be positive.
+:::
+
 ## WASSCE examination focus
 
 :::callout{type=waec-tests}
