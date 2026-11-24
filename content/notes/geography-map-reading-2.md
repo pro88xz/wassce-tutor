@@ -109,6 +109,17 @@ Gradient $= \dfrac{200}{4\,000} = \dfrac{1}{20}$, which is **1 in 20**.
 
 Two points are **intervisible** if they can be seen from each other. Draw a cross-section between them and join the two points with a straight line: if any higher land rises above the line, they are **not intervisible**. Convex slopes often block the view; concave slopes do not.
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Contour**: a line on a map joining places of equal height.
+- **Spot height**: a dot on a map with the exact height written beside it.
+- **Spur**: a tongue of high land; its contours form V or U shapes pointing to lower ground.
+- **Ridge**: a long, narrow hill shown by long, closed contours.
+- **Escarpment**: a steep slope on one side of a hill, with a gentle slope on the other.
+- **Cross-section**: a side view of the land along a line, drawn from the contours.
+:::
+
 ## Key points
 
 - Relief is shown by **contours**, **spot heights**, **trig stations**, **layer colouring**, **hill shading**, **hachures**.

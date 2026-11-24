@@ -70,6 +70,16 @@ Much of Sierra Leone's original forest has been replaced by **farm bush**, the l
 The harmattan is **dry**, not wet. It is the north-east trade wind from the Sahara, and it brings **dust, haze, low humidity and cool nights** in the dry season.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Relief rain**: rain formed when moist air is forced to rise over mountains, as over the Freetown Peninsula.
+- **Lateritic soils** (ferralitic soils): the leached, iron-rich soils of the uplands across most of Sierra Leone.
+- **Alluvial soils**: soils deposited by rivers in valleys and floodplains.
+- **Bolilands**: seasonally flooded swamp grassland in the north of Sierra Leone.
+- **Montane grassland**: grassland on the high slopes of the Loma Mountains.
+:::
+
 ## Key points
 
 - Climate: **tropical**, **25–28 °C**, small range; **rainy season May–October** (south-west monsoon); **dry season November–April** (harmattan).

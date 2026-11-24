@@ -94,6 +94,15 @@ By the end of this lesson you should be able to:
 Tourism is an **invisible** export: the country earns foreign money for a **service**, not for goods leaving the country. Tourism earnings appear in the **balance of payments**, not the balance of trade.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Tourism**: travelling for pleasure, business or culture, and the services provided for visitors.
+- **Ecotourism**: nature tourism to see wildlife and forests, such as at Tiwai, Gola and Outamba-Kilimi.
+- **Heritage tourism**: visiting historical sites, such as Bunce Island.
+- **Diaspora tourism** (roots tourism): visits by people of African descent tracing their history.
+:::
+
 ## Key points
 
 - Types: **beach, ecotourism, heritage, cultural, adventure, business, diaspora**.

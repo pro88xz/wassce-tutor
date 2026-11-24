@@ -80,6 +80,14 @@ It runs from the **Red Sea** through **Ethiopia** and **Kenya** to **Mozambique*
 Africa's rivers are **not** easy highways into the interior. Waterfalls and rapids near the coast, where rivers drop off the plateau, blocked ships for centuries; this is one reason the interior was explored late by outsiders.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **High Africa**: the east and south of Africa, mostly over 1,000 m: the East African Plateau, the Ethiopian Highlands and the South African Plateau.
+- **Low Africa**: the north and west of Africa, mostly below 1,000 m: the Sahara, West Africa and the Congo Basin.
+- **Fold mountains**: mountains formed when layers of rock are pushed up into folds, such as the Atlas Mountains.
+:::
+
 ## Key points
 
 - Africa: **second-largest continent**, about **30 million km²**, **54 countries**, about **1.5 billion people**; from about **37°N to 35°S**, crossed by the **Equator**.

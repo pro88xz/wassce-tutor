@@ -95,6 +95,14 @@ In **Sierra Leone**, **road** transport carries most passengers and goods. Iron 
 Do not say rail is "always cheaper" than road. Rail is cheaper for **heavy, bulky goods over long distances**; for short journeys and small loads, road is usually cheaper and more convenient.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Mode of transport**: a way of moving people and goods: road, rail, water, air or pipeline.
+- **Door-to-door service**: carrying goods or people directly from start to destination, the main advantage of road transport.
+- **Pipeline**: a long pipe that carries liquids and gases, such as oil and natural gas.
+:::
+
 ## Key points
 
 - Modes: **road, rail, water, air, pipeline**.

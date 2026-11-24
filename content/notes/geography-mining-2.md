@@ -74,6 +74,16 @@ Gold is mined both by **artisanal miners** in river gravels in several districts
 Do not write only about benefits or only about problems. "Assess the effects of mining" means **both**, and the best answers balance economic gains against social and environmental costs.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Rutile**: titanium dioxide, used in paint pigments and welding rods, mined from mineral sands in Moyamba and Bonthe districts.
+- **Bauxite**: the ore of aluminium, mined in the Mokanji Hills of Moyamba District.
+- **Marampa**: the iron-ore mine in Port Loko District, worked from the 1930s, whose ore went by railway to Pepel.
+- **Tonkolili**: the very large iron-ore deposits developed from 2011, with a railway to Pepel port.
+- **Siltation**: the filling of rivers with fine mud washed from mining sites.
+:::
+
 ## Key points
 
 - **Diamonds:** Kono (found 1930), mostly alluvial; kimberlite near Koidu; "blood diamonds" and the **Kimberley Process (2003)**.

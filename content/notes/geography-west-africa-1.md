@@ -80,6 +80,15 @@ West Africa is mostly a **plateau** of old, hard rocks between about **300 and 6
 The **River Niger** rises in the **Guinea Highlands** very close to Sierra Leone's north-eastern border, yet it flows away from the sea, north-east into the Sahel, before turning south to reach the ocean in Nigeria, over 4,000 km later.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Fouta Djallon**: the highlands of Guinea, source of the Niger, Senegal and Gambia rivers, called the "water tower of West Africa".
+- **Jos Plateau**: the high plateau of central Nigeria, about 1,200 m, with tin mining and a cool climate.
+- **Inland Niger Delta**: the wide floodplain of the River Niger in Mali.
+- **Lagoon**: a shallow stretch of water cut off from the sea by a sand bar.
+:::
+
 ## Key points
 
 - West Africa: **16 countries**, about **6 million km²**, **over 400 million people** (half in Nigeria).

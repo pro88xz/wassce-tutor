@@ -75,6 +75,14 @@ People cluster where there is **reliable rainfall**, **fertile soil**, **jobs**,
 The harmattan does not blow "from the sea". It is the **north-east trade wind** from the **Sahara**, and it brings dry, dusty air. The **south-west monsoon** is the wind from the sea that brings rain.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Inter-Tropical Convergence Zone** (ITCZ): the zone where the moist monsoon and the dry Harmattan meet; its movement north and south controls the rainy season.
+- **Sahel**: the semi-arid belt south of the Sahara, across Senegal, Mali, Burkina Faso, Niger and northern Nigeria.
+- **Harmattan**: the dry, dusty north-east wind from the Sahara that blows over West Africa in the dry season.
+:::
+
 ## Key points
 
 - The **ITCZ** moves north in the northern summer (about **18–20°N** in July) and south in the winter (about **5–8°N** in January).

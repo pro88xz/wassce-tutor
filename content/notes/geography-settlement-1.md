@@ -77,6 +77,17 @@ Today the same site limits the city: squeezed between the sea and steep mountain
 Do not mix up **site** and **situation**. Site is the ground the settlement stands on; situation is where it is relative to other places. "Freetown has a deep harbour" describes its site; "Freetown is at the coastal end of the main highway to Bo and Kenema" describes its situation.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Nucleated settlement** (clustered): buildings grouped closely around a centre such as a market, chief's compound, crossroads or well.
+- **Dispersed settlement** (scattered): buildings spread out, each family on its own farm.
+- **Linear settlement** (ribbon): buildings stretched in a line, as along a road, river or coast.
+- **Wet-point site**: a settlement site with a reliable source of water from a river, spring or well.
+- **Dry-point site**: a settlement site on raised land, safe from flooding in a swampy area.
+- **Bridging point**: a place where a river can be crossed, which often becomes a route centre.
+:::
+
 ## Key points
 
 - **Rural** settlements: small, primary activities; **urban**: large, secondary and tertiary activities.

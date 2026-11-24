@@ -81,6 +81,15 @@ Features of the drainage:
 Do not say Sierra Leone's rivers flow north. Almost all flow **south-westwards** to the Atlantic, because the land rises towards the north-east.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Coastal plain**: the low, flat belt along Sierra Leone's coast, with mangrove swamps along estuaries and creeks.
+- **Freetown Peninsula**: a block of mountains rising steeply from the sea, up to Picket Hill (888 m), with Freetown on its northern slopes.
+- **Inselberg**: an isolated hill rising from a plain, such as the Kangari Hills.
+- **Loma Mountains**: the mountains of the north-east of Sierra Leone, where Bintumani (1,945 m) is the highest peak.
+:::
+
 ## Key points
 
 - Sierra Leone lies between about **7°N–10°N** and **10°W–13°W**; area about **71,740 km²**; bordered by **Guinea** and **Liberia**.

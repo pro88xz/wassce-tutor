@@ -93,6 +93,16 @@ Sierra Leone has examples of nearly all of West Africa's lowland vegetation type
 Rainforest trees are tall and the forest is dense, but its **floor has little undergrowth**, because so little light gets through the canopy. Dense, tangled undergrowth is typical of **secondary forest** that has grown back after clearing.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Tropical rainforest**: dense evergreen forest of tall hardwoods in layers, with buttress roots and lianas, where rainfall is over 1,500–2,000 mm in most months.
+- **Evergreen**: trees shed their leaves at different times, so the forest is always green.
+- **Buttress roots**: large roots that spread out from the base of tall rainforest trees and help to support them.
+- **Lianas**: woody climbing plants that hang from rainforest trees.
+- **Secondary growth**: the vegetation that grows back after natural vegetation has been cleared, such as farm bush.
+:::
+
 ## Key points
 
 - Vegetation depends on **climate**, soil, relief, drainage, human activity and animals.

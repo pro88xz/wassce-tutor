@@ -87,6 +87,16 @@ Community forest projects around Gola link conservation with income, for example
 Savanna does not always have the same grass and trees. Grass is **tallest and trees most numerous** in the wetter **Guinea savanna**, and grass gets **shorter and trees fewer** northwards into the Sudan and Sahel savanna.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Mangrove swamp**: salt-tolerant trees growing on coastal tidal mud along estuaries and creeks.
+- **Guinea savanna**: tall grass with scattered trees, where rainfall is 1,000–1,500 mm and the dry season lasts 4–5 months.
+- **Sudan savanna**: shorter grass with fewer trees, where rainfall is 500–1,000 mm and the dry season lasts 6–8 months.
+- **Sahel savanna**: short grass and thorn scrub, where rainfall is 250–500 mm and the dry season lasts 8–9 months.
+- **Deforestation**: the clearing of forest by farming, logging, charcoal burning, mining, settlement and roads.
+:::
+
 ## Key points
 
 - West African belts: **mangrove → rainforest → Guinea savanna → Sudan savanna → Sahel savanna → desert**, following **decreasing rainfall**.

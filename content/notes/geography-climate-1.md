@@ -61,6 +61,17 @@ Freetown's graph shows a **tropical monsoon** pattern: about **3,300 mm** of rai
 Do not identify a climate from temperature alone. The **rainfall pattern**, whether rain falls all year or in one season, and the total, is usually the key clue.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Convectional rain**: rain formed when strong heating of the ground makes moist air rise, cool and condense, often every afternoon near the Equator.
+- **Equatorial climate**: a climate hot all year with rain in every month and a small temperature range, about 0–5° N and S of the Equator.
+- **Tropical continental climate** (savanna climate): a climate with a wet season when the overhead Sun is near and a long dry season, about 5–15° N and S.
+- **Tropical monsoon climate**: a climate of coasts where the winds reverse with the seasons, bringing very heavy rain, as on the coast of Sierra Leone.
+- **Hot desert climate**: a very dry climate with high daytime temperatures, about 15–30° N and S, often on west coasts.
+- **Mediterranean climate**: a climate of hot, dry summers and mild, wet winters, about 30–40° on the west sides of continents.
+:::
+
 ## Key points
 
 - **Equatorial:** hot (26–27 °C), wet all year, tiny range; rainforest.

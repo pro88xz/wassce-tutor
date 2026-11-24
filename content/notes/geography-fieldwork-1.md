@@ -95,6 +95,15 @@ Notebook and pencils, record sheets, a clipboard, maps, a **compass**, a **measu
 Do not jump straight to collecting data. Examiners reward the **planning stages**: clear aims, a reconnaissance visit, permission, prepared record sheets and a sampling method.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Hypothesis**: a statement to test in fieldwork, such as "the river gets wider downstream".
+- **Reconnaissance survey** (pilot survey): a first visit to an area to check access, safety and what can be studied.
+- **Questionnaire**: a list of questions prepared to collect information from people.
+- **Observation**: looking carefully at features and recording what is seen.
+:::
+
 ## Key points
 
 - Fieldwork is studying geography **in the real environment** by observing, measuring and recording.

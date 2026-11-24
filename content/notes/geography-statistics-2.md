@@ -93,6 +93,18 @@ A class could draw a **choropleth map of Sierra Leone's districts** shaded by po
 Do not use **different colours** for the classes of a choropleth map. Use **shades of one colour**, getting darker as the values rise, so the reader can see "more" and "less" at a glance.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Dot map**: a map on which each dot represents a fixed value and is placed where the things actually are.
+- **Choropleth map** (shading map): a map on which each area is shaded by class, darker for higher values.
+- **Isopleth map** (isoline map): a map with lines joining places of equal value.
+- **Flow map**: a map with arrows or bands along routes, their width proportional to the amount moved.
+- **Isohyet**: a line on a map joining places with equal rainfall.
+- **Isotherm**: a line on a map joining places with equal temperature.
+- **Isobar**: a line on a map joining places with equal atmospheric pressure.
+:::
+
 ## Key points
 
 - **Dot maps** show distribution; **choropleth maps** shade areas by class; **isopleth maps** join equal values; **flow maps** show movement with proportional widths.

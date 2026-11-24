@@ -76,6 +76,18 @@ Farming in Sierra Leone is mostly **small-scale bush fallowing** by smallholders
 **Shifting cultivation** and **bush fallowing** are not the same. In shifting cultivation the farmer (and often the village) **moves** to new land; in bush fallowing the village is **permanent** and only the farm plots rotate.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Subsistence farming**: farming mainly for the family's own food, on a small scale with simple tools.
+- **Commercial farming**: farming mainly for sale, on a larger scale with modern inputs.
+- **Shifting cultivation**: slash-and-burn farming in which farmers clear land, farm it for a few years, then move on.
+- **Bush fallowing**: farming from a permanent village with plots rotated and rested, with fallows growing shorter.
+- **Mixed farming**: growing crops and keeping animals together on the same farm.
+- **Plantation agriculture**: large-scale growing of one export crop, such as rubber in Liberia or oil palm in Sierra Leone.
+- **Peasant cash crops**: export crops grown by small farmers, such as cocoa in Ghana and Côte d'Ivoire and groundnuts in Senegal.
+:::
+
 ## Key points
 
 - **Subsistence** (own food, small, simple tools) vs **commercial** (for sale, larger, modern inputs).
