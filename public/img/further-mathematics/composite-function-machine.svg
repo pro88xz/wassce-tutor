@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" aria-labelledby="t d" font-family="Arial, Helvetica, sans-serif">
+<title id="t">A composite function as two machines</title>
+<desc id="d">The composite function f∘g as two machines in a row. The input x = 3 goes into g(x) = x² + 1 first, giving 10; that output goes into f(x) = 2x − 5, giving 15. So fg(3) = f(g(3)) = f(10) = 15: the function written nearer x acts first.</desc>
+<defs><marker id="a0f172a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0f172a"/></marker><marker id="a0f172as" viewBox="0 0 10 10" refX="1.5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#0f172a"/></marker></defs>
+<rect width="800" height="330" rx="20" fill="#f8fafc"/>
+<text x="400.0" y="34.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">fg(x) = f(g(x)): g acts first</text>
+<rect x="30.0" y="125.0" width="90.0" height="70.0" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="75.0" y="160.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">x = 3</text>
+<line x1="122.0" y1="160.0" x2="188.0" y2="160.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="190.0" y="105.0" width="170.0" height="110.0" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<text x="275.0" y="140.0" font-size="24" fill="#2563eb" text-anchor="middle" dominant-baseline="middle" font-weight="bold">g</text>
+<text x="275.0" y="178.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">x² + 1</text>
+<line x1="362.0" y1="160.0" x2="438.0" y2="160.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<text x="400.0" y="140.0" font-size="19" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">10</text>
+<rect x="440.0" y="105.0" width="170.0" height="110.0" rx="10" fill="#fef3c7" stroke="#ea580c" stroke-width="3"/>
+<text x="525.0" y="140.0" font-size="24" fill="#ea580c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">f</text>
+<text x="525.0" y="178.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2x − 5</text>
+<line x1="612.0" y1="160.0" x2="678.0" y2="160.0" stroke="#0f172a" stroke-width="2.6" stroke-linecap="round" marker-end="url(#a0f172a)"/>
+<rect x="680.0" y="125.0" width="80.0" height="70.0" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+<text x="720.0" y="160.0" font-size="21" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">15</text>
+<text x="400.0" y="262.0" font-size="19" fill="#0f172a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">fg(3) = f(g(3)) = f(10) = 2(10) − 5 = 15</text>
+<text x="400.0" y="296.0" font-size="16" fill="#475569" text-anchor="middle" dominant-baseline="middle" font-weight="normal">gf(3) = g(f(3)) = g(1) = 2: the order matters</text>
+</svg>

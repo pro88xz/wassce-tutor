@@ -357,3 +357,20 @@ jobs:
           # Questions offered never carry the answer.
           LEAK="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select count(*) from public.email_student_extras(array(select id from public.profiles order by created_at desc limit 200)) e, jsonb_array_elements(e.question_options) o where o ? 'is_correct';" | tr -d '[:space:]')"
           test "$LEAK" = "0" || { echo "Question options must not carry the answer"; exit 1; }
+
+      - name: Verify (35) lesson videos are readable only through the public view; keys never
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            has_table_privilege('anon', 'public.wassce_public_lesson_videos', 'select'),
+            has_table_privilege('anon', 'public.lesson_videos', 'select'),
+            has_table_privilege('authenticated', 'public.lesson_videos', 'select'),
+            has_table_privilege('anon', 'public.lesson_video_keys', 'select'),
+            has_table_privilege('authenticated', 'public.lesson_video_keys', 'select'),
+            (select public from storage.buckets where id = 'lesson-video'),
+            (select public from storage.buckets where id = 'lesson-video-public'));" | tr -d '[:space:]')"
+          echo "visitors read the view, visitors/students read videos, visitors/students read keys, private bucket public, public bucket public: $RESULT"
+          test "$RESULT" = "t,f,f,f,f,f,t" || { echo "Checks did not match t,f,f,f,f,f,t"; exit 1; }

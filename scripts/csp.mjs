@@ -45,7 +45,8 @@ const BASE = {
   'worker-src': ["'self'", 'blob:'],
   'manifest-src': ["'self'"],
   // Pronunciation and listening clips (public/audio), which the Android app loads from the site.
-  'media-src': ["'self'", 'https://wasscetutor.com'],
+  // Lesson videos play from memory (blob:, hls.js); their captions come from Supabase storage.
+  'media-src': ["'self'", 'https://wasscetutor.com', 'blob:', `https://${SUPABASE}`],
   'object-src': ["'none'"],
   'base-uri': ["'self'"],
   'form-action': ["'self'"],

@@ -35,3 +35,6 @@ android/key.properties
 public/wassce-tutor.apk
 __pycache__/
 email-preview/
+
+# Rendered lesson videos: never committed, never served as plain files
+.video-build/

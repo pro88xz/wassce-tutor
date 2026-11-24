@@ -10263,6 +10263,97 @@
       "rights_verified": true,
       "original_author": "WASSCE Tutor editorial team",
       "auto_sync": true
+    },
+    {
+      "file": "further-mathematics-polynomials.md",
+      "subject": "Further Mathematics",
+      "topic": "polynomials-theory-of-equations-and-roots",
+      "title": "Polynomials: remainder theorem, factor theorem and roots of equations",
+      "slug": "remainder-and-factor-theorems-and-roots",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "further-mathematics-partial-fractions.md",
+      "subject": "Further Mathematics",
+      "topic": "rational-functions-and-partial-fractions",
+      "title": "Partial fractions: linear, repeated and quadratic factors",
+      "slug": "partial-fractions",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "further-mathematics-binomial-theorem.md",
+      "subject": "Further Mathematics",
+      "topic": "binomial-theorem",
+      "title": "Binomial theorem: expansion, general term and approximations",
+      "slug": "binomial-expansion-and-general-term",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "further-mathematics-surds-indices-logarithms.md",
+      "subject": "Further Mathematics",
+      "topic": "surds-indices-and-logarithms",
+      "title": "Surds, indices and logarithms: laws and equations",
+      "slug": "surds-indices-and-logarithms",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "further-mathematics-sets.md",
+      "subject": "Further Mathematics",
+      "topic": "sets",
+      "title": "Sets: algebra of sets, De Morgan's laws and three-set problems",
+      "slug": "algebra-of-sets-and-venn-diagrams",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "further-mathematics-binary-operations.md",
+      "subject": "Further Mathematics",
+      "topic": "sets",
+      "title": "Binary operations: properties, identity, inverse and tables",
+      "slug": "binary-operations",
+      "sort_order": 2,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
+    },
+    {
+      "file": "further-mathematics-functions.md",
+      "subject": "Further Mathematics",
+      "topic": "functions",
+      "title": "Functions: domain, range, composite and inverse functions",
+      "slug": "domain-range-composite-and-inverse-functions",
+      "sort_order": 1,
+      "license": "ORIGINAL",
+      "rights_holder": "WASSCE Tutor",
+      "rights_verified": true,
+      "original_author": "WASSCE Tutor editorial team",
+      "auto_sync": true
     }
   ]
 }

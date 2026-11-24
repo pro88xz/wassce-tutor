@@ -546,6 +546,79 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
     description:
       'Computer laboratory safety rules, ergonomics and health problems, touch typing and home row keys, ports such as USB and HDMI, and basic troubleshooting.',
   },
+  // Nov 2026: Further Mathematics, batch 1 (algebra), in the words students search for:
+  // "remainder theorem and factor theorem", "partial fractions", "binomial expansion",
+  // "laws of logarithms", "De Morgan's law", "binary operation", "composite and inverse function".
+  '/wassce/further-mathematics': {
+    title: 'WASSCE Further Mathematics: Notes and Practice Questions',
+    description:
+      'Free WASSCE Further Maths notes with worked examples, diagrams, key terms and practice questions: polynomials, partial fractions, binomial theorem and more.',
+  },
+  '/wassce/further-mathematics/polynomials-theory-of-equations-and-roots': {
+    title: 'Remainder and Factor Theorem Questions | WASSCE Further Maths',
+    description:
+      'WASSCE Further Maths notes and questions on polynomials: the remainder theorem, the factor theorem, solving cubics, and the sum and product of roots.',
+  },
+  '/wassce/further-mathematics/polynomials-theory-of-equations-and-roots/remainder-and-factor-theorems-and-roots': {
+    title: 'Remainder and Factor Theorems Explained | WASSCE Further Maths',
+    description:
+      'How to find a remainder without dividing, factorise and solve a cubic with the factor theorem, find unknown coefficients, and use the sum and product of roots.',
+  },
+  '/wassce/further-mathematics/rational-functions-and-partial-fractions': {
+    title: 'Partial Fractions: Notes and Questions | WASSCE Further Maths',
+    description:
+      'WASSCE Further Maths notes and questions on partial fractions: distinct linear factors, repeated factors, quadratic factors and improper fractions.',
+  },
+  '/wassce/further-mathematics/rational-functions-and-partial-fractions/partial-fractions': {
+    title: 'Partial Fractions with Repeated Factors | WASSCE Further Maths',
+    description:
+      'Resolve a fraction into partial fractions: the forms for linear, repeated and quadratic factors, the cover-up method, and improper fractions.',
+  },
+  '/wassce/further-mathematics/binomial-theorem': {
+    title: 'Binomial Theorem: Notes and Questions | WASSCE Further Maths',
+    description:
+      'WASSCE Further Maths notes and questions on the binomial theorem: Pascal’s triangle, the general term, the term independent of x and approximations.',
+  },
+  '/wassce/further-mathematics/binomial-theorem/binomial-expansion-and-general-term': {
+    title: 'Binomial Expansion and General Term | WASSCE Further Maths',
+    description:
+      'Expand (a + b)ⁿ with Pascal’s triangle and nCr, find any term and the term independent of x, approximate, and expand negative or fractional powers.',
+  },
+  '/wassce/further-mathematics/surds-indices-and-logarithms': {
+    title: 'Surds, Indices and Logarithms Questions | WASSCE Further Maths',
+    description:
+      'WASSCE Further Maths notes and questions on surds, indices and logarithms: rationalising, exponential equations, the laws of logarithms and change of base.',
+  },
+  '/wassce/further-mathematics/surds-indices-and-logarithms/surds-indices-and-logarithms': {
+    title: 'Laws of Logarithms and Surds Explained | WASSCE Further Maths',
+    description:
+      'Rationalise compound surds, find the square root of a surd, solve exponential equations as quadratics, and use the laws of logarithms and change of base.',
+  },
+  '/wassce/further-mathematics/sets': {
+    title: 'Sets and Binary Operations Questions | WASSCE Further Maths',
+    description:
+      'WASSCE Further Maths notes and questions on sets and binary operations: De Morgan’s laws, three-set Venn diagrams, identity and inverse elements.',
+  },
+  '/wassce/further-mathematics/sets/algebra-of-sets-and-venn-diagrams': {
+    title: 'De Morgan’s Laws and Venn Diagrams | WASSCE Further Maths',
+    description:
+      'The laws of the algebra of sets, De Morgan’s laws, the number of subsets and the power set, and three-set Venn diagram problems by inclusion–exclusion.',
+  },
+  '/wassce/further-mathematics/sets/binary-operations': {
+    title: 'Binary Operations: Identity and Inverse | WASSCE Further Maths',
+    description:
+      'Binary operations explained: evaluate a ∗ b, test closure, commutativity and associativity, find the identity element and inverses, and read operation tables.',
+  },
+  '/wassce/further-mathematics/functions': {
+    title: 'Functions: Notes and Questions | WASSCE Further Maths',
+    description:
+      'WASSCE Further Maths notes and questions on functions: domain and range, one-to-one and onto functions, composite functions and inverse functions.',
+  },
+  '/wassce/further-mathematics/functions/domain-range-composite-and-inverse-functions': {
+    title: 'Domain, Composite and Inverse Functions | WASSCE Further Maths',
+    description:
+      'How to find the domain and range of a function, tell one-to-one from many-to-one, work out composite functions fg(x) and gf(x), and find an inverse function.',
+  },
 }
 
 /**

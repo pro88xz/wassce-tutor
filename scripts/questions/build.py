@@ -283,6 +283,15 @@ SETS += [
         "review": ROOT / "content/questions/commerce/set3_p1.review.md",
         "sort_from": 140,
         "checked": "mixed",
+    },    {
+        "module": ROOT / "content/questions/further-mathematics/set1_p1.py",
+        "subject_slug": "further-mathematics",
+        "name": "further_maths_set1_p1",
+        "label": "Further Mathematics: set 1 (polynomials, partial fractions, binomial theorem, logarithms, sets and functions)",
+        "review": ROOT / "content/questions/further-mathematics/set1_p1.review.md",
+        "sort_from": 100,
+        # Computed answers are recomputed by code; forms and statements were checked by an editor.
+        "checked": "mixed",
     },
 ]
 

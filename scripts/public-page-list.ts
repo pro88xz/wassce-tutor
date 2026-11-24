@@ -77,6 +77,15 @@ export async function publicPageList(supabaseUrl: string, publishableKey: string
     lessonDates.get(l.topic_id)!.push(l.updated_at)
   }
 
+  // A lesson's video (migration 35) changes its page: the later date wins.
+  // Before migration 35 there are no videos.
+  const videoDates = new Map<string, string>()
+  try {
+    for (const v of await get(supabaseUrl, publishableKey, 'wassce_public_lesson_videos', 'lesson_id,updated_at')) videoDates.set(v.lesson_id, v.updated_at)
+  } catch (e) {
+    console.warn(`[public-page-list] lesson videos left out of lastmod: ${e instanceof Error ? e.message : e}`)
+  }
+
   const pages: PageEntry[] = []
   const subjectLastmods: string[] = []
   for (const s of subjects) {
@@ -96,7 +105,7 @@ export async function publicPageList(supabaseUrl: string, publishableKey: string
       // Every published lesson has its own free page (migration 22).
       for (const l of publicLessons.filter((pl) => pl.topic_id === t.id)) {
         if (l.slug === 'questions' || l.slug === 'key-terms') throw new Error(`[public-page-list] a lesson in ${s.slug}/${t.slug} has the slug "${l.slug}", which is one of the topic's own pages`)
-        pages.push({ path: lessonPath(s.slug, t.slug, l.slug), lastmod: day(l.updated_at) })
+        pages.push({ path: lessonPath(s.slug, t.slug, l.slug), lastmod: day(latest([l.updated_at, videoDates.get(l.id) ?? ''])) })
       }
       // The topic's key terms (its lessons' definitions as cards), when it has enough of them.
       const topicLessons = publicLessons
