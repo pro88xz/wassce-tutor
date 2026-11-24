@@ -232,6 +232,13 @@ def underline(x1, x2, y, color="yellow", width=3.4) -> Action:
     return line(x1, y, x2, y, color, width)
 
 
+def moved(actions: list[Action], dx: float = 0, dy: float = 0, scale: float = 1.0) -> list[Action]:
+    """The same drawing, scaled about the board's corner and moved: one diagram
+    reused at another place or size (a thumbnail, say)."""
+    return [Action([Stroke(st.points * scale + np.array([dx, dy]), st.color, st.width * max(scale, 0.8)) for st in a.strokes], a.erase)
+            for a in actions]
+
+
 def heading(text: str, x: float = 70, y: float = 95, size: float = 44, color: str = "yellow") -> Action:
     """A board's heading, underlined to its own length."""
     w = text_width(text, size)
@@ -377,6 +384,11 @@ PRONOUNCE = {
     "fertilised": "fˈɜːtɪlIzd",
     "faster": "fˈɑːstə",
     "Benedict": "bˈɛnɪdɪkt",
+    "hydrochloric": "hˌIdɹəklˈɒɹɪk",
+    "emulsified": "ɪmˈʌlsɪfId",
+    "egestion": "iːʤˈɛsʧən",
+    "neutralise": "njˈuːtɹəlIz",
+    "neutralises": "njˈuːtɹəlIzɪz",
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
