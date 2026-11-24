@@ -2,7 +2,7 @@
 // player asks /api/video for a short-lived viewer token, loads the encrypted
 // stream with it, and unmasks the key in memory (api/_lib/video.js explains
 // the server side). The site's address is burned into every frame; over the
-// picture, the viewer's code drifts from corner to corner, in fullscreen too
+// picture, the viewer's code drifts along the foot of the board, in fullscreen too
 // (the frame, not the bare <video>, goes fullscreen), so a screen recording
 // says where, and for whom, it was played.
 import { useCallback, useEffect, useRef, useState } from 'react'
@@ -18,8 +18,10 @@ import { cn } from '@/lib/utils'
 
 const API = typeof window !== 'undefined' && Capacitor.isNativePlatform() ? 'https://wasscetutor.com' : ''
 const SPEEDS = [1, 1.25, 1.5, 0.75]
-// Where the viewer's mark sits in turn: corners and edges, never the middle of the board.
-const MARK_SPOTS = ['left-[4%] top-[14%]', 'right-[4%] bottom-[16%]', 'left-[6%] bottom-[18%]', 'right-[6%] top-[20%]', 'left-[38%] bottom-[10%]', 'left-[40%] top-[9%]']
+// Where the viewer's mark sits in turn: along the strip at the foot of the
+// board, which the lesson never writes on (left of the board's own caption),
+// so it never covers the teacher's writing.
+const MARK_SPOTS = ['left-[4%] bottom-[5.5%]', 'left-[20%] bottom-[5.5%]', 'left-[36%] bottom-[5.5%]', 'left-[12%] bottom-[5.5%]', 'left-[28%] bottom-[5.5%]']
 
 type Phase = 'idle' | 'loading' | 'ready' | 'error' | 'unsupported'
 type Session = { token: string; mask: Uint8Array; viewer: string }
@@ -287,7 +289,7 @@ export function LessonVideoPlayer({ video, startAt, className, children }: { vid
 
         {/* The viewer's mark: the site and their code, moving, in fullscreen too. */}
         {phase === 'ready' && (
-          <span aria-hidden className={cn('pointer-events-none absolute z-10 whitespace-nowrap rounded px-1.5 text-[10px] font-semibold tracking-wide text-white/40 transition-all duration-[1500ms] sm:text-xs', MARK_SPOTS[spot])}>
+          <span aria-hidden className={cn('pointer-events-none absolute z-10 whitespace-nowrap text-[8px] font-medium tracking-wide text-white/25 transition-all duration-[1500ms] sm:text-[10px]', MARK_SPOTS[spot])}>
             wasscetutor.com · {viewer}
           </span>
         )}
