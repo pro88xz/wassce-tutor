@@ -81,6 +81,16 @@ A current ratio of about **2 : 1** is often regarded as comfortable; a much high
 Do not show **drawings** as an expense in the income statement. Drawings are taken by the owner for private use: they are **deducted from capital** in the statement of financial position.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Statement of financial position** (balance sheet): a statement of the assets, liabilities and capital of a business at a date.
+- **Non-current assets**: assets kept for use over more than a year, such as land and buildings, motor vehicles, machinery and furniture.
+- **Current assets**: assets that change within a year, such as inventory, trade receivables, prepayments, bank and cash.
+- **Current liabilities**: amounts due within a year, such as trade payables, accrued expenses and a bank overdraft.
+- **Non-current liabilities**: long-term debts, such as long-term loans and mortgages.
+:::
+
 ## Key points
 
 - The **statement of financial position** shows assets, liabilities and capital **on a date**.

@@ -75,6 +75,14 @@ The business owes its suppliers **NLe 37,000** in total; this is brought down as
 Do not put **discount received** in the sales ledger control account, or **discount allowed** in the purchases ledger control account. Discount allowed relates to **customers** (sales ledger); discount received relates to **suppliers** (purchases ledger).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Arithmetical check**: the use of a control account to prove a ledger: its balance should equal the total of the individual balances.
+- **Sales ledger control account**: a total account that summarises all the customers' accounts in the sales ledger.
+- **Purchases ledger control account**: a total account that summarises all the suppliers' accounts in the purchases ledger.
+:::
+
 ## Key points
 
 - A **control account** summarises a whole ledger in **totals** from the books of original entry.

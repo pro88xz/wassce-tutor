@@ -84,6 +84,14 @@ At cost, the loss is $2\,000 \times \frac{100}{125} = 1\,600$, charged as a loss
 The loading is a fraction of the **selling price**, not of cost. With a 25% mark-up on cost, the loading is $\frac{25}{125} = 20\%$ of selling price. Taking 25% of the selling price overstates the loading.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Branch stock account**: an account kept at selling price, which shows any shortage of goods at the branch.
+- **Branch adjustment account** (mark-up account): the account that records only the loading on goods; its balance is the branch gross profit.
+- **Loading**: the mark-up added to cost when goods are sent to a branch at selling price.
+:::
+
 ## Key points
 
 - Goods at **selling price** give strong **control** over branch inventory and cash.

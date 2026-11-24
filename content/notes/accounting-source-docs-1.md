@@ -80,6 +80,16 @@ Cash discount is recorded in the **discount columns of the cash book**, explaine
 Do not record **trade discount** in the discount columns of the cash book. Trade discount is deducted on the invoice and never appears in the ledger. Only **cash discount** (discount allowed and received) is recorded.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Invoice**: a document sent by the seller to the buyer for a credit sale, showing the goods, prices and amount due.
+- **Credit note**: a document sent by the seller to the buyer for goods returned or an overcharge.
+- **Debit note**: a document sent by the buyer to the seller, claiming a reduction for goods returned or an overcharge.
+- **Receipt**: a document given by the receiver of money to the payer.
+- **E&OE** (errors and omissions excepted): words on an invoice that let the seller correct mistakes later.
+:::
+
 ## Key points
 
 - Source documents are **evidence** of transactions and the basis of every entry.

@@ -82,6 +82,12 @@ Errors in **sales, purchases, returns, carriage inwards or closing inventory** c
 Check that the suspense account **closes with a nil balance**. If it does not, an error has been missed or corrected in the wrong direction. Re-check each error: is the correction on the side that **removes** the difference?
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Statement of corrected net profit**: a statement that starts from the draft profit, adds corrections that raise profit and deducts those that lower it.
+:::
+
 ## Key points
 
 - Journalise each error; only errors that affected the trial balance go through **suspense**.

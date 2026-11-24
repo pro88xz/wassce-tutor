@@ -63,6 +63,18 @@ These make the totals **disagree**. The difference is put in a **suspense accoun
 An error of **commission** and an error of **principle** are often confused. **Commission:** wrong account **of the same type** (one customer for another). **Principle:** wrong **type** of account (an asset recorded as an expense, or capital expenditure as revenue expenditure).
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Error of omission**: a transaction completely left out of the books.
+- **Error of commission**: the right amount posted to the wrong account of the same class, usually the wrong person.
+- **Error of principle**: an item posted to the wrong class of account, such as a non-current asset debited to purchases.
+- **Error of original entry**: the wrong amount recorded in the book of original entry, so both entries are wrong.
+- **Complete reversal of entries**: the correct accounts used but the debit and credit swapped.
+- **Compensating errors**: two or more errors that cancel each other out.
+- **Casting error**: a mistake in adding up a book or account, such as an undercast day book total.
+:::
+
 ## Key points
 
 - Errors **not revealed** by the trial balance: **omission, commission, principle, original entry, complete reversal, compensating**.

@@ -81,6 +81,12 @@ With sales, purchases and expenses rebuilt, prepare the final accounts in the us
 Do not use the **mark-up** percentage as if it were the **margin**. A mark-up of 25% means gross profit is 25% of **cost**, which is only 20% of **sales**. Always check which base the question gives.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Total receivables account** (total debtors account): an account built from the cash book and other records to find a missing figure, such as credit sales.
+:::
+
 ## Key points
 
 - **Credit sales = cash received + discount allowed + closing receivables − opening receivables.**

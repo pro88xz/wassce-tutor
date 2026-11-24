@@ -92,6 +92,16 @@ Both partners have **credit balances**: the firm owes them these amounts, shown 
 **Partners' salaries** and **interest on capital** are **appropriations of profit**, not expenses: they go in the **appropriation account**, not the income statement. Only interest on a partner's **loan** is an expense.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Appropriation account**: the account that shares a partnership's net profit, after interest on drawings, partners' salaries and interest on capital, in the profit-sharing ratio.
+- **Current account**: a partner's account recording their share of profit, interest, salary and drawings.
+- **Interest on capital**: interest allowed to partners on the capital they have put in, an appropriation of profit.
+- **Interest on drawings**: interest charged to partners on their drawings, which adds to profit to be shared.
+- **Profit-sharing ratio** (PSR): the ratio in which partners share residual profit or loss.
+:::
+
 ## Key points
 
 - A **partnership agreement** sets out capital, PSR, interest, salaries and other rules.

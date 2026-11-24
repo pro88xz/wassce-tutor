@@ -80,6 +80,12 @@ Wholesalers at Freetown's big markets often give regular retail customers a smal
 Do not **balance** the discount columns or carry a discount balance down. They are **totalled** and the totals posted: discount allowed to the debit of its account, discount received to the credit of its account.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Discount column**: a memorandum column of the cash book whose totals are posted to the discount allowed and discount received accounts.
+:::
+
 ## Key points
 
 - Three-column cash book: **discount, cash and bank** on each side.

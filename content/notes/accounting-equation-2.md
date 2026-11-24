@@ -84,6 +84,12 @@ The final equation can be set out as a simple **statement of financial position*
 A sale is **not** "all profit". When goods costing NLe 6,000 are sold for NLe 9,000, stock falls by 6,000, cash rises by 9,000, and only the **difference of 3,000** is profit that increases capital.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Net assets**: total assets minus total liabilities, which equals capital.
+:::
+
 ## Key points
 
 - Every transaction has **two effects** and the equation **always balances**.

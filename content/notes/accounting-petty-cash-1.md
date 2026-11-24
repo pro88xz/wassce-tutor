@@ -81,6 +81,15 @@ Every payment must be supported by a **petty cash voucher**, signed by the perso
 The petty cashier is **not** reimbursed a fixed amount every period. The reimbursement equals **what was actually spent** (imprest minus cash left), so the float always returns to the same total.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Imprest system**: a petty cash system with a fixed float: payments are made on vouchers and the amount spent is reimbursed, restoring the float.
+- **Imprest**: the fixed amount of the petty cash float.
+- **Petty cash voucher**: the document that supports each petty cash payment.
+- **Reimbursement**: the amount paid to the petty cashier to restore the float: imprest minus cash in hand.
+:::
+
 ## Key points
 
 - The **petty cash book** records **small cash payments**, kept by a **petty cashier**.

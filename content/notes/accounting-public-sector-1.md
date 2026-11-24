@@ -67,6 +67,15 @@ Public finance in Sierra Leone is governed by the **1991 Constitution** and the 
 Government accounts do not report a "profit". A government's income exceeding its spending is a **surplus**, and spending exceeding income is a **deficit**, which must be financed by borrowing or grants.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Tax revenue**: government income from taxes, such as income tax, goods and services tax (GST), and customs and excise duties.
+- **Non-tax revenue**: government income from fees and licences, mining royalties, fines, rents and dividends from state enterprises.
+- **Accountant-General's Department**: the department that keeps government accounts, makes payments and prepares the government's financial statements.
+- **National Revenue Authority (NRA)**: the body that assesses and collects taxes and other revenue in Sierra Leone.
+:::
+
 ## Key points
 
 - **Public sector accounting** records and reports how public money is raised and spent, for **accountability**.

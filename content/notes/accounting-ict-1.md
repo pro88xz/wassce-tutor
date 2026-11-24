@@ -78,6 +78,14 @@ Banks, mobile network operators and large firms in Sierra Leone use full account
 A computer does not remove the need to **understand double entry**. If a transaction is entered to the wrong account, the software will post it there and produce wrong reports. Accounting knowledge is still needed to set up accounts and check results.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Accounting software**: a computer program that posts entries by double entry, updates ledgers and produces reports such as the trial balance and final accounts.
+- **Bank feed**: a link that imports bank transactions directly into accounting software.
+- **Payroll**: the record and calculation of wages and deductions, such as income tax and NASSIT contributions.
+:::
+
 ## Key points
 
 - **Computerised accounting** uses software to post entries automatically and produce reports.

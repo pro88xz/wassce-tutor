@@ -81,6 +81,12 @@ Small businesses in Sierra Leone often record a new freezer, generator or motorb
 For a **complete reversal**, the correction is **double** the original amount, because the wrong entries must first be cancelled and then the correct entries made. Many candidates correct it with the original amount only.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Correcting journal entry**: the journal entry that turns what was wrongly recorded into what should have been recorded.
+:::
+
 ## Key points
 
 - Correct errors with **journal entries**, never by altering the ledger directly.

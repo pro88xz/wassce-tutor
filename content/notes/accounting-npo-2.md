@@ -98,6 +98,15 @@ $18\,000 - 1\,000 + 500 + 1\,500 - 800 = 18\,200$
 Do not use the **cash received** for subscriptions as the subscription income. Adjust it for arrears and amounts in advance at **both** the start and the end of the year; the subscriptions account does this systematically.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Accumulated fund**: the capital of a non-profit organisation: its assets minus its liabilities.
+- **Surplus**: the excess of income over expenditure, added to the accumulated fund.
+- **Deficit**: the excess of expenditure over income, deducted from the accumulated fund.
+- **Subscriptions in arrears**: members' fees still owing at the end of the period, a current asset.
+:::
+
 ## Key points
 
 - **Subscription income = received − opening arrears + opening in advance + closing arrears − closing in advance.**

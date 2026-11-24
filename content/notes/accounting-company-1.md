@@ -93,6 +93,19 @@ Shares have a **nominal (par) value**, such as NLe 1. They may be issued **at pa
 **Debenture holders are creditors**, not owners. Debenture interest is an **expense** that must be paid even in a loss-making year, and debentures are shown as a **non-current liability**, not as part of equity.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Authorised capital** (nominal capital): the maximum share capital a company may issue under its constitution.
+- **Issued capital**: the shares actually issued to shareholders.
+- **Called-up capital**: the part of issued capital the company has asked shareholders to pay.
+- **Paid-up capital**: the part of called-up capital actually received.
+- **Calls in arrears**: amounts called up on shares but not yet paid by shareholders.
+- **Preference shares**: shares with a fixed dividend, paid before the ordinary shareholders.
+- **Debentures**: loans to a company with a fixed rate of interest.
+- **Share premium**: the amount received for shares above their nominal value; a capital reserve.
+:::
+
 ## Key points
 
 - A company is a **separate legal person**; shareholders have **limited liability**.

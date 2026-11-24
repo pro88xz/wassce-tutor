@@ -87,6 +87,12 @@ The **adjusted cash book balance** (NLe 18,250 above), **not** the bank statemen
 Do not put **unpresented cheques** or **uncredited lodgements** in the adjusted cash book: they are **already** in the cash book; the bank has simply not caught up. They belong only in the **reconciliation statement**. WAEC examiners have reported candidates losing marks for carrying the **wrong balance** from the adjusted cash book into the statement.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Adjusted cash book**: the cash book after it is updated for bank-only items, such as charges and standing orders, and for errors.
+:::
+
 ## Key points
 
 - **Step 1:** adjust the cash book for **bank-only items** (charges, standing orders, direct debits, direct credits, dishonoured cheques) and **errors**.

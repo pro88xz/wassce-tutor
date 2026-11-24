@@ -78,6 +78,16 @@ A van or a computer bought for use in the business is a **non-current asset**, d
 Do not debit the purchases account when the business buys a motor van, shop fittings or a computer for its own use. These are **non-current assets** and have their own real accounts. Purchases are **only goods bought for resale**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Personal accounts**: accounts of people, firms and organisations; debit the receiver, credit the giver.
+- **Real accounts**: accounts of things owned, tangible and intangible assets; debit what comes in, credit what goes out.
+- **Nominal accounts**: accounts of income, expenses, gains and losses; debit expenses and losses, credit income and gains.
+- **Returns inwards** (sales returns): goods returned by customers.
+- **Returns outwards** (purchases returns): goods returned to suppliers.
+:::
+
 ## Key points
 
 - **Personal:** debit the receiver, credit the giver. **Real:** debit what comes in, credit what goes out. **Nominal:** debit expenses and losses, credit incomes and gains.

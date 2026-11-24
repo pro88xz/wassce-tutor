@@ -71,6 +71,13 @@ Clothing earns a **slightly higher gross margin**, but its **net margin is much 
 Do not apportion **purchases** or **inventories**. Each department's purchases, sales and inventories are recorded **directly**; only shared **expenses** are apportioned.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Gross profit margin**: gross profit as a percentage of sales.
+- **Departmental gross profit**: each department's sales minus its own cost of sales.
+:::
+
 ## Key points
 
 - Departmental accounts are set out in **columns**, one per department.

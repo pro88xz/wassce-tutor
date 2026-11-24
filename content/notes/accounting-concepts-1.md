@@ -64,6 +64,19 @@ A transport owner in Makeni uses his business minibus at weekends for family tri
 Prudence does **not** mean deliberately understating profit or hiding assets. It means recognising **losses as soon as they are known** but **profits only when realised**, so that accounts are not over-optimistic.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Business entity concept**: the business is treated as separate from its owner.
+- **Going concern concept**: the business is assumed to continue operating for the foreseeable future.
+- **Money measurement concept**: only items that can be measured in money are recorded.
+- **Historical cost concept**: assets are recorded at their original cost.
+- **Accruals concept** (matching): income and expenses are recorded when earned or incurred, not when cash moves.
+- **Realisation concept**: revenue is recognised when goods or services are delivered and the customer is liable to pay.
+- **Consistency**: the same accounting methods are used year after year.
+- **Prudence** (conservatism): profits are not anticipated, but likely losses are provided for.
+:::
+
 ## Key points
 
 - Concepts make accounts **consistent, comparable and reliable**.

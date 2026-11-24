@@ -93,6 +93,16 @@ Under **prudence**, a business estimates the part of its trade receivables that 
 Only the **increase or decrease** in the provision for doubtful debts goes to the income statement, not the whole new provision. The **whole** provision is deducted from trade receivables in the statement of financial position.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Straight-line method**: depreciation of (cost − residual value) ÷ useful life each year.
+- **Reducing balance method**: depreciation at a fixed rate on the carrying amount at the start of each year.
+- **Carrying amount**: cost minus accumulated depreciation.
+- **Provision for doubtful debts**: an amount set aside for debts that may not be paid; only the change each year goes to the income statement.
+- **Bad debts recovered**: debts written off earlier that are later paid, treated as income.
+:::
+
 ## Key points
 
 - **Depreciation** spreads the cost of non-current assets over their useful lives.

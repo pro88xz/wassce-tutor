@@ -90,6 +90,16 @@ This relationship is also used to **find profit** when only the capital at the s
 A **bank overdraft** is a **liability**, not an asset: the business owes the bank. And **trade receivables** (debtors) are **assets**, because they are amounts owed **to** the business.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Accounting equation**: the rule that the assets of a business always equal its capital plus its liabilities, so capital equals assets minus liabilities.
+- **Assets**: resources owned or controlled by the business, expected to bring future benefit.
+- **Liabilities**: amounts the business owes to outsiders.
+- **Drawings**: cash or goods taken by the owner for private use, which reduce capital.
+- **Capital introduced**: new money put into the business by the owner, which increases capital.
+:::
+
 ## Key points
 
 - **Assets = Capital + Liabilities**, so **Capital = Assets − Liabilities**.

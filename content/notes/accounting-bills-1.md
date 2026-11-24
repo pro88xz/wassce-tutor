@@ -83,6 +83,17 @@ The NLe 200 is a **discounting charge**, an expense in the drawer's income state
 The discount on a bill is calculated on the **time remaining until maturity**, not on the full term of the bill. If the bill has already run one of its three months, only two months' discount is charged.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Drawer**: the person who writes (draws) a bill of exchange, usually the creditor.
+- **Drawee**: the person on whom a bill is drawn, usually the debtor.
+- **Acceptor**: the drawee after signing "accepted" on the bill, agreeing to pay on the due date.
+- **Discounting a bill**: selling a bill to a bank before it is due for its face value less a discount.
+- **Dishonour**: the acceptor's failure to pay a bill on the due date.
+- **Noting charge**: the fee paid to a notary to record the dishonour of a bill officially, usually recovered from the acceptor.
+:::
+
 ## Key points
 
 - A **bill of exchange** is an unconditional written order to pay a fixed sum at a fixed or determinable time.

@@ -92,6 +92,15 @@ A Freetown wholesaler opening outlets in Bo, Kenema and Makeni would use branch 
 In the branch account, the **opening** inventory and receivables are **debits** (assets at the branch at the start) and the **closing** ones are **credits** carried down. Swapping them is a common error.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Dependent branch**: a branch that does not keep a full set of books: head office sends it goods, pays its main expenses, receives its cash and keeps its accounts.
+- **Independent branch**: a branch that keeps its own full set of books.
+- **Branch account method**: the method in which the branch account is debited with opening assets, goods sent and expenses, and credited with cash remitted and closing assets; the balance is the branch profit.
+- **Cash remitted**: cash the branch sends to head office.
+:::
+
 ## Key points
 
 - **Branch accounts** find the profit of each branch.

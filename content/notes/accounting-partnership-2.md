@@ -89,6 +89,14 @@ Many family businesses in Sierra Leone are run as partnerships between relatives
 Revaluation gains and losses, and the goodwill credit, are shared in the **old** profit-sharing ratio: they arose before the new partner joined. Only the write-off of goodwill (when no goodwill account is kept) uses the **new** ratio.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Super profits**: the profit above a normal return on capital; goodwill may be valued as super profits times a number of years' purchase.
+- **Revaluation account**: the account that records gains and losses when assets and liabilities are revalued on a change of partners, shared in the old ratio.
+- **Admission of a partner**: a change in which a new partner joins the firm; assets are revalued and goodwill is adjusted between the partners.
+:::
+
 ## Key points
 
 - **Goodwill** is the value of a business above its net assets.

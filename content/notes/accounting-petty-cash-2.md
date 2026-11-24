@@ -72,6 +72,13 @@ In many offices in Sierra Leone, the petty cash box pays for okada and keke fare
 Do not forget to enter each payment in **both** the total column **and** one analysis column. The sum of the analysis totals must equal the total of the total column; if it does not, an item has been missed or entered in two analysis columns.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Analysis columns**: columns of the petty cash book in which each payment is entered again under its type, so that only totals are posted to the ledger.
+- **Ledger column**: the petty cash column for small amounts paid to creditors, posted to their personal accounts.
+:::
+
 ## Key points
 
 - Analytical petty cash book: **receipts**, **total**, **analysis columns** and a **ledger** column.

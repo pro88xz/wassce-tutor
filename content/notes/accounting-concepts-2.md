@@ -77,6 +77,17 @@ WASSCE questions use both sets of names, so learn both.
 "Reliable" does not mean "exact to the last cent". Some figures, such as depreciation and doubtful debts, are estimates. Information is faithful when it is **complete, neutral and free from material error**, using reasonable estimates.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Relevance**: financial information can make a difference to users' decisions, helping them predict or confirm results.
+- **Faithful representation**: financial information is complete, neutral and free from error, showing what really happened.
+- **Comparability**: users can compare a business over time and with other businesses.
+- **Timeliness**: information is available in time to influence decisions.
+- **Cash basis**: accounting that records only cash received and paid.
+- **Accrual basis**: accounting that records income earned and expenses incurred in the period, whether or not cash has moved.
+:::
+
 ## Key points
 
 - Fundamental characteristics: **relevance** and **faithful representation**.

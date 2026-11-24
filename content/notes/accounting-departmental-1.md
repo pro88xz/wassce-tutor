@@ -79,6 +79,15 @@ A supermarket in Freetown with a groceries section, a household goods section an
 Do not apportion **every** expense on the same basis. Choose the basis that best reflects **why** the cost is incurred: floor area for rent, sales for advertising, staff numbers for the canteen.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Departmental accounts**: accounts that show the profit of each department of a business.
+- **Allocation**: charging an expense that belongs wholly to one department to that department.
+- **Apportionment**: sharing an expense used by several departments between them on a fair basis, such as floor area or sales.
+- **Basis of apportionment**: the measure used to share an expense, such as floor area for rent or number of staff for canteen costs.
+:::
+
 ## Key points
 
 - **Departmental accounts** show the profit of each department.
