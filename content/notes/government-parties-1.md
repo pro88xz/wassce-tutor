@@ -81,6 +81,16 @@ Sierra Leone has experienced every type of system. The **1978 Constitution** mad
 A party with the most members is not necessarily a **mass party**, and a two-party system does not mean only two parties exist. In the USA many small parties exist, but only the Democrats and Republicans have a real chance of winning power. What matters is how many parties **compete effectively for power**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Mass party**: a party that seeks the widest possible membership among ordinary people.
+- **Elite party** (cadre party): a party led and controlled by a small group of notable or educated people.
+- **Ideological party**: a party built around a clear ideology.
+- **Broker party** (catch-all party): a party that tries to attract voters from all groups by balancing their interests.
+- **Political Parties Regulation Commission (PPRC)**: the body with which political parties in Sierra Leone must register.
+:::
+
 ## Key points
 
 - A **political party** is an organised group that seeks to **win power through elections** to carry out its programme.

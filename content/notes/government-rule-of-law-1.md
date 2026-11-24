@@ -82,6 +82,17 @@ In **March 2020**, President Bio declared a **12-month state of public emergency
 "Rule of law" does not mean "rule by law". A dictator can pass harsh laws and enforce them strictly; that is **rule by law**. The **rule of law** requires that laws apply equally to rulers and the ruled, protect rights and are applied by **independent courts**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Equality before the law**: the principle that everyone, rulers included, is subject to the same law and the same courts.
+- **Diplomatic immunity**: the rule that foreign diplomats are not tried in local courts.
+- **Parliamentary privilege**: the rule that MPs cannot be sued for what they say in Parliament.
+- **State of emergency**: a period in which some rights may be suspended to protect public safety.
+- **Ouster clause**: a provision in a law that prevents the courts from reviewing certain decisions.
+- **Delegated legislation**: rules made by ministers, officials or other bodies under powers given by an Act of Parliament.
+:::
+
 ## Key points
 
 - The **rule of law** means the law is **supreme** and applies **equally** to all, enforced by **independent courts**.

@@ -64,6 +64,16 @@ Independence was celebrated on **27 April 1961**, which is still marked each yea
 The APC was not formed before the Lancaster House conference. It grew out of **Siaka Stevens' refusal to sign** the independence agreement in **1960**, through the **Elections Before Independence Movement**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Leader of Government Business**: the post Milton Margai held after the SLPP won the 1951 elections.
+- **People's National Party (PNP)**: the party formed in 1958 by Albert Margai and Siaka Stevens after they left the SLPP.
+- **United National Front**: the alliance of parties formed in 1960 to attend the Lancaster House conference.
+- **Lancaster House conference** (1960): the conference in London at which Sierra Leone's independence was agreed.
+- **Elections Before Independence Movement**: the movement Siaka Stevens formed in 1960 after refusing to sign the independence agreement; it became the All People's Congress.
+:::
+
 ## Key points
 
 - **1951** SLPP wins; **1953** ministerial system; **1957** election; **1958** PNP formed and Margai becomes **Premier**.

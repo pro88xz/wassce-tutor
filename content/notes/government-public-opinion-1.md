@@ -85,6 +85,14 @@ In Sierra Leone, independent researchers and international survey networks carry
 Public opinion is not always the **majority** opinion, and it is not always **right**. A loud minority, a well-funded campaign or false information can create an impression of public opinion that does not match what most people really think. That is why reliable measurement matters.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Opinion poll** (survey): questioning a sample of people to estimate the views of all.
+- **Referendum**: a direct vote by the people on a particular question.
+- **Opinion leaders**: chiefs, elders, celebrities and other influential people whose views shape the views of others.
+:::
+
 ## Key points
 
 - **Public opinion** is the collective view of a large section of the public on a public issue.

@@ -77,6 +77,14 @@ The division between **Colony** and **Protectorate** shaped Sierra Leone's polit
 Freetown did not become a Crown Colony in 1787 or 1792. It was first run by a private company, the **Sierra Leone Company**, and became a **Crown Colony on 1 January 1808**. The Protectorate came much later, in **1896**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Colony**: the Freetown peninsula and nearby coast, British territory ruled directly, whose inhabitants were British subjects.
+- **Direct rule**: rule through British officials, the Governor and his councils, rather than through traditional rulers.
+- **Liberated Africans** (recaptives): Africans freed from slave ships by the Royal Navy and landed at Freetown from 1808.
+:::
+
 ## Key points
 
 - **1787** Province of Freedom; **1792** Nova Scotians found **Freetown**; **1800** Maroons; **1808** Crown Colony.

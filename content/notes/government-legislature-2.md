@@ -76,6 +76,15 @@ Before ministers take office in Sierra Leone, the President's nominees appear be
 Do not reverse the order of the **committee stage** and the **second reading**. The House first approves the **principle** (second reading), **then** the committee examines the **details**. Also, the President of Sierra Leone does not sign a bill automatically: assent may be refused, in which case the bill is returned with reasons.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Government bill**: a bill introduced by a minister on behalf of the government.
+- **Private member's bill**: a bill introduced by an ordinary MP, not a minister.
+- **Money bill**: a bill that deals with taxes, public spending or borrowing.
+- **Committee of the Whole House**: all MPs sitting together as a committee, often for money bills.
+:::
+
 ## Key points
 
 - Bills may be **government, private member's, money, private or constitutional**.

@@ -55,6 +55,13 @@ The attempted coup of **March 1971**, led by army commander **Brigadier John Ban
 Siaka Stevens was **not** the very first President of the Republic. **Christopher Okoro Cole**, who had been acting Governor-General, served as **interim President for two days** (19 to 21 April 1971) before Stevens was sworn in as **executive President**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Christopher Okoro Cole**: the acting Governor-General who became interim President when Sierra Leone became a republic on 19 April 1971.
+- **Republican Constitution**: the constitution passed by Parliament in April 1971 that made Sierra Leone a republic.
+:::
+
 ## Key points
 
 - A **republic** has an elected or chosen citizen as head of state, not a hereditary monarch.

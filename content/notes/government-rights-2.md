@@ -87,6 +87,17 @@ Sierra Leone's citizenship law is the **Sierra Leone Citizenship Act 1973**, as 
 A **citizen** and a **resident** are different. Many foreign residents live and work in Sierra Leone for years, but unless they acquire citizenship they remain **aliens**: they cannot vote or stand for election. Also, a duty is **legally enforceable** (such as paying taxes), whereas an obligation like voting is a **civic responsibility**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Alien**: a person living in a state who is not a citizen of it.
+- **Naturalisation**: citizenship granted to an alien after a period of lawful residence, good character, knowledge of the country and an oath of allegiance.
+- **Jus soli**: the principle that citizenship is gained by being born in the state.
+- **Jus sanguinis**: the principle that citizenship is gained by descent, from a parent who is a citizen.
+- **Dual citizenship**: being a citizen of two states at once; allowed in Sierra Leone since 2006.
+- **Renunciation**: a citizen voluntarily giving up citizenship, usually to take another.
+:::
+
 ## Key points
 
 - A **citizen** is a full legal member of a state; an **alien** is not.

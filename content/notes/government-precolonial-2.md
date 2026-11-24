@@ -64,6 +64,14 @@ The Temne ruler **Bai Bureh** of **Kasseh** led resistance against British rule 
 "Kantha" is not a society. It is the **period of seclusion and instruction** that a Temne chief-elect goes through before installation. The **Ragbenle** (or Poro or Ramena) is the society that conducts it.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Bai** (Obai): the Temne paramount chief, the sacred head of the chiefdom who ruled, judged and led rituals for the land and people.
+- **Title-holders**: Temne elders, many with hereditary titles, who advised the chief and had duties at court and in ritual.
+- **Ragbenle**: a Temne society that, with the Poro and Ramena, selected and installed the chief and carried out rituals.
+:::
+
 ## Key points
 
 - The **Temne** of the north and centre lived in **many chiefdoms** ruled by **sacred paramount chiefs** with titles such as **Bai** or **Obai**.

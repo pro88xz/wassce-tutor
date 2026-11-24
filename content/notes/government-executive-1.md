@@ -86,6 +86,17 @@ In Sierra Leone, the executive delivers flagship programmes such as **Free Quali
 Do not confuse **nominal** with **plural**. A nominal executive is a **ceremonial** head of state with little real power; a plural executive is a **council** that shares real power. Britain has a nominal head of state (the monarch); Switzerland has a plural executive.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Nominal executive** (ceremonial): a head of state with formal powers only, who acts on advice.
+- **Real executive** (effective): the person or body that holds and uses actual executive power.
+- **Plural executive** (collegial): an executive in which power is shared by a council of equals.
+- **Political executive**: elected or appointed leaders who make policy and change with elections.
+- **Permanent executive**: career officials who carry out policy and stay when governments change.
+- **Cabinet**: the ministers who head ministries and together form the government's top decision-making body.
+:::
+
 ## Key points
 
 - The **executive** implements laws and policies and runs the administration.

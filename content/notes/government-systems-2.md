@@ -72,6 +72,17 @@ Sierra Leone has experienced several of these forms: **constitutional monarchy**
 A country with a king is not always a monarchy in which the king rules. In a **constitutional monarchy** such as Britain, the monarch "reigns but does not rule": elected politicians govern.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Aristocracy**: rule by a few of the best, wisest or noblest, for the common good.
+- **Oligarchy**: rule by a small group in its own interest.
+- **Theocracy**: rule by religious leaders, in the name of God or religious law.
+- **Gerontocracy**: rule by the elders.
+- **Dictatorship** (autocracy): rule by one person or a small group with unlimited power, not accountable to the people.
+- **Constitutional monarchy**: a monarchy in which the monarch is ceremonial and real power lies with elected leaders.
+:::
+
 ## Key points
 
 - Aristotle: rule by **one, few or many**, for the **common good** (monarchy, aristocracy, polity) or **self-interest** (tyranny, oligarchy, democracy as mob rule).

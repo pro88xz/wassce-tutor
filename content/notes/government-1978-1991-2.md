@@ -62,6 +62,16 @@ The 1991 Constitution's two-term limit has been tested. **Ahmad Tejan Kabbah** (
 The 1991 Constitution has **not** been in continuous force since 1991. It was **suspended** by the **NPRC (1992–1996)** and the **AFRC (1997–1998)**. Its uninterrupted operation dates from the restoration of civilian government in **1998** and, fully, from the end of the war in **2002**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Constitutional Review Commission**: the commission under Dr Peter Tucker, appointed by President Momoh in 1990, to recommend a new constitution.
+- **Constitution of 1991**: the constitution, approved by a referendum and in force from 1 October 1991, that restored multi-party democracy.
+- **Executive President**: a president who is head of state, head of government and commander-in-chief.
+- **Run-off**: a second round of a presidential election, held when no candidate wins at least 55% of valid votes in the first.
+- **Political Parties Regulation Commission**: the independent commission that registers political parties in Sierra Leone.
+:::
+
 ## Key points
 
 - The **Tucker Commission (1990)** and a **1991 referendum** produced the **1991 Constitution**, in force from **1 October 1991**.

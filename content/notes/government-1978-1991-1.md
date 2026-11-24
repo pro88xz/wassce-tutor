@@ -76,6 +76,13 @@ The **First Vice-President** under the one-party constitution was **S. I. Koroma
 Elections did not stop under the one-party state. General elections were held in **1982** and **1986**, but **only APC candidates** could stand, and there was only **one presidential candidate**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Constitution of 1978**: the constitution, approved by a referendum, that made Sierra Leone a de jure one-party state under the APC.
+- **Joseph Saidu Momoh**: the army commander who succeeded Siaka Stevens in 1985, elected as the single candidate.
+:::
+
 ## Key points
 
 - **1978 Constitution**: Sierra Leone a **de jure one-party state** under the **APC**, approved by a **referendum** (officially about 97% yes).

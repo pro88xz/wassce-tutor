@@ -82,6 +82,14 @@ Sierra Leone's judiciary is set out in **Chapter VII** of the 1991 Constitution 
 Judicial independence does **not** mean judges are above the law. Judges must apply the law, can be removed for proven misconduct, and their decisions can be overturned on appeal. Independence means freedom from **interference**, not freedom from **accountability**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Security of tenure**: the rule that judges hold office until a fixed retirement age and cannot be dismissed at will.
+- **Judicial and Legal Service Commission (JLSC)**: the body on whose advice the President appoints judges, subject to the approval of Parliament.
+- **Judicial immunity**: the rule that judges cannot be sued for decisions made in their judicial capacity.
+:::
+
 ## Key points
 
 - The **judiciary** interprets and applies the law, settles disputes and punishes offenders.

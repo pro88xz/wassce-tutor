@@ -75,6 +75,16 @@ As a member of **ECOWAS**, Sierra Leone has agreed to protocols on the free move
 Do not say sovereignty means a government can do anything it likes. In theory sovereignty is absolute, but in practice every state's sovereignty is limited by its constitution, international obligations, public opinion and economic realities.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Internal sovereignty**: supreme power over all people and bodies within the state.
+- **External sovereignty**: independence from control by other states, with equal status in international relations.
+- **De jure sovereignty**: sovereignty that is lawful but may not be in actual control.
+- **De facto sovereignty**: actual control of the state, whether or not it is lawful.
+- **Popular sovereignty**: the idea that final authority belongs to the people.
+:::
+
 ## Key points
 
 - **Sovereignty** is the supreme power of the state, first defined by **Jean Bodin**.

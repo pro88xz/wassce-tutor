@@ -93,6 +93,15 @@ Sierra Leone has strengthened rights protection in recent years. In **2020** Par
 Do not write that the right to free education or health care is enforceable in Sierra Leone's courts in the same way as freedom of speech. Social and economic goals are in **Chapter II (Fundamental Principles of State Policy)**, which the courts do not enforce; enforceable rights are in **Chapter III**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Civil and political rights**: rights such as life, personal liberty, a fair hearing, freedom of speech, religion, assembly and movement, and the right to vote.
+- **Economic, social and cultural rights**: rights such as work and fair wages, education, health care, social security and an adequate standard of living.
+- **Collective rights** (solidarity rights): rights held by peoples as groups, such as development, peace, a healthy environment and self-determination.
+- **Entrenchment**: placing rights in the constitution so that they cannot be removed easily.
+:::
+
 ## Key points
 
 - **Human rights** are universal, inalienable rights that belong to every person.

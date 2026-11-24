@@ -81,6 +81,14 @@ Sierra Leone has seen power pass peacefully between parties through the ballot b
 The President of Sierra Leone is **not** removed by a vote of no confidence. That is a feature of parliamentary systems. Under the 1991 Constitution, removal is only for **misconduct** (after a tribunal) or **incapacity**, through a special procedure in Parliament.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Term limit**: the rule that a President may serve no more than two five-year terms.
+- **Judicial review**: the power of the courts to declare executive actions unconstitutional or unlawful.
+- **Ombudsman**: an independent official who investigates complaints against public bodies and officials.
+:::
+
 ## Key points
 
 - The President is **head of state, head of government and commander-in-chief** (Chapter V, 1991 Constitution).

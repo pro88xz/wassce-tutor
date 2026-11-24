@@ -84,6 +84,15 @@ Devolution is the **strongest** form, because the local body gains real decision
 Decentralisation in a **unitary** state is not the same as **federalism**. In a unitary state such as Sierra Leone, powers given to councils come from an **Act of Parliament** and can be changed by Parliament. In a federation, the **constitution** divides power and the centre cannot take it back alone.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Deconcentration**: a form of decentralisation in which central ministries post their own officials to the regions and districts, while decisions still come from the centre.
+- **Delegation**: a form of decentralisation in which the centre hands specific tasks to semi-independent bodies that act on its behalf.
+- **Devolution**: a form of decentralisation in which the centre transfers legal powers, functions and revenue to elected local councils, which decide for themselves.
+- **Property rates**: a local tax on buildings, collected by councils.
+:::
+
 ## Key points
 
 - **Centralisation** keeps power at the centre; **decentralisation** transfers power, functions and resources downward.

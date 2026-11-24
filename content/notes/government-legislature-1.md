@@ -83,6 +83,16 @@ Sierra Leone's **Parliament** is unicameral. Its ordinary members are elected fo
 The **Speaker** does not lead the ruling party in the House. The Speaker is meant to be an **impartial** presiding officer. The person who leads the government side is the **Leader of Government Business (Majority Leader)**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Unicameral legislature**: a legislature with one chamber, as in Sierra Leone, Ghana and The Gambia.
+- **Bicameral legislature**: a legislature with two chambers.
+- **Speaker**: the presiding officer who keeps order, interprets the standing orders, certifies bills and represents the House.
+- **Clerk of Parliament**: the chief administrative officer of Parliament, who keeps records, prepares the order paper and advises on procedure.
+- **Whip**: a party official in the House who makes sure party members attend and vote with their party.
+:::
+
 ## Key points
 
 - The **legislature** makes, amends and repeals laws; it may be **unicameral** (Sierra Leone) or **bicameral** (Nigeria, USA, Britain).

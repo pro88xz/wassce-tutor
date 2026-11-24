@@ -72,6 +72,16 @@ Sierra Leone's national motto, **"Unity, Freedom, Justice"**, and symbols such a
 "State" in Government does not mean a part of a federation (like a state in Nigeria or the USA). Those are **component states** without full sovereignty; the sovereign state is the whole federation.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Territory**: a defined area of land, territorial waters and airspace with recognised boundaries.
+- **Government**: the machinery through which the will of the state is expressed and enforced.
+- **Force theory**: the theory that the state arose when the strong conquered the weak and imposed their rule.
+- **Social contract theory**: the theory that people living in a "state of nature" agreed to give up some freedom to a ruler in exchange for protection.
+- **Evolutionary theory**: the theory that the state grew slowly from the family to the clan, the tribe, the kingdom and finally the state; the most widely accepted theory.
+:::
+
 ## Key points
 
 - A **state** has **population, territory, government and sovereignty**; all four are essential.

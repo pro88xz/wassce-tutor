@@ -69,6 +69,16 @@ When **Valentine Strasser** seized power in **1992**, he was only about **25 yea
 The **AFRC** and the **NPRC** are different regimes. The **NPRC (1992–1996)** overthrew the APC government of Momoh and later handed over to an elected government. The **AFRC (1997–1998)** overthrew the elected Kabbah government and ruled together with the **RUF** rebels.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Coup d'état**: the sudden, illegal seizure of power, usually by the army.
+- **National Provisional Ruling Council (NPRC)**: the military government of April 1992 to March 1996, formed by soldiers from the war front.
+- **Armed Forces Revolutionary Council (AFRC)**: the junta that seized power in May 1997 and invited the RUF to share power.
+- **Politicisation of the army**: recruitment and promotion in the army based on ethnic or party loyalty.
+- **Contagion**: the spread of coups, as successful coups in other West African states encouraged soldiers to try their own.
+:::
+
 ## Key points
 
 - Causes: **disputed elections, corruption, economic hardship, poor army conditions, politicisation, ambition, war**.

@@ -68,6 +68,15 @@ Several Mende rulers became famous in the nineteenth century. **Kai Londo** buil
 Do not describe the pre-colonial Mende as a single centralised kingdom ruled by one king. Mende country had **many independent chiefdoms**, though some were grouped into larger confederacies under strong warrior leaders.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Mahei**: the Mende chief, chosen from a ruling family, who kept law and order, led in war, judged disputes and allocated land.
+- **Council of elders**: the elders and sub-chiefs who advised the Mende chief and helped to choose a new chief.
+- **Speaker**: the chief's deputy and spokesman, who received visitors, passed on the chief's decisions and acted for the chief when absent.
+- **Madam Yoko**: a woman chief who ruled the Kpaa Mende from Senehun in the late nineteenth century.
+:::
+
 ## Key points
 
 - Mende country (south and east) had **many independent chiefdoms**, not one kingdom.

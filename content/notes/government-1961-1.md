@@ -56,6 +56,16 @@ Under the 1961 Constitution the Governor-General's power to appoint the Prime Mi
 At independence, Sierra Leone was **not** a republic. The British monarch remained head of state until **19 April 1971**. Sierra Leone had a **parliamentary** system with a **Prime Minister**, not an executive President.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Westminster system**: the parliamentary system of government, modelled on Britain's, adopted at independence in 1961.
+- **Governor-General**: the representative of the British monarch in Sierra Leone, with mainly ceremonial powers, under the 1961 Constitution.
+- **Privy Council**: the Judicial Committee of the Privy Council in London, Sierra Leone's final court of appeal until 1971.
+- **Unicameral legislature**: a legislature with one chamber; in 1961 it was the House of Representatives.
+- **Paramount Chief members**: members of Parliament who are Paramount Chiefs, one from each district.
+:::
+
 ## Key points
 
 - The **1961 Constitution** was agreed at **Lancaster House (1960)** and took effect on **27 April 1961**.

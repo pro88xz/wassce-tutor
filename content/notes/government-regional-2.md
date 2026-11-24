@@ -94,6 +94,15 @@ When the **AFRC** junta seized power in **1997**, ECOWAS imposed **sanctions** a
 **ECOMOG** was not a separate organisation; it was the **military monitoring group of ECOWAS**. Also, the **Mano River Union** was founded by **Liberia and Sierra Leone** in **1973**; Guinea and Côte d'Ivoire joined later.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **ECOWAS Commission**: the executive body that runs ECOWAS programmes, based in Abuja, Nigeria.
+- **Community Court of Justice**: the ECOWAS court that interprets ECOWAS law and hears human rights cases brought by citizens.
+- **Mano River Union**: the organisation founded by Liberia and Sierra Leone in 1973, joined by Guinea in 1980 and Côte d'Ivoire in 2008, with its headquarters in Freetown.
+- **African Peer Review Mechanism (APRM)**: a voluntary process, launched in 2003, in which member states review one another's governance.
+:::
+
 ## Key points
 
 - **ECOWAS**: **Treaty of Lagos, 28 May 1975**; revised **1993**; Commission in **Abuja**; aims at **integration, free movement, a customs union and peace**.

@@ -79,6 +79,17 @@ Sierra Leone has had both systems. At independence in **1961** it was parliament
 "Impeachment" and "vote of no confidence" are different. Impeachment removes a **president** for misconduct after a legal process; a vote of no confidence removes a **prime minister and cabinet** because they have lost the support of parliament.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Presidential system**: a system in which a single elected president is head of state and head of government, elected separately from the legislature for a fixed term.
+- **Parliamentary system**: a system with a dual executive, in which the prime minister and ministers sit in parliament and answer to it.
+- **Dual executive**: an executive with a ceremonial head of state and a separate head of government who holds real power.
+- **Fusion of powers**: the arrangement in which the prime minister and ministers are members of parliament.
+- **Collective responsibility**: the rule that the cabinet stands or falls together and must defend its decisions in public.
+- **Impeachment**: the removal of a president by the legislature for gross misconduct.
+:::
+
 ## Key points
 
 - **Presidential:** single executive, separate election, **fixed term**, **separation of powers**, removal only by **impeachment**.

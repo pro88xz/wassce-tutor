@@ -82,6 +82,16 @@ The **50/50 Group**, founded in **2000**, campaigned for many years for equal re
 A pressure group can **support** candidates in elections, but it does **not** put up its own candidates to win power. If a group starts contesting elections to form a government, it has turned into a **political party**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Interest group** (sectional group): a pressure group that protects the interests of its own members.
+- **Promotional group** (cause group): a pressure group that promotes a cause or idea that benefits society, not only its members.
+- **Institutional group**: a body that is part of the state or of society's institutions and presses its views from within.
+- **Anomic group**: a spontaneous, unorganised outburst of protest.
+- **Lobbying**: meeting and persuading ministers, MPs and officials in order to influence decisions.
+:::
+
 ## Key points
 
 - A **pressure group** tries to **influence** government without seeking to **form** one.

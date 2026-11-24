@@ -84,6 +84,14 @@ Sierra Leone set up a **National Commission for Privatisation** under the **Nati
 Commercialisation and privatisation are **different**. A **commercialised** corporation stays **in government ownership** but is run like a business; a **privatised** one passes wholly or partly into **private ownership or management**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Ministerial control**: the minister's power to appoint and remove a corporation's board, give it general policy directions and approve major investment and borrowing.
+- **Judicial control**: control through the courts: as a legal person, a corporation can be sued, and courts can stop it acting beyond its powers.
+- **Regulatory control**: control by regulators, who set tariffs and service standards, for example for electricity and water.
+:::
+
 ## Key points
 
 - Controls: **ministerial, parliamentary, financial (Auditor-General), judicial, regulatory and public**.

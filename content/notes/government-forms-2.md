@@ -94,6 +94,16 @@ Sierra Leone has never been federal, but it belongs to the **Mano River Union** 
 In a confederation, sovereignty stays with the **member states**, not the centre. In a federation it is **shared** under the constitution. Students often mix these up.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Exclusive list**: the powers a federal constitution gives to the central government alone, such as defence and foreign affairs.
+- **Concurrent list**: the powers that both the central and the state governments may exercise.
+- **Residual powers**: the powers left over after the exclusive and concurrent lists, usually held by the state governments.
+- **Bicameral legislature**: a legislature with two houses; in a federation one house usually gives the states equal representation.
+- **Judicial review**: the power of the courts to declare laws or actions unconstitutional; in a federation the supreme court settles disputes between the levels.
+:::
+
 ## Key points
 
 - **Federalism** divides power by a **written, rigid constitution** into **exclusive, concurrent and residual** lists, with a **supreme court** as umpire.

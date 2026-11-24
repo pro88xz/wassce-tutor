@@ -86,6 +86,14 @@ The 1991 Constitution of Sierra Leone puts the **Executive (Chapter V)**, the **
 Separation of powers and checks and balances are **not the same thing**. Separation **divides** power among the organs; checks and balances **link** them so each can limit the others. A good answer explains both and shows how they work together.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Separation of personnel**: the rule that no one should be a member of more than one organ of government.
+- **Judicial review**: the power of the courts to declare executive actions or Acts of Parliament void when they conflict with the Constitution.
+- **Assent**: the President's formal approval that turns a bill into law; the President may refuse assent and return the bill with reasons.
+:::
+
 ## Key points
 
 - **Separation of powers** divides government into **legislative, executive and judicial** organs with separate **functions and personnel** (**Montesquieu, 1748**).

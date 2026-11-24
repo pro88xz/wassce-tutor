@@ -75,6 +75,15 @@ The debate over the 1951 constitution revealed deep divisions. Some Colony leade
 Do not say that the 1951 constitution gave Sierra Leone independence or full self-government. It gave an **African majority in the legislature**; **internal self-government** came in **1958**, and **independence** on **27 April 1961**.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Stevenson Constitution** (1951): the constitution that gave the Legislative Council an African majority, with 7 elected Colony members and 14 Protectorate members.
+- **House of Representatives**: the legislature created by the 1956 constitution, mostly directly elected, with 12 Paramount Chiefs.
+- **Premier**: the head of government under the 1958 constitution, a post held by Milton Margai.
+- **Internal self-government**: control of a colony's own domestic affairs by its own ministers, reached by Sierra Leone in 1958.
+:::
+
 ## Key points
 
 - **1951 (Stevenson) constitution**: **African majority**; **7 Colony elected members**; **14 Protectorate members** chosen through District Councils and the Protectorate Assembly; opposed by Colony leaders (NCSL).

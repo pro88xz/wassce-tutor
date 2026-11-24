@@ -81,6 +81,14 @@ After the civil war, Sierra Leone made **decentralisation** part of rebuilding t
 Local councils and chiefdoms are not the same thing. **Councils** are **elected bodies** created by statute; **chiefdoms** are **traditional authorities** headed by Paramount Chiefs. In Sierra Leone the two work side by side in the provinces, which sometimes leads to overlapping roles.
 :::
 
+## Key terms
+
+:::callout{type=definition title="Key terms"}
+- **Bye-law**: a law made by a local council for its own area.
+- **Councillor**: an elected member of a local council who represents a ward.
+- **Local Government Act 2004**: the Act that revived Sierra Leone's local councils after decades of suspension; replaced by the Local Government Act 2022.
+:::
+
 ## Key points
 
 - **Local government** is government at the local level by **elected councils** with legal powers and revenue.
