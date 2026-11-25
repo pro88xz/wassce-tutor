@@ -414,3 +414,16 @@ jobs:
             (select p.prosecdef from pg_proc p where p.oid = 'public.tutor_review_lessons(uuid[])'::regprocedure));" | tr -d '[:space:]')"
           echo "visitors may call, signed-in may call, runs as owner: $RESULT"
           test "$RESULT" = "f,t,t" || { echo "Expected f,t,t"; exit 1; }
+
+      - name: Verify (39) a reviewed lesson's byline carries the reviewer's qualification
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            (select count(*) > 0 from public.wassce_public_lessons where reviewer_tutor_slug is not null and reviewer_credential is not null),
+            (select count(*) = 0 from public.wassce_public_lessons where reviewed_at is null and (reviewer_credential is not null or reviewer_verified)),
+            has_table_privilege('anon', 'public.wassce_public_lessons', 'select'));" | tr -d '[:space:]')"
+          echo "reviewed lessons carry a credential, unreviewed ones none, visitors can read: $RESULT"
+          test "$RESULT" = "t,t,t" || { echo "Expected t,t,t"; exit 1; }

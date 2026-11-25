@@ -199,22 +199,34 @@ function ReviewLessons() {
             </div>
           )}
 
-          {/* One subject on screen (chosen, or the only one they teach): approve its waiting lessons together. */}
-          {(subject !== 'all' || subjects.length === 1) && waitingIds(shown).length > 0 && (
-            <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border bg-card p-4">
-              <p className="text-sm text-muted-foreground">
-                Read every waiting lesson in {subject !== 'all' ? subject : subjects[0]}? Approve them together instead of one by one.
-              </p>
-              <button
-                type="button"
-                disabled={busy !== null}
-                onClick={() => void approveMany(waitingIds(shown), subject !== 'all' ? subject : subjects[0])}
-                className="inline-flex min-h-10 items-center gap-1.5 rounded-xl bg-emerald-600 px-4 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-60"
-              >
-                <CheckCheck className="h-4 w-4" aria-hidden /> Approve all {waitingIds(shown).length} waiting in {subject !== 'all' ? subject : subjects[0]}
-              </button>
-            </div>
-          )}
+          {/* Each subject they teach (or the one chosen): approve all its waiting lessons in one go. */}
+          {(() => {
+            const bySubject = (subject === 'all' ? subjects : [subject])
+              .map((name) => ({ name, ids: waitingIds(rows.filter((r) => r.subject_name === name)) }))
+              .filter((g) => g.ids.length > 0)
+            if (bySubject.length === 0) return null
+            return (
+              <section aria-labelledby="approve-subjects" className="space-y-3 rounded-2xl border bg-card p-4 sm:p-5">
+                <div>
+                  <h2 id="approve-subjects" className="text-sm font-bold">Approve a whole subject</h2>
+                  <p className="mt-0.5 text-sm text-muted-foreground">Read every waiting lesson in a subject? Approve them all in one go instead of topic by topic.</p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {bySubject.map((g) => (
+                    <button
+                      key={g.name}
+                      type="button"
+                      disabled={busy !== null}
+                      onClick={() => void approveMany(g.ids, g.name)}
+                      className="inline-flex min-h-10 items-center gap-1.5 rounded-xl bg-emerald-600 px-4 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-60"
+                    >
+                      <CheckCheck className="h-4 w-4" aria-hidden /> Approve all {g.ids.length} waiting in {g.name}
+                    </button>
+                  ))}
+                </div>
+              </section>
+            )
+          })()}
 
           {rows.length === 0 ? (
             <p className="rounded-2xl border bg-card p-6 text-sm text-muted-foreground">There are no published lessons in your subjects yet.</p>

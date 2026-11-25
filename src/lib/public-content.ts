@@ -8,6 +8,7 @@ import { hasKeyTermsByCount, topicKeyTerms, type KeyTerm } from '@/lib/key-terms
 import { topicPhoto } from '@/lib/topic-photos'
 import { mathToText } from '@/lib/math-text'
 import { examFocus } from '@/lib/lesson-sections'
+import { displayName } from '@/lib/tutor-profile'
 
 export { hasSubjectPage, keyTermsPath, lessonPath, questionsPath, subjectPath, topicPath } from '@/lib/public-rules'
 
@@ -247,6 +248,10 @@ export type PublicLesson = {
   reviewer_bio: string | null
   /** The reviewer's tutor page (/tutors/{slug}) when the reviewer is a listed tutor (migration 28). */
   reviewer_tutor_slug?: string | null
+  /** The reviewer's qualification as on their tutor card, e.g. "BSc Chemistry, Fourah Bay College" (migration 39). */
+  reviewer_credential?: string | null
+  /** WASSCE Tutor has verified the reviewer (migration 39). */
+  reviewer_verified?: boolean | null
 }
 
 export type PublicLessonPageData = TopicPageData & { lesson: PublicLesson }
@@ -261,8 +266,9 @@ export async function fetchPublicLessonPage(
   if (!page) return null
   const columns = 'id, topic_id, slug, title, content, est_minutes, sort_order, reviewed_at, updated_at, reviewer_name, reviewer_bio'
   const read = (cols: string) => supabase.from('wassce_public_lessons').select(cols).eq('topic_id', page.topic.id).eq('slug', lessonSlug).maybeSingle()
-  let { data, error } = await read(`${columns}, reviewer_tutor_slug`)
-  // Before migration 28 the view has no reviewer_tutor_slug.
+  let { data, error } = await read(`${columns}, reviewer_tutor_slug, reviewer_credential, reviewer_verified`)
+  // Before migration 39 the view has no reviewer_credential; before 28, no reviewer_tutor_slug.
+  if (error?.code === '42703') ({ data, error } = await read(`${columns}, reviewer_tutor_slug`))
   if (error?.code === '42703') ({ data, error } = await read(columns))
   if (error) fail('lesson', error)
   if (!data) return null
@@ -813,5 +819,67 @@ export async function fetchKeyTermsPage(subjectSlug: string, topicSlug: string):
     questionsUsingTerms,
     previousTerms: at > 0 ? withTerms[at - 1] : null,
     nextTerms: at >= 0 ? (withTerms[at + 1] ?? null) : null,
+  }
+}
+
+// ─── How we check lessons (/how-we-check-lessons) ───────────────────────────
+
+export type ReviewerSummary = { name: string; slug: string | null; credential: string | null; subjects: string[]; lessons: number }
+export type SubjectCoverage = { name: string; slug: string; lessons: number; reviewed: number; reviewers: string[] }
+export type ReviewCoverage = { lessons: number; reviewed: number; subjects: SubjectCoverage[]; reviewers: ReviewerSummary[] }
+
+type CoverageRow = { topic_id: string; reviewed_at: string | null; reviewer_name: string | null; reviewer_tutor_slug?: string | null; reviewer_credential?: string | null }
+
+/**
+ * Who has reviewed which published lessons, by subject and by reviewer, read
+ * at build time so the page always says exactly what has been checked. Reads
+ * only the review columns, not the lessons themselves.
+ */
+export async function fetchReviewCoverage(): Promise<ReviewCoverage> {
+  const [subjects, topics] = await Promise.all([
+    supabase.from('subjects').select('id, slug, name').order('name'),
+    supabase.from('topics').select('id, subject_id').range(0, 4999),
+  ])
+  if (subjects.error || !subjects.data) fail('subjects', subjects.error)
+  if (topics.error || !topics.data) fail('topics', topics.error)
+  const subjectOfTopic = new Map(topics.data.map((t) => [t.id, t.subject_id]))
+
+  const readAll = async (cols: string) => {
+    const rows: CoverageRow[] = []
+    for (let from = 0; ; from += 1000) {
+      const { data, error } = await supabase.from('wassce_public_lessons').select(cols).order('id').range(from, from + 999)
+      if (error) return { rows, error }
+      rows.push(...((data ?? []) as unknown as CoverageRow[]))
+      if (!data || data.length < 1000) return { rows, error: null }
+    }
+  }
+  let read = await readAll('topic_id, reviewed_at, reviewer_name, reviewer_tutor_slug, reviewer_credential')
+  // Before migration 39 the view has no reviewer_credential.
+  if (read.error?.code === '42703') read = await readAll('topic_id, reviewed_at, reviewer_name, reviewer_tutor_slug')
+  if (read.error) fail('lesson reviews', read.error)
+
+  const bySubject = new Map<string, SubjectCoverage>()
+  const byReviewer = new Map<string, ReviewerSummary>()
+  for (const s of subjects.data) bySubject.set(s.id, { name: s.name, slug: s.slug, lessons: 0, reviewed: 0, reviewers: [] })
+  for (const r of read.rows) {
+    const subject = bySubject.get(subjectOfTopic.get(r.topic_id) ?? '')
+    if (!subject) continue
+    subject.lessons++
+    if (!r.reviewed_at || !r.reviewer_name) continue
+    subject.reviewed++
+    const name = displayName(r.reviewer_name)
+    if (!subject.reviewers.includes(name)) subject.reviewers.push(name)
+    const key = r.reviewer_tutor_slug ?? name
+    const reviewer = byReviewer.get(key) ?? { name, slug: r.reviewer_tutor_slug ?? null, credential: r.reviewer_credential ?? null, subjects: [], lessons: 0 }
+    reviewer.lessons++
+    if (!reviewer.subjects.includes(subject.name)) reviewer.subjects.push(subject.name)
+    byReviewer.set(key, reviewer)
+  }
+  const list = [...bySubject.values()].filter((s) => s.lessons > 0)
+  return {
+    lessons: list.reduce((n, s) => n + s.lessons, 0),
+    reviewed: list.reduce((n, s) => n + s.reviewed, 0),
+    subjects: list.sort((a, b) => b.reviewed / b.lessons - a.reviewed / a.lessons || a.name.localeCompare(b.name)),
+    reviewers: [...byReviewer.values()].sort((a, b) => b.lessons - a.lessons),
   }
 }

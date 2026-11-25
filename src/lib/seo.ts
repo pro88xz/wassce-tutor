@@ -49,6 +49,13 @@ export const PUBLIC_PAGES = {
       `WASSCE Tutor: WASSCE lessons and practice questions for Sierra Leone students, with full working and private tutors. Free to start; from NLe ${FROM_PRICE}.`,
     lastmod: '2026-11-18',
   },
+  // How lessons are prepared and reviewed, with live review coverage (src/routes/how-we-check-lessons.tsx).
+  '/how-we-check-lessons': {
+    title: 'How We Check Our Lessons | WASSCE Tutor',
+    description:
+      'How WASSCE Tutor lessons are prepared against the WASSCE syllabus and reviewed by verified Sierra Leone teachers: who checked what, and how to report a mistake.',
+    lastmod: '2026-11-25',
+  },
   '/about': {
     title: 'About WASSCE Tutor: WASSCE Prep Built in Sierra Leone',
     description:

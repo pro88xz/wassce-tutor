@@ -40,6 +40,7 @@ const GROUPS: Group[] = [
       { label: 'Plans', href: '/#plans' },
       { label: 'Sign in', href: '/auth' },
       { label: 'About', href: '/about' },
+      { label: 'How we check lessons', href: '/how-we-check-lessons' },
     ],
   },
   {
