@@ -26,6 +26,7 @@
     "tutors:test": "node --experimental-strip-types --test scripts/tutors/pricing.test.mjs",
     "video:test": "node --test scripts/video/video-api.test.mjs",
     "functions:check": "node scripts/check-functions.mjs",
+    "monetag:test": "node --experimental-strip-types --test scripts/monetag.test.mjs",
     "tutor-request:test": "node --test scripts/tutor-request.test.mjs"
   },
   "dependencies": {
