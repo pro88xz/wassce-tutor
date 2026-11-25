@@ -525,6 +525,8 @@ PRONOUNCE = {
     "cos": "kˈɒz",               # cosine, as teachers say it ("coz", not "koss")
     "Lami's": "lˈɑːmiz",          # Lami's theorem (the possessive first, so it wins)
     "Lami": "lˈɑːmi",
+    "Hooke's": "hˈʊks",          # Hooke's law (the possessive first, so it wins)
+    "Hooke": "hˈʊk",
     "Musa": "mˈuːsə",            # names in the stories, as said in Sierra Leone
     "Aminata": "amɪnˈɑːtə",
 }
