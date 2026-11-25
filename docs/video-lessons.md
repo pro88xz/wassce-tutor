@@ -94,6 +94,12 @@ Students should feel taught by a real teacher, not read to by a voice-over.
   rainy season, the exam hall. Gentle and never at a student's expense; the teacher
   may joke about themselves. Put the punchline on its own step, or end a step on it,
   with `pause=0.9` to `1.1` so it lands.
+- **Explain the why, at the depth of the notes.** Start each idea from something the
+  student has felt or seen (pushing a door near its hinges, a box that is hard to start,
+  a basin carried on the head), then say *why* the rule is true before using it: why
+  only the perpendicular distance counts, why mu = tan theta (the mass cancels), why the
+  plumb-line method works. A lesson of five or six minutes that explains is better than
+  four that only states. (Moments and friction, topics 10 and 11, are the model.)
 - **Draw while explaining.** Shade areas as they are named, build a graph stage by
   stage, mark the dots of a fall: the board should move with the voice.
 - **No two videos start the same way, and the set phrases change.** Vary:
