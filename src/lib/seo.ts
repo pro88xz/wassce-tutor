@@ -130,7 +130,7 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
   },
   // "surds" (39 impressions, position 29), "what is a surd" (83)
   '/wassce/mathematics/surds': {
-    title: 'What Is a Surd? Surds Notes and Practice Questions',
+    title: 'What Is a Surd? Notes, Examples and Practice Questions',
     description:
       'A surd is a root that cannot be simplified to a whole number or fraction, like √2 or √3. Simplifying surds, operations and rationalising, with WASSCE questions.',
   },
