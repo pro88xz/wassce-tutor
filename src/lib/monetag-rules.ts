@@ -9,9 +9,13 @@
 export const RULES = {
   /** A visit ends after this long without a new page (the same as Google Analytics' sessions). */
   visitGapMs: 30 * 60 * 1000,
-  /** On the first page of a visit: seconds of active reading, and how far down the page, before an ad. */
-  firstPageSeconds: 45,
-  firstPageScroll: 0.4,
+  /**
+   * On the first page of a visit: seconds of active reading, and how far down the page, before an ad.
+   * 10 s and no scroll since 25 November 2026 (was 45 s and 40% of the page): the stricter gate let too
+   * few page views qualify to measure the test.
+   */
+  firstPageSeconds: 10,
+  firstPageScroll: 0,
   /** No ad within this long of a tap or key press (choosing an answer, typing). */
   quietMs: 3000,
   /** At least this long between two loads, and at most this many loads in a day. */
