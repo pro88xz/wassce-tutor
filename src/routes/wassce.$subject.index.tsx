@@ -57,6 +57,9 @@ export const Route = createFileRoute('/wassce/$subject/')({
       ogTitle: `WASSCE ${hub.subject.name}: syllabus topics${lessons ? ' and lessons' : ''}`,
       description: copy?.description ?? describe(hub),
       jsonLd: [breadcrumbJsonLd(trail(hub))],
+      // Lessons still being written: the page is a syllabus outline, useful to a visitor but too thin for
+      // search, so it stays out of Google (and the sitemap, scripts/public-page-list.ts) until it has lessons.
+      noindex: !lessons,
     })
   },
   component: SubjectHubPage,

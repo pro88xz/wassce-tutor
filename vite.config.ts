@@ -49,10 +49,10 @@ export default defineConfig(async ({ command, mode }) => {
           autoSubfolderIndex: false, // /about -> about.html (vercel.json cleanUrls)
           failOnError: true,
         },
-        pages: uniquePages([...fixedPages, ...dataPages]).map(({ path, lastmod }) => ({
+        pages: uniquePages<{ path: string; lastmod?: string; inSitemap?: false }>([...fixedPages, ...dataPages]).map(({ path, lastmod, inSitemap }) => ({
           path,
           prerender: { enabled: true },
-          sitemap: { lastmod },
+          sitemap: inSitemap === false ? { exclude: true } : { lastmod },
         })),
         sitemap: { enabled: true, host: SITE.origin },
       }),

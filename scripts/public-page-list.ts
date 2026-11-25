@@ -5,7 +5,8 @@
 import { hasQuestionsPageByCount, hasSubjectPage, hasTopicPageByCount, keyTermsPath, lessonPath, questionsPath, subjectPath, topicPath, tutorsPath } from '../src/lib/public-rules'
 import { hasKeyTermsByCount, topicKeyTerms } from '../src/lib/key-terms'
 
-export type PageEntry = { path: string; lastmod: string }
+/** inSitemap: false keeps a prerendered page out of sitemap.xml (a page that tells Google not to index it). */
+export type PageEntry = { path: string; lastmod: string; inSitemap?: false }
 
 type Row = Record<string, string>
 
@@ -94,7 +95,11 @@ export async function publicPageList(supabaseUrl: string, publishableKey: string
     const ownDates = [s.updated_at, ...own.flatMap((t) => [t.updated_at, ...(lessonDates.get(t.id) ?? [])])]
     const subjectLastmod = day(latest(ownDates))
     subjectLastmods.push(subjectLastmod)
-    pages.push({ path: subjectPath(s.slug), lastmod: subjectLastmod })
+    // A subject whose lessons are still being written shows only its syllabus outline: a placeholder, so its
+    // page asks not to be indexed (src/routes/wassce.$subject.index.tsx) and stays out of the sitemap until
+    // its first lesson is published.
+    const hasLessons = own.some((t) => lessonDates.has(t.id))
+    pages.push({ path: subjectPath(s.slug), lastmod: subjectLastmod, ...(hasLessons ? {} : { inSitemap: false as const }) })
     // Book a tutor page for the subject (its topic list comes from the syllabus).
     pages.push({ path: tutorsPath(s.slug), lastmod: subjectLastmod })
     const questionPages: PageEntry[] = []
