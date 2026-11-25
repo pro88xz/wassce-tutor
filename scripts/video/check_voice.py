@@ -179,7 +179,7 @@ def norm(words: list[str]) -> list[str]:
                        ("a glutenation", "agglutination"), ("rarer factions", "rarefactions"), ("rare factions", "rarefactions"), ("atagrin", "at tagrin"), ("resa", "rhesus"), ("resa's", "rhesus"), ("abo", "a b o"), ("ab", "a b"),
                        ("pcos", "p cause"), ("psin", "p sine"), ("amanata", "aminata"), ("amenata", "aminata"), ("a minatus", "aminata's"), ("aminatas", "aminata's"),
                        ("genset", "gen set"), ("gensets", "gen sets"), ("podopoda", "poda poda"), ("podapoda", "poda poda"),
-                       ("screwjack", "screw jack"), ("screwjacks", "screw jacks")):
+                       ("screwjack", "screw jack"), ("screwjacks", "screw jacks"), ("zigzag", "zig zag")):
         text = f" {text} ".replace(f" {heard} ", f" {word} ").strip()
     # apostrophes are not heard: "rule's" and "rules" sound the same
     out = numbers(text.replace("'", "").split())
