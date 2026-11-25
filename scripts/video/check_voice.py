@@ -170,7 +170,8 @@ def norm(words: list[str]) -> list[str]:
     # compounds the recogniser writes as one word ("by-product" as "byproduct")
     text = " ".join(SAME.get(w, w) for w in words)
     for split, joined in (("by product", "byproduct"), ("s i", "si"), ("blood stream", "bloodstream"), ("well being", "wellbeing"),
-                          ("ground nuts", "groundnuts"), ("under water", "underwater")):
+                          ("ground nuts", "groundnuts"), ("under water", "underwater"),
+                          ("see saws", "seesaws"), ("see saw", "seesaw")):
         text = f" {text} ".replace(f" {split} ", f" {joined} ").strip()
     # scientific words the recogniser spells by their sound (said correctly)
     for heard, word in (("flow m", "phloem"), ("floem", "phloem"), ("flowem", "phloem"), ("micro pill", "micropyle"),
