@@ -175,6 +175,9 @@ def _glyph(ch: str) -> tuple[list[np.ndarray], float]:
         return [np.array([[5, -2], [5.5, -1.5]], float)], 11
     if ch == "±":
         return [np.array([[9, -9], [9, 3]], float), np.array([[3, -3], [15, -3]], float), np.array([[3, 8], [15, 8]], float)], 18
+    if ch == "∝":   # "proportional to": one stroke, a loop open to the right
+        return [np.array([[17, -3], [14, -3.3], [11, -2], [8.5, 1], [6, 4], [3.5, 4.7], [2, 3], [2, -1], [3.5, -2.7],
+                          [6, -2], [8.5, 1], [11, 4], [14, 5.3], [17, 5]], float)], 20
     if ch == "°":   # a small ring at the top of the line
         t = np.linspace(0, 2 * np.pi, 16)
         return [np.column_stack([4.5 + 3 * np.cos(t), -9 + 3 * np.sin(t)])], 10
