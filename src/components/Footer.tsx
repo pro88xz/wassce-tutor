@@ -141,8 +141,9 @@ export function Footer() {
         </div>
 
         {/* The platforms we are on: one row of plain icons between two rules, as established
-            sites show them (no "follow us" buttons). Spread across the width on phones. */}
-        <ul aria-label="WASSCE Tutor elsewhere" className="mt-12 flex items-center justify-between border-t border-white/15 pt-4 sm:mt-16 sm:justify-start sm:gap-3">
+            sites show them (no "follow us" buttons). Spread across the width on phones, where
+            the accordions' bottom border is the rule above it. */}
+        <ul aria-label="WASSCE Tutor elsewhere" className="flex items-center justify-between pt-3 sm:mt-16 sm:justify-start sm:gap-3 sm:border-t sm:border-white/15 sm:pt-4">
           <li>
             <a href={CONTACT.whatsappGroup} target="_blank" rel="noopener" aria-label="The WASSCE Tutor WhatsApp group" title="WhatsApp" className="inline-flex h-11 w-11 items-center justify-center rounded-lg text-white/60 transition-colors hover:text-white">
               <WhatsAppGlyph className="h-6 w-6" />
@@ -160,7 +161,7 @@ export function Footer() {
           </li>
         </ul>
 
-        <div className="mt-4 flex flex-col gap-4 border-t border-white/15 pt-7 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-3 flex flex-col gap-4 border-t border-white/15 pt-7 sm:mt-4 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> WASSCE Tutor. An independent study service, not affiliated with WAEC.
           </p>
