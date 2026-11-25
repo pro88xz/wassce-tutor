@@ -72,7 +72,7 @@ STEPS = [
     step("And the speed on landing: v equals u minus g t. Twenty minus fifty: minus thirty. Thirty metres per second, downwards.",
          write("v = 20 - 50 = -30:  30 m s^{-1} down", 70, 624, 24, "green")),
 
-    step("The commonest mistake is writing plus twenty-five, for a point below you. With up as positive, below the origin is negative. Always.",
+    step("The commonest mistake is writing plus twenty-five, for a point below you. If up is positive, then a point below the origin is negative. Always.",
          clear(2.0),
          heading("The commonest mistake"),
          write("A point below the origin, with up as +:", 70, 200, 28),

@@ -511,6 +511,7 @@ PRONOUNCE = {
     "poda-poda": "pˈQdə pˈQdə",  # the minibus taxi
     "okada": "Qkˈɑːdə",          # the motorbike taxi (the dictionary said "ock-ah-da")
     "heavier": "hˈɛviə",         # missing from the dictionary
+    "fastest": "fˈɑːstɪst",
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
