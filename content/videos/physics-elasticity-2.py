@@ -79,7 +79,7 @@ STEPS = [
          double_arrow(1182, 442, 1182, 478, "pink", 2.2), write("e", 1196, 468, 20, "pink")),
 
     # ── 3. Young's modulus ────────────────────────────────────────────
-    step("Now divide one by the other. Stress over strain is Young's modulus, E. Put in the definitions, and it becomes F l nought, over A e. "
+    step("Now divide one by the other. Stress over strain is Young's modulus, E. Put in the definitions, and it becomes F l nought, over {A} e. "
          "Strain has no unit, so Young's modulus has the same unit as stress: the pascal.",
          clear(2.2),
          heading("Young's modulus"),

@@ -29,7 +29,7 @@ from oral_audio import MODELS, RATE, THREADS, reference, wer, words_of  # noqa: 
 MAX_WER = 0.05
 # Words a recogniser writes differently from the narration but which were said
 # right: compared after this spelling is applied to both sides.
-SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "ameba", "metres": "meters",
+SAME = {"haemoglobin": "hemoglobin", "naught": "nought", "specialised": "specialized", "amoeba": "ameba", "metres": "meters",
         "metre": "meter", "sin": "sine", "kilometre": "kilometer", "kilometres": "kilometers", "centimetre": "centimeter",
         "centimetres": "centimeters", "millimetre": "millimeter", "millimetres": "millimeters",
         "centre": "center", "colour": "color", "fibre": "fiber", "favour": "favor", "programme": "program",
