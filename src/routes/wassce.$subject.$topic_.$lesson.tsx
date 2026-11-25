@@ -9,7 +9,7 @@ import { KeyTermsLink } from '@/components/lesson/key-terms-link'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchPublicLessonPage, keyTermsPath, lessonPath, lessonSummary, questionsPath, subjectPath, topicKeyTermCount, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { PublicLessonPageData } from '@/lib/public-content'
-import { SEARCH_COPY, absoluteUrl, brandedTitle, breadcrumbJsonLd, indexablePageTags, orgRef, privatePageTags } from '@/lib/seo'
+import { SEARCH_COPY, absoluteUrl, brandedTitle, breadcrumbJsonLd, conceptTitle, indexablePageTags, orgRef, privatePageTags } from '@/lib/seo'
 import { SubjectIcon } from '@/components/SubjectIcon'
 import { subjectTheme } from '@/lib/subject-theme'
 import { displayName, tutorPagePath } from '@/lib/tutor-profile'
@@ -74,9 +74,8 @@ export const Route = createFileRoute('/wassce/$subject/$topic_/$lesson')({
     const copy = SEARCH_COPY[path]
     return indexablePageTags({
       path,
-      // Subject first: Google cuts titles at about 60 characters, and long lesson names used to push "WASSCE" out of view.
-      // The brand goes too when it would be cut off anyway.
-      title: brandedTitle(copy?.title ?? `WASSCE ${data.subject.name}: ${data.lesson.title}`),
+      // The lesson's name first: it is what people search for (conceptTitle, src/lib/seo.ts).
+      title: brandedTitle(copy?.title ?? conceptTitle(data.lesson.title, data.subject.name)),
       ogTitle: `${data.lesson.title} (WASSCE ${data.subject.name})`,
       description: copy?.description ?? lessonSummary(data.lesson.content),
       // With a video, this page is its watch page: the video is the first thing on it.

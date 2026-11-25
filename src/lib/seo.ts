@@ -111,6 +111,20 @@ export type PublicPath = keyof typeof PUBLIC_PAGES
 // "chemistry for beginners" or "learn about literature". Keyed by path. Keep
 // each one true to what the page has; it replaces the template's text only.
 export const SEARCH_COPY: Partial<Record<string, { title: string; description: string }>> = {
+  // Search Console, 24 Aug to 24 Nov 2026: the lesson that took the old introduction's
+  // place (and its 20 clicks from "accounting", 338 impressions) had a 114-character title.
+  '/wassce/financial-accounting/introduction-to-financial-accounting/what-is-financial-accounting-meaning-objectives-and-users-of-accounting-information': {
+    title: 'What Is Accounting? Financial Accounting Meaning and Users',
+    description:
+      'Financial accounting records, classifies, summarises and reports the transactions of a business. Its objectives, who uses accounting information and why.',
+  },
+  // "what a noun": 176 impressions at position 7, no clicks. The lesson covers what nouns
+  // name and three tests for spotting one (types come in a later lesson).
+  '/wassce/english-language/nouns/what-are-nouns': {
+    title: 'What Is a Noun? Meaning, Examples and How to Spot One',
+    description:
+      'A noun is a word that names a person, place, thing, idea or animal. The five things nouns name, where they sit in a sentence and three tests to spot one.',
+  },
   // Nov 2026 content audit: the lesson's snippet opened "Lesson 1 gave you the basic
   // transformation in outline. This lesson goes deeper..."; students search for
   // "active to passive voice".
@@ -629,6 +643,27 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
  */
 const TITLE_SUBJECT: Partial<Record<string, string>> = { 'ICT / Computer Studies': 'ICT' }
 export const titleSubject = (name: string): string => TITLE_SUBJECT[name] ?? name
+
+/**
+ * A lesson's or topic's search title when it has no hand-written one (SEARCH_COPY):
+ * its own name first, because people search for the idea ("gas exchange", "what
+ * a noun", "urinary system"), not for "WASSCE". In Search Console (24 Aug to
+ * 24 Nov 2026) only 49 of 11,892 query impressions named WASSCE, WAEC or a
+ * country, and titles that opened "WASSCE Biology: ..." pushed the searched
+ * words late or past the ~60 characters Google shows. The first that fits:
+ * name + what the page offers + "| WASSCE <subject>", then "| WASSCE", then the
+ * name with the subject, then the name alone.
+ */
+export function conceptTitle(name: string, subject: string, offers: string[] = [], max = 60): string {
+  const s = titleSubject(subject)
+  const tries = [
+    ...offers.map((o) => `${name}${o} | WASSCE ${s}`),
+    ...offers.map((o) => `${name}${o} | WASSCE`),
+    `${name} | WASSCE ${s}`,
+    `${name} | WASSCE`,
+  ]
+  return tries.find((t) => t.length <= max) ?? name
+}
 
 /** Google shows about 60 characters of a title: add the brand only when it still fits. */
 export function brandedTitle(title: string, max = 65): string {

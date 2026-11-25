@@ -16,7 +16,7 @@ import { useAuth } from '@/lib/auth'
 import { PRACTICE_QUESTIONS, hasPractice } from '@/lib/practice-counts'
 import { fetchKeyTermPreview, fetchTopicExtras, fetchTopicPage, hasTopicPage, keyTermsPath, lessonMinutes, lessonPath, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { TopicPageData, TopicWithLessons } from '@/lib/public-content'
-import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, conceptTitle, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
 import { studyTime } from '@/lib/study-time'
 import { NOT_TAUGHT, loadOutlines, outlineKey, plural, sectionId, totals } from '@/lib/lesson-outlines'
 import type { LessonOutline } from '@/lib/lesson-outlines'
@@ -64,9 +64,13 @@ export const Route = createFileRoute('/wassce/$subject/$topic')({
     if (!data) return privatePageTags('Page not found')
     const path = topicPath(data.subject.slug, data.topic.slug)
     const copy = SEARCH_COPY[path]
+    // The topic's name first, then what the page offers (conceptTitle, src/lib/seo.ts).
+    const notes = data.topic.lessons.length > 0
+    const questions = data.questionCount > 0
+    const offers = notes && questions ? [' Notes and Practice Questions', ' Notes and Questions'] : notes ? [' Notes'] : questions ? [' Practice Questions'] : []
     return indexablePageTags({
       path,
-      title: brandedTitle(copy?.title ?? `WASSCE ${data.subject.name}: ${data.topic.name} Lessons`),
+      title: brandedTitle(copy?.title ?? conceptTitle(data.topic.name, data.subject.name, offers)),
       ogTitle: `${data.topic.name} (WASSCE ${data.subject.name})`,
       description: copy?.description ?? describe(data),
       jsonLd: [breadcrumbJsonLd(trail(data))],
