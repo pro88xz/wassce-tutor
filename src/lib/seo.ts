@@ -926,16 +926,18 @@ type IndexablePage = {
   type?: 'website' | 'article' | 'profile'
   publishedAt?: string
   modifiedAt?: string
+  /** A placeholder that should not be in Google yet (its links are still followed). */
+  noindex?: boolean
 }
 
 /** Tags for an indexable page: unique title + description, self canonical, OG/Twitter text, optional JSON-LD. */
-export function indexablePageTags({ path, title, description, ogTitle = title, jsonLd: data = [], image = `${SITE.origin}/og-image.jpg`, type = 'website', publishedAt, modifiedAt }: IndexablePage): HeadTags {
+export function indexablePageTags({ path, title, description, ogTitle = title, jsonLd: data = [], image = `${SITE.origin}/og-image.jpg`, type = 'website', publishedAt, modifiedAt, noindex = false }: IndexablePage): HeadTags {
   const url = absoluteUrl(path)
   return {
     meta: [
       { title },
       { name: 'description', content: description },
-      { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large' },
+      { name: 'robots', content: noindex ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large' },
       { property: 'og:type', content: type },
       { property: 'og:image', content: image },
       { property: 'og:image:alt', content: title },
