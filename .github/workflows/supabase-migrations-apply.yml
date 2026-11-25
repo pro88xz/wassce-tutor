@@ -427,3 +427,13 @@ jobs:
             has_table_privilege('anon', 'public.wassce_public_lessons', 'select'));" | tr -d '[:space:]')"
           echo "reviewed lessons carry a credential, unreviewed ones none, visitors can read: $RESULT"
           test "$RESULT" = "t,t,t" || { echo "Expected t,t,t"; exit 1; }
+
+      - name: Verify (40) John Kaitibie's qualification reads BSc
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          LEFT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select count(*) from public.tutors where slug = 'john-kaitibie' and qualifications like 'Bsc %';" | tr -d '[:space:]')"
+          echo "John Kaitibie's qualification still spelled Bsc: $LEFT"
+          test "$LEFT" = "0" || { echo "Expected BSc"; exit 1; }
