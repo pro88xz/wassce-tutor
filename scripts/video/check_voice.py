@@ -33,7 +33,9 @@ SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "am
         "metre": "meter", "sin": "sine", "kilometre": "kilometer", "kilometres": "kilometers", "centimetre": "centimeter",
         "centimetres": "centimeters", "millimetre": "millimeter", "millimetres": "millimeters",
         "centre": "center", "colour": "color", "fibre": "fiber", "favour": "favor", "programme": "program",
-        "organisation": "organization",
+        "organisation": "organization", "favourite": "favorite",
+        # homophones: the letter u, and car brakes
+        "you": "u", "brakes": "breaks", "braking": "breaking", "brake": "break",
         # homophones and rare names the recogniser spells its own way
         "maize": "maze", "mays": "maze", "zea": "zia", "protoctista": "protoctyster",
         "mesophyll": "messiful", "coloured": "colored", "fertilisation": "fertilization",
@@ -75,6 +77,9 @@ def spoken(heard: str) -> str:
     heard = re.sub(r"(?<![\w.])-(?=\d)", " minus ", heard)
     heard = re.sub(r"(?<=\d)\s+\+\s+(?=\d)", " plus ", heard)
     heard = re.sub(r"(?<=\d)\s+-\s+(?=\d)", " minus ", heard)
+    # between letters too: "V = U + AT" is "v equals u plus a t"
+    heard = re.sub(r"(?<=\w)\s+\+\s+(?=\w)", " plus ", heard)
+    heard = re.sub(r"(?<=\w)\s+-\s+(?=\w)", " minus ", heard)
     # a number with a unit's symbol ("10N", "4.5 cm") is the unit's name, singular after 1
     heard = re.sub(r"(\d+(?:\.\d+)?)\s*(cm|mm|km|kg|m|g|N|s|J|W)\b",
                    lambda m: f"{m.group(1)} {UNITS[m.group(2)]}{'' if m.group(1) == '1' else 's'}", heard)
@@ -187,7 +192,7 @@ def main():
         s.accept_waveform(16000, x16)
         rec.decode_stream(s)
         heard = s.result.text.strip()
-        said, got = norm(reference(say)), norm(words_of(spoken(heard)))
+        said, got = norm(reference(bv.shown(say))), norm(words_of(spoken(heard)))
         score = min(wer(said, got), wer(joined(said), joined(got)))
         ok = score <= MAX_WER
         failed += not ok
