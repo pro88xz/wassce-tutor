@@ -183,10 +183,10 @@ STEPS = [
          write("3 turns of the small gear,  1 of the big", 70, 360, 24),
          write("more turning force,  less speed", 70, 400, 24, "green")),
 
-    step("You feel this on a bicycle. Climbing a steep road in Freetown, you pick the small chainwheel at the front, and a big sprocket at the back. "
+    step("You feel this on a bicycle. Climbing a steep road in Freetown, you pick the small gear at the front, by the pedals, and a big gear at the back. "
          "A big velocity ratio: your legs push gently, and you crawl up the hill. On the flat, change gear, and fly.",
-         write("uphill bike:  small chainwheel at the front,", 70, 480, 22, "blue"),
-         write("big sprocket at the back:  big VR,  easy,  slow", 70, 515, 22, "blue"),
+         write("uphill bike:  small gear at the front,", 70, 480, 22, "blue"),
+         write("big gear at the back:  big VR,  easy,  slow", 70, 515, 22, "blue"),
          pause=0.8),
 
     # ── 6. The hydraulic press ────────────────────────────────────────
