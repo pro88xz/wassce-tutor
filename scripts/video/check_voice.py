@@ -171,11 +171,13 @@ def norm(words: list[str]) -> list[str]:
     text = " ".join(SAME.get(w, w) for w in words)
     for split, joined in (("by product", "byproduct"), ("s i", "si"), ("blood stream", "bloodstream"), ("well being", "wellbeing"),
                           ("ground nuts", "groundnuts"), ("under water", "underwater"),
-                          ("see saws", "seesaws"), ("see saw", "seesaw")):
+                          ("see saws", "seesaws"), ("see saw", "seesaw"), ("anti clockwise", "anticlockwise"),
+                          ("newtons cm", "newton centimeters"), ("newton cm", "newton centimeters")):
         text = f" {text} ".replace(f" {split} ", f" {joined} ").strip()
     # scientific words the recogniser spells by their sound (said correctly)
     for heard, word in (("flow m", "phloem"), ("floem", "phloem"), ("flowem", "phloem"), ("micro pill", "micropyle"),
-                       ("a glutenation", "agglutination"), ("rarer factions", "rarefactions"), ("rare factions", "rarefactions"), ("atagrin", "at tagrin"), ("resa", "rhesus"), ("resa's", "rhesus"), ("abo", "a b o"), ("ab", "a b")):
+                       ("a glutenation", "agglutination"), ("rarer factions", "rarefactions"), ("rare factions", "rarefactions"), ("atagrin", "at tagrin"), ("resa", "rhesus"), ("resa's", "rhesus"), ("abo", "a b o"), ("ab", "a b"),
+                       ("amanata", "aminata"), ("amenata", "aminata"), ("a minatus", "aminata's"), ("aminatas", "aminata's")):
         text = f" {text} ".replace(f" {heard} ", f" {word} ").strip()
     return numbers(text.split())
 
