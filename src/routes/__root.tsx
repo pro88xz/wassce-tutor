@@ -63,6 +63,8 @@ export const Route = createRootRoute({
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       { name: 'google-site-verification', content: 'S8kJyYT-6kCzOytVerViOFKhPDPleWCwfltAxOG1DM4' },
       { name: 'google-adsense-account', content: 'ca-pub-9121922395304175' },
+      // Monetag's ownership check for wasscetutor.com: a tag only, it loads no ads or scripts.
+      { name: 'monetag', content: 'e0a89d13cd30b9c3e9461ab2aeb342b4' },
       { name: 'theme-color', content: '#6438d8' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: SITE.name },
