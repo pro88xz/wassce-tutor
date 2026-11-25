@@ -51,6 +51,11 @@ UNITS = {"cm": "centimetre", "mm": "millimetre", "km": "kilometre", "kg": "kilog
          "N": "newton", "s": "second", "J": "joule", "W": "watt"}
 
 
+def _ordinal(n: int, plural: bool) -> str:
+    from num2words import num2words
+    return num2words(n, to="ordinal") + ("s" if plural else "")
+
+
 def spoken(heard: str) -> str:
     """What the recogniser wrote, back in the words that were said: "3.06" is
     "three point zero six", "1.5 Hz" is "one point five hertz", "λ" is "lambda"."""
@@ -58,13 +63,15 @@ def spoken(heard: str) -> str:
         heard = heard.replace(sym, words)
     heard = re.sub(r"(?<=\d)\s*[xX]\s*(?=\d)", " times ", heard)
     heard = re.sub(r"(?<=\d),(?=\d{3}\b)", "", heard)   # 72,000 is seventy-two thousand
+    # 1/50th is one fiftieth, 3/4ths three fourths
+    heard = re.sub(r"\b(\d+)/(\d+)(?:st|nd|rd|th)s?\b", lambda m: f"{m.group(1)} {_ordinal(int(m.group(2)), m.group(1) != '1')}", heard)
     heard = re.sub(r"(?<=\d)\s*/\s*(?=\d)", " over ", heard)   # 1/50 is one over fifty
     # cm3 is cubic centimetres ("per cm3" is per cubic centimetre)
     heard = re.sub(r"\bper\s+cm(?:3|³)", "per cubic centimetre", heard)
     heard = re.sub(r"(\d+(?:\.\d+)?)\s*cm(?:3|³)",
                    lambda m: f"{m.group(1)} cubic centimetre{'' if m.group(1) == '1' else 's'}", heard)
     # signs: "+10" is "plus ten", "-5.2" is "minus five point two", "12 - 5" is "twelve minus five"
-    heard = re.sub(r"(?<![\w.])\+(?=\d)", " plus ", heard)
+    heard = re.sub(r"(?<![\w.])\+\s*(?=\d)", " plus ", heard)
     heard = re.sub(r"(?<![\w.])-(?=\d)", " minus ", heard)
     heard = re.sub(r"(?<=\d)\s+\+\s+(?=\d)", " plus ", heard)
     heard = re.sub(r"(?<=\d)\s+-\s+(?=\d)", " minus ", heard)
@@ -86,21 +93,24 @@ def _values(run: list[str]) -> list[str]:
     one by one) is 347, "fifteen hundred" is 1500, "two thousand and five" is 2005."""
     if len(run) > 1 and all(NUMBER.get(w, (0, ""))[1] == "unit" for w in run):
         return ["#" + "".join(str(NUMBER[w][0]) for w in run)]
-    out, total, cur, last = [], 0, 0, None
+    out, total, hund, small, last = [], 0, 0, 0, None
     for w in run:
         if w in SCALE:
             if SCALE[w] == 100:
-                cur = (cur or 1) * 100
+                if hund:                      # "one hundred, four hundred" is two numbers
+                    out.append(total + hund)
+                    total = 0
+                hund, small = (small or 1) * 100, 0
             else:
-                total, cur = total + (cur or 1) * SCALE[w], 0
+                total, hund, small = total + ((hund + small) or 1) * SCALE[w], 0, 0
             last = "scale"
             continue
         v, kind = NUMBER[w]
         if last in ("unit", "teen") or (last == "tens" and kind != "unit"):   # a new number starts
-            out.append(total + cur)
-            total, cur = 0, 0
-        cur, last = cur + v, kind
-    return [f"#{n}" for n in out + [total + cur]]
+            out.append(total + hund + small)
+            total, hund, small = 0, 0, 0
+        small, last = small + v, kind
+    return [f"#{n}" for n in out + [total + hund + small]]
 
 
 def numbers(words: list[str]) -> list[str]:
