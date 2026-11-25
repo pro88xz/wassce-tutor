@@ -14,7 +14,7 @@ function Privacy() {
       <header className="space-y-3 pb-4 pt-2">
         <p className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">Legal</p>
         <h1 className="text-4xl font-bold tracking-tight text-balance">Privacy Policy</h1>
-        <p className="text-sm text-muted-foreground">Last updated: 17 November 2026</p>
+        <p className="text-sm text-muted-foreground">Last updated: 25 November 2026</p>
       </header>
 
       <section className="space-y-3 rounded-2xl border bg-card p-6">
@@ -68,7 +68,9 @@ function Privacy() {
           Only you can see your full account data when signed in. The WASSCE Tutor operator can access anonymised usage statistics to understand which lessons and subjects students engage with most. Individual student responses are not shared with anyone outside the platform.
         </p>
         <p className="text-muted-foreground">
-          We do not share your data with advertisers. We do not run third-party advertising on this platform.
+          We do not sell your data, and we never give advertisers your name, email address, answers or scores. Our public pages (lessons,
+          notes, practice questions, the blog) show adverts, described under &ldquo;Advertising&rdquo; below. The app&rsquo;s own screens
+          (your dashboard, practice, progress and account) never show adverts.
         </p>
       </section>
 
@@ -90,15 +92,43 @@ function Privacy() {
         <p className="text-muted-foreground">
           We use Google Analytics to count visitors and see which pages, subjects and lessons are used, so we can improve WASSCE Tutor. It sets its own cookies on this site and sends Google the pages you view, how you arrived, your device and browser type, and your approximate location (country or city). It does not receive your name, email address, answers or scores. You can block it with your browser&rsquo;s tracking protection or Google&rsquo;s opt-out browser add-on.
         </p>
+      </section>
+
+      <section className="space-y-3 rounded-2xl border bg-card p-6">
+        <h2 className="text-xl font-bold tracking-tight">Advertising</h2>
         <p className="text-muted-foreground">
-          We do not use advertising pixels or analytics that follow you across other websites.
+          Our public pages show adverts from Google AdSense, which pay for the free lessons. Third-party vendors, including Google, use
+          cookies to serve ads based on a visitor&rsquo;s earlier visits to this website or other websites. Google&rsquo;s use of
+          advertising cookies lets it and its partners serve ads to you based on your visits to this site and/or other sites on the
+          internet.{' '}
+          <a href="https://policies.google.com/technologies/partner-sites" className="font-semibold text-primary hover:underline" rel="noopener">
+            How Google uses information from sites that use its services
+          </a>
+          .
+        </p>
+        <p className="text-muted-foreground">
+          You can turn off personalised advertising in Google&rsquo;s{' '}
+          <a href="https://adssettings.google.com" className="font-semibold text-primary hover:underline" rel="noopener">
+            Ads Settings
+          </a>
+          , or turn off some other advertising companies&rsquo; use of cookies for personalised advertising at{' '}
+          <a href="https://www.aboutads.info/choices" className="font-semibold text-primary hover:underline" rel="noopener">
+            aboutads.info
+          </a>
+          . Your browser&rsquo;s settings can also block or delete cookies.
+        </p>
+        <p className="text-muted-foreground">
+          From 25 November 2026 we are trying a second advertising network, Monetag, on some public pages: a small advert card that
+          appears only after you have read for a while, at most a few times a day. Monetag sets its own cookies and identifiers to choose
+          and count its adverts, under its own privacy policy. It is never shown on the app&rsquo;s screens, on this page, the terms or
+          the contact page, or to students with a plan.
         </p>
       </section>
 
       <section className="space-y-3 rounded-2xl border bg-card p-6">
         <h2 className="text-xl font-bold tracking-tight">Children</h2>
         <p className="text-muted-foreground">
-          WAEC students are typically aged 16&ndash;19. If you are under 18, please use WASSCE Tutor with the knowledge and supervision of a parent or guardian. We do not knowingly collect data from children under 13.
+          WAEC students are typically aged 16&ndash;19. If you are under 18, please use WASSCE Tutor with the knowledge and supervision of a parent or guardian. We do not knowingly collect data from children under 13. Google says it does not personalise adverts for people it knows to be under 18.
         </p>
       </section>
 
