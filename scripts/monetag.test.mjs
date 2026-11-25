@@ -7,13 +7,13 @@ const T0 = new Date(2026, 10, 26, 9, 0, 0).getTime() // 26 Nov 2026, 09:00 local
 const MIN = 60 * 1000
 const reading = (over = {}) => ({ firstOfVisit: false, activeSeconds: 0, scrolled: 0, quietMs: 10000, googleOverlay: false, ...over })
 
-test('the first page of a visit: nothing on arrival, only after 45 s of reading and 40% of the page', () => {
+test('the first page of a visit: nothing on arrival, only after 10 s of active reading', () => {
   const { state, firstOfVisit } = pageOpened(EMPTY_STATE, T0)
   assert.equal(firstOfVisit, true)
   assert.equal(verdict(state, T0, reading({ firstOfVisit: true })), 'wait')
-  assert.equal(verdict(state, T0, reading({ firstOfVisit: true, activeSeconds: 60, scrolled: 0.2 })), 'wait')
-  assert.equal(verdict(state, T0, reading({ firstOfVisit: true, activeSeconds: 30, scrolled: 0.9 })), 'wait')
-  assert.equal(verdict(state, T0, reading({ firstOfVisit: true, activeSeconds: 45, scrolled: 0.4 })), 'load')
+  assert.equal(verdict(state, T0, reading({ firstOfVisit: true, activeSeconds: 9 })), 'wait')
+  assert.equal(verdict(state, T0, reading({ firstOfVisit: true, activeSeconds: 10 })), 'load')
+  assert.equal(verdict(state, T0, reading({ firstOfVisit: true, activeSeconds: 10, quietMs: 500 })), 'wait')
 })
 
 test('the second page of a visit may show it; 30 minutes away starts a new visit', () => {

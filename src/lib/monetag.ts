@@ -10,8 +10,8 @@
 //    tutors, universities...). Never the app (sign-in, the dashboard, study
 //    screens, payment), Privacy, Terms or Contact, a page that does not exist,
 //    the Android app, or anyone with a plan.
-//  - Never on arrival: from the second page of a visit, or after 45 seconds
-//    of active reading and 40% of the page on the first.
+//  - Never on arrival: from the second page of a visit, or after 10 seconds
+//    of active reading on the first.
 //  - Never mid-task (3 seconds after a tap or key press), and never over a
 //    Google full-screen ad. It may show with AdSense's anchor ad, which stays
 //    at the bottom of the screen while this card sits at the top.

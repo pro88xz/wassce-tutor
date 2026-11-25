@@ -119,7 +119,7 @@ function Privacy() {
         </p>
         <p className="text-muted-foreground">
           From 25 November 2026 we are trying a second advertising network, Monetag, on some public pages: a small advert card that
-          appears only after you have read for a while, at most a few times a day. Monetag sets its own cookies and identifiers to choose
+          appears only after you have been reading a page for a few seconds or open a second page, at most a few times a day. Monetag sets its own cookies and identifiers to choose
           and count its adverts, under its own privacy policy. It is never shown on the app&rsquo;s screens, on this page, the terms or
           the contact page, or to students with a plan.
         </p>
