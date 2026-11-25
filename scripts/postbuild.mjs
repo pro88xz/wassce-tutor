@@ -87,7 +87,7 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
   const SITE = 'https://wasscetutor.com'
   const contactSrc = fs.readFileSync(path.join(root, 'src/lib/contact.ts'), 'utf8')
   const contact = Object.fromEntries([...contactSrc.matchAll(/^\s+(\w+): '([^']*)',$/gm)].map((m) => [m[1], m[2]]))
-  for (const k of ['email', 'phoneDisplay', 'whatsapp', 'whatsappGroup', 'locality', 'country']) {
+  for (const k of ['email', 'phoneDisplay', 'whatsapp', 'whatsappGroup', 'tiktok', 'locality', 'country']) {
     if (!contact[k]) {
       console.error(`[postbuild] llms.txt: could not read ${k} from src/lib/contact.ts`)
       process.exit(1)
@@ -151,6 +151,7 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
     `- Every lesson in every subject and every practice set (with answers and full working) is free, with no account needed to read them. A free account saves progress. Paid plans add the AI study tutor and timed mock exams: ${planLine}, paid once through a Monime USSD code with Orange Money or AfriMoney. No automatic renewal: ${SITE}/#plans`,
     `- Contact: WhatsApp ${contact.phoneDisplay} (https://wa.me/${contact.whatsapp}), email ${contact.email}. Based in ${contact.locality}, ${contact.country}; serves students across the country online.`,
     `- WhatsApp group: ${contact.whatsappGroup}`,
+    `- TikTok (lesson clips): ${contact.tiktok}`,
     '',
     ...sections.flatMap(([heading, list]) => (list.length ? [`## ${heading}`, '', ...list.map(line), ''] : [])),
   ]

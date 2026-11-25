@@ -722,7 +722,7 @@ const ORGANIZATION = {
     },
   ],
   knowsAbout: ['WASSCE', 'West African Senior School Certificate Examination', 'Secondary education in Sierra Leone'],
-  sameAs: [GOOGLE_MAPS_URL],
+  sameAs: [GOOGLE_MAPS_URL, CONTACT.tiktok],
 }
 
 // Organization + WebSite + app entity graph, on the homepage.
