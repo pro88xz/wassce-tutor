@@ -387,3 +387,17 @@ jobs:
             (select count(*) from pg_policies where schemaname = 'public' and tablename = 'tutor_requests' and cmd = 'INSERT'));" | tr -d '[:space:]')"
           echo "anon may insert, signed-in may insert, insert policies: $RESULT"
           test "$RESULT" = "f,f,0" || { echo "Expected no browser inserts into tutor_requests (f,f,0)"; exit 1; }
+
+      - name: Verify (37) every published lesson in Nicholas Norman's and John Kaitibie's subjects is reviewed
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --command "select t.slug as reviewer, count(*) as lessons_reviewed from public.lessons l join public.tutors t on t.user_id = l.reviewed_by where t.slug in ('john-kaitibie', 'nicholas-norman') and l.is_published group by t.slug order by t.slug;"
+          LEFT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select count(*) from public.lessons l join public.topics tp on tp.id = l.topic_id
+            where l.is_published and l.reviewed_at is null and l.created_at < timestamptz '2026-11-25 18:00:00+00'
+              and tp.subject_id in (select ts.subject_id from public.tutor_subjects ts join public.tutors t on t.id = ts.tutor_id
+                                     where t.slug in ('john-kaitibie', 'nicholas-norman') and t.status = 'active' and t.reviewer);" | tr -d '[:space:]')"
+          echo "published lessons (created before 25 Nov 2026 18:00 UTC) in their subjects still unreviewed: $LEFT"
+          test "$LEFT" = "0" || { echo "Expected every published lesson in their subjects to be reviewed"; exit 1; }
