@@ -5,6 +5,7 @@ import { ADDRESS_LINE, CONTACT, whatsappChatLink } from '@/lib/contact'
 import { BrandMark } from '@/components/BrandMark'
 import { GOOGLE_REVIEW_URL } from '@/lib/reviews'
 import { WhatsAppGlyph } from '@/components/WhatsAppGlyph'
+import { TikTokGlyph } from '@/components/TikTokGlyph'
 
 const SHOW_ON = ['/', '/about', '/contact', '/privacy', '/terms']
 const isPublicPage = (pathname: string) =>
@@ -46,6 +47,7 @@ const GROUPS: Group[] = [
     links: [
       { label: 'Contact us', href: '/contact' },
       { label: 'WhatsApp group', href: CONTACT.whatsappGroup },
+      { label: 'TikTok', href: CONTACT.tiktok },
       { label: 'Review us on Google', href: GOOGLE_REVIEW_URL },
       { label: 'Report a problem', href: `mailto:${CONTACT.email}?subject=${encodeURIComponent('Problem report: WASSCE Tutor')}` },
     ],
@@ -102,6 +104,15 @@ export function Footer() {
               className="inline-flex min-h-11 py-2 items-center gap-2 whitespace-nowrap rounded-xl bg-[#1a8d4a] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#157a3f]"
             >
               <WhatsAppGlyph className="h-5 w-5" /> Join our WhatsApp group
+            </a>
+            <a
+              href={CONTACT.tiktok}
+              target="_blank"
+              rel="noopener"
+              aria-label={`Follow WASSCE Tutor on TikTok (${CONTACT.tiktokHandle})`}
+              className="inline-flex min-h-11 py-2 items-center gap-2 whitespace-nowrap rounded-xl border border-white/25 px-4 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+            >
+              <TikTokGlyph className="h-5 w-5" /> Follow us on TikTok
             </a>
           </div>
 

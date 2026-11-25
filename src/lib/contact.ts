@@ -12,6 +12,9 @@ export const CONTACT = {
   phoneE164: '+23277884195',
   /** Community WhatsApp group for students. */
   whatsappGroup: 'https://chat.whatsapp.com/JdRTn55TaGZ1juBDdnwAx5',
+  /** The TikTok account: lesson clips, linked from the footer and the business schema. */
+  tiktok: 'https://www.tiktok.com/@wasscetutor',
+  tiktokHandle: '@wasscetutor',
   locality: 'Freetown',
   region: 'Western Area',
   country: 'Sierra Leone',
