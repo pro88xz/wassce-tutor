@@ -44,7 +44,16 @@ function lessonJsonLd(data: PublicLessonPageData): Record<string, unknown> {
     inLanguage: 'en',
     ...(lesson.reviewed_at ? { lastReviewed: lesson.reviewed_at } : {}),
     ...(lesson.reviewed_at && lesson.reviewer_name
-      ? { reviewedBy: { '@type': 'Person', name: displayName(lesson.reviewer_name), ...(lesson.reviewer_bio ? { description: lesson.reviewer_bio } : {}), ...(lesson.reviewer_tutor_slug ? { url: absoluteUrl(tutorPagePath(lesson.reviewer_tutor_slug)) } : {}) } }
+      ? {
+          reviewedBy: {
+            '@type': 'Person',
+            name: displayName(lesson.reviewer_name),
+            ...(lesson.reviewer_bio ? { description: lesson.reviewer_bio } : {}),
+            ...(lesson.reviewer_tutor_slug ? { url: absoluteUrl(tutorPagePath(lesson.reviewer_tutor_slug)), jobTitle: 'WASSCE tutor' } : {}),
+            // Their qualification as on their tutor card (migration 39), the same words their page shows.
+            ...(lesson.reviewer_credential ? { hasCredential: { '@type': 'EducationalOccupationalCredential', name: lesson.reviewer_credential } } : {}),
+          },
+        }
       : {}),
     mainEntity: {
       '@type': 'Article',
@@ -128,12 +137,16 @@ function PublicLessonPage() {
                 ) : (
                   <span className="font-semibold">{lesson.reviewer_name ? displayName(lesson.reviewer_name) : 'the WASSCE Tutor team'}</span>
                 )}
+                {lesson.reviewer_credential && <span className="text-muted-foreground"> ({lesson.reviewer_credential})</span>}
                 {lesson.reviewer_bio && <span className="text-muted-foreground">, {lesson.reviewer_bio}</span>}
               </p>
               <p className="text-xs text-muted-foreground">
                 Checked {formatDate(lesson.reviewed_at)}
-                {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} · Reviewed by a
-                person before publishing.
+                {lesson.est_minutes ? ` · ${lesson.est_minutes} min read` : ''} ·{' '}
+                {lesson.reviewer_verified ? 'Reviewed by a verified Sierra Leone teacher before publishing.' : 'Reviewed by a person before publishing.'}{' '}
+                <a href="/how-we-check-lessons" className="underline underline-offset-2 hover:text-foreground">
+                  How we check lessons
+                </a>
               </p>
             </>
           ) : (
