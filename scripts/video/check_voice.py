@@ -179,7 +179,8 @@ def norm(words: list[str]) -> list[str]:
                        ("a glutenation", "agglutination"), ("rarer factions", "rarefactions"), ("rare factions", "rarefactions"), ("atagrin", "at tagrin"), ("resa", "rhesus"), ("resa's", "rhesus"), ("abo", "a b o"), ("ab", "a b"),
                        ("amanata", "aminata"), ("amenata", "aminata"), ("a minatus", "aminata's"), ("aminatas", "aminata's")):
         text = f" {text} ".replace(f" {heard} ", f" {word} ").strip()
-    return numbers(text.split())
+    # apostrophes are not heard: "rule's" and "rules" sound the same
+    return numbers(text.replace("'", "").split())
 
 
 def main():

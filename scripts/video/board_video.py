@@ -516,6 +516,7 @@ PRONOUNCE = {
     "okada": "Qkˈɑːdə",          # the motorbike taxi (the dictionary said "ock-ah-da")
     "heavier": "hˈɛviə",         # missing from the dictionary
     "fastest": "fˈɑːstɪst",
+    "tipped": "tˈɪpt",
     "cos": "kˈɒz",               # cosine, as teachers say it ("coz", not "koss")
     "Lami's": "lˈɑːmiz",          # Lami's theorem (the possessive first, so it wins)
     "Lami": "lˈɑːmi",
