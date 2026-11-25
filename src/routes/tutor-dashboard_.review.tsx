@@ -1,11 +1,14 @@
 // Review lessons: a verified reviewer (tutors.reviewer, migration 28) reads the
 // published lessons in the subjects they teach and approves each one (it then
 // says "Reviewed by" them, linking to their page) or reports a problem to the
-// admins. Tutors who are not reviewers yet can ask to become one.
+// admins. Once they have read a whole topic, or every waiting lesson in a
+// subject, they can approve them together (tutor_review_lessons, migration 38,
+// with the same rules), after confirming they have read them. Tutors who are
+// not reviewers yet can ask to become one.
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { useMemo, useState } from 'react'
-import { ArrowLeft, BookOpenCheck, Check, ExternalLink, Flag, ShieldCheck, Undo2 } from 'lucide-react'
+import { ArrowLeft, BookOpenCheck, Check, CheckCheck, ExternalLink, Flag, ShieldCheck, Undo2 } from 'lucide-react'
 import { privateHead } from '@/lib/seo'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/lib/auth'
@@ -94,6 +97,30 @@ function ReviewLessons() {
     }
   }
 
+  // Approve many at once: only after the reviewer confirms they have read them.
+  const approveMany = async (ids: string[], scope: string) => {
+    if (ids.length === 0) return
+    const ok = window.confirm(
+      `Approve ${ids.length} ${ids.length === 1 ? 'lesson' : 'lessons'} in ${scope}?\n\nApprove only lessons you have read and checked. Each one will say “Reviewed by” you, with a link to your page.`,
+    )
+    if (!ok) return
+    setBusy(`many:${scope}`)
+    setError(null)
+    setMessage(null)
+    try {
+      const { data, error } = await supabase.rpc('tutor_review_lessons', { p_lessons: ids })
+      if (error) throw error
+      const n = typeof data === 'number' ? data : ids.length
+      setMessage(`${n} ${n === 1 ? 'lesson' : 'lessons'} in ${scope} now ${n === 1 ? 'says' : 'say'} Reviewed by you.`)
+      await qc.invalidateQueries({ queryKey: ['tutor-review-lessons'] })
+    } catch (err) {
+      setError(friendly(err))
+    } finally {
+      setBusy(null)
+    }
+  }
+  const waitingIds = (list: Row[]) => list.filter((r) => !r.reviewed_at).map((r) => r.lesson_id)
+
   const askToReview = async () => {
     setBusy('request')
     setError(null)
@@ -172,16 +199,45 @@ function ReviewLessons() {
             </div>
           )}
 
+          {/* One subject on screen (chosen, or the only one they teach): approve its waiting lessons together. */}
+          {(subject !== 'all' || subjects.length === 1) && waitingIds(shown).length > 0 && (
+            <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border bg-card p-4">
+              <p className="text-sm text-muted-foreground">
+                Read every waiting lesson in {subject !== 'all' ? subject : subjects[0]}? Approve them together instead of one by one.
+              </p>
+              <button
+                type="button"
+                disabled={busy !== null}
+                onClick={() => void approveMany(waitingIds(shown), subject !== 'all' ? subject : subjects[0])}
+                className="inline-flex min-h-10 items-center gap-1.5 rounded-xl bg-emerald-600 px-4 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-60"
+              >
+                <CheckCheck className="h-4 w-4" aria-hidden /> Approve all {waitingIds(shown).length} waiting in {subject !== 'all' ? subject : subjects[0]}
+              </button>
+            </div>
+          )}
+
           {rows.length === 0 ? (
             <p className="rounded-2xl border bg-card p-6 text-sm text-muted-foreground">There are no published lessons in your subjects yet.</p>
           ) : (
             <div className="space-y-6">
               {groups.map((g) => (
                 <section key={g.key} className="rounded-2xl border bg-card">
-                  <h2 className="border-b px-5 py-3 text-sm font-bold">
-                    <span className="text-muted-foreground">{g.subject} · </span>
-                    {g.topic}
-                  </h2>
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b px-5 py-3">
+                    <h2 className="text-sm font-bold">
+                      <span className="text-muted-foreground">{g.subject} · </span>
+                      {g.topic}
+                    </h2>
+                    {waitingIds(g.rows).length > 1 && (
+                      <button
+                        type="button"
+                        disabled={busy !== null}
+                        onClick={() => void approveMany(waitingIds(g.rows), `${g.topic} (${g.subject})`)}
+                        className="inline-flex min-h-9 items-center gap-1.5 rounded-lg border border-emerald-600/40 px-3 text-xs font-semibold text-emerald-700 hover:bg-emerald-50 disabled:opacity-60 dark:text-emerald-300 dark:hover:bg-emerald-500/10"
+                      >
+                        <CheckCheck className="h-3.5 w-3.5" aria-hidden /> Approve all {waitingIds(g.rows).length} in this topic
+                      </button>
+                    )}
+                  </div>
                   <ul className="divide-y">
                     {g.rows.map((r) => {
                       const href = lessonPath(r.subject_slug, r.topic_slug, r.lesson_slug)

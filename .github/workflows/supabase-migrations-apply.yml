@@ -401,3 +401,16 @@ jobs:
                                      where t.slug in ('john-kaitibie', 'nicholas-norman') and t.status = 'active' and t.reviewer);" | tr -d '[:space:]')"
           echo "published lessons (created before 25 Nov 2026 18:00 UTC) in their subjects still unreviewed: $LEFT"
           test "$LEFT" = "0" || { echo "Expected every published lesson in their subjects to be reviewed"; exit 1; }
+
+      - name: Verify (38) reviewers can approve many lessons at once; visitors cannot
+        shell: bash
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          set -euo pipefail
+          RESULT="$(psql "$SUPABASE_DB_URL" --no-psqlrc --set=ON_ERROR_STOP=1 --tuples-only --no-align --command "select concat_ws(',',
+            has_function_privilege('anon', 'public.tutor_review_lessons(uuid[])', 'execute'),
+            has_function_privilege('authenticated', 'public.tutor_review_lessons(uuid[])', 'execute'),
+            (select p.prosecdef from pg_proc p where p.oid = 'public.tutor_review_lessons(uuid[])'::regprocedure));" | tr -d '[:space:]')"
+          echo "visitors may call, signed-in may call, runs as owner: $RESULT"
+          test "$RESULT" = "f,t,t" || { echo "Expected f,t,t"; exit 1; }
