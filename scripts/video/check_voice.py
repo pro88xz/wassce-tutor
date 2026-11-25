@@ -66,6 +66,10 @@ def spoken(heard: str) -> str:
         heard = heard.replace(sym, words)
     heard = re.sub(r"(?<=\d)\s*[xX]\s*(?=\d)", " times ", heard)
     heard = re.sub(r"(?<=\d),(?=\d{3}\b)", "", heard)   # 72,000 is seventy-two thousand
+    # maths shorthand: "1/2 gt^2" is "a half g t squared"
+    heard = re.sub(r"\^2\b", " squared", heard)
+    heard = re.sub(r"\^3\b", " cubed", heard)
+    heard = re.sub(r"(?<![\d.])1/2(?![\d.])", " a half ", heard)
     # 1/50th is one fiftieth, 3/4ths three fourths
     heard = re.sub(r"\b(\d+)/(\d+)(?:st|nd|rd|th)s?\b", lambda m: f"{m.group(1)} {_ordinal(int(m.group(2)), m.group(1) != '1')}", heard)
     heard = re.sub(r"(?<=\d)\s*/\s*(?=\d)", " over ", heard)   # 1/50 is one over fifty
