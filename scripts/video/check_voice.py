@@ -37,7 +37,7 @@ SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "am
         # homophones: the letter u, and car brakes
         "you": "u", "brakes": "breaks", "braking": "breaking", "brake": "break",
         # cos and sine sound like "cause" and "sign"
-        "cos": "cause", "sign": "sine", "r": "are",
+        "cos": "cause", "sign": "sine", "are": "r",   # the letter R sounds like "are"
         # homophones and rare names the recogniser spells its own way
         "maize": "maze", "mays": "maze", "zea": "zia", "protoctista": "protoctyster",
         "mesophyll": "messiful", "coloured": "colored", "fertilisation": "fertilization",
@@ -47,7 +47,7 @@ SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "am
 
 DIGITS = "zero one two three four five six seven eight nine".split()
 # Symbols and units the recogniser writes for words the narration says.
-SYMBOLS = [("km/h", " kilometres per hour "), ("m/s2", " metres per second squared "), ("m/s²", " metres per second squared "),
+SYMBOLS = [("km/h", " kilometres per hour "), ("km/s", " kilometres per second "), ("m/s2", " metres per second squared "), ("m/s²", " metres per second squared "),
            ("m/s", " metres per second "), ("λ", " lambda "), ("×", " times "), ("÷", " divided by "), ("=", " equals "), ("%", " percent "),
            ("MHz", " megahertz "), ("kHz", " kilohertz "), ("Hz", " hertz "), ("°C", " degrees celsius ")]
 
@@ -180,7 +180,9 @@ def norm(words: list[str]) -> list[str]:
                        ("pcos", "p cause"), ("psin", "p sine"), ("amanata", "aminata"), ("amenata", "aminata"), ("a minatus", "aminata's"), ("aminatas", "aminata's")):
         text = f" {text} ".replace(f" {heard} ", f" {word} ").strip()
     # apostrophes are not heard: "rule's" and "rules" sound the same
-    return numbers(text.replace("'", "").split())
+    out = numbers(text.replace("'", "").split())
+    # "point nine" is written "0.9": a zero before the point is not counted
+    return [w for i, w in enumerate(out) if not (w == "#0" and i + 1 < len(out) and out[i + 1] == "point")]
 
 
 def main():
