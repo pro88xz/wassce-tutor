@@ -36,6 +36,8 @@ SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "am
         "organisation": "organization", "favourite": "favorite",
         # homophones: the letter u, and car brakes
         "you": "u", "brakes": "breaks", "braking": "breaking", "brake": "break",
+        # cos and sine sound like "cause" and "sign"
+        "cos": "cause", "sign": "sine",
         # homophones and rare names the recogniser spells its own way
         "maize": "maze", "mays": "maze", "zea": "zia", "protoctista": "protoctyster",
         "mesophyll": "messiful", "coloured": "colored", "fertilisation": "fertilization",
