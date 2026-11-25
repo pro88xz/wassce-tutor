@@ -151,7 +151,7 @@ def _hand(p0, p1, wobble=1.0) -> np.ndarray:
 _fonts: dict[str, object] = {}
 # Characters drawn from another Hershey font, and those drawn here.
 FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m"), "π": ("greek", "p"), "Σ": ("greek", "S"), "α": ("greek", "a"), "φ": ("greek", "f"), "ρ": ("greek", "r"),
-             "β": ("greek", "b"), "γ": ("greek", "g"), "ω": ("greek", "w")}
+             "β": ("greek", "b"), "γ": ("greek", "g"), "ω": ("greek", "w"), "η": ("greek", "h")}
 CAP, BASE = -12, 9            # Hershey cap line and base line
 TRACK = 0.88                  # chalk letters sit closer than Hershey spaces them
 
