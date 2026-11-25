@@ -510,6 +510,7 @@ PRONOUNCE = {
     "venae": "vˈiːniː",
     "aorta": "eɪˈɔːtə",          # the dictionary's sound ran into "the" ("jorta")
     "Bumbuna": "bʊmbˈuːnə",      # the hydroelectric station in Sierra Leone
+    "Goma": "ɡˈQmə",             # the Goma hydroelectric station (with Dodo)
     "milli": "mˈɪli",            # the prefixes the dictionary lacks on their own
     "pico": "pˈiːkQ",
     "keke": "kˈɛkɛ",             # the three-wheeled taxi
