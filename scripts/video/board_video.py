@@ -515,8 +515,21 @@ _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
 
 
+# A letter said as a letter: "{a}" in a line is the letter A, where a lone "a"
+# would be read as the word ("uh"): "v equals u plus {a} t". Captions show "a".
+_LETTER = re.compile(r"\{([A-Za-z])\}")
+_LETTER_SOUNDS = {"a": "ˈA"}
+
+
+def shown(text: str) -> str:
+    """The line as captions and the transcript show it."""
+    return _LETTER.sub(r"\1", text)
+
+
 def _with_sounds(text: str) -> str:
     """The line with each PRONOUNCE word (in any case) marked up with its sounds, for misaki."""
+    text = _LETTER.sub(lambda m: f"[{m.group(1)}](/{_LETTER_SOUNDS[m.group(1).lower()]}/)"
+                       if m.group(1).lower() in _LETTER_SOUNDS else m.group(1), text)
     return _PRONOUNCE.sub(lambda m: f"[{m.group(1)}](/{_SOUNDS[m.group(1).lower()]}/)", text)
 
 
@@ -589,7 +602,7 @@ def schedule(steps: list[Step], voice: Voice) -> Timeline:
         pace = min(2.0, max(1.0, ink / max(0.5, speech - DRAW_DELAY - erase - 0.2))) if ink else 1.0
         clips.append((t, audio))
         if s.say:
-            captions.append((t, t + speech, s.say))
+            captions.append((t, t + speech, shown(s.say)))
         d = t + DRAW_DELAY
         if erase:
             timed.append(Timed(d, d + erase, erase=True)); d += erase + 0.2
