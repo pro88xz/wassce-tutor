@@ -129,6 +129,8 @@ def _values(run: list[str]) -> list[str]:
 def numbers(words: list[str]) -> list[str]:
     """Number words as values, so "347" heard for "three four seven", or "1500" for
     "fifteen hundred", is the same number said another way. A wrong number still differs."""
+    # "a hundred and eighteen" is "one hundred and eighteen"
+    words = ["one" if w == "a" and i + 1 < len(words) and words[i + 1] in SCALE else w for i, w in enumerate(words)]
     out, i = [], 0
     while i < len(words):
         if words[i] not in NUMBER and words[i] not in SCALE:
