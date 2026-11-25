@@ -47,7 +47,6 @@ const GROUPS: Group[] = [
     links: [
       { label: 'Contact us', href: '/contact' },
       { label: 'WhatsApp group', href: CONTACT.whatsappGroup },
-      { label: 'TikTok', href: CONTACT.tiktok },
       { label: 'Review us on Google', href: GOOGLE_REVIEW_URL },
       { label: 'Report a problem', href: `mailto:${CONTACT.email}?subject=${encodeURIComponent('Problem report: WASSCE Tutor')}` },
     ],
@@ -105,15 +104,6 @@ export function Footer() {
             >
               <WhatsAppGlyph className="h-5 w-5" /> Join our WhatsApp group
             </a>
-            <a
-              href={CONTACT.tiktok}
-              target="_blank"
-              rel="noopener"
-              aria-label={`Follow WASSCE Tutor on TikTok (${CONTACT.tiktokHandle})`}
-              className="inline-flex min-h-11 py-2 items-center gap-2 whitespace-nowrap rounded-xl border border-white/25 px-4 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-            >
-              <TikTokGlyph className="h-5 w-5" /> Follow us on TikTok
-            </a>
           </div>
 
           {/* Desktop columns */}
@@ -150,14 +140,31 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-white/15 pt-7 text-xs text-white/55 sm:mt-16 sm:flex-row sm:items-center sm:justify-between">
+        {/* The platforms we are on: one row of plain icons between two rules, as established
+            sites show them (no "follow us" buttons). Spread across the width on phones. */}
+        <ul aria-label="WASSCE Tutor elsewhere" className="mt-12 flex items-center justify-between border-t border-white/15 pt-4 sm:mt-16 sm:justify-start sm:gap-3">
+          <li>
+            <a href={CONTACT.whatsappGroup} target="_blank" rel="noopener" aria-label="The WASSCE Tutor WhatsApp group" title="WhatsApp" className="inline-flex h-11 w-11 items-center justify-center rounded-lg text-white/60 transition-colors hover:text-white">
+              <WhatsAppGlyph className="h-6 w-6" />
+            </a>
+          </li>
+          <li>
+            <a href={CONTACT.tiktok} target="_blank" rel="noopener" aria-label={`WASSCE Tutor on TikTok (${CONTACT.tiktokHandle})`} title="TikTok" className="inline-flex h-11 w-11 items-center justify-center rounded-lg text-white/60 transition-colors hover:text-white">
+              <TikTokGlyph className="h-6 w-6" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mohamed-bangura-6b209944a/" target="_blank" rel="noopener noreferrer" aria-label="The founder of WASSCE Tutor on LinkedIn" title="LinkedIn" className="inline-flex h-11 w-11 items-center justify-center rounded-lg text-white/60 transition-colors hover:text-white">
+              <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 fill-current"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM3.56 9h3.554v11.452H3.56zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+            </a>
+          </li>
+        </ul>
+
+        <div className="mt-4 flex flex-col gap-4 border-t border-white/15 pt-7 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> WASSCE Tutor. An independent study service, not affiliated with WAEC.
           </p>
           <div className="flex items-center justify-between gap-5 sm:justify-end">
-            <a href="https://www.linkedin.com/in/mohamed-bangura-6b209944a/" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn with the founder of WASSCE Tutor" className="inline-flex min-h-11 items-center gap-2 text-sm text-white/65 transition-colors hover:text-white">
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-current"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM3.56 9h3.554v11.452H3.56zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg> Connect on LinkedIn
-            </a>
             <p className="flex gap-4 sm:hidden">
               <Link to="/privacy" className="inline-flex min-h-11 items-center text-sm text-white/65 hover:text-white">Privacy</Link>
               <Link to="/terms" className="inline-flex min-h-11 items-center text-sm hover:text-white">Terms</Link>
