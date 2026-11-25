@@ -97,6 +97,15 @@ function HowWeCheckLessons() {
         </section>
       )}
 
+      {/* Teachers at schools were shown the lessons; they have not yet agreed to be named, so they are not. */}
+      <section className="space-y-3" aria-labelledby="teachers">
+        <h2 id="teachers" className="text-2xl font-bold">Feedback from classroom teachers</h2>
+        <p className="leading-relaxed text-muted-foreground">
+          Beyond our reviewers, we have shown our lessons and video lessons to experienced teachers at secondary schools in Freetown, and we use
+          what they tell us to improve them.
+        </p>
+      </section>
+
       <section className="space-y-4" aria-labelledby="coverage">
         <h2 id="coverage" className="text-2xl font-bold">What has been reviewed, subject by subject</h2>
         <p className="text-muted-foreground">
