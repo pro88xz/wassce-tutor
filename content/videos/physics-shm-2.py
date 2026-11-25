@@ -209,9 +209,9 @@ STEPS = [
          clear(2.2),
          heading("Practical: finding k"),
          write("time 20 oscillations for each mass;  plot T^2 against m", 70, 190, 23),
-         arrow(780, 560, 1180, 560, "white", 2.6), arrow(780, 560, 780, 330, "white", 2.6),
-         write("m", 1185, 580, 20, "grey"), write("T^2", 792, 344, 20, "grey"),
-         line(780, 560, 1140, 360, "green", 3.0), dots([(860, 516), (940, 471), (1020, 427), (1100, 382)], "yellow", 6),
+         arrow(800, 630, 1180, 630, "white", 2.6), arrow(800, 630, 800, 440, "white", 2.6),
+         write("m", 1185, 650, 20, "grey"), write("T^2", 812, 454, 20, "grey"),
+         line(800, 630, 1140, 466, "green", 3.0), dots([(880, 591), (960, 553), (1040, 514), (1120, 476)], "yellow", 6),
          chapter="Practical: the spring constant"),
 
     step("Why a straight line? Square the formula: T squared is four pi squared over k, times m. So the gradient is four pi squared over k, "
