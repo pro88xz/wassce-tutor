@@ -92,7 +92,7 @@ export const PUBLIC_PAGES = {
     title: 'Privacy Policy | WASSCE Tutor',
     description:
       'What information WASSCE Tutor collects when you use the website or Android app, how it is stored and used, and the choices you have.',
-    lastmod: '2026-06-08',
+    lastmod: '2026-11-25',
   },
   '/terms': {
     title: 'Terms of Service | WASSCE Tutor',
