@@ -37,11 +37,22 @@ const ADS_FRAME = [...ADS, 'https://www.google.com']
  * from here (developers.cloudflare.com/turnstile/reference/content-security-policy).
  */
 const TURNSTILE = 'https://challenges.cloudflare.com'
+/**
+ * Monetag In-Page Push, on test from 25 November 2026 (src/lib/monetag.ts):
+ * its tag, and the hosts the tag was seen calling (a visitor id, then the ad
+ * request). Monetag publishes no list and moves between hosts, so any host it
+ * starts using arrives in Google Analytics as monetag_blocked_host. Its ads
+ * reply over https from hosts that vary, so connect-src allows any https host
+ * (img-src already does); scripts stay limited to the tag's host. Remove with
+ * the test.
+ */
+const MONETAG_SCRIPT = ['https://nap5k.com']
+const MONETAG_CONNECT = ['https:']
 
 const BASE = {
   'default-src': ["'self'"],
   // The site's API when the page is served from the Android app (https://localhost).
-  'connect-src': ["'self'", 'https://wasscetutor.com', `https://${SUPABASE}`, `wss://${SUPABASE}`, GOOGLE, 'https://www.googleapis.com', 'https://oauth2.googleapis.com', ...GA_CONNECT, ...ADS, 'https://adservice.google.com'],
+  'connect-src': ["'self'", 'https://wasscetutor.com', `https://${SUPABASE}`, `wss://${SUPABASE}`, GOOGLE, 'https://www.googleapis.com', 'https://oauth2.googleapis.com', ...GA_CONNECT, ...ADS, 'https://adservice.google.com', ...MONETAG_CONNECT],
   // Photographs and question images may be on any https host; never http.
   'img-src': ["'self'", 'data:', 'blob:', 'https:'],
   'font-src': ["'self'", 'data:'],
@@ -67,7 +78,7 @@ const serialise = (directives) =>
 export function headerPolicy() {
   return serialise({
     ...BASE,
-    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT, ...ADS_SCRIPT, TURNSTILE],
+    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT, ...ADS_SCRIPT, TURNSTILE, ...MONETAG_SCRIPT],
     // Header-only directives: a <meta> policy cannot carry these.
     'frame-ancestors': ["'none'"],
     'upgrade-insecure-requests': [],
@@ -87,7 +98,7 @@ export function pagePolicy(html) {
   for (const [, attrs, body] of html.matchAll(INLINE_SCRIPT)) {
     if (isExecutable(attrs) && body.length > 0) hashes.add(`'sha256-${crypto.createHash('sha256').update(body, 'utf8').digest('base64')}'`)
   }
-  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT, ...ADS_SCRIPT, TURNSTILE] })
+  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT, ...ADS_SCRIPT, TURNSTILE, ...MONETAG_SCRIPT] })
 }
 
 const META = /<meta http-equiv="Content-Security-Policy"[^>]*>/i

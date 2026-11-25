@@ -15,6 +15,7 @@ import { WorkspaceBar } from '@/components/shell/WorkspaceBar'
 import { useSendToSignIn } from '@/lib/use-send-to-sign-in'
 import { needsAccount } from '@/lib/return-to'
 import { adsAllowed, adsRunning, clearAdsReload, hasStoredSession, isAppPath, reloadWithoutAds } from '@/lib/ads'
+import { monetagLoaded, monetagPathAllowed, useMonetag } from '@/lib/monetag'
 import { SITE } from '@/lib/seo'
 import { analyticsScript, GA_MEASUREMENT_ID } from '@/lib/analytics'
 import appCss from '@/index.css?url'
@@ -63,6 +64,8 @@ export const Route = createRootRoute({
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       { name: 'google-site-verification', content: 'S8kJyYT-6kCzOytVerViOFKhPDPleWCwfltAxOG1DM4' },
       { name: 'google-adsense-account', content: 'ca-pub-9121922395304175' },
+      // Monetag's ownership check for wasscetutor.com: a tag only, it loads no ads or scripts.
+      { name: 'monetag', content: 'e0a89d13cd30b9c3e9461ab2aeb342b4' },
       { name: 'theme-color', content: '#6438d8' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: SITE.name },
@@ -94,10 +97,14 @@ export const Route = createRootRoute({
   // client-only unless they set `ssr: true` themselves.
   ssr: true,
   // Leaving a page that shows ads for the app or the dashboard: open it as a
-  // fresh page, so no ad follows them in (src/lib/ads.ts).
+  // fresh page, so no ad follows them in (src/lib/ads.ts). The same for
+  // Monetag's script, which stays on a page once loaded, on the way to a page
+  // it must not show on, such as Privacy or Terms (src/lib/monetag.ts).
   beforeLoad: ({ location, preload }) => {
-    if (typeof window === 'undefined' || preload || !adsRunning()) return
-    if (adsAllowed(location.pathname, hasStoredSession())) return
+    if (typeof window === 'undefined' || preload) return
+    const signedIn = hasStoredSession()
+    const leaveMonetag = monetagLoaded() && !monetagPathAllowed(location.pathname, signedIn)
+    if (!leaveMonetag && (!adsRunning() || adsAllowed(location.pathname, signedIn))) return
     if (reloadWithoutAds(location.href)) return new Promise<never>(() => {})
   },
   shellComponent: RootDocument,
@@ -201,6 +208,7 @@ function RootComponent() {
   const pathname = useRouterState({ select: (st) => st.location.pathname })
   useSignInForAppPages()
   useNoAdsWhenSignedIn(pathname)
+  useMonetag(pathname)
   useRoleHome(pathname)
   const studentNav = useHasBottomNav(pathname)
   const roleWorkspace = pathname === '/tutor-dashboard' || pathname.startsWith('/tutor-dashboard/') || pathname === '/affiliate-dashboard'
