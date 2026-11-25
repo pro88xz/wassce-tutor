@@ -120,6 +120,68 @@ export const SEARCH_COPY: Partial<Record<string, { title: string; description: s
   },
   // "what a noun": 176 impressions at position 7, no clicks. The lesson covers what nouns
   // name and three tests for spotting one (types come in a later lesson).
+  // Search Console, 24 Aug to 24 Nov 2026: question searches answered by the page's quick answer
+  // (src/content/quick-answers.ts); the title and description lead with the same answer.
+  // "what is biology" (position 50), "what are the biology" (53)
+  '/wassce/biology/introduction-to-biology/what-is-biology-and-why-study-it': {
+    title: 'What Is Biology? Meaning and Why Study It | WASSCE Biology',
+    description:
+      'Biology is the scientific study of living things and life processes, from the Greek bios (life) and logos (study). What it covers and why it matters to you.',
+  },
+  // "surds" (39 impressions, position 29), "what is a surd" (83)
+  '/wassce/mathematics/surds': {
+    title: 'What Is a Surd? Notes, Examples and Practice Questions',
+    description:
+      'A surd is a root that cannot be simplified to a whole number or fraction, like √2 or √3. Simplifying surds, operations and rationalising, with WASSCE questions.',
+  },
+  // "what are prepositions" (position 60), "what is a preposition" (74 to 78)
+  '/wassce/english-language/prepositions/what-are-prepositions': {
+    title: 'What Is a Preposition? Meaning, Examples and Tests',
+    description:
+      'A preposition shows how a noun or pronoun relates to another word: position, direction, time, manner, agency or cause. On, under, near: examples and tests.',
+  },
+  // "what are articles" (position 34), "what is article"
+  '/wassce/english-language/articles/what-are-articles': {
+    title: 'What Are Articles? A, An and The in English Grammar',
+    description:
+      'Articles are a, an and the: words before a noun that show whether it is specific or general. The definite and indefinite articles, and when to use a or an.',
+  },
+  // "what is transpiration" (position 68), "definition of transpiration"
+  '/wassce/biology/transport-in-plants/transport-in-plants-transpiration-water-movement-and-translocation': {
+    title: 'What Is Transpiration? Water Transport and Translocation',
+    description:
+      'Transpiration is the loss of water vapour from a plant, mainly through the stomata of its leaves. What speeds it up, the transpiration stream, xylem and phloem.',
+  },
+  // "types of settlement" (position 12), "what is settlement in geography"
+  '/wassce/geography/settlement-patterns/types-of-settlement-and-settlement-patterns': {
+    title: 'Types of Settlement: Rural, Urban and Settlement Patterns',
+    description:
+      'A settlement is any place where people live. Rural and urban settlement; nucleated, dispersed and linear patterns; site and situation, and the site of Freetown.',
+  },
+  // "what is government" (position 11)
+  '/wassce/government/meaning-and-nature-of-government/what-government-is-meanings-purposes-and-functions': {
+    title: 'What Is Government? Meanings, Purposes and Functions',
+    description:
+      'Government means the institutions that make, carry out and interpret laws, the process of governing, and the subject itself. Why it is needed and its functions.',
+  },
+  // "what is literature" (position 66), "what is literature in english"
+  '/wassce/literature-in-english/what-is-literature/what-is-literature-meaning-features-and-oral-and-written-forms': {
+    title: 'What Is Literature? Meaning, Features, Oral and Written',
+    description:
+      'Literature is imaginative writing or spoken composition that uses language with skill to express human experience. Its features, its forms, oral and written.',
+  },
+  // "state three basic human rights" (position 37)
+  '/wassce/government/fundamental-human-rights-and-citizenship/fundamental-human-rights-types-protection-and-limits': {
+    title: 'Fundamental Human Rights: Meaning, Types and Examples',
+    description:
+      'Human rights belong to every person for being human: the right to life, personal liberty, freedom of expression and more. Their types, protection and limits.',
+  },
+  // "what are the basics of chemistry?" (position 5), "how does chemistry work"
+  '/wassce/chemistry/introduction-to-chemistry/what-chemistry-is-branches-importance-and-careers': {
+    title: 'What Is Chemistry? Branches, Importance and Careers',
+    description:
+      'Chemistry studies the composition, structure and properties of matter, how it changes and the energy involved. Its branches, why it matters and its careers.',
+  },
   '/wassce/english-language/nouns/what-are-nouns': {
     title: 'What Is a Noun? Meaning, Examples and How to Spot One',
     description:

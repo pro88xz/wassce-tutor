@@ -17,6 +17,8 @@ import { PRACTICE_QUESTIONS, hasPractice } from '@/lib/practice-counts'
 import { fetchKeyTermPreview, fetchTopicExtras, fetchTopicPage, hasTopicPage, keyTermsPath, lessonMinutes, lessonPath, questionsPath, subjectPath, topicPath, topicQuestionCount } from '@/lib/public-content'
 import type { TopicPageData, TopicWithLessons } from '@/lib/public-content'
 import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, conceptTitle, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { QuickAnswer } from '@/components/public/QuickAnswer'
+import { QUICK_ANSWERS } from '@/content/quick-answers'
 import { studyTime } from '@/lib/study-time'
 import { NOT_TAUGHT, loadOutlines, outlineKey, plural, sectionId, totals } from '@/lib/lesson-outlines'
 import type { LessonOutline } from '@/lib/lesson-outlines'
@@ -104,6 +106,7 @@ const asCourse = (t: TopicWithLessons) => ({
 function TopicPage() {
   const data = Route.useLoaderData()
   const { subject, topic, group, previous, next, outlines, coverIndex, questionCount, examFocus, sampleQuestions, keyTerms } = data
+  const quick = QUICK_ANSWERS[topicPath(subject.slug, topic.slug)]
   const { user } = useAuth()
   const art = subjectArt(subject.slug)
   const cover = { subjectSlug: subject.slug, subjectName: subject.name, topicSlug: topic.slug, topicName: topic.name, index: coverIndex[topic.id] ?? 0 }
@@ -229,6 +232,8 @@ function TopicPage() {
 
       <div className="site-container grid grid-cols-[minmax(0,1fr)] gap-10 pt-10 sm:pt-12 lg:grid-cols-[minmax(0,1fr)_23rem] lg:gap-12">
         <div className="min-w-0 space-y-10 sm:space-y-12">
+          {/* The question this page is searched for, answered first (src/content/quick-answers.ts). */}
+          {quick && <QuickAnswer qa={quick} />}
           {learn.length > 0 && (
             <section className="site-card p-6 sm:p-8" aria-labelledby="learn">
               <h2 id="learn" className="text-[1.375rem] font-extrabold tracking-[-.02em] sm:text-2xl">What you&rsquo;ll learn</h2>

@@ -5,6 +5,8 @@ import { StartCta } from '@/components/public/StartCta'
 import { FROM_PRICE } from '@/lib/plans'
 import { hasPractice } from '@/lib/practice-counts'
 import { PrerenderedLesson } from '@/components/lesson/PrerenderedLesson'
+import { QuickAnswer } from '@/components/public/QuickAnswer'
+import { QUICK_ANSWERS } from '@/content/quick-answers'
 import { KeyTermsLink } from '@/components/lesson/key-terms-link'
 import { WaecPastPapers } from '@/components/WaecPastPapers'
 import { fetchPublicLessonPage, keyTermsPath, lessonPath, lessonSummary, questionsPath, subjectPath, topicKeyTermCount, topicPath, topicQuestionCount } from '@/lib/public-content'
@@ -91,6 +93,7 @@ const noChange = () => () => {}
 function PublicLessonPage() {
   const data = Route.useLoaderData()
   const { subject, topic, lesson, questionCount, keyTermCount } = data
+  const quick = QUICK_ANSWERS[lessonPath(subject.slug, topic.slug, lesson.slug)]
   // Published after this page was built: shown at once, read in the browser
   // (its search markup arrives with the next build).
   const { data: lateVideo } = useLessonVideo(data.video ? null : lesson.id)
@@ -147,6 +150,9 @@ function PublicLessonPage() {
           )}
         </div>
       </header>
+
+      {/* The question this page is searched for, answered first (src/content/quick-answers.ts). */}
+      {quick && <QuickAnswer qa={quick} />}
 
       {video && (
         <section aria-label="Video lesson">

@@ -14,6 +14,8 @@ import { fetchQuestionSubjects, fetchSubjectHub, hasTopicPage, lessonMinutes, qu
 import type { SubjectHub } from '@/lib/public-content'
 import { tutorsPath } from '@/lib/public-rules'
 import { SEARCH_COPY, brandedTitle, breadcrumbJsonLd, fitDescription, indexablePageTags, privatePageTags } from '@/lib/seo'
+import { QuickAnswer } from '@/components/public/QuickAnswer'
+import { QUICK_ANSWERS } from '@/content/quick-answers'
 import { subjectTheme } from '@/lib/subject-theme'
 
 const trail = (hub: SubjectHub): [string, string][] => [
@@ -75,6 +77,7 @@ function roleLabel(hub: SubjectHub): string {
 function SubjectHubPage() {
   const hub = Route.useLoaderData()
   const { subject, groups, topicCount, lessonCount, minutes, related, publicQuestions } = hub
+  const quick = QUICK_ANSWERS[subjectPath(subject.slug)]
   const { user } = useAuth()
   const { palette } = subjectTheme(subject.slug)
   const hasLessons = lessonCount > 0
@@ -141,6 +144,9 @@ function SubjectHubPage() {
           }
         />
       </div>
+
+      {/* The question this page is searched for, answered first (src/content/quick-answers.ts). */}
+      {quick && <QuickAnswer qa={quick} />}
 
       <section className="space-y-5" aria-labelledby="syllabus">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
