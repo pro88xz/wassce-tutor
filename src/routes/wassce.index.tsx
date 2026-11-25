@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { FacultySubjects } from '@/components/public/FacultySubjects'
 import { StartCta } from '@/components/public/StartCta'
+import { PopularTopicLinks } from '@/components/public/PopularTopics'
 import { fetchQuestionSubjects, fetchSubjectSummaries, questionsPath } from '@/lib/public-content'
 import { breadcrumbJsonLd, indexablePageTags } from '@/lib/seo'
 
@@ -170,6 +171,16 @@ function WasscePillarPage() {
           </ul>
         </section>
       )}
+
+      {/* The topics people search for most, linked by the words they search with (src/content/popular-topics.ts). */}
+      <section id="guide-popular" className="scroll-mt-24 space-y-6" aria-labelledby="guide-popular-title">
+        <div className="guide-section-heading">
+          <p className="guide-eyebrow">05 / POPULAR TOPICS</p>
+          <h2 id="guide-popular-title">Popular WASSCE topics</h2>
+          <p>Some of the topics students look up most. Every lesson is free to read.</p>
+        </div>
+        <PopularTopicLinks />
+      </section>
 
       <StartCta
         heading="Prepare for WASSCE with WASSCE Tutor"
