@@ -45,7 +45,8 @@ SAME = {"haemoglobin": "hemoglobin", "specialised": "specialized", "amoeba": "am
 
 DIGITS = "zero one two three four five six seven eight nine".split()
 # Symbols and units the recogniser writes for words the narration says.
-SYMBOLS = [("km/h", " kilometres per hour "), ("m/s", " metres per second "), ("λ", " lambda "), ("×", " times "), ("÷", " divided by "), ("=", " equals "), ("%", " percent "),
+SYMBOLS = [("km/h", " kilometres per hour "), ("m/s2", " metres per second squared "), ("m/s²", " metres per second squared "),
+           ("m/s", " metres per second "), ("λ", " lambda "), ("×", " times "), ("÷", " divided by "), ("=", " equals "), ("%", " percent "),
            ("MHz", " megahertz "), ("kHz", " kilohertz "), ("Hz", " hertz "), ("°C", " degrees celsius ")]
 
 
@@ -77,6 +78,7 @@ def spoken(heard: str) -> str:
     heard = re.sub(r"(?<![\w.])-(?=\d)", " minus ", heard)
     heard = re.sub(r"(?<=\d)\s+\+\s+(?=\d)", " plus ", heard)
     heard = re.sub(r"(?<=\d)\s+-\s+(?=\d)", " minus ", heard)
+    heard = re.sub(r"(?<=\d)-(?=\d)", " minus ", heard)   # 0-20 is zero minus twenty
     # between letters too: "V = U + AT" is "v equals u plus a t"
     heard = re.sub(r"(?<=\w)\s+\+\s+(?=\w)", " plus ", heard)
     heard = re.sub(r"(?<=\w)\s+-\s+(?=\w)", " minus ", heard)
