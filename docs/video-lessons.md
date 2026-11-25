@@ -79,3 +79,35 @@ British "o" (*commerce*, *transport*), which is why af_aoede was not used.
 5. Shared renderer changes (new drawing helpers, `PRONOUNCE` entries) are fine
    (`equation()` lays out a line of working with stacked fractions);
    bump `VERSION` only when every video should be rebuilt.
+
+## How the teacher sounds
+
+Students should feel taught by a real teacher, not read to by a voice-over.
+
+- **Talk to the student.** "You", questions, and time to think: a step's `pause=`
+  after a question gives one to three seconds before the answer.
+- **Ask before telling.** A quick question with a pause, then the answer. A
+  "your turn" problem with the pause sign (`pause_sign()` in the scripts), a longer
+  pause, then the worked answer and the usual wrong answer ("got 80? You forgot the
+  half").
+- **Light, local humour, given room.** Poda-podas, kekes, okadas, mangoes, the
+  rainy season, the exam hall. Gentle and never at a student's expense; the teacher
+  may joke about themselves. Put the punchline on its own step, or end a step on it,
+  with `pause=0.9` to `1.1` so it lands.
+- **Draw while explaining.** Shade areas as they are named, build a graph stage by
+  stage, mark the dots of a fall: the board should move with the voice.
+- **No two videos start the same way, and the set phrases change.** Vary:
+  - the opening: a story already moving ("The keke is flying down the road..."), a
+    surprising claim, something to try at home, a myth to bust, a drawing that
+    appears before anything is said, a callback to the last lesson's teaser. Not
+    "Here is a question to start us off" every time.
+  - the "your turn" words: "Over to you", "Grab a pen, this one is yours", "Your
+    move", "Try this before I do"; and the pause: "Stop the video here and come
+    back with an answer", "Take your time, I am not going anywhere".
+  - the quick question: "Think fast", "Before I say it", "Here is one that catches
+    almost everyone", "Quick check".
+  - the ending: a teaser for the next lesson in different words, a one-line summary,
+    or a last joke. Not "Next time:" every time.
+- **Say letters and symbols clearly.** `{a}` says the letter A (a lone "a" is read
+  as the word); `PRONOUNCE` fixes words the dictionary lacks or says wrongly
+  (keke, okada, poda-poda, cos).
