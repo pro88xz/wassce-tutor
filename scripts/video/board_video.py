@@ -150,7 +150,8 @@ def _hand(p0, p1, wobble=1.0) -> np.ndarray:
 # ── Letters ───────────────────────────────────────────────────────────────
 _fonts: dict[str, object] = {}
 # Characters drawn from another Hershey font, and those drawn here.
-FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m"), "π": ("greek", "p"), "Σ": ("greek", "S"), "α": ("greek", "a"), "φ": ("greek", "f"), "ρ": ("greek", "r")}
+FROM_FONT = {"λ": ("greek", "l"), "μ": ("greek", "m"), "π": ("greek", "p"), "Σ": ("greek", "S"), "α": ("greek", "a"), "φ": ("greek", "f"), "ρ": ("greek", "r"),
+             "β": ("greek", "b"), "γ": ("greek", "g")}
 CAP, BASE = -12, 9            # Hershey cap line and base line
 TRACK = 0.88                  # chalk letters sit closer than Hershey spaces them
 
@@ -516,6 +517,8 @@ PRONOUNCE = {
     "heavier": "hˈɛviə",         # missing from the dictionary
     "fastest": "fˈɑːstɪst",
     "cos": "kˈɒz",               # cosine, as teachers say it ("coz", not "koss")
+    "Lami's": "lˈɑːmiz",          # Lami's theorem (the possessive first, so it wins)
+    "Lami": "lˈɑːmi",
 }
 _SOUNDS = {k.lower(): v for k, v in PRONOUNCE.items()}
 _PRONOUNCE = re.compile(r"\b(" + "|".join(map(re.escape, PRONOUNCE)) + r")\b", re.IGNORECASE)
