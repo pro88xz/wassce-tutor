@@ -40,6 +40,8 @@ import { Reviews } from '@/components/landing/Reviews'
 import { Plans } from '@/components/landing/Plans'
 import { Faq } from '@/components/landing/Faq'
 import { FinalCta } from '@/components/landing/FinalCta'
+import { Band, SectionHeading } from '@/components/public/Section'
+import { PopularTopicLinks } from '@/components/public/PopularTopics'
 
 export function Landing({ data }: { data: LandingData }) {
   const root = useRef<HTMLDivElement>(null)
@@ -50,6 +52,16 @@ export function Landing({ data }: { data: LandingData }) {
       <Hero data={data} />
       <ProofBand initial={data.totals} />
       <CourseRows rows={data.courseRows} />
+      {/* The topics people search for most, linked by the words they search with (src/content/popular-topics.ts). */}
+      <Band labelledBy="popular-heading">
+        <SectionHeading
+          id="popular-heading"
+          eyebrow="Popular topics"
+          title="Popular WASSCE topics"
+          lede="Some of the topics students look up most. Every lesson is free to read."
+        />
+        <PopularTopicLinks className="mt-8" />
+      </Band>
       <TryQuestion />
       <SubjectShowcase subjects={data.subjects} />
       <HowItWorks />
