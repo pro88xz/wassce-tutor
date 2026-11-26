@@ -117,3 +117,12 @@ test('the email click function hands /go links (?app=) to the tracking link', as
   }
   assert.equal((await HEAD(new Request('https://wasscetutor.com/api/email/c?j=1'))).status, 405)
 })
+
+test('invisible characters from copied links are ignored', async () => {
+  assert.equal(tag('beampad​', 20), 'beampad')
+  assert.equal(tag('﻿tiktok‍', 40), 'tiktok')
+  const client = fakeClient()
+  const res = await get(goHandler({ client, salt: 's' }), `?app=${encodeURIComponent('beampad​')}&s=${encodeURIComponent('tiktok⁠')}`)
+  assert.equal(res.status, 302)
+  assert.equal(client.inserted[0].row.source, 'tiktok')
+})

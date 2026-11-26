@@ -5,6 +5,7 @@
 // /beampad: BeamPad, the studio's Android TV keyboard and remote app
 // (src/routes/beampad.*). Ad-free as well (isAdFreePath in src/lib/ads.ts).
 
+// Keep in step with "page-scroll" in the boot script (src/routes/__root.tsx).
 const STANDALONE_PATH = /^\/beampad(\/|$)/
 
 export function isStandalonePath(pathname: string): boolean {

@@ -35,6 +35,13 @@ const ReactQueryDevtools = import.meta.env.PROD
   : lazy(() => import('@tanstack/react-query-devtools').then((m) => ({ default: m.ReactQueryDevtools })))
 
 // Runs before first paint, before the app's JavaScript loads:
+//  - drops invisible characters from the address (zero-width spaces, joiners,
+//    direction marks, byte-order marks, soft hyphens), which some apps add
+//    when a link is copied or shared, and reloads without them: otherwise
+//    "/beampad" + an invisible space is a 404. Runs on 404.html too.
+//  - lets the document itself scroll on pages outside the app frame
+//    ("page-scroll", the paths in src/lib/standalone-pages.ts): native.css
+//    stops the root scrolling because the app scrolls inside its frame
 //  - applies the saved reading theme (no light→sepia flash)
 //  - marks the Android app ("native-app") and returning signed-in visitors
 //    ("app-boot", a stored Supabase session) so CSS shows a spinner instead of
@@ -47,6 +54,8 @@ const ReactQueryDevtools = import.meta.env.PROD
 // that second run put "app-boot" back for anyone signed in, and after signing
 // out the landing page stayed hidden behind the spinner until a reload.
 const BOOT_SCRIPT = `(function(){try{if(window.__wtBooted)return;window.__wtBooted=1;var d=document.documentElement;
+var u=location.href,c=u.replace(/%E2%80%8[B-F]|%E2%81%A0|%EF%BB%BF|%C2%AD/gi,'');if(c!==u){location.replace(c);return}
+if(/^\\/beampad(\\/|$)/.test(location.pathname))d.classList.add('page-scroll');
 if(localStorage.getItem('wassce_theme')==='sepia')d.classList.add('dark');
 var C=window.Capacitor,n=C&&C.isNativePlatform&&C.isNativePlatform(),s=0;if(n)d.classList.add('native-app');
 for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&/^sb-.+-auth-token$/.test(k)){d.classList.add('app-boot');s=1;break}}
