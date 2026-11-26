@@ -41,6 +41,8 @@ const GROUPS: Group[] = [
       { label: 'Sign in', href: '/auth' },
       { label: 'About', href: '/about' },
       { label: 'How we check lessons', href: '/how-we-check-lessons' },
+      // The studio's other app, with its own pages (src/routes/beampad.*).
+      { label: 'BeamPad: phone as TV keyboard', href: '/beampad' },
     ],
   },
   {

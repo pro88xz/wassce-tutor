@@ -709,6 +709,10 @@
   ],
   "rewrites": [
     {
+      "source": "/go/:app",
+      "destination": "/api/email/c?app=:app"
+    },
+    {
       "source": "/(auth|subjects|tutor|tutor-dashboard|affiliate-dashboard|profile|account|practice|progress|onboarding|subscribe|reset-password|admin)",
       "destination": "/_shell"
     },

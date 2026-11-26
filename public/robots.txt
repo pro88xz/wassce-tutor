@@ -20,6 +20,8 @@ Disallow: /onboarding
 Disallow: /reset-password
 Disallow: /subscribe
 Disallow: /admin
+# Tracking links to Google Play (api/_lib/go.js): following them would count crawler visits.
+Disallow: /go/
 
 Sitemap: https://wasscetutor.com/sitemap.xml
 Sitemap: https://wasscetutor.com/video-sitemap.xml
