@@ -196,6 +196,18 @@ export const LANDING_FAQ: [question: string, answer: string][] = [
   ],
 ]
 
+/**
+ * The landing page's two languages, for <link rel="alternate" hreflang>: the
+ * same set on both pages, English as the default for everyone else.
+ */
+export function landingLanguageLinks() {
+  return [
+    { rel: 'alternate', hrefLang: 'en', href: absoluteUrl('/beampad') },
+    { rel: 'alternate', hrefLang: 'es', href: absoluteUrl('/beampad/es') },
+    { rel: 'alternate', hrefLang: 'x-default', href: absoluteUrl('/beampad') },
+  ]
+}
+
 /** The app as a schema.org entity: no rating (there are none yet), no price beyond free. */
 export function beampadAppJsonLd(): Record<string, unknown> {
   return {

@@ -122,6 +122,9 @@ export const Route = createRootRoute({
   notFoundComponent: NotFoundPage,
 })
 
+/** The document's language: Spanish on BeamPad's Spanish page, English everywhere else. */
+const documentLang = (pathname: string) => (/^\/beampad\/es(\/|$)/.test(pathname) ? 'es' : 'en')
+
 function RootDocument({ children }: { children: ReactNode }) {
   // Google AdSense, on public pages only (src/lib/ads.ts). Decided once per
   // document: the prerendered public pages carry the tag, /_shell and the
@@ -130,7 +133,7 @@ function RootDocument({ children }: { children: ReactNode }) {
   const [adTag] = useState(() => !isAppPath(pathname) && !isAdFreePath(pathname))
   return (
     // The boot script adds classes to <html> before React hydrates.
-    <html lang="en" suppressHydrationWarning>
+    <html lang={documentLang(pathname)} suppressHydrationWarning>
       <head>
         <HeadContent />
         {adTag && (

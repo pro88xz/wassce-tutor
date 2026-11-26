@@ -141,6 +141,17 @@ export const PUBLIC_PAGES = {
       'Type on Google TV or Android TV with your phone’s keyboard: Google’s TV and Home apps over Wi-Fi, a Quick Settings shortcut, and Bluetooth without Wi-Fi.',
     lastmod: '2026-11-26',
   },
+  // The landing page in Spanish (Latin America): "usar celular como control
+  // remoto para tv sin wifi" was Google's first suggestion in Mexico for "usar
+  // celular como control" (Nov 2026), and the results offered only Wi-Fi or
+  // infrared apps. hreflang links it with /beampad.
+  '/beampad/es': {
+    title: 'Usa tu celular como control remoto para la TV sin wifi | BeamPad',
+    ogTitle: 'BeamPad: tu celular como control remoto y teclado para la TV, sin wifi',
+    description:
+      'BeamPad convierte tu celular Android en control remoto, teclado y mouse Bluetooth para Android TV, Google TV y Fire TV. Sin wifi y sin instalar nada en la TV.',
+    lastmod: '2026-11-26',
+  },
   // "lost google tv remote no wifi", "lost chromecast remote", "google tv remote app
   // without wifi": Google's help only says the phone and TV must share Wi-Fi.
   '/beampad/lost-google-tv-remote-no-wifi': {
