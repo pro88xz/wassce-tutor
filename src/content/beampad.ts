@@ -42,6 +42,11 @@ export const BEAMPAD_GUIDES = [
     title: 'Type on Google TV from your phone',
     blurb: 'With Google’s apps over Wi-Fi, or over Bluetooth when there is no Wi-Fi.',
   },
+  {
+    path: '/beampad/phone-as-gamepad-android-tv',
+    title: 'Your phone as a gamepad for Android TV',
+    blurb: 'Bluetooth gamepad apps, Wi-Fi apps, real controllers: which to use for which games.',
+  },
 ] as const
 
 /** The tracking link to share anywhere (api/_lib/go.js): counts the click, then opens Google Play. */

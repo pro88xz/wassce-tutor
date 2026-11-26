@@ -33,6 +33,25 @@ export function PlayBadge({ placement, page, height = 56 }: { placement: string;
   )
 }
 
+/**
+ * "BeamPad" (or other words) in running text, linked through the tracking
+ * link like every button: every way to the Play listing is counted, under its
+ * own placement and page (Admin -> App clicks).
+ */
+export function AppLink({ placement, page, children }: { placement: string; page?: string; children: ReactNode }) {
+  return (
+    <a
+      href={playUrl(placement, page)}
+      target="_blank"
+      rel="nofollow noopener"
+      onClick={() => track('beampad_play_click', { placement, page: page ?? 'beampad' })}
+      className="font-semibold text-white underline decoration-[var(--bp-mint)] underline-offset-4"
+    >
+      {children}
+    </a>
+  )
+}
+
 /** One of the app's screens in its phone frame (transparent corners). */
 export function PhoneShot({ name, sizes, eager = false, className = '' }: { name: Screen; sizes: string; eager?: boolean; className?: string }) {
   return (

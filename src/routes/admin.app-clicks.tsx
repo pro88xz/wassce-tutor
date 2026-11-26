@@ -52,12 +52,16 @@ const PLACEMENTS: Record<string, string> = {
   guide_fix5: 'Firestick guide: inside fix 5',
   guide_app: 'Guide: app card',
   guide_final: 'Guide: last button',
+  guide_text: 'Guide: “BeamPad” in the text',
+  guide_step: 'Guide: “Install BeamPad” step',
+  how_install: 'Landing: “Google Play” in How it works',
 }
 const PAGES: Record<string, string> = {
   beampad: '/beampad',
   lost_firestick_remote: 'Guide: lost Firestick remote',
   lost_google_tv_remote: 'Guide: lost Google TV remote',
   type_on_google_tv: 'Guide: type on Google TV from your phone',
+  phone_gamepad: 'Guide: phone as a gamepad',
 }
 const QUICK_SOURCES = ['tiktok', 'whatsapp', 'facebook', 'instagram', 'youtube', 'x']
 const SELECT = 'id,created_at,app,placement,page,source,referrer_host,country,device,visitor'

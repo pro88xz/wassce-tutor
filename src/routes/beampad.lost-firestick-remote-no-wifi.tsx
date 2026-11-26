@@ -12,6 +12,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { AppCard, GuideCta, GuideFaq, GuidePage, Note, OnThisPage, Path, ShortAnswer, SituationTable } from '@/components/beampad/Guide'
 import { guideHead, type Trail } from '@/content/beampad-guide-head'
+import { AppLink } from '@/components/beampad/BeamPad'
 import { BEAMPAD } from '@/content/beampad'
 
 const PATH = '/beampad/lost-firestick-remote-no-wifi'
@@ -137,9 +138,9 @@ function LostFirestickRemote() {
           a remote that works whether the Fire TV is online or not, and you can type the new Wi-Fi password with your phone’s keyboard instead of
           the on-screen one.
         </p>
-        <p>We make an app for this, BeamPad. To set it up:</p>
+        <p>We make an app for this, <AppLink placement="guide_text" page={PAGE_ID}>BeamPad</AppLink>. To set it up:</p>
         <ol>
-          <li>Install BeamPad on your Android phone ({BEAMPAD.minAndroid} or newer). It’s free with ads.</li>
+          <li><AppLink placement="guide_step" page={PAGE_ID}>Install BeamPad</AppLink> on your Android phone ({BEAMPAD.minAndroid} or newer). It’s free with ads.</li>
           <li>
             On the Fire TV, open <Path steps={['Settings', 'Controllers & Bluetooth Devices', 'Other Bluetooth Devices', 'Add Bluetooth Devices']} />.
           </li>
