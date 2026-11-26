@@ -49,12 +49,14 @@ const PLACEMENTS: Record<string, string> = {
   header: 'Header: Get the app',
   final: 'Landing: last button',
   footer: 'Footer link',
-  guide_fix5: 'Guide: inside fix 5',
+  guide_fix5: 'Firestick guide: inside fix 5',
+  guide_app: 'Guide: app card',
   guide_final: 'Guide: last button',
 }
 const PAGES: Record<string, string> = {
   beampad: '/beampad',
   lost_firestick_remote: 'Guide: lost Firestick remote',
+  lost_google_tv_remote: 'Guide: lost Google TV remote',
 }
 const QUICK_SOURCES = ['tiktok', 'whatsapp', 'facebook', 'instagram', 'youtube', 'x']
 const SELECT = 'id,created_at,app,placement,page,source,referrer_host,country,device,visitor'

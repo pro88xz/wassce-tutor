@@ -3,7 +3,7 @@
 // these pages without WASSCE Tutor's navigation (src/lib/standalone-pages.ts).
 import type { ReactNode } from 'react'
 import { track } from '@/lib/analytics'
-import { BEAMPAD, BEAMPAD_ICON, PLAY_BADGE, SCREEN_ALT, SCREEN_SIZE, playUrl, screenSrc, type Screen } from '@/content/beampad'
+import { BEAMPAD, BEAMPAD_GUIDES, BEAMPAD_ICON, PLAY_BADGE, SCREEN_ALT, SCREEN_SIZE, playUrl, screenSrc, type Screen } from '@/content/beampad'
 
 /** BeamPad's app icon and name. */
 export function BeamPadMark({ size = 36 }: { size?: number }) {
@@ -101,7 +101,7 @@ export function BeamPadFooter({ page }: { page?: string }) {
           title="BeamPad"
           links={[
             ['Get it on Google Play', playUrl('footer', page)],
-            ['Lost Firestick remote, no Wi-Fi', '/beampad/lost-firestick-remote-no-wifi'],
+            ...BEAMPAD_GUIDES.map((g): [string, string] => [g.title, g.path]),
             ['Compatibility', '/beampad#compatibility'],
             ['Questions', '/beampad#faq'],
           ]}

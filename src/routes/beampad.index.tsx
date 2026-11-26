@@ -29,6 +29,7 @@ import { BeamPadFooter, BeamPadHeader, PhoneShot, PlayBadge, SectionHead } from 
 import { Aurora, BeamPadMotion, HeroBeam, TypedSearch } from '@/components/beampad/Motion'
 import {
   BEAMPAD,
+  BEAMPAD_GUIDES,
   BEAMPAD_OG_IMAGE,
   COMPATIBILITY,
   LANDING_FAQ,
@@ -78,6 +79,7 @@ function BeamPadLanding() {
         <HowItWorks />
         <Compatibility />
         <Privacy />
+        <Guides />
         <Faq />
         <FinalCta />
       </main>
@@ -499,6 +501,31 @@ function Privacy() {
           ))}
         </ul>
       </div>
+    </section>
+  )
+}
+
+/** Help for people who are stuck right now (and the guides' way into search). */
+function Guides() {
+  return (
+    <section id="guides" className="bp-container scroll-mt-20 pt-24" aria-labelledby="guides-title">
+      <SectionHead id="guides-title" eyebrow="Guides" title="Lost the remote and the Wi-Fi changed?">
+        Step-by-step fixes for when the phone apps can’t find your TV, whether or not you use BeamPad.
+      </SectionHead>
+      <ul className="mx-auto mt-12 grid max-w-4xl gap-4 sm:grid-cols-2">
+        {BEAMPAD_GUIDES.map((g, i) => (
+          <li key={g.path} data-reveal style={delay(i * 110)}>
+            <a href={g.path} className="bp-card group block h-full p-6 transition-colors hover:border-[rgba(139,122,255,0.45)]">
+              <span className="block text-lg font-semibold text-white">{g.title}</span>
+              <span className="mt-1.5 block text-[15px] leading-snug text-[var(--bp-muted)]">{g.blurb}</span>
+              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--bp-mint)]">
+                Read the guide
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }
