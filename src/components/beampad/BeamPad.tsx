@@ -56,7 +56,8 @@ export function AppLink({ placement, page, children }: { placement: string; page
 export function PhoneShot({ name, sizes, eager = false, className = '' }: { name: Screen; sizes: string; eager?: boolean; className?: string }) {
   return (
     <img
-      src={screenSrc(name, 420)}
+      // The full-size file as src, so image search and the image sitemap see it; phones pick the small copy from srcSet.
+      src={screenSrc(name, 840)}
       srcSet={`${screenSrc(name, 420)} 420w, ${screenSrc(name, 840)} 840w`}
       sizes={sizes}
       width={SCREEN_SIZE.width}

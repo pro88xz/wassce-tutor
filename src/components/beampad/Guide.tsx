@@ -6,10 +6,10 @@
 // reads alike.
 import { Check, ChevronDown, Info, Minus } from 'lucide-react'
 import type { ReactNode } from 'react'
-import { BeamPadFooter, BeamPadHeader, PlayBadge } from '@/components/beampad/BeamPad'
+import { BeamPadFooter, BeamPadHeader, PhoneShot, PlayBadge } from '@/components/beampad/BeamPad'
 import { Aurora, BeamPadMotion } from '@/components/beampad/Motion'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
-import { BEAMPAD, BEAMPAD_GUIDES } from '@/content/beampad'
+import { BANNER, BEAMPAD, BEAMPAD_GUIDES, SCREEN_CAPTION, type Screen } from '@/content/beampad'
 import type { GuidePath, Trail } from '@/content/beampad-guide-head'
 
 /** The page: BeamPad's frame, the guide's title and byline, its content, other guides and the footer. */
@@ -64,6 +64,38 @@ export function OnThisPage({ items }: { items: [label: string, href: string][] }
 
 /** A menu path on the TV, such as Settings › Network. */
 export const Path = ({ steps }: { steps: string[] }) => <span className="bp-path">{steps.join(' › ')}</span>
+
+/** One of BeamPad's screens in a guide, with a visible caption (image search reads both). */
+export function ScreenFigure({ screen }: { screen: Screen }) {
+  return (
+    <figure data-reveal className="mx-auto mt-10 w-full max-w-[15rem] text-center">
+      <div className="bp-phone-stage">
+        <PhoneShot name={screen} sizes="240px" />
+      </div>
+      <figcaption className="mt-3 text-sm leading-snug text-[var(--bp-faint)]">{SCREEN_CAPTION[screen]}</figcaption>
+    </figure>
+  )
+}
+
+/** BeamPad's banner (a TV search typed from a phone), with a visible caption. */
+export function BannerFigure({ eager = false }: { eager?: boolean }) {
+  return (
+    <figure data-reveal className="mt-8">
+      <img
+        src={BANNER.src(1600)}
+        srcSet={`${BANNER.src(800)} 800w, ${BANNER.src(1600)} 1600w`}
+        sizes="(min-width: 800px) 768px, 92vw"
+        width={BANNER.width}
+        height={BANNER.height}
+        alt={BANNER.alt}
+        loading={eager ? 'eager' : 'lazy'}
+        decoding="async"
+        className="h-auto w-full rounded-2xl border border-[var(--bp-line)] shadow-[0_30px_80px_-40px_rgba(108,92,245,0.8)]"
+      />
+      <figcaption className="mt-3 text-center text-sm leading-snug text-[var(--bp-faint)]">{BANNER.caption}</figcaption>
+    </figure>
+  )
+}
 
 /** An aside in the guide's mint note style. */
 export function Note({ children }: { children: ReactNode }) {

@@ -11,10 +11,10 @@
 // the remote; HDMI-CEC and its brand names; the Streamer's Ethernet port and
 // the Chromecast's Ethernet adapter. Built from src/components/beampad/Guide.tsx.
 import { createFileRoute } from '@tanstack/react-router'
-import { AppCard, GuideCta, GuideFaq, GuidePage, Note, OnThisPage, Path, ShortAnswer, SituationTable } from '@/components/beampad/Guide'
+import { AppCard, GuideCta, GuideFaq, GuidePage, Note, OnThisPage, Path, ScreenFigure, ShortAnswer, SituationTable } from '@/components/beampad/Guide'
 import { guideHead, type Trail } from '@/content/beampad-guide-head'
 import { AppLink } from '@/components/beampad/BeamPad'
-import { BEAMPAD } from '@/content/beampad'
+import { BEAMPAD, SCREEN_CAPTION, SCREEN_SIZE, imageObject, screenSrc } from '@/content/beampad'
 
 const PATH = '/beampad/lost-google-tv-remote-no-wifi'
 const PAGE_ID = 'lost_google_tv_remote'
@@ -47,7 +47,7 @@ const FAQ: [question: string, answer: string][] = [
 
 export const Route = createFileRoute('/beampad/lost-google-tv-remote-no-wifi')({
   ssr: true, // prerendered to static HTML at build time
-  head: () => guideHead({ path: PATH, headline: TITLE, published: PUBLISHED, trail: TRAIL, faq: FAQ }),
+  head: () => guideHead({ path: PATH, headline: TITLE, published: PUBLISHED, trail: TRAIL, faq: FAQ, images: [imageObject(screenSrc('remote', 840), SCREEN_CAPTION.remote, SCREEN_SIZE.width, SCREEN_SIZE.height)] }),
   component: LostGoogleTvRemote,
 })
 
@@ -171,6 +171,8 @@ function LostGoogleTvRemote() {
           </li>
         </ol>
       </div>
+
+      <ScreenFigure screen="remote" />
 
       <Note>
         BeamPad can’t do the very first pairing by itself: that happens in Google TV’s settings, so you need one of fixes 1 to 5 to get there.

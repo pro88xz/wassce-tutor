@@ -68,21 +68,62 @@ export const BEAMPAD_ICON = { src: `${IMG}/icon-192.webp`, png: `${IMG}/icon-512
 export const BEAMPAD_OG_IMAGE = `${SITE.origin}${IMG}/og.jpg`
 export const PLAY_BADGE = { src: `${IMG}/google-play-badge.png`, width: 564, height: 168 }
 
-/** The app's own screens, cut from its Play screenshots (phone-<name>-420/840.webp, 840 x 1854). */
+/**
+ * The app's own screens, cut from its Play screenshots (840 x 1854, with a
+ * 420 px copy). Named, described and captioned for what people search when
+ * they need them, so they can be found in image search; every word is true
+ * to what the screen shows. The image sitemap lists them (scripts/postbuild.mjs).
+ */
 export type Screen = 'keyboard' | 'remote' | 'snippets' | 'trackpad' | 'pc-keyboard' | 'media' | 'presenter'
 
-export const SCREEN_ALT: Record<Screen, string> = {
-  keyboard: 'BeamPad keyboard screen: a text field that sends to the TV, with Ctrl, Alt, Esc, Tab, arrow and Enter keys',
-  remote: 'BeamPad remote screen: power, search and mute, a round D-pad with OK, volume and channel rockers, Back, Home and Menu',
-  snippets: 'BeamPad snippets screen: saved Wi-Fi codes, streaming logins and addresses, each with a Send button',
-  trackpad: 'BeamPad trackpad screen: a large touch area with left-click and right-click buttons',
-  'pc-keyboard': 'BeamPad Pro full keyboard: function keys, numbers, letters, Ctrl, Win and Alt, and navigation keys',
-  media: 'BeamPad media screen: previous, play and pause, next, rewind and forward, and a volume slider',
-  presenter: 'BeamPad Pro presenter screen: a timer, previous and next slide buttons, black screen and laser pointer',
+const SCREEN_FILE: Record<Screen, string> = {
+  keyboard: 'beampad-phone-as-tv-keyboard',
+  remote: 'beampad-phone-tv-remote-without-wifi',
+  snippets: 'beampad-send-wifi-password-to-tv',
+  trackpad: 'beampad-phone-as-mouse-for-tv',
+  'pc-keyboard': 'beampad-phone-as-pc-keyboard',
+  media: 'beampad-phone-media-remote-for-tv',
+  presenter: 'beampad-phone-presentation-remote',
 }
 
-export const screenSrc = (name: Screen, width: 420 | 840) => `${IMG}/phone-${name}-${width}.webp`
+/** Alt text: what the image shows, led by what it is for. */
+export const SCREEN_ALT: Record<Screen, string> = {
+  keyboard: 'Phone used as a TV keyboard: BeamPad’s keyboard screen, with a text box that types on the TV and Ctrl, Alt, Esc, Tab, arrow and Enter keys',
+  remote: 'Phone used as a TV remote without Wi-Fi: BeamPad’s remote screen with a D-pad and OK, volume and channel buttons, Back, Home and Menu',
+  snippets: 'Sending a saved Wi-Fi password from a phone to a TV: BeamPad’s snippets screen with saved Wi-Fi codes, logins and addresses',
+  trackpad: 'Phone used as a mouse for a TV: BeamPad’s trackpad screen with a touch area and left and right click buttons',
+  'pc-keyboard': 'Phone used as a full PC keyboard: BeamPad Pro’s keyboard with F1 to F12, numbers, Ctrl, Win and Alt keys',
+  media: 'Phone used as a media remote for a TV: BeamPad’s play, pause, skip, rewind, forward and volume controls',
+  presenter: 'Phone used as a presentation remote: BeamPad Pro’s next and previous slide buttons, laser pointer, black screen and timer',
+}
+
+/** A short visible caption, for figures in the guides. */
+export const SCREEN_CAPTION: Record<Screen, string> = {
+  keyboard: 'BeamPad’s keyboard: type on the TV with your phone’s own keyboard.',
+  remote: 'BeamPad’s remote: a D-pad, OK, Back, Home, volume and channels, over Bluetooth.',
+  snippets: 'Saved snippets: send a Wi-Fi password or a login to the TV in one tap.',
+  trackpad: 'BeamPad’s trackpad: a mouse pointer for TV browsers and apps.',
+  'pc-keyboard': 'BeamPad Pro’s full keyboard for a computer.',
+  media: 'Media controls: play, pause, skip and volume.',
+  presenter: 'BeamPad Pro’s presentation remote.',
+}
+
+export const screenSrc = (name: Screen, width: 420 | 840) => `${IMG}/${SCREEN_FILE[name]}-${width}.webp`
 export const SCREEN_SIZE = { width: 840, height: 1854 }
+
+/** BeamPad's Play banner: a TV search typed from a phone (1600 x 900, with an 800 px copy). */
+export const BANNER = {
+  src: (width: 800 | 1600) => `${IMG}/beampad-type-on-tv-from-phone-${width}.webp`,
+  width: 1600,
+  height: 900,
+  alt: 'Typing on a TV from a phone: the TV’s search box shows “cooking shows”, typed on the phone with BeamPad, with nothing installed on the TV and no Wi-Fi needed',
+  caption: 'Type on the TV with your phone’s keyboard: the TV sees BeamPad as an ordinary Bluetooth keyboard.',
+}
+
+/** An image as a schema.org ImageObject, with its caption. */
+export function imageObject(src: string, caption: string, width: number, height: number): Record<string, unknown> {
+  return { '@type': 'ImageObject', contentUrl: `${SITE.origin}${src}`, url: `${SITE.origin}${src}`, caption, width, height }
+}
 
 /** Where the TV's own settings pair a Bluetooth keyboard (Google TV help; Amazon Fire TV help). */
 export const PAIRING_PATHS: [platform: string, path: string[]][] = [
@@ -170,7 +211,7 @@ export function beampadAppJsonLd(): Record<string, unknown> {
     applicationCategory: 'UtilitiesApplication',
     inLanguage: ['en', 'fr', 'es', 'pt'],
     image: `${SITE.origin}${BEAMPAD_ICON.png}`,
-    screenshot: (['keyboard', 'remote', 'trackpad', 'snippets'] as Screen[]).map((s) => `${SITE.origin}${screenSrc(s, 840)}`),
+    screenshot: (Object.keys(SCREEN_FILE) as Screen[]).map((s) => imageObject(screenSrc(s, 840), SCREEN_ALT[s], SCREEN_SIZE.width, SCREEN_SIZE.height)),
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', description: 'Free with ads. BeamPad Pro is a monthly, yearly or lifetime purchase.' },
     publisher: beampadPublisher(),
     author: beampadPublisher(),
