@@ -1457,6 +1457,19 @@ html:has(.bp) {
   background: #0b0921;
   color-scheme: dark;
 }
+/* BeamPad's pages sit outside the app frame, so the document itself must
+ * scroll: undo native.css's "root never scrolls" (html, body overflow hidden).
+ * html.page-scroll comes from the boot script before first paint; :has()
+ * covers arriving through the router. */
+html.page-scroll,
+html.page-scroll body,
+html:has(.bp),
+html:has(.bp) body {
+  height: auto;
+  overflow: visible;
+  overflow-x: clip;
+  overscroll-behavior: auto;
+}
 @layer components {
   .bp {
     --bp-bg: #0b0921;

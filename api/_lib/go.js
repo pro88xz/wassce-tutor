@@ -30,10 +30,16 @@ export const APPS = {
 
 const BOT = /bot|crawl|spider|slurp|preview|facebookexternalhit|whatsapp|telegram|discord|skype|embedly|quora|pinterest|vkshare|lighthouse|headless|curl|wget|python|httpclient|okhttp|go-http|java\//i
 
-/** A short tag: letters, digits, "-" and "_" only, at most `max` long; anything else is dropped. */
+/** Characters people can't see that apps add to copied or shared links. */
+const INVISIBLE = /[\u200B-\u200F\u2060\uFEFF\u00AD]/g
+
+/**
+ * A short tag: letters, digits, "-" and "_" only, at most `max` long, with
+ * invisible characters removed first; anything else is dropped.
+ */
 export function tag(value, max) {
   if (typeof value !== 'string') return null
-  const t = value.trim().toLowerCase().slice(0, max)
+  const t = value.replace(INVISIBLE, '').trim().toLowerCase().slice(0, max)
   return /^[a-z0-9_-]+$/.test(t) ? t : null
 }
 
