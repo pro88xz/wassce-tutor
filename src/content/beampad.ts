@@ -67,6 +67,8 @@ const IMG = '/img/beampad'
 export const BEAMPAD_ICON = { src: `${IMG}/icon-192.webp`, png: `${IMG}/icon-512.png` }
 export const BEAMPAD_OG_IMAGE = `${SITE.origin}${IMG}/og.jpg`
 export const PLAY_BADGE = { src: `${IMG}/google-play-badge.png`, width: 564, height: 168 }
+/** Google's official Spanish (Latin America) badge, for /beampad/es. */
+export const PLAY_BADGE_ES = { src: `${IMG}/google-play-badge-es.png`, width: 646, height: 192 }
 
 /**
  * The app's own screens, cut from its Play screenshots (840 x 1854, with a

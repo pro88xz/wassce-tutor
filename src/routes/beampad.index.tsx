@@ -26,7 +26,8 @@ import {
 } from 'lucide-react'
 import type { CSSProperties, ReactNode } from 'react'
 import { AppLink, BeamPadFooter, BeamPadHeader, PhoneShot, PlayBadge, SectionHead } from '@/components/beampad/BeamPad'
-import { Aurora, BeamPadMotion, HeroBeam, TypedSearch } from '@/components/beampad/Motion'
+import { Aurora, BeamPadMotion } from '@/components/beampad/Motion'
+import { HeroVisual } from '@/components/beampad/HeroVisual'
 import {
   BEAMPAD,
   BEAMPAD_GUIDES,
@@ -114,51 +115,16 @@ function Hero() {
           Free with ads · {BEAMPAD.minAndroid} or newer · Google TV, Android TV and Fire TV
         </p>
       </div>
-      <HeroVisual />
+      <HeroVisual searches={SEARCHES} chip="Typed from your phone" />
     </section>
   )
 }
-
-const TV_KEYS = 'abcdefghijklmnopqrstuvwxyz'.split('')
 
 /** What the TV's search box types, in turn (the first is in the static HTML). */
 const SEARCHES = ['cooking shows', 'lo-fi beats', 'stand-up comedy', 'tech reviews']
 
 /** A reveal delay for staggered entrances (src/components/beampad/Motion.tsx). */
 const delay = (ms: number) => ({ '--d': `${ms}ms` }) as CSSProperties
-
-/** A TV searching for what the phone typed, with the phone in front: decorative, the text says the same. */
-function HeroVisual() {
-  return (
-    <div data-reveal style={delay(200)} className="bp-hero-visual relative mx-auto w-full max-w-[36rem] pt-[8%] pb-[14%] lg:max-w-none">
-      <div className="bp-tv" aria-hidden>
-        <div className="flex h-full flex-col gap-[6%] p-[6%]">
-          <div className="bp-tv-search">
-            <svg viewBox="0 0 24 24" className="h-[1.1em] w-[1.1em] shrink-0 text-white/70" fill="none" stroke="currentColor" strokeWidth="2.2">
-              <circle cx="11" cy="11" r="7" />
-              <path d="m20 20-3.5-3.5" />
-            </svg>
-            <TypedSearch words={SEARCHES} />
-            <span className="bp-caret" />
-          </div>
-          <span className="bp-tv-chip">Typed from your phone</span>
-          <div className="bp-tv-keys">
-            {TV_KEYS.map((k) => (
-              <span key={k} className={k === 'k' ? 'is-focus' : undefined}>
-                {k}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="bp-tv-stand" aria-hidden />
-      <HeroBeam />
-      <div className="absolute right-0 bottom-0 w-[31%] max-w-[13.5rem]">
-        <PhoneShot name="keyboard" eager sizes="(min-width: 1024px) 216px, 31vw" />
-      </div>
-    </div>
-  )
-}
 
 function ProofStrip() {
   const items: [icon: ReactNode, title: string, text: string][] = [
