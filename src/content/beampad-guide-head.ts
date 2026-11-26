@@ -8,7 +8,7 @@ export type GuidePath = keyof typeof PUBLIC_PAGES & `/beampad/${string}`
 export type Trail = [name: string, path: string][]
 
 /** <head> tags for a guide: article, breadcrumb and question markup, BeamPad's own theme colour and name. */
-export function guideHead({ path, headline, published, trail, faq }: { path: GuidePath; headline: string; published: string; trail: Trail; faq: [string, string][] }) {
+export function guideHead({ path, headline, published, trail, faq, images = [] }: { path: GuidePath; headline: string; published: string; trail: Trail; faq: [string, string][]; images?: Record<string, unknown>[] }) {
   const page = PUBLIC_PAGES[path]
   const tags = indexablePageTags({
     path,
@@ -24,7 +24,8 @@ export function guideHead({ path, headline, published, trail, faq }: { path: Gui
         '@type': 'Article',
         headline,
         description: page.description,
-        image: BEAMPAD_OG_IMAGE,
+        // The guide's own pictures first (captioned ImageObjects), then the share image.
+        image: [...images, BEAMPAD_OG_IMAGE],
         datePublished: published,
         dateModified: page.lastmod,
         mainEntityOfPage: absoluteUrl(path),

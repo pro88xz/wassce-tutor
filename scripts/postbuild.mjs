@@ -161,7 +161,9 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
 
 // Images in the sitemap (Google image sitemap extension), so they can be found
 // in image search: the question diagrams on /wassce/{subject}/{topic}/questions,
-// and the photos, covers and charts on the blog and university pages (/img/...).
+// the photos, covers and charts on the blog and university pages (/img/...),
+// and BeamPad's screenshots and banner on /beampad and its guides
+// (/img/beampad/beampad-*, never its icon or the Google Play badge).
 // The urlset already declares the image namespace (TanStack Start writes it).
 {
   const SITE = 'https://wasscetutor.com'
@@ -174,26 +176,33 @@ console.log('[postbuild] updated _shell.html and wrote 404.html')
   const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   let images = 0
   let editorialImages = 0
+  let beampadImages = 0
   const out = xml.replace(/<url>\s*<loc>([^<]+)<\/loc>([\s\S]*?)<\/url>/g, (whole, loc, rest) => {
     const p = loc.replace(SITE, '')
     const questions = /\/questions$/.test(p)
     const editorial = /^\/(blog|universities)(\/|$)/.test(p)
-    if ((!questions && !editorial) || rest.includes('<image:image>')) return whole
+    const beampad = /^\/beampad(\/|$)/.test(p)
+    if ((!questions && !editorial && !beampad) || rest.includes('<image:image>')) return whole
     const file = path.join(client, `${p.slice(1)}.html`)
     if (!fs.existsSync(file)) return whole
     const html = fs.readFileSync(file, 'utf8')
     // An <img>'s src is its full-size file; the smaller srcset copies are left out.
     // Only article photos, covers and charts: not the site's own icons and banners.
-    const pattern = questions ? /<img [^>]*src="(https:\/\/wasscetutor\.com\/questions\/[^"]+)"/g : /<img\s(?:[^>]*\s)?src="((?:https:\/\/wasscetutor\.com)?\/img\/(?:blog|universities)\/[^"]+)"/g
+    const pattern = questions
+      ? /<img [^>]*src="(https:\/\/wasscetutor\.com\/questions\/[^"]+)"/g
+      : beampad
+        ? /<img\s(?:[^>]*\s)?src="((?:https:\/\/wasscetutor\.com)?\/img\/beampad\/beampad-[^"]+)"/g
+        : /<img\s(?:[^>]*\s)?src="((?:https:\/\/wasscetutor\.com)?\/img\/(?:blog|universities)\/[^"]+)"/g
     const srcs = [...new Set([...html.matchAll(pattern)].map((m) => m[1].replace(/&amp;/g, '&')).map((s) => (s.startsWith('/') ? SITE + s : s)))]
     if (srcs.length === 0) return whole
     if (questions) images += srcs.length
+    else if (beampad) beampadImages += srcs.length
     else editorialImages += srcs.length
     const entries = srcs.map((s) => `\n    <image:image>\n      <image:loc>${esc(s)}</image:loc>\n    </image:image>`).join('')
     return `<url>\n    <loc>${loc}</loc>${rest.replace(/\s+$/, '')}${entries}\n  </url>`
   })
   fs.writeFileSync(sitemapPath, out)
-  console.log(`[postbuild] sitemap.xml: ${images} question diagrams and ${editorialImages} blog and university images listed for image search`)
+  console.log(`[postbuild] sitemap.xml: ${images} question diagrams, ${editorialImages} blog and university images and ${beampadImages} BeamPad images listed for image search`)
 }
 
 // The video sitemap (scripts/video/sitemap.mjs), listed in robots.txt.

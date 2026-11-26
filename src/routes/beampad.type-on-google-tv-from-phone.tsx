@@ -11,10 +11,10 @@
 // TV -> Open remote; the phone and TV on the same Wi-Fi; Bluetooth keyboards
 // in Settings -> Remotes & Accessories -> Pair remote or accessory.
 import { createFileRoute } from '@tanstack/react-router'
-import { AppCard, CompareTable, GuideCta, GuideFaq, GuidePage, Note, OnThisPage, Path, ShortAnswer, YesNo } from '@/components/beampad/Guide'
+import { AppCard, BannerFigure, CompareTable, GuideCta, GuideFaq, GuidePage, Note, OnThisPage, Path, ScreenFigure, ShortAnswer, YesNo } from '@/components/beampad/Guide'
 import { guideHead, type Trail } from '@/content/beampad-guide-head'
 import { AppLink } from '@/components/beampad/BeamPad'
-import { BEAMPAD } from '@/content/beampad'
+import { BEAMPAD, BANNER, SCREEN_CAPTION, SCREEN_SIZE, imageObject, screenSrc } from '@/content/beampad'
 
 const PATH = '/beampad/type-on-google-tv-from-phone'
 const PAGE_ID = 'type_on_google_tv'
@@ -47,7 +47,7 @@ const FAQ: [question: string, answer: string][] = [
 
 export const Route = createFileRoute('/beampad/type-on-google-tv-from-phone')({
   ssr: true, // prerendered to static HTML at build time
-  head: () => guideHead({ path: PATH, headline: TITLE, published: PUBLISHED, trail: TRAIL, faq: FAQ }),
+  head: () => guideHead({ path: PATH, headline: TITLE, published: PUBLISHED, trail: TRAIL, faq: FAQ, images: [imageObject(BANNER.src(1600), BANNER.caption, BANNER.width, BANNER.height), imageObject(screenSrc('keyboard', 840), SCREEN_CAPTION.keyboard, SCREEN_SIZE.width, SCREEN_SIZE.height)] }),
   component: TypeOnGoogleTv,
 })
 
@@ -67,6 +67,8 @@ function TypeOnGoogleTv() {
         a text box on the TV and type with your phone’s keyboard. If they can’t share Wi-Fi, the TV is offline, or the network keeps devices
         apart, as many hotel and guest networks do, type over Bluetooth instead, with a Bluetooth keyboard or your phone acting as one.
       </ShortAnswer>
+
+      <BannerFigure />
 
       <CompareTable
         caption="Ways to type on Google TV from a phone"
@@ -140,6 +142,8 @@ function TypeOnGoogleTv() {
           Wi-Fi password or a login in one tap.
         </p>
       </div>
+
+      <ScreenFigure screen="keyboard" />
 
       <Note>
         Pairing happens in the TV’s own settings, so you need the TV’s remote for that one step. After that BeamPad remembers the TV. Lost the remote
