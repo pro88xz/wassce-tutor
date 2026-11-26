@@ -123,6 +123,14 @@ export const PUBLIC_PAGES = {
   // "lost firestick remote and no wifi / new wifi / not connected to wifi":
   // the Fire TV app needs shared Wi-Fi, and the pages ranking for these
   // searches in Nov 2026 offered only a hotspot trick and replacement remotes.
+  // "lost google tv remote no wifi", "lost chromecast remote", "google tv remote app
+  // without wifi": Google's help only says the phone and TV must share Wi-Fi.
+  '/beampad/lost-google-tv-remote-no-wifi': {
+    title: 'Lost Your Google TV Remote and No Wi-Fi? What Actually Works',
+    description:
+      'Lost the remote for your Chromecast with Google TV or Google TV Streamer, and it is not on Wi-Fi? Why the phone app can’t connect, and the fixes that work.',
+    lastmod: '2026-11-26',
+  },
   '/beampad/lost-firestick-remote-no-wifi': {
     title: 'Lost Your Firestick Remote and No Wi-Fi? What Actually Works',
     description:

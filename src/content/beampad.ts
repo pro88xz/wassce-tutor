@@ -25,6 +25,20 @@ export const BEAMPAD = {
 
 const PLAY_LISTING = `https://play.google.com/store/apps/details?id=${BEAMPAD.packageId}`
 
+/** BeamPad's guides, oldest first: listed on the landing page, in the footer and under each guide. */
+export const BEAMPAD_GUIDES = [
+  {
+    path: '/beampad/lost-firestick-remote-no-wifi',
+    title: 'Lost Firestick remote and no Wi-Fi',
+    blurb: 'Why the Fire TV app can’t find it, and the fixes that still work.',
+  },
+  {
+    path: '/beampad/lost-google-tv-remote-no-wifi',
+    title: 'Lost Google TV remote and no Wi-Fi',
+    blurb: 'Chromecast with Google TV, Google TV Streamer and TVs with Google TV built in.',
+  },
+] as const
+
 /** The tracking link to share anywhere (api/_lib/go.js): counts the click, then opens Google Play. */
 export const TRACKING_LINK = `${SITE.origin}/go/beampad`
 
