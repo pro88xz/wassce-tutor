@@ -57,6 +57,7 @@ const PAGES: Record<string, string> = {
   beampad: '/beampad',
   lost_firestick_remote: 'Guide: lost Firestick remote',
   lost_google_tv_remote: 'Guide: lost Google TV remote',
+  type_on_google_tv: 'Guide: type on Google TV from your phone',
 }
 const QUICK_SOURCES = ['tiktok', 'whatsapp', 'facebook', 'instagram', 'youtube', 'x']
 const SELECT = 'id,created_at,app,placement,page,source,referrer_host,country,device,visitor'

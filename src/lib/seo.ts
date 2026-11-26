@@ -123,6 +123,15 @@ export const PUBLIC_PAGES = {
   // "lost firestick remote and no wifi / new wifi / not connected to wifi":
   // the Fire TV app needs shared Wi-Fi, and the pages ranking for these
   // searches in Nov 2026 offered only a hotspot trick and replacement remotes.
+  // "type on google tv with phone", "use phone as keyboard for android tv",
+  // "phone keyboard for google tv": the how-to (the landing page is the app's
+  // own page), covering Google's Wi-Fi apps first, then what works without Wi-Fi.
+  '/beampad/type-on-google-tv-from-phone': {
+    title: 'How to Type on Google TV From Your Phone (Even Without Wi-Fi)',
+    description:
+      'Type on Google TV or Android TV with your phone’s keyboard: Google’s TV and Home apps over Wi-Fi, a Quick Settings shortcut, and Bluetooth without Wi-Fi.',
+    lastmod: '2026-11-26',
+  },
   // "lost google tv remote no wifi", "lost chromecast remote", "google tv remote app
   // without wifi": Google's help only says the phone and TV must share Wi-Fi.
   '/beampad/lost-google-tv-remote-no-wifi': {
