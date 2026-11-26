@@ -14,7 +14,8 @@ import { PublicHeader } from '@/components/public/PublicHeader'
 import { WorkspaceBar } from '@/components/shell/WorkspaceBar'
 import { useSendToSignIn } from '@/lib/use-send-to-sign-in'
 import { needsAccount } from '@/lib/return-to'
-import { adsAllowed, adsRunning, clearAdsReload, hasStoredSession, isAppPath, reloadWithoutAds } from '@/lib/ads'
+import { adsAllowed, adsRunning, clearAdsReload, hasStoredSession, isAdFreePath, isAppPath, reloadWithoutAds } from '@/lib/ads'
+import { isStandalonePath } from '@/lib/standalone-pages'
 import { monetagLoaded, monetagPathAllowed, useMonetag } from '@/lib/monetag'
 import { SITE } from '@/lib/seo'
 import { analyticsScript, GA_MEASUREMENT_ID } from '@/lib/analytics'
@@ -114,9 +115,10 @@ export const Route = createRootRoute({
 
 function RootDocument({ children }: { children: ReactNode }) {
   // Google AdSense, on public pages only (src/lib/ads.ts). Decided once per
-  // document: the prerendered public pages carry the tag, /_shell does not.
+  // document: the prerendered public pages carry the tag, /_shell and the
+  // ad-free pages (BeamPad's) do not.
   const pathname = useRouterState({ select: (st) => st.location.pathname })
-  const [adTag] = useState(() => !isAppPath(pathname))
+  const [adTag] = useState(() => !isAppPath(pathname) && !isAdFreePath(pathname))
   return (
     // The boot script adds classes to <html> before React hydrates.
     <html lang="en" suppressHydrationWarning>
@@ -212,6 +214,18 @@ function RootComponent() {
   useRoleHome(pathname)
   const studentNav = useHasBottomNav(pathname)
   const roleWorkspace = pathname === '/tutor-dashboard' || pathname.startsWith('/tutor-dashboard/') || pathname === '/affiliate-dashboard'
+  // Pages with their own brand and frame (BeamPad's): no WASSCE Tutor
+  // navigation, header or footer, and the document itself scrolls.
+  if (isStandalonePath(pathname)) {
+    return (
+      <>
+        <Outlet />
+        <Suspense fallback={null}>
+          <TanStackRouterDevtools />
+        </Suspense>
+      </>
+    )
+  }
   return (
     <div className="app-frame flex bg-background text-foreground">
       <SideNav />

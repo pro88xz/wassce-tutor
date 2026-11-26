@@ -99,13 +99,35 @@ export const PUBLIC_PAGES = {
     title: 'Privacy Policy | WASSCE Tutor',
     description:
       'What information WASSCE Tutor collects when you use the website or Android app, how it is stored and used, and the choices you have.',
-    lastmod: '2026-11-25',
+    lastmod: '2026-11-26',
   },
   '/terms': {
     title: 'Terms of Service | WASSCE Tutor',
     description:
       'The terms that apply when you create an account or use WASSCE Tutor, including subscriptions, payments and acceptable use.',
     lastmod: '2026-11-21',
+  },
+  // BeamPad, the studio's Android app that makes a phone a Bluetooth keyboard,
+  // mouse and remote for a TV (src/routes/beampad.*, src/content/beampad.ts).
+  // Its own brand, no ads. Written for what people search when the usual
+  // phone remotes fail them: they all need the phone and TV on one Wi-Fi
+  // network, and BeamPad does not. Not led by the brand, which nobody
+  // searches for yet.
+  '/beampad': {
+    title: 'Use Your Phone as a TV Keyboard & Mouse, No Wi-Fi | BeamPad',
+    ogTitle: 'BeamPad: type on your TV from your phone, no Wi-Fi needed',
+    description:
+      'BeamPad turns your Android phone into a Bluetooth keyboard, mouse and remote for Android TV, Google TV and Fire TV. No Wi-Fi, nothing to install on the TV.',
+    lastmod: '2026-11-26',
+  },
+  // "lost firestick remote and no wifi / new wifi / not connected to wifi":
+  // the Fire TV app needs shared Wi-Fi, and the pages ranking for these
+  // searches in Nov 2026 offered only a hotspot trick and replacement remotes.
+  '/beampad/lost-firestick-remote-no-wifi': {
+    title: 'Lost Your Firestick Remote and No Wi-Fi? What Actually Works',
+    description:
+      'Lost the Firestick remote and the Fire TV is not on Wi-Fi? Why the Fire TV app fails, the fixes that still work, and how to never be stuck like this again.',
+    lastmod: '2026-11-26',
   },
 } as const satisfies Record<string, PublicPage>
 

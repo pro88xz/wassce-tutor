@@ -23,9 +23,21 @@ export function isAppPath(pathname: string): boolean {
   return APP_PATH.test(pathname)
 }
 
+/**
+ * Public pages that never show ads: BeamPad's pages (src/routes/beampad.*),
+ * the studio's TV app, which has its own brand and sends visitors to Google
+ * Play. They are prerendered without the AdSense tag, and Monetag stays off.
+ */
+const AD_FREE_PATH = /^\/beampad(\/|$)/
+
+/** True on a public page that is kept free of ads. */
+export function isAdFreePath(pathname: string): boolean {
+  return AD_FREE_PATH.test(pathname)
+}
+
 /** Whether ads may show on this page: a public page, and not the student's dashboard ("/" when signed in). */
 export function adsAllowed(pathname: string, signedIn: boolean): boolean {
-  return !isAppPath(pathname) && !(pathname === '/' && signedIn)
+  return !isAppPath(pathname) && !isAdFreePath(pathname) && !(pathname === '/' && signedIn)
 }
 
 /** A Supabase session is stored in this browser (the same test as the boot script). */

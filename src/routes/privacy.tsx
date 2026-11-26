@@ -14,7 +14,7 @@ function Privacy() {
       <header className="space-y-3 pb-4 pt-2">
         <p className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">Legal</p>
         <h1 className="text-4xl font-bold tracking-tight text-balance">Privacy Policy</h1>
-        <p className="text-sm text-muted-foreground">Last updated: 25 November 2026</p>
+        <p className="text-sm text-muted-foreground">Last updated: 26 November 2026</p>
       </header>
 
       <section className="space-y-3 rounded-2xl border bg-card p-6">
@@ -91,6 +91,12 @@ function Privacy() {
         </p>
         <p className="text-muted-foreground">
           We use Google Analytics to count visitors and see which pages, subjects and lessons are used, so we can improve WASSCE Tutor. It sets its own cookies on this site and sends Google the pages you view, how you arrived, your device and browser type, and your approximate location (country or city). It does not receive your name, email address, answers or scores. You can block it with your browser&rsquo;s tracking protection or Google&rsquo;s opt-out browser add-on.
+        </p>
+        <p className="text-muted-foreground">
+          Links to our other apps on Google Play (such as the buttons on the BeamPad pages) go through wasscetutor.com/go/ first, which
+          counts the click and then opens Google Play. For each click we keep the time, which button and page it came from, the website
+          that linked to it, your country, your type of device, and a code made from that day&rsquo;s date, your IP address and browser
+          that cannot be turned back into either. We do not keep your IP address or tie the click to an account.
         </p>
       </section>
 

@@ -1,5 +1,5 @@
 import { createFileRoute, Link, Outlet, useLocation } from '@tanstack/react-router'
-import { BadgeCheck, BadgePercent, BookOpen, Download, FileText, FileUp, GraduationCap, Layers, Library, ListChecks, Mail, ShieldCheck, Upload, UserRound, Wallet } from 'lucide-react'
+import { BadgeCheck, BadgePercent, BookOpen, Download, FileText, FileUp, GraduationCap, Layers, Library, ListChecks, Mail, MousePointerClick, ShieldCheck, Upload, UserRound, Wallet } from 'lucide-react'
 import { useQuery } from '@tanstack/react-query'
 import { supabase } from '@/lib/supabase'
 import { privateHead } from '@/lib/seo'
@@ -301,6 +301,16 @@ function AdminPage() {
           <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><Download className="h-5 w-5" aria-hidden /></span>
           <h2 className="font-bold">Downloads</h2>
           <p className="mt-1 text-sm text-muted-foreground">APK download tracking, live updates.</p>
+          <p className="mt-3 text-xs text-primary">Open →</p>
+        </Link>
+
+        <Link
+          to="/admin/app-clicks"
+          className="rounded-3xl border bg-card p-5 shadow-sm shadow-black/[0.03] transition hover:border-primary/40 hover:shadow-md"
+        >
+          <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary"><MousePointerClick className="h-5 w-5" aria-hidden /></span>
+          <h2 className="font-bold">App clicks: BeamPad</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Clicks to Google Play from the BeamPad pages and your shared tracking links, live.</p>
           <p className="mt-3 text-xs text-primary">Open →</p>
         </Link>
       </div>

@@ -27,7 +27,8 @@
     "video:test": "node --test scripts/video/video-api.test.mjs",
     "functions:check": "node scripts/check-functions.mjs",
     "monetag:test": "node --experimental-strip-types --test scripts/monetag.test.mjs",
-    "tutor-request:test": "node --test scripts/tutor-request.test.mjs"
+    "tutor-request:test": "node --test scripts/tutor-request.test.mjs",
+    "go:test": "node --test scripts/go.test.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.3.4",

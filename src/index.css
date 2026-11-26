@@ -1446,3 +1446,271 @@ html, body {
   0%, 100% { translate: 0 0; }
   50% { translate: 0 -9px; }
 }
+
+/* ============================================================
+ * BeamPad (src/routes/beampad.*): the studio's TV keyboard app, on its own
+ * brand: deep indigo, violet and mint, from its icon and Google Play art.
+ * Always dark, whatever the site's reading theme. In the components layer so
+ * Tailwind utilities on the same element still win.
+ * ============================================================ */
+html:has(.bp) {
+  background: #0b0921;
+  color-scheme: dark;
+}
+@layer components {
+  .bp {
+    --bp-bg: #0b0921;
+    --bp-ink: #f5f3ff;
+    --bp-muted: #bdb7e6;
+    --bp-faint: #938dc2;
+    --bp-line: rgba(255, 255, 255, 0.09);
+    --bp-card: rgba(255, 255, 255, 0.035);
+    --bp-violet: #6c5cf5;
+    --bp-violet-hi: #8b7aff;
+    --bp-mint: #46f0c2;
+    --ring: #8b7aff;
+    min-height: 100vh;
+    color: var(--bp-ink);
+    background:
+      radial-gradient(1100px 620px at 12% -8%, rgba(108, 92, 245, 0.34), transparent 62%),
+      radial-gradient(900px 520px at 100% 4%, rgba(70, 240, 194, 0.07), transparent 60%),
+      var(--bp-bg);
+    font-feature-settings: "cv11", "ss01";
+  }
+  .bp ::selection { background: rgba(139, 122, 255, 0.45); color: #fff; }
+  .bp-skip {
+    position: absolute; left: 1rem; top: -4rem; z-index: 60;
+    border-radius: 0.6rem; background: #fff; padding: 0.6rem 1rem; color: #0b0921; font-weight: 600;
+  }
+  .bp-skip:focus { top: 1rem; }
+  .bp-container { width: 100%; max-width: 74rem; margin-inline: auto; padding-inline: 1.25rem; }
+  @media (min-width: 640px) { .bp-container { padding-inline: 2rem; } }
+
+  .bp-header {
+    position: sticky; top: 0; z-index: 40;
+    border-bottom: 1px solid var(--bp-line);
+    background: rgba(11, 9, 33, 0.72);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    backdrop-filter: saturate(160%) blur(14px);
+  }
+  .bp-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    border-radius: 0.75rem; font-weight: 600; color: #fff; white-space: nowrap;
+    background: linear-gradient(180deg, var(--bp-violet-hi), var(--bp-violet));
+    box-shadow: 0 8px 24px -10px rgba(108, 92, 245, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    transition: transform 0.15s ease, filter 0.15s ease;
+  }
+  .bp-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+  .bp-chip {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    border: 1px solid var(--bp-line); border-radius: 999px; padding: 0.4rem 0.9rem;
+    background: rgba(255, 255, 255, 0.04); font-size: 0.875rem; font-weight: 500; color: var(--bp-muted);
+  }
+  .bp-eyebrow {
+    font-size: 0.8rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--bp-mint);
+  }
+  .bp-gradient-text {
+    background: linear-gradient(95deg, #ffffff 0%, #d8d2ff 38%, var(--bp-mint) 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .bp-card {
+    position: relative;
+    border: 1px solid var(--bp-line); border-radius: 1.25rem; background: var(--bp-card);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  }
+  .bp-card-glow {
+    border-color: rgba(139, 122, 255, 0.35);
+    background: linear-gradient(180deg, rgba(108, 92, 245, 0.14), rgba(108, 92, 245, 0.03));
+    box-shadow: 0 30px 80px -40px rgba(108, 92, 245, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+  .bp-icon-tile {
+    display: inline-grid; place-items: center; flex-shrink: 0;
+    width: 2.75rem; height: 2.75rem; border-radius: 0.85rem;
+    background: rgba(108, 92, 245, 0.16); color: #cfc8ff; border: 1px solid rgba(139, 122, 255, 0.25);
+  }
+  .bp-note {
+    display: flex; gap: 0.85rem; border: 1px solid rgba(70, 240, 194, 0.22); border-radius: 1rem;
+    background: rgba(70, 240, 194, 0.06); padding: 1.1rem 1.25rem; font-size: 0.95rem; line-height: 1.6; color: var(--bp-muted);
+  }
+  .bp-step-n {
+    display: inline-grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: 999px;
+    background: linear-gradient(180deg, var(--bp-violet-hi), var(--bp-violet)); color: #fff; font-weight: 700;
+    box-shadow: 0 8px 20px -8px rgba(108, 92, 245, 0.9);
+  }
+
+  /* The app's screens: phone cut-outs with transparent corners. */
+  /* The screenshots end below the phone's navigation bar: fade that edge out. */
+  .bp-phone {
+    filter: drop-shadow(0 28px 50px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 1px rgba(255, 255, 255, 0.2));
+    -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent 99%);
+    mask-image: linear-gradient(to bottom, #000 80%, transparent 99%);
+  }
+  .bp-phone-stage { position: relative; isolation: isolate; }
+  .bp-phone-stage::before {
+    content: ""; position: absolute; inset: 12% -18% 8%; z-index: -1; border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(108, 92, 245, 0.45), transparent);
+    filter: blur(10px);
+  }
+
+  /* Hero: a TV searching for what the phone typed. */
+  .bp-tv {
+    position: relative; aspect-ratio: 16 / 10; width: 88%; border-radius: 1.1rem;
+    border: clamp(6px, 1.4vw, 11px) solid #1c1840;
+    background: linear-gradient(180deg, #17133f, #0d0b26);
+    box-shadow: 0 50px 120px -40px rgba(108, 92, 245, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.07), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    font-size: clamp(0.78rem, 2.3vw, 1.3rem);
+  }
+  .bp-tv-stand {
+    width: 28%; height: 0.55rem; margin: 0.65rem 0 0 30%; border-radius: 999px; background: #1c1840;
+  }
+  .bp-tv-search {
+    display: flex; align-items: center; gap: 0.55em;
+    width: 72%; border: 2px solid var(--bp-mint); border-radius: 999px; padding: 0.55em 1em;
+    color: #fff; font-weight: 500;
+    box-shadow: 0 0 0 4px rgba(70, 240, 194, 0.1), 0 0 34px rgba(70, 240, 194, 0.22);
+  }
+  .bp-typed { white-space: nowrap; overflow: hidden; text-overflow: clip; }
+  .bp-caret {
+    display: inline-block; width: 2px; height: 1.15em; margin-left: -0.3em; background: var(--bp-mint);
+    animation: bp-blink 1.05s steps(1) infinite;
+  }
+  .bp-tv-chip {
+    align-self: flex-start; display: inline-flex; border-radius: 0.6em; padding: 0.3em 0.75em;
+    background: rgba(70, 240, 194, 0.1); color: var(--bp-mint); font-size: 0.72em; font-weight: 600;
+  }
+  .bp-tv-keys {
+    display: grid; grid-template-columns: repeat(9, 1fr); gap: 0.4em; margin-top: auto; width: 68%;
+    font-size: 0.68em; color: rgba(255, 255, 255, 0.28);
+  }
+  .bp-tv-keys span { display: grid; place-items: center; border-radius: 0.35em; background: rgba(255, 255, 255, 0.04); padding: 0.35em 0; }
+  .bp-tv-keys span.is-focus { background: rgba(255, 255, 255, 0.16); color: #fff; outline: 1.5px solid rgba(255, 255, 255, 0.5); }
+  @keyframes bp-blink { 50% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) {
+    .bp-caret { animation: none; }
+    .bp-btn:hover { transform: none; }
+  }
+
+  .bp-faq {
+    border: 1px solid var(--bp-line); border-radius: 1rem; background: var(--bp-card);
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+  }
+  .bp-faq[open] { border-color: rgba(139, 122, 255, 0.35); background: rgba(108, 92, 245, 0.07); }
+  .bp-faq summary {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    cursor: pointer; list-style: none; padding: 1.1rem 1.35rem; font-weight: 600; color: #fff;
+  }
+  .bp-faq summary::-webkit-details-marker { display: none; }
+  .bp-faq p { padding: 0 1.35rem 1.25rem; line-height: 1.65; color: var(--bp-muted); }
+
+  /* The closing call to action: a light runs round its edge (::before turns,
+   * ::after is the panel on top of it, 1px in). */
+  .bp-cta {
+    position: relative; isolation: isolate; overflow: hidden; margin-top: 2rem; border-radius: 2rem; padding: 4rem 1.5rem; text-align: center;
+    background: rgba(139, 122, 255, 0.3);
+  }
+  .bp-cta::before {
+    content: ""; position: absolute; z-index: -2; left: 50%; top: 50%; width: 220%; aspect-ratio: 1; translate: -50% -50%;
+    background: conic-gradient(from 0deg, transparent 0 58%, rgba(70, 240, 194, 0.9) 66%, rgba(139, 122, 255, 0.95) 74%, transparent 82%);
+    animation: bp-spin 9s linear infinite paused;
+  }
+  .bp-motion .bp-cta::before { animation-play-state: running; }
+  .bp-cta::after {
+    content: ""; position: absolute; z-index: -1; inset: 1px; border-radius: calc(2rem - 1px);
+    background:
+      radial-gradient(700px 300px at 50% 0%, rgba(108, 92, 245, 0.45), transparent 70%),
+      radial-gradient(500px 260px at 50% 110%, rgba(70, 240, 194, 0.16), transparent 70%),
+      #120e36;
+  }
+
+  /* Long-form guides (/beampad/...): readable prose on the dark page. */
+  .bp-prose { font-size: 1.075rem; line-height: 1.75; color: var(--bp-muted); }
+  .bp-prose > * + * { margin-top: 1.1em; }
+  .bp-prose h2 { margin-top: 2.4em; font-size: 1.75rem; line-height: 1.2; font-weight: 700; letter-spacing: -0.02em; color: #fff; scroll-margin-top: 5rem; }
+  .bp-prose h3 { margin-top: 1.8em; font-size: 1.25rem; font-weight: 700; color: #fff; }
+  .bp-prose strong { color: #fff; font-weight: 600; }
+  .bp-prose a { color: #fff; font-weight: 600; text-decoration: underline; text-decoration-color: var(--bp-mint); text-underline-offset: 4px; }
+  .bp-prose ol, .bp-prose ul { padding-left: 1.3em; }
+  .bp-prose ol { list-style: decimal; }
+  .bp-prose ul { list-style: disc; }
+  .bp-prose li + li { margin-top: 0.45em; }
+  .bp-prose li::marker { color: var(--bp-violet-hi); }
+  .bp-path { display: inline; border-radius: 0.4rem; background: rgba(255, 255, 255, 0.07); padding: 0.1em 0.4em; font-size: 0.92em; color: #fff; white-space: normal; }
+}
+
+/* ============================================================
+ * BeamPad motion (src/components/beampad/Motion.tsx). Transform and opacity
+ * only. Scroll reveals and the card light need .bp-motion, which the page's
+ * script adds after hydration (never for reduced motion), so the static HTML
+ * is complete and visible on its own.
+ * ============================================================ */
+@layer components {
+  /* Living background: three soft lights drifting behind the page. */
+  .bp-aurora { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+  .bp-aurora span { position: absolute; border-radius: 50%; will-change: transform; }
+  .bp-aurora span:nth-child(1) {
+    width: 70vmax; height: 70vmax; left: -22vmax; top: -30vmax;
+    background: radial-gradient(closest-side, rgba(108, 92, 245, 0.42), rgba(108, 92, 245, 0.12) 55%, transparent);
+    animation: bp-drift-a 28s ease-in-out infinite alternate;
+  }
+  .bp-aurora span:nth-child(2) {
+    width: 46vmax; height: 46vmax; right: -16vmax; top: 6vmax;
+    background: radial-gradient(closest-side, rgba(70, 240, 194, 0.16), transparent);
+    animation: bp-drift-b 34s ease-in-out infinite alternate;
+  }
+  .bp-aurora span:nth-child(3) {
+    width: 60vmax; height: 60vmax; left: 18vmax; bottom: -38vmax;
+    background: radial-gradient(closest-side, rgba(150, 110, 255, 0.24), transparent);
+    animation: bp-drift-c 40s ease-in-out infinite alternate;
+  }
+  .bp-calm .bp-aurora { opacity: 0.6; }
+  @keyframes bp-drift-a { to { transform: translate3d(18vmax, 12vmax, 0) scale(1.15); } }
+  @keyframes bp-drift-b { to { transform: translate3d(-16vmax, 22vmax, 0) scale(1.25); } }
+  @keyframes bp-drift-c { to { transform: translate3d(-20vmax, -16vmax, 0) scale(0.9); } }
+
+  /* Hero beam: keys flying from the phone to the TV along a flowing line. */
+  .bp-beam { position: absolute; left: 0; top: 0; width: 100%; height: auto; overflow: visible; pointer-events: none; }
+  .bp-beam text { font-family: inherit; }
+  .bp-beam-line { fill: none; stroke-width: 0.45; stroke-linecap: round; stroke-dasharray: 1.1 2.1; animation: bp-dash 1.4s linear infinite; }
+  .bp-beam-glow { fill: none; stroke-width: 2.4; stroke-linecap: round; opacity: 0.18; filter: blur(1.2px); }
+  .bp-beam-pulses circle { transform-box: fill-box; transform-origin: center; opacity: 0; animation: bp-pulse 3.9s ease-out infinite; }
+  @keyframes bp-dash { to { stroke-dashoffset: -6.4; } }
+  @keyframes bp-pulse {
+    0% { transform: scale(0.85); opacity: 0.55; }
+    100% { transform: scale(2.3); opacity: 0; }
+  }
+  /* The TV's search box glows softly as keys arrive (opacity of a glow layer). */
+  .bp-tv-search { position: relative; }
+  .bp-tv-search::after {
+    content: ""; position: absolute; inset: -2px; border-radius: inherit; pointer-events: none; opacity: 0;
+    box-shadow: 0 0 0 5px rgba(70, 240, 194, 0.14), 0 0 48px rgba(70, 240, 194, 0.38);
+    animation: bp-breathe 3.3s ease-in-out infinite;
+  }
+  @keyframes bp-breathe { 50% { opacity: 1; } }
+
+  /* Scroll reveals. */
+  .bp-motion [data-reveal] {
+    opacity: 0; transform: translate3d(0, 26px, 0);
+    transition: opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transition-delay: var(--d, 0ms);
+  }
+  .bp-motion [data-reveal].is-in { opacity: 1; transform: none; }
+
+  /* Feature phones float gently. */
+  .bp-motion .bp-phone-stage { animation: bp-float 8s ease-in-out infinite; }
+  @keyframes bp-float { 0%, 100% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(0, -10px, 0); } }
+
+  /* A light that follows the mouse over cards. */
+  .bp-card::after {
+    content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0;
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(139, 122, 255, 0.13), transparent 45%);
+    transition: opacity 0.3s ease;
+  }
+  .bp-motion .bp-card:hover::after { opacity: 1; }
+
+  @keyframes bp-spin { to { rotate: 360deg; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bp-aurora span, .bp-beam-line, .bp-beam-pulses circle, .bp-tv-search::after, .bp-cta::before { animation: none; }
+    .bp-beam { display: none; }
+  }
+}
