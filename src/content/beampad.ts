@@ -37,6 +37,11 @@ export const BEAMPAD_GUIDES = [
     title: 'Lost Google TV remote and no Wi-Fi',
     blurb: 'Chromecast with Google TV, Google TV Streamer and TVs with Google TV built in.',
   },
+  {
+    path: '/beampad/type-on-google-tv-from-phone',
+    title: 'Type on Google TV from your phone',
+    blurb: 'With Google’s apps over Wi-Fi, or over Bluetooth when there is no Wi-Fi.',
+  },
 ] as const
 
 /** The tracking link to share anywhere (api/_lib/go.js): counts the click, then opens Google Play. */
