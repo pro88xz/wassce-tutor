@@ -4,7 +4,7 @@
 // action and links to the other guides. Their <head> tags come from
 // src/content/beampad-guide-head.ts. One place, so every guide looks and
 // reads alike.
-import { Check, ChevronDown, Info } from 'lucide-react'
+import { Check, ChevronDown, Info, Minus } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { BeamPadFooter, BeamPadHeader, PlayBadge } from '@/components/beampad/BeamPad'
 import { Aurora, BeamPadMotion } from '@/components/beampad/Motion'
@@ -86,6 +86,51 @@ export function AppCard({ pageId, placement }: { pageId: string; placement: stri
       </div>
       <PlayBadge placement={placement} page={pageId} height={48} />
     </div>
+  )
+}
+
+/**
+ * A comparison near the top of a guide: one row per option, the first cell
+ * naming it (a link to its section), the rest short facts. Scrolls inside its
+ * own box on narrow screens.
+ */
+export function CompareTable({ caption, columns, rows }: { caption: string; columns: string[]; rows: { name: string; href: string; cells: ReactNode[] }[] }) {
+  return (
+    <div className="mt-8 overflow-x-auto rounded-2xl border border-[var(--bp-line)]">
+      <table className="w-full min-w-[34rem] border-collapse text-left text-[15px]">
+        <caption className="sr-only">{caption}</caption>
+        <thead className="bg-white/[0.04] text-white">
+          <tr>
+            {columns.map((c) => (
+              <th key={c} scope="col" className="px-5 py-3.5 font-semibold whitespace-nowrap">{c}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="text-[var(--bp-muted)]">
+          {rows.map((r) => (
+            <tr key={r.name} className="border-t border-[var(--bp-line)] align-top">
+              <th scope="row" className="px-5 py-4 font-medium">
+                <a href={r.href} className="text-white hover:underline">{r.name}</a>
+              </th>
+              {r.cells.map((cell, i) => (
+                <td key={i} className="px-5 py-4">{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+/** A yes/no cell: a tick or a dash with its words, kept on one line. */
+export function YesNo({ yes, label, good = !yes }: { yes: boolean; label: string; good?: boolean }) {
+  const Icon = yes ? Check : Minus
+  return (
+    <span className="inline-flex items-center gap-1.5 whitespace-nowrap">
+      <Icon className={`h-4 w-4 ${good ? 'text-[var(--bp-mint)]' : 'text-[#ffc861]'}`} aria-hidden />
+      {label}
+    </span>
   )
 }
 

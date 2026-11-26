@@ -123,6 +123,15 @@ export const PUBLIC_PAGES = {
   // "lost firestick remote and no wifi / new wifi / not connected to wifi":
   // the Fire TV app needs shared Wi-Fi, and the pages ranking for these
   // searches in Nov 2026 offered only a hotspot trick and replacement remotes.
+  // "how to use phone as gamepad for android tv", "phone as controller for
+  // android tv / google tv / smart tv": videos with 300K to 1M views, almost no
+  // written guide. Every way, honestly compared, Google's own not launched yet.
+  '/beampad/phone-as-gamepad-android-tv': {
+    title: 'Use Your Phone as a Gamepad for Android TV or Google TV',
+    description:
+      'Turn your phone into a game controller for Android TV or Google TV: Bluetooth gamepad apps, Wi-Fi apps that need a TV app, real controllers, what to expect.',
+    lastmod: '2026-11-26',
+  },
   // "type on google tv with phone", "use phone as keyboard for android tv",
   // "phone keyboard for google tv": the how-to (the landing page is the app's
   // own page), covering Google's Wi-Fi apps first, then what works without Wi-Fi.

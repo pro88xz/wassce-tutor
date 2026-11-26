@@ -11,9 +11,9 @@
 // TV -> Open remote; the phone and TV on the same Wi-Fi; Bluetooth keyboards
 // in Settings -> Remotes & Accessories -> Pair remote or accessory.
 import { createFileRoute } from '@tanstack/react-router'
-import { Check, Minus } from 'lucide-react'
-import { AppCard, GuideCta, GuideFaq, GuidePage, Note, OnThisPage, Path, ShortAnswer } from '@/components/beampad/Guide'
+import { AppCard, CompareTable, GuideCta, GuideFaq, GuidePage, Note, OnThisPage, Path, ShortAnswer, YesNo } from '@/components/beampad/Guide'
 import { guideHead, type Trail } from '@/content/beampad-guide-head'
+import { AppLink } from '@/components/beampad/BeamPad'
 import { BEAMPAD } from '@/content/beampad'
 
 const PATH = '/beampad/type-on-google-tv-from-phone'
@@ -68,7 +68,11 @@ function TypeOnGoogleTv() {
         apart, as many hotel and guest networks do, type over Bluetooth instead, with a Bluetooth keyboard or your phone acting as one.
       </ShortAnswer>
 
-      <MethodTable />
+      <CompareTable
+        caption="Ways to type on Google TV from a phone"
+        columns={['Way to type', 'Needs Wi-Fi', 'Phone', 'Good to know']}
+        rows={METHODS.map((m) => ({ name: m.name, href: m.href, cells: [<YesNo key="w" yes={m.wifi} label={m.wifi ? 'Yes, shared' : 'No'} />, m.phone, m.note] }))}
+      />
 
       <OnThisPage
         items={[
@@ -121,10 +125,10 @@ function TypeOnGoogleTv() {
         <h2 id="phone-keyboard">No Wi-Fi: your phone as the keyboard</h2>
         <p>
           An Android phone can act as a Bluetooth keyboard itself, so you type with the keyboard you already know, with no network at all. We make
-          an app for this, BeamPad. To set it up:
+          an app for this, <AppLink placement="guide_text" page={PAGE_ID}>BeamPad</AppLink>. To set it up:
         </p>
         <ol>
-          <li>Install BeamPad on your Android phone ({BEAMPAD.minAndroid} or newer). It’s free with ads.</li>
+          <li><AppLink placement="guide_step" page={PAGE_ID}>Install BeamPad</AppLink> on your Android phone ({BEAMPAD.minAndroid} or newer). It’s free with ads.</li>
           <li>
             On the TV, open <Path steps={PAIR_ACCESSORY} />.
           </li>
@@ -148,41 +152,5 @@ function TypeOnGoogleTv() {
 
       <GuideCta pageId={PAGE_ID} title="Type on your TV, Wi-Fi or not" points={['Your own keyboard: autocorrect, swipe, voice', 'Works with Wi-Fi off', 'Nothing to install on the TV']} />
     </GuidePage>
-  )
-}
-
-/** The four ways, side by side: does it need Wi-Fi, which phone. */
-function MethodTable() {
-  return (
-    <div className="mt-8 overflow-x-auto rounded-2xl border border-[var(--bp-line)]">
-      <table className="w-full min-w-[34rem] border-collapse text-left text-[15px]">
-        <caption className="sr-only">Ways to type on Google TV from a phone</caption>
-        <thead className="bg-white/[0.04] text-white">
-          <tr>
-            <th scope="col" className="px-5 py-3.5 font-semibold whitespace-nowrap">Way to type</th>
-            <th scope="col" className="px-5 py-3.5 font-semibold whitespace-nowrap">Needs Wi-Fi</th>
-            <th scope="col" className="px-5 py-3.5 font-semibold whitespace-nowrap">Phone</th>
-            <th scope="col" className="px-5 py-3.5 font-semibold whitespace-nowrap">Good to know</th>
-          </tr>
-        </thead>
-        <tbody className="text-[var(--bp-muted)]">
-          {METHODS.map((m) => (
-            <tr key={m.name} className="border-t border-[var(--bp-line)] align-top">
-              <th scope="row" className="px-5 py-4 font-medium">
-                <a href={m.href} className="text-white hover:underline">{m.name}</a>
-              </th>
-              <td className="px-5 py-4">
-                <span className="inline-flex items-center gap-1.5 whitespace-nowrap">
-                  {m.wifi ? <Check className="h-4 w-4 text-[#ffc861]" aria-hidden /> : <Minus className="h-4 w-4 text-[var(--bp-mint)]" aria-hidden />}
-                  {m.wifi ? 'Yes, shared' : 'No'}
-                </span>
-              </td>
-              <td className="px-5 py-4">{m.phone}</td>
-              <td className="px-5 py-4">{m.note}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
   )
 }

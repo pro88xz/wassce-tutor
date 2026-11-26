@@ -25,7 +25,7 @@ import {
   X,
 } from 'lucide-react'
 import type { CSSProperties, ReactNode } from 'react'
-import { BeamPadFooter, BeamPadHeader, PhoneShot, PlayBadge, SectionHead } from '@/components/beampad/BeamPad'
+import { AppLink, BeamPadFooter, BeamPadHeader, PhoneShot, PlayBadge, SectionHead } from '@/components/beampad/BeamPad'
 import { Aurora, BeamPadMotion, HeroBeam, TypedSearch } from '@/components/beampad/Motion'
 import {
   BEAMPAD,
@@ -387,7 +387,7 @@ function HowItWorks() {
         </SectionHead>
         <ol className="mt-14 grid gap-5 md:grid-cols-3">
           <Step n={1} title="Install BeamPad" revealDelay={0}>
-            Get it free from Google Play on your Android phone ({BEAMPAD.minAndroid} or newer) and turn on Bluetooth.
+            Get it free from <AppLink placement="how_install">Google Play</AppLink> on your Android phone ({BEAMPAD.minAndroid} or newer) and turn on Bluetooth.
           </Step>
           <Step n={2} title="Open pairing on the TV" revealDelay={110}>
             <span className="block">Go to the TV’s Bluetooth pairing screen:</span>
