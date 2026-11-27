@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { ArrowRight, BookOpen, Check, ClipboardCheck, Clock, Gift, Layers, ListChecks, PencilLine, Shapes, Smartphone } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { KadamInContent } from '@/components/ads/KadamAds'
 import { CourseCard } from '@/components/public/CourseCard'
 import { StartCta } from '@/components/public/StartCta'
 import { TopicCover } from '@/components/public/TopicCover'
@@ -282,6 +283,8 @@ function TopicPage() {
               ))}
             </ol>
           </section>
+
+          <KadamInContent />
 
           {keyTerms.total > 0 && (
             <section aria-labelledby="terms">
