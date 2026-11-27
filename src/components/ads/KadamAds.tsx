@@ -59,7 +59,7 @@ function useKadamAllowed() {
     !loading &&
     !access.hasAccess &&
     !missing &&
-    !/^\\/(privacy|terms|contact)(\\/|$)/.test(pathname) &&
+    !(['/privacy', '/terms', '/contact'].some((prefix) => pathname === prefix || pathname.startsWith(prefix + '/'))) &&
     adsAllowed(pathname, signedIn) &&
     (typeof document === 'undefined' ||
       !document.documentElement.classList.contains('native-app'))
