@@ -21,17 +21,6 @@ const GOOGLE = 'https://accounts.google.com'
 const GA_SCRIPT = 'https://www.googletagmanager.com'
 const GA_CONNECT = ['https://*.google-analytics.com', 'https://*.analytics.google.com', 'https://*.googletagmanager.com']
 /**
- * Google AdSense (src/lib/ads.ts): the tag loads more of its own scripts, shows
- * each ad in a frame, and reports views and clicks, from these Google hosts.
- * Google publishes no fixed list (it recommends a nonce-based policy, which
- * prerendered pages cannot carry), so these are its ad and ad-quality domains
- * by wildcard. If an ad space stays empty, look for "Refused to" in the
- * browser console and add the host it names.
- */
-const ADS = ['https://*.googlesyndication.com', 'https://*.doubleclick.net', 'https://*.adtrafficquality.google', 'https://fundingchoicesmessages.google.com']
-const ADS_SCRIPT = [...ADS, 'https://*.googletagservices.com', 'https://adservice.google.com']
-const ADS_FRAME = [...ADS, 'https://www.google.com']
-/**
  * Cloudflare Turnstile (src/lib/turnstile.ts): the check that a person, not a
  * download tool, pressed play on a lesson video. Its script and its frame come
  * from here (developers.cloudflare.com/turnstile/reference/content-security-policy).
@@ -48,19 +37,17 @@ const TURNSTILE = 'https://challenges.cloudflare.com'
  */
 const MONETAG_SCRIPT = ['https://nap5k.com']
 const MONETAG_CONNECT = ['https:']
-/** Kadam banner and in-content units (src/components/ads/KadamAds.tsx). */
-const KADAM = ['https://hdbkome.com']
 
 const BASE = {
   'default-src': ["'self'"],
   // The site's API when the page is served from the Android app (https://localhost).
-  'connect-src': ["'self'", 'https://wasscetutor.com', `https://${SUPABASE}`, `wss://${SUPABASE}`, GOOGLE, 'https://www.googleapis.com', 'https://oauth2.googleapis.com', ...GA_CONNECT, ...ADS, 'https://adservice.google.com', ...MONETAG_CONNECT],
+  'connect-src': ["'self'", 'https://wasscetutor.com', `https://${SUPABASE}`, `wss://${SUPABASE}`, GOOGLE, 'https://www.googleapis.com', 'https://oauth2.googleapis.com', ...GA_CONNECT, ...MONETAG_CONNECT],
   // Photographs and question images may be on any https host; never http.
   'img-src': ["'self'", 'data:', 'blob:', 'https:'],
   'font-src': ["'self'", 'data:'],
   // KaTeX positions maths with inline styles.
   'style-src': ["'self'", "'unsafe-inline'", GOOGLE],
-  'frame-src': [GOOGLE, ...ADS_FRAME, TURNSTILE, ...KADAM],
+  'frame-src': [GOOGLE, TURNSTILE],
   'worker-src': ["'self'", 'blob:'],
   'manifest-src': ["'self'"],
   // Pronunciation and listening clips (public/audio), which the Android app loads from the site.
