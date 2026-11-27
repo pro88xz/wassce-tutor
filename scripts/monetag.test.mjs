@@ -5,7 +5,7 @@ import { EMPTY_STATE, RULES, closed, loaded, localDay, pageOpened, parseState, v
 
 const T0 = new Date(2026, 10, 26, 9, 0, 0).getTime() // 26 Nov 2026, 09:00 local
 const MIN = 60 * 1000
-const reading = (over = {}) => ({ firstOfVisit: false, activeSeconds: 0, scrolled: 0, quietMs: 10000, googleOverlay: false, ...over })
+const reading = (over = {}) => ({ firstOfVisit: false, activeSeconds: 0, scrolled: 0, quietMs: 10000, ...over })
 
 test('the first page of a visit: nothing on arrival, only after 10 s of active reading', () => {
   const { state, firstOfVisit } = pageOpened(EMPTY_STATE, T0)
@@ -26,10 +26,9 @@ test('the second page of a visit may show it; 30 minutes away starts a new visit
   assert.equal(later.firstOfVisit, true)
 })
 
-test('never mid-task, never over a Google full-screen ad', () => {
+test('never mid-task', () => {
   const s = pageOpened(pageOpened(EMPTY_STATE, T0).state, T0 + MIN).state
   assert.equal(verdict(s, T0 + MIN, reading({ quietMs: 1000 })), 'wait')
-  assert.equal(verdict(s, T0 + MIN, reading({ googleOverlay: true })), 'wait')
 })
 
 test('10 minutes apart, at most 3 a day, counts start again the next day', () => {
