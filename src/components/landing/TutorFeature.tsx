@@ -42,9 +42,9 @@ export function TutorFeature() {
           <a href="/tutors" className="site-btn site-btn-primary mt-8">
             Book a private tutor <ArrowRight className="h-4 w-4" aria-hidden />
           </a>
-          <BeamPadSponsoredBanner />
         </div>
       </div>
     </Band>
+    <BeamPadSponsoredBanner />
   )
 }
