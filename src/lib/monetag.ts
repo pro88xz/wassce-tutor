@@ -12,9 +12,7 @@
 //    the Android app, or anyone with a plan.
 //  - Never on arrival: from the second page of a visit, or after 10 seconds
 //    of active reading on the first.
-//  - Never mid-task (3 seconds after a tap or key press), and never over a
-//    Google full-screen ad. It may show with AdSense's anchor ad, which stays
-//    at the bottom of the screen while this card sits at the top.
+//  - Never mid-task (3 seconds after a tap or key press).
 //  - At most once per page, 10 minutes apart, 3 times a day; closed twice in a
 //    day, none for 24 hours.
 //
@@ -106,7 +104,7 @@ function loadTag(onClose: () => void): () => void {
 
   // A card Monetag adds that disappears within 2 seconds of a tap on it was closed
   // (or opened, which also ends it). Its own elements are whatever it adds to
-  // <body> or <html> from now on, other than scripts and Google's ads.
+  // <body> or <html> from now on, other than scripts.
   const theirs = new Set<Element>()
   let tappedAt = 0
   let tapped: Element | null = null
@@ -133,7 +131,7 @@ function loadTag(onClose: () => void): () => void {
     for (const r of records) {
       if (r.type === 'childList' && (r.target === document.body || r.target === document.documentElement)) {
         r.addedNodes.forEach((n) => {
-          if (n instanceof Element && !['SCRIPT', 'STYLE', 'LINK', 'NOSCRIPT'].includes(n.tagName) && !isGoogle(n)) theirs.add(n)
+          if (n instanceof Element && !['SCRIPT', 'STYLE', 'LINK', 'NOSCRIPT'].includes(n.tagName) ) theirs.add(n)
         })
       }
     }
@@ -233,7 +231,7 @@ export function useMonetag(pathname: string) {
         if (now - lastTap >= 3000) load()
         return
       }
-      const v = verdict(readState(), now, { firstOfVisit, activeSeconds: activeMs / 1000, scrolled, quietMs: now - lastTap, googleOverlay: googleOverlay() })
+      const v = verdict(readState(), now, { firstOfVisit, activeSeconds: activeMs / 1000, scrolled, quietMs: now - lastTap })
       if (v === 'load') load()
       else if (v === 'not-today') stop()
     }, 1000)
