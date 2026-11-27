@@ -3,6 +3,7 @@ import { ArrowRight, Check, UserRound } from 'lucide-react'
 import { TUTOR_PHOTO } from '@/lib/tutors'
 import { Band } from '@/components/public/Section'
 import { BrandPhoto } from '@/components/public/BrandPhoto'
+import { BeamPadSponsoredBanner } from '@/components/landing/BeamPadSponsoredBanner'
 
 const POINTS = ['Help with the topics you find hard', 'Home lessons or near you, one to one', 'See the fee, then message them on WhatsApp']
 
@@ -41,6 +42,7 @@ export function TutorFeature() {
           <a href="/tutors" className="site-btn site-btn-primary mt-8">
             Book a private tutor <ArrowRight className="h-4 w-4" aria-hidden />
           </a>
+          <BeamPadSponsoredBanner />
         </div>
       </div>
     </Band>
