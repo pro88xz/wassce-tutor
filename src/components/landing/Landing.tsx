@@ -28,7 +28,6 @@ import { useRef } from 'react'
 import type { LandingData } from '@/lib/public-content'
 import { useReveal } from '@/components/ds/useReveal'
 import { Hero } from '@/components/landing/Hero'
-import { BeamPadSponsoredBanner } from '@/components/landing/BeamPadSponsoredBanner'
 import { SubjectShowcase } from '@/components/landing/SubjectShowcase'
 import { CourseRows } from '@/components/landing/CourseRows'
 import { ProofBand } from '@/components/landing/ProofBand'
@@ -51,7 +50,6 @@ export function Landing({ data }: { data: LandingData }) {
     // Full-bleed: cancels the app wrapper's padding and the header/footer gaps.
     <div ref={root} className="site-bleed -mb-16 -mt-6">
       <Hero data={data} />
-      <BeamPadSponsoredBanner />
       <ProofBand initial={data.totals} />
       <CourseRows rows={data.courseRows} />
       {/* The topics people search for most, linked by the words they search with (src/content/popular-topics.ts). */}
