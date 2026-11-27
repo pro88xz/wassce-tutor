@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { ArrowRight, ChevronRight, ClipboardCheck } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { BeamPadSponsoredBanner } from '@/components/landing/BeamPadSponsoredBanner'
 import { CourseHero, type HeroStat } from '@/components/public/CourseHero'
 import { HERO_BTN, studyTime } from '@/lib/study-time'
 import { StartCta } from '@/components/public/StartCta'
@@ -150,6 +151,7 @@ function SubjectHubPage() {
 
       {/* The question this page is searched for, answered first (src/content/quick-answers.ts). */}
       {quick && <QuickAnswer qa={quick} />}
+      <BeamPadSponsoredBanner />
 
       <section className="space-y-5" aria-labelledby="syllabus">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
