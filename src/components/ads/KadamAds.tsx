@@ -40,7 +40,7 @@ function useKadamAllowed() {
   const allowed =
     !loading &&
     !access.hasAccess &&
-    !/^\\/(privacy|terms|contact)(\\/|$)/.test(pathname) &&
+    !/^\/(privacy|terms|contact)(\/|$)/.test(pathname) &&
     adsAllowed(pathname, signedIn) &&
     (typeof document === 'undefined' || !document.documentElement.classList.contains('native-app'))
   return allowed
