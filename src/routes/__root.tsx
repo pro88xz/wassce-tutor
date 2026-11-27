@@ -1,5 +1,5 @@
 import { createRootRoute, HeadContent, Outlet, Scripts, useNavigate, useRouterState } from '@tanstack/react-router'
-import { lazy, Suspense, useEffect, useRef, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef } from 'react'
 import type { ReactNode } from 'react'
 import { useIsFetching } from '@tanstack/react-query'
 import { BottomNav } from '@/components/BottomNav'
