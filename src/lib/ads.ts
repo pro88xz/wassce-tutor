@@ -52,21 +52,14 @@ export function hasStoredSession(): boolean {
   return false
 }
 
-/** This page loaded the AdSense tag and ads are not paused. */
-export function adsRunning(): boolean {
-  if (typeof document === 'undefined') return false
-  const w = window as unknown as { __wtAdsPaused?: number }
-  return !w.__wtAdsPaused && !!document.querySelector('script[src*="adsbygoogle.js"]')
-}
-
-const RELOADED_KEY = 'wassce_ads_reload'
+const RELOADED_KEY = 'wassce_network_reload'
 
 /**
  * Open `href` as a fresh page so ads do not follow into the app. At most once
  * per address in a row (sessionStorage), so a page can never reload itself
  * over and over; returns false when it did not reload.
  */
-export function reloadWithoutAds(href: string, replace = false): boolean {
+export function reloadWithoutNetwork(href: string, replace = false): boolean {
   try {
     if (sessionStorage.getItem(RELOADED_KEY) === href) return false
     sessionStorage.setItem(RELOADED_KEY, href)
@@ -79,7 +72,7 @@ export function reloadWithoutAds(href: string, replace = false): boolean {
 }
 
 /** A page opened normally: the next reload to any address is allowed again. */
-export function clearAdsReload(): void {
+export function clearNetworkReload(): void {
   try {
     sessionStorage.removeItem(RELOADED_KEY)
   } catch {
