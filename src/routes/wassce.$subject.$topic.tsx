@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { ArrowRight, BookOpen, Check, ClipboardCheck, Clock, Gift, Layers, ListChecks, PencilLine, Shapes, Smartphone } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { BeamPadSponsoredBanner } from '@/components/landing/BeamPadSponsoredBanner'
 import { CourseCard } from '@/components/public/CourseCard'
 import { StartCta } from '@/components/public/StartCta'
 import { TopicCover } from '@/components/public/TopicCover'
@@ -234,6 +235,7 @@ function TopicPage() {
         <div className="min-w-0 space-y-10 sm:space-y-12">
           {/* The question this page is searched for, answered first (src/content/quick-answers.ts). */}
           {quick && <QuickAnswer qa={quick} />}
+          <BeamPadSponsoredBanner />
           {learn.length > 0 && (
             <section className="site-card p-6 sm:p-8" aria-labelledby="learn">
               <h2 id="learn" className="text-[1.375rem] font-extrabold tracking-[-.02em] sm:text-2xl">What you&rsquo;ll learn</h2>

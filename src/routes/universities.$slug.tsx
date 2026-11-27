@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, ExternalLink, GraduationCap, MapPin } from 'luci
 import { UNIVERSITY_GUIDES } from '@/content/editorial'
 import type { UniversityGuide } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { BeamPadSponsoredBanner } from '@/components/landing/BeamPadSponsoredBanner'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
 import { absoluteUrl, breadcrumbJsonLd, indexablePageTags, orgRef, privatePageTags } from '@/lib/seo'
@@ -72,6 +73,7 @@ function UniversityProfilePage() {
           <div className="site-brand-panel rounded-2xl p-5"><p className="text-xs font-bold uppercase tracking-wider text-violet-200">Prepare for your next step</p><h3 className="mt-2 text-lg font-bold">Strengthen the WASSCE subjects your course requires.</h3><a href="/wassce/subjects" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold">Browse subjects <ArrowRight className="h-4 w-4"/></a></div>
         </aside>
       </div>
+      <BeamPadSponsoredBanner />
       <section className="space-y-4"><h2 className="text-2xl font-bold">Compare other institutions</h2><div className="grid gap-3 sm:grid-cols-3">{related.map((u)=><a key={u.slug} href={`/universities/${u.slug}`} className="rounded-xl border bg-card p-4 transition hover:shadow-md"><p className="text-xs font-bold text-primary">{u.shortName}</p><h3 className="mt-2 font-bold leading-snug">{u.name}</h3><p className="mt-2 text-xs text-muted-foreground">{u.location}</p><span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary">Compare <ArrowRight className="h-4 w-4"/></span></a>)}</div></section>
     </div>
   )
