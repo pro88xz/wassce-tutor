@@ -4,7 +4,6 @@ import { ArrowLeft, ArrowRight, Clock3, ExternalLink } from 'lucide-react'
 import { BLOG_POSTS, UNIVERSITY_GUIDES } from '@/content/editorial'
 import type { BlogPost } from '@/content/editorial'
 import { ArticleSection, Faq, KeyFacts, Rich, Updates, longDate } from '@/components/public/ArticleBlocks'
-import { KadamInContent } from '@/components/ads/KadamAds'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
@@ -150,7 +149,6 @@ function BlogArticlePage() {
           <div className="space-y-10">
             {post.sections.map((section,i)=><Fragment key={section.heading}>
               <ArticleSection section={section} id={`section-${i}`} />
-              {i === 1 && post.sections.length >= 3 && <KadamInContent />}
             </Fragment>)}
           </div>
           {post.faq && <Faq items={post.faq} />}

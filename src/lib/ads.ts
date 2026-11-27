@@ -1,6 +1,6 @@
 /** Shared page/session rules used by the remaining Monetag integration. */
-const APP_PATH = /^\\/(_shell|auth|subjects|subject|topic|lesson|paper|q|tutor|tutor-dashboard|affiliate-dashboard|profile|account|practice|progress|onboarding|subscribe|reset-password|admin)(\\/|$)/
-const AD_FREE_PATH = /^\\/beampad(\\/|$)/
+const APP_PATH = /^\/(_shell|auth|subjects|subject|topic|lesson|paper|q|tutor|tutor-dashboard|affiliate-dashboard|profile|account|practice|progress|onboarding|subscribe|reset-password|admin)(\/|$)/
+const AD_FREE_PATH = /^\/beampad(\/|$)/
 
 export function isAppPath(pathname: string): boolean {
   return APP_PATH.test(pathname)
