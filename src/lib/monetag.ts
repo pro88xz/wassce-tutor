@@ -72,13 +72,6 @@ function scrolledFraction(target: EventTarget | null): number {
   return Math.min(1, (el.scrollTop + el.clientHeight) / el.scrollHeight)
 }
 
-/** A Google vignette (full-screen ad) is showing: AdSense marks the address with #google_vignette. */
-const googleOverlay = () => window.location.hash === '#google_vignette'
-
-/** Elements Google's ads add, which are not Monetag's. */
-const isGoogle = (el: Element) =>
-  el.tagName === 'INS' || /^(google_|aswift)/.test(el.id) || el.classList.contains('adsbygoogle') || el.querySelector('iframe[id^="aswift"], iframe[id^="google_"]') !== null
-
 /** Loads Monetag's script (exactly what Monetag's own tag does), then watches for the card being closed. */
 function loadTag(onClose: () => void): () => void {
   const s = document.createElement('script')
