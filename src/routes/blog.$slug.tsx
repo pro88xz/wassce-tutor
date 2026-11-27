@@ -5,6 +5,7 @@ import { BLOG_POSTS, UNIVERSITY_GUIDES } from '@/content/editorial'
 import type { BlogPost } from '@/content/editorial'
 import { ArticleSection, Faq, KeyFacts, Rich, Updates, longDate } from '@/components/public/ArticleBlocks'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { BeamPadSponsoredBanner } from '@/components/landing/BeamPadSponsoredBanner'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
 import { absoluteUrl, BLOG_ID, breadcrumbJsonLd, indexablePageTags, orgRef, privatePageTags, SITE } from '@/lib/seo'
@@ -160,6 +161,7 @@ function BlogArticlePage() {
           <div className="site-brand-panel rounded-2xl p-5"><p className="text-xs font-bold uppercase tracking-wider text-violet-200">WASSCE preparation</p><h3 className="mt-2 text-lg font-bold">{post.action?.heading ?? 'Build the subject knowledge your next step requires.'}</h3><a href={post.action?.href ?? '/wassce/subjects'} className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-semibold">{post.action?.label ?? 'Explore subjects'} <ArrowRight className="h-4 w-4"/></a></div>
         </aside>
       </div>
+      <BeamPadSponsoredBanner />
       <section className="space-y-4"><h2 className="text-2xl font-bold">Continue exploring</h2><div className="grid gap-4 sm:grid-cols-2">{related.map((item) => <a key={item.slug} href={item.href} className="rounded-2xl border bg-card p-5 transition hover:shadow-md"><p className="text-xs font-bold uppercase tracking-wider text-primary">{item.label}</p><h3 className="mt-2 font-bold leading-snug">{item.title}</h3><p className="mt-2 text-sm text-muted-foreground">{item.description}</p><span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">Read more <ArrowRight className="h-4 w-4"/></span></a>)}</div></section>
     </div>
   )
