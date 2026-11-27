@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { ArrowRight, BookOpen, Clock3 } from 'lucide-react'
 import { BLOG_POSTS, UNIVERSITY_GUIDES } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { BeamPadSponsoredBanner } from '@/components/landing/BeamPadSponsoredBanner'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
 import { absoluteUrl, BLOG_ID, breadcrumbJsonLd, indexablePageTags, orgRef } from '@/lib/seo'
@@ -52,6 +53,7 @@ function BlogIndexPage() {
           <a href="/universities" className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-5 text-sm font-bold text-primary-foreground hover:bg-brand-strong">Explore universities <ArrowRight className="h-4 w-4"/></a>
         </aside>
       </section>
+      <BeamPadSponsoredBanner />
       <section className="space-y-6">
         <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs font-bold uppercase tracking-[.16em] text-primary">The latest</p><h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">Guides and useful reads</h2></div><span className="text-sm text-muted-foreground">{BLOG_POSTS.length} researched articles</span></div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
