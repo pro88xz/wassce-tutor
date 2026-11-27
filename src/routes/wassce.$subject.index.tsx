@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { ArrowRight, ChevronRight, ClipboardCheck } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { KadamInContent } from '@/components/ads/KadamAds'
 import { CourseHero, type HeroStat } from '@/components/public/CourseHero'
 import { HERO_BTN, studyTime } from '@/lib/study-time'
 import { StartCta } from '@/components/public/StartCta'
@@ -210,6 +211,8 @@ function SubjectHubPage() {
           })}
         </div>
       </section>
+
+      <KadamInContent />
 
       {hasPractice(subject.slug) && (
         <section className="site-card flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:gap-6 sm:p-6" aria-labelledby="practice">
