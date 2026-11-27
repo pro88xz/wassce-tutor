@@ -9,6 +9,7 @@ import { SideNav } from '@/components/shell/SideNav'
 import { TopBar } from '@/components/shell/TopBar'
 import { useAuth } from '@/lib/auth'
 import { Footer } from '@/components/Footer'
+import { KadamBanner } from '@/components/ads/KadamAds'
 import { NotFoundPage } from '@/components/NotFoundPage'
 import { PublicHeader } from '@/components/public/PublicHeader'
 import { WorkspaceBar } from '@/components/shell/WorkspaceBar'
@@ -245,6 +246,7 @@ function RootComponent() {
           {/* Bottom padding clears the fixed mobile navigation bar when it is shown. */}
           <div className={`px-4 pt-4 sm:px-6 sm:pt-6 ${studentNav ? 'pb-28 lg:pb-12' : 'pb-12'}`}>
             {roleWorkspace ? <WorkspaceBar /> : <PublicHeader />}
+            {!roleWorkspace && <KadamBanner />}
             <Outlet />
             {!roleWorkspace && <Footer />}
           </div>
