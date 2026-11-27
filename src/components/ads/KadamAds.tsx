@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useRouterState } from '@tanstack/react-router'
 import { useAuth } from '@/lib/auth'
 import { adsAllowed, hasStoredSession } from '@/lib/ads'
@@ -59,46 +59,92 @@ function useKadamAllowed() {
     !loading &&
     !access.hasAccess &&
     !missing &&
-    !/^\/(privacy|terms|contact)(\/|$)/.test(pathname) &&
+    !/^\\/(privacy|terms|contact)(\\/|$)/.test(pathname) &&
     adsAllowed(pathname, signedIn) &&
     (typeof document === 'undefined' ||
       !document.documentElement.classList.contains('native-app'))
   )
 }
 
-/** Queue and load each Kadam unit once per document, including React StrictMode. */
-function KadamSlot({ unit, label }: { unit: Unit; label: string }) {
+/**
+ * A slot takes up no layout space until Kadam actually inserts an advert.
+ * This prevents empty inventory from leaving blank bands above or inside content.
+ */
+function KadamSlot({
+  unit,
+  label,
+  className,
+}: {
+  unit: Unit
+  label: string
+  className: string
+}) {
+  const slotRef = useRef<HTMLDivElement>(null)
+  const [filled, setFilled] = useState(false)
+
   useEffect(() => {
     window.__wassceKadamUnits ??= new Set<string>()
-    if (window.__wassceKadamUnits.has(unit.id)) return
+    if (!window.__wassceKadamUnits.has(unit.id)) {
+      window.__wassceKadamUnits.add(unit.id)
+      window.k_init ??= []
+      window.k_init.push({
+        id: unit.id,
+        type: 'bn',
+        domain: 'hdbkome.com',
+        refresh: false,
+        next: 0,
+      })
 
-    window.__wassceKadamUnits.add(unit.id)
-    window.k_init ??= []
-    window.k_init.push({
-      id: unit.id,
-      type: 'bn',
-      domain: 'hdbkome.com',
-      refresh: false,
-      next: 0,
+      const script = document.createElement('script')
+      script.async = true
+      script.charset = 'utf-8'
+      script.setAttribute('data-cfasync', 'false')
+      script.dataset.kadamUnit = unit.id
+      script.src = unit.script
+      document.head.appendChild(script)
+    }
+
+    const slot = slotRef.current
+    if (!slot) return
+
+    const hasCreative = () =>
+      slot.childElementCount > 0 ||
+      Boolean(slot.textContent?.trim()) ||
+      Boolean(slot.querySelector('iframe, img, video, ins, object'))
+
+    if (hasCreative()) {
+      setFilled(true)
+      return
+    }
+
+    const observer = new MutationObserver(() => {
+      if (hasCreative()) {
+        setFilled(true)
+        observer.disconnect()
+        window.clearTimeout(timeout)
+      }
     })
+    observer.observe(slot, { childList: true, subtree: true, characterData: true })
 
-    const script = document.createElement('script')
-    script.async = true
-    script.charset = 'utf-8'
-    script.setAttribute('data-cfasync', 'false')
-    script.dataset.kadamUnit = unit.id
-    script.src = unit.script
-    document.head.appendChild(script)
+    // No fill (or a blocked provider script) means no reserved blank space.
+    const timeout = window.setTimeout(() => observer.disconnect(), 10000)
+    return () => {
+      observer.disconnect()
+      window.clearTimeout(timeout)
+    }
   }, [unit])
 
   return (
     <div
-      className="mx-auto overflow-hidden"
-      style={{ width: `min(${unit.width}px, 100%)`, minHeight: unit.height }}
+      className={filled ? className : 'hidden'}
       aria-label={label}
       data-kadam-slot={unit.id}
     >
-      <div className={unit.id} />
+      <div
+        ref={slotRef}
+        className={unit.id}
+        style={{ width: `min(${unit.width}px, 100%)`, minHeight: unit.height, overflow: 'hidden' }}
+      />
     </div>
   )
 }
@@ -119,9 +165,11 @@ export function KadamBanner() {
   if (!allowed || !unit) return null
 
   return (
-    <div className="mx-auto mb-6 flex w-full justify-center px-0" aria-label="Advertisement">
-      <KadamSlot unit={unit} label="Advertisement" />
-    </div>
+    <KadamSlot
+      unit={unit}
+      label="Advertisement"
+      className="mx-auto mb-6 flex w-full justify-center px-0"
+    />
   )
 }
 
@@ -131,8 +179,10 @@ export function KadamInContent() {
   if (!allowed) return null
 
   return (
-    <div className="my-10 flex w-full justify-center" aria-label="Advertisement">
-      <KadamSlot unit={IN_CONTENT} label="Advertisement" />
-    </div>
+    <KadamSlot
+      unit={IN_CONTENT}
+      label="Advertisement"
+      className="my-10 flex w-full justify-center"
+    />
   )
 }
