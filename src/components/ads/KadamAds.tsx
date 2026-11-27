@@ -40,6 +40,7 @@ function useKadamAllowed() {
   const allowed =
     !loading &&
     !access.hasAccess &&
+    !/^\\/(privacy|terms|contact)(\\/|$)/.test(pathname) &&
     adsAllowed(pathname, signedIn) &&
     (typeof document === 'undefined' || !document.documentElement.classList.contains('native-app'))
   return allowed
@@ -92,7 +93,7 @@ export function KadamBanner() {
   const [unit, setUnit] = useState<Unit | null>(null)
 
   useEffect(() => {
-    const media = window.matchMedia('(min-width: 768px)')
+    const media = window.matchMedia('(min-width: 800px)')
     const update = () => setUnit(media.matches ? DESKTOP : MOBILE)
     update()
     media.addEventListener('change', update)
