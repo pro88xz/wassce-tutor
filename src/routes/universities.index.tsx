@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { ArrowRight, GraduationCap, MapPin } from 'lucide-react'
 import { UNIVERSITY_GUIDES } from '@/content/editorial'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
+import { BeamPadSponsoredBanner } from '@/components/landing/BeamPadSponsoredBanner'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
 import { absoluteUrl, breadcrumbJsonLd, indexablePageTags } from '@/lib/seo'
@@ -43,6 +44,7 @@ function UniversityDirectoryPage() {
         <div className="border-b px-5 py-4 sm:px-6"><p className="text-xs font-bold uppercase tracking-wider text-primary">Quick comparison</p><h2 className="mt-1 text-lg font-bold">Published WASSCE degree-entry starting points</h2><p className="mt-1 text-xs text-muted-foreground">A summary only. Programme-specific requirements and current deadlines can differ.</p></div>
         <div className="overflow-x-auto"><table className="w-full min-w-[760px] border-collapse text-left text-sm"><thead className="bg-muted/50 text-xs uppercase tracking-wide text-muted-foreground"><tr><th className="px-5 py-3 font-bold">Institution</th><th className="px-5 py-3 font-bold">Entry snapshot</th><th className="px-5 py-3 font-bold">Admissions status</th><th className="px-5 py-3 font-bold">Guide</th></tr></thead><tbody>{UNIVERSITY_GUIDES.map((u)=><tr key={u.slug} className="border-t align-top"><td className="px-5 py-4 font-semibold">{u.shortName}</td><td className="max-w-sm px-5 py-4 leading-relaxed text-muted-foreground">{u.entrySummary}</td><td className="px-5 py-4 text-xs leading-relaxed text-muted-foreground">{u.status}</td><td className="px-5 py-4"><a href={`/universities/${u.slug}`} className="font-semibold text-primary underline underline-offset-4">{u.shortName} guide</a></td></tr>)}</tbody></table></div>
       </section>
+      <BeamPadSponsoredBanner />
       <section id="directory" className="scroll-mt-24 space-y-6">
         <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs font-bold uppercase tracking-wider text-primary">Institution directory</p><h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">Universities and higher education</h2></div><p className="max-w-md text-sm leading-relaxed text-muted-foreground">Each profile identifies what is confirmed, what is programme-specific and what still needs confirmation from the institution.</p></div>
         <div className="grid gap-5 md:grid-cols-2">
