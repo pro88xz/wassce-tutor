@@ -9,13 +9,12 @@ import { SideNav } from '@/components/shell/SideNav'
 import { TopBar } from '@/components/shell/TopBar'
 import { useAuth } from '@/lib/auth'
 import { Footer } from '@/components/Footer'
-import { KadamBanner } from '@/components/ads/KadamAds'
 import { NotFoundPage } from '@/components/NotFoundPage'
 import { PublicHeader } from '@/components/public/PublicHeader'
 import { WorkspaceBar } from '@/components/shell/WorkspaceBar'
 import { useSendToSignIn } from '@/lib/use-send-to-sign-in'
 import { needsAccount } from '@/lib/return-to'
-import { adsAllowed, adsRunning, clearAdsReload, hasStoredSession, isAdFreePath, isAppPath, reloadWithoutAds } from '@/lib/ads'
+import { hasStoredSession } from '@/lib/ads'
 import { isStandalonePath } from '@/lib/standalone-pages'
 import { monetagLoaded, monetagPathAllowed, useMonetag } from '@/lib/monetag'
 import { SITE } from '@/lib/seo'
@@ -48,8 +47,6 @@ const ReactQueryDevtools = import.meta.env.PROD
 //    ("app-boot", a stored Supabase session) so CSS shows a spinner instead of
 //    the prerendered marketing page while the session is restored.
 //    AuthProvider removes "app-boot" once the session check finishes.
-//  - pauses Google ads on the student's dashboard ("/" with a stored session)
-//    and in the Android app (src/lib/ads.ts)
 // It must act only once per document. The router re-inserts head scripts when
 // it renders a route in the browser, which runs this again; without the guard
 // that second run put "app-boot" back for anyone signed in, and after signing
@@ -60,7 +57,7 @@ if(/^\\/beampad(\\/|$)/.test(location.pathname))d.classList.add('page-scroll');
 if(localStorage.getItem('wassce_theme')==='sepia')d.classList.add('dark');
 var C=window.Capacitor,n=C&&C.isNativePlatform&&C.isNativePlatform(),s=0;if(n)d.classList.add('native-app');
 for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&/^sb-.+-auth-token$/.test(k)){d.classList.add('app-boot');s=1;break}}
-if(n||(s&&location.pathname==='/')){window.__wtAdsPaused=1;(window.adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1}
+if(n||(s&&location.pathname==='/'))window.__wtAdsPaused=1;
 }catch(e){}})();`
 
 /** Bump when the icon files change, so returning visitors see the new one. */
@@ -74,8 +71,6 @@ export const Route = createRootRoute({
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       { name: 'google-site-verification', content: 'S8kJyYT-6kCzOytVerViOFKhPDPleWCwfltAxOG1DM4' },
-      { name: 'kadam-verification', content: 'kadam65ddea922b989c9bfc1c6b58e68307ba' },
-      { name: 'google-adsense-account', content: 'ca-pub-9121922395304175' },
       // Monetag's ownership check for wasscetutor.com: a tag only, it loads no ads or scripts.
       { name: 'monetag', content: 'e0a89d13cd30b9c3e9461ab2aeb342b4' },
       { name: 'theme-color', content: '#6438d8' },
@@ -108,16 +103,14 @@ export const Route = createRootRoute({
   // defaultSsr: false would otherwise apply here too). Children stay
   // client-only unless they set `ssr: true` themselves.
   ssr: true,
-  // Leaving a page that shows ads for the app or the dashboard: open it as a
-  // fresh page, so no ad follows them in (src/lib/ads.ts). The same for
-  // Monetag's script, which stays on a page once loaded, on the way to a page
-  // it must not show on, such as Privacy or Terms (src/lib/monetag.ts).
+  // Monetag's script stays on a page once loaded; reload when navigating to
+  // a page where it must not show, such as Privacy or Terms.
   beforeLoad: ({ location, preload }) => {
     if (typeof window === 'undefined' || preload) return
     const signedIn = hasStoredSession()
     const leaveMonetag = monetagLoaded() && !monetagPathAllowed(location.pathname, signedIn)
-    if (!leaveMonetag && (!adsRunning() || adsAllowed(location.pathname, signedIn))) return
-    if (reloadWithoutAds(location.href)) return new Promise<never>(() => {})
+    if (!leaveMonetag) return
+    if (reloadWithoutNetwork(location.href)) return new Promise<never>(() => {})
   },
   shellComponent: RootDocument,
   component: RootComponent,
@@ -125,25 +118,11 @@ export const Route = createRootRoute({
 })
 
 function RootDocument({ children }: { children: ReactNode }) {
-  // Google AdSense, on public pages only (src/lib/ads.ts). Decided once per
-  // document: the prerendered public pages carry the tag, /_shell and the
-  // ad-free pages (BeamPad's) do not.
-  const pathname = useRouterState({ select: (st) => st.location.pathname })
-  const [adTag] = useState(() => !isAppPath(pathname) && !isAdFreePath(pathname))
   return (
     // The boot script adds classes to <html> before React hydrates.
     <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
-        {adTag && (
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9121922395304175"
-            crossOrigin="anonymous"
-            // Auto ads' anchor banner always at the bottom of the screen, never above the page's heading.
-            data-overlays="bottom"
-          />
-        )}
       </head>
       <body>
         {children}
@@ -202,25 +181,9 @@ function useRoleHome(pathname: string) {
   }, [role, isAdmin, pathname, navigate])
 }
 
-/**
- * Signed in on a page that shows ads where they may not (the homepage turning
- * into the dashboard): load it afresh once, so the boot script pauses ads.
- */
-function useNoAdsWhenSignedIn(pathname: string) {
-  const { user } = useAuth()
-  useEffect(() => {
-    if (!adsRunning() || adsAllowed(pathname, !!user || hasStoredSession())) {
-      clearAdsReload()
-      return
-    }
-    reloadWithoutAds(window.location.href, true)
-  }, [pathname, user])
-}
-
 function RootComponent() {
   const pathname = useRouterState({ select: (st) => st.location.pathname })
   useSignInForAppPages()
-  useNoAdsWhenSignedIn(pathname)
   useMonetag(pathname)
   useRoleHome(pathname)
   const studentNav = useHasBottomNav(pathname)
@@ -246,7 +209,6 @@ function RootComponent() {
           {/* Bottom padding clears the fixed mobile navigation bar when it is shown. */}
           <div className={`px-4 pt-4 sm:px-6 sm:pt-6 ${studentNav ? 'pb-28 lg:pb-12' : 'pb-12'}`}>
             {roleWorkspace ? <WorkspaceBar /> : <PublicHeader />}
-            {!roleWorkspace && <KadamBanner />}
             <Outlet />
             {!roleWorkspace && <Footer />}
           </div>
