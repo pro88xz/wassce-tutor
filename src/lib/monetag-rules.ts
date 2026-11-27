@@ -70,8 +70,6 @@ export type PageNow = {
   scrolled: number
   /** Milliseconds since the last tap or key press. */
   quietMs: number
-  /** A Google full-screen ad (vignette) is showing. */
-  googleOverlay: boolean
 }
 
 /**
@@ -83,7 +81,7 @@ export function verdict(s: MonetagState, now: number, page: PageNow): 'load' | '
   if (today.pausedUntil > now || today.loads >= RULES.perDay) return 'not-today'
   if (now - today.lastLoad < RULES.minGapMs) return 'wait'
   const engaged = !page.firstOfVisit || (page.activeSeconds >= RULES.firstPageSeconds && page.scrolled >= RULES.firstPageScroll)
-  if (!engaged || page.quietMs < RULES.quietMs || page.googleOverlay) return 'wait'
+  if (!engaged || page.quietMs < RULES.quietMs) return 'wait'
   return 'load'
 }
 
