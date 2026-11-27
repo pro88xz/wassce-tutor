@@ -48,6 +48,8 @@ const TURNSTILE = 'https://challenges.cloudflare.com'
  */
 const MONETAG_SCRIPT = ['https://nap5k.com']
 const MONETAG_CONNECT = ['https:']
+/** Kadam banner and in-content units (src/components/ads/KadamAds.tsx). */
+const KADAM = ['https://hdbkome.com']
 
 const BASE = {
   'default-src': ["'self'"],
@@ -58,7 +60,7 @@ const BASE = {
   'font-src': ["'self'", 'data:'],
   // KaTeX positions maths with inline styles.
   'style-src': ["'self'", "'unsafe-inline'", GOOGLE],
-  'frame-src': [GOOGLE, ...ADS_FRAME, TURNSTILE],
+  'frame-src': [GOOGLE, ...ADS_FRAME, TURNSTILE, ...KADAM],
   'worker-src': ["'self'", 'blob:'],
   'manifest-src': ["'self'"],
   // Pronunciation and listening clips (public/audio), which the Android app loads from the site.
@@ -78,7 +80,7 @@ const serialise = (directives) =>
 export function headerPolicy() {
   return serialise({
     ...BASE,
-    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT, ...ADS_SCRIPT, TURNSTILE, ...MONETAG_SCRIPT],
+    'script-src': ["'self'", "'unsafe-inline'", GOOGLE, GA_SCRIPT, ...ADS_SCRIPT, TURNSTILE, ...MONETAG_SCRIPT, ...KADAM],
     // Header-only directives: a <meta> policy cannot carry these.
     'frame-ancestors': ["'none'"],
     'upgrade-insecure-requests': [],
