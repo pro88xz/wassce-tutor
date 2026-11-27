@@ -91,7 +91,10 @@ function KadamSlot({ unit, label }: { unit: Unit; label: string }) {
 /** Responsive top banner: one unit is active, never both at the same time. */
 export function KadamBanner() {
   const allowed = useKadamAllowed()
+  const [mounted, setMounted] = useState(false)
   const [unit, setUnit] = useState<Unit | null>(null)
+
+  useEffect(() => setMounted(true), [])
 
   useEffect(() => {
     const media = window.matchMedia('(min-width: 800px)')
@@ -101,7 +104,7 @@ export function KadamBanner() {
     return () => media.removeEventListener('change', update)
   }, [])
 
-  if (!allowed) return null
+  if (!mounted || !allowed) return null
 
   return (
     <div className="mx-auto mb-6 flex w-full justify-center px-0" aria-label="Advertisement">
@@ -113,7 +116,9 @@ export function KadamBanner() {
 /** 300×250 placement used only inside long-form editorial articles. */
 export function KadamInContent() {
   const allowed = useKadamAllowed()
-  if (!allowed) return null
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+  if (!mounted || !allowed) return null
 
   return (
     <div className="my-10 flex w-full justify-center" aria-label="Advertisement">
