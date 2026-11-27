@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Clock3, ExternalLink } from 'lucide-react'
 import { BLOG_POSTS, UNIVERSITY_GUIDES } from '@/content/editorial'
 import type { BlogPost } from '@/content/editorial'
 import { ArticleSection, Faq, KeyFacts, Rich, Updates, longDate } from '@/components/public/ArticleBlocks'
+import { KadamInContent } from '@/components/ads/KadamAds'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
 import { EditorialPhoto } from '@/components/public/EditorialPhoto'
 import { editorialImage } from '@/lib/editorial-images'
@@ -146,7 +147,10 @@ function BlogArticlePage() {
           <p className="mb-8 border-l-4 border-primary pl-5 text-lg leading-relaxed text-foreground"><Rich text={post.intro} /></p>
           {post.updates && <Updates updates={post.updates} />}
           <div className="space-y-10">
-            {post.sections.map((section,i)=><ArticleSection key={section.heading} section={section} id={`section-${i}`} />)}
+            {post.sections.map((section,i)=><>
+              <ArticleSection key={section.heading} section={section} id={`section-${i}`} />
+              {i === 1 && post.sections.length >= 3 && <KadamInContent />}
+            </>)}
           </div>
           {post.faq && <Faq items={post.faq} />}
           <section className="mt-10 rounded-2xl border bg-slate-50 p-5 sm:p-7"><h2 className="text-xl font-bold">Primary sources and further reading</h2><p className="mt-2 text-sm leading-relaxed text-muted-foreground">This article is based on the sources below, checked on {new Date(post.updatedAt+'T00:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}. Confirm current details with the institution concerned before you act on them.</p><ol className="mt-4 space-y-3">{post.sources.map((source,i)=><li key={source.url} className="flex gap-3 text-sm"><span className="text-xs font-bold text-muted-foreground">{String(i+1).padStart(2,'0')}</span><a href={source.url} target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline decoration-primary/30 underline-offset-4">{source.label} <ExternalLink className="inline h-3 w-3"/></a></li>)}</ol>
