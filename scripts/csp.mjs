@@ -100,7 +100,7 @@ export function pagePolicy(html) {
   for (const [, attrs, body] of html.matchAll(INLINE_SCRIPT)) {
     if (isExecutable(attrs) && body.length > 0) hashes.add(`'sha256-${crypto.createHash('sha256').update(body, 'utf8').digest('base64')}'`)
   }
-  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT, ...ADS_SCRIPT, TURNSTILE, ...MONETAG_SCRIPT] })
+  return serialise({ ...BASE, 'script-src': ["'self'", ...hashes, GOOGLE, GA_SCRIPT, ...ADS_SCRIPT, TURNSTILE, ...MONETAG_SCRIPT, ...KADAM] })
 }
 
 const META = /<meta http-equiv="Content-Security-Policy"[^>]*>/i
