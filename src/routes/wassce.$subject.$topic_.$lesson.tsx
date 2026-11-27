@@ -1,7 +1,6 @@
 import { createFileRoute, notFound } from '@tanstack/react-router'
 import { ArrowLeft, ArrowRight, ListChecks, ShieldCheck } from 'lucide-react'
 import { Breadcrumbs } from '@/components/public/Breadcrumbs'
-import { KadamInContent } from '@/components/ads/KadamAds'
 import { StartCta } from '@/components/public/StartCta'
 import { FROM_PRICE } from '@/lib/plans'
 import { hasPractice } from '@/lib/practice-counts'
@@ -184,9 +183,6 @@ function PublicLessonPage() {
           className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:mt-6 prose-h2:mb-3 prose-p:leading-relaxed prose-li:my-1 prose-strong:text-foreground"
         />
       </KeyTermsLink.Provider>
-
-      <KadamInContent />
-
       {questionCount > 0 && (
         <a href={questionsPath(subject.slug, topic.slug)} className="group flex items-center gap-4 rounded-2xl border border-primary/25 bg-brand-soft/50 p-4 transition-colors hover:border-primary/50 sm:p-5">
           <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${palette.soft} ${palette.text}`}>
